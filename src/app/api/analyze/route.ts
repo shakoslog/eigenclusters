@@ -264,7 +264,6 @@ export async function POST(request: Request) {
           response: error.response?.data
         });
         
-        // Return error response
         return new Response(JSON.stringify({ 
           error: error.message || 'An error occurred during analysis'
         }), {
@@ -351,7 +350,8 @@ export async function POST(request: Request) {
           },
         });
 
-      } catch (error) {
+      } catch (err) {
+        const error = err as ApiError;  // Type assertion
         console.error('DeepSeek API error:', error);
         console.error('Error details:', {
           message: error.message,
@@ -449,9 +449,16 @@ export async function POST(request: Request) {
       return NextResponse.json(transformedResponse);
     }
 
-  } catch (error) {
+  } catch (err) {
+    // Type assertion for the first catch block
+    const error = err as ApiError;
     console.error('General API error:', error);
-    console.error('Stack trace:', error.stack);
+    console.error('Error details:', {
+      message: error.message,
+      stack: error.stack,
+      response: error.response?.data
+    });
+
     return new Response(JSON.stringify({ 
       error: 'API Error', 
       details: error.message,
