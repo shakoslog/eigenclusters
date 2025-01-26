@@ -46,6 +46,14 @@ interface AnalysisChartProps {
   }) => void;
 }
 
+// Add type for the tick formatter
+const tickFormatter = (value: Date | number): string => {
+  if (value instanceof Date) {
+    return timeFormat("%Y")(value);
+  }
+  return String(value);
+};
+
 export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelect }) => {
   console.log('AnalysisChart received data:', data); // Debug log
 
@@ -361,7 +369,7 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
                 scale={xScale}
                 stroke="white"
                 tickStroke="white"
-                tickFormat={timeFormat("%Y")}
+                tickFormat={tickFormatter}
                 tickLabelProps={() => ({
                   fill: 'white',
                   fontSize: 10,
