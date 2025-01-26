@@ -116,6 +116,28 @@ interface ApiError extends Error {
   };
 }
 
+// Add interfaces for the response structure
+interface ClusterData {
+  name: string;
+  description: string;
+  trajectory: Record<string, {
+    variance_explained: number;
+    description: string;
+    key_manifestations: string[];
+  }>;
+}
+
+interface TransformedResponse {
+  metadata: {
+    period: string;
+    interval: string;
+    cluster_range: string;
+    measurement: string;
+    top_50_clusters: string[];
+  };
+  clusters: Record<string, ClusterData>;
+}
+
 export async function POST(request: Request) {
   try {
     console.log('=== Starting Analysis Request ===');
@@ -418,9 +440,9 @@ export async function POST(request: Request) {
         temperature: 0.7
       });
 
-      // Transform the response to use variance_explained instead of score
-      const transformResponse = (jsonResponse: any) => {
-        const transformed = {
+      // Update the transform function with proper typing
+      const transformResponse = (jsonResponse: any): TransformedResponse => {
+        const transformed: TransformedResponse = {
           metadata: jsonResponse.metadata,
           clusters: {}
         };
