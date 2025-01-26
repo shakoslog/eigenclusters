@@ -137,7 +137,10 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
   // Scales
   const xScale = useMemo(
     () => scaleTime({
-      domain: [Math.min(...allYears), Math.max(...allYears)],
+      domain: [
+        new Date(Math.min(...allYears.map(d => d.getTime()))),
+        new Date(Math.max(...allYears.map(d => d.getTime())))
+      ],
       range: [0, innerWidth],
     }),
     [innerWidth, allYears]
