@@ -427,7 +427,7 @@ export async function POST(request: Request) {
         },
       });
     } else {
-      // Existing Claude response
+      // Claude response
       const message = await anthropic.messages.create({
         model: 'claude-3-opus-20240229',
         max_tokens: 4000,
@@ -440,33 +440,15 @@ export async function POST(request: Request) {
         temperature: 0.7
       });
 
-      // Update the transform function with proper typing
-      const transformResponse = (jsonResponse: any): TransformedResponse => {
-        const transformed: TransformedResponse = {
-          metadata: jsonResponse.metadata,
-          clusters: {}
-        };
-
-        Object.entries(jsonResponse.clusters).forEach(([key, cluster]: [string, any]) => {
-          transformed.clusters[key] = {
-            name: cluster.name,
-            description: cluster.description,
-            trajectory: {}
-          };
-
-          Object.entries(cluster.trajectory).forEach(([year, data]: [string, any]) => {
-            transformed.clusters[key].trajectory[year] = {
-              variance_explained: data.score, // Transform score to variance_explained
-              description: data.description,
-              key_manifestations: data.key_manifestations
-            };
-          });
-        });
-
-        return transformed;
-      };
-
-      const jsonResponse = JSON.parse(message.content[0].text);
+      // Handle different content block types
+      const contentBlock = message.content[0];
+      let jsonResponse;
+      
+      if ('text' in contentBlock) {
+        jsonResponse = JSON.parse(contentBlock.text);
+      } else {
+        throw new Error('Unexpected content type from Claude');
+      }
       
       const transformedResponse = transformResponse(jsonResponse);
       return NextResponse.json(transformedResponse);
