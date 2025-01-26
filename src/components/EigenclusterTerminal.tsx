@@ -56,23 +56,27 @@ interface TopCluster {
   total_variance_explained: number;
 }
 
-interface AnalysisResponse {
-  content: string;
-  timeSeriesData: TimeSeriesData[];
-  metadata: any;
-  top_clusters?: TopCluster[];
+interface Metadata {
+  period: string;
+  interval: string;
+  cluster_range: string;
+  measurement: string;
+  top_20_clusters: string[];
 }
 
 interface ClusterData {
   name: string;
   description: string;
-  trajectory: {
-    [year: string]: {
-      variance_explained: number;
-      description: string;
-      key_manifestations: string[];
-    };
-  };
+  trajectory: Record<string, {
+    variance_explained: number;
+    description: string;
+    key_manifestations: string[];
+  }>;
+}
+
+interface AnalysisResult {
+  metadata: Metadata;
+  clusters: Record<string, ClusterData>;
 }
 
 interface TimeSeriesDataPoint {
@@ -111,16 +115,16 @@ most variance in cultural expressions across time.
 `;
 
 const EigenclusterTerminal: React.FC = () => {
-  const [bootSequence, setBootSequence] = useState<string[]>([]);
   const [isBooted, setIsBooted] = useState(false);
-  const [result, setResult] = useState<AnalysisResponse | null>(null);
+  const [bootSequence, setBootSequence] = useState<string[]>([]);
+  const [result, setResult] = useState<AnalysisResult | null>(null);
   const [streamingOutput, setStreamingOutput] = useState<string>('');
   const [loading, setLoading] = useState(false);
   const [apiStatus, setApiStatus] = useState<'idle' | 'connecting' | 'generating' | 'error'>('idle');
   const [activeTab, setActiveTab] = useState<'chart' | 'json' | 'clusters' | 'about' | 'prompt'>('chart');
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [currentInput, setCurrentInput] = useState('');
-  const [activeContext, setActiveContext] = useState<ChatMessage['context']>(null);
+  const [activeContext, setActiveContext] = useState<ChatMessage['context'] | null>(null);
   const [jsonEditorContent, setJsonEditorContent] = useState<string>('');
   const [editorError, setEditorError] = useState<string | null>(null);
   const [rawOutput, setRawOutput] = useState<string>('');
@@ -133,30 +137,28 @@ const EigenclusterTerminal: React.FC = () => {
   const [isReasoning, setIsReasoning] = useState(false);
   const [promptContent, setPromptContent] = useState<string>('');
 
-  // Update boot sequence effect to prevent duplicates
   useEffect(() => {
-    // Skip if already booted
-    if (isBooted) return;
+    if (!isBooted) {
+      const bootMessages = [
+        "EIGENCLUSTER BIOS -- V42.42",
+        "CULTURAL ANALYSIS SYSTEM READY"
+      ];
 
-    const bootMessages = [
-      "EIGENCLUSTER "
-    ];
+      let index = 0;
+      const interval = setInterval(() => {
+        if (index < bootMessages.length) {
+          setBootSequence(prev => [...prev, bootMessages[index]]);
+          index++;
+        } else {
+          setIsBooted(true);
+          clearInterval(interval);
+        }
+      }, 200);
 
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index < bootMessages.length) {
-        setBootSequence(prev => [...prev, bootMessages[index]]);
-        index++;
-      } else {
-        setIsBooted(true);
-        clearInterval(interval);
-      }
-    }, 200);
+      return () => clearInterval(interval);
+    }
+  }, [isBooted]);
 
-    return () => clearInterval(interval);
-  }, []); // Only run once on initial mount
-
-  // Load saved state on mount
   useEffect(() => {
     const savedState = localStorage.getItem('analysisState');
     if (savedState) {
@@ -171,7 +173,6 @@ const EigenclusterTerminal: React.FC = () => {
     }
   }, []); 
 
-  // Save state when it changes
   useEffect(() => {
     if (streamingOutput || result) {
       localStorage.setItem('analysisState', JSON.stringify({
@@ -181,23 +182,19 @@ const EigenclusterTerminal: React.FC = () => {
     }
   }, [streamingOutput, result]);
 
-  // Update editor content when new results come in
   useEffect(() => {
     if (result?.content) {
       setJsonEditorContent(JSON.stringify(JSON.parse(result.content), null, 2));
     }
   }, [result?.content]);
 
-  // Enhanced helper function to handle trends and percentages
   const formatClusterName = (cluster: string): { name: string; trend: string; percentage?: string } => {
-    // Extract trend indicator and percentage if present
     const trendMatch = cluster.match(/\[([\u2191\u2192\u2193])\]/);
     const percentageMatch = cluster.match(/\(([\d.]+)%\)/);
     
     const trend = trendMatch ? trendMatch[1] : '';
     const percentage = percentageMatch ? percentageMatch[1] : undefined;
     
-    // Remove trend indicator, percentage, and format name
     const nameOnly = cluster
       .replace(/\s*\[([\u2191\u2192\u2193])\]/, '')
       .replace(/\s*\([\d.]+%\)/, '');
@@ -218,7 +215,6 @@ const EigenclusterTerminal: React.FC = () => {
     }
 
     try {
-      // Get all unique years across all clusters
       const years = new Set<number>();
       Object.values(data.clusters).forEach((cluster: ClusterData) => {
         Object.keys(cluster.trajectory).forEach(year => {
@@ -226,10 +222,8 @@ const EigenclusterTerminal: React.FC = () => {
         });
       });
 
-      // Sort years chronologically
       const sortedYears = Array.from(years).sort((a, b) => a - b);
 
-      // Transform data for each year
       const transformedData = sortedYears.map(year => ({
         year,
         clusters: Object.entries(data.clusters)
@@ -237,7 +231,6 @@ const EigenclusterTerminal: React.FC = () => {
             const yearStr = year.toString();
             const variance = cluster.trajectory[yearStr]?.variance_explained;
             
-            // Ensure we have a valid number
             if (typeof variance !== 'number' || isNaN(variance)) {
               console.warn(`Invalid variance value for ${cluster.name} in year ${year}:`, variance);
               return null;
@@ -245,12 +238,12 @@ const EigenclusterTerminal: React.FC = () => {
 
             return {
               clusterName: cluster.name,
-              percentageContribution: variance,  // Changed to match chart component
+              percentageContribution: variance,
               description: cluster.trajectory[yearStr].description,
               manifestations: cluster.trajectory[yearStr].key_manifestations
             };
           })
-          .filter((item): item is NonNullable<typeof item> => item !== null)  // Remove any null values
+          .filter((item): item is NonNullable<typeof item> => item !== null)
       }));
 
       console.log('Transformed chart data:', transformedData);
@@ -278,14 +271,12 @@ const EigenclusterTerminal: React.FC = () => {
     setIsAnalyzing(true);
     setCurrentModel(params.model);
 
-    // Start thinking state immediately for DeepSeek
     if (params.model === 'deepseek' || params.model === 'deepseek_chat') {
       setIsThinking(true);
       setIsReasoning(true);
     }
 
     try {
-      // Clear all previous state
       setResult(null);
       setStreamingOutput('');
       setJsonEditorContent('');
@@ -317,7 +308,7 @@ const EigenclusterTerminal: React.FC = () => {
           prompt,
           model: params.model
         }),
-        signal: controller.signal // Add abort signal to fetch
+        signal: controller.signal
       });
 
       if (!response.ok) {
@@ -336,7 +327,6 @@ const EigenclusterTerminal: React.FC = () => {
       let isInJsonBlock = false;
 
       const parseDeepSeekContent = (content: string) => {
-        // Look for content between ```json and ``` markers
         const jsonMatch = content.match(/```json\s*([\s\S]*?)\s*```/);
         if (jsonMatch) {
           return jsonMatch[1].trim();
@@ -361,13 +351,11 @@ const EigenclusterTerminal: React.FC = () => {
           try {
             const parsed = JSON.parse(data);
             
-            // Check for reasoning phase completion
             if (parsed.content && isReasoning) {
               setIsReasoning(false);
             }
 
             if (parsed.content) {
-              // Stop thinking state when JSON starts being generated
               if ((params.model === 'deepseek' || params.model === 'deepseek_chat') && 
                   parsed.content.includes('```json')) {
                 setIsThinking(false);
@@ -375,7 +363,6 @@ const EigenclusterTerminal: React.FC = () => {
 
               console.log('Parsed content:', parsed.content);
               
-              // Handle DeepSeek's JSON block format
               let processedContent = parsed.content;
               if (params.model === 'deepseek' || params.model === 'deepseek_chat') {
                 if (processedContent.includes('```json')) {
@@ -390,7 +377,6 @@ const EigenclusterTerminal: React.FC = () => {
                 }
               }
               
-              // Update streaming output
               setStreamingOutput(prev => prev + parsed.content);
               setJsonEditorContent(prev => prev + parsed.content);
               
@@ -398,10 +384,8 @@ const EigenclusterTerminal: React.FC = () => {
                 accumulatedJson += processedContent;
               }
 
-              // Look for metadata section
               if (!foundMetadata) {
                 try {
-                  // For DeepSeek, try to parse the cleaned JSON
                   const cleanedJson = parseDeepSeekContent(accumulatedJson);
                   const metadataMatch = cleanedJson.match(/"metadata":\s*({[^}]*})/);
                   if (metadataMatch) {
@@ -417,7 +401,6 @@ const EigenclusterTerminal: React.FC = () => {
                 }
               }
               
-              // Try parsing complete JSON
               try {
                 const contentJson = JSON.parse(parseDeepSeekContent(accumulatedJson));
                 if (contentJson.clusters) {
@@ -466,7 +449,6 @@ const EigenclusterTerminal: React.FC = () => {
     }
   };
 
-  // Add handler for chart point selection
   const handleChartPointSelect = (pointData: {
     year: number;
     clusterName: string;
@@ -474,7 +456,6 @@ const EigenclusterTerminal: React.FC = () => {
     manifestations: string[];
   }) => {
     setActiveContext(pointData);
-    // Clear previous chat when switching context
     setChatMessages([{
       role: 'assistant',
       content: `Now discussing ${pointData.clusterName} in ${pointData.year}. What would you like to know about this cultural eigencluster?`,
@@ -516,7 +497,6 @@ const EigenclusterTerminal: React.FC = () => {
     }
   };
 
-  // Handle JSON editor changes
   const handleEditorChange = (value: string) => {
     setJsonEditorContent(value);
     try {
@@ -536,7 +516,6 @@ const EigenclusterTerminal: React.FC = () => {
     }
   };
 
-  // Update the useEffect for fetching the prompt
   useEffect(() => {
     fetch('/api/analyze/prompt.txt')
       .then(response => {
@@ -613,7 +592,6 @@ const EigenclusterTerminal: React.FC = () => {
                 </button>
               </div>
 
-              {/* Chart View */}
               {activeTab === 'chart' && result?.timeSeriesData && (
                 <div className="p-4">
                   <AnalysisChart 
@@ -623,7 +601,6 @@ const EigenclusterTerminal: React.FC = () => {
                 </div>
               )}
 
-              {/* JSON Editor View */}
               {activeTab === 'json' && (
                 <div className="relative">
                   {isThinking && currentModel === 'deepseek' && (
@@ -647,7 +624,6 @@ const EigenclusterTerminal: React.FC = () => {
                 </div>
               )}
 
-              {/* Clusters View */}
               {activeTab === 'clusters' && (
                 <div className="p-4">
                   <h2 className="text-xl mb-4">Top 20 Cultural Eigenclusters</h2>
@@ -688,7 +664,6 @@ const EigenclusterTerminal: React.FC = () => {
                 </div>
               )}
 
-              {/* About tab content */}
               {activeTab === 'about' && (
                 <div className="p-4">
                   <div className="prose prose-invert prose-sm max-w-none">
@@ -697,7 +672,6 @@ const EigenclusterTerminal: React.FC = () => {
                 </div>
               )}
 
-              {/* Prompt tab content */}
               {activeTab === 'prompt' && (
                 <div className="p-4">
                   <div className="prose prose-invert max-w-none">
@@ -714,7 +688,6 @@ const EigenclusterTerminal: React.FC = () => {
             </div>
           )}
 
-          {/* Chat Interface */}
           {activeContext && (
             <div className="border border-white p-4">
               <div className="mb-4">

@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 interface ParameterConfigProps {
-  onSubmit: (params: {
-    startYear: number;
-    endYear: number;
-    clusterStart: number;
-    clusterEnd: number;
-    periodicity: number;
-    context?: string;
-    model: 'deepseek' | 'deepseek_chat' | 'gpt4o-mini';
-  }) => void;
-  isAnalyzing?: boolean;
-  onStop?: () => void;
+  onSubmit: (params: AnalysisParams) => void;
+  isAnalyzing: boolean;
+  onStop: () => void;
 }
 
 interface AnalysisParams {
@@ -32,11 +24,7 @@ const modelOptions = [
   { value: 'deepseek_chat', label: 'DEEPSEEK CHAT' }
 ];
 
-export const ParameterConfig: React.FC<{ 
-  onSubmit: (params: AnalysisParams) => void,
-  isAnalyzing?: boolean,
-  onStop?: () => void
-}> = ({ onSubmit, isAnalyzing, onStop }) => {
+export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAnalyzing, onStop }) => {
   // Start with null initial state
   const [mounted, setMounted] = useState(false);
   const [params, setParams] = useState<AnalysisParams>({
