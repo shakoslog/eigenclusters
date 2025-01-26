@@ -138,6 +138,38 @@ interface TransformedResponse {
   clusters: Record<string, ClusterData>;
 }
 
+// Add the transform function before the POST handler
+const transformResponse = (jsonResponse: any): TransformedResponse => {
+  const transformed: TransformedResponse = {
+    metadata: {
+      period: jsonResponse.metadata.period,
+      interval: jsonResponse.metadata.interval,
+      cluster_range: jsonResponse.metadata.cluster_range,
+      measurement: jsonResponse.metadata.measurement,
+      top_50_clusters: jsonResponse.metadata.top_50_clusters
+    },
+    clusters: {}
+  };
+
+  Object.entries(jsonResponse.clusters).forEach(([key, cluster]: [string, any]) => {
+    transformed.clusters[key] = {
+      name: cluster.name,
+      description: cluster.description,
+      trajectory: {}
+    };
+
+    Object.entries(cluster.trajectory).forEach(([year, data]: [string, any]) => {
+      transformed.clusters[key].trajectory[year] = {
+        variance_explained: data.score,
+        description: data.description,
+        key_manifestations: data.key_manifestations
+      };
+    });
+  });
+
+  return transformed;
+};
+
 export async function POST(request: Request) {
   try {
     console.log('=== Starting Analysis Request ===');
