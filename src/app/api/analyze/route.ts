@@ -466,7 +466,8 @@ export async function POST(request: Request) {
         return transformed;
       };
 
-      const jsonResponse = await message.json();
+      const jsonResponse = JSON.parse(message.content[0].text);
+      
       const transformedResponse = transformResponse(jsonResponse);
       return NextResponse.json(transformedResponse);
     }
