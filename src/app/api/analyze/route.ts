@@ -107,6 +107,15 @@ const timeoutPromise = (promise: Promise<any>, timeoutMs: number) => {
   ]);
 };
 
+// Add error interface
+interface ApiError extends Error {
+  response?: {
+    data?: any;
+    status?: number;
+    headers?: any;
+  };
+}
+
 export async function POST(request: Request) {
   try {
     console.log('=== Starting Analysis Request ===');
@@ -246,14 +255,22 @@ export async function POST(request: Request) {
           },
         });
 
-      } catch (error) {
+      } catch (err) {
+        const error = err as ApiError;  // Type assertion
         console.error('DeepSeek Chat API error:', error);
         console.error('Error details:', {
           message: error.message,
           stack: error.stack,
           response: error.response?.data
         });
-        throw error;
+        
+        // Return error response
+        return new Response(JSON.stringify({ 
+          error: error.message || 'An error occurred during analysis'
+        }), {
+          status: 500,
+          headers: { 'Content-Type': 'application/json' }
+        });
       }
     } else if (model === 'deepseek') {
       console.log('Using DeepSeek model...');
