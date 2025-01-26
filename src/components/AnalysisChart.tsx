@@ -5,6 +5,7 @@ import { Group } from '@visx/group';
 import { AxisLeft, AxisBottom } from '@visx/axis';
 import { timeFormat } from 'd3-time-format';
 import { AnalysisResponse } from '../types/api';
+import { TickFormatter } from '@visx/axis/lib/types';
 
 // Line patterns for different clusters
 const LINE_PATTERNS = [
@@ -46,8 +47,8 @@ interface AnalysisChartProps {
   }) => void;
 }
 
-// Add type for the tick formatter
-const tickFormatter = (value: Date | number): string => {
+// Update the tick formatter with proper typing
+const tickFormatter: TickFormatter<Date | NumberValue> = (value: any): string => {
   if (value instanceof Date) {
     return timeFormat("%Y")(value);
   }
