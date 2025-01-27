@@ -12,10 +12,6 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-// const deepseek = new OpenAI({
-//   apiKey: "sk-567988a826a14b17affd54e7399979f1",
-//   baseUrl: "https://api.deepseek.com"
-// });
 
 const deepseek = new OpenAI({
     apiKey: process.env.DEEPSEEK_API_KEY,
@@ -179,13 +175,11 @@ export async function POST(request: Request) {
     console.log(`Model: ${model}`);
     console.log(`Prompt: ${prompt}`);
 
-    // Read the prompt file
+    // Fetch the prompt file
     let systemPrompt: string;
     try {
-      systemPrompt = readFileSync(
-        join(process.cwd(), 'src/app/api/analyze/prompt.txt'),
-        'utf-8'
-      );
+      const response = await fetch(new URL('/prompts/analyze.txt', request.url));
+      systemPrompt = await response.text();
     } catch (error) {
       console.error('Failed to read prompt file:', error);
       throw new Error('Failed to initialize analysis system');
