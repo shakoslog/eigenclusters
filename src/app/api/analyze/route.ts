@@ -414,11 +414,11 @@ export async function POST(request: Request) {
         messages: [
           {
             role: 'system',
-            content: systemPrompt  // Use the original prompt file content
+            content: systemPrompt
           },
           {
             role: 'user',
-            content: prompt  // Use the original user prompt
+            content: prompt
           }
         ],
         stream: true,
@@ -427,7 +427,7 @@ export async function POST(request: Request) {
         response_format: { 
           type: "json_object"
         },
-        max_tokens: model === 'gpt4o-mini' ? 16384 : 4096  // Adjust max tokens based on model
+        max_tokens: model === 'gpt4o-mini' ? 16384 : 4096
       });
 
       const encoder = new TextEncoder();
@@ -444,7 +444,7 @@ export async function POST(request: Request) {
         }
       });
 
-      return new Response(stream, {
+      return new Response(customStream, {
         headers: {
           'Content-Type': 'text/event-stream',
           'Cache-Control': 'no-cache',
