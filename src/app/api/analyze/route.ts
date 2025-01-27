@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
 import OpenAI from 'openai';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
@@ -177,21 +179,16 @@ export async function POST(request: Request) {
     console.log(`Model: ${model}`);
     console.log(`Prompt: ${prompt}`);
 
-    // First try to read the prompt file
-    let systemPrompt;
+    // Read the prompt file
+    let systemPrompt: string;
     try {
-      console.log('Reading prompt file...');
-      systemPrompt = fs.readFileSync(
-        path.join(process.cwd(), 'src/app/api/analyze/prompt.txt'),
+      systemPrompt = readFileSync(
+        join(process.cwd(), 'src/app/api/analyze/prompt.txt'),
         'utf-8'
       );
-      console.log('System Prompt content:', systemPrompt);
-    } catch (fileError) {
-      console.error('Failed to read prompt file:', fileError);
-      return NextResponse.json(
-        { error: 'Failed to initialize analysis system' },
-        { status: 500 }
-      );
+    } catch (error) {
+      console.error('Failed to read prompt file:', error);
+      throw new Error('Failed to initialize analysis system');
     }
 
     if (model === 'deepseek_chat') {
