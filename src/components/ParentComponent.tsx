@@ -48,9 +48,23 @@ const ParentComponent = () => {
     console.log('Cluster clicked:', clusterData);
   };
 
+  const transformedData = analysisData?.map(item => ({
+    year: item.year,
+    clusters: item.clusters.map(cluster => ({
+      clusterName: cluster.name,
+      percentageContribution: cluster.score,
+      description: cluster.description,
+      manifestations: cluster.manifestations
+    }))
+  })) || [];
+
   return (
     <div className="space-y-8 p-4 bg-black min-h-screen">
-      <ParameterConfig onSubmit={handleParameterSubmit} />
+      <ParameterConfig 
+        onSubmit={handleParameterSubmit} 
+        isAnalyzing={false}
+        onStop={() => {}}
+      />
       
       {loading && (
         <div className="text-white font-mono text-center p-4 border border-white">
@@ -70,10 +84,10 @@ const ParentComponent = () => {
         </div>
       )}
 
-      {analysisData && !loading && !error && (
+      {transformedData && !loading && !error && (
         <AnalysisChart 
-          data={analysisData} 
-          onClusterClick={handleClusterClick}
+          data={transformedData}
+          onPointSelect={handleClusterClick}
         />
       )}
     </div>

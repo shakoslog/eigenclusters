@@ -31,15 +31,17 @@ interface TimeSeriesData {
   }[];
 }
 
+interface ChatContext {
+  year: number;
+  clusterName: string;
+  description: string;
+  manifestations: string[];
+}
+
 interface ChatMessage {
   role: 'user' | 'assistant';
   content: string;
-  context?: {
-    year: number;
-    clusterName: string;
-    description: string;
-    manifestations: string[];
-  };
+  context?: ChatContext;
 }
 
 // Add a type for different sections of output
@@ -74,7 +76,19 @@ interface ClusterData {
   }>;
 }
 
+interface TimeSeriesDataPoint {
+  year: number;
+  clusters: {
+    clusterName: string;
+    percentageContribution: number;
+    description: string;
+    manifestations: string[];
+  }[];
+}
+
 interface AnalysisResult {
+  content: string;
+  timeSeriesData: TimeSeriesDataPoint[];
   metadata: {
     period: string;
     interval: string;
@@ -83,17 +97,6 @@ interface AnalysisResult {
     top_50_clusters: string[];
   };
   clusters: Record<string, ClusterData>;
-  content?: string;
-}
-
-interface TimeSeriesDataPoint {
-  year: number;
-  clusters: {
-    clusterName: string;
-    percentageContribution: number;  // Changed from variance_explained to match chart component
-    description: string;
-    manifestations: string[];
-  }[];
 }
 
 // Add the about content as a constant
@@ -131,7 +134,7 @@ const EigenclusterTerminal: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'chart' | 'json' | 'clusters' | 'about' | 'prompt'>('chart');
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [currentInput, setCurrentInput] = useState('');
-  const [activeContext, setActiveContext] = useState<ChatMessage['context'] | null>(null);
+  const [activeContext, setActiveContext] = useState<ChatContext | null>(null);
   const [jsonEditorContent, setJsonEditorContent] = useState<string>('');
   const [editorError, setEditorError] = useState<string | null>(null);
   const [rawOutput, setRawOutput] = useState<string>('');
@@ -223,8 +226,9 @@ const EigenclusterTerminal: React.FC = () => {
 
     try {
       const years = new Set<number>();
-      Object.values(data.clusters).forEach((cluster: ClusterData) => {
-        Object.keys(cluster.trajectory).forEach(year => {
+      Object.values(data.clusters).forEach((cluster: unknown) => {
+        const typedCluster = cluster as ClusterData;
+        Object.keys(typedCluster.trajectory).forEach(year => {
           years.add(parseInt(year));
         });
       });
@@ -234,20 +238,21 @@ const EigenclusterTerminal: React.FC = () => {
       const transformedData = sortedYears.map(year => ({
         year,
         clusters: Object.entries(data.clusters)
-          .map(([key, cluster]: [string, ClusterData]) => {
+          .map(([key, cluster]: [string, unknown]) => {
+            const typedCluster = cluster as ClusterData;
             const yearStr = year.toString();
-            const variance = cluster.trajectory[yearStr]?.variance_explained;
+            const variance = typedCluster.trajectory[yearStr]?.variance_explained;
             
             if (typeof variance !== 'number' || isNaN(variance)) {
-              console.warn(`Invalid variance value for ${cluster.name} in year ${year}:`, variance);
+              console.warn(`Invalid variance value for ${typedCluster.name} in year ${year}:`, variance);
               return null;
             }
 
             return {
-              clusterName: cluster.name,
+              clusterName: key,
               percentageContribution: variance,
-              description: cluster.trajectory[yearStr].description,
-              manifestations: cluster.trajectory[yearStr].key_manifestations
+              description: typedCluster.trajectory[yearStr].description,
+              manifestations: typedCluster.trajectory[yearStr].key_manifestations
             };
           })
           .filter((item): item is NonNullable<typeof item> => item !== null)
@@ -414,10 +419,10 @@ const EigenclusterTerminal: React.FC = () => {
                   const chartData = transformDataForChart(contentJson);
                   if (chartData.length > 0) {
                     setResult(prev => ({
-                      ...prev,
-                      content: accumulatedJson,
-                      timeSeriesData: chartData,
-                      metadata: contentJson.metadata
+                      content: contentJson.content,
+                      timeSeriesData: contentJson.timeSeriesData,
+                      metadata: contentJson.metadata,
+                      clusters: contentJson.clusters || {}
                     }));
                   }
                 }
@@ -436,19 +441,7 @@ const EigenclusterTerminal: React.FC = () => {
       setBootSequence(prev => [...prev, "ANALYSIS COMPLETE"]);
 
     } catch (error) {
-      if (error.name === 'AbortError') {
-        console.log('Analysis stopped by user');
-      } else {
-        console.error('Analysis error:', error);
-        setApiStatus('error');
-        setIsThinking(false);
-        setBootSequence(prev => [
-          ...prev, 
-          "ERROR: EIGENCLUSTER ANALYSIS FAILED",
-          `DIAGNOSTIC: ${error.message}`
-        ]);
-        setStreamingOutput(prev => `${prev}\n\nERROR: ${error.message}`);
-      }
+      handleError(error);
     } finally {
       setIsReasoning(false);
       setIsAnalyzing(false);
@@ -539,6 +532,18 @@ const EigenclusterTerminal: React.FC = () => {
         setPromptContent('Error loading prompt content. Please check that the file exists in public/api/analyze/prompt.txt');
       });
   }, []);
+
+  const handleError = (err: unknown) => {
+    const error = err as Error;
+    if (error.name === 'AbortError') {
+      setStreamingOutput(prev => `${prev}\n\nOperation cancelled.`);
+      return;
+    }
+    console.error('Analysis error:', error);
+    setStreamingOutput(prev => 
+      `${prev}\n\nDIAGNOSTIC: ${error.message}`
+    );
+  };
 
   return (
     <div className="min-h-screen bg-black p-8 font-mono text-white">
