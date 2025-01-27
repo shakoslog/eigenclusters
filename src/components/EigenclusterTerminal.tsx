@@ -304,6 +304,7 @@ const EigenclusterTerminal: React.FC = () => {
     setAbortController(controller);
     setIsAnalyzing(true);
     setCurrentModel(params.model);
+    setActiveTab('json');
 
     if (params.model === 'deepseek' || params.model === 'deepseek_chat') {
       setIsThinking(true);
