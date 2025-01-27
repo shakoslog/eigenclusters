@@ -470,7 +470,7 @@ const EigenclusterTerminal: React.FC = () => {
     const newMessage: ChatMessage = {
       role: 'user',
       content: currentInput,
-      context: activeContext || undefined
+      ...(activeContext && { context: activeContext })
     };
 
     setChatMessages(prev => [...prev, newMessage]);
@@ -482,7 +482,7 @@ const EigenclusterTerminal: React.FC = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           messages: [...chatMessages, newMessage],
-          context: activeContext
+          context: activeContext || undefined
         })
       });
 
@@ -490,7 +490,7 @@ const EigenclusterTerminal: React.FC = () => {
       setChatMessages(prev => [...prev, {
         role: 'assistant',
         content: data.response,
-        context: activeContext
+        ...(activeContext && { context: activeContext })
       }]);
     } catch (error) {
       console.error('Chat error:', error);
