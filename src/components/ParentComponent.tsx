@@ -1,7 +1,20 @@
 import React, { useState } from 'react';
 import { ParameterConfig } from './ParameterConfig';
 import { AnalysisChart } from './AnalysisChart';
-import { AnalysisResponse } from '../types/api';
+
+interface AnalysisItem {
+  year: number;
+  clusters: Array<{
+    name: string;
+    score: number;
+    description: string;
+    manifestations: string[];
+  }>;
+}
+
+interface AnalysisResponse {
+  items: AnalysisItem[];
+}
 
 const ParentComponent = () => {
   const [analysisData, setAnalysisData] = useState<AnalysisResponse | null>(null);
@@ -48,15 +61,15 @@ const ParentComponent = () => {
     console.log('Cluster clicked:', clusterData);
   };
 
-  const transformedData = analysisData?.map(item => ({
+  const transformedData = analysisData?.items?.map((item: AnalysisItem) => ({
     year: item.year,
-    clusters: item.clusters.map(cluster => ({
+    clusters: item.clusters.map((cluster) => ({
       clusterName: cluster.name,
       percentageContribution: cluster.score,
       description: cluster.description,
       manifestations: cluster.manifestations
     }))
-  })) || [];
+  }));
 
   return (
     <div className="space-y-8 p-4 bg-black min-h-screen">

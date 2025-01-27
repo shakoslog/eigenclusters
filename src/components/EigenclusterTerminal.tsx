@@ -18,7 +18,7 @@ interface AnalysisParams {
   clusterEnd: number;
   periodicity: number;
   context?: string;
-  model: 'deepseek' | 'deepseek_chat' | 'gpt4-mini';
+  model: 'deepseek' | 'deepseek_chat' | 'gpt4o-mini';
 }
 
 interface TimeSeriesData {
@@ -142,7 +142,7 @@ const EigenclusterTerminal: React.FC = () => {
   const [isThinking, setIsThinking] = useState(false);
   const [streamingClusters, setStreamingClusters] = useState<string[]>([]);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [currentModel, setCurrentModel] = useState<'deepseek' | 'deepseek_chat' | 'gpt4-mini'>('deepseek');
+  const [currentModel, setCurrentModel] = useState<'deepseek' | 'deepseek_chat' | 'gpt4o-mini'>('deepseek');
   const [abortController, setAbortController] = useState<AbortController | null>(null);
   const [isReasoning, setIsReasoning] = useState(false);
   const [promptContent, setPromptContent] = useState<string>('');
@@ -402,9 +402,9 @@ const EigenclusterTerminal: React.FC = () => {
                   const metadataMatch = cleanedJson.match(/"metadata":\s*({[^}]*})/);
                   if (metadataMatch) {
                     const metadataJson = JSON.parse(`{"metadata":${metadataMatch[1]}}`);
-                    if (metadataJson.metadata?.top_20_clusters) {
-                      console.log('Found clusters in metadata:', metadataJson.metadata.top_20_clusters);
-                      setStreamingClusters(metadataJson.metadata.top_20_clusters);
+                    if (metadataJson.metadata?.top_50_clusters) {
+                      console.log('Found clusters in metadata:', metadataJson.metadata.top_50_clusters);
+                      setStreamingClusters(metadataJson.metadata.top_50_clusters);
                       foundMetadata = true;
                     }
                   }
@@ -505,9 +505,10 @@ const EigenclusterTerminal: React.FC = () => {
       
       setResult(prev => ({
         ...prev,
-        content: value,
-        timeSeriesData: newChartData,
-        metadata: parsedJson.metadata
+        content: parsedJson.content,
+        timeSeriesData: parsedJson.timeSeriesData,
+        metadata: parsedJson.metadata,
+        clusters: parsedJson.clusters || {} as Record<string, ClusterData>
       }));
       
       setEditorError(null);
@@ -640,7 +641,7 @@ const EigenclusterTerminal: React.FC = () => {
                 <div className="p-4">
                   <h2 className="text-xl mb-4">Top 20 Cultural Eigenclusters</h2>
                   <div className="space-y-2">
-                    {(streamingClusters.length > 0 ? streamingClusters : result?.metadata?.top_20_clusters || [])
+                    {(streamingClusters.length > 0 ? streamingClusters : result?.metadata?.top_50_clusters || [])
                       .map((cluster: string, index: number) => {
                         const { name, trend, percentage } = formatClusterName(cluster);
                         return (
@@ -668,7 +669,7 @@ const EigenclusterTerminal: React.FC = () => {
                         );
                       })}
                   </div>
-                  {streamingClusters.length === 0 && !result?.metadata?.top_20_clusters && (
+                  {streamingClusters.length === 0 && !result?.metadata?.top_50_clusters && (
                     <div className="text-white/50 animate-pulse">
                       Waiting for clusters...
                     </div>
