@@ -170,6 +170,8 @@ const transformResponse = (jsonResponse: any): TransformedResponse => {
   return transformed;
 };
 
+export const runtime = 'edge';
+
 export async function POST(request: Request) {
   try {
     console.log('=== Starting Analysis Request ===');
@@ -301,12 +303,13 @@ export async function POST(request: Request) {
           }
         });
 
-        return new NextResponse(customStream, {
+        return new Response(stream, {
           headers: {
             'Content-Type': 'text/event-stream',
             'Cache-Control': 'no-cache',
             'Connection': 'keep-alive',
-          },
+            'Transfer-Encoding': 'chunked'
+          }
         });
 
       } catch (err) {
@@ -396,12 +399,13 @@ export async function POST(request: Request) {
         });
 
         console.log('Returning response stream');
-        return new NextResponse(customStream, {
+        return new Response(stream, {
           headers: {
             'Content-Type': 'text/event-stream',
             'Cache-Control': 'no-cache',
             'Connection': 'keep-alive',
-          },
+            'Transfer-Encoding': 'chunked'
+          }
         });
 
       } catch (err) {
@@ -451,12 +455,13 @@ export async function POST(request: Request) {
         }
       });
 
-      return new NextResponse(customStream, {
+      return new Response(stream, {
         headers: {
           'Content-Type': 'text/event-stream',
           'Cache-Control': 'no-cache',
           'Connection': 'keep-alive',
-        },
+          'Transfer-Encoding': 'chunked'
+        }
       });
     } else {
       // Claude response
@@ -506,3 +511,9 @@ export async function POST(request: Request) {
     });
   }
 }
+
+// Add longer timeout to the route config
+export const config = {
+  runtime: 'edge',  // Use Edge Runtime
+  maxDuration: 300  // 5 minutes in seconds
+};
