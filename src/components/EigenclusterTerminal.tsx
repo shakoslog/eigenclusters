@@ -75,8 +75,15 @@ interface ClusterData {
 }
 
 interface AnalysisResult {
-  metadata: Metadata;
+  metadata: {
+    period: string;
+    interval: string;
+    cluster_range: string;
+    measurement: string;
+    top_50_clusters: string[];
+  };
   clusters: Record<string, ClusterData>;
+  content?: string;
 }
 
 interface TimeSeriesDataPoint {
@@ -183,10 +190,10 @@ const EigenclusterTerminal: React.FC = () => {
   }, [streamingOutput, result]);
 
   useEffect(() => {
-    if (result?.content) {
-      setJsonEditorContent(JSON.stringify(JSON.parse(result.content), null, 2));
+    if (result) {
+      setJsonEditorContent(JSON.stringify(result, null, 2));
     }
-  }, [result?.content]);
+  }, [result]);
 
   const formatClusterName = (cluster: string): { name: string; trend: string; percentage?: string } => {
     const trendMatch = cluster.match(/\[([\u2191\u2192\u2193])\]/);
