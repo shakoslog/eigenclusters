@@ -41,7 +41,7 @@ interface ChatContext {
 interface ChatMessage {
   role: 'user' | 'assistant';
   content: string;
-  context?: ChatContext;
+  context?: ChatContext | null;
 }
 
 // Add a type for different sections of output
@@ -470,7 +470,7 @@ const EigenclusterTerminal: React.FC = () => {
     const newMessage: ChatMessage = {
       role: 'user',
       content: currentInput,
-      context: activeContext
+      context: activeContext || undefined
     };
 
     setChatMessages(prev => [...prev, newMessage]);
