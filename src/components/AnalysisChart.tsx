@@ -4,6 +4,7 @@ import { scaleLinear, scaleTime } from '@visx/scale';
 import { Group } from '@visx/group';
 import { AxisLeft, AxisBottom } from '@visx/axis';
 import { timeFormat } from 'd3-time-format';
+import { NumberValue } from 'd3-scale';
 import { AnalysisResponse } from '../types/api';
 import { TickFormatter } from '@visx/axis/lib/types';
 
