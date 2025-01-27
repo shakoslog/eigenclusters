@@ -36,6 +36,7 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
     model: 'gpt4o-mini'
   });
   const [model, setModel] = useState<'deepseek' | 'deepseek_chat' | 'gpt4o-mini'>('gpt4o-mini');
+  const [context, setContext] = useState<string>('');
 
   // Set initial state after mount
   useEffect(() => {
@@ -57,7 +58,15 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit(params);
+    onSubmit({
+      startYear: params.startYear,
+      endYear: params.endYear,
+      clusterStart: params.clusterStart,
+      clusterEnd: params.clusterEnd,
+      periodicity: params.periodicity,
+      context: context || undefined,
+      model: params.model
+    });
   };
 
   // Update model selection handler to also update params
@@ -165,15 +174,11 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
           </div>
           <div className="flex items-center">
             <span className="mr-2">&gt;</span>
-            <input
-              type="text"
-              value={params.context}
-              onChange={(e) => setParams({
-                ...params,
-                context: e.target.value
-              })}
-              placeholder="e.g., North India, Western Europe..."
-              className="bg-black border border-white px-2 py-1 w-full focus:outline-none focus:border-white text-white"
+            <textarea
+              value={context}
+              onChange={(e) => setContext(e.target.value)}
+              className="w-full h-32 bg-black text-white border border-white/20 p-2"
+              placeholder="Optional: Add context to condition the analysis..."
             />
           </div>
         </div>

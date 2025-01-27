@@ -194,9 +194,58 @@ const EigenclusterTerminal: React.FC = () => {
 
   useEffect(() => {
     if (result) {
-      setJsonEditorContent(JSON.stringify(result, null, 2));
+      console.log('Raw result:', result);
+      
+      const parsedContent = typeof result.content === 'string' 
+        ? JSON.parse(result.content)
+        : result;
+
+      console.log('Parsed content:', parsedContent);
+      
+      const transformedData = {
+        timeSeriesData: [],
+        clusters: {},
+      };
+
+      console.log('Transformed data:', transformedData);
+      
+      setJsonEditorContent(JSON.stringify(parsedContent, null, 2));
     }
   }, [result]);
+
+  useEffect(() => {
+    if (streamingOutput) {
+      try {
+        const cleanedJson = streamingOutput.replace(/```json\s*([\s\S]*?)\s*```/g, '$1').trim();
+        const parsedJson = JSON.parse(cleanedJson);
+        
+        // Handle clusters1_50 for the clusters tab
+        if (parsedJson.clusters1_50) {
+          const topClusters = parsedJson.clusters1_50.map((c: any) => 
+            `${c.rank}_${c.description.toLowerCase().replace(/\s+/g, '_')}`
+          );
+          setStreamingClusters(topClusters);
+        }
+        
+        if (parsedJson.clusters) {
+          const chartData = transformDataForChart(parsedJson);
+          setResult({
+            content: cleanedJson,
+            timeSeriesData: chartData,
+            metadata: {
+              ...parsedJson.metadata,
+              top_50_clusters: parsedJson.clusters1_50?.map((c: any) => 
+                `${c.rank}_${c.description.toLowerCase().replace(/\s+/g, '_')}`
+              ) || []
+            },
+            clusters: parsedJson.clusters
+          });
+        }
+      } catch (e) {
+        // Continue accumulating data
+      }
+    }
+  }, [streamingOutput]);
 
   const formatClusterName = (cluster: string): { name: string; trend: string; percentage?: string } => {
     const trendMatch = cluster.match(/\[([\u2191\u2192\u2193])\]/);
@@ -205,11 +254,14 @@ const EigenclusterTerminal: React.FC = () => {
     const trend = trendMatch ? trendMatch[1] : '';
     const percentage = percentageMatch ? percentageMatch[1] : undefined;
     
-    const nameOnly = cluster
+    let nameOnly = cluster
       .replace(/\s*\[([\u2191\u2192\u2193])\]/, '')
       .replace(/\s*\([\d.]+%\)/, '');
-    const withoutNumber = nameOnly.replace(/^\d+_/, '');
-    const formatted = withoutNumber
+      
+    // Handle numeric prefix if present
+    nameOnly = nameOnly.replace(/^\d+_/, '');
+    
+    const formatted = nameOnly
       .replace(/_/g, ' ')
       .split(' ')
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
@@ -219,52 +271,30 @@ const EigenclusterTerminal: React.FC = () => {
   };
 
   const transformDataForChart = (data: any): TimeSeriesDataPoint[] => {
-    if (!data?.clusters) {
-      console.log('No clusters data found');
-      return [];
-    }
+    if (!data?.clusters) return [];
 
-    try {
-      const years = new Set<number>();
-      Object.values(data.clusters).forEach((cluster: unknown) => {
-        const typedCluster = cluster as ClusterData;
-        Object.keys(typedCluster.trajectory).forEach(year => {
-          years.add(parseInt(year));
-        });
+    const years = new Set<number>();
+    Object.values(data.clusters).forEach((cluster: any) => {
+      Object.keys(cluster.trajectory).forEach(year => {
+        years.add(parseInt(year));
       });
+    });
 
-      const sortedYears = Array.from(years).sort((a, b) => a - b);
-
-      const transformedData = sortedYears.map(year => ({
+    return Array.from(years)
+      .sort((a, b) => a - b)
+      .map(year => ({
         year,
         clusters: Object.entries(data.clusters)
-          .map(([key, cluster]: [string, unknown]) => {
-            const typedCluster = cluster as ClusterData;
-            const yearStr = year.toString();
-            const variance = typedCluster.trajectory[yearStr]?.variance_explained;
-            
-            if (typeof variance !== 'number' || isNaN(variance)) {
-              console.warn(`Invalid variance value for ${typedCluster.name} in year ${year}:`, variance);
-              return null;
-            }
-
+          .map(([clusterName, cluster]: [string, any]) => {
+            const yearData = cluster.trajectory[year.toString()];
             return {
-              clusterName: key,
-              percentageContribution: variance,
-              description: typedCluster.trajectory[yearStr].description,
-              manifestations: typedCluster.trajectory[yearStr].key_manifestations
+              clusterName,
+              percentageContribution: yearData.variance_explained || yearData.score,
+              description: yearData.description,
+              manifestations: yearData.key_manifestations
             };
           })
-          .filter((item): item is NonNullable<typeof item> => item !== null)
       }));
-
-      console.log('Transformed chart data:', transformedData);
-      return transformedData;
-
-    } catch (error) {
-      console.error('Error transforming data:', error);
-      return [];
-    }
   };
 
   const handleStop = () => {
@@ -641,37 +671,36 @@ const EigenclusterTerminal: React.FC = () => {
                 <div className="p-4">
                   <h2 className="text-xl mb-4">Top 20 Cultural Eigenclusters</h2>
                   <div className="space-y-2">
-                    {(streamingClusters.length > 0 ? streamingClusters : result?.metadata?.top_50_clusters || [])
-                      .map((cluster: string, index: number) => {
-                        const { name, trend, percentage } = formatClusterName(cluster);
-                        return (
-                          <div 
-                            key={index}
-                            className="flex gap-2 items-center"
-                          >
-                            <span className="opacity-50 w-8">{index + 1}.</span>
-                            <span>{name}</span>
-                            {trend && (
-                              <span className={`ml-2 ${
-                                trend === '↗' ? 'text-green-500' :
-                                trend === '↘' ? 'text-red-500' :
-                                'text-blue-500'
-                              }`}>
-                                {trend}
-                              </span>
-                            )}
-                            {percentage && (
-                              <span className="ml-2 opacity-50">
-                                ({percentage}%)
-                              </span>
-                            )}
-                          </div>
-                        );
-                      })}
+                    {result?.metadata?.top_20_clusters?.map((cluster: string, index: number) => {
+                      const { name, trend, percentage } = formatClusterName(cluster);
+                      return (
+                        <div 
+                          key={index}
+                          className="flex gap-2 items-center"
+                        >
+                          <span className="opacity-50 w-8">{index + 1}.</span>
+                          <span>{name}</span>
+                          {trend && (
+                            <span className={`ml-2 ${
+                              trend === '↗' ? 'text-green-500' :
+                              trend === '↘' ? 'text-red-500' :
+                              'text-blue-500'
+                            }`}>
+                              {trend}
+                            </span>
+                          )}
+                          {percentage && (
+                            <span className="ml-2 opacity-50">
+                              ({percentage}%)
+                            </span>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
-                  {streamingClusters.length === 0 && !result?.metadata?.top_50_clusters && (
-                    <div className="text-white/50 animate-pulse">
-                      Waiting for clusters...
+                  {(!result?.metadata?.top_20_clusters || result.metadata.top_20_clusters.length === 0) && (
+                    <div className="text-white/50">
+                      No clusters available
                     </div>
                   )}
                 </div>
