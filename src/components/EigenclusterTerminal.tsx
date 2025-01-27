@@ -94,7 +94,7 @@ interface AnalysisResult {
     interval: string;
     cluster_range: string;
     measurement: string;
-    top_50_clusters: string[];
+    top_20_clusters: string[];
   };
   clusters: Record<string, ClusterData>;
 }
@@ -219,14 +219,6 @@ const EigenclusterTerminal: React.FC = () => {
         const cleanedJson = streamingOutput.replace(/```json\s*([\s\S]*?)\s*```/g, '$1').trim();
         const parsedJson = JSON.parse(cleanedJson);
         
-        // Handle clusters1_50 for the clusters tab
-        if (parsedJson.clusters1_50) {
-          const topClusters = parsedJson.clusters1_50.map((c: any) => 
-            `${c.rank}_${c.description.toLowerCase().replace(/\s+/g, '_')}`
-          );
-          setStreamingClusters(topClusters);
-        }
-        
         if (parsedJson.clusters) {
           const chartData = transformDataForChart(parsedJson);
           setResult({
@@ -234,7 +226,7 @@ const EigenclusterTerminal: React.FC = () => {
             timeSeriesData: chartData,
             metadata: {
               ...parsedJson.metadata,
-              top_50_clusters: parsedJson.clusters1_50?.map((c: any) => 
+              top_20_clusters: parsedJson.clusters1_50?.slice(0, 20).map((c: any) => 
                 `${c.rank}_${c.description.toLowerCase().replace(/\s+/g, '_')}`
               ) || []
             },
@@ -432,9 +424,9 @@ const EigenclusterTerminal: React.FC = () => {
                   const metadataMatch = cleanedJson.match(/"metadata":\s*({[^}]*})/);
                   if (metadataMatch) {
                     const metadataJson = JSON.parse(`{"metadata":${metadataMatch[1]}}`);
-                    if (metadataJson.metadata?.top_50_clusters) {
-                      console.log('Found clusters in metadata:', metadataJson.metadata.top_50_clusters);
-                      setStreamingClusters(metadataJson.metadata.top_50_clusters);
+                    if (metadataJson.metadata?.top_20_clusters) {
+                      console.log('Found clusters in metadata:', metadataJson.metadata.top_20_clusters);
+                      setStreamingClusters(metadataJson.metadata.top_20_clusters);
                       foundMetadata = true;
                     }
                   }
