@@ -48,6 +48,10 @@ interface AnalysisChartProps {
   }) => void;
 }
 
+interface ClusterDescriptions {
+  [key: string]: string;
+}
+
 // Update the tick formatter with proper typing
 const tickFormatter: TickFormatter<Date | NumberValue> = (value: any): string => {
   if (value instanceof Date) {
@@ -91,10 +95,10 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
     description: string;
   } | null>(null);
 
-  // Get cluster descriptions from first year's data
-  const clusterDescriptions = useMemo(() => {
+  // Update the cluster descriptions with proper typing
+  const clusterDescriptions: ClusterDescriptions = useMemo(() => {
     const firstYearData = data[0];
-    return firstYearData?.clusters.reduce((acc, cluster) => ({
+    return firstYearData?.clusters.reduce((acc: ClusterDescriptions, cluster) => ({
       ...acc,
       [cluster.clusterName]: cluster.description
     }), {}) || {};
