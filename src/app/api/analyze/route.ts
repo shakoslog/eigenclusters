@@ -292,7 +292,7 @@ export async function POST(request: Request) {
           }
         });
 
-        return new Response(stream, {
+        return new Response(customStream, {
           headers: {
             'Content-Type': 'text/event-stream',
             'Cache-Control': 'no-cache',
@@ -388,7 +388,7 @@ export async function POST(request: Request) {
         });
 
         console.log('Returning response stream');
-        return new Response(stream, {
+        return new Response(customStream, {
           headers: {
             'Content-Type': 'text/event-stream',
             'Cache-Control': 'no-cache',
