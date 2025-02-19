@@ -5,6 +5,8 @@ import { AnalysisChart } from './AnalysisChart';
 import { ParameterConfig } from './ParameterConfig';
 import { AnalysisResponse } from '../types/api';
 import ReactMarkdown from 'react-markdown';
+import { PresetConfig } from '@/lib/presets';
+import Editor from "@monaco-editor/react";
 
 const ASCII_LOGO = `
 
@@ -124,6 +126,13 @@ most variance in cultural expressions across time.
 
 `;
 
+interface ParameterConfigProps {
+  onSubmit: (params: AnalysisParams) => void;
+  isAnalyzing: boolean;
+  onStop: () => void;
+  onPresetSelect: (preset: PresetConfig | null) => void;  // Update to allow null
+}
+
 const EigenclusterTerminal: React.FC = () => {
   const [isBooted, setIsBooted] = useState(false);
   const [bootSequence, setBootSequence] = useState<string[]>([]);
@@ -146,6 +155,21 @@ const EigenclusterTerminal: React.FC = () => {
   const [abortController, setAbortController] = useState<AbortController | null>(null);
   const [isReasoning, setIsReasoning] = useState(false);
   const [promptContent, setPromptContent] = useState<string>('');
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const savedState = localStorage.getItem('analysisState');
+    if (savedState) {
+      try {
+        const { streamingOutput, result } = JSON.parse(savedState);
+        setStreamingOutput(streamingOutput);
+        setResult(result);
+      } catch (e) {
+        console.warn('Failed to load saved state:', e);
+        localStorage.removeItem('analysisState');
+      }
+    }
+  }, []);
 
   useEffect(() => {
     if (!isBooted) {
@@ -168,20 +192,6 @@ const EigenclusterTerminal: React.FC = () => {
       return () => clearInterval(interval);
     }
   }, [isBooted]);
-
-  useEffect(() => {
-    const savedState = localStorage.getItem('analysisState');
-    if (savedState) {
-      try {
-        const { streamingOutput, result } = JSON.parse(savedState);
-        setStreamingOutput(streamingOutput);
-        setResult(result);
-      } catch (e) {
-        console.warn('Failed to load saved state:', e);
-        localStorage.removeItem('analysisState');
-      }
-    }
-  }, []); 
 
   useEffect(() => {
     if (streamingOutput || result) {
@@ -219,22 +229,26 @@ const EigenclusterTerminal: React.FC = () => {
         const cleanedJson = streamingOutput.replace(/```json\s*([\s\S]*?)\s*```/g, '$1').trim();
         const parsedJson = JSON.parse(cleanedJson);
         
-        if (parsedJson.clusters) {
-          const chartData = transformDataForChart(parsedJson);
-          setResult({
+        // Keep the previous result if the new one doesn't have all data
+        setResult(prev => {
+          const newResult = {
             content: cleanedJson,
-            timeSeriesData: chartData,
+            timeSeriesData: parsedJson.clusters ? transformDataForChart(parsedJson) : prev?.timeSeriesData || [],
             metadata: {
               ...parsedJson.metadata,
               top_20_clusters: parsedJson.clusters1_50?.slice(0, 20).map((c: any) => 
                 `${c.rank}_${c.description.toLowerCase().replace(/\s+/g, '_')}`
-              ) || []
+              ) || prev?.metadata?.top_20_clusters || []
             },
-            clusters: parsedJson.clusters
-          });
-        }
+            clusters: parsedJson.clusters || prev?.clusters || {}
+          };
+
+          // Only update if we have valid data
+          return parsedJson.clusters ? newResult : prev;
+        });
+
       } catch (e) {
-        // Continue accumulating data
+        // Continue accumulating data without clearing previous result
       }
     }
   }, [streamingOutput]);
@@ -312,13 +326,14 @@ const EigenclusterTerminal: React.FC = () => {
     }
 
     try {
-      setResult(null);
       setStreamingOutput('');
       setJsonEditorContent('');
-      setApiStatus('connecting');
+      setApiStatus('requesting');
       setIsThinking(false);
       setBootSequence([]);
-      setStreamingClusters([]); 
+      setStreamingClusters([]);
+      // Don't clear result until we have new data
+      // setResult(null);  // Remove this line
       
       const prompt = `Analyze cultural eigenclusters ${params.clusterStart} through ${params.clusterEnd} 
         for the period ${params.startYear}-${params.endYear}, 
@@ -338,16 +353,20 @@ const EigenclusterTerminal: React.FC = () => {
       
       const response = await fetch('/api/analyze', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify({
-          prompt,
-          model: params.model
+          prompt: prompt,
+          model: params.model,
         }),
         signal: controller.signal
       });
 
       if (!response.ok) {
-        throw new Error(`API Error: ${response.status}`);
+        const errorData = await response.json();
+        console.error('API Error:', errorData);
+        throw new Error(errorData.details || `API Error: ${response.status}`);
       }
 
       setApiStatus('generating');
@@ -464,7 +483,9 @@ const EigenclusterTerminal: React.FC = () => {
       setBootSequence(prev => [...prev, "ANALYSIS COMPLETE"]);
 
     } catch (error) {
-      handleError(error);
+      console.error('Analysis error:', error);
+      setApiStatus('error');
+      setError(error.message);
     } finally {
       setIsReasoning(false);
       setIsAnalyzing(false);
@@ -557,17 +578,44 @@ const EigenclusterTerminal: React.FC = () => {
       });
   }, []);
 
-  const handleError = (err: unknown) => {
-    const error = err as Error;
-    if (error.name === 'AbortError') {
-      setStreamingOutput(prev => `${prev}\n\nOperation cancelled.`);
-      return;
+  const handlePresetSelect = (preset: PresetConfig | null) => {
+    if (preset) {
+      // Set the cached result
+      setResult(preset.cachedResult);
+      setJsonEditorContent(JSON.stringify(preset.cachedResult, null, 2));
+    } else {
+      // Clear the cached result when no preset is selected
+      setResult(null);
+      setJsonEditorContent('');
     }
-    console.error('Analysis error:', error);
-    setStreamingOutput(prev => 
-      `${prev}\n\nDIAGNOSTIC: ${error.message}`
-    );
+    
+    // Update UI state
+    setIsAnalyzing(false);
+    setIsThinking(false);
+    setIsReasoning(false);
+    setApiStatus('idle');
   };
+
+  // Add a useEffect to handle chart generation from JSON
+  useEffect(() => {
+    if (activeTab === 'chart' && jsonEditorContent) {
+      try {
+        const parsedJson = JSON.parse(jsonEditorContent);
+        if (parsedJson.clusters) {
+          const chartData = transformDataForChart(parsedJson);
+          setResult(prev => ({
+            ...prev,
+            timeSeriesData: chartData,
+            metadata: parsedJson.metadata,
+            clusters: parsedJson.clusters,
+            content: jsonEditorContent
+          }));
+        }
+      } catch (e) {
+        console.log('Invalid JSON for chart generation');
+      }
+    }
+  }, [activeTab, jsonEditorContent]);
 
   return (
     <div className="min-h-screen bg-black p-8 font-mono text-white">
@@ -583,6 +631,7 @@ const EigenclusterTerminal: React.FC = () => {
         <div className="space-y-8">
           <ParameterConfig 
             onSubmit={handleAnalysis}
+            onPresetSelect={handlePresetSelect}
             isAnalyzing={isAnalyzing}
             onStop={handleStop}
           />
@@ -638,25 +687,22 @@ const EigenclusterTerminal: React.FC = () => {
               )}
 
               {activeTab === 'json' && (
-                <div className="relative">
-                  {isThinking && currentModel === 'deepseek' && (
-                    <div className="absolute top-0 left-0 right-0 bg-green-900/80 text-white p-2 font-mono text-sm animate-pulse">
-                      Chain of Thought thinking...
-                    </div>
-                  )}
-                  <textarea
+                <div className="p-4">
+                  <div className="mb-4">
+                    <h2 className="text-xl">JSON Output</h2>
+                  </div>
+                  <Editor
+                    height="600px"
+                    defaultLanguage="json"
                     value={jsonEditorContent}
-                    onChange={(e) => handleEditorChange(e.target.value)}
-                    className={`w-full h-[600px] bg-black text-white font-mono p-4 border-0 focus:outline-none resize-none ${
-                      isThinking && currentModel === 'deepseek' ? 'mt-10' : ''
-                    }`}
-                    spellCheck={false}
+                    onChange={(value) => setJsonEditorContent(value || '')}
+                    theme="vs-dark"
+                    options={{
+                      minimap: { enabled: false },
+                      fontSize: 14,
+                      wordWrap: 'on'
+                    }}
                   />
-                  {editorError && (
-                    <div className="absolute bottom-0 left-0 right-0 bg-red-900/80 text-white p-2 font-mono text-sm">
-                      {editorError}
-                    </div>
-                  )}
                 </div>
               )}
 

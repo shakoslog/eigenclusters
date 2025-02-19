@@ -1,3 +1,5 @@
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config, { isServer }) => {
@@ -14,6 +16,12 @@ const nextConfig = {
         fs: false,
         module: false,
       };
+      config.plugins.push(
+        new MonacoWebpackPlugin({
+          languages: ['json'],
+          filename: 'static/[name].worker.js',
+        })
+      );
     }
 
     return config;

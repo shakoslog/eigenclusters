@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { presets } from '@/lib/presets';
 
 interface ParameterConfigProps {
   onSubmit: (params: AnalysisParams) => void;
   isAnalyzing: boolean;
   onStop: () => void;
+  onPresetSelect: (preset: PresetConfig) => void;
 }
 
 interface AnalysisParams {
@@ -13,8 +15,10 @@ interface AnalysisParams {
   clusterEnd: number;
   periodicity: number;
   context?: string;
-  model: 'deepseek' | 'deepseek_chat' | 'gpt4o-mini';
+  model: ModelType;
 }
+
+type ModelType = 'gpt4' | 'gpt4o-mini' | 'deepseek' | 'deepseek_chat' | 'claude3.5';
 
 const modelOptions = [
   { value: 'claude', label: 'CLAUDE' },
@@ -24,19 +28,19 @@ const modelOptions = [
   { value: 'deepseek_chat', label: 'DEEPSEEK CHAT' }
 ];
 
-export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAnalyzing, onStop }) => {
-  // Start with null initial state
+export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAnalyzing, onStop, onPresetSelect }) => {
   const [mounted, setMounted] = useState(false);
   const [params, setParams] = useState<AnalysisParams>({
-    startYear: 2000,  // Default to a negative year to show it's supported
+    startYear: 2000,
     endYear: 2025,
     clusterStart: 1,
     clusterEnd: 3,
     periodicity: 5,
-    model: 'gpt4o-mini'
+    model: 'gpt4o-mini' as ModelType
   });
-  const [model, setModel] = useState<'deepseek' | 'deepseek_chat' | 'gpt4o-mini'>('gpt4o-mini');
+  const [model, setModel] = useState<ModelType>('gpt4o-mini');
   const [context, setContext] = useState<string>('');
+  const [selectedPreset, setSelectedPreset] = useState<string>('');
 
   // Set initial state after mount
   useEffect(() => {
@@ -47,7 +51,7 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
       clusterStart: 1,
       clusterEnd: 3,
       periodicity: 5,
-      model: 'gpt4o-mini'
+      model: 'gpt4o-mini' as ModelType
     });
   }, []);
 
@@ -58,25 +62,55 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // Clear selected preset when submitting custom analysis
+    setSelectedPreset('');
+    console.log('Submitting with model:', params.model);
     onSubmit({
-      startYear: params.startYear,
-      endYear: params.endYear,
-      clusterStart: params.clusterStart,
-      clusterEnd: params.clusterEnd,
-      periodicity: params.periodicity,
-      context: context || undefined,
-      model: params.model
+      ...params,
+      context: context || undefined
     });
   };
 
-  // Update model selection handler to also update params
-  const handleModelChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newModel = e.target.value as 'deepseek' | 'deepseek_chat' | 'gpt4o-mini';
-    setModel(newModel);
+  // Update any parameter input handler to clear preset selection
+  const handleParameterChange = (
+    update: Partial<AnalysisParams>,
+    clearPreset: boolean = true
+  ) => {
+    if (clearPreset) {
+      setSelectedPreset('');
+      // Call onPresetSelect with null to clear preset data
+      onPresetSelect(null);
+    }
     setParams(prev => ({
       ...prev,
-      model: newModel
+      ...update
     }));
+  };
+
+  const handlePresetSelect = (presetId: string) => {
+    setSelectedPreset(presetId);
+    const preset = presets.find(p => p.id === presetId);
+    if (preset) {
+      // Update form state without clearing preset
+      handleParameterChange({
+        startYear: preset.parameters.startYear,
+        endYear: preset.parameters.endYear,
+        clusterStart: preset.parameters.clusterStart,
+        clusterEnd: preset.parameters.clusterEnd,
+        periodicity: preset.parameters.periodicity,
+        model: preset.parameters.model as ModelType,
+      }, false);
+      setContext(preset.parameters.context || '');
+      
+      // Trigger the preset selection
+      onPresetSelect(preset);
+    }
+  };
+
+  const handleModelChange = (newModel: ModelType) => {
+    console.log('Model changed to:', newModel);
+    setModel(newModel);
+    handleParameterChange({ model: newModel });
   };
 
   return (
@@ -91,78 +125,64 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
             <label className="block mb-1">Start Year (negative for BCE)</label>
             <input
               type="number"
-              value={params.startYear}
-              onChange={e => setParams(prev => ({ ...prev, startYear: parseInt(e.target.value) || 0 }))}
+              value={params.startYear.toString()}
+              onChange={e => handleParameterChange({ startYear: parseInt(e.target.value) || 0 })}
               className="w-full bg-white/10 p-2 border border-white/20"
-              step="1"  // Allow any integer
+              step="1"
             />
           </div>
           <div>
             <label className="block mb-1">End Year</label>
             <input
               type="number"
-              value={params.endYear}
-              onChange={e => setParams(prev => ({ ...prev, endYear: parseInt(e.target.value) || 0 }))}
+              value={params.endYear.toString()}
+              onChange={e => handleParameterChange({ endYear: parseInt(e.target.value) || 0 })}
               className="w-full bg-white/10 p-2 border border-white/20"
-              step="1"  // Allow any integer
+              step="1"
             />
           </div>
           <div>
             <label className="block mb-2">Cluster Start</label>
             <input
               type="number"
-              value={params.clusterStart}
+              value={params.clusterStart.toString()}
               min={1}
-              onChange={(e) => setParams({
-                ...params,
-                clusterStart: parseInt(e.target.value)
-              })}
+              onChange={e => handleParameterChange({ clusterStart: parseInt(e.target.value) || 1 })}
               className="w-full bg-white/10 p-2"
             />
           </div>
           <div>
             <label className="block mb-2">Cluster End</label>
-            <div className="relative">
-              <input
-                type="number"
-                value={params.clusterEnd}
-                min={params.clusterStart}
-                onChange={(e) => setParams({
-                  ...params,
-                  clusterEnd: parseInt(e.target.value)
-                })}
-                className="w-full bg-white/10 p-2"
-              />
-              {params.clusterEnd > 50 && (
-                <div className="absolute top-2 right-2 text-xs text-yellow-500">
-                  warning: &gt;50 is unstable
-                </div>
-              )}
-            </div>
+            <input
+              type="number"
+              value={params.clusterEnd.toString()}
+              min={params.clusterStart}
+              onChange={e => handleParameterChange({ clusterEnd: parseInt(e.target.value) || params.clusterStart })}
+              className="w-full bg-white/10 p-2"
+            />
           </div>
           <div>
             <label className="block mb-2">Periodicity (years)</label>
             <input
               type="number"
-              value={params.periodicity}
+              value={params.periodicity.toString()}
               min={1}
-              onChange={(e) => setParams({
-                ...params,
-                periodicity: parseInt(e.target.value)
-              })}
+              onChange={e => handleParameterChange({ periodicity: parseInt(e.target.value) || 1 })}
               className="w-full bg-white/10 p-2"
             />
           </div>
           <div>
             <label className="block mb-2">Model</label>
             <select
+              className="bg-black text-white border border-white/20 p-2 rounded"
               value={model}
-              onChange={handleModelChange}
-              className="w-full bg-white/10 p-2"
+              onChange={(e) => handleModelChange(e.target.value as ModelType)}
             >
-              <option value="deepseek">DeepSeek</option>
+              <option value="gpt4">GPT-4</option>
+              <option value="gpt4o-mini">GPT-4 Turbo</option>
+              <option value="deepseek">DeepSeek Coder</option>
               <option value="deepseek_chat">DeepSeek Chat</option>
-              <option value="gpt4o-mini">GPT-4o Mini</option>
+              <option value="claude3.5">Claude 3.5 Sonnet</option>
             </select>
           </div>
         </div>
@@ -216,6 +236,22 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
 
       <div className="mt-4 text-xs opacity-50">
         SYSTEM STATUS: {isAnalyzing ? 'ANALYZING' : 'READY FOR INPUT'}
+      </div>
+
+      <div className="flex flex-col space-y-2">
+        <label className="text-white/70">Presets</label>
+        <select 
+          className="bg-black text-white border border-white/20 p-2 rounded"
+          onChange={(e) => handlePresetSelect(e.target.value)}
+          value={selectedPreset}
+        >
+          <option value="">Select a preset configuration...</option>
+          {presets.map(preset => (
+            <option key={preset.id} value={preset.id}>
+              {preset.name} - {preset.description}
+            </option>
+          ))}
+        </select>
       </div>
     </div>
   );

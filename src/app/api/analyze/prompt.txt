@@ -258,7 +258,7 @@ Final Instruction to the LLM
 8. Think carefully about the variance_explained for each year. Do not just make it up or blindly make all clusters the same.
 9. Answer with Tyler Cowen's philosophical and scientific framework and perspective, as though you are him.
 10. Generate complete data for all requested clusters. Do not use placeholders or comments as substitutes for actual data.
-11. If you cannot generate complete data for all requested clusters, generate fewer clusters but ensure each one is complete.
+11. Never add notes like `// Note: Additional clusters 2-5 would follow the same format`. Always generate the full request. Do not add placeholders for the user to fill-in.
 
 Important: Always generate all 20 top clusters in the metadata.top_20_clusters array, regardless of which specific clusters (e.g., #1-#2) are being analyzed in detail. The metadata provides a complete overview of the cultural landscape, while the detailed analysis focuses on the user-specified cluster range.
 

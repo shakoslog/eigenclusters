@@ -1,5 +1,9 @@
 import EigenclusterTerminal from '@/components/EigenclusterTerminal'
 
 export default function Home() {
-  return <EigenclusterTerminal />
+  return (
+    <div suppressHydrationWarning>
+      <EigenclusterTerminal />
+    </div>
+  )
 }

@@ -4,9 +4,15 @@ import OpenAI from 'openai';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
+// const anthropic = new Anthropic({
+//   apiKey: process.env.ANTHROPIC_API_KEY || '',
+// });
+
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
+
+
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -220,74 +226,63 @@ export async function POST(request: Request) {
           async start(controller) {
             try {
               console.log('Starting stream processing');
-              let accumulatedContent = '';
+              let rawContent = '';
               let chunkCount = 0;
-              let buffer = '';
-              let isFirstChunk = true;
+              let controllerClosed = false;
 
+              // Stream raw content first
               for await (const chunk of stream) {
+                if (controllerClosed) break;
+                
                 chunkCount++;
-                if (chunkCount % 10 === 0) {
-                  console.log(`Processed ${chunkCount} chunks`);
-                }
-
-                if (chunk.usage) {
-                  console.log('Token usage:', chunk.usage);
-                }
-
                 if (chunk.choices[0]?.delta?.content) {
                   const content = chunk.choices[0].delta.content;
-                  buffer += content;
-                  accumulatedContent += content;
+                  rawContent += content;
                   
-                  if (isFirstChunk && !buffer.includes('{')) {
-                    continue;
-                  }
-                  isFirstChunk = false;
-
-                  if (buffer.includes('{') || buffer.includes('}') || 
-                      buffer.includes('",') || buffer.includes('":') || 
-                      buffer.length > 50) {
-                    console.log('Sending buffer content:', buffer);
-                    controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-                      content: buffer
-                    })}\n\n`));
-                    buffer = '';
-                  }
+                  // Stream the raw content immediately
+                  controller.enqueue(encoder.encode(`data: ${JSON.stringify({ content })}\n\n`));
                 }
               }
 
-              if (buffer.length > 0) {
-                console.log('Sending final buffer content:', buffer);
-                controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-                  content: buffer
-                })}\n\n`));
-              }
+              // Once streaming is complete, try to parse the full JSON
+              if (!controllerClosed) {
+                try {
+                  // Clean up the raw content
+                  const cleanJson = rawContent
+                    .replace(/```json\s*/, '')
+                    .replace(/\s*```$/, '')
+                    .trim();
 
-              try {
-                const parsedJson = JSON.parse(accumulatedContent);
-                const formattedJson = JSON.stringify(parsedJson, null, 2);
-                console.log('Sending formatted JSON');
-                controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-                  content: formattedJson 
-                })}\n\n`));
-              } catch (e) {
-                console.error('Final JSON formatting failed:', e);
-                controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-                  content: accumulatedContent
-                })}\n\n`));
-              }
+                  // Parse and validate the complete JSON
+                  const parsedJson = JSON.parse(cleanJson);
+                  
+                  // Send the complete, formatted JSON
+                  const formattedJson = JSON.stringify(parsedJson, null, 2);
+                  controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+                    content: formattedJson,
+                    isComplete: true 
+                  })}\n\n`));
+                  
+                  console.log('Successfully processed complete JSON');
+                } catch (e) {
+                  console.error('Final JSON processing failed:', e);
+                }
 
-              console.log('Stream processing complete');
-              console.log('Total chunks processed:', chunkCount);
-              console.log('Final content length:', accumulatedContent.length);
-              
-              controller.enqueue(encoder.encode('data: [DONE]\n\n'));
-              controller.close();
-              console.log('Stream closed successfully');
+                console.log('Stream processing complete');
+                console.log('Total chunks processed:', chunkCount);
+                console.log('Total content length:', rawContent.length);
+                
+                controller.enqueue(encoder.encode('data: [DONE]\n\n'));
+                controller.close();
+                controllerClosed = true;
+                console.log('Stream closed successfully');
+              }
             } catch (error) {
               console.error('Stream processing error:', error);
-              controller.error(error);
+              if (!controllerClosed) {
+                controller.error(error);
+                controllerClosed = true;
+              }
             }
           }
         });
@@ -346,43 +341,60 @@ export async function POST(request: Request) {
               console.log('Starting stream processing');
               let accumulatedContent = '';
               let chunkCount = 0;
+              let isInJsonBlock = false;
+              let controllerClosed = false;
 
               for await (const chunk of stream) {
+                if (controllerClosed) break;
+                
                 chunkCount++;
-                if (chunkCount % 10 === 0) {
-                  console.log(`Processed ${chunkCount} chunks`);
-                }
-
-                // Log the raw chunk structure
-                console.log('Chunk structure:', JSON.stringify(chunk.choices[0].delta));
-
                 if (chunk.choices[0]?.delta?.content) {
                   const content = chunk.choices[0].delta.content;
-                  console.log('Content received:', content);
-                  accumulatedContent += content;
-                  controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-                    content: content 
-                  })}\n\n`));
+                  
+                  // Check if we're entering a JSON block
+                  if (content.includes('```json')) {
+                    isInJsonBlock = true;
+                    accumulatedContent = ''; // Reset for clean JSON
+                    continue;
+                  }
+
+                  // If we're in a JSON block, accumulate the content
+                  if (isInJsonBlock) {
+                    if (content.includes('```')) {
+                      isInJsonBlock = false;
+                      try {
+                        const cleanJson = accumulatedContent.trim();
+                        const parsedJson = JSON.parse(cleanJson);
+                        const formattedJson = JSON.stringify(parsedJson);
+                        controller.enqueue(encoder.encode(`data: ${JSON.stringify({ content: formattedJson })}\n\n`));
+                      } catch (e) {
+                        console.log('JSON block parsing failed, sending raw content');
+                        controller.enqueue(encoder.encode(`data: ${JSON.stringify({ content })}\n\n`));
+                      }
+                    } else {
+                      accumulatedContent += content;
+                    }
+                  } else {
+                    // Not in JSON block, send content directly
+                    controller.enqueue(encoder.encode(`data: ${JSON.stringify({ content })}\n\n`));
+                  }
                 }
               }
 
-              // Validate final JSON
-              try {
-                JSON.parse(accumulatedContent);
-                console.log('Final JSON is valid');
-              } catch (e) {
-                console.error('Final JSON validation failed:', e);
+              if (!controllerClosed) {
+                console.log('Stream processing complete');
+                console.log('Total chunks processed:', chunkCount);
+                controller.enqueue(encoder.encode('data: [DONE]\n\n'));
+                controller.close();
+                controllerClosed = true;
+                console.log('Stream closed successfully');
               }
-
-              console.log('Stream processing complete');
-              console.log('Total chunks processed:', chunkCount);
-              
-              controller.enqueue(encoder.encode('data: [DONE]\n\n'));
-              controller.close();
-              console.log('Stream closed successfully');
             } catch (error) {
               console.error('Stream processing error:', error);
-              controller.error(error);
+              if (!controllerClosed) {
+                controller.error(error);
+                controllerClosed = true;
+              }
             }
           }
         });
@@ -452,6 +464,80 @@ export async function POST(request: Request) {
           'Transfer-Encoding': 'chunked'
         }
       });
+    } else if (model === 'claude3.5') {
+      console.log('Starting Claude 3.5 request...');
+      
+      try {
+        console.log('Initializing Anthropic client...');
+        const anthropicClient = new Anthropic({
+          apiKey: process.env.ANTHROPIC_API_KEY
+        });
+
+        console.log('Creating message stream with claude-3-5-sonnet-latest...');
+        const stream = await anthropicClient.messages.create({
+          model: 'claude-3-5-sonnet-latest',
+          messages: [
+            {
+              role: 'user',
+              content: systemPrompt + "\n\n" + prompt
+            }
+          ],
+          max_tokens: 8000,
+          temperature: 0,
+          stream: true
+        });
+
+        console.log('Stream created successfully');
+        
+        const encoder = new TextEncoder();
+        const customStream = new ReadableStream({
+          async start(controller) {
+            try {
+              let accumulatedContent = '';
+              
+              for await (const chunk of stream) {
+                if (chunk.type === 'content_block_delta' && 
+                    chunk.delta.type === 'text_delta') {
+                  const content = chunk.delta.text;
+                  accumulatedContent += content;
+                  controller.enqueue(encoder.encode(`data: ${JSON.stringify({ content })}\n\n`));
+                }
+              }
+              
+              controller.enqueue(encoder.encode('data: [DONE]\n\n'));
+              controller.close();
+              
+            } catch (error) {
+              console.error('Stream processing error:', error);
+              controller.error(error);
+            }
+          }
+        });
+
+        return new Response(customStream, {
+          headers: {
+            'Content-Type': 'text/event-stream',
+            'Cache-Control': 'no-cache',
+            'Connection': 'keep-alive'
+          }
+        });
+
+      } catch (err: any) {
+        console.error('Claude API error:', {
+          message: err.message,
+          status: err.status,
+          type: err.type,
+          stack: err.stack
+        });
+        
+        return Response.json({ 
+          error: 'Claude API Error', 
+          details: err.message,
+          status: err.status,
+          type: err.type,
+          stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
+        }, { status: err.status || 500 });
+      }
     } else {
       // Claude response
       const message = await anthropic.messages.create({
