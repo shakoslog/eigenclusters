@@ -1,4 +1,5 @@
 import { coldWarAnalysis } from './mockData';
+import { ModelType } from '@/components/EigenclusterTerminal';
 
 export interface PresetConfig {
   id: string;
@@ -10,21 +11,10 @@ export interface PresetConfig {
     clusterStart: number;
     clusterEnd: number;
     periodicity: number;
-    model: string;
     context?: string;
+    model: ModelType;
   };
-  cachedResult: {
-    content: string;
-    timeSeriesData: any[];
-    metadata: {
-      period: string;
-      interval: string;
-      cluster_range: string;
-      measurement: string;
-      top_20_clusters: string[];
-    };
-    clusters: Record<string, any>;
-  };
+  cachedResult?: any;  // Add type definition for cached results if needed
   jsonContent: string;  // The pre-populated JSON content
 }
 
@@ -55,21 +45,19 @@ export const presets: PresetConfig[] = [
     }`
   },
   {
-    id: 'tech_trends',
-    name: 'Technology Trends',
-    description: 'Analyze emerging technology trends from 2019-2023',
+    id: 'tech-trends-2020-2024',
+    name: 'Recent Tech Trends',
+    description: 'Analysis of technology trends from 2020 to 2024',
     parameters: {
-      startYear: 2019,
-      endYear: 2023,
+      startYear: 2020,
+      endYear: 2024,
       clusterStart: 1,
       clusterEnd: 20,
-      periodicity: 'yearly',
-      model: 'gpt4',
+      periodicity: 1,
+      model: 'gpt4o-mini',
       context: 'Focus on technology trends, particularly in AI, blockchain, and cloud computing.'
     },
-    cachedResult: {
-      // Add your cached JSON result here
-    },
+    cachedResult: null,
     jsonContent: `{
       "clusters": [
         {
@@ -90,8 +78,8 @@ export const presets: PresetConfig[] = [
       endYear: 2023,
       clusterStart: 1,
       clusterEnd: 20,
-      periodicity: 'yearly',
-      model: 'gpt4',
+      periodicity: 1,
+      model: 'gpt4o-mini',
       context: 'Focus on social movements, activism, and cultural shifts.'
     },
     cachedResult: {
@@ -111,13 +99,14 @@ export const presets: PresetConfig[] = [
   {
     id: 'ww2',
     name: 'WW2 Military Evolution',
+    description: 'Analysis of military tactics and strategy during World War II',
     parameters: {
       startYear: 1939,
       endYear: 1945,
       clusterStart: 1,
       clusterEnd: 5,
       periodicity: 1,
-      model: 'claude3.5',
+      model: 'deepseek',
       context: 'Focus on European and Pacific theaters'
     },
     jsonContent: `{
@@ -134,13 +123,14 @@ export const presets: PresetConfig[] = [
   {
     id: 'renaissance',
     name: 'Italian Renaissance Art',
+    description: 'Analysis of artistic developments in Renaissance Italy',
     parameters: {
       startYear: 1400,
       endYear: 1600,
       clusterStart: 1,
       clusterEnd: 4,
       periodicity: 25,
-      model: 'claude3.5',
+      model: 'deepseek',
       context: 'Focus on Florence and Venice'
     },
     jsonContent: `{

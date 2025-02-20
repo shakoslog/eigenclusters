@@ -13,6 +13,9 @@ const ASCII_LOGO = `
 
 [ CULTURAL EIGENCLUSTERS ]`;
 
+// Update the ModelType to include all supported models
+export type ModelType = 'claude' | 'deepseek' | 'deepseek_chat' | 'gpt4o' | 'gpt4o-mini' | 'o1-mini';
+
 interface AnalysisParams {
   startYear: number;
   endYear: number;
@@ -20,7 +23,7 @@ interface AnalysisParams {
   clusterEnd: number;
   periodicity: number;
   context?: string;
-  model: 'deepseek' | 'deepseek_chat' | 'gpt4o-mini';
+  model: ModelType;  // Use the shared ModelType
 }
 
 interface TimeSeriesData {
@@ -133,13 +136,16 @@ interface ParameterConfigProps {
   onPresetSelect: (preset: PresetConfig | null) => void;  // Update to allow null
 }
 
+// Update the type definition
+type ApiStatus = 'idle' | 'connecting' | 'generating' | 'requesting' | 'error';
+
 const EigenclusterTerminal: React.FC = () => {
   const [isBooted, setIsBooted] = useState(false);
   const [bootSequence, setBootSequence] = useState<string[]>([]);
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [streamingOutput, setStreamingOutput] = useState<string>('');
   const [loading, setLoading] = useState(false);
-  const [apiStatus, setApiStatus] = useState<'idle' | 'connecting' | 'generating' | 'error'>('idle');
+  const [apiStatus, setApiStatus] = useState<ApiStatus>('idle');
   const [activeTab, setActiveTab] = useState<'chart' | 'json' | 'clusters' | 'about' | 'prompt'>('chart');
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [currentInput, setCurrentInput] = useState('');
@@ -151,7 +157,7 @@ const EigenclusterTerminal: React.FC = () => {
   const [isThinking, setIsThinking] = useState(false);
   const [streamingClusters, setStreamingClusters] = useState<string[]>([]);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [currentModel, setCurrentModel] = useState<'deepseek' | 'deepseek_chat' | 'gpt4o-mini'>('deepseek');
+  const [currentModel, setCurrentModel] = useState<ModelType>('deepseek');
   const [abortController, setAbortController] = useState<AbortController | null>(null);
   const [isReasoning, setIsReasoning] = useState(false);
   const [promptContent, setPromptContent] = useState<string>('');
@@ -320,7 +326,8 @@ const EigenclusterTerminal: React.FC = () => {
     setCurrentModel(params.model);
     setActiveTab('json');
 
-    if (params.model === 'deepseek' || params.model === 'deepseek_chat') {
+    // Set isReasoning for both deepseek and o1-mini
+    if (params.model === 'deepseek' || params.model === 'o1-mini') {
       setIsThinking(true);
       setIsReasoning(true);
     }
@@ -329,11 +336,8 @@ const EigenclusterTerminal: React.FC = () => {
       setStreamingOutput('');
       setJsonEditorContent('');
       setApiStatus('requesting');
-      setIsThinking(false);
       setBootSequence([]);
       setStreamingClusters([]);
-      // Don't clear result until we have new data
-      // setResult(null);  // Remove this line
       
       const prompt = `Analyze cultural eigenclusters ${params.clusterStart} through ${params.clusterEnd} 
         for the period ${params.startYear}-${params.endYear}, 
@@ -485,7 +489,12 @@ const EigenclusterTerminal: React.FC = () => {
     } catch (error) {
       console.error('Analysis error:', error);
       setApiStatus('error');
-      setError(error.message);
+      // Type guard for Error objects
+      if (error instanceof Error) {
+        setError(error.message);
+      } else {
+        setError('An unknown error occurred');
+      }
     } finally {
       setIsReasoning(false);
       setIsAnalyzing(false);
@@ -636,7 +645,7 @@ const EigenclusterTerminal: React.FC = () => {
             onStop={handleStop}
           />
           
-          {isReasoning && currentModel === 'deepseek' && (
+          {isReasoning && (currentModel === 'deepseek' || currentModel === 'o1-mini') && (
             <div className="text-green-500 animate-pulse">
               Chain of Thought Reasoning... please wait
             </div>

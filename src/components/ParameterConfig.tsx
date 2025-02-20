@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { presets } from '@/lib/presets';
+import { presets, PresetConfig } from '@/lib/presets';
+import { ModelType } from './EigenclusterTerminal';  // Import the shared type
 
 interface ParameterConfigProps {
   onSubmit: (params: AnalysisParams) => void;
   isAnalyzing: boolean;
   onStop: () => void;
-  onPresetSelect: (preset: PresetConfig) => void;
+  onPresetSelect: (preset: PresetConfig | null) => void;
 }
 
 interface AnalysisParams {
@@ -18,17 +19,16 @@ interface AnalysisParams {
   model: ModelType;
 }
 
-type ModelType = 'gpt4' | 'gpt4o-mini' | 'deepseek' | 'deepseek_chat' | 'claude3.5';
-
-const modelOptions = [
-  { value: 'claude', label: 'CLAUDE' },
-  { value: 'gpt4', label: 'GPT-4' },
-  { value: 'deepseek', label: 'DEEPSEEK' },
-  { value: 'gpt4o-mini', label: 'GPT-4o Mini (128k context)' },
-  { value: 'deepseek_chat', label: 'DEEPSEEK CHAT' }
+const modelOptions: { value: ModelType; label: string }[] = [
+  { value: 'claude', label: 'Claude 3.5 Sonnet' },
+  { value: 'deepseek', label: 'DeepSeek Reasoner' },
+  { value: 'deepseek_chat', label: 'DeepSeek Chat' },
+  { value: 'gpt4o', label: 'GPT-4 Turbo (Aug 2024)' },
+  { value: 'gpt4o-mini', label: 'GPT-4 Turbo Mini (Jul 2024)' },
+  { value: 'o1-mini', label: 'O1-Mini (65k context)' }
 ];
 
-export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAnalyzing, onStop, onPresetSelect }) => {
+const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAnalyzing, onStop, onPresetSelect }) => {
   const [mounted, setMounted] = useState(false);
   const [params, setParams] = useState<AnalysisParams>({
     startYear: 2000,
@@ -36,9 +36,9 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
     clusterStart: 1,
     clusterEnd: 3,
     periodicity: 5,
-    model: 'gpt4o-mini' as ModelType
+    model: 'deepseek_chat'
   });
-  const [model, setModel] = useState<ModelType>('gpt4o-mini');
+  const [model, setModel] = useState<ModelType>('deepseek_chat');
   const [context, setContext] = useState<string>('');
   const [selectedPreset, setSelectedPreset] = useState<string>('');
 
@@ -51,7 +51,7 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
       clusterStart: 1,
       clusterEnd: 3,
       periodicity: 5,
-      model: 'gpt4o-mini' as ModelType
+      model: 'deepseek_chat'
     });
   }, []);
 
@@ -178,11 +178,11 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
               value={model}
               onChange={(e) => handleModelChange(e.target.value as ModelType)}
             >
-              <option value="gpt4">GPT-4</option>
-              <option value="gpt4o-mini">GPT-4 Turbo</option>
-              <option value="deepseek">DeepSeek Coder</option>
-              <option value="deepseek_chat">DeepSeek Chat</option>
-              <option value="claude3.5">Claude 3.5 Sonnet</option>
+              {modelOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
             </select>
           </div>
         </div>
@@ -255,4 +255,7 @@ export const ParameterConfig: React.FC<ParameterConfigProps> = ({ onSubmit, isAn
       </div>
     </div>
   );
-}; 
+};
+
+export { ParameterConfig };
+export type { ParameterConfigProps, AnalysisParams }; 

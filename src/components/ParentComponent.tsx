@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ParameterConfig } from './ParameterConfig';
 import { AnalysisChart } from './AnalysisChart';
+import { PresetConfig } from '@/lib/presets';
 
 interface AnalysisItem {
   year: number;
@@ -61,6 +62,16 @@ const ParentComponent = () => {
     console.log('Cluster clicked:', clusterData);
   };
 
+  const handlePresetSelect = (preset: PresetConfig | null) => {
+    if (preset) {
+      // Handle preset selection
+      setAnalysisData(preset.cachedResult);
+    } else {
+      // Clear data when no preset is selected
+      setAnalysisData(null);
+    }
+  };
+
   const transformedData = analysisData?.items?.map((item: AnalysisItem) => ({
     year: item.year,
     clusters: item.clusters.map((cluster) => ({
@@ -75,8 +86,9 @@ const ParentComponent = () => {
     <div className="space-y-8 p-4 bg-black min-h-screen">
       <ParameterConfig 
         onSubmit={handleParameterSubmit} 
-        isAnalyzing={false}
+        isAnalyzing={loading}
         onStop={() => {}}
+        onPresetSelect={handlePresetSelect}
       />
       
       {loading && (
