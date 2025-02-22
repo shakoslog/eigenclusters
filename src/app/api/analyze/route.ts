@@ -112,6 +112,17 @@ const createStreamHandlerOpenAI = (stream: any) => {
           }
         }
 
+        // Try to parse the accumulated JSON to check if it's complete
+        try {
+          JSON.parse(accumulatedContent);
+        } catch (e) {
+          console.error('Incomplete or invalid JSON received');
+          // Send error through the stream before closing
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+            error: "Token limit reached. The response was cut off. Please try a shorter prompt or fewer clusters."
+          })}\n\n`));
+        }
+
         if (!controllerClosed) {
           controller.enqueue(encoder.encode('data: [DONE]\n\n'));
           controller.close();
@@ -120,7 +131,10 @@ const createStreamHandlerOpenAI = (stream: any) => {
       } catch (error) {
         console.error('OpenAI stream processing error:', error);
         if (!controllerClosed) {
-          controller.error(error);
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+            error: "Stream processing error: " + error.message 
+          })}\n\n`));
+          controller.close();
           controllerClosed = true;
         }
       }
@@ -137,17 +151,28 @@ const createStreamHandlerAnthropic = (stream: any) => {
       
       try {
         console.log('Starting Anthropic stream processing');
+        let accumulatedContent = '';
         
         for await (const chunk of stream) {
           if (controllerClosed) break;
           
-          // Handle content block deltas which contain the actual text
           if (chunk.type === 'content_block_delta' && chunk.delta?.type === 'text_delta') {
             const content = chunk.delta.text;
             if (content) {
               controller.enqueue(encoder.encode(`data: ${JSON.stringify({ content })}\n\n`));
+              accumulatedContent += content;
             }
           }
+        }
+
+        // Try to parse the accumulated JSON to check if it's complete
+        try {
+          JSON.parse(accumulatedContent);
+        } catch (e) {
+          console.error('Incomplete or invalid JSON received');
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+            error: "The response was cut off. Please try a shorter prompt or break it into parts."
+          })}\n\n`));
         }
 
         if (!controllerClosed) {

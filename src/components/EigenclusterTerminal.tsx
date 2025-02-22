@@ -146,7 +146,7 @@ const EigenclusterTerminal: React.FC = () => {
   const [streamingOutput, setStreamingOutput] = useState<string>('');
   const [loading, setLoading] = useState(false);
   const [apiStatus, setApiStatus] = useState<ApiStatus>('idle');
-  const [activeTab, setActiveTab] = useState<'chart' | 'json' | 'clusters' | 'about' | 'prompt'>('chart');
+  const [activeTab, setActiveTab] = useState<'chart' | 'data' | 'clusters' | 'about' | 'prompt'>('chart');
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [currentInput, setCurrentInput] = useState('');
   const [activeContext, setActiveContext] = useState<ChatContext | null>(null);
@@ -162,6 +162,7 @@ const EigenclusterTerminal: React.FC = () => {
   const [isReasoning, setIsReasoning] = useState(false);
   const [promptContent, setPromptContent] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
+  const [analysisError, setAnalysisError] = useState<string | null>(null);
 
   useEffect(() => {
     const savedState = localStorage.getItem('analysisState');
@@ -282,31 +283,50 @@ const EigenclusterTerminal: React.FC = () => {
     return { name: formatted, trend, percentage };
   };
 
-  const transformDataForChart = (data: any): TimeSeriesDataPoint[] => {
-    if (!data?.clusters) return [];
+  const transformDataForChart = (data: any) => {
+    if (!data?.clusters) {
+      setAnalysisError("Received JSON is missing 'clusters' data structure");
+      return [];
+    }
 
-    const years = new Set<number>();
-    Object.values(data.clusters).forEach((cluster: any) => {
-      Object.keys(cluster.trajectory).forEach(year => {
-        years.add(parseInt(year));
+    try {
+      // Get the first cluster to determine years
+      const firstCluster = Object.values(data.clusters)[0] as any;
+      if (!firstCluster?.trajectory) {
+        setAnalysisError("Clusters found but missing trajectory data");
+        return [];
+      }
+
+      const years = Object.keys(firstCluster.trajectory);
+      if (years.length === 0) {
+        setAnalysisError("No time periods found in trajectory data");
+        return [];
+      }
+
+      return years.map(year => {
+        const yearClusters = Object.entries(data.clusters).map(([clusterName, clusterData]: [string, any]) => {
+          const yearData = clusterData.trajectory[year];
+          if (!yearData || !yearData.variance_explained) {
+            throw new Error(`Missing required data for cluster "${clusterName}" in year ${year}`);
+          }
+          
+          return {
+            clusterName,
+            percentageContribution: yearData.variance_explained,
+            description: yearData.description,
+            manifestations: yearData.key_manifestations
+          };
+        });
+
+        return {
+          year: parseInt(year),
+          clusters: yearClusters
+        };
       });
-    });
-
-    return Array.from(years)
-      .sort((a, b) => a - b)
-      .map(year => ({
-        year,
-        clusters: Object.entries(data.clusters)
-          .map(([clusterName, cluster]: [string, any]) => {
-            const yearData = cluster.trajectory[year.toString()];
-            return {
-              clusterName,
-              percentageContribution: yearData.variance_explained || yearData.score,
-              description: yearData.description,
-              manifestations: yearData.key_manifestations
-            };
-          })
-      }));
+    } catch (error) {
+      setAnalysisError(`Chart data structure error: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      return [];
+    }
   };
 
   const handleStop = () => {
@@ -320,6 +340,7 @@ const EigenclusterTerminal: React.FC = () => {
   };
 
   const handleAnalysis = async (params: AnalysisParams) => {
+    setAnalysisError(null); // Clear previous errors
     const controller = new AbortController();
     setAbortController(controller);
     setIsAnalyzing(true);
@@ -397,8 +418,6 @@ const EigenclusterTerminal: React.FC = () => {
         if (done) break;
         
         const chunk = decoder.decode(value, { stream: true });
-        console.log('Received chunk:', chunk);
-        
         const lines = chunk.split('\n');
         
         for (const line of lines) {
@@ -409,8 +428,12 @@ const EigenclusterTerminal: React.FC = () => {
           try {
             const parsed = JSON.parse(data);
             
-            if (parsed.content && isReasoning) {
-              setIsReasoning(false);
+            if (parsed.error) {
+              // Only set the analysis error, don't add to boot sequence
+              setAnalysisError(parsed.error);
+              setIsAnalyzing(false);
+              setIsThinking(false);
+              return;
             }
 
             if (parsed.content) {
@@ -487,14 +510,8 @@ const EigenclusterTerminal: React.FC = () => {
       setBootSequence(prev => [...prev, "ANALYSIS COMPLETE"]);
 
     } catch (error) {
-      console.error('Analysis error:', error);
-      setApiStatus('error');
-      // Type guard for Error objects
-      if (error instanceof Error) {
-        setError(error.message);
-      } else {
-        setError('An unknown error occurred');
-      }
+      // Only set the analysis error for unexpected errors too
+      setAnalysisError(error instanceof Error ? error.message : 'An unexpected error occurred');
     } finally {
       setIsReasoning(false);
       setIsAnalyzing(false);
@@ -588,6 +605,11 @@ const EigenclusterTerminal: React.FC = () => {
   }, []);
 
   const handlePresetSelect = (preset: PresetConfig | null) => {
+    // Don't allow preset changes during analysis
+    if (isAnalyzing) {
+      return;
+    }
+    
     if (preset) {
       // Set the cached result
       setResult(preset.cachedResult);
@@ -632,7 +654,13 @@ const EigenclusterTerminal: React.FC = () => {
       
       <div className="mb-8">
         {bootSequence.map((message, i) => (
-          <div key={i} className="mb-1">{message}</div>
+          <div key={i} className={`mb-1 ${
+            message?.startsWith?.('ERROR:') 
+              ? 'text-red-500 font-bold' 
+              : ''
+          }`}>
+            {message}
+          </div>
         ))}
       </div>
 
@@ -643,6 +671,7 @@ const EigenclusterTerminal: React.FC = () => {
             onPresetSelect={handlePresetSelect}
             isAnalyzing={isAnalyzing}
             onStop={handleStop}
+            error={analysisError}
           />
           
           {isReasoning && (currentModel === 'deepseek' || currentModel === 'o1-mini') && (
@@ -654,36 +683,20 @@ const EigenclusterTerminal: React.FC = () => {
           {(apiStatus !== 'idle' || result || streamingOutput) && (
             <div className="border border-white">
               <div className="flex border-b border-white/20">
-                <button 
-                  className={`px-4 py-2 ${activeTab === 'chart' ? 'bg-white/10' : ''}`}
-                  onClick={() => setActiveTab('chart')}
-                >
-                  CHART
-                </button>
-                <button 
-                  className={`px-4 py-2 ${activeTab === 'json' ? 'bg-white/10' : ''}`}
-                  onClick={() => setActiveTab('json')}
-                >
-                  JSON
-                </button>
-                <button 
-                  className={`px-4 py-2 ${activeTab === 'clusters' ? 'bg-white/10' : ''}`}
-                  onClick={() => setActiveTab('clusters')}
-                >
-                  CLUSTERS
-                </button>
-                <button 
-                  className={`px-4 py-2 ${activeTab === 'about' ? 'bg-white/10' : ''}`}
-                  onClick={() => setActiveTab('about')}
-                >
-                  HOW TO USE
-                </button>
-                <button 
-                  className={`px-4 py-2 ${activeTab === 'prompt' ? 'bg-white/10' : ''}`}
-                  onClick={() => setActiveTab('prompt')}
-                >
-                  PROMPT
-                </button>
+                {['chart', 'json', 'clusters', 'about', 'prompt'].map((tab) => (
+                  <button 
+                    key={tab}
+                    className={`px-4 py-2 ${
+                      activeTab === tab ? 'bg-white/10' : ''
+                    } ${
+                      isAnalyzing && tab !== activeTab ? 'opacity-50 cursor-not-allowed' : ''
+                    }`}
+                    onClick={() => setActiveTab(tab)}
+                    disabled={isAnalyzing && tab !== activeTab}
+                  >
+                    {tab.toUpperCase()}
+                  </button>
+                ))}
               </div>
 
               {activeTab === 'chart' && result?.timeSeriesData && (
@@ -704,12 +717,14 @@ const EigenclusterTerminal: React.FC = () => {
                     height="600px"
                     defaultLanguage="json"
                     value={jsonEditorContent}
-                    onChange={(value) => setJsonEditorContent(value || '')}
                     theme="vs-dark"
                     options={{
                       minimap: { enabled: false },
                       fontSize: 14,
-                      wordWrap: 'on'
+                      wordWrap: 'on',
+                      readOnly: true,
+                      domReadOnly: true,
+                      cursorStyle: 'line'
                     }}
                   />
                 </div>

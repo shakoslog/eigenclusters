@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useCallback } from 'react';
 import { LinePath } from '@visx/shape';
 import { scaleLinear, scaleTime } from '@visx/scale';
 import { Group } from '@visx/group';
@@ -87,6 +87,8 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
       manifestations: string[];
       percentageContribution: number;
     }[];
+    alignRight: boolean;
+    alignNearRight: boolean;
   } | null>(null);
 
   // Add state for showing cluster description
@@ -129,10 +131,18 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
     return () => window.removeEventListener('resize', updateDimensions);
   }, []);
 
-  // Chart dimensions
-  const margin = { top: 40, right: 40, bottom: 40, left: 60 };
-  const innerWidth = dimensions.width - margin.left - margin.right;
-  const innerHeight = dimensions.height - margin.top - margin.bottom;
+  // Chart dimensions - update these values
+  const margin = { 
+    top: 40,
+    right: 120,   // Significantly increased right margin
+    bottom: 40,
+    left: 60
+  };
+  
+  // Ensure the inner dimensions account for container padding
+  const containerPadding = 16; // Account for the container's padding
+  const innerWidth = Math.max(0, dimensions.width - margin.left - margin.right - containerPadding * 2);
+  const innerHeight = Math.max(0, dimensions.height - margin.top - margin.bottom);
 
   // Get unique clusters
   const clusterNames = useMemo(() => 
@@ -143,27 +153,32 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
   );
 
   // Process data
-  const allYears = data.map(d => new Date(d.year, 0));
-  const allValues = data.flatMap(d => 
-    d.clusters.map(c => c.percentageContribution)
+  const allYears = useMemo(() => 
+    data.map(d => new Date(d.year, 0)),
+    [data]
+  );
+
+  const allValues = useMemo(() => 
+    data.flatMap(d => d.clusters.map(c => c.percentageContribution)),
+    [data]
   );
 
   // Scales
   const xScale = useMemo(
-    () => scaleTime({
-      domain: [
-        new Date(Math.min(...allYears.map(d => d.getTime()))),
-        new Date(Math.max(...allYears.map(d => d.getTime())))
-      ],
+    () => scaleLinear({
+      domain: [Math.min(...data.map(d => d.year)), Math.max(...data.map(d => d.year))],
       range: [0, innerWidth],
+      clamp: true
     }),
-    [innerWidth, allYears]
+    [innerWidth, data]
   );
 
   const yScale = useMemo(
     () => scaleLinear({
       domain: [0, Math.max(...allValues) * 1.1],
       range: [innerHeight, 0],
+      // Prevent extending beyond data bounds
+      clamp: true
     }),
     [innerHeight, allValues]
   );
@@ -193,11 +208,17 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
     }
   }, [isDrawing]);
 
-  // Function to handle point clicks
+  // Function to handle point clicks with position awareness
   const handlePointClick = (event: React.MouseEvent, year: number, x: number, y: number) => {
-    // Find all points for this year
     const yearData = data.find(d => d.year === year);
     if (!yearData) return;
+
+    // Get chart container width
+    const containerWidth = containerRef.current?.offsetWidth || 0;
+    
+    // Three zones: right edge, near right, and rest of chart
+    const isVeryNearRightEdge = x > (containerWidth * 0.9);
+    const isNearRightEdge = x > (containerWidth * 0.75);
 
     // If there's only one cluster, select it directly
     if (yearData.clusters.length === 1) {
@@ -208,13 +229,31 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
       return;
     }
 
-    // Otherwise, show the point selector with all clusters for that year
+    // Show the point selector with position adjustment based on zone
     setPointSelector({
-      x,
+      x: isVeryNearRightEdge ? x - 100 : isNearRightEdge ? x - 50 : x,
       y,
       year,
-      points: yearData.clusters
+      points: yearData.clusters,
+      alignRight: isVeryNearRightEdge,
+      alignNearRight: isNearRightEdge && !isVeryNearRightEdge
     });
+  };
+
+  // When creating line paths, ensure we only use data points within our range
+  const getLinePath = useCallback((clusterName: string) => {
+    return data
+      .filter(d => d.year >= Math.min(...data.map(d => d.year)) && d.year <= Math.max(...data.map(d => d.year)))
+      .sort((a, b) => a.year - b.year)
+      .map(d => ({
+        year: d.year,
+        value: d.clusters.find(c => c.clusterName === clusterName)?.percentageContribution || 0
+      }));
+  }, [data]);
+
+  // Update the tick formatter
+  const tickFormatter = (value: number) => {
+    return value <= 0 ? `${Math.abs(value)} BCE` : `${value} CE`;
   };
 
   return (
@@ -265,10 +304,13 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
           
           <div className="text-white text-xs mb-2 flex justify-between items-center">
             <span className="opacity-70">[Interactive Chart. Click on the lines and select a cluster to see more information]</span>
-            <span className="text-[10px]">SIGNAL ACTIVE</span>
+            <span className="text-[10px]"></span>
           </div>
           
-          <svg width={dimensions.width} height={dimensions.height}>
+          <svg 
+            width={dimensions.width - containerPadding * 2} // Adjust SVG width
+            height={dimensions.height}
+          >
             <defs>
               <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
                 <rect width="40" height="40" fill="none" stroke="#0f360f" strokeWidth="0.5"/>
@@ -306,12 +348,21 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
             </Group>
 
             <Group left={margin.left} top={margin.top}>
+              {/* Adjust the clip path or content bounds */}
+              <rect
+                x={0}
+                y={0}
+                width={innerWidth}
+                height={innerHeight}
+                fill="none"
+                // Add a small stroke to debug the bounds if needed
+                // stroke="red"
+                // strokeWidth={1}
+              />
+              
               {/* Data lines */}
               {clusterNames.map((clusterName, idx) => {
-                const lineData = data.map(d => ({
-                  date: new Date(d.year, 0),
-                  value: d.clusters.find(c => c.clusterName === clusterName)?.percentageContribution || 0
-                }));
+                const lineData = getLinePath(clusterName);
 
                 const linePattern = LINE_PATTERNS[idx % LINE_PATTERNS.length];
 
@@ -319,7 +370,7 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
                   <g key={clusterName}>
                     <LinePath
                       data={lineData}
-                      x={d => xScale(d.date)}
+                      x={d => xScale(d.year)}
                       y={d => yScale(d.value)}
                       stroke="white"
                       strokeWidth={hoveredLine === clusterName ? 3 : 2}
@@ -332,13 +383,13 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
 
                     {/* Data points */}
                     {lineData.map((point, i) => {
-                      const yearData = data.find(d => d.year === point.date.getFullYear());
+                      const yearData = data.find(d => d.year === point.year);
                       const clusterData = yearData?.clusters.find(c => c.clusterName === clusterName);
                       
                       return (
                         <rect
                           key={i}
-                          x={xScale(point.date) - 3}
+                          x={xScale(point.year) - 3}
                           y={yScale(point.value) - 3}
                           width={6}
                           height={6}
@@ -347,8 +398,8 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
                           style={{ cursor: 'pointer' }}
                           onClick={(e) => handlePointClick(
                             e,
-                            point.date.getFullYear(),
-                            xScale(point.date),
+                            point.year,
+                            xScale(point.year),
                             yScale(point.value)
                           )}
                         />
@@ -376,6 +427,7 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
                 stroke="white"
                 tickStroke="white"
                 tickFormat={tickFormatter}
+                numTicks={6}
                 tickLabelProps={() => ({
                   fill: 'white',
                   fontSize: 10,
@@ -434,12 +486,12 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
           <span>
             {hoveredPoint 
               ? `TRACKING: ${hoveredPoint.clusterName}`
-              : 'AWAITING INPUT...'}
+              : ''}
           </span>
           <span>
             {hoveredPoint 
-              ? `COORD: ${hoveredPoint.date.getFullYear()},${hoveredPoint.value}`
-              : 'SYSTEM READY'}
+              ? `COORD: ${hoveredPoint.year},${hoveredPoint.value}`
+              : ''}
           </span>
         </div>
 
@@ -450,6 +502,9 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
             style={{
               left: pointSelector.x + margin.left,
               top: pointSelector.y + margin.top - 100,
+              transform: pointSelector.alignRight ? 'translateX(-75%)' : 
+                        pointSelector.alignNearRight ? 'translateX(-50%)' : 
+                        'none'
             }}
           >
             <div className="text-xs mb-2">Select cluster for {pointSelector.year}:</div>
