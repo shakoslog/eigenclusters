@@ -137,15 +137,16 @@ const createStreamHandlerAnthropic = (stream: any) => {
       
       try {
         console.log('Starting Anthropic stream processing');
-        let accumulatedContent = '';
-
+        
         for await (const chunk of stream) {
           if (controllerClosed) break;
           
-          const content = chunk.content;
-          if (content) {
-            controller.enqueue(encoder.encode(`data: ${JSON.stringify({ content })}\n\n`));
-            accumulatedContent += content;
+          // Handle content block deltas which contain the actual text
+          if (chunk.type === 'content_block_delta' && chunk.delta?.type === 'text_delta') {
+            const content = chunk.delta.text;
+            if (content) {
+              controller.enqueue(encoder.encode(`data: ${JSON.stringify({ content })}\n\n`));
+            }
           }
         }
 
@@ -165,42 +166,6 @@ const createStreamHandlerAnthropic = (stream: any) => {
   });
 };
 
-const createStreamHandlerDeepseek = (stream: any) => {
-  const encoder = new TextEncoder();
-  
-  return new ReadableStream({
-    async start(controller) {
-      let controllerClosed = false;
-      
-      try {
-        console.log('Starting Deepseek stream processing');
-        let accumulatedContent = '';
-
-        for await (const chunk of stream) {
-          if (controllerClosed) break;
-          
-          const content = chunk.choices[0]?.delta?.content;
-          if (content) {
-            controller.enqueue(encoder.encode(`data: ${JSON.stringify({ content })}\n\n`));
-            accumulatedContent += content;
-          }
-        }
-
-        if (!controllerClosed) {
-          controller.enqueue(encoder.encode('data: [DONE]\n\n'));
-          controller.close();
-          controllerClosed = true;
-        }
-      } catch (error) {
-        console.error('Deepseek stream processing error:', error);
-        if (!controllerClosed) {
-          controller.error(error);
-          controllerClosed = true;
-        }
-      }
-    }
-  });
-};
 
 // Add model lookup definitions at the top after the client initializations
 const MODEL_CONFIGS = {
@@ -293,74 +258,142 @@ export async function POST(request: Request) {
 
     if (model === 'deepseek_chat') {
       console.log('Using DeepSeek Chat model...');
-      const stream = await deepseek.chat.completions.create({
-        model: modelConfig.model,
-        messages: [
-          {
-            role: 'system',
-            content: `${systemPrompt}\n\nPlease provide your response in JSON format following this schema. The output must be valid JSON.`
+      try {
+        console.log('Testing DeepSeek connection...');
+        console.log('DeepSeek client config:', {
+          baseURL: deepseek.baseURL,
+          apiKeyPresent: !!process.env.DEEPSEEK_API_KEY
+        });
+
+        console.log('Creating DeepSeek Chat stream...');
+        const stream = await deepseek.chat.completions.create({
+          model: "deepseek-chat",
+          messages: [
+            {
+              role: 'system',
+              content: `${systemPrompt}\n\nPlease provide your response in JSON format following this schema. The output must be valid JSON.`
+            },
+            {
+              role: 'user',
+              content: `Please analyze and return the results in JSON format: ${prompt}`
+            }
+          ],
+          stream: true,
+          response_format: {
+            type: 'json_object'
           },
-          {
-            role: 'user',
-            content: `Please analyze and return the results in JSON format: ${prompt}`
+          temperature: 0,
+          max_tokens: 8192
+        });
+
+        console.log('Stream created successfully');
+
+        // Since DeepSeek uses OpenAI format, we can use the OpenAI stream handler
+        const customStream = createStreamHandlerOpenAI(stream);
+        console.log('Created stream handler');
+
+        return new Response(customStream, {
+          headers: {
+            'Content-Type': 'text/event-stream',
+            'Cache-Control': 'no-cache',
+            'Connection': 'keep-alive'
           }
-        ],
-        stream: true,
-        response_format: { type: 'json_object' },
-        temperature: modelConfig.temperature,
-        top_p: 0.1,
-        frequency_penalty: 0.1,
-        presence_penalty: 0.1,
-        max_tokens: modelConfig.maxTokens,
-        stream_options: { include_usage: true }
-      });
+        });
 
-      const customStream = createStreamHandlerDeepseek(stream);
-      return new Response(customStream, {
-        headers: {
-          'Content-Type': 'text/event-stream',
-          'Cache-Control': 'no-cache',
-          'Connection': 'keep-alive',
-          'Transfer-Encoding': 'chunked'
-        }
-      });
-    }
+      } catch (err) {
+        const error = err as ApiError;
+        console.error('DeepSeek Chat API error:', error);
+        throw error;
+      }
+    } else if (model === 'deepseek') {
+      console.log('Using DeepSeek model...');
+      try {
+        console.log('Creating DeepSeek stream...');
+        const stream = await deepseek.chat.completions.create({
+          model: "deepseek-reasoner",
+          messages: [
+            {
+              role: 'system',
+              content: systemPrompt + "\n\nPlease ensure the output is in valid JSON format following the schema provided."
+            },
+            {
+              role: 'user',
+              content: prompt
+            }
+          ],
+          stream: true,
+          max_tokens: 8000
+        });
 
-    if (model === 'deepseek') {
-      console.log('Using DeepSeek Reasoner model...');
-      const stream = await deepseek.chat.completions.create({
-        model: modelConfig.model,
-        messages: [
-          {
-            role: 'system',
-            content: `${systemPrompt}\n\nPlease provide your response in JSON format following this schema. The output must be valid JSON.`
-          },
-          {
-            role: 'user',
-            content: `Please analyze and return the results in JSON format: ${prompt}`
+        console.log('Stream created successfully');
+
+        const encoder = new TextEncoder();
+        const customStream = new ReadableStream({
+          async start(controller) {
+            try {
+              console.log('Starting stream processing');
+              let accumulatedContent = '';
+              let chunkCount = 0;
+
+              for await (const chunk of stream) {
+                chunkCount++;
+                if (chunkCount % 10 === 0) {
+                  console.log(`Processed ${chunkCount} chunks`);
+                }
+
+                console.log('Chunk structure:', JSON.stringify(chunk.choices[0].delta));
+
+                if (chunk.choices[0]?.delta?.content) {
+                  const content = chunk.choices[0].delta.content;
+                  console.log('Content received:', content);
+                  accumulatedContent += content;
+                  controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+                    content: content 
+                  })}\n\n`));
+                }
+              }
+
+              try {
+                JSON.parse(accumulatedContent);
+                console.log('Final JSON is valid');
+              } catch (e) {
+                console.error('Final JSON validation failed:', e);
+              }
+
+              console.log('Stream processing complete');
+              console.log('Total chunks processed:', chunkCount);
+              
+              controller.enqueue(encoder.encode('data: [DONE]\n\n'));
+              controller.close();
+              console.log('Stream closed successfully');
+            } catch (error) {
+              console.error('Stream processing error:', error);
+              controller.error(error);
+            }
           }
-        ],
-        stream: true,
-        temperature: modelConfig.temperature,
-        top_p: 0.1,
-        frequency_penalty: 0.1,
-        presence_penalty: 0.1,
-        max_tokens: modelConfig.maxTokens,
-        stream_options: { include_usage: true }
-      });
+        });
 
-      const customStream = createStreamHandlerDeepseek(stream);
-      return new Response(customStream, {
-        headers: {
-          'Content-Type': 'text/event-stream',
-          'Cache-Control': 'no-cache',
-          'Connection': 'keep-alive',
-          'Transfer-Encoding': 'chunked'
-        }
-      });
-    }
+        console.log('Returning response stream');
+        return new Response(customStream, {
+          headers: {
+            'Content-Type': 'text/event-stream',
+            'Cache-Control': 'no-cache',
+            'Connection': 'keep-alive',
+            'Transfer-Encoding': 'chunked'
+          }
+        });
 
-    if (model === 'gpt4o' || model === 'gpt4o-mini') {
+      } catch (err) {
+        const error = err as ApiError;
+        console.error('DeepSeek API error:', error);
+        console.error('Error details:', {
+          message: error.message,
+          stack: error.stack,
+          response: error.response?.data
+        });
+        throw error;
+      }
+    } else if (model === 'gpt4o' || model === 'gpt4o-mini') {
       console.log(`Using ${model} model...`);
       const stream = await openai.chat.completions.create({
         model: modelConfig.model,
