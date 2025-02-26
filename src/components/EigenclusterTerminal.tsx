@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { AnalysisChart } from './AnalysisChart';
 import { ParameterConfig } from './ParameterConfig';
 import { AnalysisResponse } from '../types/api';
 import ReactMarkdown from 'react-markdown';
 import { PresetConfig } from '@/lib/presets';
 import Editor from "@monaco-editor/react";
+import { saveAs } from 'file-saver';
 
 const ASCII_LOGO = `
 
@@ -134,10 +135,35 @@ interface ParameterConfigProps {
   isAnalyzing: boolean;
   onStop: () => void;
   onPresetSelect: (preset: PresetConfig | null) => void;  // Update to allow null
+  onParameterChange?: (params: AnalysisParams) => void;
 }
 
 // Update the type definition
 type ApiStatus = 'idle' | 'connecting' | 'generating' | 'requesting' | 'error';
+
+// Add type definition for saved state
+interface SavedState {
+  version: string;
+  timestamp: string;
+  analysisParams: {
+    startYear: string;
+    endYear: string;
+    clusterStart: number;
+    clusterEnd: number;
+    periodicity: number;
+    context?: string;
+    model: ModelType;
+  };
+  result: AnalysisResult | null;
+  activeTab: string;
+  selectedPoint: {
+    year: number;
+    clusterName: string;
+    description: string;
+    manifestations: string[];
+  } | null;
+  chatMessages: ChatMessage[];
+}
 
 const EigenclusterTerminal: React.FC = () => {
   const [isBooted, setIsBooted] = useState(false);
@@ -163,6 +189,19 @@ const EigenclusterTerminal: React.FC = () => {
   const [promptContent, setPromptContent] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
   const [analysisError, setAnalysisError] = useState<string | null>(null);
+  const [snapshotJson, setSnapshotJson] = useState<string>('');
+  const [showSnapshotModal, setShowSnapshotModal] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Add a state variable to store analysis parameters
+  const [analysisParams, setAnalysisParams] = useState<AnalysisParams>({
+    startYear: '2000',
+    endYear: '2025',
+    clusterStart: 1,
+    clusterEnd: 3,
+    periodicity: 5,
+    model: 'deepseek_chat' as ModelType
+  });
 
   useEffect(() => {
     const savedState = localStorage.getItem('analysisState');
@@ -339,13 +378,16 @@ const EigenclusterTerminal: React.FC = () => {
     }
   };
 
-  const handleAnalysis = async (params: AnalysisParams) => {
-    setAnalysisError(null); // Clear previous errors
+  const handleAnalysis = async (params: AnalysisParams, loadPreset?: string) => {
+    setAnalysisError(null);
     const controller = new AbortController();
     setAbortController(controller);
     setIsAnalyzing(true);
     setCurrentModel(params.model);
-    setActiveTab('json');
+    setActiveTab('data');
+    
+    // Store the parameters in state
+    setAnalysisParams(params);
 
     // Set isReasoning for both deepseek and o1-mini
     if (params.model === 'deepseek' || params.model === 'o1-mini') {
@@ -627,32 +669,221 @@ const EigenclusterTerminal: React.FC = () => {
     setApiStatus('idle');
   };
 
-  // Add a useEffect to handle chart generation from JSON
-  useEffect(() => {
-    if (activeTab === 'chart' && jsonEditorContent) {
+  // First, let's modify the tab selection handler to force chart regeneration
+  const handleTabChange = (tab: string) => {
+    setActiveTab(tab);
+    
+    // When switching to chart tab, explicitly regenerate chart data from current editor content
+    if (tab === 'chart' && jsonEditorContent) {
       try {
+        console.log('Tab changed to chart - forcing chart data regeneration');
         const parsedJson = JSON.parse(jsonEditorContent);
-        if (parsedJson.clusters) {
+        
+        if (parsedJson && parsedJson.clusters) {
           const chartData = transformDataForChart(parsedJson);
-          setResult(prev => ({
-            ...prev,
-            timeSeriesData: chartData,
-            metadata: parsedJson.metadata,
-            clusters: parsedJson.clusters,
-            content: jsonEditorContent
-          }));
+          
+          console.log('New chart data generated:', chartData.length > 0 ? chartData.length + ' periods' : 'empty data');
+          
+          if (chartData && chartData.length > 0) {
+            setResult(prev => ({
+              ...prev,
+              timeSeriesData: chartData,
+              metadata: parsedJson.metadata || {},
+              clusters: parsedJson.clusters || {}
+            }));
+          }
+        } else {
+          console.warn('Cannot generate chart: JSON missing clusters data');
         }
       } catch (e) {
-        console.log('Invalid JSON for chart generation');
+        console.error('Error regenerating chart data:', e);
       }
     }
-  }, [activeTab, jsonEditorContent]);
+  };
+
+  // Add this handler:
+  const handleParameterChange = (updatedParams: AnalysisParams) => {
+    setAnalysisParams(updatedParams);
+    if (updatedParams.context !== undefined) {
+      setActiveContext(updatedParams.context);
+    }
+  };
+
+  // First, let's update the generateStateJson function to get values from the UI:
+  const generateStateJson = () => {
+    // Capture current state
+    const stateToSave: SavedState = {
+      version: '1.0',
+      timestamp: new Date().toISOString(),
+      analysisParams: {
+        startYear: analysisParams.startYear.toString(),
+        endYear: analysisParams.endYear.toString(),
+        clusterStart: analysisParams.clusterStart,
+        clusterEnd: analysisParams.clusterEnd,
+        periodicity: analysisParams.periodicity,
+        context: activeContext || undefined,
+        model: analysisParams.model,
+      },
+      result,
+      activeTab,
+      selectedPoint: activeContext,
+      chatMessages,
+    };
+    
+    // Return pretty JSON
+    return JSON.stringify(stateToSave, null, 2);
+  };
+  
+  // Update show modal function to generate JSON first
+  const handleShowExportModal = () => {
+    const jsonString = generateStateJson();
+    setSnapshotJson(jsonString);
+    setShowSnapshotModal(true);
+  };
+  
+  // Update export function to use the same JSON generator
+  const exportAppState = () => {
+    const jsonString = generateStateJson();
+    
+    // Create a Blob and download it
+    const blob = new Blob([jsonString], { type: 'application/json' });
+    saveAs(blob, `eigenclusters-snapshot-${new Date().toISOString().slice(0,19).replace(/:/g,'-')}.json`);
+    
+    // Also set in state for copying
+    setSnapshotJson(jsonString);
+  };
+  
+  // Update the import function
+  const importAppState = (jsonString: string) => {
+    try {
+      // Step 1: Parse the JSON
+      const parsed = JSON.parse(jsonString) as SavedState;
+      console.log("Parsed state from JSON:", parsed);
+      
+      if (!parsed.version) {
+        throw new Error('Invalid snapshot format: missing version');
+      }
+      
+      // Step 2: Update all state in one go
+      
+      // Parameters
+      if (parsed.analysisParams) {
+        setAnalysisParams({
+          startYear: parsed.analysisParams.startYear,
+          endYear: parsed.analysisParams.endYear,
+          clusterStart: Number(parsed.analysisParams.clusterStart),
+          clusterEnd: Number(parsed.analysisParams.clusterEnd),
+          periodicity: Number(parsed.analysisParams.periodicity),
+          model: parsed.analysisParams.model,
+          context: parsed.analysisParams.context
+        });
+        
+        setCurrentModel(parsed.analysisParams.model);
+      }
+      
+      // Result - this is the most important part for rendering
+      if (parsed.result) {
+        // Set result state directly 
+        setResult(parsed.result);
+        
+        // Set editor content
+        if (typeof parsed.result.content === 'string') {
+          setJsonEditorContent(parsed.result.content);
+        } else {
+          setJsonEditorContent(JSON.stringify(parsed.result, null, 2));
+        }
+      }
+      
+      // Set active tab
+      if (parsed.activeTab) {
+        // Normalize tab name
+        let tabName = parsed.activeTab === 'json' ? 'data' : parsed.activeTab;
+        setActiveTab(tabName as any);
+      }
+      
+      // Step 3: Update UI state
+      setIsAnalyzing(false);
+      setIsThinking(false);
+      setIsReasoning(false);
+      setApiStatus('idle');
+      
+      // Update parameter component via event
+      const event = new CustomEvent('reset-parameters', { 
+        detail: parsed.analysisParams
+      });
+      document.dispatchEvent(event);
+      
+    } catch (err) {
+      console.error('Failed to import snapshot:', err);
+      setError(`Failed to import snapshot: ${err instanceof Error ? err.message : 'Invalid format'}`);
+    }
+  };
+  
+  // This is the handler for file upload
+  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const content = e.target?.result as string;
+      if (content) {
+        importAppState(content);
+      }
+    };
+    reader.readAsText(file);
+    
+    // Reset the input
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  // Add copy to clipboard function
+  const copySnapshotToClipboard = () => {
+    navigator.clipboard.writeText(snapshotJson)
+      .then(() => {
+        // Show success message
+        setBootSequence(prev => [...prev, "STATE COPIED TO CLIPBOARD"]);
+        setTimeout(() => setShowSnapshotModal(false), 1000);
+      })
+      .catch(err => {
+        console.error('Failed to copy:', err);
+        setError('Failed to copy to clipboard');
+      });
+  };
 
   return (
     <div className="min-h-screen bg-black p-8 font-mono text-white">
       <pre className="mb-8">{ASCII_LOGO}</pre>
       
       <div className="mb-8">
+        {/* Add state management buttons at the top level */}
+        <div className="flex justify-end mb-4 gap-2">
+          <button
+            onClick={handleShowExportModal}
+            className="px-4 py-2 text-xs border border-white/20 hover:bg-white/10"
+            title="Save current analysis state"
+          >
+            SAVE STATE
+          </button>
+          
+          <button
+            onClick={() => fileInputRef.current?.click()}
+            className="px-4 py-2 text-xs border border-white/20 hover:bg-white/10"
+            title="Load saved analysis state from a file"
+          >
+            LOAD STATE
+          </button>
+          <input
+            type="file"
+            ref={fileInputRef}
+            onChange={handleFileUpload}
+            accept=".json"
+            className="hidden"
+          />
+        </div>
+        
         {bootSequence.map((message, i) => (
           <div key={i} className={`mb-1 ${
             message?.startsWith?.('ERROR:') 
@@ -672,6 +903,7 @@ const EigenclusterTerminal: React.FC = () => {
             isAnalyzing={isAnalyzing}
             onStop={handleStop}
             error={analysisError}
+            onParameterChange={handleParameterChange}
           />
           
           {isReasoning && (currentModel === 'deepseek' || currentModel === 'o1-mini') && (
@@ -680,164 +912,158 @@ const EigenclusterTerminal: React.FC = () => {
             </div>
           )}
           
-          {(apiStatus !== 'idle' || result || streamingOutput) && (
-            <div className="border border-white">
-              <div className="flex border-b border-white/20">
-                {['chart', 'json', 'clusters', 'about', 'prompt'].map((tab) => (
-                  <button 
-                    key={tab}
-                    className={`px-4 py-2 ${
-                      activeTab === tab ? 'bg-white/10' : ''
-                    } ${
-                      isAnalyzing && tab !== activeTab ? 'opacity-50 cursor-not-allowed' : ''
-                    }`}
-                    onClick={() => setActiveTab(tab)}
-                    disabled={isAnalyzing && tab !== activeTab}
-                  >
-                    {tab.toUpperCase()}
-                  </button>
-                ))}
-              </div>
-
-              {activeTab === 'chart' && result?.timeSeriesData && (
-                <div className="p-4">
-                  <AnalysisChart 
-                    data={result.timeSeriesData}
-                    onPointSelect={handleChartPointSelect}
-                  />
-                </div>
-              )}
-
-              {activeTab === 'json' && (
-                <div className="p-4">
-                  <div className="mb-4">
-                    <h2 className="text-xl">JSON Output</h2>
-                  </div>
-                  <Editor
-                    height="600px"
-                    defaultLanguage="json"
-                    value={jsonEditorContent}
-                    theme="vs-dark"
-                    options={{
-                      minimap: { enabled: false },
-                      fontSize: 14,
-                      wordWrap: 'on',
-                      readOnly: true,
-                      domReadOnly: true,
-                      cursorStyle: 'line'
-                    }}
-                  />
-                </div>
-              )}
-
-              {activeTab === 'clusters' && (
-                <div className="p-4">
-                  <h2 className="text-xl mb-4">Top 20 Cultural Eigenclusters</h2>
-                  <div className="space-y-2">
-                    {result?.metadata?.top_20_clusters?.map((cluster: string, index: number) => {
-                      const { name, trend, percentage } = formatClusterName(cluster);
-                      return (
-                        <div 
-                          key={index}
-                          className="flex gap-2 items-center"
-                        >
-                          <span className="opacity-50 w-8">{index + 1}.</span>
-                          <span>{name}</span>
-                          {trend && (
-                            <span className={`ml-2 ${
-                              trend === '↗' ? 'text-green-500' :
-                              trend === '↘' ? 'text-red-500' :
-                              'text-blue-500'
-                            }`}>
-                              {trend}
-                            </span>
-                          )}
-                          {percentage && (
-                            <span className="ml-2 opacity-50">
-                              ({percentage}%)
-                            </span>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                  {(!result?.metadata?.top_20_clusters || result.metadata.top_20_clusters.length === 0) && (
-                    <div className="text-white/50">
-                      No clusters available
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {activeTab === 'about' && (
-                <div className="p-4">
-                  <div className="prose prose-invert prose-sm max-w-none">
-                    <ReactMarkdown>{ABOUT_CONTENT}</ReactMarkdown>
-                  </div>
-                </div>
-              )}
-
-              {activeTab === 'prompt' && (
-                <div className="p-4">
-                  <div className="prose prose-invert max-w-none">
-                    <div className="space-y-2 text-sm leading-relaxed">
-                      {promptContent.split('\n\n').map((paragraph, index) => (
-                        <p key={index} className="text-gray-300 font-light">
-                          {paragraph}
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          )}
-
-          {activeContext && (
-            <div className="border border-white p-4">
-              <div className="mb-4">
-                <h3 className="text-lg font-bold mb-2">
-                  {activeContext.clusterName} - {activeContext.year}
-                </h3>
-                <p className="mb-2">{activeContext.description}</p>
-                <ul className="list-disc list-inside">
-                  {activeContext.manifestations.map((m, i) => (
-                    <li key={i}>{m}</li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="space-y-4 mb-4">
-                {chatMessages.map((message, i) => (
-                  <div 
-                    key={i}
-                    className={`p-2 ${
-                      message.role === 'assistant' ? 'bg-white/10' : ''
-                    }`}
-                  >
-                    <strong>{message.role === 'assistant' ? 'AI: ' : 'You: '}</strong>
-                    {message.content}
-                  </div>
-                ))}
-              </div>
-
-              <form onSubmit={handleChatSubmit} className="flex gap-2">
-                <input
-                  type="text"
-                  value={currentInput}
-                  onChange={(e) => setCurrentInput(e.target.value)}
-                  className="flex-1 bg-white/10 p-2 border border-white/20"
-                  placeholder="Ask about this cluster..."
-                />
+          <div className="border border-white">
+            <div className="flex border-b border-white/20">
+              {['chart', 'data', 'clusters', 'about', 'prompt'].map((tab) => (
                 <button 
-                  type="submit"
-                  className="px-4 py-2 bg-white/10 hover:bg-white/20"
+                  key={tab}
+                  className={`px-4 py-2 ${
+                    activeTab === tab ? 'bg-white/10' : ''
+                  } ${
+                    isAnalyzing && tab !== activeTab ? 'opacity-50 cursor-not-allowed' : ''
+                  }`}
+                  onClick={() => handleTabChange(tab)}
+                  disabled={isAnalyzing && tab !== activeTab}
                 >
-                  Send
+                  {tab.toUpperCase()}
                 </button>
-              </form>
+              ))}
             </div>
-          )}
+
+            {activeTab === 'chart' && result?.timeSeriesData && (
+              <div className="p-4">
+                <AnalysisChart 
+                  data={result.timeSeriesData}
+                  onPointSelect={handleChartPointSelect}
+                />
+              </div>
+            )}
+
+            {activeTab === 'data' && (
+              <div className="p-4">
+                <div className="mb-4">
+                  <h2 className="text-xl">JSON Output</h2>
+                  {isAnalyzing && <div className="text-sm text-green-500">Streaming data...</div>}
+                </div>
+                <Editor
+                  height="600px"
+                  defaultLanguage="json"
+                  value={jsonEditorContent}
+                  theme="vs-dark"
+                  options={{
+                    minimap: { enabled: false },
+                    fontSize: 14,
+                    wordWrap: 'on',
+                    readOnly: true,
+                    domReadOnly: true,
+                    cursorStyle: 'line'
+                  }}
+                />
+              </div>
+            )}
+
+            {activeTab === 'clusters' && (
+              <div className="p-4">
+                <h2 className="text-xl mb-4">Top 20 Cultural Eigenclusters</h2>
+                <div className="space-y-2">
+                  {result?.metadata?.top_20_clusters?.map((cluster: string, index: number) => {
+                    const { name, trend, percentage } = formatClusterName(cluster);
+                    return (
+                      <div 
+                        key={index}
+                        className="flex gap-2 items-center"
+                      >
+                        <span className="opacity-50 w-8">{index + 1}.</span>
+                        <span>{name}</span>
+                        {trend && (
+                          <span className={`ml-2 ${
+                            trend === '↗' ? 'text-green-500' :
+                            trend === '↘' ? 'text-red-500' :
+                            'text-blue-500'
+                          }`}>
+                            {trend}
+                          </span>
+                        )}
+                        {percentage && (
+                          <span className="ml-2 opacity-50">
+                            ({percentage}%)
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+                {(!result?.metadata?.top_20_clusters || result.metadata.top_20_clusters.length === 0) && (
+                  <div className="text-white/50">
+                    No clusters available
+                  </div>
+                )}
+              </div>
+            )}
+
+            {activeTab === 'about' && (
+              <div className="p-4">
+                <div className="prose prose-invert prose-sm max-w-none">
+                  <ReactMarkdown>{ABOUT_CONTENT}</ReactMarkdown>
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'prompt' && (
+              <div className="p-4">
+                <div className="prose prose-invert max-w-none">
+                  <div className="space-y-2 text-sm leading-relaxed">
+                    {promptContent.split('\n\n').map((paragraph, index) => (
+                      <p key={index} className="text-gray-300 font-light">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Modal for copying JSON */}
+      {showSnapshotModal && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+          <div className="bg-black border border-white/20 p-6 max-w-2xl w-full max-h-[80vh] overflow-auto">
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-lg">Export State</h3>
+              <button 
+                onClick={() => setShowSnapshotModal(false)}
+                className="opacity-50 hover:opacity-100"
+              >
+                ×
+              </button>
+            </div>
+            
+            <p className="mb-4 text-sm opacity-70">
+              This JSON represents the current analysis state. You can save it and load it later to restore the exact same analysis view.
+            </p>
+            
+            <div className="flex gap-2 mb-4">
+              <button
+                onClick={copySnapshotToClipboard}
+                className="px-4 py-2 text-xs border border-white/20 hover:bg-white/10"
+              >
+                COPY TO CLIPBOARD
+              </button>
+              
+              <button
+                onClick={exportAppState}
+                className="px-4 py-2 text-xs border border-white/20 hover:bg-white/10"
+              >
+                DOWNLOAD JSON
+              </button>
+            </div>
+            
+            <div className="border border-white/10 bg-black/30 p-2 rounded h-64 overflow-auto text-xs">
+              <pre>{snapshotJson}</pre>
+            </div>
+          </div>
         </div>
       )}
     </div>

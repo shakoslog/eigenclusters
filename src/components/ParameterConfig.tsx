@@ -9,6 +9,7 @@ interface ParameterConfigProps {
   onStop: () => void;
   onPresetSelect: (preset: PresetConfig | null) => void;
   error?: string;
+  onParameterChange?: (params: AnalysisParams) => void;
 }
 
 interface AnalysisParams {
@@ -74,7 +75,8 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
   isAnalyzing, 
   onStop, 
   onPresetSelect,
-  error 
+  error,
+  onParameterChange
 }) => {
   const [mounted, setMounted] = useState(false);
   const [params, setParams] = useState<AnalysisParams>({
@@ -110,6 +112,36 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
     setTokenEstimate(estimate);
     setExceedsLimit(estimate > getModelTokenLimit(params.model));
   }, [params.clusterStart, params.clusterEnd, params.model]);
+
+  // Add this near the top of your component function
+  React.useEffect(() => {
+    const handleResetParameters = (e: Event) => {
+      const detail = (e as CustomEvent).detail;
+      if (detail) {
+        console.log("Resetting parameters to:", detail);
+        setParams({
+          startYear: detail.startYear,
+          endYear: detail.endYear,
+          clusterStart: detail.clusterStart,
+          clusterEnd: detail.clusterEnd,
+          periodicity: detail.periodicity,
+          model: detail.model,
+        });
+        
+        if (detail.context) {
+          setContext(detail.context);
+        }
+      }
+    };
+
+    // Add event listener
+    document.addEventListener('reset-parameters', handleResetParameters);
+    
+    // Clean up
+    return () => {
+      document.removeEventListener('reset-parameters', handleResetParameters);
+    };
+  }, []);
 
   // Don't render until mounted
   if (!mounted) {
@@ -163,10 +195,14 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
       );
     }
 
-    setParams(prev => ({
-      ...prev,
-      ...update
-    }));
+    // Update local state
+    const newParams = { ...params, ...update };
+    setParams(newParams);
+    
+    // Notify parent component
+    if (onParameterChange) {
+      onParameterChange(newParams);
+    }
   };
 
   const handlePresetSelect = (presetId: string) => {
@@ -277,10 +313,12 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block mb-2">Start Year</label>
-            <input
-              type="text"
+            <NumericFormat 
               value={params.startYear}
-              onChange={(e) => handleYearChange('startYear', e.target.value)}
+              onValueChange={(values) => {
+                const newValue = values.value;
+                handleParameterChange({ startYear: newValue });
+              }}
               className={`w-full p-2 bg-white/10 ${
                 isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
               }`}
@@ -290,10 +328,12 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
           </div>
           <div>
             <label className="block mb-2">End Year</label>
-            <input
-              type="text"
+            <NumericFormat 
               value={params.endYear}
-              onChange={(e) => handleYearChange('endYear', e.target.value)}
+              onValueChange={(values) => {
+                const newValue = values.value;
+                handleParameterChange({ endYear: newValue });
+              }}
               className={`w-full p-2 bg-white/10 ${
                 isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
               }`}
@@ -305,9 +345,9 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
             <label className="block mb-2">Cluster Start</label>
             <input
               type="number"
-              value={params.clusterStart}
-              onChange={(e) => handleClusterChange('clusterStart', e.target.value)}
               min="1"
+              value={params.clusterStart}
+              onChange={(e) => handleParameterChange({ clusterStart: parseInt(e.target.value) || 1 })}
               className={`w-full p-2 bg-white/10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none ${
                 isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
               }`}
@@ -319,9 +359,9 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
             <label className="block mb-2">Cluster End</label>
             <input
               type="number"
+              min={params.clusterStart + 1}
               value={params.clusterEnd}
-              onChange={(e) => handleClusterChange('clusterEnd', e.target.value)}
-              min={params.clusterStart ? params.clusterStart + 1 : 1}
+              onChange={(e) => handleParameterChange({ clusterEnd: parseInt(e.target.value) || params.clusterStart + 1 })}
               className={`w-full p-2 bg-white/10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none ${
                 isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
               }`}
@@ -334,7 +374,7 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
             <input
               type="number"
               value={params.periodicity}
-              onChange={(e) => handleParameterChange({ periodicity: parseInt(e.target.value) })}
+              onChange={(e) => handleParameterChange({ periodicity: parseInt(e.target.value) || 1 })}
               className={`w-full p-2 bg-white/10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none ${isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'}`}
               disabled={isAnalyzing}
             />
@@ -343,7 +383,7 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
             <label className="block mb-2">Model</label>
             <select
               value={params.model}
-              onChange={(e) => handleModelChange(e.target.value as ModelType)}
+              onChange={(e) => handleParameterChange({ model: e.target.value as ModelType })}
               className={`w-full p-2 bg-white/10 ${isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'}`}
               disabled={isAnalyzing}
             >
@@ -366,7 +406,10 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
           <label className="block mb-2">Context (optional)</label>
           <textarea
             value={context}
-            onChange={(e) => setContext(e.target.value)}
+            onChange={(e) => {
+              setContext(e.target.value);
+              handleParameterChange({ context: e.target.value });
+            }}
             className={`w-full p-2 bg-white/10 h-24 ${isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'}`}
             placeholder="Add additional context to condition the analysis..."
             disabled={isAnalyzing}
