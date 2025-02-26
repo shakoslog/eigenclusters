@@ -7,7 +7,7 @@ interface ParameterConfigProps {
   onSubmit: (params: AnalysisParams) => void;
   isAnalyzing: boolean;
   onStop: () => void;
-  onPresetSelect: (preset: PresetConfig | null) => void;
+  onPresetSelect: (preset: PresetConfig | null, clearResult?: boolean) => void;
   error?: string;
   onParameterChange?: (params: AnalysisParams) => void;
 }
@@ -166,7 +166,7 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
   ) => {
     if (clearPreset) {
       setSelectedPreset('');
-      onPresetSelect(null);
+      onPresetSelect(null, false);
     }
 
     // Validate year inputs
@@ -221,7 +221,7 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
       setContext(preset.parameters.context || '');
       
       // Trigger the preset selection
-      onPresetSelect(preset);
+      onPresetSelect(preset, false);
     }
   };
 

@@ -134,7 +134,7 @@ interface ParameterConfigProps {
   onSubmit: (params: AnalysisParams) => void;
   isAnalyzing: boolean;
   onStop: () => void;
-  onPresetSelect: (preset: PresetConfig | null) => void;  // Update to allow null
+  onPresetSelect: (preset: PresetConfig | null, clearResult?: boolean) => void;
   onParameterChange?: (params: AnalysisParams) => void;
 }
 
@@ -202,6 +202,9 @@ const EigenclusterTerminal: React.FC = () => {
     periodicity: 5,
     model: 'deepseek_chat' as ModelType
   });
+
+  // Add a new state variable to track if the state is consistent/saveable
+  const [isStateSaveable, setIsStateSaveable] = useState(false);
 
   useEffect(() => {
     const savedState = localStorage.getItem('analysisState');
@@ -550,10 +553,12 @@ const EigenclusterTerminal: React.FC = () => {
       setApiStatus('idle');
       setIsThinking(false);
       setBootSequence(prev => [...prev, "ANALYSIS COMPLETE"]);
+      setIsStateSaveable(true);
 
     } catch (error) {
       // Only set the analysis error for unexpected errors too
       setAnalysisError(error instanceof Error ? error.message : 'An unexpected error occurred');
+      setIsStateSaveable(false);
     } finally {
       setIsReasoning(false);
       setIsAnalyzing(false);
@@ -646,7 +651,7 @@ const EigenclusterTerminal: React.FC = () => {
       });
   }, []);
 
-  const handlePresetSelect = (preset: PresetConfig | null) => {
+  const handlePresetSelect = (preset: PresetConfig | null, clearResult: boolean = true) => {
     // Don't allow preset changes during analysis
     if (isAnalyzing) {
       return;
@@ -656,8 +661,8 @@ const EigenclusterTerminal: React.FC = () => {
       // Set the cached result
       setResult(preset.cachedResult);
       setJsonEditorContent(JSON.stringify(preset.cachedResult, null, 2));
-    } else {
-      // Clear the cached result when no preset is selected
+    } else if (clearResult) {
+      // Only clear the cached result if explicitly requested
       setResult(null);
       setJsonEditorContent('');
     }
@@ -667,6 +672,9 @@ const EigenclusterTerminal: React.FC = () => {
     setIsThinking(false);
     setIsReasoning(false);
     setApiStatus('idle');
+    
+    // A preset selection creates a consistent state
+    setIsStateSaveable(preset !== null);
   };
 
   // First, let's modify the tab selection handler to force chart regeneration
@@ -707,6 +715,9 @@ const EigenclusterTerminal: React.FC = () => {
     if (updatedParams.context !== undefined) {
       setActiveContext(updatedParams.context);
     }
+    
+    // If parameters change after analysis, state is no longer consistent
+    setIsStateSaveable(false);
   };
 
   // First, let's update the generateStateJson function to get values from the UI:
@@ -858,12 +869,19 @@ const EigenclusterTerminal: React.FC = () => {
       <pre className="mb-8">{ASCII_LOGO}</pre>
       
       <div className="mb-8">
-        {/* Add state management buttons at the top level */}
+        {/* Update the save state button to be disabled when not saveable */}
         <div className="flex justify-end mb-4 gap-2">
           <button
             onClick={handleShowExportModal}
-            className="px-4 py-2 text-xs border border-white/20 hover:bg-white/10"
-            title="Save current analysis state"
+            className={`px-4 py-2 text-xs border border-white/20 ${
+              isStateSaveable 
+                ? 'hover:bg-white/10 cursor-pointer' 
+                : 'opacity-50 cursor-not-allowed'
+            }`}
+            title={isStateSaveable 
+              ? "Save current analysis state" 
+              : "Complete an analysis to enable saving"}
+            disabled={!isStateSaveable}
           >
             SAVE STATE
           </button>
