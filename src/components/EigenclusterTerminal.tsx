@@ -9,10 +9,7 @@ import { PresetConfig } from '@/lib/presets';
 import Editor from "@monaco-editor/react";
 import { saveAs } from 'file-saver';
 
-const ASCII_LOGO = `
-
-
-[ CULTURAL EIGENCLUSTERS ]`;
+const ASCII_LOGO = ``;
 
 // Update the ModelType to include all supported models
 export type ModelType = 'claude' | 'deepseek' | 'deepseek_chat' | 'gpt4o' | 'gpt4o-mini' | 'o1-mini';

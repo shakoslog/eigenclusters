@@ -177,25 +177,8 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
       update.endYear = Math.max(-10000, Math.min(9999, parseInt(update.endYear) || 0)).toString();
     }
 
-    // Validate cluster inputs
-    if ('clusterStart' in update) {
-      update.clusterStart = Math.max(1, Math.floor(Math.abs(update.clusterStart)));
-      // Ensure clusterEnd stays greater than new clusterStart
-      if (params.clusterEnd <= update.clusterStart) {
-        setParams(prev => ({
-          ...prev,
-          clusterEnd: update.clusterStart + 1
-        }));
-      }
-    }
-    if ('clusterEnd' in update) {
-      update.clusterEnd = Math.max(
-        params.clusterStart + 1, 
-        Math.floor(Math.abs(update.clusterEnd))
-      );
-    }
-
-    // Update local state
+    // Don't restrict cluster inputs now - let validation handle this
+    // Just update the local state
     const newParams = { ...params, ...update };
     setParams(newParams);
     
@@ -259,10 +242,12 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
     if (!params.clusterStart || !params.clusterEnd) {
       messages.push("Cluster start and end must be specified");
     } else {
-      if (params.clusterStart < 1 || params.clusterEnd < 1) {
+      const start = parseInt(String(params.clusterStart));
+      const end = parseInt(String(params.clusterEnd));
+      if (start < 1 || end < 1) {
         messages.push("Clusters must be positive numbers");
       }
-      if (params.clusterEnd <= params.clusterStart) {
+      if (!isNaN(start) && !isNaN(end) && end <= start) {
         messages.push("Cluster end must be greater than cluster start");
       }
     }
@@ -283,12 +268,12 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
 
   // Update cluster input handler
   const handleClusterChange = (field: 'clusterStart' | 'clusterEnd', value: string) => {
-    const numValue = parseInt(value);
-    if (value === '' || (numValue > 0 && !isNaN(numValue))) {
-      setParams({
-        ...params,
-        [field]: value === '' ? '' : numValue
-      });
+    // Allow empty string or positive integers
+    if (value === '' || /^\d*$/.test(value)) {
+      setParams(prev => ({
+        ...prev,
+        [field]: value
+      }));
     }
   };
 
@@ -343,12 +328,13 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
           </div>
           <div>
             <label className="block mb-2">Cluster Start</label>
-            <input
-              type="number"
-              min="1"
+            <NumericFormat 
               value={params.clusterStart}
-              onChange={(e) => handleParameterChange({ clusterStart: parseInt(e.target.value) || 1 })}
-              className={`w-full p-2 bg-white/10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none ${
+              onValueChange={(values) => {
+                const newValue = values.value;
+                handleParameterChange({ clusterStart: newValue ? parseInt(newValue) : '' });
+              }}
+              className={`w-full p-2 bg-white/10 ${
                 isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
               }`}
               disabled={isAnalyzing}
@@ -357,12 +343,13 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
           </div>
           <div>
             <label className="block mb-2">Cluster End</label>
-            <input
-              type="number"
-              min={params.clusterStart + 1}
+            <NumericFormat 
               value={params.clusterEnd}
-              onChange={(e) => handleParameterChange({ clusterEnd: parseInt(e.target.value) || params.clusterStart + 1 })}
-              className={`w-full p-2 bg-white/10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none ${
+              onValueChange={(values) => {
+                const newValue = values.value;
+                handleParameterChange({ clusterEnd: newValue ? parseInt(newValue) : '' });
+              }}
+              className={`w-full p-2 bg-white/10 ${
                 isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
               }`}
               disabled={isAnalyzing}
