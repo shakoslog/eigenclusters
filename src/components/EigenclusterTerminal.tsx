@@ -412,8 +412,6 @@ const EigenclusterTerminal: React.FC = () => {
         " *** CURRENT PROMPT *** ",
         prompt,
         "===================",
-        "This is an experimental tool. Bugs are expected.",
-        "If you request too much, it will run out of tokens and crash, so don't do that",
         "",
         `[${new Date().toISOString()}] Initializing ${params.model.toUpperCase()} analysis...`,
       ]);
@@ -676,7 +674,7 @@ const EigenclusterTerminal: React.FC = () => {
 
   // First, let's modify the tab selection handler to force chart regeneration
   const handleTabChange = (tab: string) => {
-    setActiveTab(tab);
+    setActiveTab(tab as "data" | "prompt" | "about" | "chart" | "clusters");
     
     // When switching to chart tab, explicitly regenerate chart data from current editor content
     if (tab === 'chart' && jsonEditorContent) {
@@ -709,9 +707,7 @@ const EigenclusterTerminal: React.FC = () => {
   // Add this handler:
   const handleParameterChange = (updatedParams: AnalysisParams) => {
     setAnalysisParams(updatedParams);
-    if (updatedParams.context !== undefined) {
-      setActiveContext(updatedParams.context);
-    }
+    setActiveContext(updatedParams.context || null);
     
     // If parameters change after analysis, state is no longer consistent
     setIsStateSaveable(false);
@@ -779,9 +775,13 @@ const EigenclusterTerminal: React.FC = () => {
         setAnalysisParams({
           startYear: parsed.analysisParams.startYear,
           endYear: parsed.analysisParams.endYear,
-          clusterStart: Number(parsed.analysisParams.clusterStart),
-          clusterEnd: Number(parsed.analysisParams.clusterEnd),
-          periodicity: Number(parsed.analysisParams.periodicity),
+          clusterStart: typeof parsed.analysisParams.clusterStart === 'string' ? 
+            parseInt(parsed.analysisParams.clusterStart) : 
+            parsed.analysisParams.clusterStart,
+          clusterEnd: typeof parsed.analysisParams.clusterEnd === 'string' ? 
+            parseInt(parsed.analysisParams.clusterEnd) : 
+            parsed.analysisParams.clusterEnd,
+          periodicity: parsed.analysisParams.periodicity,
           model: parsed.analysisParams.model,
           context: parsed.analysisParams.context
         });
@@ -913,12 +913,12 @@ const EigenclusterTerminal: React.FC = () => {
       {isBooted && (
         <div className="space-y-8">
           <ParameterConfig 
-            onSubmit={handleAnalysis}
+            onSubmit={(params: AnalysisParams) => handleAnalysis(params)}
             onPresetSelect={handlePresetSelect}
             isAnalyzing={isAnalyzing}
             onStop={handleStop}
-            error={analysisError}
-            onParameterChange={handleParameterChange}
+            error={analysisError || undefined}
+            onParameterChange={(params: AnalysisParams) => handleParameterChange(params)}
           />
           
           {isReasoning && (currentModel === 'deepseek' || currentModel === 'o1-mini') && (

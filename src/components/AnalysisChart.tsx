@@ -426,7 +426,7 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
                 scale={xScale}
                 stroke="white"
                 tickStroke="white"
-                tickFormat={tickFormatter}
+                tickFormat={(value: any) => tickFormatter(Number(value))}
                 numTicks={6}
                 tickLabelProps={() => ({
                   fill: 'white',

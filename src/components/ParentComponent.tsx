@@ -22,24 +22,30 @@ const ParentComponent = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleParameterSubmit = async (params: {
-    startYear: number;
-    endYear: number;
-    clusterStart: number;
-    clusterEnd: number;
-    periodicity: number;
-  }) => {
+  const handleParameterSubmit = async (params: AnalysisParams) => {
     setLoading(true);
     setError(null);
     
     try {
+      const processedParams = {
+        startYear: params.startYear,
+        endYear: params.endYear,
+        clusterStart: typeof params.clusterStart === 'string' ? 
+          parseInt(params.clusterStart) : params.clusterStart,
+        clusterEnd: typeof params.clusterEnd === 'string' ? 
+          parseInt(params.clusterEnd) : params.clusterEnd,
+        periodicity: params.periodicity,
+        model: params.model,
+        context: params.context
+      };
+
       const response = await fetch('/api/analysis', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          ...params,
+          ...processedParams,
           analysisType: 'TIME_SERIES'
         }),
       });

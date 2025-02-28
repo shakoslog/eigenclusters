@@ -170,11 +170,11 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
     }
 
     // Validate year inputs
-    if ('startYear' in update) {
-      update.startYear = Math.max(-10000, Math.min(9999, parseInt(update.startYear) || 0)).toString();
+    if ('startYear' in update && update.startYear !== undefined) {
+      update.startYear = Math.max(-10000, Math.min(9999, parseInt(update.startYear.toString()) || 0)).toString();
     }
-    if ('endYear' in update) {
-      update.endYear = Math.max(-10000, Math.min(9999, parseInt(update.endYear) || 0)).toString();
+    if ('endYear' in update && update.endYear !== undefined) {
+      update.endYear = Math.max(-10000, Math.min(9999, parseInt(update.endYear.toString()) || 0)).toString();
     }
 
     // Don't restrict cluster inputs now - let validation handle this
@@ -194,12 +194,12 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
     if (preset) {
       // Update form state without clearing preset
       handleParameterChange({
-        startYear: preset.parameters.startYear,
-        endYear: preset.parameters.endYear,
+        startYear: preset.parameters.startYear.toString(),
+        endYear: preset.parameters.endYear.toString(),
         clusterStart: preset.parameters.clusterStart,
         clusterEnd: preset.parameters.clusterEnd,
         periodicity: preset.parameters.periodicity,
-        model: preset.parameters.model as ModelType,
+        model: preset.parameters.model
       }, false);
       setContext(preset.parameters.context || '');
       
@@ -332,7 +332,9 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
               value={params.clusterStart}
               onValueChange={(values) => {
                 const newValue = values.value;
-                handleParameterChange({ clusterStart: newValue ? parseInt(newValue) : '' });
+                handleParameterChange({ 
+                  clusterStart: newValue === '' ? '' : Number(newValue)
+                });
               }}
               className={`w-full p-2 bg-white/10 ${
                 isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
@@ -347,7 +349,9 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
               value={params.clusterEnd}
               onValueChange={(values) => {
                 const newValue = values.value;
-                handleParameterChange({ clusterEnd: newValue ? parseInt(newValue) : '' });
+                handleParameterChange({ 
+                  clusterEnd: newValue === '' ? '' : Number(newValue) 
+                });
               }}
               className={`w-full p-2 bg-white/10 ${
                 isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'

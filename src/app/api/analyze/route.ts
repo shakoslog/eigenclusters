@@ -132,7 +132,7 @@ const createStreamHandlerOpenAI = (stream: any) => {
         console.error('OpenAI stream processing error:', error);
         if (!controllerClosed) {
           controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-            error: "Stream processing error: " + error.message 
+            error: "Stream processing error: " + (error instanceof Error ? error.message : String(error))
           })}\n\n`));
           controller.close();
           controllerClosed = true;
@@ -209,7 +209,8 @@ const MODEL_CONFIGS = {
   'deepseek': {
     provider: 'deepseek',
     model: 'deepseek-reasoner',
-    maxTokens: 8000
+    maxTokens: 8000,
+    temperature: 0
   },
   'gpt4o': {
     provider: 'openai',
@@ -231,7 +232,8 @@ const MODEL_CONFIGS = {
     maxTokens: 65536,
     temperature: 1,
     stream: true,
-    store: true
+    store: true,
+    reasoning_effort: 'high'
   }
 } as const;
 
@@ -465,8 +467,10 @@ export async function POST(request: Request) {
         stream: true,
         temperature: modelConfig.temperature,
         max_completion_tokens: modelConfig.maxTokens,
-        reasoning_effort: modelConfig.reasoning_effort,
-        store: modelConfig.store,
+        ...(model === 'o1-mini' ? {
+          reasoning_effort: 'high',
+          store: true
+        } : {})
       });
 
       const customStream = createStreamHandlerOpenAI(stream);
