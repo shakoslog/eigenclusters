@@ -163,7 +163,7 @@ interface SavedState {
 }
 
 const EigenclusterTerminal: React.FC = () => {
-  const [isBooted, setIsBooted] = useState(false);
+  const [isBooted, setIsBooted] = useState(true);
   const [bootSequence, setBootSequence] = useState<string[]>([]);
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [streamingOutput, setStreamingOutput] = useState<string>('');
@@ -180,7 +180,7 @@ const EigenclusterTerminal: React.FC = () => {
   const [isThinking, setIsThinking] = useState(false);
   const [streamingClusters, setStreamingClusters] = useState<string[]>([]);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [currentModel, setCurrentModel] = useState<ModelType>('deepseek');
+  const [currentModel, setCurrentModel] = useState<ModelType>('gpt4o');
   const [abortController, setAbortController] = useState<AbortController | null>(null);
   const [isReasoning, setIsReasoning] = useState(false);
   const [promptContent, setPromptContent] = useState<string>('');
@@ -197,11 +197,16 @@ const EigenclusterTerminal: React.FC = () => {
     clusterStart: 1,
     clusterEnd: 3,
     periodicity: 5,
-    model: 'deepseek_chat' as ModelType
+    model: 'gpt4o' as ModelType
   });
 
   // Add a new state variable to track if the state is consistent/saveable
   const [isStateSaveable, setIsStateSaveable] = useState(false);
+
+  // Add these state variables
+  const [isSharing, setIsSharing] = useState(false);
+  const [shareUrl, setShareUrl] = useState<string | null>(null);
+  const [shareError, setShareError] = useState<string | null>(null);
 
   useEffect(() => {
     const savedState = localStorage.getItem('analysisState');
@@ -219,23 +224,7 @@ const EigenclusterTerminal: React.FC = () => {
 
   useEffect(() => {
     if (!isBooted) {
-      const bootMessages = [
-        "EIGENCLUSTER BIOS -- V42.42",
-        "CULTURAL ANALYSIS SYSTEM READY"
-      ];
-
-      let index = 0;
-      const interval = setInterval(() => {
-        if (index < bootMessages.length) {
-          setBootSequence(prev => [...prev, bootMessages[index]]);
-          index++;
-        } else {
-          setIsBooted(true);
-          clearInterval(interval);
-        }
-      }, 200);
-
-      return () => clearInterval(interval);
+      setIsBooted(true);
     }
   }, [isBooted]);
 
@@ -653,9 +642,26 @@ const EigenclusterTerminal: React.FC = () => {
     }
     
     if (preset) {
-      // Set the cached result
-      setResult(preset.cachedResult);
-      setJsonEditorContent(JSON.stringify(preset.cachedResult, null, 2));
+      // Set the active tab first
+      setActiveTab('chart');
+      
+      // Process the cached result to ensure it has all required properties
+      if (preset.cachedResult) {
+        const processedResult = {
+          ...preset.cachedResult,
+          // Ensure timeSeriesData is properly extracted or processed
+          timeSeriesData: preset.cachedResult.timeSeriesData || 
+            (preset.cachedResult.clusters ? transformDataForChart(preset.cachedResult) : [])
+        };
+        
+        // Set the processed result
+        setResult(processedResult);
+        
+        // Update the JSON editor content
+        setJsonEditorContent(JSON.stringify(preset.cachedResult, null, 2));
+        
+        console.log("Chart data loaded from preset:", processedResult.timeSeriesData);
+      }
     } else if (clearResult) {
       // Only clear the cached result if explicitly requested
       setResult(null);
@@ -861,6 +867,59 @@ const EigenclusterTerminal: React.FC = () => {
       });
   };
 
+  // Implement the share state logic
+  const handleShareState = async () => {
+    if (!isStateSaveable) return;
+    
+    setIsSharing(true);
+    setShareError(null);
+    
+    try {
+      // Generate a simplified state object with just the essential data
+      const stateToShare = {
+        version: '1.0',
+        timestamp: new Date().toISOString(),
+        analysisParams: {
+          startYear: analysisParams.startYear.toString(),
+          endYear: analysisParams.endYear.toString(),
+          clusterStart: analysisParams.clusterStart,
+          clusterEnd: analysisParams.clusterEnd,
+          periodicity: analysisParams.periodicity,
+          context: analysisParams.context,
+          model: analysisParams.model,
+        },
+        result: result
+      };
+      
+      // Send the state to the API
+      const response = await fetch('/api/share', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(stateToShare),
+      });
+      
+      const data = await response.json();
+      
+      if (!data.success) {
+        throw new Error(data.error || 'Failed to share state');
+      }
+      
+      // Set the share URL
+      const fullShareUrl = `${window.location.origin}${data.shareUrl}`;
+      setShareUrl(fullShareUrl);
+      
+      // Show the share modal
+      setShowSnapshotModal(true);
+    } catch (error) {
+      console.error('Error sharing state:', error);
+      setShareError(error instanceof Error ? error.message : 'Failed to share state');
+    } finally {
+      setIsSharing(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-black p-8 font-mono text-white">
       <pre className="mb-8">{ASCII_LOGO}</pre>
@@ -869,26 +928,18 @@ const EigenclusterTerminal: React.FC = () => {
         {/* Update the save state button to be disabled when not saveable */}
         <div className="flex justify-end mb-4 gap-2">
           <button
-            onClick={handleShowExportModal}
+            onClick={handleShareState}
             className={`px-4 py-2 text-xs border border-white/20 ${
               isStateSaveable 
                 ? 'hover:bg-white/10 cursor-pointer' 
                 : 'opacity-50 cursor-not-allowed'
             }`}
             title={isStateSaveable 
-              ? "Save current analysis state" 
-              : "Complete an analysis to enable saving"}
+              ? "Share current analysis state" 
+              : "Complete an analysis to enable sharing"}
             disabled={!isStateSaveable}
           >
-            SAVE STATE
-          </button>
-          
-          <button
-            onClick={() => fileInputRef.current?.click()}
-            className="px-4 py-2 text-xs border border-white/20 hover:bg-white/10"
-            title="Load saved analysis state from a file"
-          >
-            LOAD STATE
+            SHARE
           </button>
           <input
             type="file"

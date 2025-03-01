@@ -85,9 +85,9 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
     clusterStart: 1,
     clusterEnd: 3,
     periodicity: 5,
-    model: 'deepseek_chat'
+    model: 'gpt4o'
   });
-  const [model, setModel] = useState<ModelType>('deepseek_chat');
+  const [model, setModel] = useState<ModelType>('gpt4o');
   const [context, setContext] = useState<string>('');
   const [selectedPreset, setSelectedPreset] = useState<string>('');
   const [tokenEstimate, setTokenEstimate] = useState<number>(0);
@@ -102,7 +102,7 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
       clusterStart: 1,
       clusterEnd: 3,
       periodicity: 5,
-      model: 'deepseek_chat'
+      model: 'gpt4o'
     });
   }, []);
 
