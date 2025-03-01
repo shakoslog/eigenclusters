@@ -1,7 +1,11 @@
 {
-  "functions": {
-    "src/app/api/analyze/*.ts": {
-      "maxDuration": 300
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next",
+      "config": {
+        "installCommand": "npm install --legacy-peer-deps"
+      }
     }
-  }
+  ]
 }
