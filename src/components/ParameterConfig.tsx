@@ -27,23 +27,29 @@ const modelOptions = [
   { value: 'gpt4o', label: 'GPT-4o', disabled: false },
   { value: 'gpt4o-mini', label: 'GPT-4o Mini', disabled: false },
   { value: 'deepseek_chat', label: 'DeepSeek Chat', disabled: false },
+  { value: 'deepseek', label: 'DeepSeek Reasoner', disabled: false },
   { value: 'claude', label: 'Claude 3.5 Sonnet', disabled: true, disabledReason: 'Rate limited - not suitable for concurrent users' }
 ];
 
-const estimateTokensPerYear = (clusters: number) => {
+const estimateTokensPerYear = (clusters: number, startYear: string, endYear: string, periodicity: number) => {
   // Per cluster per time period:
-  const tokensPerManifestation = 100;    // Each manifestation is ~100 tokens (was 150)
+  const tokensPerManifestation = 100;    // Each manifestation is ~100 tokens
   const manifestationsPerPeriod = 4;      // 4 manifestations per period
-  const periodDescription = 150;          // Period description ~150 tokens (was 200)
-  const periodsPerCluster = 6;            // 6 time periods (2000-2025 by 5 years)
+  const periodDescription = 150;          // Period description ~150 tokens
+  
+  // Calculate number of periods based on actual range and periodicity
+  const startYearNum = parseInt(startYear);
+  const endYearNum = parseInt(endYear);
+  const years = Math.abs(endYearNum - startYearNum);
+  const periodsPerCluster = Math.ceil(years / periodicity) + 1; // +1 to include both start and end years
   
   // Per cluster fixed costs:
-  const clusterName = 20;                 // Cluster name ~20 tokens (was 25)
-  const clusterDescription = 200;         // Cluster description ~200 tokens (was 300)
+  const clusterName = 20;                 // Cluster name ~20 tokens
+  const clusterDescription = 200;         // Cluster description ~200 tokens
   
   // Metadata section
-  const metadataPerCluster = 35;          // Each cluster in metadata list ~35 tokens (was 50)
-  const metadataBase = 150;               // Base metadata text ~150 tokens (was 200)
+  const metadataPerCluster = 35;          // Each cluster in metadata list ~35 tokens
+  const metadataBase = 150;               // Base metadata text ~150 tokens
   
   // Calculate total
   const tokensPerPeriod = (tokensPerManifestation * manifestationsPerPeriod) + periodDescription;
@@ -108,10 +114,15 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
 
   // Calculate token estimate
   useEffect(() => {
-    const estimate = estimateTokensPerYear(params.clusterEnd - params.clusterStart + 1);
+    const estimate = estimateTokensPerYear(
+      params.clusterEnd - params.clusterStart + 1,
+      params.startYear,
+      params.endYear,
+      params.periodicity
+    );
     setTokenEstimate(estimate);
     setExceedsLimit(estimate > getModelTokenLimit(params.model));
-  }, [params.clusterStart, params.clusterEnd, params.model]);
+  }, [params.clusterStart, params.clusterEnd, params.startYear, params.endYear, params.periodicity, params.model]);
 
   // Add this near the top of your component function
   React.useEffect(() => {
@@ -362,12 +373,19 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
           </div>
           <div>
             <label className="block mb-2">Periodicity (years)</label>
-            <input
-              type="number"
+            <NumericFormat 
               value={params.periodicity}
-              onChange={(e) => handleParameterChange({ periodicity: parseInt(e.target.value) || 1 })}
-              className={`w-full p-2 bg-white/10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none ${isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'}`}
+              onValueChange={(values) => {
+                const newValue = values.value;
+                handleParameterChange({ 
+                  periodicity: newValue === '' ? '' : Number(newValue)
+                });
+              }}
+              className={`w-full p-2 bg-white/10 ${
+                isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
+              }`}
               disabled={isAnalyzing}
+              placeholder="Enter periodicity"
             />
           </div>
           <div>

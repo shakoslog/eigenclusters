@@ -91,6 +91,7 @@ Key Principles
 - They need not persist strongly until the end of the period
 - The timing of their peak influence should be determined by the cultural dynamics being modeled
 - For shorter time periods, look for emergent clusters that might show rapid acceleration
+- Consider for each cluster if there is a local maximum or minimum in the trajectory, which would be noteworthy to understand the rise and fall of phenomena.
 
 6. Joint Behavior and Trajectory Diversity
 - We are interested in seeing what clusters rise, and what clusters fall over time. Please think carefully about what is becoming more prominent, and what is declining over time.
