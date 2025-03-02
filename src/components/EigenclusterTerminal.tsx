@@ -162,7 +162,11 @@ interface SavedState {
   chatMessages: ChatMessage[];
 }
 
-const EigenclusterTerminal: React.FC = () => {
+// Update the component definition to accept props
+const EigenclusterTerminal: React.FC<{
+  initialSharedState?: any;
+}> = ({ initialSharedState }) => {
+  console.log("EigenclusterTerminal initializing with shared state:", initialSharedState);
   const [isBooted, setIsBooted] = useState(true);
   const [bootSequence, setBootSequence] = useState<string[]>([]);
   const [result, setResult] = useState<AnalysisResult | null>(null);
@@ -207,6 +211,57 @@ const EigenclusterTerminal: React.FC = () => {
   const [isSharing, setIsSharing] = useState(false);
   const [shareUrl, setShareUrl] = useState<string | null>(null);
   const [shareError, setShareError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (initialSharedState) {
+      console.log("Processing initialSharedState in EigenclusterTerminal");
+      
+      try {
+        // First, handle the analysis parameters
+        if (initialSharedState.analysisParams) {
+          const params = {
+            startYear: parseInt(initialSharedState.analysisParams.startYear) || 2000,
+            endYear: parseInt(initialSharedState.analysisParams.endYear) || 2030,
+            clusterStart: parseInt(initialSharedState.analysisParams.clusterStart) || 1,
+            clusterEnd: parseInt(initialSharedState.analysisParams.clusterEnd) || 3,
+            periodicity: parseInt(initialSharedState.analysisParams.periodicity) || 10,
+            model: initialSharedState.analysisParams.model || 'gpt4o',
+            context: initialSharedState.analysisParams.context || ''
+          };
+          
+          console.log("Setting analysis params to:", params);
+          
+          // Set the parameters in state
+          setAnalysisParams(params);
+          
+          // Also dispatch an event to update the UI components
+          const event = new CustomEvent('reset-parameters', { 
+            detail: params
+          });
+          document.dispatchEvent(event);
+          console.log("Dispatched reset-parameters event");
+        }
+        
+        // Then, handle the result
+        if (initialSharedState.result) {
+          console.log("Setting result from shared state");
+          setResult(initialSharedState.result);
+          setJsonEditorContent(JSON.stringify(initialSharedState.result, null, 2));
+          
+          // Set the active tab to chart to show the visualization
+          setActiveTab('chart');
+        }
+        
+        // Update boot sequence and state
+        setBootSequence(prev => [...prev, "Loaded shared analysis"]);
+        setIsStateSaveable(true);
+        
+      } catch (error) {
+        console.error('Error applying shared state:', error);
+        setBootSequence(prev => [...prev, `ERROR: Failed to apply shared state: ${error instanceof Error ? error.message : 'Unknown error'}`]);
+      }
+    }
+  }, [initialSharedState]); // Only run when initialSharedState changes
 
   useEffect(() => {
     const savedState = localStorage.getItem('analysisState');
@@ -873,6 +928,7 @@ const EigenclusterTerminal: React.FC = () => {
     
     setIsSharing(true);
     setShareError(null);
+    setShareUrl(null); // Reset any previous share URL
     
     try {
       // Generate a simplified state object with just the essential data
@@ -910,7 +966,7 @@ const EigenclusterTerminal: React.FC = () => {
       const fullShareUrl = `${window.location.origin}${data.shareUrl}`;
       setShareUrl(fullShareUrl);
       
-      // Show the share modal
+      // Show the share modal (not the export modal)
       setShowSnapshotModal(true);
     } catch (error) {
       console.error('Error sharing state:', error);
@@ -919,6 +975,69 @@ const EigenclusterTerminal: React.FC = () => {
       setIsSharing(false);
     }
   };
+
+  // Add this effect to check for shared state ID in URL
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const sharedId = urlParams.get('sharedId');
+    
+    if (sharedId) {
+      // Clear the URL parameter without refreshing the page
+      window.history.replaceState({}, document.title, window.location.pathname);
+      
+      // Load the shared state
+      loadSharedState(sharedId);
+    }
+  }, []);
+
+  // Function to load shared state from API
+  const loadSharedState = async (shareId: string) => {
+    try {
+      setBootSequence(prev => [...prev, `Loading shared analysis (ID: ${shareId})...`]);
+      
+      const response = await fetch(`/api/share/${shareId}`);
+      const data = await response.json();
+      
+      if (!data.success) {
+        throw new Error(data.error || 'Failed to load shared state');
+      }
+      
+      // Apply the shared state
+      const sharedState = data.state;
+      
+      // Set the analysis parameters
+      if (sharedState.analysisParams) {
+        setAnalysisParams({
+          startYear: sharedState.analysisParams.startYear,
+          endYear: sharedState.analysisParams.endYear,
+          clusterStart: sharedState.analysisParams.clusterStart,
+          clusterEnd: sharedState.analysisParams.clusterEnd,
+          periodicity: sharedState.analysisParams.periodicity,
+          model: sharedState.analysisParams.model || 'gpt4o',
+          context: sharedState.analysisParams.context
+        });
+      }
+      
+      // Set the result
+      if (sharedState.result) {
+        setResult(sharedState.result);
+        setJsonEditorContent(JSON.stringify(sharedState.result, null, 2));
+      }
+      
+      // Set the active tab to chart
+      setActiveTab('chart');
+      
+      setBootSequence(prev => [...prev, 'Shared analysis loaded successfully']);
+      setIsStateSaveable(true);
+      
+    } catch (error) {
+      console.error('Error loading shared state:', error);
+      setBootSequence(prev => [...prev, `ERROR: ${error instanceof Error ? error.message : 'Failed to load shared state'}`]);
+    }
+  };
+
+  // After setting analysis params in the useEffect
+  console.log("Analysis params after setting:", analysisParams);
 
   return (
     <div className="min-h-screen bg-black p-8 font-mono text-white">
@@ -1092,12 +1211,12 @@ const EigenclusterTerminal: React.FC = () => {
         </div>
       )}
 
-      {/* Modal for copying JSON */}
+      {/* Modal for sharing */}
       {showSnapshotModal && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
           <div className="bg-black border border-white/20 p-6 max-w-2xl w-full max-h-[80vh] overflow-auto">
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-lg">Export State</h3>
+              <h3 className="text-lg">Share Analysis</h3>
               <button 
                 onClick={() => setShowSnapshotModal(false)}
                 className="opacity-50 hover:opacity-100"
@@ -1106,29 +1225,48 @@ const EigenclusterTerminal: React.FC = () => {
               </button>
             </div>
             
-            <p className="mb-4 text-sm opacity-70">
-              This JSON represents the current analysis state. You can save it and load it later to restore the exact same analysis view.
-            </p>
-            
-            <div className="flex gap-2 mb-4">
-              <button
-                onClick={copySnapshotToClipboard}
-                className="px-4 py-2 text-xs border border-white/20 hover:bg-white/10"
-              >
-                COPY TO CLIPBOARD
-              </button>
-              
-              <button
-                onClick={exportAppState}
-                className="px-4 py-2 text-xs border border-white/20 hover:bg-white/10"
-              >
-                DOWNLOAD JSON
-              </button>
-            </div>
-            
-            <div className="border border-white/10 bg-black/30 p-2 rounded h-64 overflow-auto text-xs">
-              <pre>{snapshotJson}</pre>
-            </div>
+            {isSharing ? (
+              <div className="text-center py-8">
+                <div className="animate-pulse">Generating share link...</div>
+              </div>
+            ) : shareError ? (
+              <div className="text-red-500 mb-4">
+                Error: {shareError}
+              </div>
+            ) : shareUrl ? (
+              <>
+                <p className="mb-4 text-sm opacity-70">
+                  Share this link with others to let them view your analysis:
+                </p>
+                
+                <div className="flex items-center gap-2 mb-4 bg-black/30 p-2 border border-white/10 rounded">
+                  <input
+                    type="text"
+                    value={shareUrl}
+                    readOnly
+                    className="bg-transparent flex-1 outline-none"
+                    onClick={(e) => e.currentTarget.select()}
+                  />
+                  <button
+                    onClick={() => {
+                      navigator.clipboard.writeText(shareUrl);
+                      setBootSequence(prev => [...prev, "SHARE URL COPIED TO CLIPBOARD"]);
+                    }}
+                    className="px-3 py-1 text-xs border border-white/20 hover:bg-white/10"
+                  >
+                    COPY
+                  </button>
+                </div>
+                
+                <p className="text-xs opacity-50 mt-4">
+                  This shared link will be available for 30 days.
+                </p>
+              </>
+            ) : (
+              <div className="text-center py-8">
+                <div className="text-red-500">Something went wrong. Please try again.</div>
+              </div>
+            )}
           </div>
         </div>
       )}

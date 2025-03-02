@@ -232,8 +232,7 @@ const MODEL_CONFIGS = {
     maxTokens: 65536,
     temperature: 1,
     stream: true,
-    store: true,
-    reasoning_effort: 'high'
+    store: true
   }
 } as const;
 
@@ -333,9 +332,9 @@ export async function POST(request: Request) {
         throw error;
       }
     } else if (model === 'deepseek') {
-      console.log('Using DeepSeek model...');
+      console.log('Using DeepSeek Reasoner model...');
       try {
-        console.log('Creating DeepSeek stream...');
+        console.log('Creating DeepSeek Reasoner stream...');
         const stream = await deepseek.chat.completions.create({
           model: "deepseek-reasoner",
           messages: [
@@ -354,53 +353,9 @@ export async function POST(request: Request) {
 
         console.log('Stream created successfully');
 
-        const encoder = new TextEncoder();
-        const customStream = new ReadableStream({
-          async start(controller) {
-            try {
-              console.log('Starting stream processing');
-              let accumulatedContent = '';
-              let chunkCount = 0;
-
-              for await (const chunk of stream) {
-                chunkCount++;
-                if (chunkCount % 10 === 0) {
-                  console.log(`Processed ${chunkCount} chunks`);
-                }
-
-                console.log('Chunk structure:', JSON.stringify(chunk.choices[0].delta));
-
-                if (chunk.choices[0]?.delta?.content) {
-                  const content = chunk.choices[0].delta.content;
-                  console.log('Content received:', content);
-                  accumulatedContent += content;
-                  controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
-                    content: content 
-                  })}\n\n`));
-                }
-              }
-
-              try {
-                JSON.parse(accumulatedContent);
-                console.log('Final JSON is valid');
-              } catch (e) {
-                console.error('Final JSON validation failed:', e);
-              }
-
-              console.log('Stream processing complete');
-              console.log('Total chunks processed:', chunkCount);
-              
-              controller.enqueue(encoder.encode('data: [DONE]\n\n'));
-              controller.close();
-              console.log('Stream closed successfully');
-            } catch (error) {
-              console.error('Stream processing error:', error);
-              controller.error(error);
-            }
-          }
-        });
-
-        console.log('Returning response stream');
+        // Since DeepSeek uses OpenAI format, we can use the OpenAI stream handler
+        const customStream = createStreamHandlerOpenAI(stream);
+        
         return new Response(customStream, {
           headers: {
             'Content-Type': 'text/event-stream',
@@ -412,7 +367,7 @@ export async function POST(request: Request) {
 
       } catch (err) {
         const error = err as ApiError;
-        console.error('DeepSeek API error:', error);
+        console.error('DeepSeek Reasoner API error:', error);
         console.error('Error details:', {
           message: error.message,
           stack: error.stack,
@@ -456,23 +411,46 @@ export async function POST(request: Request) {
 
     if (model === 'o1-mini') {
       console.log('Using o1-mini model...');
+      
+      // For o1-mini, we need to combine system and user prompts since it doesn't support system role
+      const combinedPrompt = `${systemPrompt}\n\n${prompt}`;
+      
+      // Create a configuration object with the correct parameters for o1-mini
+      const o1MiniConfig = {
+        model: modelConfig.model,
+        messages: [
+          { role: "user", content: combinedPrompt }
+        ],
+        temperature: modelConfig.temperature,
+        max_completion_tokens: modelConfig.maxTokens, // Use max_completion_tokens instead of max_tokens
+        stream: true
+      };
+      
+      const stream = await openai.chat.completions.create(o1MiniConfig);
+      
+      const customStream = createStreamHandlerOpenAI(stream);
+      return new Response(customStream, {
+        headers: {
+          'Content-Type': 'text/event-stream',
+          'Cache-Control': 'no-cache',
+          'Connection': 'keep-alive',
+          'Transfer-Encoding': 'chunked'
+        }
+      });
+    } else {
+      // For other models that support system role and reasoning_effort
       const stream = await openai.chat.completions.create({
         model: modelConfig.model,
         messages: [
-          {
-            role: 'user',
-            content: `${systemPrompt}\n\n${prompt}`
-          }
+          { role: "system", content: systemPrompt },
+          { role: "user", content: prompt }
         ],
-        stream: true,
         temperature: modelConfig.temperature,
-        max_completion_tokens: modelConfig.maxTokens,
-        ...(model === 'o1-mini' ? {
-          reasoning_effort: 'high',
-          store: true
-        } : {})
+        max_tokens: modelConfig.maxTokens,
+        stream: true,
+        reasoning_effort: modelConfig.reasoning_effort || 0.5 // Include this only for models that support it
       });
-
+      
       const customStream = createStreamHandlerOpenAI(stream);
       return new Response(customStream, {
         headers: {
