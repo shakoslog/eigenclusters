@@ -61,5 +61,20 @@ export const presets: PresetConfig[] = [
       context: "The rise and fall of empiricism and rationality within the philosophy of science"
     },
     cachedResult: empiricismRationalityAnalysis
+  },
+  {
+    id: "postwar-japan",
+    name: "Post-War Japan (1945-1964)",
+    description: "Analyzes Japan's dramatic cultural transformation from defeated imperial power to economic innovator, focusing on Tokyo as the epicenter of profound change.",
+    parameters: {
+      startYear: "1945",
+      endYear: "1964",
+      clusterStart: 1,
+      clusterEnd: 6,
+      periodicity: 3,
+      model: "o1-mini",
+      context: "Analyze Japan's dramatic cultural transformation from defeated imperial power to economic innovator, focusing on Tokyo as the epicenter of profound change. This period features sharply competing cultural forces with different trajectories."
+    },
+    cachedResult: null
   }
 ]; 

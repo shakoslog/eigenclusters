@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useCallback } from 'react';
+import React, { useMemo, useState, useCallback, useEffect } from 'react';
 import { LinePath } from '@visx/shape';
 import { scaleLinear, scaleTime } from '@visx/scale';
 import { Group } from '@visx/group';
@@ -58,6 +58,56 @@ const tickFormatter: TickFormatter<Date | NumberValue> = (value: any): string =>
     return timeFormat("%Y")(value);
   }
   return String(value);
+};
+
+// Add these helper functions to safely handle data
+const safeData = (data) => {
+  if (!data) return [];
+  
+  // Filter out any data points with missing required properties
+  return data.filter(point => {
+    // Check if point has all required properties
+    const hasRequiredProps = 
+      point && 
+      typeof point.year !== 'undefined' &&
+      typeof point.variance_explained !== 'undefined' &&
+      point.variance_explained !== null;
+    
+    // Only include points with valid data
+    return hasRequiredProps;
+  });
+};
+
+// In your component where you process the data:
+const processClusterData = (clusters) => {
+  if (!clusters) return [];
+  
+  const processedData = [];
+  
+  Object.entries(clusters).forEach(([clusterId, clusterData]) => {
+    if (!clusterData || !clusterData.trajectory) return;
+    
+    Object.entries(clusterData.trajectory).forEach(([year, yearData]) => {
+      // Skip invalid data points
+      if (!yearData || typeof yearData.variance_explained === 'undefined') return;
+      
+      // Ensure key_manifestations is always an array
+      const manifestations = Array.isArray(yearData.key_manifestations) 
+        ? yearData.key_manifestations 
+        : [];
+      
+      processedData.push({
+        cluster: clusterId,
+        clusterName: clusterData.name || clusterId,
+        year: parseInt(year, 10),
+        variance_explained: yearData.variance_explained,
+        description: yearData.description || "",
+        key_manifestations: manifestations
+      });
+    });
+  });
+  
+  return processedData;
 };
 
 export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelect }) => {
@@ -255,6 +305,54 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
   const tickFormatter = (value: number) => {
     return value <= 0 ? `${Math.abs(value)} BCE` : `${value} CE`;
   };
+
+  useEffect(() => {
+    if (!data || !data.clusters) return;
+    
+    // Process and validate the data
+    const processedData = processClusterData(data.clusters);
+    const validData = safeData(processedData);
+    
+    if (validData.length === 0) {
+      // Handle empty data case
+      return;
+    }
+    
+    // Continue with chart rendering using validData
+    // ... existing chart rendering code ...
+    
+    // When creating points, use validData instead of raw data
+    svg.selectAll(".point")
+      .data(validData)
+      .enter()
+      .append("circle")
+      .attr("class", "point")
+      .attr("cx", d => xScale(d.year))
+      .attr("cy", d => yScale(d.variance_explained))
+      .attr("r", 6) // Increased from 4 to make points easier to click
+      .attr("fill", d => getClusterColor(d.cluster))
+      .on("click", (event, d) => {
+        if (onPointSelect) onPointSelect(d);
+      });
+      
+    // Add larger invisible hit areas for better interaction
+    svg.selectAll(".point-hitarea")
+      .data(validData)
+      .enter()
+      .append("circle")
+      .attr("class", "point-hitarea")
+      .attr("cx", d => xScale(d.year))
+      .attr("cy", d => yScale(d.variance_explained))
+      .attr("r", 12) // Much larger invisible hit area
+      .attr("fill", "transparent")
+      .attr("stroke", "none")
+      .attr("pointer-events", "all")
+      .on("click", (event, d) => {
+        if (onPointSelect) onPointSelect(d);
+      });
+    
+    // ... rest of chart rendering code ...
+  }, [data, dimensions]);
 
   return (
     <div className="space-y-4">

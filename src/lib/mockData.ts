@@ -1294,10 +1294,10 @@ export const empiricismRationalityAnalysis = {
           "variance_explained": 6,
           "description": "The Protestant Reformation fundamentally changes the religious landscape of Europe.",
           "key_manifestations": [
-            "Martin Luther's 95 Theses sparking Protestantism",
-            "Henry VIII's break from the Catholic Church",
-            "The Council of Trent and the Counter-Reformation",
-            "Spread of Calvinism and other reformed branches"
+            "Martin Luther's 95 Theses",
+            "Henry VIII's establishment of the Church of England",
+            "John Calvin's reforms in Geneva",
+            "Council of Trent responding to Protestant challenges"
           ]
         },
         "1600": {
@@ -1585,4 +1585,1576 @@ export const empiricismRationalityAnalysis = {
       }
     }
   }
-} as const; 
+} as const;
+
+export const postwarJapanResponse = {
+  "metadata": {
+    "period": "1945-1964",
+    "interval": "3 years",
+    "cluster_range": "1-6",
+    "measurement": "relative cultural variance explained (0-100)",
+    "top_20_clusters": [
+      "1_economic_miracle [↗] (12.5%)",
+      "2_american_influence [↗] (10.0%)",
+      "3_youth_culture_explosion [↗] (8.5%)",
+      "4_technological_innovation [↗] (7.0%)",
+      "5_urban_modernization [→] (6.5%)",
+      "6_traditional_vs_modern_conflict [↘] (6.0%)",
+      "7_film_industry_growth [→] (5.5%)",
+      "8_fashion_revolution [→] (5.0%)",
+      "9_consumerism_rise [↗] (4.5%)",
+      "10_education_reform [↗] (4.0%)",
+      "11_literary_movement [→] (3.5%)",
+      "12_pop_music_growth [→] (3.0%)",
+      "13_peace_movement [↘] (2.5%)",
+      "14_gender_roles_evolution [↗] (2.0%)",
+      "15_architectural_modernism [→] (1.8%)",
+      "16_environmental_awareness [→] (1.5%)",
+      "17_media_censorship_changes [↘] (1.2%)",
+      "18_sports_culture_development [↗] (1.0%)",
+      "19_religious_transformations [↘] (0.9%)",
+      "20_traditional_arts_preservation [↗] (0.9%)"
+    ]
+  },
+  "clusters": {
+    "1_economic_miracle": {
+      "name": "Economic Miracle",
+      "description": "The Economic Miracle refers to Japan's rapid post-war economic growth, transforming it from a war-torn nation into one of the world's leading economies. This period saw significant industrial expansion, technological advancements, and an increase in living standards. The government's role in coordinating industrial policy, coupled with a strong work ethic and innovation, fueled this growth. The Economic Miracle also facilitated societal changes and increased consumerism, shaping modern Japanese culture.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "In the immediate aftermath of World War II, Japan's economy was devastated. However, the foundations for future growth were being laid through reconstruction efforts and land reforms initiated by the Allied occupation.",
+          "key_manifestations": [
+            "General Headquarters Order No. 18 (1945)",
+            "The Dodge Line policy implementation (1949)",
+            "Establishment of the Ministry of International Trade and Industry (MITI) (1949)",
+            "Publication of 'Japan Revival' by Eiichi Shibusawa (1947)"
+          ]
+        },
+        "1948": {
+          "variance_explained": 4,
+          "description": "Economic policies began to take effect, stabilizing the yen and controlling inflation. Industrial production started to recover, and key industries like textiles and steel began to expand.",
+          "key_manifestations": [
+            "Enactment of the Economic Stabilization Board (1948)",
+            "Opening of the first public industrial research institutes",
+            "Launch of Kobe Steel's expansion plan",
+            "Release of 'Postwar Economic Policies' by economist Takeo Hoshi (1948)"
+          ]
+        },
+        "1951": {
+          "variance_explained": 5.5,
+          "description": "The Korean War acts as a catalyst for Japan's economy, with increased demand for goods boosting industrial production. Export industries begin to flourish, laying the groundwork for sustained growth.",
+          "key_manifestations": [
+            "Start of the Korean War (1950) boosting Japanese exports",
+            "Establishment of the Japan External Trade Organization (JETRO) precursor",
+            "Launch of Nissan's first mass-produced cars",
+            "Publication of 'Industrial Growth Strategies' by Yasuhiro Nakasone (1951)"
+          ]
+        },
+        "1954": {
+          "variance_explained": 6,
+          "description": "Economic growth accelerates with advancements in technology and increased foreign investment. Manufacturing sectors, particularly automotive and electronics, see significant expansion.",
+          "key_manifestations": [
+            "Founding of Toyota Motor Corporation's new production facilities",
+            "Introduction of Sony's first consumer electronics",
+            "Formation of the Japan Business Federation (Keidanren)",
+            "Release of 'Technological Innovations in Japan' by Akio Morita (1954)"
+          ]
+        },
+        "1957": {
+          "variance_explained": 7,
+          "description": "Japan solidifies its position as an economic powerhouse with sustained growth rates. Infrastructure development, such as highways and railways, complements industrial expansion.",
+          "key_manifestations": [
+            "Completion of the Tokaido Shinkansen project",
+            "Establishment of the Bank of Japan's new monetary policies",
+            "Launch of the Mitsubishi Electric Corporation",
+            "Publication of 'Japan's Economic Strategies' by Haruo Murata (1957)"
+          ]
+        },
+        "1960": {
+          "variance_explained": 7,
+          "description": "The economic boom continues with high GDP growth rates. Japan becomes a major exporter of automobiles and electronics, gaining international recognition and increasing its standard of living.",
+          "key_manifestations": [
+            "Introduction of the Toyota Corolla",
+            "Opening of the Tokyo Stock Exchange modernization",
+            "Formation of NEC Corporation",
+            "Release of 'Global Trade and Japan's Economy' by Ichiro Fujita (1960)"
+          ]
+        },
+        "1963": {
+          "variance_explained": 5,
+          "description": "Economic growth shows signs of stabilization but remains robust. Investments in research and development lead to innovations that sustain industrial competitiveness.",
+          "key_manifestations": [
+            "Establishment of the Japan Society for the Promotion of Science (JSPS) research grants",
+            "Launch of the Hitachi MSc series of electronics",
+            "Publication of 'Sustainable Economic Growth in Japan' by Kazuo Inamori (1963)",
+            "Expansion of the Keihin Expressway"
+          ]
+        },
+        "1964": {
+          "variance_explained": 7,
+          "description": "The Tokyo Olympics symbolize Japan's economic and cultural resurgence. The event showcases technological advancements and cements Japan's status as a global economic leader.",
+          "key_manifestations": [
+            "1964 Tokyo Olympics opening ceremony",
+            "Introduction of the Shinkansen (bullet train)",
+            "Launch of Panasonic's new product lines",
+            "Publication of 'Japan's Olympic Transformation' by Masayoshi Ohira (1964)"
+          ]
+        }
+      }
+    },
+    "2_american_influence": {
+      "name": "American Influence",
+      "description": "The influence of the United States on Japan during the post-war period, particularly in the areas of economic, political, and cultural integration.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 5,
+          "description": "Japan's occupation by the United States after World War II, leading to significant political and economic changes.",
+          "key_manifestations": [
+            "Treaty of San Francisco (1951)",
+            "Establishment of the Japan-U.S. Security Treaty (1954)",
+            "U.S. military presence in Japan",
+            "Influence on Japanese political and economic policies"
+          ]
+        },
+        "1950": {
+          "variance_explained": 3,
+          "description": "Economic and cultural exchanges between Japan and the United States, particularly in the post-war reconstruction efforts.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "Economic aid from the United States",
+            "Cultural exchange programs",
+            "Japanese adaptation of American technologies"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The impact of American cultural influences on Japanese society, particularly through the 'Americanization' of Japanese youth culture.",
+          "key_manifestations": [
+            "The rise of American-style clothing and consumer goods",
+            "The popularity of American movies and music",
+            "The adoption of American sports like baseball and basketball",
+            "The influence of American education and language"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The establishment of the Japan-U.S. Security Treaty and the presence of U.S. military forces in Japan.",
+          "key_manifestations": [
+            "Security Treaty between Japan and the United States",
+            "U.S. military presence in Japan",
+            "Influence on Japanese defense policy",
+            "Cultural exchange and integration"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The impact of American cultural influences on Japanese society, particularly in the realm of popular culture.",
+          "key_manifestations": [
+            "The popularity of American movies and music",
+            "The adoption of American sports like baseball and basketball",
+            "The influence of American education and language",
+            "Cultural exchange and integration"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The influence of American economic policies on Japan, particularly in the context of the U.S.-Japan economic relationship.",
+          "key_manifestations": [
+            "The U.S.-Japan economic relationship",
+            "Japanese adaptation of American technologies",
+            "Economic aid from the United States",
+            "Cultural exchange and integration"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The influence of American cultural and educational exchanges on Japan, particularly in the realm of technology and innovation.",
+          "key_manifestations": [
+            "Japanese adaptation of American technologies",
+            "Economic aid from the United States",
+            "Cultural exchange and integration",
+            "The influence of American education and language"
+          ]
+        }
+      }
+    },
+    "3_youth_culture_explosion": {
+      "name": "Youth Culture Explosion",
+      "description": "The emergence of a vibrant and dynamic youth culture in Japan during the post-war period, characterized by a rejection of traditional values and a focus on individualism and self-expression.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 5,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the rise of a youth culture that challenged traditional values.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The emergence of a youth culture",
+            "The rejection of traditional values"
+          ]
+        },
+        "1950": {
+          "variance_explained": 3,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The emergence of a youth culture",
+            "The rejection of traditional values",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw a significant shift in Japanese society, with the youth culture becoming more vocal and active.",
+          "key_manifestations": [
+            "The rise of the youth culture",
+            "The rejection of traditional values",
+            "The influence of American culture",
+            "The emergence of a new generation"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s and 1980s saw the continuation of the youth culture movement, with a focus on individualism and self-expression.",
+          "key_manifestations": [
+            "The rise of the youth culture",
+            "The rejection of traditional values",
+            "The influence of American culture",
+            "The emergence of a new generation"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the peak of the youth culture movement, with a focus on individualism and self-expression.",
+          "key_manifestations": [
+            "The rise of the youth culture",
+            "The rejection of traditional values",
+            "The influence of American culture",
+            "The emergence of a new generation"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the continuation of the youth culture movement, with a focus on individualism and self-expression.",
+          "key_manifestations": [
+            "The rise of the youth culture",
+            "The rejection of traditional values",
+            "The influence of American culture",
+            "The emergence of a new generation"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the continuation of the youth culture movement, with a focus on individualism and self-expression.",
+          "key_manifestations": [
+            "The rise of the youth culture",
+            "The rejection of traditional values",
+            "The influence of American culture",
+            "The emergence of a new generation"
+          ]
+        }
+      }
+    },
+    "4_technological_innovation": {
+      "name": "Technological Innovation",
+      "description": "The development and adoption of new technologies in Japan during the post-war period, particularly in the areas of electronics, robotics, and telecommunications.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the adoption of new technologies.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American technologies",
+            "The adoption of new technologies",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The adoption of new technologies",
+            "The development of Japanese industries",
+            "The influence of American technologies"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The adoption of new technologies",
+            "The development of Japanese industries",
+            "The influence of American technologies"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of robotics and electronics.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The adoption of new technologies",
+            "The development of Japanese industries",
+            "The influence of American technologies"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of telecommunications and robotics.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The adoption of new technologies",
+            "The development of Japanese industries",
+            "The influence of American technologies"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of telecommunications and robotics.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The adoption of new technologies",
+            "The development of Japanese industries",
+            "The influence of American technologies"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of telecommunications and robotics.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The adoption of new technologies",
+            "The development of Japanese industries",
+            "The influence of American technologies"
+          ]
+        }
+      }
+    },
+    "5_urban_modernization": {
+      "name": "Urban Modernization",
+      "description": "The transformation of Japanese cities during the post-war period, particularly in the areas of urban planning, infrastructure development, and the rise of suburbanization.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of new cities.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American urban planning",
+            "The development of new cities",
+            "The rise of suburbanization"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of new cities",
+            "The rise of suburbanization",
+            "The influence of American urban planning"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new cities in Japan, particularly in the areas of Tokyo and Osaka.",
+          "key_manifestations": [
+            "The development of new cities",
+            "The rise of suburbanization",
+            "The influence of American urban planning",
+            "The development of Japanese industries"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new cities in Japan, particularly in the areas of Tokyo and Osaka.",
+          "key_manifestations": [
+            "The development of new cities",
+            "The rise of suburbanization",
+            "The influence of American urban planning",
+            "The development of Japanese industries"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new cities in Japan, particularly in the areas of Tokyo and Osaka.",
+          "key_manifestations": [
+            "The development of new cities",
+            "The rise of suburbanization",
+            "The influence of American urban planning",
+            "The development of Japanese industries"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new cities in Japan, particularly in the areas of Tokyo and Osaka.",
+          "key_manifestations": [
+            "The development of new cities",
+            "The rise of suburbanization",
+            "The influence of American urban planning",
+            "The development of Japanese industries"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new cities in Japan, particularly in the areas of Tokyo and Osaka.",
+          "key_manifestations": [
+            "The development of new cities",
+            "The rise of suburbanization",
+            "The influence of American urban planning",
+            "The development of Japanese industries"
+          ]
+        }
+      }
+    },
+    "6_traditional_vs_modern_conflict": {
+      "name": "Traditional vs Modern Conflict",
+      "description": "The clash between traditional Japanese values and modern Western influences during the post-war period.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the clash between traditional Japanese values and modern Western influences.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The clash between traditional Japanese values and modern Western influences",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The clash between traditional Japanese values and modern Western influences",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The clash between traditional Japanese values and modern Western influences",
+            "The development of Japanese industries",
+            "The influence of American technologies"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new cities in Japan, particularly in the areas of Tokyo and Osaka.",
+          "key_manifestations": [
+            "The development of new cities",
+            "The clash between traditional Japanese values and modern Western influences",
+            "The development of Japanese industries",
+            "The influence of American urban planning"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of telecommunications and robotics.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The clash between traditional Japanese values and modern Western influences",
+            "The development of Japanese industries",
+            "The influence of American technologies"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of telecommunications and robotics.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The clash between traditional Japanese values and modern Western influences",
+            "The development of Japanese industries",
+            "The influence of American technologies"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of telecommunications and robotics.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The clash between traditional Japanese values and modern Western influences",
+            "The development of Japanese industries",
+            "The influence of American technologies"
+          ]
+        }
+      }
+    },
+    "7_film_industry_growth": {
+      "name": "Film Industry Growth",
+      "description": "The development and growth of Japan's film industry during the post-war period, particularly in the areas of anime, manga, and cinema.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of Japan's film industry.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of Japan's film industry",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of Japan's film industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of anime and manga.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's film industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of anime and manga.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's film industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of anime and manga.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's film industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of anime and manga.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's film industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of anime and manga.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's film industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "8_fashion_revolution": {
+      "name": "Fashion Revolution",
+      "description": "The transformation of Japanese fashion during the post-war period, particularly in the areas of street fashion, haute couture, and the rise of Japanese designers.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of Japanese fashion.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of Japanese fashion",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of Japanese fashion",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of street fashion and haute couture.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japanese fashion",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of street fashion and haute couture.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japanese fashion",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of street fashion and haute couture.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japanese fashion",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of street fashion and haute couture.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japanese fashion",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of street fashion and haute couture.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japanese fashion",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "9_consumerism_rise": {
+      "name": "Consumerism Rise",
+      "description": "The rise of consumer culture in Japan during the post-war period, particularly in the areas of mass consumption, retail, and the development of Japanese brands.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the rise of consumer culture.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The rise of consumer culture",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of Japanese industries",
+            "The development of Japanese brands",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The rise of consumer culture",
+            "The development of Japanese industries",
+            "The development of Japanese brands"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The rise of consumer culture",
+            "The development of Japanese industries",
+            "The development of Japanese brands"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The rise of consumer culture",
+            "The development of Japanese industries",
+            "The development of Japanese brands"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The rise of consumer culture",
+            "The development of Japanese industries",
+            "The development of Japanese brands"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The rise of consumer culture",
+            "The development of Japanese industries",
+            "The development of Japanese brands"
+          ]
+        }
+      }
+    },
+    "10_education_reform": {
+      "name": "Education Reform",
+      "description": "The transformation of Japan's education system during the post-war period, particularly in the areas of curriculum, teaching methods, and the role of schools.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of Japan's education system.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of Japan's education system",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of Japan's education system",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's education system",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's education system",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's education system",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's education system",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's education system",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "11_literary_movement": {
+      "name": "Literary Movement",
+      "description": "The development and growth of Japan's literary culture during the post-war period, particularly in the areas of manga, anime, and the rise of Japanese literature.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of Japan's literary culture.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of Japan's literary culture",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of Japan's literary culture",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of manga and anime.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's literary culture",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of manga and anime.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's literary culture",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of manga and anime.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's literary culture",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of manga and anime.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's literary culture",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of manga and anime.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's literary culture",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "12_pop_music_growth": {
+      "name": "Pop Music Growth",
+      "description": "The development and growth of Japan's pop music industry during the post-war period, particularly in the areas of J-pop, idol groups, and the rise of Japanese music.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of Japan's pop music industry.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of Japan's pop music industry",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of Japan's pop music industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's pop music industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's pop music industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's pop music industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's pop music industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's pop music industry",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "13_peace_movement": {
+      "name": "Peace Movement",
+      "description": "The development and growth of Japan's peace movement during the post-war period, particularly in the areas of anti-nuclear, anti-war, and pacifist movements.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of Japan's peace movement.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of Japan's peace movement",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of Japan's peace movement",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's peace movement",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's peace movement",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's peace movement",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's peace movement",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's peace movement",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "14_gender_roles_evolution": {
+      "name": "Gender Roles Evolution",
+      "description": "The transformation of gender roles in Japan during the post-war period, particularly in the areas of feminism, gender equality, and the rise of women in society.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of gender roles in Japan.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of gender roles in Japan",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of gender roles in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of gender roles in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of gender roles in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of gender roles in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of gender roles in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of gender roles in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "15_architectural_modernism": {
+      "name": "Architectural Modernism",
+      "description": "The development and growth of modern architecture in Japan during the post-war period, particularly in the areas of high-rise buildings, minimalist design, and the integration of nature.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of modern architecture in Japan.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of modern architecture in Japan",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of modern architecture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of modern architecture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of modern architecture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of modern architecture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of modern architecture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of modern architecture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "16_environmental_awareness": {
+      "name": "Environmental Awareness",
+      "description": "The development and growth of environmental awareness in Japan during the post-war period, particularly in the areas of conservation, recycling, and the rise of green movements.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of environmental awareness in Japan.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of environmental awareness in Japan",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of environmental awareness in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of environmental awareness in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of environmental awareness in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of environmental awareness in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of environmental awareness in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of environmental awareness in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "17_media_censorship_changes": {
+      "name": "Media Censorship Changes",
+      "description": "The transformation of Japan's media landscape during the post-war period, particularly in the areas of censorship, freedom of expression, and the rise of alternative media.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of Japan's media landscape.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of Japan's media landscape",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of Japan's media landscape",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's media landscape",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's media landscape",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's media landscape",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's media landscape",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of Japan's media landscape",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "18_sports_culture_development": {
+      "name": "Sports Culture Development",
+      "description": "The development and growth of sports culture in Japan during the post-war period, particularly in the areas of sports, fitness, and the rise of sports-related industries.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of sports culture in Japan.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of sports culture in Japan",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of sports culture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of sports culture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of sports culture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of sports culture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of sports culture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of sports culture in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "19_religious_transformations": {
+      "name": "Religious Transformations",
+      "description": "The transformation of religious beliefs and practices in Japan during the post-war period, particularly in the areas of secularization and the rise of new religious movements.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the development of new religious movements in Japan.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The development of new religious movements in Japan",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The development of new religious movements in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of new religious movements in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of new religious movements in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of new religious movements in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of new religious movements in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The development of new religious movements in Japan",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    },
+    "20_traditional_arts_preservation": {
+      "name": "Traditional Arts Preservation",
+      "description": "The preservation and revitalization of traditional Japanese arts during the post-war period, particularly in the areas of theater, music, and crafts.",
+      "trajectory": {
+        "1945": {
+          "variance_explained": 3,
+          "description": "The end of World War II and the subsequent occupation by the United States led to significant societal changes, including the preservation of traditional Japanese arts.",
+          "key_manifestations": [
+            "Occupation forces' reconstruction efforts",
+            "The influence of American culture",
+            "The preservation of traditional Japanese arts",
+            "The development of Japanese industries"
+          ]
+        },
+        "1950": {
+          "variance_explained": 4,
+          "description": "The post-war economic boom and the rise of consumer culture created a new generation of consumers.",
+          "key_manifestations": [
+            "The rise of consumer culture",
+            "The preservation of traditional Japanese arts",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1960": {
+          "variance_explained": 2,
+          "description": "The 1960s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The preservation of traditional Japanese arts",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1970": {
+          "variance_explained": 1,
+          "description": "The 1970s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The preservation of traditional Japanese arts",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1980": {
+          "variance_explained": 1,
+          "description": "The 1980s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The preservation of traditional Japanese arts",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "1990": {
+          "variance_explained": 0.5,
+          "description": "The 1990s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The preservation of traditional Japanese arts",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        },
+        "2000": {
+          "variance_explained": 0.5,
+          "description": "The 2000s saw the development of new technologies in Japan, particularly in the areas of electronics and telecommunications.",
+          "key_manifestations": [
+            "The development of new technologies",
+            "The preservation of traditional Japanese arts",
+            "The development of Japanese industries",
+            "The influence of American culture"
+          ]
+        }
+      }
+    }
+  }
+} as const;
+
+export const mockData = {
+  "cold-war": coldWarAnalysis,
+  "philosophy-of-science": philosophyOfScienceAnalysis,
+  "empiricism-rationality": empiricismRationalityAnalysis,
+  "postwar-japan": postwarJapanResponse
+};
+
+export default mockData; 

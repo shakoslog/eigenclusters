@@ -62,11 +62,11 @@ const estimateTokensPerYear = (clusters: number, startYear: string, endYear: str
 const getModelTokenLimit = (model: ModelType): number => {
   const limits: Record<ModelType, number> = {
     'claude': 8192,
-    'deepseek': 4000,      // Halved from 8000 to account for CoT
+    'deepseek': 6000,      // Halved from 8000 to account for CoT
     'deepseek_chat': 8192,
     'gpt4o': 16384,
     'gpt4o-mini': 16384,
-    'o1-mini': 32768      // Halved from 65536 to account for CoT
+    'o1-mini': 30000      // Halved from 65536 to account for CoT
   };
   return limits[model];
 };
