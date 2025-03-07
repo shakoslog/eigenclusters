@@ -518,7 +518,7 @@ const glasnostData =
 const glasnostPreset: PresetConfig = {
   id: 'glasnost ',
   name: 'Glasnost Analysis',
-  description: 'Cultural analysis of the Cold War period (1945-1991)',
+  description: 'Developments in the Glasnost period (1983-1991)',
   parameters: {
     startYear: '1983',
     endYear: '1991',

@@ -10,7 +10,9 @@ interface ParameterConfigProps {
   onStop: () => void;
   onPresetSelect: (preset: PresetConfig | null, clearResult?: boolean) => void;
   error?: string;
-  onParameterChange?: (params: AnalysisParams) => void;
+  onParameterChange?: (updatedParams: Partial<AnalysisParams>) => void;
+  shouldValidate?: boolean;
+  onValidateChange?: (validate: boolean) => void;
 }
 
 interface AnalysisParams {
@@ -83,7 +85,9 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
   onStop, 
   onPresetSelect,
   error,
-  onParameterChange
+  onParameterChange,
+  shouldValidate = false,
+  onValidateChange
 }) => {
   const [mounted, setMounted] = useState(false);
   const [params, setParams] = useState<AnalysisParams>({
@@ -217,22 +221,18 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
   };
 
   const handlePresetSelect = (presetId: string) => {
+    // Set the selected preset in state
     setSelectedPreset(presetId);
+    
+    // Find the preset by ID
     const preset = presets.find(p => p.id === presetId);
+    
+    // Call the parent component's onPresetSelect function
     if (preset) {
-      // Update form state without clearing preset
-      handleParameterChange({
-        startYear: preset.parameters.startYear.toString(),
-        endYear: preset.parameters.endYear.toString(),
-        clusterStart: preset.parameters.clusterStart,
-        clusterEnd: preset.parameters.clusterEnd,
-        periodicity: preset.parameters.periodicity,
-        model: preset.parameters.model
-      }, false);
-      setContext(preset.parameters.context || '');
-      
-      // Trigger the preset selection
-      onPresetSelect(preset, false);
+      onPresetSelect(preset);
+    } else if (presetId === '') {
+      // Handle the case when the user selects the default option
+      onPresetSelect(null);
     }
   };
 
@@ -320,6 +320,25 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
     <div className="flex-1 space-y-4 border border-white/20 p-4">
       <div className="text-center mb-6 text-sm">
         === PARAMETER CONFIGURATION ===
+      </div>
+
+      <div className="mb-4">
+        <label className="block mb-2 text-white/70">Presets</label>
+        <select 
+          className={`w-full bg-black text-white border border-white/20 p-2 rounded ${
+            isAnalyzing ? 'opacity-50 cursor-not-allowed' : ''
+          }`}
+          onChange={(e) => handlePresetSelect(e.target.value)}
+          value={selectedPreset}
+          disabled={isAnalyzing}
+        >
+          <option value="">Select a preset configuration...</option>
+          {presets.map(preset => (
+            <option key={preset.id} value={preset.id}>
+              {preset.name} - {preset.description}
+            </option>
+          ))}
+        </select>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -428,6 +447,25 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
           </div>
         </div>
 
+        <div className="mt-4 flex items-center">
+          <input
+            type="checkbox"
+            id="validate-checkbox"
+            checked={shouldValidate}
+            onChange={(e) => {
+              console.log("Checkbox clicked, new value:", e.target.checked);
+              if (onValidateChange) {
+                onValidateChange(e.target.checked);
+              }
+            }}
+            className="mr-2 h-4 w-4"
+            disabled={isAnalyzing}
+          />
+          <label htmlFor="validate-checkbox" className="text-sm text-gray-300">
+            Enable actor-critic validation (slower but more accurate)
+          </label>
+        </div>
+
         <div className="mt-4">
           <label className="block mb-2">Context (optional)</label>
           <textarea
@@ -527,25 +565,6 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
 
       <div className="mt-4 text-xs opacity-50">
         SYSTEM STATUS: {isAnalyzing ? 'ANALYZING' : 'READY FOR INPUT'}
-      </div>
-
-      <div className="flex flex-col space-y-2">
-        <label className="text-white/70">Presets</label>
-        <select 
-          className={`bg-black text-white border border-white/20 p-2 rounded ${
-            isAnalyzing ? 'opacity-50 cursor-not-allowed' : ''
-          }`}
-          onChange={(e) => handlePresetSelect(e.target.value)}
-          value={selectedPreset}
-          disabled={isAnalyzing}
-        >
-          <option value="">Select a preset configuration...</option>
-          {presets.map(preset => (
-            <option key={preset.id} value={preset.id}>
-              {preset.name} - {preset.description}
-            </option>
-          ))}
-        </select>
       </div>
     </div>
   );

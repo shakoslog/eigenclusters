@@ -236,6 +236,39 @@ const MODEL_CONFIGS = {
   }
 } as const;
 
+// Add this function to handle validation after streaming
+const validateResponse = async (jsonData: any) => {
+  try {
+    console.log('Sending data to critic for validation...');
+    
+    const validationResponse = await fetch(new URL('/api/validate', request.url).toString(), {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ jsonData }),
+    });
+    
+    if (!validationResponse.ok) {
+      console.error('Validation request failed:', validationResponse.status);
+      return jsonData; // Return original if validation fails
+    }
+    
+    const validationResult = await validationResponse.json();
+    
+    if (validationResult.success && validationResult.validatedData) {
+      console.log('Validation successful, returning improved data');
+      return validationResult.validatedData;
+    } else {
+      console.log('Validation unsuccessful, returning original data');
+      return jsonData;
+    }
+  } catch (error) {
+    console.error('Error during validation:', error);
+    return jsonData; // Return original on error
+  }
+};
+
 export const runtime = 'edge';
 
 export async function POST(request: Request) {
@@ -461,6 +494,9 @@ export async function POST(request: Request) {
         }
       });
     }
+
+    // After streaming is complete, the frontend will handle validation
+    // by calling our /api/validate endpoint
 
     // ... rest of the error handling code ...
   } catch (err) {

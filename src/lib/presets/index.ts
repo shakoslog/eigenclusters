@@ -14,6 +14,8 @@ const importPresets = () => {
     'philo-sci': () => import('./philo-sci').then(module => module.default),
     'rationality': () => import('./rationality').then(module => module.default),
     'postwar-japan': () => import('./postwar-japan').then(module => module.default),
+    'tyler-cowen': () => import('./tyler-cowen').then(module => module.default),
+    'literature': () => import('./literature').then(module => module.default),
     // When you add a new preset file, add a new line here:
     // 'my-new-preset': () => import('./my-new-preset').then(module => module.default),
   };

@@ -397,11 +397,19 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
               .grid-pulse {
                 animation: gridPulse 4s ease-in-out infinite;
               }
+
+              /* Target the instruction text in the chart */
+              svg text:contains("[Interactive Chart") {
+                font-size: 20px !important;
+                font-weight: bold !important;
+              }
             `}
           </style>
           
           <div className="text-white text-xs mb-2 flex justify-between items-center">
-            <span className="opacity-70">[Interactive Chart. Click on the lines and select a cluster to see more information]</span>
+            <span className="opacity-70 text-lg font-medium">
+              [Interactive Chart. Click on the lines and select a cluster to see more information]
+            </span>
             <span className="text-[10px]"></span>
           </div>
           

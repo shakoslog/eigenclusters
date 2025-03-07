@@ -125,6 +125,11 @@ most variance in cultural expressions across time.
 - Trends (↗↘→) indicate if the pattern is growing, declining, or stable
 - Click on chart points to explore specific time periods in detail
 
+## Extensions
+
+- Copy/paste the JSON output into Claude 3.7 reasoning mode to get a better understanding of the results.
+- Due to rate limits we can't yet implement that here, but it is the optimal actor-critic validation method, and we used it for some of the presets.
+
 `;
 
 interface ParameterConfigProps {
@@ -136,7 +141,7 @@ interface ParameterConfigProps {
 }
 
 // Update the type definition
-type ApiStatus = 'idle' | 'connecting' | 'generating' | 'requesting' | 'error';
+type ApiStatus = 'idle' | 'connecting' | 'generating' | 'validating' | 'requesting' | 'error';
 
 // Add type definition for saved state
 interface SavedState {
@@ -211,6 +216,12 @@ const EigenclusterTerminal: React.FC<{
   const [isSharing, setIsSharing] = useState(false);
   const [shareUrl, setShareUrl] = useState<string | null>(null);
   const [shareError, setShareError] = useState<string | null>(null);
+
+  // Add a new state for validation
+  const [isValidating, setIsValidating] = useState(false);
+
+  // Add a new state for validation option
+  const [shouldValidate, setShouldValidate] = useState(false);
 
   useEffect(() => {
     if (initialSharedState) {
@@ -589,14 +600,123 @@ const EigenclusterTerminal: React.FC<{
         }
       }
 
-      setApiStatus('idle');
+      // After streaming is complete, check if we have valid JSON to validate
+      if (accumulatedJson) {
+        try {
+          const parsedJson = JSON.parse(accumulatedJson);
+          
+          // If we have valid JSON with clusters and validation is enabled, send for validation
+          if (parsedJson && parsedJson.clusters && shouldValidate) {
+            setApiStatus('validating');
+            setIsValidating(true);
+            setBootSequence(prev => [...prev, 'VALIDATING HISTORICAL ACCURACY...']);
+            
+            // Generate chart data from the initial response
+            const chartData = transformDataForChart(parsedJson);
+            
+            // Update the result with initial data
+            setResult(prev => ({
+              content: accumulatedJson,
+              timeSeriesData: chartData,
+              metadata: parsedJson.metadata || {},
+              clusters: parsedJson.clusters || {}
+            }));
+            
+            // Now send for validation
+            try {
+              // Make sure we're passing the user prompt correctly
+              const userPrompt = params.context || '';
+              console.log("Sending validation request with user prompt:", userPrompt);
+              
+              // Create a validation request
+              const validationResponse = await fetch('/api/validate', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ 
+                  jsonData: parsedJson,
+                  userPrompt: userPrompt, // Ensure this is not empty
+                  userParameters: {
+                    startYear: params.startYear,
+                    endYear: params.endYear,
+                    clusterStart: params.clusterStart,
+                    clusterEnd: params.clusterEnd,
+                    periodicity: params.periodicity,
+                    model: params.model
+                  },
+                  fullPrompt: promptContent
+                }),
+                signal: controller.signal
+              });
+              
+              if (!validationResponse.ok) {
+                throw new Error(`Validation failed: ${validationResponse.status}`);
+              }
+              
+              const validationResult = await validationResponse.json();
+              
+              if (validationResult.success && validationResult.validatedData) {
+                // Update with validated data
+                const validatedJson = validationResult.validatedData;
+                const validatedChartData = transformDataForChart(validatedJson);
+                
+                setBootSequence(prev => [...prev, 'VALIDATION COMPLETE - IMPROVEMENTS APPLIED']);
+                
+                // Update the result with validated data
+                setResult({
+                  content: JSON.stringify(validatedJson, null, 2),
+                  timeSeriesData: validatedChartData,
+                  metadata: validatedJson.metadata || {},
+                  clusters: validatedJson.clusters || {}
+                });
+                
+                // Update the editor content
+                setJsonEditorContent(JSON.stringify(validatedJson, null, 2));
+              } else {
+                // Validation failed but we still have the original data
+                setBootSequence(prev => [...prev, 'VALIDATION INCOMPLETE - USING ORIGINAL DATA']);
+              }
+            } catch (validationError) {
+              console.error('Validation error:', validationError);
+              setBootSequence(prev => [...prev, `VALIDATION ERROR: ${validationError instanceof Error ? validationError.message : 'Unknown error'}`]);
+            }
+          } else {
+            // If validation is disabled, just use the original data
+            if (!shouldValidate) {
+              setBootSequence(prev => [...prev, 'VALIDATION SKIPPED - USING ORIGINAL DATA']);
+            }
+            
+            // Generate chart data from the response
+            const chartData = transformDataForChart(parsedJson);
+            
+            // Update the result
+            setResult({
+              content: accumulatedJson,
+              timeSeriesData: chartData,
+              metadata: parsedJson.metadata || {},
+              clusters: parsedJson.clusters || {}
+            });
+            
+            // Update the editor content
+            setJsonEditorContent(accumulatedJson);
+          }
+        } catch (parseError) {
+          console.error('JSON parse error:', parseError);
+          setBootSequence(prev => [...prev, 'ERROR: Invalid JSON response']);
+        }
+      }
+      
+      // Final cleanup
+      setIsAnalyzing(false);
       setIsThinking(false);
-      setBootSequence(prev => [...prev, "ANALYSIS COMPLETE"]);
+      setIsValidating(false);
+      setApiStatus('idle');
       setIsStateSaveable(true);
-
-    } catch (error) {
+      
+    } catch (err) {
       // Only set the analysis error for unexpected errors too
-      setAnalysisError(error instanceof Error ? error.message : 'An unexpected error occurred');
+      setAnalysisError(err instanceof Error ? err.message : 'An unexpected error occurred');
       setIsStateSaveable(false);
     } finally {
       setIsReasoning(false);
@@ -1039,6 +1159,12 @@ const EigenclusterTerminal: React.FC<{
   // After setting analysis params in the useEffect
   console.log("Analysis params after setting:", analysisParams);
 
+  // Add a handler function to update the state
+  const handleValidateChange = (validate: boolean) => {
+    console.log("Validation checkbox changed to:", validate);
+    setShouldValidate(validate);
+  };
+
   return (
     <div className="min-h-screen bg-black p-8 font-mono text-white">
       <pre className="mb-8">{ASCII_LOGO}</pre>
@@ -1073,22 +1199,32 @@ const EigenclusterTerminal: React.FC<{
           <div key={i} className={`mb-1 ${
             message?.startsWith?.('ERROR:') 
               ? 'text-red-500 font-bold' 
-              : ''
+              : message?.includes?.('VALIDATION') 
+                ? 'text-yellow-500' 
+                : ''
           }`}>
             {message}
           </div>
         ))}
       </div>
 
+      {/* Add validation indicator */}
+      {isValidating && (
+        <div className="text-yellow-500 animate-pulse mb-4">
+          Validating historical accuracy with o1-mini critic... please wait
+        </div>
+      )}
+
       {isBooted && (
         <div className="space-y-8">
           <ParameterConfig 
-            onSubmit={(params: AnalysisParams) => handleAnalysis(params)}
-            onPresetSelect={handlePresetSelect}
+            onSubmit={handleAnalysis}
             isAnalyzing={isAnalyzing}
             onStop={handleStop}
-            error={analysisError || undefined}
-            onParameterChange={(params: AnalysisParams) => handleParameterChange(params)}
+            onPresetSelect={handlePresetSelect}
+            onParameterChange={handleParameterChange}
+            shouldValidate={shouldValidate}
+            onValidateChange={handleValidateChange}
           />
           
           {isReasoning && (currentModel === 'deepseek' || currentModel === 'o1-mini') && (
@@ -1116,11 +1252,17 @@ const EigenclusterTerminal: React.FC<{
             </div>
 
             {activeTab === 'chart' && result?.timeSeriesData && (
-              <div className="p-4">
-                <AnalysisChart 
-                  data={result.timeSeriesData}
-                  onPointSelect={handleChartPointSelect}
-                />
+              <div className="relative border border-white/20 p-4">
+                <div className="absolute top-0 right-0 p-2">
+                  {/* Remove the share button from here */}
+                </div>
+                
+                <div className="chart-container">
+                  <AnalysisChart 
+                    data={result.timeSeriesData}
+                    onPointSelect={handleChartPointSelect}
+                  />
+                </div>
               </div>
             )}
 
