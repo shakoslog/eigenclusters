@@ -1,5 +1,6 @@
 import { coldWarAnalysis, philosophyOfScienceAnalysis, empiricismRationalityAnalysis } from './mockData';
 import { ModelType } from '@/components/EigenclusterTerminal';
+import { postwarJapanData } from './presets/postwar-japan';
 
 export interface PresetConfig {
   id: string;
@@ -75,6 +76,10 @@ export const presets: PresetConfig[] = [
       model: "o1-mini",
       context: "Analyze Japan's dramatic cultural transformation from defeated imperial power to economic innovator, focusing on Tokyo as the epicenter of profound change. This period features sharply competing cultural forces with different trajectories."
     },
-    cachedResult: null
+    cachedResult: postwarJapanData
   }
-]; 
+];
+
+// Re-export everything from the presets folder
+export * from './presets/index';
+export type { PresetConfig } from './presets/types'; 

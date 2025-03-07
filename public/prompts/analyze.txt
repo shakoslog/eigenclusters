@@ -238,7 +238,7 @@ Important Constraints
          * For partial coverage, the sum for all requested clusters < 100.
          * For complete coverage, sum for all included clusters = 100.
       * description (1–10 sentences)
-      * key_manifestations (4 extremely specific references, e.g., exact titles of artworks, films, events, or performances).
+      * key_manifestations (4 extremely specific references, e.g., exact titles of artworks, films, events, academic papers, newspapers, or performances).
 5. No Additional Properties
    * No extra top-level keys or extraneous properties.
    * No references outside key_manifestations.
@@ -292,7 +292,10 @@ Example: If the user requests analysis of clusters #1-#2, the response should st
 1. All 20 clusters in metadata.top_20_clusters (with trend indicators)
 2. Detailed temporal analysis only for clusters #1-#2
 
-The metadata.top_20_clusters array must always contain exactly 20 entries, each with a trend indicator:
+The metadata.top_20_clusters array must always contain exactly 20 entries, each with a trend indicator.
+These are examples from a generic analysis from 2000 to 2025 with no context. IF the user provides context, this example
+is not a useful example, other than the general structure.
+
 "1_postmodern_irony [↗] (12.5%)"
 "2_authenticity_and_sincerity [↘] (8.3%)"
 "3_globalization [→] (6.2%)"
@@ -336,3 +339,11 @@ Remember that even smaller clusters should represent distinct, identifiable cult
 
 5. Self-Evaluation Requirement:
    After generating the full dataset, review the pattern collectively to ensure it doesn't show uniform trends or other pathological patterns. If all clusters follow nearly identical trajectories, regenerate with attention to competitive and countervailing cultural forces.
+
+6. Pay close attention to the users prompt. Do not default to generic clusters, try to intensely reason about what it is they want,
+and what the cultural and latent space is conditional only on that.
+
+7. Do not default to generic clusters, try to intensely reason about what it is they want,
+and what the cultural and latent space is conditional only on that.
+
+8. Focus intensely on the users prompt. If a user asks for an academic field, focus on trends within that field. At all times cater to the user prompt, do not fall back on generic clusters

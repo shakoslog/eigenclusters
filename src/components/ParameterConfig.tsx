@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { presets, PresetConfig } from '@/lib/presets';
+import { getPresets, presets as initialPresets } from '@/lib/presets/index';
+import type { PresetConfig } from '@/lib/presets/types';
 import { ModelType } from './EigenclusterTerminal';  // Import the shared type
 import { NumericFormat } from 'react-number-format';
 
@@ -98,6 +99,7 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
   const [selectedPreset, setSelectedPreset] = useState<string>('');
   const [tokenEstimate, setTokenEstimate] = useState<number>(0);
   const [exceedsLimit, setExceedsLimit] = useState<boolean>(false);
+  const [presets, setPresets] = useState<PresetConfig[]>(initialPresets);
 
   // Set initial state after mount
   useEffect(() => {
@@ -110,6 +112,21 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
       periodicity: 5,
       model: 'gpt4o'
     });
+  }, []);
+
+  // Load all presets when the component mounts
+  useEffect(() => {
+    const loadPresets = async () => {
+      try {
+        const loadedPresets = await getPresets();
+        setPresets(loadedPresets);
+      } catch (error) {
+        console.error("Failed to load presets:", error);
+        // If dynamic loading fails, we'll still have the initial presets
+      }
+    };
+    
+    loadPresets();
   }, []);
 
   // Calculate token estimate
