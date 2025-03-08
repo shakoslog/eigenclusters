@@ -114,7 +114,8 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
   console.log('AnalysisChart received data:', data); // Debug log
 
   const containerRef = React.useRef<HTMLDivElement>(null);
-  const [dimensions, setDimensions] = React.useState({ width: 0, height: 360 });
+  // Set a minimum width for the chart that's wider than typical mobile screens
+  const [dimensions, setDimensions] = React.useState({ width: 800, height: 360 });
   const [hoveredPoint, setHoveredPoint] = useState<any>(null);
   const [hoveredLine, setHoveredLine] = useState<string | null>(null);
   const [isDrawing, setIsDrawing] = useState(true);
@@ -165,13 +166,15 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
     );
   }
 
-  // Responsive width handling
+  // Responsive width handling - modified to enforce minimum width
   React.useEffect(() => {
     const updateDimensions = () => {
       if (containerRef.current) {
+        // Use a minimum width of 800px or the container width, whichever is larger
+        const containerWidth = containerRef.current.offsetWidth;
         setDimensions({
-          width: containerRef.current.offsetWidth,
-          height: 360 // Fixed height or make this responsive too if needed
+          width: Math.max(800, containerWidth), // Minimum width of 800px
+          height: 360 // Fixed height
         });
       }
     };
@@ -356,8 +359,13 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
 
   return (
     <div className="space-y-4">
-      <div style={{ position: 'relative' }}>
-        <div ref={containerRef} className="relative font-mono bg-black p-4 border border-white w-full">
+      {/* Add a horizontal scrolling container */}
+      <div className="overflow-x-auto">
+        <div 
+          ref={containerRef} 
+          className="relative font-mono bg-black p-4 border border-white"
+          style={{ minWidth: '800px' }} // Enforce minimum width
+        >
           <style>
             {`
               @keyframes matrixRain {
@@ -586,62 +594,62 @@ export const AnalysisChart: React.FC<AnalysisChartProps> = ({ data, onPointSelec
             })}
           </div>
         </div>
-
-        {/* Status bar */}
-        <div className="text-white text-xs mt-4 flex justify-between">
-          <span>
-            {hoveredPoint 
-              ? `TRACKING: ${hoveredPoint.clusterName}`
-              : ''}
-          </span>
-          <span>
-            {hoveredPoint 
-              ? `COORD: ${hoveredPoint.year},${hoveredPoint.value}`
-              : ''}
-          </span>
-        </div>
-
-        {/* Point selector popup */}
-        {pointSelector && (
-          <div 
-            className="absolute bg-black border border-white/50 p-2 z-10 max-w-xs"
-            style={{
-              left: pointSelector.x + margin.left,
-              top: pointSelector.y + margin.top - 100,
-              transform: pointSelector.alignRight ? 'translateX(-75%)' : 
-                        pointSelector.alignNearRight ? 'translateX(-50%)' : 
-                        'none'
-            }}
-          >
-            <div className="text-xs mb-2">Select cluster for {pointSelector.year}:</div>
-            <div className="space-y-1">
-              {pointSelector.points.map((point, i) => (
-                <button
-                  key={i}
-                  className="block w-full text-left px-2 py-1 hover:bg-white/10 text-xs"
-                  onClick={() => {
-                    setSelectedPoint({
-                      year: pointSelector.year,
-                      clusterName: point.clusterName,
-                      description: point.description,
-                      manifestations: point.manifestations
-                    });
-                    setPointSelector(null);
-                  }}
-                >
-                  {point.clusterName} ({point.percentageContribution.toFixed(1)})
-                </button>
-              ))}
-            </div>
-            <button 
-              className="absolute top-1 right-1 opacity-50 hover:opacity-100 text-xs"
-              onClick={() => setPointSelector(null)}
-            >
-              ×
-            </button>
-          </div>
-        )}
       </div>
+
+      {/* Status bar */}
+      <div className="text-white text-xs mt-4 flex justify-between">
+        <span>
+          {hoveredPoint 
+            ? `TRACKING: ${hoveredPoint.clusterName}`
+            : ''}
+        </span>
+        <span>
+          {hoveredPoint 
+            ? `COORD: ${hoveredPoint.year},${hoveredPoint.value}`
+            : ''}
+        </span>
+      </div>
+
+      {/* Point selector popup */}
+      {pointSelector && (
+        <div 
+          className="absolute bg-black border border-white/50 p-2 z-10 max-w-xs"
+          style={{
+            left: pointSelector.x + margin.left,
+            top: pointSelector.y + margin.top - 100,
+            transform: pointSelector.alignRight ? 'translateX(-75%)' : 
+                      pointSelector.alignNearRight ? 'translateX(-50%)' : 
+                      'none'
+          }}
+        >
+          <div className="text-xs mb-2">Select cluster for {pointSelector.year}:</div>
+          <div className="space-y-1">
+            {pointSelector.points.map((point, i) => (
+              <button
+                key={i}
+                className="block w-full text-left px-2 py-1 hover:bg-white/10 text-xs"
+                onClick={() => {
+                  setSelectedPoint({
+                    year: pointSelector.year,
+                    clusterName: point.clusterName,
+                    description: point.description,
+                    manifestations: point.manifestations
+                  });
+                  setPointSelector(null);
+                }}
+              >
+                {point.clusterName} ({point.percentageContribution.toFixed(1)})
+              </button>
+            ))}
+          </div>
+          <button 
+            className="absolute top-1 right-1 opacity-50 hover:opacity-100 text-xs"
+            onClick={() => setPointSelector(null)}
+          >
+            ×
+          </button>
+        </div>
+      )}
 
       {/* Selected point metadata */}
       {selectedPoint && (
