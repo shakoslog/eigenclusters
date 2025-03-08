@@ -820,6 +820,29 @@ const EigenclusterTerminal: React.FC<{
       // Set the active tab first
       setActiveTab('chart');
       
+      // Update the analysis parameters to match the preset
+      if (preset.parameters) {
+        const presetParams = {
+          startYear: preset.parameters.startYear,
+          endYear: preset.parameters.endYear,
+          clusterStart: preset.parameters.clusterStart,
+          clusterEnd: preset.parameters.clusterEnd,
+          periodicity: preset.parameters.periodicity,
+          model: preset.parameters.model || 'gpt4o',
+          context: preset.parameters.context || ''
+        };
+        
+        // Update the analysis parameters state
+        setAnalysisParams(presetParams);
+        
+        // Dispatch an event to update the parameter form fields
+        const event = new CustomEvent('reset-parameters', { 
+          detail: presetParams
+        });
+        document.dispatchEvent(event);
+        console.log("Dispatched reset-parameters event with preset parameters:", presetParams);
+      }
+      
       // Process the cached result to ensure it has all required properties
       if (preset.cachedResult) {
         const processedResult = {
