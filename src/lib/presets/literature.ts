@@ -418,7 +418,7 @@ const litereatureData =
 const literaturePreset: PresetConfig = {
   id: 'Middlemarch ',
   name: 'Middlemarch & Literary Analysis',
-  description: 'The list of books Patrick Collison read in 2024',
+  description: 'Literary works',
   parameters: {
     startYear: '1780',
     endYear: '1900',

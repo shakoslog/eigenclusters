@@ -7,13 +7,114 @@ const openai = new OpenAI({
 
 export const runtime = 'edge';
 
-// Helper function to extract JSON from markdown code blocks
+// Enhanced helper function to extract JSON from various formats
 const parseDeepSeekContent = (content: string) => {
-  const jsonMatch = content.match(/```json\s*([\s\S]*?)\s*```/);
+  // Log first 100 chars to see what we're receiving
+  console.log('Raw content start:', content.substring(0, 100));
+  
+  // First try to match JSON code blocks
+  const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
   if (jsonMatch) {
-    return jsonMatch[1].trim();
+    const extracted = jsonMatch[1].trim();
+    console.log('Extracted from code block, first 100 chars:', extracted.substring(0, 100));
+    return extracted;
   }
-  return content;
+  
+  // Try to find JSON by looking for opening/closing braces
+  const jsonObjectMatch = content.match(/(\{[\s\S]*\})/);
+  if (jsonObjectMatch) {
+    const extracted = jsonObjectMatch[1].trim();
+    console.log('Extracted JSON object, first 100 chars:', extracted.substring(0, 100));
+    return extracted;
+  }
+  
+  // If we get here, just sanitize the string to remove any potential BOM or whitespace
+  const sanitized = content.trim().replace(/^\uFEFF/, '');
+  console.log('Sanitized content, first 100 chars:', sanitized.substring(0, 100));
+  return sanitized;
+};
+
+// Create a stream handler that follows the pattern from analyze/route.ts
+const createStreamHandlerOpenAI = (stream: any, originalData: any) => {
+  const encoder = new TextEncoder();
+  
+  return new ReadableStream({
+    async start(controller) {
+      let controllerClosed = false;
+      let accumulatedContent = '';
+      
+      try {
+        console.log('Starting OpenAI stream processing for validation');
+        
+        // Stream chunks exactly like analyze does
+        for await (const chunk of stream) {
+          if (controllerClosed) break;
+          
+          const content = chunk.choices[0]?.delta?.content;
+          if (content) {
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify({ content })}\n\n`));
+            accumulatedContent += content;
+          }
+        }
+        
+        // Send DEBUG message with the EXACT content that will be parsed
+        controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+          debug: true,
+          debugContent: accumulatedContent,
+          debugContentFirstChar: accumulatedContent.charAt(0),
+          debugContentFirstCharCode: accumulatedContent.charCodeAt(0),
+          debugContentLength: accumulatedContent.length,
+          message: "THIS IS THE EXACT CONTENT TO BE PARSED. CHECK CLIENT-SIDE PARSING LOGIC."
+        })}\n\n`));
+        
+        // Send another message with the exact format of the expected structure
+        controller.enqueue(encoder.encode(`data: ${JSON.stringify({
+          clientDebug: true,
+          instruction: "LOG THE EXACT TEXT BEING PARSED CLIENT-SIDE",
+          message: "Find the client-side JSON.parse call and log its input"
+        })}\n\n`));
+        
+        // Still send a complete message but keep it simple
+        controller.enqueue(encoder.encode(`data: ${JSON.stringify({
+          status: "complete",
+          parsedServerSide: true
+        })}\n\n`));
+
+        // Standard stream completion
+        controller.enqueue(encoder.encode('data: [DONE]\n\n'));
+        controller.close();
+      } catch (error) {
+        console.error('Error in validation stream:', error);
+        controller.enqueue(encoder.encode(`data: ${JSON.stringify({ 
+          error: String(error)
+        })}\n\n`));
+        controller.enqueue(encoder.encode('data: [DONE]\n\n'));
+        controller.close();
+      }
+    }
+  });
+};
+
+// Add this function to help with debugging
+const debugStreamResponse = (data: any) => {
+  if (data.content) {
+    // This is a content chunk, no need to debug every chunk
+    return;
+  }
+  
+  console.log("Stream response received:", data);
+  
+  if (data.validatedData) {
+    console.log("Validated data received, first 100 chars:", 
+      JSON.stringify(data.validatedData).substring(0, 100));
+  }
+  
+  if (data.error) {
+    console.error("Stream error:", data.error);
+    if (data.originalData) {
+      console.log("Original data available as fallback");
+    }
+  }
 };
 
 export async function POST(request: Request) {
@@ -24,6 +125,7 @@ export async function POST(request: Request) {
     if (!jsonData) {
       console.error('Missing JSON data for validation');
       return NextResponse.json({ 
+        success: false,
         error: 'Missing JSON data for validation' 
       }, { status: 400 });
     }
@@ -112,36 +214,47 @@ Return only the corrected JSON with no additional text or explanations.
         ],
         temperature: 1,
         max_completion_tokens: 65536,
+        stream: true,
       };
       
-      // Call o1-mini for validation
-      const response = await openai.chat.completions.create(o1MiniConfig);
-
-      // Extract the validated/improved JSON
-      let validatedContent = response.choices[0].message.content;
-      console.log('Raw response from critic (full):');
-      console.log(validatedContent); // Log the full response
-      console.log('End of raw response');
+      // Call OpenAI with streaming still enabled
+      const stream = await openai.chat.completions.create(o1MiniConfig);
       
-      // Process the content using the same function used for streaming
-      validatedContent = parseDeepSeekContent(validatedContent);
+      // KEY CHANGE: Collect the complete response instead of streaming to client
+      console.log('Starting OpenAI stream processing for validation');
+      
+      // Collect the full content from the stream
+      let fullContent = '';
+      for await (const chunk of stream) {
+        const content = chunk.choices[0]?.delta?.content;
+        if (content) {
+          fullContent += content;
+        }
+      }
+      
+      console.log('Stream collection complete, processing response');
+      console.log('Full content length:', fullContent.length);
+      
+      // Use your existing extraction helpers to clean the content
+      // This handles JSON in code blocks, etc.
+      const cleanedContent = parseDeepSeekContent(fullContent);
       
       try {
-        // Parse the response to ensure it's valid JSON
-        const validatedJson = JSON.parse(validatedContent);
-        console.log('Validation complete - returning improved JSON');
+        // Parse the JSON on the server
+        const validatedData = JSON.parse(cleanedContent);
         
-        return NextResponse.json({ 
-          success: true, 
-          validatedData: validatedJson 
+        // Return a single JSON response
+        return NextResponse.json({
+          success: true,
+          validatedData: validatedData
         });
-      } catch (parseError) {
-        console.error('Critic returned invalid JSON:', parseError);
-        console.error('First 200 chars of processed content:', validatedContent.substring(0, 200));
-        // If critic returns invalid JSON, return the original
-        return NextResponse.json({ 
-          success: false, 
-          error: 'Critic returned invalid JSON',
+      } catch (error) {
+        console.error('JSON parsing error:', error);
+        
+        // Return error with original data as fallback
+        return NextResponse.json({
+          success: false,
+          error: `Validation failed to parse result: ${error.message}`,
           originalData: jsonData
         });
       }
@@ -160,4 +273,10 @@ Return only the corrected JSON with no additional text or explanations.
       error: err instanceof Error ? err.message : 'Unknown validation error' 
     }, { status: 500 });
   }
-} 
+}
+
+// Add longer timeout to the route config
+export const config = {
+  runtime: 'edge',  // Use Edge Runtime
+  maxDuration: 300  // 5 minutes in seconds
+}; 

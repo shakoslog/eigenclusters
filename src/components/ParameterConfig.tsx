@@ -145,31 +145,37 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
     setExceedsLimit(estimate > getModelTokenLimit(params.model));
   }, [params.clusterStart, params.clusterEnd, params.startYear, params.endYear, params.periodicity, params.model]);
 
-  // Add this near the top of your component function
+  // Update the reset-parameters event handler
   React.useEffect(() => {
     const handleResetParameters = (e: Event) => {
       const detail = (e as CustomEvent).detail;
       if (detail) {
-        console.log("Resetting parameters to:", detail);
-        setParams({
-          startYear: detail.startYear,
-          endYear: detail.endYear,
-          clusterStart: detail.clusterStart,
-          clusterEnd: detail.clusterEnd,
-          periodicity: detail.periodicity,
-          model: detail.model,
-        });
+        console.log("Reset parameters event received:", detail);
         
-        if (detail.context) {
+        // Update parameters directly without using handleParameterChange
+        setParams(prev => ({
+          ...prev,
+          startYear: detail.startYear || prev.startYear,
+          endYear: detail.endYear || prev.endYear,
+          clusterStart: detail.clusterStart || prev.clusterStart,
+          clusterEnd: detail.clusterEnd || prev.clusterEnd,
+          periodicity: detail.periodicity || prev.periodicity,
+          model: detail.model || prev.model,
+        }));
+        
+        if (detail.context !== undefined) {
           setContext(detail.context);
+        }
+        
+        // Only update the preset if explicitly provided
+        if (detail.presetId) {
+          console.log("Setting preset from event:", detail.presetId);
+          setSelectedPreset(detail.presetId);
         }
       }
     };
 
-    // Add event listener
     document.addEventListener('reset-parameters', handleResetParameters);
-    
-    // Clean up
     return () => {
       document.removeEventListener('reset-parameters', handleResetParameters);
     };
@@ -191,12 +197,14 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
     });
   };
 
-  // Update any parameter input handler to clear preset selection
+  // Modify handleParameterChange to be more careful about clearing presets
   const handleParameterChange = (
     update: Partial<AnalysisParams>,
-    clearPreset: boolean = true
+    clearPreset: boolean = false
   ) => {
+    // Only clear the preset if explicitly requested
     if (clearPreset) {
+      console.log("Clearing preset selection");
       setSelectedPreset('');
       onPresetSelect(null, false);
     }
@@ -221,11 +229,14 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
   };
 
   const handlePresetSelect = (presetId: string) => {
+    console.log("Preset selected:", presetId);
+    
     // Set the selected preset in state
     setSelectedPreset(presetId);
     
     // Find the preset by ID
     const preset = presets.find(p => p.id === presetId);
+    console.log("Found preset:", preset);
     
     // Call the parent component's onPresetSelect function
     if (preset) {
@@ -325,11 +336,29 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
       <div className="mb-4">
         <label className="block mb-2 text-white/70">Presets</label>
         <select 
+          value={selectedPreset}
+          onChange={(e) => {
+            const newValue = e.target.value;
+            console.log("Direct select change:", newValue);
+            
+            // Set state immediately
+            setSelectedPreset(newValue);
+            
+            // Find and pass the preset
+            if (newValue) {
+              const preset = presets.find(p => p.id === newValue);
+              if (preset) {
+                console.log("Found preset, calling onPresetSelect");
+                onPresetSelect(preset, true);
+              }
+            } else {
+              console.log("Empty selection, calling onPresetSelect(null)");
+              onPresetSelect(null, true);
+            }
+          }}
           className={`w-full bg-black text-white border border-white/20 p-2 rounded ${
             isAnalyzing ? 'opacity-50 cursor-not-allowed' : ''
           }`}
-          onChange={(e) => handlePresetSelect(e.target.value)}
-          value={selectedPreset}
           disabled={isAnalyzing}
         >
           <option value="">Select a preset configuration...</option>
@@ -339,6 +368,9 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
             </option>
           ))}
         </select>
+        <div className="text-xs text-white/50 mt-1">
+          Current selection: {selectedPreset || 'none'}
+        </div>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -408,7 +440,7 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
             />
           </div>
           <div>
-            <label className="block mb-2">Periodicity (years)</label>
+            <label className="block mb-2">Year Interval</label>
             <NumericFormat 
               value={params.periodicity}
               onValueChange={(values) => {
@@ -421,7 +453,7 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
                 isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
               }`}
               disabled={isAnalyzing}
-              placeholder="Enter periodicity"
+              placeholder="Enter year interval"
             />
           </div>
           <div>

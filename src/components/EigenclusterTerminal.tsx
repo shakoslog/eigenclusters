@@ -457,7 +457,7 @@ const EigenclusterTerminal: React.FC<{
       setBootSequence([]);
       setStreamingClusters([]);
       
-      const prompt = `Analyze cultural eigenclusters ${params.clusterStart} through ${params.clusterEnd} 
+      const prompt = `Analyze Eigencultures ${params.clusterStart} through ${params.clusterEnd} 
         for the period ${params.startYear}-${params.endYear}, 
         sampling every ${params.periodicity} years.
         ${params.context || ''}`;
@@ -650,11 +650,28 @@ const EigenclusterTerminal: React.FC<{
                 signal: controller.signal
               });
               
+              // Add detailed logging for debugging
+              console.log("Response status:", validationResponse.status);
+              console.log("Response status text:", validationResponse.statusText);
+              console.log("Response headers:", Object.fromEntries([...validationResponse.headers]));
+              
+              // Clone the response so we can examine the raw text
+              const responseClone = validationResponse.clone();
+              const rawResponseText = await responseClone.text();
+              console.log("=================== RAW VALIDATION RESPONSE ===================");
+              console.log(rawResponseText);
+              console.log("=================== END RAW RESPONSE ===================");
+              console.log("Response length:", rawResponseText.length);
+              console.log("First 100 chars:", rawResponseText.substring(0, 100));
+              console.log("Last 100 chars:", rawResponseText.substring(rawResponseText.length - 100));
+              
               if (!validationResponse.ok) {
                 throw new Error(`Validation failed: ${validationResponse.status}`);
               }
               
+              console.log("About to parse response as JSON...");
               const validationResult = await validationResponse.json();
+              console.log("JSON parsing succeeded:", validationResult);
               
               if (validationResult.success && validationResult.validatedData) {
                 // Update with validated data
@@ -822,6 +839,8 @@ const EigenclusterTerminal: React.FC<{
       
       // Update the analysis parameters to match the preset
       if (preset.parameters) {
+        console.log("Setting parameters from preset:", preset.id);
+        
         const presetParams = {
           startYear: preset.parameters.startYear,
           endYear: preset.parameters.endYear,
@@ -829,7 +848,8 @@ const EigenclusterTerminal: React.FC<{
           clusterEnd: preset.parameters.clusterEnd,
           periodicity: preset.parameters.periodicity,
           model: preset.parameters.model || 'gpt4o',
-          context: preset.parameters.context || ''
+          context: preset.parameters.context || '',
+          presetId: preset.id  // Include the preset ID
         };
         
         // Update the analysis parameters state
@@ -840,7 +860,7 @@ const EigenclusterTerminal: React.FC<{
           detail: presetParams
         });
         document.dispatchEvent(event);
-        console.log("Dispatched reset-parameters event with preset parameters:", presetParams);
+        console.log("Dispatched reset-parameters event with preset ID:", preset.id);
       }
       
       // Process the cached result to ensure it has all required properties
