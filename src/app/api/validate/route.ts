@@ -206,71 +206,97 @@ ${JSON.stringify(jsonData, null, 2)}
 Return only the corrected JSON with no additional text or explanations.
 `;
 
-      // Use the exact same configuration as in route.ts for o1-mini
+      // Use the correct parameter name: max_completion_tokens (not max_tokens)
       const o1MiniConfig = {
         model: "o1-mini-2024-09-12",
         messages: [
           { role: "user", content: criticPrompt }
         ],
         temperature: 1,
-        max_completion_tokens: 65536,
+        max_completion_tokens: 32768, // Correct parameter name for o1-mini
         stream: true,
       };
       
-      // Call OpenAI with streaming still enabled
-      const stream = await openai.chat.completions.create(o1MiniConfig);
+      // Start response immediately to prevent timeout
+      // This is the key change - we start sending a response before processing completes
+      const responseStream = new TransformStream();
+      const writer = responseStream.writable.getWriter();
+      const encoder = new TextEncoder();
       
-      // KEY CHANGE: Collect the complete response instead of streaming to client
-      console.log('Starting OpenAI stream processing for validation');
+      // Send initial message to start the response
+      writer.write(encoder.encode(JSON.stringify({
+        status: "processing",
+        message: "Validation started"
+      }) + "\n"));
       
-      // Collect the full content from the stream
-      let fullContent = '';
-      for await (const chunk of stream) {
-        const content = chunk.choices[0]?.delta?.content;
-        if (content) {
-          fullContent += content;
+      // Process in a separate function that continues after response starts
+      const processValidation = async () => {
+        try {
+          const stream = await openai.chat.completions.create(o1MiniConfig);
+          
+          let fullContent = '';
+          for await (const chunk of stream) {
+            const content = chunk.choices[0]?.delta?.content;
+            if (content) {
+              fullContent += content;
+            }
+          }
+          
+          // Process the content
+          console.log('Validation stream complete, content length:', fullContent.length);
+          const cleanedContent = parseDeepSeekContent(fullContent);
+          
+          try {
+            // Try to parse the JSON
+            const validatedData = JSON.parse(cleanedContent);
+            
+            // Send the result once processing is complete
+            writer.write(encoder.encode(JSON.stringify({
+              success: true,
+              validatedData: validatedData
+            }) + "\n"));
+          } catch (error) {
+            console.error('JSON parsing error:', error);
+            writer.write(encoder.encode(JSON.stringify({
+              success: false,
+              error: `Parse error: ${error.message}`,
+              originalData: jsonData
+            }) + "\n"));
+          }
+        } catch (error) {
+          console.error('Process error:', error);
+          writer.write(encoder.encode(JSON.stringify({
+            success: false,
+            error: `API error: ${error.message}`,
+            originalData: jsonData
+          }) + "\n"));
+        } finally {
+          writer.close();
         }
-      }
+      };
       
-      console.log('Stream collection complete, processing response');
-      console.log('Full content length:', fullContent.length);
+      // Start processing without waiting
+      processValidation();
       
-      // Use your existing extraction helpers to clean the content
-      // This handles JSON in code blocks, etc.
-      const cleanedContent = parseDeepSeekContent(fullContent);
+      // Return the stream immediately
+      return new Response(responseStream.readable, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
       
-      try {
-        // Parse the JSON on the server
-        const validatedData = JSON.parse(cleanedContent);
-        
-        // Return a single JSON response
-        return NextResponse.json({
-          success: true,
-          validatedData: validatedData
-        });
-      } catch (error) {
-        console.error('JSON parsing error:', error);
-        
-        // Return error with original data as fallback
-        return NextResponse.json({
-          success: false,
-          error: `Validation failed to parse result: ${error.message}`,
-          originalData: jsonData
-        });
-      }
-    } catch (apiError) {
-      console.error('OpenAI API error:', apiError);
+    } catch (error) {
+      console.error('Validation API error:', error);
       return NextResponse.json({ 
         success: false, 
-        error: `OpenAI API error: ${apiError instanceof Error ? apiError.message : 'Unknown error'}`,
-        originalData: jsonData
-      });
+        error: error instanceof Error ? error.message : 'Unknown validation error' 
+      }, { status: 500 });
     }
-  } catch (err) {
-    console.error('Validation API error:', err);
+  } catch (error) {
+    console.error('Validation API error:', error);
     return NextResponse.json({ 
       success: false, 
-      error: err instanceof Error ? err.message : 'Unknown validation error' 
+      error: error instanceof Error ? error.message : 'Unknown validation error' 
     }, { status: 500 });
   }
 }

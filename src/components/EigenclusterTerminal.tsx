@@ -636,7 +636,7 @@ const EigenclusterTerminal: React.FC<{
                 },
                 body: JSON.stringify({ 
                   jsonData: parsedJson,
-                  userPrompt: userPrompt, // Ensure this is not empty
+                  userPrompt: userPrompt, 
                   userParameters: {
                     startYear: params.startYear,
                     endYear: params.endYear,
@@ -650,46 +650,75 @@ const EigenclusterTerminal: React.FC<{
                 signal: controller.signal
               });
               
-              // Add detailed logging for debugging
-              console.log("Response status:", validationResponse.status);
-              console.log("Response status text:", validationResponse.statusText);
-              console.log("Response headers:", Object.fromEntries([...validationResponse.headers]));
-              
-              // Clone the response so we can examine the raw text
-              const responseClone = validationResponse.clone();
-              const rawResponseText = await responseClone.text();
-              console.log("=================== RAW VALIDATION RESPONSE ===================");
-              console.log(rawResponseText);
-              console.log("=================== END RAW RESPONSE ===================");
-              console.log("Response length:", rawResponseText.length);
-              console.log("First 100 chars:", rawResponseText.substring(0, 100));
-              console.log("Last 100 chars:", rawResponseText.substring(rawResponseText.length - 100));
-              
               if (!validationResponse.ok) {
                 throw new Error(`Validation failed: ${validationResponse.status}`);
               }
               
-              console.log("About to parse response as JSON...");
-              const validationResult = await validationResponse.json();
-              console.log("JSON parsing succeeded:", validationResult);
+              // Handle as a stream instead of using response.json()
+              const reader = validationResponse.body?.getReader();
+              if (!reader) {
+                throw new Error('Could not get reader from validation response');
+              }
               
-              if (validationResult.success && validationResult.validatedData) {
+              let validationResult = null;
+              const decoder = new TextDecoder();
+              
+              // Process the stream chunks
+              while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                
+                // Convert the chunk to text
+                const chunk = decoder.decode(value, { stream: true });
+                console.log('Validation chunk received, length:', chunk.length);
+                
+                // Process each line in the chunk
+                const lines = chunk.split('\n').filter(line => line.trim() !== '');
+                for (const line of lines) {
+                  try {
+                    const parsed = JSON.parse(line);
+                    
+                    // Handle processing status updates
+                    if (parsed.status === 'processing') {
+                      console.log('Validation status:', parsed.message);
+                      setBootSequence(prev => [...prev, `VALIDATION: ${parsed.message}`]);
+                      continue;
+                    }
+                    
+                    // If we have validated data, store it
+                    if (parsed.success && parsed.validatedData) {
+                      validationResult = parsed.validatedData;
+                      console.log("Received validated data:", validationResult);
+                    }
+                    
+                    // If we have an error, log it
+                    if (!parsed.success && parsed.error) {
+                      console.error('Validation stream error:', parsed.error);
+                      setBootSequence(prev => [...prev, `VALIDATION ERROR: ${parsed.error}`]);
+                    }
+                  } catch (e) {
+                    console.error('Error parsing validation chunk:', e, line);
+                  }
+                }
+              }
+              
+              // Process the validation result if we have one
+              if (validationResult && validationResult.clusters) {
                 // Update with validated data
-                const validatedJson = validationResult.validatedData;
-                const validatedChartData = transformDataForChart(validatedJson);
+                const validatedChartData = transformDataForChart(validationResult);
                 
                 setBootSequence(prev => [...prev, 'VALIDATION COMPLETE - IMPROVEMENTS APPLIED']);
                 
                 // Update the result with validated data
                 setResult({
-                  content: JSON.stringify(validatedJson, null, 2),
+                  content: JSON.stringify(validationResult, null, 2),
                   timeSeriesData: validatedChartData,
-                  metadata: validatedJson.metadata || {},
-                  clusters: validatedJson.clusters || {}
+                  metadata: validationResult.metadata || {},
+                  clusters: validationResult.clusters || {}
                 });
                 
                 // Update the editor content
-                setJsonEditorContent(JSON.stringify(validatedJson, null, 2));
+                setJsonEditorContent(JSON.stringify(validationResult, null, 2));
               } else {
                 // Validation failed but we still have the original data
                 setBootSequence(prev => [...prev, 'VALIDATION INCOMPLETE - USING ORIGINAL DATA']);
