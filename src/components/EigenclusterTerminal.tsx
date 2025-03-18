@@ -167,10 +167,17 @@ interface SavedState {
   chatMessages: ChatMessage[];
 }
 
-// Update the component definition to accept props
+// Add this near your other interface definitions
+interface TerminalMethods {
+  loadPreset: (presetName: string) => boolean;
+  loadShowcaseExample: () => boolean;
+}
+
+// Update the component props
 const EigenclusterTerminal: React.FC<{
   initialSharedState?: any;
-}> = ({ initialSharedState }) => {
+  onReady?: (methods: TerminalMethods) => void;
+}> = ({ initialSharedState, onReady }) => {
   console.log("EigenclusterTerminal initializing with shared state:", initialSharedState);
   const [isBooted, setIsBooted] = useState(true);
   const [bootSequence, setBootSequence] = useState<string[]>([]);
@@ -198,6 +205,7 @@ const EigenclusterTerminal: React.FC<{
   const [snapshotJson, setSnapshotJson] = useState<string>('');
   const [showSnapshotModal, setShowSnapshotModal] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [showTutorialHighlight, setShowTutorialHighlight] = useState(false);
 
   // Add a state variable to store analysis parameters
   const [analysisParams, setAnalysisParams] = useState<AnalysisParams>({
@@ -1237,6 +1245,98 @@ const EigenclusterTerminal: React.FC<{
     setShouldValidate(validate);
   };
 
+  // Add this useEffect to expose methods
+  useEffect(() => {
+    if (onReady) {
+      onReady({
+        loadPreset: (presetName: string) => {
+          try {
+            // Import the presets dynamically
+            import('@/lib/presets').then(({ getPresets }) => {
+              getPresets().then(presets => {
+                const preset = presets.find(p => p.name === presetName);
+                if (preset) {
+                  handlePresetSelect(preset, false);
+                  setActiveTab('chart');
+                  return true;
+                } else {
+                  console.error(`Preset "${presetName}" not found`);
+                  return false;
+                }
+              });
+            }).catch(err => {
+              console.error("Error loading presets:", err);
+              return false;
+            });
+            return true;
+          } catch (error) {
+            console.error("Error loading preset:", error);
+            return false;
+          }
+        },
+        loadShowcaseExample: () => {
+          try {
+            // Use Alexandria as our showcase example since it has good data
+            import('@/lib/presets/alexandria').then(module => {
+              const showcasePreset = module.default;
+              if (showcasePreset) {
+                handlePresetSelect(showcasePreset, false);
+                setActiveTab('chart');
+                // Option to show tutorial highlight
+                // setShowTutorialHighlight(true);
+                // setTimeout(() => setShowTutorialHighlight(false), 5000);
+                return true;
+              }
+              return false;
+            }).catch(err => {
+              console.error("Error loading showcase example:", err);
+              return false;
+            });
+            return true;
+          } catch (error) {
+            console.error("Error loading showcase example:", error);
+            return false;
+          }
+        }
+      });
+    }
+  }, [onReady]);
+
+  // Add an event listener for loading presets
+  useEffect(() => {
+    const handleLoadPreset = (event: Event) => {
+      const customEvent = event as CustomEvent;
+      const presetName = customEvent.detail?.presetName;
+      
+      if (presetName) {
+        console.log("Received load-preset event with presetName:", presetName);
+        
+        // Import the presets dynamically
+        import('@/lib/presets').then(({ getPresets }) => {
+          getPresets().then(presets => {
+            const preset = presets.find(p => p.name === presetName);
+            if (preset) {
+              handlePresetSelect(preset, false);
+              setActiveTab('chart');
+            } else {
+              console.error(`Preset "${presetName}" not found`);
+            }
+          });
+        }).catch(err => {
+          console.error("Error loading presets:", err);
+        });
+      }
+    };
+    
+    // Add the event listener
+    document.addEventListener('load-preset', handleLoadPreset);
+    
+    // Clean up the listener on component unmount
+    return () => {
+      document.removeEventListener('load-preset', handleLoadPreset);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-black p-8 font-mono text-white">
       <pre className="mb-8">{ASCII_LOGO}</pre>
@@ -1335,6 +1435,12 @@ const EigenclusterTerminal: React.FC<{
                     onPointSelect={handleChartPointSelect}
                   />
                 </div>
+
+                {showTutorialHighlight && activeTab === 'chart' && (
+                  <div className="absolute top-12 right-12 bg-blue-500/80 text-white p-3 rounded-lg shadow-lg z-10 max-w-xs animate-pulse">
+                    👉 Click on any point to see specific manifestations of that cultural pattern
+                  </div>
+                )}
               </div>
             )}
 
