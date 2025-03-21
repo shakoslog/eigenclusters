@@ -13,6 +13,7 @@ interface ParameterConfigProps {
   onParameterChange?: (updatedParams: Partial<AnalysisParams>) => void;
   shouldValidate?: boolean;
   onValidateChange?: (validate: boolean) => void;
+  hideHeader?: boolean;
 }
 
 interface AnalysisParams {
@@ -87,7 +88,8 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
   error,
   onParameterChange,
   shouldValidate = false,
-  onValidateChange
+  onValidateChange,
+  hideHeader = false
 }) => {
   const [mounted, setMounted] = useState(false);
   const [params, setParams] = useState<AnalysisParams>({
@@ -328,275 +330,279 @@ const ParameterConfig: React.FC<ParameterConfigProps> = ({
   };
 
   return (
-    <div className="flex-1 space-y-4 border border-white/20 p-4">
-      <div className="text-center mb-6 text-sm">
-        === PARAMETER CONFIGURATION ===
-      </div>
-
-      <div className="mb-4">
-        <label className="block mb-2 text-white/70">Presets</label>
-        <select 
-          value={selectedPreset}
-          onChange={(e) => {
-            const newValue = e.target.value;
-            console.log("Direct select change:", newValue);
-            
-            // Set state immediately
-            setSelectedPreset(newValue);
-            
-            // Find and pass the preset
-            if (newValue) {
-              const preset = presets.find(p => p.id === newValue);
-              if (preset) {
-                console.log("Found preset, calling onPresetSelect");
-                onPresetSelect(preset, true);
-              }
-            } else {
-              console.log("Empty selection, calling onPresetSelect(null)");
-              onPresetSelect(null, true);
-            }
-          }}
-          className={`w-full bg-black text-white border border-white/20 p-2 rounded ${
-            isAnalyzing ? 'opacity-50 cursor-not-allowed' : ''
-          }`}
-          disabled={isAnalyzing}
-        >
-          <option value="">Select a preset configuration...</option>
-          {presets.map(preset => (
-            <option key={preset.id} value={preset.id}>
-              {preset.name} - {preset.description}
-            </option>
-          ))}
-        </select>
-        <div className="text-xs text-white/50 mt-1">
-          Current selection: {selectedPreset || 'none'}
+    <div className="parameter-config">
+      {!hideHeader && (
+        <div className="text-center mb-4">
+          === PARAMETER CONFIGURATION ===
         </div>
-      </div>
+      )}
 
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
-          <div>
-            <label className="block mb-2">Start Year</label>
-            <NumericFormat 
-              value={params.startYear}
-              onValueChange={(values) => {
-                const newValue = values.value;
-                handleParameterChange({ startYear: newValue });
+      <div className="flex-1 space-y-4 border border-white/20 p-4">
+        <div className="mb-4">
+          <label className="block mb-2 text-white/70">Presets</label>
+          <select 
+            value={selectedPreset}
+            onChange={(e) => {
+              const newValue = e.target.value;
+              console.log("Direct select change:", newValue);
+              
+              // Set state immediately
+              setSelectedPreset(newValue);
+              
+              // Find and pass the preset
+              if (newValue) {
+                const preset = presets.find(p => p.id === newValue);
+                if (preset) {
+                  console.log("Found preset, calling onPresetSelect");
+                  onPresetSelect(preset, true);
+                }
+              } else {
+                console.log("Empty selection, calling onPresetSelect(null)");
+                onPresetSelect(null, true);
+              }
+            }}
+            className={`w-full bg-black text-white border border-white/20 p-2 rounded ${
+              isAnalyzing ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+            disabled={isAnalyzing}
+          >
+            <option value="">Select a preset configuration...</option>
+            {presets.map(preset => (
+              <option key={preset.id} value={preset.id}>
+                {preset.name} - {preset.description}
+              </option>
+            ))}
+          </select>
+          <div className="text-xs text-white/50 mt-1">
+            Current selection: {selectedPreset || 'none'}
+          </div>
+        </div>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <label className="block mb-2">Start Year</label>
+              <NumericFormat 
+                value={params.startYear}
+                onValueChange={(values) => {
+                  const newValue = values.value;
+                  handleParameterChange({ startYear: newValue });
+                }}
+                className={`w-full p-2 bg-white/10 ${
+                  isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
+                }`}
+                disabled={isAnalyzing}
+                placeholder="Enter start year"
+              />
+            </div>
+            <div>
+              <label className="block mb-2">End Year</label>
+              <NumericFormat 
+                value={params.endYear}
+                onValueChange={(values) => {
+                  const newValue = values.value;
+                  handleParameterChange({ endYear: newValue });
+                }}
+                className={`w-full p-2 bg-white/10 ${
+                  isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
+                }`}
+                disabled={isAnalyzing}
+                placeholder="Enter end year"
+              />
+            </div>
+            <div>
+              <label className="block mb-2">Cluster Start</label>
+              <NumericFormat 
+                value={params.clusterStart}
+                onValueChange={(values) => {
+                  const newValue = values.value;
+                  handleParameterChange({ 
+                    clusterStart: newValue === '' ? '' : Number(newValue)
+                  });
+                }}
+                className={`w-full p-2 bg-white/10 ${
+                  isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
+                }`}
+                disabled={isAnalyzing}
+                placeholder="Enter cluster start"
+              />
+            </div>
+            <div>
+              <label className="block mb-2">Cluster End</label>
+              <NumericFormat 
+                value={params.clusterEnd}
+                onValueChange={(values) => {
+                  const newValue = values.value;
+                  handleParameterChange({ 
+                    clusterEnd: newValue === '' ? '' : Number(newValue) 
+                  });
+                }}
+                className={`w-full p-2 bg-white/10 ${
+                  isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
+                }`}
+                disabled={isAnalyzing}
+                placeholder="Enter cluster end"
+              />
+            </div>
+            <div>
+              <label className="block mb-2">Year Interval</label>
+              <NumericFormat 
+                value={params.periodicity}
+                onValueChange={(values) => {
+                  const newValue = values.value;
+                  handleParameterChange({ 
+                    periodicity: newValue === '' ? '' : Number(newValue)
+                  });
+                }}
+                className={`w-full p-2 bg-white/10 ${
+                  isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
+                }`}
+                disabled={isAnalyzing}
+                placeholder="Enter year interval"
+              />
+            </div>
+            <div>
+              <label className="block mb-2">Model</label>
+              <select
+                value={params.model}
+                onChange={(e) => handleParameterChange({ model: e.target.value as ModelType })}
+                className={`w-full p-2 bg-white/10 ${isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'}`}
+                disabled={isAnalyzing}
+              >
+                {modelOptions.map((option) => (
+                  <option 
+                    key={option.value} 
+                    value={option.value}
+                    disabled={option.disabled}
+                    className={option.disabled ? 'text-gray-500 bg-gray-800' : ''}
+                    title={option.disabledReason}
+                  >
+                    {option.label} {option.disabled ? '(Rate Limited)' : ''}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          <div className="mt-4 flex items-center">
+            <input
+              type="checkbox"
+              id="validate-checkbox"
+              checked={shouldValidate}
+              onChange={(e) => {
+                console.log("Checkbox clicked, new value:", e.target.checked);
+                if (onValidateChange) {
+                  onValidateChange(e.target.checked);
+                }
               }}
-              className={`w-full p-2 bg-white/10 ${
-                isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
-              }`}
+              className="mr-2 h-4 w-4"
               disabled={isAnalyzing}
-              placeholder="Enter start year"
+            />
+            <label htmlFor="validate-checkbox" className="text-sm text-gray-300">
+              Enable actor-critic validation (slower but more accurate)
+            </label>
+          </div>
+
+          <div className="mt-4">
+            <label className="block mb-2">Context (optional)</label>
+            <textarea
+              value={context}
+              onChange={(e) => {
+                setContext(e.target.value);
+                handleParameterChange({ context: e.target.value });
+              }}
+              className={`w-full p-2 bg-white/10 h-24 ${isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'}`}
+              placeholder="Add additional context to condition the analysis..."
+              disabled={isAnalyzing}
             />
           </div>
-          <div>
-            <label className="block mb-2">End Year</label>
-            <NumericFormat 
-              value={params.endYear}
-              onValueChange={(values) => {
-                const newValue = values.value;
-                handleParameterChange({ endYear: newValue });
-              }}
-              className={`w-full p-2 bg-white/10 ${
-                isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
+
+          <div className="space-y-2">
+            {/* Token estimate and warning */}
+            <div className="text-sm font-mono border border-white/20 p-2 bg-black/20">
+              <div className="grid grid-cols-2 gap-x-4 mb-1">
+                <span className="text-white">Estimated tokens:</span>
+                <span className={tokenEstimate > getModelTokenLimit(params.model) * 2 ? 'text-red-400' : 'text-white'}>
+                  {tokenEstimate.toLocaleString()}
+                </span>
+              </div>
+              <div className="grid grid-cols-2 gap-x-4">
+                <span className="text-white">Model capacity:</span>
+                <span className="text-white">
+                  {getModelTokenLimit(params.model).toLocaleString()}
+                </span>
+              </div>
+              
+              {tokenEstimate > getModelTokenLimit(params.model) * 2 && (
+                <div className="mt-2 p-2 border border-red-500/20 bg-red-500/10 text-red-500">
+                  ⚠️ Error: Token estimate too high for model capacity. Try:
+                  <ul className="list-disc ml-4 mt-1 text-xs">
+                    <li>Reducing the time range</li>
+                    <li>Increasing the periodicity</li>
+                    <li>Reducing the number of clusters</li>
+                    <li>Using a model with higher capacity</li>
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            {/* Show all validation messages */}
+            {getValidationMessages().length > 0 && (
+              <div className="mt-2 text-red-500 text-sm bg-red-500/10 border border-red-500/20 p-2 rounded space-y-1">
+                {getValidationMessages().map((message, index) => (
+                  <div key={index} className="flex items-start">
+                    <span className="mr-2">⚠️</span>
+                    <span>{message}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Analyze button */}
+            <button
+              type="submit"
+              onClick={handleSubmit}
+              disabled={!isValidRange() || isAnalyzing}
+              className={`w-full mt-4 p-2 ${
+                !isValidRange() || isAnalyzing
+                  ? 'bg-gray-500 cursor-not-allowed'
+                  : 'bg-white/10 hover:bg-white/20'
               }`}
-              disabled={isAnalyzing}
-              placeholder="Enter end year"
-            />
-          </div>
-          <div>
-            <label className="block mb-2">Cluster Start</label>
-            <NumericFormat 
-              value={params.clusterStart}
-              onValueChange={(values) => {
-                const newValue = values.value;
-                handleParameterChange({ 
-                  clusterStart: newValue === '' ? '' : Number(newValue)
-                });
-              }}
-              className={`w-full p-2 bg-white/10 ${
-                isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
-              }`}
-              disabled={isAnalyzing}
-              placeholder="Enter cluster start"
-            />
-          </div>
-          <div>
-            <label className="block mb-2">Cluster End</label>
-            <NumericFormat 
-              value={params.clusterEnd}
-              onValueChange={(values) => {
-                const newValue = values.value;
-                handleParameterChange({ 
-                  clusterEnd: newValue === '' ? '' : Number(newValue) 
-                });
-              }}
-              className={`w-full p-2 bg-white/10 ${
-                isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
-              }`}
-              disabled={isAnalyzing}
-              placeholder="Enter cluster end"
-            />
-          </div>
-          <div>
-            <label className="block mb-2">Year Interval</label>
-            <NumericFormat 
-              value={params.periodicity}
-              onValueChange={(values) => {
-                const newValue = values.value;
-                handleParameterChange({ 
-                  periodicity: newValue === '' ? '' : Number(newValue)
-                });
-              }}
-              className={`w-full p-2 bg-white/10 ${
-                isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'
-              }`}
-              disabled={isAnalyzing}
-              placeholder="Enter year interval"
-            />
-          </div>
-          <div>
-            <label className="block mb-2">Model</label>
-            <select
-              value={params.model}
-              onChange={(e) => handleParameterChange({ model: e.target.value as ModelType })}
-              className={`w-full p-2 bg-white/10 ${isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'}`}
-              disabled={isAnalyzing}
+              title={getValidationMessages().join('\n') || "Start analysis"}
             >
-              {modelOptions.map((option) => (
-                <option 
-                  key={option.value} 
-                  value={option.value}
-                  disabled={option.disabled}
-                  className={option.disabled ? 'text-gray-500 bg-gray-800' : ''}
-                  title={option.disabledReason}
-                >
-                  {option.label} {option.disabled ? '(Rate Limited)' : ''}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
+              {isAnalyzing ? 'Analyzing...' : 'Analyze'}
+            </button>
 
-        <div className="mt-4 flex items-center">
-          <input
-            type="checkbox"
-            id="validate-checkbox"
-            checked={shouldValidate}
-            onChange={(e) => {
-              console.log("Checkbox clicked, new value:", e.target.checked);
-              if (onValidateChange) {
-                onValidateChange(e.target.checked);
-              }
-            }}
-            className="mr-2 h-4 w-4"
-            disabled={isAnalyzing}
-          />
-          <label htmlFor="validate-checkbox" className="text-sm text-gray-300">
-            Enable actor-critic validation (slower but more accurate)
-          </label>
-        </div>
+            {isAnalyzing && (
+              <button
+                onClick={onStop}
+                className="w-full p-2 bg-white/10 hover:bg-white/20 border border-white/20"
+              >
+                STOP ANALYSIS
+              </button>
+            )}
 
-        <div className="mt-4">
-          <label className="block mb-2">Context (optional)</label>
-          <textarea
-            value={context}
-            onChange={(e) => {
-              setContext(e.target.value);
-              handleParameterChange({ context: e.target.value });
-            }}
-            className={`w-full p-2 bg-white/10 h-24 ${isAnalyzing ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/20'}`}
-            placeholder="Add additional context to condition the analysis..."
-            disabled={isAnalyzing}
-          />
-        </div>
-
-        <div className="space-y-2">
-          {/* Token estimate and warning */}
-          <div className="text-sm font-mono border border-white/20 p-2 bg-black/20">
-            <div className="grid grid-cols-2 gap-x-4 mb-1">
-              <span className="text-white">Estimated tokens:</span>
-              <span className={tokenEstimate > getModelTokenLimit(params.model) * 2 ? 'text-red-400' : 'text-white'}>
-                {tokenEstimate.toLocaleString()}
-              </span>
-            </div>
-            <div className="grid grid-cols-2 gap-x-4">
-              <span className="text-white">Model capacity:</span>
-              <span className="text-white">
-                {getModelTokenLimit(params.model).toLocaleString()}
-              </span>
-            </div>
-            
-            {tokenEstimate > getModelTokenLimit(params.model) * 2 && (
-              <div className="mt-2 p-2 border border-red-500/20 bg-red-500/10 text-red-500">
-                ⚠️ Error: Token estimate too high for model capacity. Try:
+            {error && error.includes('Token limit reached') && !isAnalyzing && (
+              <div className="text-red-500 text-sm mt-2 p-2 border border-red-500/20 bg-red-500/10">
+                ⚠️ Analysis failed: The response was incomplete. Try:
                 <ul className="list-disc ml-4 mt-1 text-xs">
-                  <li>Reducing the time range</li>
-                  <li>Increasing the periodicity</li>
                   <li>Reducing the number of clusters</li>
                   <li>Using a model with higher capacity</li>
                 </ul>
               </div>
             )}
           </div>
+        </form>
 
-          {/* Show all validation messages */}
-          {getValidationMessages().length > 0 && (
-            <div className="mt-2 text-red-500 text-sm bg-red-500/10 border border-red-500/20 p-2 rounded space-y-1">
-              {getValidationMessages().map((message, index) => (
-                <div key={index} className="flex items-start">
-                  <span className="mr-2">⚠️</span>
-                  <span>{message}</span>
-                </div>
-              ))}
-            </div>
-          )}
+        {isAnalyzing && (
+          <div className="text-center text-white/50 animate-pulse">
+            Analyzing cultural eigenclusters... this may take a few minutes
+          </div>
+        )}
 
-          {/* Analyze button */}
-          <button
-            type="submit"
-            onClick={handleSubmit}
-            disabled={!isValidRange() || isAnalyzing}
-            className={`w-full mt-4 p-2 ${
-              !isValidRange() || isAnalyzing
-                ? 'bg-gray-500 cursor-not-allowed'
-                : 'bg-white/10 hover:bg-white/20'
-            }`}
-            title={getValidationMessages().join('\n') || "Start analysis"}
-          >
-            {isAnalyzing ? 'Analyzing...' : 'Analyze'}
-          </button>
-
-          {isAnalyzing && (
-            <button
-              onClick={onStop}
-              className="w-full p-2 bg-white/10 hover:bg-white/20 border border-white/20"
-            >
-              STOP ANALYSIS
-            </button>
-          )}
-
-          {error && error.includes('Token limit reached') && !isAnalyzing && (
-            <div className="text-red-500 text-sm mt-2 p-2 border border-red-500/20 bg-red-500/10">
-              ⚠️ Analysis failed: The response was incomplete. Try:
-              <ul className="list-disc ml-4 mt-1 text-xs">
-                <li>Reducing the number of clusters</li>
-                <li>Using a model with higher capacity</li>
-              </ul>
-            </div>
-          )}
+        <div className="mt-4 text-xs opacity-50">
+          SYSTEM STATUS: {isAnalyzing ? 'ANALYZING' : 'READY FOR INPUT'}
         </div>
-      </form>
-
-      {isAnalyzing && (
-        <div className="text-center text-white/50 animate-pulse">
-          Analyzing cultural eigenclusters... this may take a few minutes
-        </div>
-      )}
-
-      <div className="mt-4 text-xs opacity-50">
-        SYSTEM STATUS: {isAnalyzing ? 'ANALYZING' : 'READY FOR INPUT'}
       </div>
     </div>
   );

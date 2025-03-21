@@ -138,6 +138,7 @@ interface ParameterConfigProps {
   onStop: () => void;
   onPresetSelect: (preset: PresetConfig | null, clearResult?: boolean) => void;
   onParameterChange?: (params: AnalysisParams) => void;
+  hideHeader?: boolean;
 }
 
 // Update the type definition
@@ -1338,148 +1339,185 @@ const EigenclusterTerminal: React.FC<{
   }, []);
 
   return (
-    <div className="min-h-screen bg-black p-8 font-mono text-white">
-      <pre className="mb-8">{ASCII_LOGO}</pre>
-      
-      <div className="mb-8">
-        {/* Update the save state button to be disabled when not saveable */}
-        <div className="flex justify-end mb-4 gap-2">
+    <div className={`font-mono antialiased min-h-screen flex flex-col ${isBooted ? '' : 'bg-black'}`}>
+      {/* Header with improved styling */}
+      <header className="bg-black border-b border-white/20 p-3 flex justify-between items-center">
+        <h1 className="text-xl font-medium tracking-tight">EIGENCULTURE</h1>
+        {isStateSaveable && (
           <button
             onClick={handleShareState}
-            className={`px-4 py-2 text-xs border border-white/20 ${
-              isStateSaveable 
-                ? 'hover:bg-white/10 cursor-pointer' 
-                : 'opacity-50 cursor-not-allowed'
-            }`}
-            title={isStateSaveable 
-              ? "Share current analysis state" 
-              : "Complete an analysis to enable sharing"}
-            disabled={!isStateSaveable}
+            className="px-4 py-1.5 text-sm border border-white/20 hover:bg-white/10 transition-colors"
           >
             SHARE
           </button>
-          <input
-            type="file"
-            ref={fileInputRef}
-            onChange={handleFileUpload}
-            accept=".json"
-            className="hidden"
-          />
+        )}
+      </header>
+
+      {/* Main content area with SIGNIFICANTLY wider sidebar */}
+      <div className="flex-1 flex flex-col md:flex-row">
+        {/* Force the sidebar to be much wider with !important */}
+        <div className="w-full md:w-[420px] lg:w-[440px] xl:w-[460px] border-r border-white/20 bg-black/60 overflow-y-auto" style={{minWidth: '420px'}}>
+          <div className="p-4">
+            <h2 className="text-base font-medium mb-4 border-b border-white/20 pb-2">Analysis Configuration</h2>
+            
+            {/* Parameter config with more room to breathe */}
+            <div className="space-y-4 pr-2">
+              <ParameterConfig 
+                onSubmit={handleAnalysis}
+                isAnalyzing={isAnalyzing || isThinking}
+                onStop={handleStop}
+                onPresetSelect={handlePresetSelect}
+                shouldValidate={shouldValidate}
+                onValidateChange={setShouldValidate}
+                onParameterChange={handleParameterChange}
+                hideHeader={true}
+              />
+            </div>
+            
+            {/* Validation messages */}
+            {bootSequence.length > 0 && (
+              <div className="mt-4 bg-black/30 border border-white/10 rounded p-3">
+                <h3 className="text-xs uppercase text-white/50 mb-1">System Messages</h3>
+                <div className="max-h-32 overflow-y-auto">
+                  {bootSequence.map((line, i) => (
+                    <div key={i} className={`text-sm py-0.5 ${line.includes('VALIDATION') ? 'text-yellow-400' : 'text-white/70'}`}>
+                      {line}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
         
-        {bootSequence.map((message, i) => (
-          <div key={i} className={`mb-1 ${
-            message?.startsWith?.('ERROR:') 
-              ? 'text-red-500 font-bold' 
-              : message?.includes?.('VALIDATION') 
-                ? 'text-yellow-500' 
-                : ''
-          }`}>
-            {message}
+        {/* Main content area */}
+        <div className="flex-1 bg-black/80 flex flex-col min-w-0">
+          {/* Tabs navigation with better styling */}
+          <div className="flex border-b border-white/20">
+            {['chart', 'data', 'clusters', 'prompt'].map((tab) => (
+              <button 
+                key={tab}
+                className={`px-6 py-3 text-sm font-medium transition-colors ${
+                  activeTab === tab ? 'bg-white/10 border-b-2 border-white/70' : 'hover:bg-white/5'
+                } ${
+                  isAnalyzing && tab !== activeTab ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+                onClick={() => handleTabChange(tab as any)}
+                disabled={isAnalyzing && tab !== activeTab}
+              >
+                {tab.toUpperCase()}
+              </button>
+            ))}
           </div>
-        ))}
-      </div>
-
-      {/* Add validation indicator */}
-      {isValidating && (
-        <div className="text-yellow-500 animate-pulse mb-4">
-          Validating historical accuracy with o1-mini critic... please wait
-        </div>
-      )}
-
-      {isBooted && (
-        <div className="space-y-8">
-          <ParameterConfig 
-            onSubmit={handleAnalysis}
-            isAnalyzing={isAnalyzing}
-            onStop={handleStop}
-            onPresetSelect={handlePresetSelect}
-            onParameterChange={handleParameterChange}
-            shouldValidate={shouldValidate}
-            onValidateChange={handleValidateChange}
-          />
           
-          {isReasoning && (currentModel === 'deepseek' || currentModel === 'o1-mini') && (
-            <div className="text-green-500 animate-pulse">
-              Chain of Thought Reasoning... please wait
-            </div>
-          )}
-          
-          <div className="border border-white">
-            <div className="flex border-b border-white/20">
-              {['chart', 'data', 'clusters', 'about', 'prompt'].map((tab) => (
-                <button 
-                  key={tab}
-                  className={`px-4 py-2 ${
-                    activeTab === tab ? 'bg-white/10' : ''
-                  } ${
-                    isAnalyzing && tab !== activeTab ? 'opacity-50 cursor-not-allowed' : ''
-                  }`}
-                  onClick={() => handleTabChange(tab)}
-                  disabled={isAnalyzing && tab !== activeTab}
-                >
-                  {tab.toUpperCase()}
-                </button>
-              ))}
-            </div>
-
-            {activeTab === 'chart' && result?.timeSeriesData && (
-              <div className="relative border border-white/20 p-4">
-                <div className="absolute top-0 right-0 p-2">
-                  {/* Remove the share button from here */}
+          {/* Tab content with improved styling */}
+          <div className="flex-1 overflow-auto">
+            {activeTab === 'chart' && (
+              <div>
+                {/* Chart visualization with better container */}
+                <div className="border-b border-white/10">
+                  {result?.timeSeriesData && result.timeSeriesData.length > 0 ? (
+                    <div className="relative">
+                      <AnalysisChart 
+                        data={result.timeSeriesData}
+                        onPointSelect={handleChartPointSelect}
+                      />
+                    </div>
+                  ) : (
+                    <div className="min-h-[300px] flex items-center justify-center">
+                      {isAnalyzing ? (
+                        <div className="text-center p-8 max-w-md">
+                          <div className="inline-block animate-spin mr-2 h-6 w-6 border-2 border-white/20 border-t-white rounded-full"></div>
+                          <div className="text-lg font-medium mt-3 mb-2">Analyzing cultural patterns...</div>
+                          <div className="text-sm text-white/60">This may take a few minutes</div>
+                        </div>
+                      ) : (
+                        <div className="text-center p-8 max-w-md">
+                          <div className="text-lg font-medium mb-2">No visualization data available</div>
+                          <div className="text-sm text-white/60">Configure parameters and run analysis</div>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
                 
-                <div className="chart-container">
-                  <AnalysisChart 
-                    data={result.timeSeriesData}
-                    onPointSelect={handleChartPointSelect}
-                  />
-                </div>
-
-                {showTutorialHighlight && activeTab === 'chart' && (
-                  <div className="absolute top-12 right-12 bg-blue-500/80 text-white p-3 rounded-lg shadow-lg z-10 max-w-xs animate-pulse">
-                    👉 Click on any point to see specific manifestations of that cultural pattern
+                {/* Selected cluster details with improved styling */}
+                {activeContext && (
+                  <div className="bg-white/5 border-b border-white/20 p-5">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h3 className="text-lg font-medium mb-1">
+                          {activeContext.clusterName}
+                        </h3>
+                        <p className="text-sm text-white/70 mb-3">
+                          {activeContext.year} ・ {activeContext.percentageContribution.toFixed(1)}% influence
+                        </p>
+                      </div>
+                      <button 
+                        onClick={() => setActiveContext(null)}
+                        className="text-white/50 hover:text-white text-lg"
+                      >
+                        ×
+                      </button>
+                    </div>
+                    
+                    <p className="text-sm leading-relaxed mb-4">{activeContext.description}</p>
+                    
+                    {activeContext.manifestations && activeContext.manifestations.length > 0 && (
+                      <div className="bg-black/30 p-3 rounded">
+                        <h4 className="text-sm font-medium mb-2">Key manifestations:</h4>
+                        <ul className="list-disc pl-5 text-sm space-y-1.5 text-white/80">
+                          {activeContext.manifestations.map((m, i) => (
+                            <li key={i}>{m}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
             )}
-
+            
+            {/* Data tab with improved styling */}
             {activeTab === 'data' && (
               <div className="p-4">
-                <div className="mb-4">
-                  <h2 className="text-xl">JSON Output</h2>
-                  {isAnalyzing && <div className="text-sm text-green-500">Streaming data...</div>}
+                <div className="mb-4 flex justify-between items-center">
+                  <h2 className="text-lg font-medium">JSON Output</h2>
+                  {isAnalyzing && <div className="text-sm text-green-500 flex items-center"><div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>Streaming data...</div>}
                 </div>
-                <Editor
-                  height="600px"
-                  defaultLanguage="json"
-                  value={jsonEditorContent}
-                  theme="vs-dark"
-                  options={{
-                    minimap: { enabled: false },
-                    fontSize: 14,
-                    wordWrap: 'on',
-                    readOnly: true,
-                    domReadOnly: true,
-                    cursorStyle: 'line'
-                  }}
-                />
+                <div className="border border-white/10 rounded">
+                  <Editor
+                    height="calc(100vh - 220px)"
+                    defaultLanguage="json"
+                    value={jsonEditorContent}
+                    theme="vs-dark"
+                    options={{
+                      minimap: { enabled: false },
+                      fontSize: 14,
+                      wordWrap: 'on',
+                      readOnly: true,
+                      domReadOnly: true,
+                      cursorStyle: 'line'
+                    }}
+                  />
+                </div>
               </div>
             )}
-
+            
+            {/* Clusters tab with improved styling */}
             {activeTab === 'clusters' && (
-              <div className="p-4">
-                <h2 className="text-xl mb-4">Top 20 Cultural Eigenclusters</h2>
-                <div className="space-y-2">
+              <div className="p-5">
+                <h2 className="text-lg font-medium mb-4">Top Cultural Eigenclusters</h2>
+                <div className="space-y-1">
                   {result?.metadata?.top_20_clusters?.map((cluster: string, index: number) => {
                     const { name, trend, percentage } = formatClusterName(cluster);
                     return (
                       <div 
                         key={index}
-                        className="flex gap-2 items-center"
+                        className="flex gap-3 items-center p-2 hover:bg-white/5 transition-colors rounded"
                       >
-                        <span className="opacity-50 w-8">{index + 1}.</span>
-                        <span>{name}</span>
+                        <span className="opacity-60 w-6 text-right">{index + 1}.</span>
+                        <span className="flex-1">{name}</span>
                         {trend && (
                           <span className={`ml-2 ${
                             trend === '↗' ? 'text-green-500' :
@@ -1490,7 +1528,7 @@ const EigenclusterTerminal: React.FC<{
                           </span>
                         )}
                         {percentage && (
-                          <span className="ml-2 opacity-50">
+                          <span className="ml-2 opacity-60 text-sm">
                             ({percentage}%)
                           </span>
                         )}
@@ -1499,27 +1537,21 @@ const EigenclusterTerminal: React.FC<{
                   })}
                 </div>
                 {(!result?.metadata?.top_20_clusters || result.metadata.top_20_clusters.length === 0) && (
-                  <div className="text-white/50">
-                    No clusters available
+                  <div className="text-white/50 text-center p-8 border border-white/10 rounded bg-black/30">
+                    No clusters available. Run an analysis to see results.
                   </div>
                 )}
               </div>
             )}
-
-            {activeTab === 'about' && (
-              <div className="p-4">
-                <div className="prose prose-invert prose-sm max-w-none">
-                  <ReactMarkdown>{ABOUT_CONTENT}</ReactMarkdown>
-                </div>
-              </div>
-            )}
-
+            
+            {/* Prompt tab with improved styling */}
             {activeTab === 'prompt' && (
-              <div className="p-4">
-                <div className="prose prose-invert max-w-none">
-                  <div className="space-y-2 text-sm leading-relaxed">
+              <div className="p-5">
+                <h2 className="text-lg font-medium mb-4">Analysis Prompt</h2>
+                <div className="prose prose-invert max-w-none bg-black/30 p-4 border border-white/10 rounded">
+                  <div className="space-y-3 text-sm leading-relaxed">
                     {promptContent.split('\n\n').map((paragraph, index) => (
-                      <p key={index} className="text-gray-300 font-light">
+                      <p key={index} className="text-white/80">
                         {paragraph}
                       </p>
                     ))}
@@ -1529,64 +1561,73 @@ const EigenclusterTerminal: React.FC<{
             )}
           </div>
         </div>
+      </div>
+
+      {/* Error display with improved styling */}
+      {error && (
+        <div className="bg-red-900/20 border-t border-red-500/30 p-4 text-red-400">
+          <div className="font-bold mb-1">Error</div>
+          <div>{error}</div>
+        </div>
       )}
 
-      {/* Modal for sharing */}
+      {/* Footer with improved styling */}
+      <footer className="bg-black border-t border-white/20 p-3 text-center text-white/50 text-xs">
+        Eigenculture • Cultural Analysis through AI
+      </footer>
+      
+      {/* Share Modal with improved styling */}
       {showSnapshotModal && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-          <div className="bg-black border border-white/20 p-6 max-w-2xl w-full max-h-[80vh] overflow-auto">
+        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4">
+          <div className="bg-black border border-white/20 p-6 max-w-lg w-full rounded">
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-lg">Share Analysis</h3>
+              <h3 className="text-lg font-medium">Share Analysis</h3>
               <button 
                 onClick={() => setShowSnapshotModal(false)}
-                className="opacity-50 hover:opacity-100"
+                className="text-white/50 hover:text-white"
               >
                 ×
               </button>
             </div>
             
-            {isSharing ? (
-              <div className="text-center py-8">
-                <div className="animate-pulse">Generating share link...</div>
-              </div>
-            ) : shareError ? (
-              <div className="text-red-500 mb-4">
-                Error: {shareError}
-              </div>
-            ) : shareUrl ? (
-              <>
-                <p className="mb-4 text-sm opacity-70">
-                  Share this link with others to let them view your analysis:
-                </p>
-                
-                <div className="flex items-center gap-2 mb-4 bg-black/30 p-2 border border-white/10 rounded">
+            <div>
+              <div className="mb-5">
+                <div className="text-sm mb-2">Copy this URL to share your analysis:</div>
+                <div className="flex gap-2 mb-1">
                   <input
                     type="text"
                     value={shareUrl}
                     readOnly
-                    className="bg-transparent flex-1 outline-none"
-                    onClick={(e) => e.currentTarget.select()}
+                    className="flex-1 bg-white/5 border border-white/20 p-2 text-sm rounded-l"
                   />
                   <button
-                    onClick={() => {
-                      navigator.clipboard.writeText(shareUrl);
-                      setBootSequence(prev => [...prev, "SHARE URL COPIED TO CLIPBOARD"]);
-                    }}
-                    className="px-3 py-1 text-xs border border-white/20 hover:bg-white/10"
+                    onClick={copySnapshotToClipboard}
+                    className="bg-white/10 border border-white/30 px-4 hover:bg-white/20 rounded-r transition-colors"
                   >
-                    COPY
+                    Copy
                   </button>
                 </div>
-                
-                <p className="text-xs opacity-50 mt-4">
-                  This shared link will be available for 30 days.
-                </p>
-              </>
-            ) : (
-              <div className="text-center py-8">
-                <div className="text-red-500">Something went wrong. Please try again.</div>
+                {shareUrlCopied && (
+                  <div className="text-green-400 text-xs mt-1">✓ Copied to clipboard!</div>
+                )}
               </div>
-            )}
+              
+              <div>
+                <div className="text-sm mb-2">Or export the full analysis state:</div>
+                <button
+                  onClick={exportAppState}
+                  className="bg-white/10 border border-white/30 px-4 py-2 hover:bg-white/20 text-sm rounded transition-colors"
+                >
+                  Export JSON
+                </button>
+              </div>
+              
+              {shareError && (
+                <div className="mt-4 text-red-400 text-sm p-3 border border-red-500/30 bg-red-900/20 rounded">
+                  {shareError}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}
