@@ -397,136 +397,170 @@ const ExplanationPanel: React.FC<ExplanationPanelProps> = ({ onLoadExample, pres
 
   return (
     <div className="border-b border-white/20 relative">
-      <div className="container mx-auto px-6 md:px-12 py-10 md:py-14">
-        <button
-          onClick={() => setShowExplanation(false)}
-          className="absolute top-5 right-6 text-white/50 hover:text-white"
-          aria-label="Close explanation"
-        >
-          ×
-        </button>
-        
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-4 font-light tracking-wide">Eigencultures: Mapping Historical Patterns</h1>
-          <p className="text-white/80 mb-8 text-lg max-w-3xl">
-            Discover how cultural forces evolve and intersect through history.
-          </p>
-          
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
-            <div>
-              <h3 className="text-xl mb-4 text-white/90 font-medium">Methodology</h3>
-              <div className="space-y-4">
-                <p className="text-white/70 leading-relaxed">
-                  Our approach draws conceptually from cluster analysis applied to cultural patterns. 
-                  The LLM analyzes historical data to identify clusters of related concepts, events, and developments
-                  that form distinct trajectories over time.
-                </p>
-                <p className="text-white/70 leading-relaxed">
-                  By treating cultural evolution as a complex system embedded within the <a 
-                    href="https://shakoist.substack.com/p/does-the-textual-corpus-for-large" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="ml-1 text-blue-300 hover:text-blue-200 underline underline-offset-2 transition-colors"
-                  >latent space of an LLM</a>,
-                  we can map the relative influence of different patterns across time periods.
-                  
-                    
-                  
-                </p>
-              </div>
-              
-              <div className="mt-8">
-                <button
-                  onClick={() => {
-                    console.log("Example button clicked");
-                    handleLoadExample();
-                  }}
-                  disabled={isLoading || availablePresets.length === 0}
-                  className={`px-6 py-3 bg-white/10 hover:bg-white/20 transition border border-white/30 text-lg tracking-wide group relative ${isLoading ? 'opacity-70' : ''}`}
-                >
-                  {isLoading ? (
-                    <span className="flex items-center">
-                      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                      </svg>
-                      Loading Random Example...
-                    </span>
-                  ) : (
-                    <>
-                      Explore Random Example
-                      <span className="inline-block ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
-                    </>
-                  )}
-                </button>
-                {!isLoading && (
-                  <p className="text-white/50 text-sm mt-2">
-                    Try a random historical period from our curated examples
-                  </p>
-                )}
-                {selectedPreset && !isLoading && (
-                  <div className="mt-4 py-2 px-3 bg-white/5 border border-white/10 text-white/70 text-sm rounded-sm">
-                    Loaded: {availablePresets.find(p => p.id === selectedPreset)?.name || selectedPreset}
-                  </div>
-                )}
-              </div>
-            </div>
+      {/* Close button */}
+      <button
+        onClick={() => setShowExplanation(false)}
+        className="absolute top-5 right-6 text-white/50 hover:text-white z-10"
+        aria-label="Close explanation"
+      >
+        ×
+      </button>
+      
+      {/* Hero Section */}
+      <div className="bg-gradient-to-b from-purple-900/20 to-black border-b border-white/10">
+        <div className="container mx-auto px-6 md:px-12 py-8 md:py-12">
+          <div className="max-w-5xl mx-auto">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl mb-3 font-light tracking-wide">
+              Eigencultures: Mapping Historical Patterns
+            </h1>
+            <p className="text-white/80 mb-6 text-lg max-w-3xl">
+              Discover how cultural forces evolve and intersect through history.
+            </p>
             
-            <div>
-              <h3 className="text-xl mb-4 text-white/90 font-medium">How to Read the Visualization</h3>
-              <div className="border border-white/20 bg-black/40 rounded-sm overflow-hidden">
-                <VisualizationGuide />
+            <button
+              onClick={() => {
+                console.log("Example button clicked");
+                handleLoadExample();
+              }}
+              disabled={isLoading || availablePresets.length === 0}
+              className={`px-5 py-2.5 bg-white/10 hover:bg-white/20 transition border border-white/30 
+                text-base tracking-wide group relative inline-flex items-center ${isLoading ? 'opacity-70' : ''}`}
+            >
+              {isLoading ? (
+                <span className="flex items-center">
+                  <svg className="animate-spin -ml-1 mr-3 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  Loading Example...
+                </span>
+              ) : (
+                <>
+                  Explore Random Example
+                  <span className="inline-block ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+                </>
+              )}
+            </button>
+            
+            {!isLoading && (
+              <p className="text-white/50 text-sm mt-2 max-w-md">
+                Try a random historical period from our curated examples
+              </p>
+            )}
+            
+            {selectedPreset && !isLoading && (
+              <div className="mt-4 py-2 px-3 inline-block bg-white/5 border border-white/10 text-white/70 text-sm rounded-sm">
+                Loaded: {availablePresets.find(p => p.id === selectedPreset)?.name || selectedPreset}
               </div>
-              <ul className="text-sm space-y-3 text-white/70 mt-5 ml-1">
-                <li className="flex items-baseline gap-2">
-                  <span className="text-white/90">•</span> 
-                  <span><strong className="text-white/90">Lines:</strong> Each line represents a cultural cluster</span>
-                </li>
-                <li className="flex items-baseline gap-2">
-                  <span className="text-white/90">•</span> 
-                  <span><strong className="text-white/90">Height:</strong> Shows relative influence at that point in time</span>
-                </li>
-                <li className="flex items-baseline gap-2">
-                  <span className="text-white/90">•</span> 
-                  <span><strong className="text-white/90">Points:</strong> Click to see examples from that period</span>
-                </li>
-                <li className="flex items-baseline gap-2">
-                  <span className="text-white/90">•</span> 
-                  <span><strong className="text-white/90">Legend:</strong> Identifies each cluster pattern</span>
-                </li>
-              </ul>
+            )}
+          </div>
+        </div>
+      </div>
+      
+      {/* Main content in 2-column layout */}
+      <div className="container mx-auto px-6 md:px-12 py-10">
+        <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          {/* Left column */}
+          <div>
+            <h3 className="text-xl mb-4 text-white/90 font-medium">Methodology</h3>
+            <div className="space-y-4">
+              <p className="text-white/70 leading-relaxed">
+                Our approach draws conceptually from cluster analysis applied to cultural patterns. 
+                The LLM analyzes historical data to identify clusters of related concepts, events, and developments
+                that form distinct trajectories over time.
+              </p>
+              <p className="text-white/70 leading-relaxed">
+                By treating cultural evolution as a complex system embedded within the 
+                <a 
+                  href="https://shakoist.substack.com/p/does-the-textual-corpus-for-large" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="ml-1 text-blue-300 hover:text-blue-200 underline underline-offset-2 transition-colors"
+                >
+                  latent space of an LLM
+                </a>,
+                we can map the relative influence of different patterns across time periods.
+              </p>
             </div>
           </div>
           
-          {/* Clickable scroll indicator */}
-          <div 
-            className="mt-12 text-center cursor-pointer hover:opacity-80 transition-opacity"
-            onClick={scrollToTool}
-            role="button"
-            aria-label="Scroll to tool"
-          >
-            <p className="text-white/60 mb-3">Scroll down to explore the tool</p>
-            <div className="animate-bounce inline-block">
-              <svg className="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
+          {/* Right column */}
+          <div>
+            <h3 className="text-xl mb-4 text-white/90 font-medium">How to Read the Visualization</h3>
+            <div className="border border-white/20 bg-black/40 rounded-sm overflow-hidden mb-4">
+              <VisualizationGuide />
+            </div>
+            <ul className="text-sm space-y-2 text-white/70 ml-1 grid grid-cols-2 gap-x-4 gap-y-2">
+              <li className="flex items-baseline gap-2">
+                <span className="text-white/90">•</span> 
+                <span><strong className="text-white/90">Lines:</strong> Cultural clusters</span>
+              </li>
+              <li className="flex items-baseline gap-2">
+                <span className="text-white/90">•</span> 
+                <span><strong className="text-white/90">Height:</strong> Relative influence</span>
+              </li>
+              <li className="flex items-baseline gap-2">
+                <span className="text-white/90">•</span> 
+                <span><strong className="text-white/90">Points:</strong> Click for examples</span>
+              </li>
+              <li className="flex items-baseline gap-2">
+                <span className="text-white/90">•</span> 
+                <span><strong className="text-white/90">Legend:</strong> Cluster identifiers</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      {/* About section */}
+      <div className="border-t border-white/20 bg-black/60">
+        <div className="container mx-auto px-6 md:px-12 py-10">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl mb-6 font-light tracking-wide">About Eigencultures Analysis</h2>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <h3 className="text-xl mb-3 text-white/90 font-medium">How it Works</h3>
+                <ol className="list-decimal pl-5 space-y-1.5 text-white/70 text-sm">
+                  <li>Select a time period and number of clusters to analyze</li>
+                  <li>Add context to condition the analysis</li>
+                  <li>The system identifies key cultural patterns</li>
+                  <li>View results as charts or detailed data</li>
+                  <li>Avoid too many clusters to preserve token space</li>
+                </ol>
+              </div>
+              
+              <div>
+                <h3 className="text-xl mb-3 text-white/90 font-medium">Interpretation</h3>
+                <ul className="list-disc pl-5 space-y-1.5 text-white/70 text-sm">
+                  <li>Each eigencluster represents a distinct cultural pattern</li>
+                  <li>Percentages show variance each cluster explains</li>
+                  <li>Trends (↗↘→) show if patterns are growing or declining</li>
+                  <li>Click chart points to explore specific details</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="text-xl mb-3 text-white/90 font-medium">Extensions</h3>
+                <p className="text-white/70 leading-relaxed text-sm">
+                  Copy the JSON output into Claude 3.7 reasoning mode for deeper insights. This actor-critic validation method was used for our presets but isn't available in the live tool due to rate limits.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       
-      {/* Clickable peek element */}
-      <div 
-        className="h-12 bg-gradient-to-b from-transparent to-white/5 relative overflow-hidden cursor-pointer"
-        onClick={scrollToTool}
-        role="button"
-        aria-label="Scroll to tool"
-      >
-        <div className="absolute inset-x-0 -bottom-2 h-10 flex items-center justify-center space-x-12 text-white/40 text-xs font-mono">
-          <span>CHART</span>
-          <span>DATA</span>
-          <span>CLUSTERS</span>
-          <span>PROMPT</span>
+      {/* Scroll indicator - more compact */}
+      <div className="text-center py-4 cursor-pointer hover:opacity-80 transition-opacity"
+           onClick={scrollToTool}
+           role="button"
+           aria-label="Scroll to tool">
+        <p className="text-white/60 text-sm mb-1">Scroll to explore the tool</p>
+        <div className="animate-bounce inline-block">
+          <svg className="w-5 h-5 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
         </div>
       </div>
       
