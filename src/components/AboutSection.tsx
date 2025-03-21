@@ -10,12 +10,12 @@ const AboutSection = () => {
           <div>
             <h3 className="text-xl mb-3 text-white/90">Methodology</h3>
             <p className="text-white/70">
-              Our approach draws from mathematical eigenvector analysis applied to cultural patterns. 
-              The AI analyzes historical data to identify clusters of related concepts, events, and developments
+              Our approach draws conceptually from cluster analysis applied to cultural patterns. 
+              The LLM analyzes historical data to identify clusters of related concepts, events, and developments
               that form distinct trajectories over time.
             </p>
             <p className="text-white/70 mt-3">
-              By treating cultural evolution as a complex system with multiple interacting forces,
+              By treating cultural evolution as a complex system that's embedded in the [latent space of an LLM](https://shakoist.substack.com/p/does-the-textual-corpus-for-large),
               we can map the relative influence of different patterns across time periods.
               This reveals how ideas, technologies, and movements have shaped human history.
             </p>

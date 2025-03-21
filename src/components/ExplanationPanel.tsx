@@ -7,115 +7,287 @@ interface ExplanationPanelProps {
 }
 
 const VisualizationGuide = () => {
+  const [showExample, setShowExample] = useState(false);
+  
   return (
     <div className="relative h-48 w-full bg-black overflow-hidden font-mono text-xs">
-      {/* Grid background - matches the terminal style */}
-      <div className="absolute inset-0 grid grid-cols-12 grid-rows-8">
-        {Array(96).fill(0).map((_, i) => (
-          <div key={i} className="border-t border-l border-white/10" />
-        ))}
-      </div>
-      
-      {/* Y-axis labels */}
-      <div className="absolute left-2 top-0 h-full flex flex-col justify-between py-2 text-white/60">
-        <div>9</div>
-        <div>8</div>
-        <div>7</div>
-        <div>6</div>
-        <div>5</div>
-        <div>4</div>
-        <div>3</div>
-        <div>2</div>
-        <div>1</div>
-        <div>0</div>
-      </div>
-      
-      {/* Chart title */}
-      <div className="absolute top-1 w-full text-center text-white/80">
-        [Interactive Chart. Click on the lines and select a cluster to see more information]
-      </div>
-      
-      {/* Chart lines with square markers */}
-      <div className="absolute inset-0 pt-8 pb-6 px-8">
-        {/* Line 1 - solid */}
-        <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
-          <polyline 
-            points="0,60 50,55 100,45 150,35 200,20 250,25 300,35" 
-            stroke="white" 
-            strokeWidth="1.5" 
-            fill="none" 
+      {/* SVG container with all chart elements */}
+      <svg className="w-full h-full" preserveAspectRatio="none">
+        {/* Grid pattern background */}
+        <defs>
+          <pattern id="guide-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect width="20" height="20" fill="none" stroke="rgba(15, 54, 15, 0.7)" strokeWidth="0.5"/>
+          </pattern>
+        </defs>
+        
+        {/* Background */}
+        <rect x="0" y="0" width="100%" height="100%" fill="rgb(0, 0, 0)" />
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#guide-grid)" className="grid-pulse" />
+        
+        {/* Chart content area - widened to fill more horizontal space */}
+        <g transform="translate(35, 10)">
+          {/* Chart title - adjusted for wider chart */}
+          <text 
+            x="240" 
+            y="-2" 
+            fill="rgba(255, 255, 255, 0.8)" 
+            fontSize="8"
+            textAnchor="middle"
+          >
+            [Interactive Chart. Click on the lines and select a cluster to see more information]
+          </text>
+          
+          {/* Y-axis with 12 points - extended width */}
+          <g className="y-axis">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].reverse().map((tick, i) => (
+              <g key={`y-tick-${tick}`}>
+                <line 
+                  x1="-5" 
+                  y1={i * 11} 
+                  x2="480" 
+                  y2={i * 11} 
+                  stroke="rgba(255, 255, 255, 0.1)" 
+                  strokeWidth="0.5"
+                />
+                <text 
+                  x="-10" 
+                  y={i * 11 + 3} 
+                  fill="rgba(255, 255, 255, 0.6)" 
+                  fontSize="8"
+                  textAnchor="end"
+                >
+                  {tick}
+                </text>
+              </g>
+            ))}
+          </g>
+          
+          {/* X-axis with CE dates - widened to fill more space */}
+          <g className="x-axis" transform="translate(0, 125)">
+            {['2000 CE', '2004 CE', '2008 CE', '2012 CE', '2016 CE', '2020 CE'].map((year, i) => (
+              <g key={`x-tick-${year}`} transform={`translate(${i * 80}, 0)`}>
+                <line 
+                  x1="0" 
+                  y1="0" 
+                  x2="0" 
+                  y2="-125" 
+                  stroke="rgba(255, 255, 255, 0.1)" 
+                  strokeWidth="0.5"
+                />
+                <text 
+                  x="0" 
+                  y="15" 
+                  fill="rgba(255, 255, 255, 0.6)" 
+                  fontSize="8"
+                  textAnchor="middle"
+                >
+                  {year}
+                </text>
+              </g>
+            ))}
+          </g>
+          
+          {/* Post-Modernism line and points - widened to fill more space */}
+          <polyline
+            points="0,23 80,37 160,51 240,65 320,79 400,93"
+            fill="none"
+            stroke="white"
+            strokeWidth="1.5"
           />
-          {[0, 50, 100, 150, 200, 250, 300].map((x, i) => {
-            const y = [60, 55, 45, 35, 20, 25, 35][i];
+          
+          {[0, 80, 160, 240, 320, 400].map((x, i) => {
+            const y = [23, 37, 51, 65, 79, 93][i]; // adjusted for expanded height
             return (
-              <rect key={i} x={x-3} y={y-3} width="6" height="6" fill="black" stroke="white" strokeWidth="1.5" />
+              <rect 
+                key={`pm-point-${i}`}
+                x={x - 3} 
+                y={y - 3} 
+                width="6" 
+                height="6" 
+                fill="black" 
+                stroke="white" 
+                strokeWidth="1"
+              />
             );
           })}
-        </svg>
-        
-        {/* Line 2 - dashed */}
-        <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
-          <polyline 
-            points="0,70 50,65 100,55 150,45 200,30 250,35 300,40" 
-            stroke="white" 
-            strokeWidth="1.5" 
-            fill="none" 
+          
+          {/* Authenticity line and points (dashed) - widened to fill more space */}
+          <polyline
+            points="0,93 80,79 160,65 240,51 320,37 400,23"
+            fill="none"
+            stroke="white"
+            strokeWidth="1.5"
             strokeDasharray="5,5"
           />
-          {[0, 50, 100, 150, 200, 250, 300].map((x, i) => {
-            const y = [70, 65, 55, 45, 30, 35, 40][i];
+          
+          {[0, 80, 160, 240, 320, 400].map((x, i) => {
+            const y = [93, 79, 65, 51, 37, 23][i]; // adjusted for expanded height
             return (
-              <rect key={i} x={x-3} y={y-3} width="6" height="6" fill="black" stroke="white" strokeWidth="1.5" />
+              <rect 
+                key={`auth-point-${i}`}
+                x={x - 3} 
+                y={y - 3} 
+                width="6" 
+                height="6" 
+                fill="black" 
+                stroke="white" 
+                strokeWidth="1"
+                className={i === 1 ? "cursor-pointer hover:stroke-2" : ""}
+                onClick={() => i === 1 && setShowExample(!showExample)}
+              />
             );
           })}
-        </svg>
+          
+          {/* Click here indicator - moved to 2004 point */}
+          {!showExample && (
+            <g transform="translate(80, 69)">
+              <text 
+                x="0" 
+                y="0" 
+                fill="white" 
+                fontSize="8"
+                textAnchor="middle"
+                opacity="0.7"
+              >
+                Click here
+              </text>
+              <line 
+                x1="0" 
+                y1="4" 
+                x2="0" 
+                y2="7" 
+                stroke="white" 
+                strokeWidth="0.5" 
+                className="animate-pulse"
+              />
+            </g>
+          )}
+          
+          {/* Example popup - adjusted position and simplified content */}
+          {showExample && (
+            <g transform="translate(130, 65)" className="fade-in">
+              <rect 
+                x="-110" 
+                y="-60" 
+                width="220" 
+                height="70" 
+                fill="black" 
+                stroke="white" 
+                strokeWidth="0.5"
+                rx="1"
+                ry="1"
+              />
+              
+              <text 
+                x="-100" 
+                y="-45" 
+                fill="white" 
+                fontSize="9"
+                fontWeight="bold"
+              >
+                Authenticity
+              </text>
+              <text 
+                x="100" 
+                y="-45" 
+                fill="white" 
+                fontSize="8"
+                textAnchor="end"
+                className="cursor-pointer hover:text-opacity-70"
+                onClick={() => setShowExample(false)}
+              >
+                [CLOSE]
+              </text>
+              <text 
+                x="-100" 
+                y="-33" 
+                fill="white" 
+                fontSize="7.5"
+              >
+                Year: 2004 CE
+              </text>
+              
+              <text 
+                x="-100" 
+                y="-15" 
+                fill="white" 
+                fontSize="8"
+                fontWeight="bold"
+              >
+                KEY MANIFESTATIONS:
+              </text>
+              <text 
+                x="-100" 
+                y="0" 
+                fill="rgba(255, 255, 255, 0.8)" 
+                fontSize="7.5"
+              >
+                • The Office (post-ironic documentary style)
+              </text>
+            </g>
+          )}
+          
+          {/* Legend moved to center of wider chart */}
+          <g transform="translate(200, 165)">
+            <g transform="translate(-110, 0)">
+              <line x1="0" y1="0" x2="15" y2="0" stroke="white" strokeWidth="1.5" />
+              <text x="20" y="3" fill="white" fontSize="8">Post-Modernism</text>
+            </g>
+            
+            <g transform="translate(80, 0)">
+              <line x1="0" y1="0" x2="15" y2="0" stroke="white" strokeWidth="1.5" strokeDasharray="5,5" />
+              <text x="20" y="3" fill="white" fontSize="8">Authenticity</text>
+            </g>
+          </g>
+        </g>
+      </svg>
+      
+      {/* Add animations */}
+      <style jsx>{`
+        @keyframes gridPulse {
+          0% { opacity: 0.1; }
+          50% { opacity: 0.15; }
+          100% { opacity: 0.1; }
+        }
         
-        {/* Line 3 - dotted */}
-        <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
-          <polyline 
-            points="0,80 50,75 100,65 150,55 200,45 250,50 300,55" 
-            stroke="white" 
-            strokeWidth="1.5" 
-            fill="none" 
-            strokeDasharray="2,2"
-          />
-          {[0, 50, 100, 150, 200, 250, 300].map((x, i) => {
-            const y = [80, 75, 65, 55, 45, 50, 55][i];
-            return (
-              <rect key={i} x={x-3} y={y-3} width="6" height="6" fill="black" stroke="white" strokeWidth="1.5" />
-            );
-          })}
-        </svg>
-      </div>
-      
-      {/* X-axis labels for years */}
-      <div className="absolute bottom-1 w-full flex justify-between px-10 text-white/60">
-        <div>1000 CE</div>
-        <div>1200 CE</div>
-        <div>1400 CE</div>
-        <div>1600 CE</div>
-        <div>1800 CE</div>
-        <div>2000 CE</div>
-      </div>
-      
-      {/* Legend */}
-      <div className="absolute bottom-8 w-full text-center text-white/80 flex justify-center gap-6 text-[8px]">
-        <div className="flex items-center">
-          <span className="inline-block w-4 h-0 border-t border-white mr-1"></span>
-          <span>1_cluster_name</span>
-        </div>
-        <div className="flex items-center">
-          <span className="inline-block w-4 h-0 border-t border-white border-dashed mr-1"></span>
-          <span>2_another_cluster</span>
-        </div>
-        <div className="flex items-center">
-          <span className="inline-block w-4 h-0 border-t border-white border-dotted mr-1"></span>
-          <span>3_third_cluster</span>
-        </div>
-      </div>
-      
-      {/* Data point highlight - subtle */}
-      <div className="absolute top-[75px] right-[85px] w-6 h-6 border border-white/60 animate-pulse"></div>
+        .grid-pulse {
+          animation: gridPulse 4s ease-in-out infinite;
+        }
+        
+        .animate-pulse {
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.3;
+          }
+        }
+        
+        .cursor-pointer {
+          cursor: pointer;
+        }
+        
+        .hover\\:stroke-2:hover {
+          stroke-width: 2;
+        }
+        
+        .hover\\:text-opacity-70:hover {
+          opacity: 0.7;
+        }
+        
+        .fade-in {
+          animation: fadeIn 0.3s ease-in;
+        }
+        
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+      `}</style>
     </div>
   );
 };
@@ -235,9 +407,9 @@ const ExplanationPanel: React.FC<ExplanationPanelProps> = ({ onLoadExample, pres
         </button>
         
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-4 font-light tracking-wide">Cultural Eigenanalysis: Mapping Historical Patterns</h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-4 font-light tracking-wide">Eigencultures: Mapping Historical Patterns</h1>
           <p className="text-white/80 mb-8 text-lg max-w-3xl">
-            Discover how cultural forces evolve and intersect through history with AI-powered pattern analysis.
+            Discover how cultural forces evolve and intersect through history.
           </p>
           
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
@@ -245,13 +417,21 @@ const ExplanationPanel: React.FC<ExplanationPanelProps> = ({ onLoadExample, pres
               <h3 className="text-xl mb-4 text-white/90 font-medium">Methodology</h3>
               <div className="space-y-4">
                 <p className="text-white/70 leading-relaxed">
-                  Our approach draws from mathematical eigenvector analysis applied to cultural patterns. 
-                  The AI analyzes historical data to identify clusters of related concepts, events, and developments
+                  Our approach draws conceptually from cluster analysis applied to cultural patterns. 
+                  The LLM analyzes historical data to identify clusters of related concepts, events, and developments
                   that form distinct trajectories over time.
                 </p>
                 <p className="text-white/70 leading-relaxed">
-                  By treating cultural evolution as a complex system with multiple interacting forces,
+                  By treating cultural evolution as a complex system embedded within the <a 
+                    href="https://shakoist.substack.com/p/does-the-textual-corpus-for-large" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="ml-1 text-blue-300 hover:text-blue-200 underline underline-offset-2 transition-colors"
+                  >latent space of an LLM</a>,
                   we can map the relative influence of different patterns across time periods.
+                  
+                    
+                  
                 </p>
               </div>
               
@@ -300,7 +480,7 @@ const ExplanationPanel: React.FC<ExplanationPanelProps> = ({ onLoadExample, pres
               <ul className="text-sm space-y-3 text-white/70 mt-5 ml-1">
                 <li className="flex items-baseline gap-2">
                   <span className="text-white/90">•</span> 
-                  <span><strong className="text-white/90">Lines:</strong> Each colored line represents a cultural cluster</span>
+                  <span><strong className="text-white/90">Lines:</strong> Each line represents a cultural cluster</span>
                 </li>
                 <li className="flex items-baseline gap-2">
                   <span className="text-white/90">•</span> 
@@ -308,7 +488,7 @@ const ExplanationPanel: React.FC<ExplanationPanelProps> = ({ onLoadExample, pres
                 </li>
                 <li className="flex items-baseline gap-2">
                   <span className="text-white/90">•</span> 
-                  <span><strong className="text-white/90">Points:</strong> Click to see manifestations in that year</span>
+                  <span><strong className="text-white/90">Points:</strong> Click to see examples from that period</span>
                 </li>
                 <li className="flex items-baseline gap-2">
                   <span className="text-white/90">•</span> 

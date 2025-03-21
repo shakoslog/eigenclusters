@@ -347,3 +347,5 @@ and what the cultural and latent space is conditional only on that.
 and what the cultural and latent space is conditional only on that.
 
 8. Focus intensely on the users prompt. If a user asks for an academic field, focus on trends within that field. At all times cater to the user prompt, do not fall back on generic clusters
+
+9. For key manifestations always prefer specific works such as books, films, art, speeches, or any work with a reference that can be looked up and read. General events should only be used if no specific work can be found.
