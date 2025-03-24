@@ -1450,7 +1450,9 @@ const EigenclusterTerminal: React.FC<{
                           {activeContext.clusterName}
                         </h3>
                         <p className="text-sm text-white/70 mb-3">
-                          {activeContext.year} ・ {activeContext.percentageContribution.toFixed(1)}% influence
+                          {activeContext.year} {activeContext.percentageContribution !== undefined ? 
+                            `・ ${activeContext.percentageContribution.toFixed(1)}% influence` : 
+                            ''}
                         </p>
                       </div>
                       <button 

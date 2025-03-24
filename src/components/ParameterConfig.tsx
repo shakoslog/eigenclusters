@@ -70,7 +70,7 @@ const getModelTokenLimit = (model: ModelType): number => {
     'deepseek_chat': 8192,
     'gpt4o': 16384,
     'gpt4o-mini': 16384,
-    'o1-mini': 30000      // Halved from 65536 to account for CoT
+    'o1-mini': 26000      // Halved from 65536 to account for CoT
   };
   return limits[model];
 };
