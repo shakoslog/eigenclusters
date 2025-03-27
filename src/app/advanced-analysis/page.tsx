@@ -17,7 +17,6 @@ import { scaleTime } from '@visx/scale';
 
 // Import all presets
 import americaPreset from '@/lib/presets/america_modern';
-import coldWarPreset from '@/lib/presets/cold-war';
 import americaPoliticsPreset from '@/lib/presets/america-politics';
 // Import any other presets you want to use
 
@@ -80,8 +79,7 @@ export default function AdvancedAnalysisPage() {
   // Available presets
   const availablePresets = [
     { id: 'america_modern', name: 'America Modern (1989-2025)', preset: americaPreset },
-    { id: 'cold_war', name: 'Cold War (1945-1991)', preset: coldWarPreset },
-    { id: 'america_politics', name: 'American Politics', preset: americaPoliticsPreset },
+    { id: 'america_politics', name: 'American Politics (1800-2025)', preset: americaPoliticsPreset },
     // Add other presets here
   ];
   
