@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getPresets } from '@/lib/presets';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface ExplanationPanelProps {
   onLoadExample?: (presetId?: string) => void;
