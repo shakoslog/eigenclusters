@@ -15,7 +15,7 @@ const AboutSection = () => {
               that form distinct trajectories over time.
             </p>
             <p className="text-white/70 mt-3">
-              By treating cultural evolution as a complex system that's embedded in the [latent space of an LLM](https://shakoist.substack.com/p/does-the-textual-corpus-for-large),
+              By treating cultural evolution as a complex system that's embedded in the [atent space of an LLM,
               we can map the relative influence of different patterns across time periods.
               This reveals how ideas, technologies, and movements have shaped human history.
             </p>

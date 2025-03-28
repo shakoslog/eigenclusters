@@ -466,14 +466,8 @@ const ExplanationPanel: React.FC<ExplanationPanelProps> = ({ onLoadExample, pres
               </p>
               <p className="text-white/70 leading-relaxed">
                 By treating cultural evolution as a complex system embedded within the 
-                <a 
-                  href="https://shakoist.substack.com/p/does-the-textual-corpus-for-large" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="ml-1 text-blue-300 hover:text-blue-200 underline underline-offset-2 transition-colors"
-                >
-                  latent space of an LLM
-                </a>,
+                
+                  latent space of an LLM,
                 we can map the relative influence of different patterns across time periods.
               </p>
             </div>

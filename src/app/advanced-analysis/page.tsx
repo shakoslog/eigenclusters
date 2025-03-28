@@ -15,10 +15,10 @@ import { Brush } from '@visx/brush';
 import { PatternLines } from '@visx/pattern';
 import { scaleTime } from '@visx/scale';
 
-// Import all presets
+// Import all presets with unique names
 import americaPreset from '@/lib/presets/america_modern';
 import americaPoliticsPreset from '@/lib/presets/america-politics';
-// Import any other presets you want to use
+import sciencePreset from '@/lib/presets/science-long'; // Import with different variable name
 
 // Define a type for presets
 import { PresetConfig } from '@/lib/presets/types';
@@ -37,7 +37,7 @@ const COLORS = [
   '#58B19F', // sage
 ];
 
-// Example of preset-specific customization (add this where appropriate)
+// Example of preset-specific customization
 const getPresetSpecificConfig = (presetId: string) => {
   switch (presetId) {
     case 'america_politics':
@@ -45,10 +45,10 @@ const getPresetSpecificConfig = (presetId: string) => {
         chartHeight: 600, // Taller chart for politics data
         maxClusters: 10,  // Limit to 10 clusters for readability
       };
-    case 'cold_war':
+    case 'science-long':
       return {
-        chartHeight: 500,
-        maxClusters: 8,
+        chartHeight: 550,
+        maxClusters: 12,
       };
     default:
       return {
@@ -58,9 +58,31 @@ const getPresetSpecificConfig = (presetId: string) => {
   }
 };
 
+// Define initial presets to display, featuring science-long prominently
+const INITIAL_PRESETS = [
+  {
+    id: 'science-long',
+    name: 'History of Science (1895-2024)',
+    description: 'Comprehensive analysis of scientific thought evolution',
+    selected: true
+  },
+  {
+    id: 'america_modern',
+    name: 'America Modern (1989-2025)',
+    description: 'America Library Era',
+    selected: false
+  },
+  {
+    id: 'america-politics',
+    name: 'American Politics (1800-2025)',
+    description: 'Full Analysis of America Politics',
+    selected: false
+  }
+];
+
 export default function AdvancedAnalysisPage() {
-  // State for preset selection
-  const [selectedPreset, setSelectedPreset] = useState<PresetConfig>(americaPreset);
+  // State for preset selection - initialize with science preset
+  const [selectedPreset, setSelectedPreset] = useState<PresetConfig>(sciencePreset);
   
   // State for selected clusters
   const [selectedClusters, setSelectedClusters] = useState<string[]>([]);
@@ -76,10 +98,11 @@ export default function AdvancedAnalysisPage() {
     tooltipTop = 0,
   } = useTooltip<any>();
   
-  // Available presets
+  // For the availablePresets array, use the imported presets with their unique variable names
   const availablePresets = [
     { id: 'america_modern', name: 'America Modern (1989-2025)', preset: americaPreset },
     { id: 'america_politics', name: 'American Politics (1800-2025)', preset: americaPoliticsPreset },
+    { id: 'science-long', name: 'History of Science (1895-2024)', preset: sciencePreset }, // Use the renamed variable
     // Add other presets here
   ];
   
