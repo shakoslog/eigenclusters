@@ -17,38 +17,68 @@ The eigenculture framework here is an attempt to push into territory previously 
 
 There is no epistemological difference between analyzing market price fluctuations and analyzing shifts in cultural expression. Both represent high-dimensional data from which we extract latent variables to explain variance. The only difference has been our computational tools.
 
-This specialization of skills has been mistaken for an intrinsic difference in how we understand the world. Statisticians optimized methods for data that fits neatly into matrices, while humanities scholars processed unstructured information too complex for our previous computational frameworks. It's a fundamental error to think there are "different epistemologies" at work. It's all extracting signal from information to predict the future.
+This specialization of skills has been mistaken for an intrinsic difference in how we understand the world. Statisticians optimized methods for data that fits neatly into matrices, while humanities scholars processed unstructured information too complex for our previous computational frameworks. 
+
+It's a fundamental error to think there are "different epistemologies" at work. It's all extracting signal from information to predict the future.
 
 ## The Latent Space of Culture
 
 When an LLM ingests the entirety of human cultural output, it compresses this information into a high-dimensional latent space. Conceptually, within the parameters of this model exists a manifold of cultural representations on which we could perform dimensionality reduction to extract the principal components, what I'm sort of tongue-in-cheek calling eigencultures.
 
-This might sound abstract, but it's likely the same process that happens in our own minds when we read extensively on a topic. Our brains extract patterns, identify underlying themes, and compress complex cultural information into manageable concepts. We don't literally run matrix decomposition in our cortex, but we're performing an analogous operation.
+This might sound abstract, but it's likely the same process that happens in our own minds when we read extensively on a topic. Our brains extract patterns, identify underlying themes, and compress complex cultural information into manageable concepts. 
 
-While we can't directly access the vector representations within an LLM to run mathematical decomposition, we can interface with it through natural language to extract these latent components. This may seem less rigorous than formal matrix decomposition, but it's no less "real" than the process humanities scholars have used for centuries. The difference is that LLMs can process millions of cultural artifacts simultaneously, potentially extracting patterns invisible to even the most well-read human.
+We don't literally run matrix decomposition in our cortex, but we're performing an analogous operation.
+
+While we can't directly access the vector representations within an LLM to run mathematical decomposition, we can interface with it through natural language to extract these latent components. This may seem less rigorous than formal matrix decomposition, but it's no less "real" than the process humanities scholars have used for centuries. 
+
+The difference is that LLMs can process millions of cultural artifacts simultaneously, potentially extracting patterns invisible to even the most well-read human.
 
 ## Model Uncertainty as Intrinsic Property
 
-Disagreements in cultural analysis aren't evidence against this approach—they're a direct reflection of the information-theoretic limits of compressing cultural complexity. Consider how historians still debate the primary causes of World War I. This isn't because history is non-empirical but because the event exists in an extraordinarily high-dimensional causal space that resists simple reduction.
+Disagreements in cultural analysis aren't evidence against this approach—they're a direct reflection of the information-theoretic limits of compressing cultural complexity. 
 
-The uncertainty in eigenculture extraction isn't a methodological weakness—it's a property of the data itself. When extracting the principal components of culture, multiple valid decompositions exist depending on which dimensions you prioritize. Different analysts with different priors will naturally extract slightly different eigenculture, just as different historians emphasize different causal factors.
+Consider how historians still debate the primary causes of World War I. This isn't because history is non-empirical but because the event exists in an extraordinarily high-dimensional causal space that resists simple reduction.
+
+The uncertainty in eigenculture extraction isn't a methodological weakness—it's a property of the data itself. When extracting the principal components of culture, multiple valid decompositions exist depending on which dimensions you prioritize. 
+
+Different analysts with different priors will naturally extract slightly different eigencultures, just as different historians emphasize different causal factors.
 
 The advantage of formal methods is transparency about these trade-offs. A proper eigenculture analysis specifies how much variance each component explains and acknowledges what information is necessarily lost in compression.
 
-Prediction
-The real power of cultural eigenculture analysis lies in prediction. By identifying the fundamental components of cultural variance and tracking their trajectories, we can forecast how they might evolve in future periods. More importantly, we can identify when cultural systems are approaching critical transitions—points where multiple components rapidly reorganize.
-Consider the rapid secularization of Western Europe in the mid-20th century. A cultural eigenculture approach might have detected the declining explanatory power of religious frameworks decades before this became obvious, potentially allowing for more accurate forecasting of social change. Similarly, tracking the trajectory of "individualism" versus "collectivism" eigenculture across different societies could help predict receptiveness to various political movements.
+## Prediction
+
+The real power of cultural eigenculture analysis lies in prediction. By identifying the fundamental components of cultural variance and tracking their trajectories, we can forecast how they might evolve in future periods. 
+
+More importantly, we can identify when cultural systems are approaching critical transitions—points where multiple components rapidly reorganize.
+
+Consider the rapid secularization of Western Europe in the mid-20th century. A cultural eigenculture approach might have detected the declining explanatory power of religious frameworks decades before this became obvious, potentially allowing for more accurate forecasting of social change. 
+
+Similarly, tracking the trajectory of "individualism" versus "collectivism" eigencultures across different societies could help predict receptiveness to various political movements.
+
+### Early Warning Signals
+
 Cultural prediction works by extrapolating the trajectories of key eigencultures while accounting for their interactions. Just as we can model physical systems approaching phase transitions through early warning signals (increased correlation, critical slowing down), cultural systems might show detectable patterns before major shifts.
+
 For example, before significant cultural transitions, we typically observe:
-Increasing correlation between previously independent cultural components
-Greater variance in cultural expressions (wider oscillations)
-Slower recovery from cultural perturbations
-The emergence of new components with initially small but rapidly increasing explanatory power
+
+- Increasing correlation between previously independent cultural components
+- Greater variance in cultural expressions (wider oscillations)
+- Slower recovery from cultural perturbations
+- The emergence of new components with initially small but rapidly increasing explanatory power
+
 It's unlikely we have the tools to do this yet, but times are changing quickly. Forecasting is hard, and at best I suspect we can forecast cultural shifts as well as we can forecast GDP (i.e. not very well). But for the first time this is becoming a tractable quantitative problem.
-One Science, Many Tools
+
+## One Science, Many Tools
+
 The quantification of cultural dynamics isn't replacing humanities insight, it's more that it formalizes the same processes humanities scholars have always used. The artificial divide between quantitative and qualitative methods reflects historical limitations in our computational tools, not fundamental differences in what's being analyzed.
-As our ability to process unstructured information improves, the methodological walls between humanities and sciences are dissolving. We've embedded the corpus of human knowledge into this latent manifold, and while it's difficult to observe it directly, it's similarly to difficult to observe our own cultural analysis directly. I could sketch out for you how I think modernism and post-modernism have evolved over the 20th and 21st century, but can I 'prove' it mathematically? Not really, neither can a LLM. With the LLM though we know it has observed far more information than I ever could.
-The real test though is can this become practically useful if we have models that better capture the underlying dynamics of cultural evolution. Can we predict or scan in real-time how cultural components shift or reorganize in response to social, technological, and economic changes? For now, no. This is at best a glorified proof of concept. I don't see why not though in the long-run.
+
+As our ability to process unstructured information improves, the methodological walls between humanities and sciences are dissolving. We've embedded the corpus of human knowledge into this latent manifold, and while it's difficult to observe it directly, it's similarly difficult to observe our own cultural analysis directly. 
+
+I could sketch out for you how I think modernism and post-modernism have evolved over the 20th and 21st century, but can I 'prove' it mathematically? Not really, neither can an LLM. With the LLM though, we know it has observed far more information than I ever could.
+
+The real test though is can this become practically useful if we have models that better capture the underlying dynamics of cultural evolution. Can we predict or scan in real-time how cultural components shift or reorganize in response to social, technological, and economic changes? 
+
+For now, no. This is at best a glorified proof of concept. I don't see why not though in the long-run.
   `;
 
   return (
@@ -72,11 +102,13 @@ The real test though is can this become practically useful if we have models tha
           <div className="prose prose-invert prose-lg max-w-none 
                          prose-headings:text-white prose-h1:text-2xl prose-h1:md:text-3xl
                          prose-h1:mb-6 prose-h1:font-bold prose-h1:tracking-tight
-                         prose-p:text-white/80 prose-p:leading-relaxed prose-p:my-6
+                         prose-p:text-white/80 prose-p:leading-relaxed prose-p:my-4
                          prose-h2:text-xl prose-h2:md:text-2xl prose-h2:mt-12 prose-h2:mb-6
                          prose-h2:font-semibold prose-h2:text-white/90
+                         prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-white/90
                          prose-a:text-blue-400 prose-a:no-underline hover:prose-a:text-blue-300
-                         prose-strong:text-white/90 prose-strong:font-semibold">
+                         prose-strong:text-white/90 prose-strong:font-semibold
+                         prose-ul:my-4 prose-li:text-white/80 prose-li:my-1">
             <ReactMarkdown>{content}</ReactMarkdown>
           </div>
         </div>
