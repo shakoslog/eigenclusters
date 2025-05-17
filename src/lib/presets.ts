@@ -4,34 +4,16 @@ import { postwarJapanData } from './presets/postwar-japan';
 // Import the preset types
 import { PresetConfig } from './presets/types';
 
-// Import individual presets directly
-import coldWarPreset from './presets/cold-war';
-import alexandriaPreset from './presets/alexandria';
-import glasnostPreset from './presets/glasnost';
-import philoSciPreset from './presets/philo-sci';
-import rationalityPreset from './presets/rationality';
-import postwarJapanPreset from './presets/postwar-japan';
-import tylerCowenPreset from './presets/tyler-cowen';
-import literaturePreset from './presets/literature';
+// Import the getPresets function from the presets folder
+import { getPresets as getPresetsFromIndex } from './presets/index';
 
-// Export all presets
-export const presets: PresetConfig[] = [
-  coldWarPreset,
-  alexandriaPreset,
-  glasnostPreset,
-  philoSciPreset,
-  rationalityPreset,
-  postwarJapanPreset,
-  tylerCowenPreset,
-  literaturePreset
-];
-
-// Function to get all presets (for compatibility with the dynamic import approach)
+// For backwards compatibility - use the new approach
 export const getPresets = async (): Promise<PresetConfig[]> => {
-  return presets;
+  return await getPresetsFromIndex();
 };
 
+// Export the PresetConfig type
 export type { PresetConfig };
 
 // Re-export everything from the presets folder
-export * from './presets/index'; 
+export * from './presets/index';

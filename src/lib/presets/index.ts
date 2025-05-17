@@ -1,10 +1,11 @@
 import { PresetConfig } from './types';
+import coldWarPreset from './cold-war';
 
 // Dynamic import for all preset files
 // This approach will automatically import any file in this directory that's not index.ts or types.ts
 const importPresets = () => {
   const presets: PresetConfig[] = [];
-  
+
   // In a typical browser environment, we can't dynamically read the file system
   // So we need to manually list out possible imports, but in a way that makes adding new ones easy
   const presetModules = {
@@ -20,11 +21,17 @@ const importPresets = () => {
     'america_modern': () => import('./america_modern').then(module => module.default),
     'america-politics': () => import('./america-politics').then(module => module.default),
     'science-long': () => import('./science-long').then(module => module.default),
-
+    'california-politics': () => import('./california-politics').then(module => module.default),
+    'dw-nominate': () => import('./dw-nominate').then(module => module.default),
+    'evolution-of-science': () => import('./evolution_of_science').then(module => module.default),
+    'british-monarchy': () => import('./british_monarchy').then(module => module.default),
     // When you add a new preset file, add a new line here:
     // 'my-new-preset': () => import('./my-new-preset').then(module => module.default),
+    'test-trends': () => import('./test-trends').then(module => module.default),
+    'mini-trends': () => import('./mini-trends').then(module => module.default),
+    'mini-trends-legacy': () => import('./mini-trends-legacy').then(module => module.default),
   };
-  
+
   // Return a promise that resolves to the array of all presets
   return Promise.all(
     Object.values(presetModules).map(importFn => importFn())
@@ -37,7 +44,6 @@ export const getPresets = async (): Promise<PresetConfig[]> => {
 };
 
 // For backwards compatibility, also export the cold-war preset directly
-import coldWarPreset from './cold-war';
 export const presets = [coldWarPreset];
 
-export type { PresetConfig } from './types'; 
+export type { PresetConfig } from './types';

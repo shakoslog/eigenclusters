@@ -15,13 +15,10 @@ import { Brush } from '@visx/brush';
 import { PatternLines } from '@visx/pattern';
 import { scaleTime } from '@visx/scale';
 
-// Import all presets with unique names
-import americaPreset from '@/lib/presets/america_modern';
-import americaPoliticsPreset from '@/lib/presets/america-politics';
-import sciencePreset from '@/lib/presets/science-long'; // Import with different variable name
-
-// Define a type for presets
+// Import the getPresets function and PresetConfig type
+import { getPresets } from '@/lib/presets';
 import { PresetConfig } from '@/lib/presets/types';
+import sciencePreset from '@/lib/presets/science-long'; // Keep this for initial state
 
 // Colors for different series
 const COLORS = [
@@ -77,6 +74,18 @@ const INITIAL_PRESETS = [
     name: 'American Politics (1800-2025)',
     description: 'Full Analysis of America Politics',
     selected: false
+  },
+  {
+    id: 'california-politics',
+    name: 'California Politics (1950-1970)',
+    description: 'Snapshot of California',
+    selected: false
+  },
+  {
+    id: 'evolution-of-science',
+    name: 'Evolution of Science (1895-2024)',
+    description: 'Evolution of Science',
+    selected: false
   }
 ];
 
@@ -98,13 +107,28 @@ export default function AdvancedAnalysisPage() {
     tooltipTop = 0,
   } = useTooltip<any>();
   
-  // For the availablePresets array, use the imported presets with their unique variable names
-  const availablePresets = [
-    { id: 'america_modern', name: 'America Modern (1989-2025)', preset: americaPreset },
-    { id: 'america_politics', name: 'American Politics (1800-2025)', preset: americaPoliticsPreset },
-    { id: 'science-long', name: 'History of Science (1895-2024)', preset: sciencePreset }, // Use the renamed variable
-    // Add other presets here
-  ];
+  // Use useState to store dynamically loaded presets
+  const [availablePresets, setAvailablePresets] = useState<Array<{id: string, name: string, preset: PresetConfig}>>([]);
+
+  // Load presets dynamically on component mount
+  useEffect(() => {
+    const loadPresets = async () => {
+      try {
+        const loadedPresets = await getPresets();
+        // Transform the presets into the format needed for the dropdown
+        const formattedPresets = loadedPresets.map(preset => ({
+          id: preset.id,
+          name: `${preset.name} (${preset.startYear}-${preset.endYear})`,
+          preset: preset
+        }));
+        setAvailablePresets(formattedPresets);
+      } catch (error) {
+        console.error("Error loading presets:", error);
+      }
+    };
+
+    loadPresets();
+  }, []);
   
   // Reset selected clusters when preset changes
   useEffect(() => {
@@ -158,10 +182,16 @@ export default function AdvancedAnalysisPage() {
     const clusters = selectedPreset.cachedResult.clusters;
     const clusterIds = Object.keys(clusters);
     
-    // Get the year range from the preset parameters
-    const startYear = parseInt(selectedPreset.parameters.startYear, 10);
-    const endYear = parseInt(selectedPreset.parameters.endYear, 10);
-    
+    // Get the year range from the preset - support both old and new formats
+    const startYear = parseInt(
+      selectedPreset.parameters?.startYear || selectedPreset.startYear,
+      10
+    );
+    const endYear = parseInt(
+      selectedPreset.parameters?.endYear || selectedPreset.endYear,
+      10
+    );
+
     console.log("Preset year range:", startYear, "to", endYear);
     
     // Get all years from all clusters
@@ -259,10 +289,16 @@ export default function AdvancedAnalysisPage() {
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
     
-    // Get the year range from the preset parameters
-    const startYear = parseInt(selectedPreset.parameters.startYear, 10);
-    const endYear = parseInt(selectedPreset.parameters.endYear, 10);
-    
+    // Get the year range from the preset - support both old and new formats
+    const startYear = parseInt(
+      selectedPreset.parameters?.startYear || selectedPreset.startYear,
+      10
+    );
+    const endYear = parseInt(
+      selectedPreset.parameters?.endYear || selectedPreset.endYear,
+      10
+    );
+
     // Create scales with the correct domain from preset parameters or zoomed domain
     const xScale = scaleLinear({
       domain: zoomedDomain ? zoomedDomain.x : [startYear, endYear],
@@ -518,7 +554,7 @@ export default function AdvancedAnalysisPage() {
   return (
     <div className="min-h-screen bg-black text-white p-6">
       <header className="mb-6">
-        <h1 className="text-2xl font-mono">{selectedPreset.name} | Period: {selectedPreset.parameters.startYear}-{selectedPreset.parameters.endYear}</h1>
+        <h1 className="text-2xl font-mono">{selectedPreset.name} | Period: {selectedPreset.parameters?.startYear || selectedPreset.startYear}-{selectedPreset.parameters?.endYear || selectedPreset.endYear}</h1>
       </header>
       
       {/* Preset Selector */}

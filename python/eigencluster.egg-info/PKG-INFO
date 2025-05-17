@@ -1,0 +1,282 @@
+Metadata-Version: 2.4
+Name: eigencluster
+Version: 0.1.0
+Summary: A package for generating and analyzing clusters
+Home-page: 
+Author: Eigencluster Team
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: matplotlib>=3.4.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# EigenCluster
+
+A Python package for generating and analyzing clusters with customizable prompts.
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+### Multi-Step Clustering Process
+
+EigenCluster supports a multi-step clustering process that allows for greater control and resumability:
+
+1. **Generate Cluster Specifications**: Define clusters with unique IDs, names, and descriptions
+2. **Populate Clusters**: Assign data items to the specified clusters
+3. **Analyze Clusters**: Evaluate and critique the populated clusters
+
+This approach has several advantages:
+- Review and edit cluster specifications before populating them
+- Resume from the specification stage if population fails
+- Use the same specifications across different datasets
+
+### Eigenclusters Generation
+
+EigenCluster also supports generating cultural "eigenclusters" - key components or themes that explain the overall cultural landscape of a given time period. This functionality uses a specialized prompt designed for cultural analysis.
+
+### TypeScript Export Integration
+
+EigenCluster can export generated clusters to TypeScript format for integration with the web frontend. The export functionality:
+
+1. Converts cluster data to the proper TypeScript format
+2. Creates TypeScript preset files
+3. Updates the TypeScript preset registry
+4. Maintains compatibility with the frontend data structures
+
+### CLI Usage
+
+#### Standard Clustering
+
+```bash
+# Step 1: Generate cluster specifications
+eigencluster specs --input data.json --output specs.json --num-clusters 5
+
+# Step 2: Populate clusters with members
+eigencluster populate --input data.json --specs specs.json --output clusters.json
+
+# Combined operation (specs + populate)
+eigencluster generate --input data.json --output clusters.json --num-clusters 5
+
+# Use existing specs with generate command
+eigencluster generate --input data.json --specs specs.json --output clusters.json
+
+# Analyze populated clusters
+eigencluster analyze --input clusters.json --output analysis.json
+```
+
+#### Eigenclusters
+
+```bash
+# Generate eigenclusters for a time period
+eigencluster eigenclusters --start-year 1990 --end-year 2020 --output eigenclusters.json
+
+# Generate eigenclusters with additional context
+eigencluster eigenclusters --start-year 1990 --end-year 2020 --context "Focus on American Hip Hop" --output hip_hop.json
+
+# Generate eigenclusters with a report
+eigencluster eigenclusters --start-year 1990 --end-year 2020 --output eigenclusters.json --report report.md
+
+# Use LLM for generation (requires API key)
+eigencluster eigenclusters --start-year 1990 --end-year 2020 --output eigenclusters.json --use-llm
+
+#### TypeScript Export
+
+```bash
+# Export existing eigenclusters JSON to TypeScript format
+eigencluster export-ts --input eigenclusters.json --preset-id "my-preset" --preset-name "My Preset" --preset-desc "Description of my preset" --output-dir output
+
+# Export and copy to the TypeScript presets directory
+eigencluster export-ts --input eigenclusters.json --preset-id "my-preset" --preset-name "My Preset" --preset-desc "Description of my preset" --ts-dir ../src/lib/presets
+
+# Export with additional metadata
+eigencluster export-ts --input eigenclusters.json --preset-id "my-preset" --preset-name "My Preset" --preset-desc "Custom clusters" --start-year 1980 --end-year 2020 --cluster-start 1 --cluster-end 5 --periodicity 10 --context "US Politics" --ts-dir ../src/lib/presets
+```
+
+### Python API Usage
+
+#### Multi-Step Process
+
+```python
+from eigencluster import ClusterGenerator, ClusterCritic
+
+generator = ClusterGenerator()
+
+# Step 1: Generate cluster specifications
+cluster_specs = generator.generate_cluster_specs(data, num_clusters=5)
+generator.save_clusters(cluster_specs, "specs.json")
+
+# Step 2: Populate clusters with members
+populated_clusters = generator.populate_clusters(data, cluster_specs)
+generator.save_clusters(populated_clusters, "clusters.json")
+
+# Step 3: Analyze the clusters
+critic = ClusterCritic()
+analysis = critic.analyze_clusters(populated_clusters)
+critic.save_analysis(analysis, "analysis.json")
+```
+
+#### One-Step Process
+
+```python
+from eigencluster import ClusterGenerator
+
+generator = ClusterGenerator()
+
+# Generate clusters in one step (creates specs and populates)
+clusters = generator.generate_clusters(data, num_clusters=5)
+generator.save_clusters(clusters, "clusters.json")
+
+# Or use existing specs
+clusters = generator.generate_clusters(data, cluster_specs=existing_specs)
+generator.save_clusters(clusters, "clusters.json")
+```
+
+#### Eigenclusters
+
+```python
+from eigencluster import ClusterGenerator
+
+generator = ClusterGenerator()
+
+# Generate eigenclusters
+eigenclusters = generator.generate_eigenclusters(
+    start_year=1990,
+    end_year=2020,
+    periodicity=5,  # analyze every 5 years
+    cluster_range="1-5",  # top 5 clusters
+    additional_context="Focus on technology and internet culture",
+    use_llm=True  # Use LLM API (requires API key)
+)
+generator.save_clusters(eigenclusters, "eigenclusters.json")
+```
+
+#### TypeScript Export
+
+```python
+from eigencluster import ClusterGenerator
+from eigencluster.export import export_to_typescript, update_typescript_index, copy_to_typescript_dir
+
+# Generate eigenclusters (or load existing ones)
+generator = ClusterGenerator()
+eigenclusters = generator.generate_eigenclusters(
+    start_year=1990,
+    end_year=2020,
+    periodicity=10
+)
+
+# Create preset configuration
+preset_config = {
+    "id": "tech-trends",
+    "name": "Technology Trends",
+    "description": "Analysis of technology trends from 1990 to 2020",
+    "start_year": "1990",
+    "end_year": "2020",
+    "cluster_start": 1,
+    "cluster_end": 5,
+    "periodicity": 10,
+    "context": "Focus on technology evolution",
+    "model": "claude-3-opus-20240229"
+}
+
+# Export to TypeScript format
+json_path = export_to_typescript(
+    eigenclusters,
+    preset_config,
+    "output",
+    create_ts_file=True
+)
+
+# Copy to TypeScript directory and update index
+ts_path = "output/tech-trends.ts"
+ts_dir = "../src/lib/presets"
+copy_to_typescript_dir(json_path, ts_path, ts_dir)
+update_typescript_index("tech-trends", ts_dir)
+```
+
+## Custom Prompt Templates
+
+You can customize both specification and population prompts:
+
+### Specification Prompt Template
+
+```
+Given the following data, identify {num_clusters} distinct clusters.
+For each cluster, provide a unique ID, a descriptive name, and a description.
+
+Data: {data}
+
+Format your response as a JSON object with this structure:
+{
+    "clusters": [
+        {
+            "id": 0,
+            "name": "Cluster Name",
+            "description": "Brief description of the cluster"
+        },
+        ...more clusters...
+    ]
+}
+```
+
+### Population Prompt Template
+
+```
+Given the following data and cluster specifications, assign each item to the most appropriate cluster.
+
+Data: {data}
+
+Cluster Specifications:
+{cluster_specs}
+
+Format your response as a JSON object with this structure:
+{
+    "clusters": [
+        {
+            "id": 0,
+            "name": "Cluster Name",
+            "description": "Brief description of the cluster",
+            "members": [list of member IDs]
+        },
+        ...more clusters...
+    ]
+}
+```
+
+## Examples
+
+See the `examples/` directory for complete examples:
+- `basic_usage.py`: Simple end-to-end example
+- `multi_step_generation.py`: Demonstration of the multi-step process
+- `hip_hop_clusters.py`: Clustering for American Hip Hop from 1990-2020
+- `hip_hop_with_llm.py`: Clustering with LLM integration
+- `eigenclusters_example.py`: Generating cultural eigenclusters
+- `export_to_typescript.py`: Exporting eigenclusters to TypeScript format
+
+## Development
+
+Clone the repository and install in development mode:
+
+```bash
+git clone https://github.com/username/eigencluster.git
+cd eigencluster
+python -m venv venv
+source venv/bin/activate
+pip install -e .
+```

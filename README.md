@@ -29,6 +29,38 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Python CLI Integration
+
+This project includes a Python package (`python/eigencluster`) for generating cluster data that can be integrated with the TypeScript frontend:
+
+### Installation
+
+```bash
+cd python
+pip install -e .
+```
+
+### Usage
+
+1. Generate clusters using the Python CLI or API:
+
+```bash
+# Generate eigenclusters
+eigencluster eigenclusters --start-year 1990 --end-year 2020 --output eigenclusters.json
+
+# Export to TypeScript
+eigencluster export-ts --input eigenclusters.json --preset-id "my-clusters" --preset-name "My Clusters" --preset-desc "Custom analysis" --ts-dir src/lib/presets
+```
+
+2. Run the example script for a complete workflow:
+
+```bash
+cd python
+python examples/export_to_typescript.py --ts-dir ../src/lib/presets
+```
+
+See the `python/README.md` file for detailed documentation.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

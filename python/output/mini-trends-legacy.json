@@ -1,0 +1,94 @@
+{
+  "id": "mini-trends-legacy",
+  "name": "Mini Recent Trends (Legacy)",
+  "description": "A minimal dataset using legacy format (2000-2020)",
+  "parameters": {
+    "startYear": "2000",
+    "endYear": "2020",
+    "clusterStart": 1,
+    "clusterEnd": 2,
+    "periodicity": 10,
+    "context": null,
+    "model": "claude-3-opus-20240229"
+  },
+  "cachedResult": {
+    "metadata": {
+      "period": "2000-2020",
+      "interval": "10 years",
+      "cluster_range": "1-2",
+      "measurement": "relative cultural variance explained (0-100)",
+      "top_20_clusters": [
+        "Digital Transformation",
+        "Climate Awareness"
+      ]
+    },
+    "clusters": {
+      "1_digital_transformation": {
+        "name": "Digital Transformation",
+        "description": "The shift from analog to digital technology across society and business.",
+        "trajectory": {
+          "2000": {
+            "variance_explained": 40,
+            "description": "Early web technologies begin to transform business and communication.",
+            "key_manifestations": [
+              "Dot-com bubble",
+              "E-commerce emerges",
+              "Early social networks"
+            ]
+          },
+          "2010": {
+            "variance_explained": 70,
+            "description": "Mobile revolution changes how people access digital services.",
+            "key_manifestations": [
+              "Smartphone ubiquity",
+              "App economy growth",
+              "Cloud computing dominance"
+            ]
+          },
+          "2020": {
+            "variance_explained": 85,
+            "description": "AI and automation begin to transform all industries.",
+            "key_manifestations": [
+              "Generative AI",
+              "Remote work transition",
+              "Digital healthcare"
+            ]
+          }
+        }
+      },
+      "2_climate_awareness": {
+        "name": "Climate Awareness",
+        "description": "Growing recognition of climate change as a global crisis requiring action.",
+        "trajectory": {
+          "2000": {
+            "variance_explained": 20,
+            "description": "Early mainstream awareness of climate change issues.",
+            "key_manifestations": [
+              "Kyoto Protocol debates",
+              "Emerging green technologies",
+              "Environmental documentaries"
+            ]
+          },
+          "2010": {
+            "variance_explained": 45,
+            "description": "Climate activism grows among younger generations.",
+            "key_manifestations": [
+              "Paris Climate Agreement",
+              "Renewable energy growth",
+              "Climate protest movements"
+            ]
+          },
+          "2020": {
+            "variance_explained": 75,
+            "description": "Climate action becomes mainstream policy priority globally.",
+            "key_manifestations": [
+              "Net-zero commitments",
+              "Clean energy transition",
+              "Climate adaptation planning"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

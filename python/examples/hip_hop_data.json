@@ -1,0 +1,28 @@
+{
+  "items": [
+    {"id": 1, "artist": "N.W.A", "album": "Straight Outta Compton", "year": 1990, "style": "Gangsta Rap", "region": "West Coast", "description": "Hard-hitting gangsta rap from Compton that addressed urban issues"},
+    {"id": 2, "artist": "A Tribe Called Quest", "album": "The Low End Theory", "year": 1991, "style": "Jazz Rap", "region": "East Coast", "description": "Pioneering jazz rap album that established alternative hip hop"},
+    {"id": 3, "artist": "Dr. Dre", "album": "The Chronic", "year": 1992, "style": "G-Funk", "region": "West Coast", "description": "G-funk masterpiece featuring layered synthesizers and slow, heavy beats"},
+    {"id": 4, "artist": "Wu-Tang Clan", "album": "Enter the Wu-Tang (36 Chambers)", "year": 1993, "style": "Hardcore Hip Hop", "region": "East Coast", "description": "Raw, minimalist production with kung-fu samples and dense lyrics"},
+    {"id": 5, "artist": "Nas", "album": "Illmatic", "year": 1994, "style": "East Coast Hip Hop", "region": "East Coast", "description": "Lyrical masterpiece with jazz-influenced production and storytelling"},
+    {"id": 6, "artist": "The Notorious B.I.G.", "album": "Ready to Die", "year": 1994, "style": "Mafioso Rap", "region": "East Coast", "description": "Autobiographical album with themes of crime, poverty, and success"},
+    {"id": 7, "artist": "2Pac", "album": "Me Against the World", "year": 1995, "style": "West Coast Hip Hop", "region": "West Coast", "description": "Introspective album focusing on poverty, violence, and resilience"},
+    {"id": 8, "artist": "Jay-Z", "album": "Reasonable Doubt", "year": 1996, "style": "Mafioso Rap", "region": "East Coast", "description": "Mafioso rap with smooth production and themes of street hustling"},
+    {"id": 9, "artist": "The Fugees", "album": "The Score", "year": 1996, "style": "Alternative Hip Hop", "region": "East Coast", "description": "Eclectic album blending hip hop with reggae, soul and R&B"},
+    {"id": 10, "artist": "Missy Elliott", "album": "Supa Dupa Fly", "year": 1997, "style": "Southern Hip Hop", "region": "South", "description": "Innovative sound with futuristic production by Timbaland"},
+    {"id": 11, "artist": "OutKast", "album": "Aquemini", "year": 1998, "style": "Southern Hip Hop", "region": "South", "description": "Creative fusion of funk, soul, and Southern rap elements"},
+    {"id": 12, "artist": "Lauryn Hill", "album": "The Miseducation of Lauryn Hill", "year": 1998, "style": "Neo Soul", "region": "East Coast", "description": "Blend of hip hop, R&B, and soul with personal, introspective lyrics"},
+    {"id": 13, "artist": "Eminem", "album": "The Slim Shady LP", "year": 1999, "style": "Horrorcore", "region": "Midwest", "description": "Controversial debut with alter-ego concept and shock value lyrics"},
+    {"id": 14, "artist": "50 Cent", "album": "Get Rich or Die Tryin'", "year": 2003, "style": "Gangsta Rap", "region": "East Coast", "description": "Commercially successful gangsta rap with catchy hooks"},
+    {"id": 15, "artist": "Kanye West", "album": "The College Dropout", "year": 2004, "style": "Chipmunk Soul", "region": "Midwest", "description": "Soul-sampling production with themes of consumerism and education"},
+    {"id": 16, "artist": "Lil Wayne", "album": "Tha Carter III", "year": 2008, "style": "Southern Hip Hop", "region": "South", "description": "Eclectic album with creative wordplay and metaphors"},
+    {"id": 17, "artist": "Kendrick Lamar", "album": "good kid, m.A.A.d city", "year": 2012, "style": "West Coast Hip Hop", "region": "West Coast", "description": "Concept album examining youth and coming of age in Compton"},
+    {"id": 18, "artist": "Drake", "album": "Take Care", "year": 2011, "style": "Emo Rap", "region": "Canada", "description": "Emotional and introspective album blending rap with R&B"},
+    {"id": 19, "artist": "J. Cole", "album": "2014 Forest Hills Drive", "year": 2014, "style": "Conscious Hip Hop", "region": "South", "description": "Personal album with themes of home, fame, and growth"},
+    {"id": 20, "artist": "Travis Scott", "album": "Astroworld", "year": 2018, "style": "Trap", "region": "South", "description": "Psychedelic trap album with atmospheric production"},
+    {"id": 21, "artist": "Cardi B", "album": "Invasion of Privacy", "year": 2018, "style": "Trap", "region": "East Coast", "description": "Confident debut with themes of female empowerment"},
+    {"id": 22, "artist": "Tyler, The Creator", "album": "IGOR", "year": 2019, "style": "Alternative Hip Hop", "region": "West Coast", "description": "Experimental album exploring heartbreak with neo-soul influences"},
+    {"id": 23, "artist": "Megan Thee Stallion", "album": "Good News", "year": 2020, "style": "Southern Hip Hop", "region": "South", "description": "Female empowerment themes with Houston rap influences"},
+    {"id": 24, "artist": "Run The Jewels", "album": "RTJ4", "year": 2020, "style": "Political Hip Hop", "region": "Various", "description": "Politically charged album addressing social issues with aggressive beats"}
+  ]
+}
