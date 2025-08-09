@@ -17,9 +17,6 @@ const importPresets = () => {
     'tyler-cowen': () => import('./tyler-cowen').then(module => module.default),
     'literature': () => import('./literature').then(module => module.default),
     'renaissance': () => import('./renaissance').then(module => module.default),
-    'america_modern': () => import('./america_modern').then(module => module.default),
-    'america-politics': () => import('./america-politics').then(module => module.default),
-    'science-long': () => import('./science-long').then(module => module.default),
 
     // When you add a new preset file, add a new line here:
     // 'my-new-preset': () => import('./my-new-preset').then(module => module.default),

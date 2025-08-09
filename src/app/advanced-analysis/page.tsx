@@ -16,9 +16,15 @@ import { PatternLines } from '@visx/pattern';
 import { scaleTime } from '@visx/scale';
 
 // Import all presets with unique names
-import americaPreset from '@/lib/presets/america_modern';
+import americaModernPreset from '@/lib/presets/america_modern';
 import americaPoliticsPreset from '@/lib/presets/america-politics';
-import sciencePreset from '@/lib/presets/science-long'; // Import with different variable name
+import scienceLongPreset from '@/lib/presets/science-long';
+import britishMonarchyPreset from '@/lib/presets/british_monarchy';
+import dwNominatePreset from '@/lib/presets/dw-nominate';
+import evolutionOfSciencePreset from '@/lib/presets/evolution_of_science';
+import coldWarPreset from '@/lib/presets/cold-war';
+import glasnostPreset from '@/lib/presets/glasnost';
+import renaissancePreset from '@/lib/presets/renaissance';
 
 // Define a type for presets
 import { PresetConfig } from '@/lib/presets/types';
@@ -40,12 +46,34 @@ const COLORS = [
 // Example of preset-specific customization
 const getPresetSpecificConfig = (presetId: string) => {
   switch (presetId) {
-    case 'america_politics':
+    case 'america_modern':
+    case 'america-politics':
       return {
-        chartHeight: 600, // Taller chart for politics data
-        maxClusters: 10,  // Limit to 10 clusters for readability
+        chartHeight: 650, // Taller chart for American data
+        maxClusters: 12,  // More clusters for complex political data
       };
     case 'science-long':
+    case 'evolution-of-science':
+      return {
+        chartHeight: 600,
+        maxClusters: 15, // Many clusters for science history
+      };
+    case 'british-monarchy':
+      return {
+        chartHeight: 550,
+        maxClusters: 10,
+      };
+    case 'dw-nominate':
+      return {
+        chartHeight: 600,
+        maxClusters: 8, // Focused on political dimensions
+      };
+    case 'cold-war':
+      return {
+        chartHeight: 600, // Taller chart for cold war data
+        maxClusters: 10,  // Limit to 10 clusters for readability
+      };
+    case 'glasnost':
       return {
         chartHeight: 550,
         maxClusters: 12,
@@ -58,18 +86,18 @@ const getPresetSpecificConfig = (presetId: string) => {
   }
 };
 
-// Define initial presets to display, featuring science-long prominently
+// Define initial presets to display, featuring america-modern prominently
 const INITIAL_PRESETS = [
-  {
-    id: 'science-long',
-    name: 'History of Science (1895-2024)',
-    description: 'Comprehensive analysis of scientific thought evolution',
-    selected: true
-  },
   {
     id: 'america_modern',
     name: 'America Modern (1989-2025)',
     description: 'America Library Era',
+    selected: true
+  },
+  {
+    id: 'science-long',
+    name: 'History of Science (1895-2024)',
+    description: 'Comprehensive analysis of scientific thought evolution',
     selected: false
   },
   {
@@ -81,8 +109,8 @@ const INITIAL_PRESETS = [
 ];
 
 export default function AdvancedAnalysisPage() {
-  // State for preset selection - initialize with science preset
-  const [selectedPreset, setSelectedPreset] = useState<PresetConfig>(sciencePreset);
+  // State for preset selection - initialize with america modern preset
+  const [selectedPreset, setSelectedPreset] = useState<PresetConfig>(americaModernPreset);
   
   // State for selected clusters
   const [selectedClusters, setSelectedClusters] = useState<string[]>([]);
@@ -100,10 +128,15 @@ export default function AdvancedAnalysisPage() {
   
   // For the availablePresets array, use the imported presets with their unique variable names
   const availablePresets = [
-    { id: 'america_modern', name: 'America Modern (1989-2025)', preset: americaPreset },
-    { id: 'america_politics', name: 'American Politics (1800-2025)', preset: americaPoliticsPreset },
-    { id: 'science-long', name: 'History of Science (1895-2024)', preset: sciencePreset }, // Use the renamed variable
-    // Add other presets here
+    { id: 'america_modern', name: 'America Modern (1989-2025)', preset: americaModernPreset },
+    { id: 'america-politics', name: 'American Politics (1800-2025)', preset: americaPoliticsPreset },
+    { id: 'science-long', name: 'History of Science (1895-2024)', preset: scienceLongPreset },
+    { id: 'british-monarchy', name: 'British Monarchy', preset: britishMonarchyPreset },
+    { id: 'dw-nominate', name: 'DW-NOMINATE Political Analysis', preset: dwNominatePreset },
+    { id: 'evolution-of-science', name: 'Evolution of Science', preset: evolutionOfSciencePreset },
+    { id: 'cold-war', name: 'Cold War Analysis (1945-1991)', preset: coldWarPreset },
+    { id: 'glasnost', name: 'Glasnost Analysis (1983-1991)', preset: glasnostPreset },
+    { id: 'renaissance', name: 'Renaissance Advancement (1400-1600)', preset: renaissancePreset },
   ];
   
   // Reset selected clusters when preset changes
