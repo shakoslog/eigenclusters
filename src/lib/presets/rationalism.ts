@@ -8135,7 +8135,7 @@ export const rationalismData = {
       },
       "2022": {
         "variance_explained": 6.5,
-        "description": "Explosive Peak (+1.5%). 'Wordcel vs Shaperotator.' The meme coined by Roon (@roon_mo). It encapsulates 20 years of Rationalist theory into a single viral dichotomy. 'Wordcels' (Journalists/hr) manipulate language to gain power. 'Shaperotators' (Engineers) manipulate systems to create value. The 'Tech Right' adopts this as their class consciousness. It is the declaration of independence of the Engineer class.",
+        "description": "Explosive Peak (+1.5%). 'Wordcel vs Shaperotator.' The meme coined by Roon (@tszzl). It encapsulates 20 years of Rationalist theory into a single viral dichotomy. 'Wordcels' (Journalists/hr) manipulate language to gain power. 'Shaperotators' (Engineers) manipulate systems to create value. The 'Tech Right' adopts this as their class consciousness. It is the declaration of independence of the Engineer class.",
         "key_manifestations": [
           "Meme: 'Wordcel vs Shaperotator' (Roon)",
           "Essay: 'The rise of the Shaperotator'",

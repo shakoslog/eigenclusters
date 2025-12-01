@@ -132,7 +132,6 @@ function EigenClustersApp() {
   
   // State for selected clusters
   const [selectedClusters, setSelectedClusters] = useState<string[]>([]);
-  const [searchTerm, setSearchTerm] = useState('');
   const [selectedPoint, setSelectedPoint] = useState<any>(null);
   
   // Tooltip setup
@@ -160,12 +159,12 @@ function EigenClustersApp() {
   const availablePresets = [
     // Frontier/Modern Presets (Visible by default)
     { id: 'american_culture_v3', name: 'Postmodern America (1990-2025)', preset: { ...americanCultureV3Preset, name: 'Postmodern America (1990-2025)', description: 'Tracking the acceleration of irony, mediated identity, and the collapse of institutional trust.' }, isPreFrontier: false },
-    { id: 'science_v2', name: 'History of Scientific Paradigms (1900-2025)', preset: { ...scienceV2Preset, name: 'History of Scientific Paradigms (1900-2025)', description: 'The evolution of scientific thought, institutional trust, and the sociology of knowledge.' }, isPreFrontier: false },
+    { id: 'science_v2', name: 'Latent Clusters of Social Science Paradigms (1900-2025)', preset: { ...scienceV2Preset, name: 'Latent Clusters of Social Science Paradigms (1900-2025)', description: 'The evolution of social scientific thought, institutional trust, and the sociology of knowledge.' }, isPreFrontier: false },
     { id: 'democracy', name: 'Evolution of Democratic Thought (1890-2025)', preset: { ...democracyPreset, name: 'Evolution of Democratic Thought (1890-2025)', description: 'Tracing the history of democratic epistemologies, from technocratic progressivism to populist reaction.' }, isPreFrontier: false },
     { id: 'rationalism_v1', name: 'The Rationalist Sphere (2005-2025)', preset: { ...rationalismPreset, name: 'The Rationalist Sphere (2005-2025)', description: "A genealogy of the Rationalist, Effective Altruist, and 'Tech Right' intellectual subcultures." }, isPreFrontier: false },
     { id: 'film_history', name: 'Cinema & Social Change (1960-2024)', preset: { ...filmPreset, name: 'Cinema & Social Change (1960-2024)', description: 'How film reflected and shaped the cultural revolutions of the late 20th century.' }, isPreFrontier: false },
     { id: 'internet_history', name: 'The Digital Revolution (1989-2025)', preset: { ...internetPreset, name: 'The Digital Revolution (1989-2025)', description: "From the World Wide Web to AI: the trajectory of the internet's impact on human cognition." }, isPreFrontier: false },
-    { id: 'military_history', name: 'Military History Analysis (1890-1950)', preset: { ...militaryPreset, name: 'Military History Analysis (1890-1950)', description: 'Tracking the evolution of warfare, logistics, and state capacity from the late 19th century to the Cold War.' }, isPreFrontier: false },
+    { id: 'military_history', name: 'Latent Clusters of Military Strategy (1890-1950)', preset: { ...militaryPreset, name: 'Latent Clusters of Military Strategy (1890-1950)', description: 'Tracking the evolution of warfare, logistics, and state capacity from the late 19th century to the Cold War.' }, isPreFrontier: false },
     { id: 'hume_enlightenment', name: 'Hume / Enlightenment Analysis (1700-1800)', preset: { ...humePreset, name: 'Hume / Enlightenment Analysis (1700-1800)', description: 'Cultural variance analysis of the Enlightenment era (1700-1800)' }, isPreFrontier: false },
     
     // Pre-Frontier/Historical/Niche Presets (Hidden by default)
@@ -332,15 +331,10 @@ function EigenClustersApp() {
     };
   }, [selectedPreset]);
   
-  // Filter clusters based on search term
+  // Filter clusters based on search term (removed, but keeping filteredClusters variable for compatibility)
   const filteredClusters = useMemo(() => {
-    if (!searchTerm) return allClusters;
-    
-    return allClusters.filter(cluster => 
-      (cluster.name || cluster.id).toLowerCase().includes(searchTerm.toLowerCase()) ||
-      cluster.id.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  }, [allClusters, searchTerm]);
+    return allClusters;
+  }, [allClusters]);
   
   // Toggle cluster selection
   const toggleCluster = (clusterId: string) => {
@@ -699,16 +693,6 @@ function EigenClustersApp() {
         <div className="flex gap-4 items-start">
           {/* Cluster selector */}
           <div className="w-1/3 bg-black/30 border border-white/20 rounded p-4">
-            <div className="mb-4">
-              <input
-                type="text"
-                placeholder="Search clusters..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-black/50 border border-white/30 rounded p-2 text-white"
-              />
-            </div>
-            
             <div className="flex gap-2 mb-4">
               <button 
                 onClick={selectAllVisible}
