@@ -6852,15 +6852,13 @@ const scienceLongPreset: PresetConfig = {
   id: 'science-long',
   name: 'Science Long',
   description: 'A long scientific analysis',
-  parameters: {
-    startYear: '1890',
+  startYear: '1890',
     endYear: '2025',
     clusterStart: 1,
     clusterEnd: 5,
     periodicity: 1,
     context: 'Focus on geopolitical, technological, and cultural developments during the Cold War period between the United States and Soviet Union.',
-    model: 'o1-mini'
-  },
+    model: 'o1-mini',
   cachedResult: sciencelongData
 };
 

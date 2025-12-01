@@ -17,6 +17,15 @@ const importPresets = () => {
     'tyler-cowen': () => import('./tyler-cowen').then(module => module.default),
     'literature': () => import('./literature').then(module => module.default),
     'renaissance': () => import('./renaissance').then(module => module.default),
+    'science_v2': () => import('./science_v2').then(module => module.default),
+    'american_culture_v2': () => import('./american_culture_v2').then(module => module.default),
+    'american_culture_v3': () => import('./american_culture_v3').then(module => module.default),
+    'democracy': () => import('./democracy').then(module => module.default),
+    'hume': () => import('./hume').then(module => module.default),
+    'film_history': () => import('./film').then(module => module.default),
+    'internet_history': () => import('./internet').then(module => module.default),
+    'military_history': () => import('./military').then(module => module.default),
+    'rationalism_v1': () => import('./rationalism').then(module => module.default),
 
     // When you add a new preset file, add a new line here:
     // 'my-new-preset': () => import('./my-new-preset').then(module => module.default),

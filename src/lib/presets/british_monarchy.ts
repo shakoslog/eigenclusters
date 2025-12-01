@@ -7533,15 +7533,13 @@ const britishMonarchyPreset: PresetConfig = {
   id: 'british-monarchy',
   name: 'british monarchy',
   description: 'Full Analysis of America Politics',
-  parameters: {
-    startYear: '0',
+  startYear: '0',
     endYear: '1870',
     clusterStart: 1,
     clusterEnd: 10,
     periodicity: 1,
     context: 'Focus on geopolitical, technological, and cultural developments during the Cold War period between the United States and Soviet Union.',
-    model: 'o1-mini'
-  },
+    model: 'o1-mini',
   cachedResult: britishMonarchy
 };
 

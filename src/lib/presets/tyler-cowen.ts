@@ -716,15 +716,13 @@ export const tylerCowenData = {
     id: "tyler-cowen",
     name: "Tyler Cowen's Forecast",
     description: "Tyler Cowen's analysis of the economy from 1940 to 2060 [Sonnet 3.7]",
-    parameters: {
-      startYear: "1940",
+    startYear: "1940",
       endYear: "2060",
       clusterStart: 1,
       clusterEnd: 5,
       periodicity: 10,
       model: "o1-mini",
-      context: "Tyler Cowen's view of the world"
-    },
+      context: "Tyler Cowen's view of the world",
     cachedResult: tylerCowenData
   };
   

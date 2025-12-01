@@ -368,15 +368,13 @@ const coldWarPreset: PresetConfig = {
   id: 'cold-war',
   name: 'Cold War Analysis',
   description: 'Cultural analysis of the Cold War period (1945-1991)',
-  parameters: {
-    startYear: '1945',
-    endYear: '1991',
-    clusterStart: 1,
-    clusterEnd: 5,
-    periodicity: 10,
-    context: 'Focus on geopolitical, technological, and cultural developments during the Cold War period between the United States and Soviet Union.',
-    model: 'o1-mini'
-  },
+  startYear: '1945',
+  endYear: '1991',
+  clusterStart: 1,
+  clusterEnd: 5,
+  periodicity: 10,
+  context: 'Focus on geopolitical, technological, and cultural developments during the Cold War period between the United States and Soviet Union.',
+  model: 'o1-mini',
   cachedResult: coldWarData
 };
 

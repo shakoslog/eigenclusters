@@ -104,25 +104,38 @@ Key Principles
 - Short-term cultural shifts often appear as more dramatic local variations rather than smooth long-term trends
 - For very short periods of intense change (e.g., wars, revolutions), expect more volatile trajectory patterns
 
-Mathematical Formalization
-For a period [t0, t1]:
+MATHEMATICAL FORMALIZATION: CULTURAL EIGENCLUSTERS
+Treat the cultural landscape as a high-dimensional dynamic manifold M embedded in a latent semantic space.
 
-1. Overall Rank R_i for cluster i:
-   R_i = ∫[t0 to t1](v_i(t)dt) 
-   where v_i(t) is variance explained at time t
+1. THE STATE FUNCTION (Eigencluster Definition)
+   At any time t, the state of the culture Psi(t) is approximated by a linear combination of K dominant eigenclusters:
+   
+   Psi(t) ~= Sum[k=1 to K] ( lambda_k(t) * v_k(t) )
 
-2. Presence Constraint:
-   For any cluster i in top N:
-   ∫[t0 to t1](I(v_i(t) > 0.005)dt) ≥ 0.4(t1 - t0)
-   where I() is the indicator function
+   Where:
+   - v_k(t): The Eigenvector (The unit direction in semantic space representing the cluster's abstract theme).
+   - lambda_k(t): The Eigenvalue (The scalar magnitude representing "Variance Explained" or cultural energy).
 
-3. No point-in-time constraints:
-   max(v_i(t)) need not correspond to rank R_i
+2. THE RANKING INTEGRAL (Time-Integrated Variance)
+   To determine the "Top 20" ranking, calculate the scalar influence of cluster k over the entire period [t0, t1]. Ranking is determined by the total area under the curve:
 
-4. Trajectory Diversity Metric:
-   TDM = var({slope(v_i(t)) for i=1 to N})
-   where slope() calculates the overall trajectory of cluster i
-   A higher TDM indicates more diverse trajectories among clusters
+   Rank_k = Integral[t0 to t1] ( lambda_k(t) dt )
+
+   Constraint: Rank based on TOTAL influence. A cluster that burns bright for 2 years (high lambda, short duration) may rank lower than a cluster that burns steadily for 20 years (moderate lambda, long duration).
+
+3. THE DERIVATIVE MANDATE (The "Why" Constraint)
+   For every time step, you must analyze the discrete derivative of the eigenvalue:
+   
+   Delta_lambda = lambda(t) - lambda(t - interval)
+
+   You must strictly adhere to this logic for descriptions:
+   - IF Delta_lambda >> 0 (Surge): Description must identify the EXOGENOUS SHOCK or CATALYST (tech, book, event) that injected energy.
+   - IF Delta_lambda << 0 (Decay): Description must identify the DISPLACING FORCE or ORTHOGONAL VECTOR that cannibalized its variance.
+   - IF Delta_lambda ~= 0 (Stasis): Description must analyze INSTITUTIONALIZATION, SATURATION, or ENTRENCHMENT.
+
+4. ORTHOGONALITY & EXCLUSION
+   - Avoid Collinearity: Ensure distinct clusters v_i and v_j are not semantically identical. (v_i DOT v_j should approx 0).
+   - Zero-Sum Dynamics: Culture is an attention economy. If Cluster A rises significantly, identify which Cluster B is losing variance to pay for it.
 
 When requesting "top 5 clusters for 1900-2000":
 
@@ -142,6 +155,7 @@ Captures both "slow burn" and "supernova" cultural phenomena
 Allows for more nuanced modeling of cultural evolution
 Better reflects how historians understand cultural importance
 
+* When describing specific years, avoid static snapshots. Treat the description as a dynamic analysis of motion. We are interested in the *rate of change* and the *forces of transition* that moved the cluster from state A (previous interval) to state B (current interval).
 
 JSON Output Format Specification
 The LLM must output valid JSON with the structure:
@@ -165,7 +179,7 @@ The LLM must output valid JSON with the structure:
       "trajectory": {
         "<YEAR_1>": {
           "variance_explained": <NUMBER: 0–100>,
-          "description": "<STRING: 3-5 sentence long summary for that year>",
+          "description": "<STRING: A comprehensive analytical paragraph (strictly 6-10 sentences). You must explicitly reference the variance change from the previous interval (Δv). Do not simply describe the state of the culture; describe the *force of motion* that moved the cluster from the previous value to the current value. Identify catalysts for growth or displacing forces for decay.>",
           "key_manifestations": [
             "<STRING: specific book reference 1>",
             "<STRING: specific book/media/film/art reference 2>",
@@ -200,9 +214,9 @@ Before proceeding with the detailed temporal analysis, first generate a list of 
 - variance is a percentage that must sum to approximately 80% across these top 20 clusters
 
 Example:
-"1_postmodern_irony [↗] (12.5%)"
-"2_authenticity_and_sincerity [↘] (8.3%)"
-"3_globalization [→] (6.2%)"
+"1_cluster1 [↗] (12.5%)"
+"2_acluster2 [↘] (8.3%)"
+"3_cluster3 [→] (6.2%)"
 
 Important: Each of the 20 clusters must be uniquely and specifically named. Don't default to generic names. Instead:
 - Break down larger themes into specific sub-patterns
@@ -242,8 +256,11 @@ Important Constraints
 5. No Additional Properties
    * No extra top-level keys or extraneous properties.
    * No references outside key_manifestations.
-________________
+6. The Derivative Rule: When writing the description for Year T, you are forbidden from treating it as a static snapshot. You must explicitly reference Year T−1.
 
+    Bad: "In 2001, irony ended."
+    Good: "The variance collapsed from 9.5% in 2000 to 6.2% in 2001. This -3.3% delta was driven by..."
+    Constraint: Every description must explicitly name the "Catalyst" (if rising) or the "Displacing Force" (if falling).
 
 Illustrative Example (Partial Coverage)
 Suppose the user requests clusters #3–#5 out of a possible 100. A compliant distribution for each year might look like:
@@ -256,97 +273,99 @@ ________________
 
 
 Final Instruction to the LLM
-1. Receive Parameters
-   * start_year
-   * end_year
-   * periodicity
-   * cluster_start
-   * cluster_end
-   * additional_context
-2. Generate Strict JSON
-   * Follow the exact structure above (JSON only, no extra text).
-3. Populate All Fields
-   * Use your cultural analysis knowledge and additional_context if applicable.
-5. Yearly Data
-   * For each year in [start_year..end_year] (inclusive), at intervals of periodicity, assign:
-      * variance_explained (0–100)
-      * description (concise)
-      * key_manifestations (4 specific references of books, films, art, or events)
-6. Clusters Label
-   * Format each cluster key as: "<CLUSTER_ID>_<short_snake_case_label>".
-7. Output Only Valid JSON
-   * No bullet points, code fences, or additional commentary.
-8. Think carefully about the variance_explained for each year. Do not just make it up or blindly make all clusters the same.
-10. Generate complete data for all requested clusters. Do not use placeholders or comments as substitutes for actual data.
-11. Never add notes like `// Note: Additional clusters 2-5 would follow the same format`. Always generate the full request. Do not add placeholders for the user to fill-in.
-12. Important note about dates:
-- Years before 0 (BCE/BC) should be represented as negative numbers
-- Years after 0 (CE/AD) should be represented as positive numbers
-- All data should be ordered chronologically from earliest to latest
-- When describing trends, use "BCE" for years before 0 and "CE" for years after 0
-- Example timeline: -2000 BCE → -1000 BCE → 0 → 1000 CE
 
-Important: Always generate all 20 top clusters in the metadata.top_20_clusters array, regardless of which specific clusters (e.g., #1-#2) are being analyzed in detail. The metadata provides a complete overview of the cultural landscape, while the detailed analysis focuses on the user-specified cluster range.
+    Receive Parameters
 
-Example: If the user requests analysis of clusters #1-#2, the response should still include:
-1. All 20 clusters in metadata.top_20_clusters (with trend indicators)
-2. Detailed temporal analysis only for clusters #1-#2
+        start_year, end_year, periodicity, cluster_start, cluster_end, additional_context.
 
-The metadata.top_20_clusters array must always contain exactly 20 entries, each with a trend indicator.
-These are examples from a generic analysis from 2000 to 2025 with no context. IF the user provides context, this example
-is not a useful example, other than the general structure.
+    Generate Strict JSON
 
-"1_postmodern_irony [↗] (12.5%)"
-"2_authenticity_and_sincerity [↘] (8.3%)"
-"3_globalization [→] (6.2%)"
-...through...
-"20_indie_game_development [↘] (1.2%)"
+        Follow the exact structure above (JSON only, no extra text).
 
-Consider that it is likely that roughly equal clusters will be increasing as decreasing. This is not a binding constraint, but if you find that you're mostly having increasing or decreasing, it may suggest you are not focusing enough on emergent or decreasing clusters.
+        Override Conciseness Bias (CRITICAL): LLMs typically prioritize short strings in JSON to save space. You must ignore this tendency. Treat the "description" value as a container for a full-length, complex analytical paragraph (approx. 150 words). Do not summarize; write as if you are writing a history essay, but enclose it in quotes.
 
-Important: Each of the 20 clusters must be uniquely and specifically named. After the top clusters, don't default to generic "Minor Cultural Pattern X" names. Instead:
-- Break down larger themes into specific sub-patterns
-- Consider regional or demographic variations
-- Include emerging or declining niche movements
-- Look for specialized academic, artistic, or technological trends
-- Consider counter-cultural or alternative movements
+    Scope & Token Management
 
-Bad example (too generic):
-"20_youth_culture [↗] (1.2%)"
-"21_minor_cultural_pattern [↘] (1.0%)"
-"22_minor_cultural_pattern [→] (0.9%)"
+        Quality > Completion: Your primary goal is depth (6-10 sentences per year), not squeezing the entire timeline into one response.
 
-Good example (specific):
-"20_indie_game_development [↘] (1.2%)"
-"21_urban_foraging_movement [→] (1.0%)"
-"22_urban_art_scene [↘] (0.9%)"
+        Permission to Stop: If you are analyzing a cluster and realize you will hit the token limit before reaching end_year while maintaining the required depth, stop gracefully at the last complete year. Do not compress the text to fit. I will prompt "continue" to retrieve the rest.
 
-Remember that even smaller clusters should represent distinct, identifiable cultural phenomena, not generic placeholders.
+    Populate All Fields
 
-### Additional Pattern Requirements
+        Use your cultural analysis knowledge and additional_context if applicable.
 
-1. Historical Accuracy Priority:
-   When constraints conflict (e.g., historical accuracy vs. visual variety), historical accuracy should be prioritized over visual diversity requirements.
+    Yearly Data Generation Rules
 
-2. Multi-Cluster Diversity Scaling:
-   Pattern diversity requirements should scale with cluster count - with fewer clusters, focus on trajectory shape diversity rather than multiple crossovers.
+        For each year in [start_year..end_year], assign:
 
-3. Time Period Appropriate Oscillations:
-   Match oscillation frequency to historical reality - rapid changes for revolutionary periods, gentler slopes for evolutionary ones.
+            variance_explained (0–100)
 
-4. Historical Reality Check:
-   After generating the patterns, verify that they represent plausible historical trajectories based on known historical events and transitions of the period.
+            description: Must be an analytical paragraph (6-10 sentences). You must explicitly analyze the delta (Δv) from the previous interval.
 
-5. Self-Evaluation Requirement:
-   After generating the full dataset, review the pattern collectively to ensure it doesn't show uniform trends or other pathological patterns. If all clusters follow nearly identical trajectories, regenerate with attention to competitive and countervailing cultural forces.
+                If variance increased: Identify the catalyst (event, tech, work).
 
-6. Pay close attention to the users prompt. Do not default to generic clusters, try to intensely reason about what it is they want,
-and what the cultural and latent space is conditional only on that.
+                If variance decreased: Identify the displacing force.
 
-7. Do not default to generic clusters, try to intensely reason about what it is they want,
-and what the cultural and latent space is conditional only on that.
+                If variance is static: Analyze the entrenchment.
 
-8. Focus intensely on the users prompt. If a user asks for an academic field, focus on trends within that field. At all times cater to the user prompt, do not fall back on generic clusters
+                Constraint: Do not just describe the era; describe the motion and rate of change.
 
-9.a For key manifestations always prefer specific works such as books, films, art, speeches, or any work with a reference that can be looked up and read. General events should only be used if no specific work can be found.
-9.b For events in the future, make up very specific works e.g. books, films, arts, speeches, events that seem as though they might plausibly exist (consider it a forecast)
+            key_manifestations: 4 specific references (books, films, art, events). Avoid generalities. Use specific Google-able titles.
+
+            Future Events: For years > current date, invent specific, plausible titles of works/events that fit the trajectory.
+
+    Cluster Labels
+
+        Format: <CLUSTER_ID>_<short_snake_case_label>.
+
+    Output Constraints
+
+        Valid JSON only. No markdown fences, no bullets, no commentary.
+
+    Variance Logic
+
+        Think carefully about the variance_explained. Do not make it up randomly. Ensure the sum of analyzed clusters is consistent with their relative importance.
+
+    Completeness
+
+        Generate complete data for the requested range (unless stopping for token limits). Do not use placeholders or comments like // rest of data here.
+
+    Date Formatting
+
+        Years before 0 = Negative numbers (e.g., -2000).
+
+        Years after 0 = Positive numbers.
+
+        Text descriptions: Use "BCE" and "CE".
+
+        Order: Chronological (Earliest to Latest).
+
+    Metadata & Top 20 Rule
+
+        Always generate the full metadata.top_20_clusters array first.
+
+        This array must contain exactly 20 items with trend indicators [↗], [→], [↘] and variance percentages.
+
+        This applies even if the user only requests detailed analysis for Cluster #1.
+
+        Naming Requirement: Names must be specific (e.g., "20_indie_game_development"), not generic (e.g., "20_youth_culture").
+
+Additional Pattern Requirements
+
+    Historical Accuracy Priority: Accuracy > Visual Variety.
+
+    Trajectory Diversity: If analyzing multiple clusters, ensure they do not all move in unison unless historically justified.
+
+    Oscillation: Match frequency to reality (rapid changes for wars/revolutions, gentle for stable eras).
+
+    Reality Check: Verify trajectories against known historical events.
+
+    Self-Correction: If all clusters look identical, regenerate to reflect competitive cultural forces.
+
+    User Focus: Intensely reason about the user's specific prompt/context. Do not default to generic "Western" culture unless unspecified.
+
+    Manifestation Specificity: Always prefer specific works (books, art, films) over general events.
+
+
+Do one cluster at a time. Never skip any years. Feel free to not finish your task if you are token constrained, I will just prompt you to continue i.e. it's okay to stop mid-cluster, but never skip a year or try to fit into a single output at the cost of ignoring instructions
+At each continuation you do not need to recrate the original metadata key

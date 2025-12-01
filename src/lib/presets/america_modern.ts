@@ -33124,15 +33124,13 @@ const americaPreset: PresetConfig = {
   id: 'America ',
   name: 'America Analysis',
   description: 'America Library Era',
-  parameters: {
-    startYear: '1989',
+  startYear: '1989',
     endYear: '2025',
     clusterStart: 1,
     clusterEnd: 10,
     periodicity: 1,
     context: 'Focus on geopolitical, technological, and cultural developments during the Cold War period between the United States and Soviet Union.',
-    model: 'o1-mini'
-  },
+    model: 'o1-mini',
   cachedResult: americaData
 };
 

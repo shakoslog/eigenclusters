@@ -519,15 +519,13 @@ const glasnostPreset: PresetConfig = {
   id: 'glasnost ',
   name: 'Glasnost Analysis',
   description: 'Developments in the Glasnost period (1983-1991)',
-  parameters: {
-    startYear: '1983',
+  startYear: '1983',
     endYear: '1991',
     clusterStart: 1,
     clusterEnd: 5,
     periodicity: 1,
     context: 'Soviet Unions Collapse',
-    model: 'o1-mini'
-  },
+    model: 'o1-mini',
   cachedResult: glasnostData
 };
 

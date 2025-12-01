@@ -419,15 +419,13 @@ const literaturePreset: PresetConfig = {
   id: 'Middlemarch ',
   name: 'Middlemarch & Literary Analysis',
   description: 'Literary works',
-  parameters: {
-    startYear: '1780',
+  startYear: '1780',
     endYear: '1900',
     clusterStart: 1,
     clusterEnd: 5,
     periodicity: 20,
     context: 'Jane Eyre, Middlemarch, To The Lighthouse, Bleak House, Portrait of a Lady, Anna Karenina, Life and Fate, Heart of Darkness, Madame Bovary, and The Magic Mountain.',
-    model: 'o1-mini'
-  },
+    model: 'o1-mini',
   cachedResult: litereatureData
 };
 

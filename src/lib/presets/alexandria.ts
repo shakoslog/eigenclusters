@@ -554,15 +554,13 @@ const alexandriarPreset: PresetConfig = {
   id: 'alexandria ',
   name: 'Alexandria Analysis',
   description: 'Alexandrias Library Era',
-  parameters: {
-    startYear: '-300',
+  startYear: '-300',
     endYear: '-30',
     clusterStart: 1,
     clusterEnd: 6,
     periodicity: 40,
     context: 'Focus on geopolitical, technological, and cultural developments during the Cold War period between the United States and Soviet Union.',
-    model: 'o1-mini'
-  },
+    model: 'o1-mini',
   cachedResult: alexandriaData
 };
 

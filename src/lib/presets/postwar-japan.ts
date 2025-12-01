@@ -492,15 +492,13 @@ export const postwarJapanData = {
     id: "postwar-japan",
     name: "Post-War Japan (1945-1964)",
     description: "Post-war Cultural Period in Japan",
-    parameters: {
-      startYear: "1945",
+    startYear: "1945",
       endYear: "1964",
       clusterStart: 1,
       clusterEnd: 6,
       periodicity: 3,
       model: "o1-mini",
-      context: "Analyze Japan's dramatic cultural transformation from defeated imperial power to economic innovator, focusing on Tokyo as the epicenter of profound change. This period features sharply competing cultural forces with different trajectories."
-    },
+      context: "Analyze Japan's dramatic cultural transformation from defeated imperial power to economic innovator, focusing on Tokyo as the epicenter of profound change. This period features sharply competing cultural forces with different trajectories.",
     cachedResult: postwarJapanData
   };
   

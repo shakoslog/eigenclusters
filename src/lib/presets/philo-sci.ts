@@ -616,15 +616,13 @@ export const philoSciData = {
     id: "philosophy_of_science",
     name: "Philosophy of Science",
     description: "European discovery of the philosophy of science (1000-2000)",
-    parameters: {
-      startYear: "1000",
+    startYear: "1000",
       endYear: "2000",
       clusterStart: 1,
       clusterEnd: 5,
       periodicity: 100,
       model: "o1-mini",
-      context: "The European discovery of the philosophy of science"
-    },
+      context: "The European discovery of the philosophy of science",
     cachedResult: philoSciData
   };
   

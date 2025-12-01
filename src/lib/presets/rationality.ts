@@ -616,15 +616,13 @@ export const rationalityData = {
     id: "empiricism_rationality",
     name: "Empiricism and Rationality",
     description: "The rise and fall of empiricism and rationality (1000-2000)",
-    parameters: {
-      startYear: "1000",
+    startYear: "1000",
       endYear: "2000",
       clusterStart: 1,
       clusterEnd: 5,
       periodicity: 100,
       model: "o1-mini",
-      context: "The rise and fall of empiricism and rationality within the philosophy of science"
-    },
+      context: "The rise and fall of empiricism and rationality within the philosophy of science",
     cachedResult: rationalityData
   };
   

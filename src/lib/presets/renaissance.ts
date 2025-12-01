@@ -420,15 +420,13 @@ export const renaissanceData = {
     id: "renaissance",
     name: "Renaissance Advancement",
     description: "Renaissance Adanvcement (1400-1600)",
-    parameters: {
-      startYear: "1400",
+    startYear: "1400",
       endYear: "1600",
       clusterStart: 4,
       clusterEnd: 7,
       periodicity: 25,
       model: "o1-mini",
-      context: "Analyze the interplay between scientific advancement, artistic innovation, and religious/philosophical thought during the European Renaissance, with attention to how classical knowledge was rediscovered and reinterpreted"
-    },
+      context: "Analyze the interplay between scientific advancement, artistic innovation, and religious/philosophical thought during the European Renaissance, with attention to how classical knowledge was rediscovered and reinterpreted",
     cachedResult: renaissanceData
   };
   
