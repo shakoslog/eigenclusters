@@ -11,11 +11,10 @@ import { localPoint } from '@visx/event';
 import { useTooltip, Tooltip } from '@visx/tooltip';
 import { voronoi } from '@visx/voronoi';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Brush } from '@visx/brush';
 import { PatternLines } from '@visx/pattern';
 import { scaleTime } from '@visx/scale';
 
-// Import all presets with unique names
+import { PresetConfig } from '@/lib/presets/types';
 import americaModernPreset from '@/lib/presets/america_modern';
 import americaPoliticsPreset from '@/lib/presets/america-politics';
 import scienceLongPreset from '@/lib/presets/science-long';
@@ -42,9 +41,9 @@ import militaryPreset from '@/lib/presets/military';
 import rationalismPreset from '@/lib/presets/rationalism';
 
 // Define a type for presets
-import { PresetConfig } from '@/lib/presets/types';
-
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
+
+import ModelSpecification from '@/components/ModelSpecification';
 
 // Colors for different series
 const COLORS = [
@@ -129,6 +128,7 @@ function EigenClustersApp() {
   });
   // State for pre-frontier toggle
   const [showPreFrontier, setShowPreFrontier] = useState(false);
+  const [showModelSpec, setShowModelSpec] = useState(false);
   
   // State for selected clusters
   const [selectedClusters, setSelectedClusters] = useState<string[]>([]);
@@ -358,13 +358,11 @@ function EigenClustersApp() {
   const config = getPresetSpecificConfig(selectedPreset.id);
   
   // Add these state variables to your component
-  const [brushEnabled, setBrushEnabled] = useState(false);
-  const [zoomedDomain, setZoomedDomain] = useState<null | {x: [number, number], y: [number, number]}>(null);
   const [yearFilter, setYearFilter] = useState<string>('');
   
   // Add this function to your component
   const resetZoom = () => {
-    setZoomedDomain(null);
+    // setZoomedDomain(null); // No longer needed
   };
   
   // Render chart
@@ -382,7 +380,7 @@ function EigenClustersApp() {
     
     // Create scales with the correct domain from preset parameters or zoomed domain
     const xScale = scaleLinear({
-      domain: zoomedDomain ? zoomedDomain.x : [startYear, endYear],
+      domain: [startYear, endYear],
       range: [0, innerWidth],
       nice: true
     });
@@ -398,7 +396,7 @@ function EigenClustersApp() {
     });
     
     const yScale = scaleLinear({
-      domain: zoomedDomain ? zoomedDomain.y : [0, maxValue * 1.1],
+      domain: [0, maxValue * 1.1],
       range: [innerHeight, 0],
       nice: true
     });
@@ -437,43 +435,12 @@ function EigenClustersApp() {
       height: innerHeight
     })(allPoints);
     
-    // Handle brush end
-    const onBrushEnd = (domain: any) => {
-      if (!domain) {
-        return;
-      }
-      
-      const { x0, x1, y0, y1 } = domain;
-      setZoomedDomain({
-        x: [xScale.invert(x0), xScale.invert(x1)],
-        y: [yScale.invert(y1), yScale.invert(y0)]
-      });
-      
-      setBrushEnabled(false);
-    };
+    // Handle brush end (removed)
     
     return (
       <div style={{ position: 'relative' }}>
         <div className="mb-4 flex gap-2 items-center">
-          <button
-            onClick={() => setBrushEnabled(!brushEnabled)}
-            className={`px-3 py-1 rounded text-sm ${
-              brushEnabled ? 'bg-blue-600 text-white' : 'bg-gray-700 text-white/80'
-            }`}
-          >
-            {brushEnabled ? 'Cancel Zoom' : 'Zoom Mode'}
-          </button>
-          
-          {zoomedDomain && (
-            <button
-              onClick={resetZoom}
-              className="px-3 py-1 rounded text-sm bg-red-600 text-white"
-            >
-              Reset Zoom
-            </button>
-          )}
-          
-          <div className="ml-4">
+          <div className="">
             <input
               type="text"
               placeholder="Filter by year..."
@@ -585,7 +552,7 @@ function EigenClustersApp() {
             />
             
             {/* Invisible voronoi for better point interaction - CLICK ONLY */}
-            {!brushEnabled && voronoiLayout.polygons().map((polygon, i) => {
+            {voronoiLayout.polygons().map((polygon, i) => {
               const path = `M${polygon.map(([x, y]) => `${x},${y}`).join('L')}Z`;
               return (
                 <path
@@ -613,28 +580,7 @@ function EigenClustersApp() {
               </g>
             )}
             
-            {/* Brush for zooming */}
-            {brushEnabled && (
-              <Brush
-                xScale={xScale}
-                yScale={yScale}
-                width={innerWidth}
-                height={innerHeight}
-                handleSize={8}
-                resizeTriggerAreas={['left', 'right']}
-                brushDirection="horizontal"
-                initialBrushPosition={{
-                  start: { x: 0.25 * innerWidth, y: 0 },
-                  end: { x: 0.75 * innerWidth, y: innerHeight },
-                }}
-                onBrushEnd={onBrushEnd}
-                onChange={() => {}}
-                selectedBoxStyle={{
-                  fill: 'url(#brush-pattern)',
-                  stroke: '#fff',
-                }}
-              />
-            )}
+            {/* Brush for zooming (removed) */}
           </Group>
         </svg>
       </div>
@@ -644,18 +590,25 @@ function EigenClustersApp() {
   return (
     <div className="min-h-screen bg-black text-white p-6">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold tracking-tight mb-2">{selectedPreset.name}</h1>
-        <div className="text-sm text-white/60 max-w-3xl leading-relaxed">
-          <span className="text-blue-400 font-medium mr-1">How to read:</span>
-          Each colored line tracks the <strong>"cultural dominance"</strong> of a specific theme over time. 
-          A higher value means that theme was more influential in the cultural landscape. 
-          <span className="text-white/50 text-xs ml-1">(Note: Cultural dominance is a relative metric with no intrinsic unit).</span>
-          <span className="text-white/80 ml-1">Click on any dot to reveal the specific historical events and works that drove that trend.</span>
-          <Link href="/api/analyze/prompt.txt" target="_blank" className="ml-3 text-white/40 hover:text-blue-400 text-xs border-b border-white/20 hover:border-blue-400 transition-colors pb-0.5">
-            View System Prompt
+        <div className="text-xl font-mono text-white/40 mb-4">CULTURAL EIGENCLUSTERS</div>
+        
+        <div className="text-sm text-white/60 max-w-3xl leading-relaxed mb-6">
+          Each colored line tracks the "cultural dominance" of a specific theme over time. A higher value means that theme was more influential in the cultural landscape. Cultural dominance is a relative metric with no intrinsic unit. Click on any dot to reveal the specific historical events and works that drove that trend.
+          <Link href="/api/analyze/prompt.txt" target="_blank" className="inline-flex items-center ml-2 px-2 py-0.5 text-xs font-medium text-blue-300 bg-blue-500/10 border border-blue-500/20 rounded hover:bg-blue-500/20 transition-colors">
+            View System Prompt ↗
           </Link>
+          <button 
+            onClick={() => setShowModelSpec(true)}
+            className="inline-flex items-center ml-2 px-2 py-0.5 text-xs font-medium text-purple-300 bg-purple-500/10 border border-purple-500/20 rounded hover:bg-purple-500/20 transition-colors"
+          >
+            Model Specification
+          </button>
         </div>
+
+        <h1 className="text-3xl font-bold tracking-tight text-white">{selectedPreset.name}</h1>
       </header>
+      
+      <ModelSpecification isOpen={showModelSpec} onClose={() => setShowModelSpec(false)} />
       
       {/* Preset Selector */}
       <div className="mb-6 bg-black/30 border border-white/20 rounded p-4">
@@ -748,15 +701,16 @@ function EigenClustersApp() {
         {/* Tabbed information panel */}
         <div className="bg-black/30 border border-white/20 rounded p-4">
           <Tabs defaultValue="overviews" className="w-full">
-            <TabsList className="grid grid-cols-3 mb-4">
+            <TabsList className="grid grid-cols-2 mb-4">
               <TabsTrigger value="overviews" className="data-[state=active]:bg-blue-900/50">
                 Cluster Overviews
               </TabsTrigger>
-              <TabsTrigger value="selected-point" className="data-[state=active]:bg-blue-900/50">
+              <TabsTrigger value="selected-point" className="data-[state=active]:bg-blue-900/50 relative">
                 Selected Point
-              </TabsTrigger>
-              <TabsTrigger value="legend" className="data-[state=active]:bg-blue-900/50">
-                Legend
+                <span className="absolute -top-1 -right-1 flex h-3 w-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                </span>
               </TabsTrigger>
             </TabsList>
             
@@ -828,26 +782,6 @@ function EigenClustersApp() {
               ) : (
                 <p className="text-white/70">Click on a point in the chart to see details</p>
               )}
-            </TabsContent>
-            
-            {/* Legend Tab */}
-            <TabsContent value="legend" className="mt-0">
-              <div className="grid grid-cols-3 gap-4">
-                {selectedClusters.map((clusterId, idx) => {
-                  const cluster = allClusters.find(c => c.id === clusterId);
-                  const color = COLORS[idx % COLORS.length];
-                  
-                  return (
-                    <div key={clusterId} className="flex items-center p-2 border border-white/10 rounded">
-                      <div 
-                        className="w-4 h-4 mr-2 rounded-sm"
-                        style={{ backgroundColor: color }}
-                      ></div>
-                      <span>{cluster?.name || clusterId}</span>
-                    </div>
-                  );
-                })}
-              </div>
             </TabsContent>
           </Tabs>
         </div>
