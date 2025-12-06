@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo, useCallback, Suspense } from 'react';
-import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { LinePath } from '@visx/shape';
 import { scaleLinear } from '@visx/scale';
 import { Group } from '@visx/group';
@@ -39,11 +39,15 @@ import filmPreset from '@/lib/presets/film';
 import internetPreset from '@/lib/presets/internet';
 import militaryPreset from '@/lib/presets/military';
 import rationalismPreset from '@/lib/presets/rationalism';
+import rightWingCulturePreset from '@/lib/presets/rightw_culture';
+import foundationAIPreset from '@/lib/presets/foundation_ai';
 
 // Define a type for presets
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 
-import ModelSpecification from '@/components/ModelSpecification';
+const ModelSpecification = dynamic(() => import('@/components/ModelSpecification'), { ssr: false });
+const SystemPromptModal = dynamic(() => import('@/components/SystemPromptModal'), { ssr: false });
+const WhatIsThisModal = dynamic(() => import('@/components/WhatIsThisModal'), { ssr: false });
 
 // Colors for different series
 const COLORS = [
@@ -119,6 +123,7 @@ function EigenClustersApp() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const pathname = usePathname();
+  const searchParamsString = searchParams.toString();
 
   // State for preset selection - initialize with Postmodern America
   const [selectedPreset, setSelectedPreset] = useState<PresetConfig>({
@@ -127,12 +132,30 @@ function EigenClustersApp() {
     description: 'Tracking the acceleration of irony, mediated identity, and the collapse of institutional trust.'
   });
   // State for pre-frontier toggle
-  const [showPreFrontier, setShowPreFrontier] = useState(false);
   const [showModelSpec, setShowModelSpec] = useState(false);
+  const [showSystemPrompt, setShowSystemPrompt] = useState(false);
+  const [systemPromptText, setSystemPromptText] = useState('');
+  const [systemPromptLoading, setSystemPromptLoading] = useState(false);
+  const [systemPromptError, setSystemPromptError] = useState<string | null>(null);
+  const [showWhatIsThis, setShowWhatIsThis] = useState(false);
   
   // State for selected clusters
   const [selectedClusters, setSelectedClusters] = useState<string[]>([]);
   const [selectedPoint, setSelectedPoint] = useState<any>(null);
+  const [selectedPointPanel, setSelectedPointPanel] = useState<{
+    x: number;
+    y: number;
+    isDragging: boolean;
+    offsetX: number;
+    offsetY: number;
+  }>({
+    x: 16,
+    y: 16,
+    isDragging: false,
+    offsetX: 0,
+    offsetY: 0,
+  });
+  const [infoTab, setInfoTab] = useState<'overviews' | 'selected-point'>('overviews');
   
   // Tooltip setup
   const {
@@ -146,48 +169,124 @@ function EigenClustersApp() {
   // Helper to update clusters state and URL
   const updateClusters = (newClusters: string[]) => {
     setSelectedClusters(newClusters);
-    const params = new URLSearchParams(searchParams.toString());
+    const params = new URLSearchParams(searchParamsString);
     if (newClusters.length > 0) {
       params.set('clusters', newClusters.join(','));
     } else {
       params.delete('clusters');
     }
-    router.push(`${pathname}?${params.toString()}`, { scroll: false });
+    const next = params.toString();
+    router.push(next ? `${pathname}?${next}` : pathname, { scroll: false });
+  };
+
+  const updateUrlParams = useCallback(
+    (updates: Record<string, string | null>) => {
+      const params = new URLSearchParams(searchParamsString);
+      Object.entries(updates).forEach(([key, value]) => {
+        if (value === null || value === '') {
+          params.delete(key);
+        } else {
+          params.set(key, value);
+        }
+      });
+      const next = params.toString();
+      router.replace(next ? `${pathname}?${next}` : pathname, { scroll: false });
+    },
+    [pathname, router, searchParamsString]
+  );
+
+  const fetchSystemPrompt = useCallback(async () => {
+    try {
+      setSystemPromptLoading(true);
+      setSystemPromptError(null);
+      const response = await fetch('/api/analyze/prompt.txt', { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error('Failed to load system prompt');
+      }
+      const text = await response.text();
+      setSystemPromptText(text);
+    } catch (error) {
+      console.error('Failed to load system prompt', error);
+      setSystemPromptError('Unable to load the system prompt. Please try again.');
+    } finally {
+      setSystemPromptLoading(false);
+    }
+  }, []);
+
+  const handleOpenSystemPrompt = () => {
+    setShowSystemPrompt(true);
+    if (!systemPromptText) {
+      fetchSystemPrompt();
+    }
   };
   
   // For the availablePresets array, use the imported presets with their unique variable names
   const availablePresets = [
-    // Frontier/Modern Presets (Visible by default)
-    { id: 'american_culture_v3', name: 'Postmodern America (1990-2025)', preset: { ...americanCultureV3Preset, name: 'Postmodern America (1990-2025)', description: 'Tracking the acceleration of irony, mediated identity, and the collapse of institutional trust.' }, isPreFrontier: false },
-    { id: 'science_v2', name: 'Latent Clusters of Social Science Paradigms (1900-2025)', preset: { ...scienceV2Preset, name: 'Latent Clusters of Social Science Paradigms (1900-2025)', description: 'The evolution of social scientific thought, institutional trust, and the sociology of knowledge.' }, isPreFrontier: false },
-    { id: 'democracy', name: 'Evolution of Democratic Thought (1890-2025)', preset: { ...democracyPreset, name: 'Evolution of Democratic Thought (1890-2025)', description: 'Tracing the history of democratic epistemologies, from technocratic progressivism to populist reaction.' }, isPreFrontier: false },
-    { id: 'rationalism_v1', name: 'The Rationalist Sphere (2005-2025)', preset: { ...rationalismPreset, name: 'The Rationalist Sphere (2005-2025)', description: "A genealogy of the Rationalist, Effective Altruist, and 'Tech Right' intellectual subcultures." }, isPreFrontier: false },
-    { id: 'film_history', name: 'Cinema & Social Change (1960-2024)', preset: { ...filmPreset, name: 'Cinema & Social Change (1960-2024)', description: 'How film reflected and shaped the cultural revolutions of the late 20th century.' }, isPreFrontier: false },
-    { id: 'internet_history', name: 'The Digital Revolution (1989-2025)', preset: { ...internetPreset, name: 'The Digital Revolution (1989-2025)', description: "From the World Wide Web to AI: the trajectory of the internet's impact on human cognition." }, isPreFrontier: false },
-    { id: 'military_history', name: 'Latent Clusters of Military Strategy (1890-1950)', preset: { ...militaryPreset, name: 'Latent Clusters of Military Strategy (1890-1950)', description: 'Tracking the evolution of warfare, logistics, and state capacity from the late 19th century to the Cold War.' }, isPreFrontier: false },
-    { id: 'hume_enlightenment', name: 'Hume / Enlightenment Analysis (1700-1800)', preset: { ...humePreset, name: 'Hume / Enlightenment Analysis (1700-1800)', description: 'Cultural variance analysis of the Enlightenment era (1700-1800)' }, isPreFrontier: false },
-    
-    // Pre-Frontier/Historical/Niche Presets (Hidden by default)
-    { id: 'america_modern', name: 'American Cultural Cycles (1989-2025)', preset: { ...americaModernPreset, name: 'American Cultural Cycles (1989-2025)', description: 'Tracking the shift from print to digital epistemology and the fragmentation of consensus.' }, isPreFrontier: true },
-    { id: 'science-long', name: 'Evolution of Scientific Truth (1895-2024)', preset: { ...scienceLongPreset, name: 'Evolution of Scientific Truth (1895-2024)', description: 'Epistemic shifts in scientific inquiry, from the quantum revolution to the replication crisis.' }, isPreFrontier: true },
-    { id: 'america-politics', name: 'US Political Polarization (1800-2025)', preset: { ...americaPoliticsPreset, name: 'US Political Polarization (1800-2025)', description: 'A deep history of American political division, from the early republic to modern culture wars.' }, isPreFrontier: true },
-    { id: 'dw-nominate', name: 'DW-NOMINATE Political Analysis', preset: dwNominatePreset, isPreFrontier: true },
-    { id: 'evolution-of-science', name: 'Evolution of Science', preset: { ...evolutionOfSciencePreset, description: 'Evolution of Scientific Thought' }, isPreFrontier: true },
-    { id: 'cold-war', name: 'Cold War Analysis (1945-1991)', preset: coldWarPreset, isPreFrontier: true },
-    { id: 'glasnost', name: 'Glasnost Analysis (1983-1991)', preset: glasnostPreset, isPreFrontier: true },
-    { id: 'alexandria', name: 'Alexandria Analysis (-300 to -30)', preset: alexandriaPreset, isPreFrontier: true },
-    { id: 'literature', name: 'Literature Analysis (1780-1900)', preset: literaturePreset, isPreFrontier: true },
-    { id: 'philo-sci', name: 'Philosophy of Science (1000-2000)', preset: philoSciPreset, isPreFrontier: true },
-    { id: 'postwar-japan', name: 'Post-War Japan (1945-1964)', preset: postwarJapanPreset, isPreFrontier: true },
-    { id: 'rationality', name: 'Rationality & Empiricism (1000-2000)', preset: rationalityPreset, isPreFrontier: true },
+    { id: 'american_culture_v3', name: 'Postmodern America (1990-2025)', preset: { ...americanCultureV3Preset, name: 'Postmodern America (1990-2025)', description: 'Tracking the acceleration of irony, mediated identity, and the collapse of institutional trust.' } },
+    { id: 'science_v2', name: 'Latent Clusters of Social Science Paradigms (1900-2025)', preset: { ...scienceV2Preset, name: 'Latent Clusters of Social Science Paradigms (1900-2025)', description: 'The evolution of social scientific thought, institutional trust, and the sociology of knowledge.' } },
+    { id: 'democracy', name: 'Evolution of Democratic Thought (1890-2025)', preset: { ...democracyPreset, name: 'Evolution of Democratic Thought (1890-2025)', description: 'Tracing the history of democratic epistemologies, from technocratic progressivism to populist reaction.' } },
+    { id: 'rationalism_v1', name: 'The Rationalist Sphere (2005-2025)', preset: { ...rationalismPreset, name: 'The Rationalist Sphere (2005-2025)', description: "A genealogy of the Rationalist, Effective Altruist, and 'Tech Right' intellectual subcultures." } },
+    { id: 'dissident_right_culture', name: 'Dissident-Right Cultural Manifold (1995-2025)', preset: { ...rightWingCulturePreset, name: 'Dissident-Right Cultural Manifold (1995-2025)', description: 'Mapping the major dissident-right ideological eigenclusters from Buchanan to the AI-accelerants.' } },
+    { id: 'foundation_ai', name: 'Foundation-Model Trajectories (1990-2025)', preset: { ...foundationAIPreset, name: 'Foundation-Model Trajectories (1990-2025)', description: 'How AI research paradigms shifted from symbolic logic and kernel methods to transformer-era foundation models.' } },
+    { id: 'film_history', name: 'Cinema & Social Change (1960-2024)', preset: { ...filmPreset, name: 'Cinema & Social Change (1960-2024)', description: 'How film reflected and shaped the cultural revolutions of the late 20th century.' } },
+    { id: 'internet_history', name: 'The Digital Revolution (1989-2025)', preset: { ...internetPreset, name: 'The Digital Revolution (1989-2025)', description: "From the World Wide Web to AI: the trajectory of the internet's impact on human cognition." } },
+    { id: 'military_history', name: 'Latent Clusters of Military Strategy (1890-1950)', preset: { ...militaryPreset, name: 'Latent Clusters of Military Strategy (1890-1950)', description: 'Tracking the evolution of warfare, logistics, and state capacity from the late 19th century to the Cold War.' } },
+    { id: 'cold-war', name: 'Cold War Analysis (1945-1991)', preset: coldWarPreset },
+    { id: 'glasnost', name: 'Glasnost Analysis (1983-1991)', preset: glasnostPreset },
   ];
 
-  const displayedPresets = availablePresets.filter(p => showPreFrontier || !p.isPreFrontier);
+  const displayedPresets = availablePresets;
+
+  useEffect(() => {
+    const params = new URLSearchParams(searchParamsString);
+    const tabParam = params.get('info_tab');
+    if (tabParam === 'selected-point') {
+      setInfoTab('selected-point');
+    } else {
+      setInfoTab('overviews');
+    }
+  }, [searchParamsString]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(searchParamsString);
+    const clusterIdParam = params.get('point_cluster');
+    const yearParam = params.get('point_year');
+    const clustersData = selectedPreset.cachedResult?.clusters;
+
+    if (!clusterIdParam || !yearParam || !clustersData) {
+      setSelectedPoint(null);
+      return;
+    }
+
+    const clusterData = clustersData[clusterIdParam];
+    const trajectory = clusterData?.trajectory?.[yearParam];
+
+    if (!clusterData || !trajectory) {
+      setSelectedPoint(null);
+      return;
+    }
+
+    setSelectedPoint({
+      clusterId: clusterIdParam,
+      clusterName: clusterData.name || clusterIdParam,
+      clusterDescription: clusterData.description || '',
+      year: parseInt(yearParam, 10),
+      value: trajectory.variance_explained,
+      description: trajectory.description,
+      manifestations: trajectory.key_manifestations || [],
+    });
+    setSelectedPointPanel(prev => ({
+      ...prev,
+      x: prev.x ?? 16,
+      y: prev.y ?? 16,
+    }));
+  }, [searchParamsString, selectedPreset]);
   
   // Sync from URL on mount and param change
   useEffect(() => {
-    const datasetId = searchParams.get('dataset');
-    const clustersParam = searchParams.get('clusters');
+    const params = new URLSearchParams(searchParamsString);
+    const datasetId = params.get('dataset');
+    const clustersParam = params.get('clusters');
     const urlClusterIds = clustersParam ? clustersParam.split(',') : [];
 
     if (datasetId) {
@@ -196,7 +295,6 @@ function EigenClustersApp() {
         if (found.preset.id !== selectedPreset.id) {
           // Dataset changed, update everything
           setSelectedPreset(found.preset);
-          if (found.isPreFrontier) setShowPreFrontier(true);
           setSelectedClusters(urlClusterIds);
         } else {
           // Same dataset, check if clusters need sync (e.g. back button)
@@ -211,7 +309,7 @@ function EigenClustersApp() {
       // No dataset param (home), clear clusters if URL cleared them
       setSelectedClusters([]);
     }
-  }, [searchParams, selectedPreset.id, selectedClusters]);
+  }, [searchParamsString, selectedPreset.id]);
 
   // Handler for preset selection that updates URL
   const handlePresetSelect = (presetOption: typeof availablePresets[0]) => {
@@ -220,7 +318,7 @@ function EigenClustersApp() {
     setSelectedPoint(null);
     
     // Update URL without full reload
-    const params = new URLSearchParams(searchParams.toString());
+    const params = new URLSearchParams(searchParamsString);
     params.set('dataset', presetOption.id);
     params.delete('clusters');
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
@@ -256,12 +354,29 @@ function EigenClustersApp() {
     hideTooltip();
   }, []);
 
-  const handleClick = useCallback((point: any, setSelectedPoint: any) => {
-    setSelectedPoint(point.data);
-    // Automatically switch to the selected point tab
-    const tabTrigger = document.querySelector('[data-value="selected-point"]') as HTMLElement;
-    if (tabTrigger) tabTrigger.click();
-  }, []);
+  const clearSelectedPoint = useCallback(() => {
+    setSelectedPoint(null);
+    setInfoTab('overviews');
+    updateUrlParams({ point_cluster: null, point_year: null, info_tab: null });
+  }, [updateUrlParams]);
+
+  const handleClick = useCallback(
+    (point: any, setSelectedPoint: any) => {
+      setSelectedPoint(point.data);
+      setInfoTab('selected-point');
+      setSelectedPointPanel(prev => ({
+        ...prev,
+        x: prev.x || 0,
+        y: prev.y || 0,
+      }));
+      updateUrlParams({
+        point_cluster: point.data.clusterId,
+        point_year: String(point.data.year),
+        info_tab: 'selected-point',
+      });
+    },
+    [setInfoTab, updateUrlParams]
+  );
   
   // Transform data for the selected preset
   const { transformedData, allClusters } = useMemo(() => {
@@ -438,18 +553,101 @@ function EigenClustersApp() {
     // Handle brush end (removed)
     
     return (
-      <div style={{ position: 'relative' }}>
+      <div>
         <div className="mb-4 flex gap-2 items-center">
-          <div className="">
-            <input
-              type="text"
-              placeholder="Filter by year..."
-              value={yearFilter}
-              onChange={(e) => setYearFilter(e.target.value)}
-              className="bg-black/50 border border-white/30 rounded p-1 text-white text-sm w-32"
-            />
-          </div>
+          <input
+            type="text"
+            placeholder="Filter by year..."
+            value={yearFilter}
+            onChange={(e) => setYearFilter(e.target.value)}
+            className="bg-black/40 border border-white/30 rounded px-2 py-1 text-white text-sm w-36 placeholder:text-white/40"
+          />
+          <button
+            onClick={() => setYearFilter('')}
+            className="text-xs uppercase tracking-[0.2em] text-white/60 hover:text-white"
+          >
+            Clear
+          </button>
         </div>
+        
+        <div className="relative">
+          {selectedPoint && (
+            <div
+              className="absolute z-10 w-72 rounded-lg border border-white/20 bg-black/85 text-xs text-white shadow-lg backdrop-blur"
+              style={{
+                left: selectedPointPanel.x,
+                top: selectedPointPanel.y,
+              }}
+            >
+              <div
+                className="flex cursor-move items-center justify-between gap-2 rounded-t-lg border-b border-white/10 bg-white/5 px-4 py-2"
+              onMouseDown={e => {
+                e.stopPropagation();
+                setSelectedPointPanel(prev => ({
+                  ...prev,
+                  isDragging: true,
+                  offsetX: e.clientX - selectedPointPanel.x,
+                  offsetY: e.clientY - selectedPointPanel.y,
+                }));
+              }}
+              >
+                <div>
+                  <p className="text-sm font-semibold text-white">
+                    {selectedPoint.clusterName}
+                  </p>
+                  <p className="text-white/60">
+                    {selectedPoint.year} ·{' '}
+                    {typeof selectedPoint.value === 'number'
+                      ? selectedPoint.value.toFixed(2)
+                      : selectedPoint.value}
+                    % variance
+                  </p>
+                </div>
+                <button
+                  onClick={clearSelectedPoint}
+                  className="text-white/60 hover:text-white"
+                  aria-label="Clear selected point"
+                >
+                  ✕
+                </button>
+              </div>
+              <div
+                className="cursor-default px-4 pb-4"
+                onMouseDown={e => e.stopPropagation()}
+              >
+                {selectedPoint.description && (
+                  <p className="mt-2 text-white/80">
+                    {selectedPoint.description}
+                  </p>
+                )}
+                {selectedPoint.manifestations?.length > 0 && (
+                  <ul className="mt-2 list-disc space-y-1 pl-4 text-white/70">
+                    {selectedPoint.manifestations.slice(0, 3).map((item: string, idx: number) => (
+                      <li key={`${item}-${idx}`}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+          )}
+          {selectedPointPanel.isDragging && (
+            <div
+              className="fixed inset-0 z-10"
+              onMouseMove={e => {
+                setSelectedPointPanel(prev => ({
+                  ...prev,
+                  x: e.clientX - prev.offsetX,
+                  y: e.clientY - prev.offsetY,
+                }));
+              }}
+              onMouseUp={() =>
+                setSelectedPointPanel(prev => ({
+                  ...prev,
+                  isDragging: false,
+                }))
+              }
+            />
+          )}
         
         <svg width={width} height={height}>
           <PatternLines
@@ -583,6 +781,7 @@ function EigenClustersApp() {
             {/* Brush for zooming (removed) */}
           </Group>
         </svg>
+        </div>
       </div>
     );
   };
@@ -592,51 +791,69 @@ function EigenClustersApp() {
       <header className="mb-8">
         <div className="text-xl font-mono text-white/40 mb-4">CULTURAL EIGENCLUSTERS</div>
         
-        <div className="text-sm text-white/60 max-w-3xl leading-relaxed mb-6">
-          Each colored line tracks the "cultural dominance" of a specific theme over time. A higher value means that theme was more influential in the cultural landscape. Cultural dominance is a relative metric with no intrinsic unit. Click on any dot to reveal the specific historical events and works that drove that trend.
-          <Link href="/api/analyze/prompt.txt" target="_blank" className="inline-flex items-center ml-2 px-2 py-0.5 text-xs font-medium text-blue-300 bg-blue-500/10 border border-blue-500/20 rounded hover:bg-blue-500/20 transition-colors">
-            View System Prompt ↗
-          </Link>
-          <button 
-            onClick={() => setShowModelSpec(true)}
-            className="inline-flex items-center ml-2 px-2 py-0.5 text-xs font-medium text-purple-300 bg-purple-500/10 border border-purple-500/20 rounded hover:bg-purple-500/20 transition-colors"
-          >
-            Model Specification
-          </button>
+        <div className="space-y-4 mb-6">
+          <p className="text-sm text-white/70 max-w-4xl leading-relaxed">
+            Each colored line tracks the "cultural dominance" of a specific theme over time. A higher value means that theme was more influential in the cultural landscape.
+            Cultural dominance is a relative metric with no intrinsic unit. Click on any point in a series to see the historical catalysts that drove that movement.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={handleOpenSystemPrompt}
+              className="inline-flex items-center px-3 py-1 text-[0.75rem] font-semibold uppercase tracking-[0.25em] text-black bg-white border border-gray-500 shadow-[2px_2px_0_rgba(0,0,0,0.45)] transition hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0_rgba(0,0,0,0.45)]"
+            >
+              View System Prompt
+            </button>
+            <button 
+              onClick={() => setShowModelSpec(true)}
+              className="inline-flex items-center px-3 py-1 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-purple-100 border border-purple-500/40 bg-purple-500/10 hover:bg-purple-500/20 transition-colors rounded"
+            >
+              Model Specification
+            </button>
+            <button
+              onClick={() => setShowWhatIsThis(true)}
+              className="inline-flex items-center px-3 py-1 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-emerald-100 border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500/20 transition-colors rounded"
+            >
+              What is this?
+            </button>
+          </div>
         </div>
 
         <h1 className="text-3xl font-bold tracking-tight text-white">{selectedPreset.name}</h1>
       </header>
       
       <ModelSpecification isOpen={showModelSpec} onClose={() => setShowModelSpec(false)} />
+      <SystemPromptModal
+        isOpen={showSystemPrompt}
+        onClose={() => setShowSystemPrompt(false)}
+        content={systemPromptText}
+        isLoading={systemPromptLoading}
+        error={systemPromptError}
+        onRetry={fetchSystemPrompt}
+      />
+      <WhatIsThisModal isOpen={showWhatIsThis} onClose={() => setShowWhatIsThis(false)} />
       
       {/* Preset Selector */}
       <div className="mb-6 bg-black/30 border border-white/20 rounded p-4">
         <div className="flex justify-between items-center mb-3">
           <h2 className="text-lg">Select Dataset</h2>
-          <label className="flex items-center gap-2 cursor-pointer text-sm text-white/70 hover:text-white">
-            <input
-              type="checkbox"
-              checked={showPreFrontier}
-              onChange={(e) => setShowPreFrontier(e.target.checked)}
-              className="accent-blue-600"
-            />
-            Show Pre-Frontier Models
-          </label>
         </div>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-3 text-[0.92rem]">
           {displayedPresets.map(preset => (
             <button
               key={preset.id}
-              className={`p-3 rounded text-left ${
+              className={`p-4 rounded text-left border transition ${
                 selectedPreset.id === preset.preset.id 
-                  ? 'bg-blue-900 border border-blue-500' 
-                  : 'bg-black/50 border border-white/10 hover:bg-black/70'
+                  ? 'bg-blue-900 border-blue-500 shadow-[3px_3px_0_rgba(0,0,0,0.35)]' 
+                  : 'bg-black/50 border-white/10 hover:bg-black/70'
               }`}
               onClick={() => handlePresetSelect(preset)}
             >
-              <div className="font-bold">{preset.name}</div>
-              <div className="text-sm text-white/70">{preset.preset.description}</div>
+              <div className="font-semibold text-[1rem] leading-snug text-white break-words">
+                {preset.name}
+              </div>
+              <div className="text-sm text-white/70 leading-snug break-words">
+                {preset.preset.description}
+              </div>
             </button>
           ))}
         </div>
@@ -677,7 +894,9 @@ function EigenClustersApp() {
                     className="mr-2"
                   />
                   <span className="text-xs text-white/50 w-6 text-right mr-2 flex-shrink-0">{index + 1}.</span>
-                  <span className="truncate">{cluster.name}</span>
+                  <span className="flex-1 text-[0.85rem] text-white/80 leading-snug break-words">
+                    {cluster.name}
+                  </span>
                 </div>
               ))}
             </div>
@@ -700,7 +919,18 @@ function EigenClustersApp() {
         
         {/* Tabbed information panel */}
         <div className="bg-black/30 border border-white/20 rounded p-4">
-          <Tabs defaultValue="overviews" className="w-full">
+          <Tabs
+            value={infoTab}
+            onValueChange={(value) => {
+              const nextValue =
+                (value as 'overviews' | 'selected-point') ?? 'overviews';
+              setInfoTab(nextValue);
+              updateUrlParams({
+                info_tab: nextValue === 'overviews' ? null : nextValue,
+              });
+            }}
+            className="w-full"
+          >
             <TabsList className="grid grid-cols-2 mb-4">
               <TabsTrigger value="overviews" className="data-[state=active]:bg-blue-900/50">
                 Cluster Overviews

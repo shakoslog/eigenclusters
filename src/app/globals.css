@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +7,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-jetbrains: 'JetBrains Mono', 'JetBrains_Mono', monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +20,20 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jetbrains);
+  font-size: 0.88rem;
+  font-feature-settings: "calt" 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+}
+
+.font-sans,
+.font-serif,
+.font-mono {
+  font-family: var(--font-jetbrains) !important;
 }

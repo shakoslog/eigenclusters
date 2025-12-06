@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useRef, useState } from 'react';
 
 interface ModelSpecificationProps {
   isOpen: boolean;
@@ -8,159 +10,157 @@ interface ModelSpecificationProps {
 export default function ModelSpecification({ isOpen, onClose }: ModelSpecificationProps) {
   if (!isOpen) return null;
 
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const dragOffset = useRef({ x: 0, y: 0 });
+  const [isDragging, setIsDragging] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    setPosition({ x: 0, y: 0 });
+    setIsDragging(false);
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isDragging || typeof window === 'undefined') return;
+
+    const handleMouseMove = (event: MouseEvent) => {
+      setPosition({
+        x: event.clientX - dragOffset.current.x,
+        y: event.clientY - dragOffset.current.y,
+      });
+    };
+
+    const handleMouseUp = () => setIsDragging(false);
+
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseup', handleMouseUp);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isDragging]);
+
+  const handleDragStart = (event: React.MouseEvent<HTMLDivElement>) => {
+    dragOffset.current = {
+      x: event.clientX - position.x,
+      y: event.clientY - position.y,
+    };
+    setIsDragging(true);
+  };
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm" onClick={onClose}>
-      <div 
-        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-gray-900 border border-white/20 rounded-xl shadow-2xl"
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 font-['JetBrains_Mono',_monospace]"
+      onClick={onClose}
+    >
+      <div
+        className="w-full max-w-4xl max-h-[90vh] overflow-hidden rounded border border-gray-600 bg-white text-gray-900 shadow-[6px_6px_0_rgba(0,0,0,0.35)]"
+        style={{ transform: `translate(${position.x}px, ${position.y}px)` }}
         onClick={e => e.stopPropagation()}
       >
-        <div className="sticky top-0 z-10 flex items-center justify-between p-6 bg-gray-900/95 border-b border-white/10 backdrop-blur">
-          <h2 className="text-2xl font-bold tracking-tight text-white">Model Specification</h2>
-          <button 
+        <div
+          className="flex cursor-move select-none items-center justify-between border-b border-gray-600 bg-gray-200 px-4 py-2 text-[0.75rem] uppercase tracking-[0.3em] text-gray-700"
+          onMouseDown={handleDragStart}
+        >
+          <span>model_specification.txt</span>
+          <button
             onClick={onClose}
-            className="p-2 text-white/60 transition-colors hover:text-white hover:bg-white/10 rounded-lg"
+            className="border border-gray-600 bg-white px-2 py-0.5 text-[0.7rem] font-semibold uppercase tracking-[0.1em] text-gray-700 shadow-[2px_2px_0_rgba(0,0,0,0.25)] hover:bg-gray-100"
+            aria-label="Close model specification"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
+            ✕
           </button>
         </div>
 
-        <div className="p-8 space-y-10 text-gray-300 font-serif leading-relaxed">
-          {/* Intro */}
-          <div className="prose prose-invert max-w-none">
-            <p className="text-lg">
-              Here is the mathematical framework translated into a formal econometric specification, utilizing notation consistent with time-series analysis and statistical inference.
+        <div className="max-h-[82vh] overflow-y-auto px-6 py-6 text-[0.94rem] leading-[1.65]">
+          <section className="space-y-3">
+            <p>
+              Culture is modeled exactly as described in the system prompt: a high-dimensional state function that maps human interaction, memory, and media onto an abstract manifold. We treat that manifold econometrically, translating the narrative rules (“focus on abstract modes, cite concrete media, enforce derivative logic”) into a formal dynamic factor model so that every generated trajectory is auditable.
             </p>
-          </div>
+          </section>
 
           {/* Section 1 */}
-          <section>
-            <h3 className="text-xl font-bold text-white mb-4 font-sans">1. Structural Definition: Dynamic Factor Model</h3>
-            <p className="mb-4">
-              We define the cultural state space not as a physical manifold, but as a multivariate dynamic factor model. Let the observed cultural state at time <i className="font-serif">t</i> be represented by the vector <span className="font-serif">Ψ<sub>t</sub></span>. We approximate this state as a linear combination of <i className="font-serif">K</i> latent factors (eigenclusters).
+          <section className="space-y-3">
+            <h3 className="text-lg text-gray-900">1. Dynamic Factor Definition</h3>
+            <p>
+              The observed cultural state at time <i>t</i> is Ψ<sub>t</sub>. It is reconstructed as the sum of <i>K</i> orthogonal eigenclusters, each pairing a semantic direction <i>v<sub>k</sub>(t)</i> with a time-varying coefficient <i>λ<sub>k</sub>(t)</i> that encodes “relative cultural variance explained.”
             </p>
-            
-            <div className="my-6 p-6 bg-black/40 border border-white/5 rounded-lg flex justify-center overflow-x-auto">
-              <div className="text-xl font-serif italic text-white">
-                Ψ<sub>t</sub> ≈ <span className="not-italic">∑</span><span className="text-sm align-super ml-[-6px]">K</span><span className="text-sm align-sub ml-[-10px] mr-2">k=1</span> λ<sub>k</sub>(t) v<sub>k</sub>(t)
+            <p className="text-center text-base italic text-gray-700">
+              Ψ<sub>t</sub> = ∑<sub>k=1</sub><sup>K</sup> λ<sub>k</sub>(t) · v<sub>k</sub>(t)
+            </p>
+            <dl className="grid gap-3 md:grid-cols-2">
+              <div>
+                <dt className="text-[0.75rem] uppercase tracking-[0.2em] text-gray-500">v<sub>k</sub>(t)</dt>
+                <dd>Unit vector locating the cluster within the semantic lattice; enforced to remain orthogonal so abstract modes never collapse into redundant topics.</dd>
               </div>
-            </div>
-
-            <div className="space-y-3 pl-4 border-l-2 border-blue-500/30">
-              <p>
-                <span className="font-bold text-blue-300">v<sub>k</sub>(t)</span> <span className="text-white/60">(The Factor Loading Vector)</span>: 
-                The unit vector in the semantic space representing the <i className="font-serif">k</i>-th orthogonal cultural component.
-              </p>
-              <p>
-                <span className="font-bold text-blue-300">λ<sub>k</sub>(t)</span> <span className="text-white/60">(The Time-Varying Coefficient)</span>: 
-                A scalar representing the explained variance or contribution of the <i className="font-serif">k</i>-th factor at time <i className="font-serif">t</i>. This is the primary variable of interest for estimation.
-              </p>
-            </div>
+              <div>
+                <dt className="text-[0.75rem] uppercase tracking-[0.2em] text-gray-500">λ<sub>k</sub>(t)</dt>
+                <dd>Scalar magnitude of cultural energy. This is what the chart renders, what the JSON reports, and what the derivative mandate interrogates.</dd>
+              </div>
+            </dl>
           </section>
 
           {/* Section 2 */}
-          <section>
-            <h3 className="text-xl font-bold text-white mb-4 font-sans">2. Rank Metric: Cumulative Explained Variance</h3>
-            <p className="mb-4">
-              Ranking is determined by the integral of the variance function over the domain <span className="font-serif">T = [t<sub>0</sub>, t<sub>1</sub>]</span>. We define the rank statistic <span className="font-serif">R<sub>k</sub></span> for the <i className="font-serif">k</i>-th cluster as the total area under the coefficient curve, distinguishing transient shocks from structural trends.
+          <section className="space-y-3">
+            <h3 className="text-lg text-gray-900">2. Time-Integrated Influence</h3>
+            <p>
+              Clusters are ranked by the total variance they explain across the requested window. We integrate λ<sub>k</sub>(t) over T = [t<sub>0</sub>, t<sub>1</sub>] to compute R<sub>k</sub>, rewarding long-run consistency as much as short spikes.
             </p>
-
-            <div className="my-6 p-6 bg-black/40 border border-white/5 rounded-lg flex justify-center overflow-x-auto">
-              <div className="text-xl font-serif italic text-white">
-                R<sub>k</sub> = <span className="not-italic text-2xl">∫</span><span className="text-sm align-super ml-[-6px]">t<sub>1</sub></span><span className="text-sm align-sub ml-[-10px] mr-2">t<sub>0</sub></span> λ<sub>k</sub>(t) dt
-              </div>
-            </div>
-
-            <div className="pl-4 border-l-2 border-blue-500/30">
-              <p>
-                <span className="font-bold text-white/80">Interpretation:</span> <span className="font-serif">R<sub>k</sub></span> represents the marginal contribution of factor <i className="font-serif">k</i> to the total systemic variance over the observed interval.
-              </p>
-            </div>
+            <p className="text-center text-base italic text-gray-700">
+              R<sub>k</sub> = ∫<sub>t₀</sub><sup>t₁</sup> λ<sub>k</sub>(t) dt
+            </p>
+            <ul className="list-disc space-y-2 pl-6 text-sm text-gray-800">
+              <li>Top-20 list = ordered by R<sub>k</sub>. Percentages sum to ~80% to reflect the finite attention pool described in the prompt.</li>
+              <li>
+                Each entry must follow the prescribed format: <span className="font-semibold">cluster_name [trend] (variance%)</span> with trend ∈ [&#8599;, &rarr;, &#8600;].
+              </li>
+              <li>Clusters can cross each other: instantaneous dominance is less important than cumulative variance.</li>
+              <li>Each rank card in the UI references this metric so the analysis and visualization stay synchronized.</li>
+            </ul>
           </section>
 
           {/* Section 3 */}
-          <section>
-            <h3 className="text-xl font-bold text-white mb-4 font-sans">3. Dynamics: First-Difference Analysis & Identification Strategy</h3>
-            <p className="mb-4">
-              Instead of "physics" or "motion," we analyze the first difference of the coefficient series. For any time <i className="font-serif">t</i>, we examine the discrete change <span className="font-serif">Δλ<sub>t</sub></span>:
+          <section className="space-y-3">
+            <h3 className="text-lg text-gray-900">3. First-Difference Logic</h3>
+            <p>
+              Descriptions narrate motion, not static states. For every interval, we compute Δλ<sub>t</sub> = λ<sub>t</sub> − λ<sub>t−Δ</sub>; the sign determines whether we cite a catalyst, identify a displacing orthogonal factor, or discuss institutional saturation.
             </p>
-
-            <div className="my-6 p-6 bg-black/40 border border-white/5 rounded-lg flex justify-center overflow-x-auto">
-              <div className="text-xl font-serif italic text-white">
-                Δλ<sub>t</sub> = λ<sub>t</sub> - λ<sub>t-1</sub>
-              </div>
-            </div>
-
-            <p className="mb-6">
-              The framework imposes strict identification restrictions on the interpretation of <span className="font-serif">Δλ<sub>t</sub></span> based on its sign and magnitude.
-            </p>
-
-            <div className="grid gap-6 md:grid-cols-3">
-              <div className="p-4 bg-white/5 rounded border border-white/10">
-                <h4 className="font-bold text-green-400 mb-2 font-sans">Case A: Positive Structural Break</h4>
-                <div className="font-serif text-center mb-3 italic">Δλ<sub>t</sub> ≫ 0</div>
-                <ul className="text-sm space-y-2">
-                  <li><strong className="text-white">Condition:</strong> Significant positive deviation.</li>
-                  <li><strong className="text-white">Requirement:</strong> Implies exogenous shock or instrumental variable <i className="font-serif">Z<sub>t</sub></i> (e.g., tech innovation).</li>
-                  <li><strong className="text-white">Mandate:</strong> Isolate the exogenous variable <i className="font-serif">Z<sub>t</sub></i>.</li>
-                </ul>
-              </div>
-
-              <div className="p-4 bg-white/5 rounded border border-white/10">
-                <h4 className="font-bold text-red-400 mb-2 font-sans">Case B: Negative Structural Trend</h4>
-                <div className="font-serif text-center mb-3 italic">Δλ<sub>t</sub> ≪ 0</div>
-                <ul className="text-sm space-y-2">
-                  <li><strong className="text-white">Condition:</strong> Significant negative deviation.</li>
-                  <li><strong className="text-white">Requirement:</strong> Implies substitution effects. Decline of <i className="font-serif">k</i> correlates with rise of orthogonal factor <i className="font-serif">j</i>.</li>
-                  <li><strong className="text-white">Mandate:</strong> Identify the substitute factor <i className="font-serif">v<sub>j</sub></i>.</li>
-                </ul>
-              </div>
-
-              <div className="p-4 bg-white/5 rounded border border-white/10">
-                <h4 className="font-bold text-blue-400 mb-2 font-sans">Case C: Stationarity / Equilibrium</h4>
-                <div className="font-serif text-center mb-3 italic">Δλ<sub>t</sub> ≈ 0</div>
-                <ul className="text-sm space-y-2">
-                  <li><strong className="text-white">Condition:</strong> Mean and variance constant over <i className="font-serif">(t, t+ε)</i>.</li>
-                  <li><strong className="text-white">Requirement:</strong> Factor has reached saturation/institutionalization.</li>
-                  <li><strong className="text-white">Mandate:</strong> Describe transition to deterministic constant.</li>
-                </ul>
-              </div>
-            </div>
+            <p className="text-center text-base italic text-gray-700">Δλ<sub>t</sub> = λ<sub>t</sub> − λ<sub>t−Δ</sub></p>
+            <ul className="list-disc space-y-2 pl-6 text-sm text-gray-800">
+              <li>Δλ<sub>t</sub> ≫ 0 → document the catalyst (tech release, manifesto, policy shock, artistic rupture).</li>
+              <li>Δλ<sub>t</sub> ≪ 0 → name the displacing force and the orthogonal vector that absorbed the variance.</li>
+              <li>Δλ<sub>t</sub> ≈ 0 → explain saturation, institutionalization, or any deterministic repetition keeping the series flat.</li>
+            </ul>
           </section>
 
           {/* Section 4 */}
-          <section>
-            <h3 className="text-xl font-bold text-white mb-4 font-sans">4. Constraints: Orthogonality & Finite Capacity</h3>
-            
-            <div className="space-y-8">
-              <div>
-                <h4 className="font-bold text-white/90 mb-2 font-sans">Orthogonality Condition</h4>
-                <p className="mb-3">To ensure distinct cluster definitions, the covariance between any two factor vectors must approach zero:</p>
-                <div className="p-4 bg-black/40 border border-white/5 rounded-lg flex justify-center mb-3">
-                  <div className="text-lg font-serif italic text-white">
-                    Cov(v<sub>i</sub>, v<sub>j</sub>) ≈ 0 <span className="text-sm not-italic ml-4">for i ≠ j</span>
-                  </div>
-                </div>
-                <p className="text-sm text-white/70 italic">
-                  Implication: Multicollinearity is forbidden. If two clusters covary perfectly, they are the same latent factor.
-                </p>
-              </div>
+          <section className="space-y-3">
+            <h3 className="text-lg text-gray-900">4. Orthogonality & Finite Attention</h3>
+            <p className="text-sm text-gray-800">
+              Cov(v<sub>i</sub>, v<sub>j</sub>) ≈ 0 for i ≠ j. If two clusters co-move, we collapse them; the UI never surfaces redundant eigenvectors.
+            </p>
+            <p className="text-sm text-gray-800">
+              ∑ Δλ<sub>k</sub>(t) ≈ 0. Cultural variance is a finite attention budget, so every surge must be financed by another cluster’s decay.
+            </p>
+            <ul className="list-disc space-y-2 pl-6 text-sm text-gray-800">
+              <li>Trajectory diversity is enforced: some clusters trend secularly, some oscillate, others remain near-stationary.</li>
+              <li>Crossovers are expected, especially during upheaval windows (wars, revolutions, technological ruptures).</li>
+            </ul>
+          </section>
 
-              <div>
-                <h4 className="font-bold text-white/90 mb-2 font-sans">The Zero-Sum Constraint (Finite Resource Constraint)</h4>
-                <p className="mb-3">The total variance capacity of the system is finite.</p>
-                <div className="p-4 bg-black/40 border border-white/5 rounded-lg flex justify-center mb-3">
-                  <div className="text-lg font-serif italic text-white">
-                    <span className="not-italic">∑</span><span className="text-sm align-super ml-[-6px]">K</span><span className="text-sm align-sub ml-[-10px] mr-2">k=1</span> Δλ<sub>k</sub>(t) ≈ 0
-                  </div>
-                </div>
-                <p className="text-sm text-white/70 italic">
-                  Implication: An increase in variance for cluster <i className="font-serif">i</i> necessitates a decrease in variance for the remaining clusters. Descriptions must account for this opportunity cost.
-                </p>
-              </div>
-            </div>
+          {/* Section 5 */}
+          <section className="space-y-3">
+            <h3 className="text-lg text-gray-900">5. Prompt Alignment Checklist</h3>
+            <ul className="list-disc space-y-2 pl-6 text-sm text-gray-800">
+              <li>Every cluster name is specific, snake_case, and globally aware; macro themes are decomposed into regionally or ideationally distinct eigenvectors.</li>
+              <li>Metadata always leads with period, interval, cluster_range, measurement, and the 20-item ranking array—no extra keys.</li>
+              <li>Cluster objects are keyed as <span className="font-semibold">&lt;rank&gt;_label</span>; trajectories walk year-by-year in the requested periodicity with no gaps or skipped intervals.</li>
+              <li>Each time slice outputs exactly four manifestations (books, films, exhibitions, papers)—all concrete, all searchable.</li>
+              <li>Descriptions are 6–10 sentences, explicitly referencing Δλ, catalysts, or displacing forces; no static snapshots allowed.</li>
+              <li>Percentages for the Top-20 clusters sum to roughly eighty because the remaining variance belongs to the long tail of latent modes.</li>
+              <li>The JSON specification mirrors this document verbatim, so analysts can trust that the UI, API, and model brief share a single source of truth.</li>
+            </ul>
           </section>
         </div>
       </div>

@@ -26,6 +26,8 @@ const importPresets = () => {
     'internet_history': () => import('./internet').then(module => module.default),
     'military_history': () => import('./military').then(module => module.default),
     'rationalism_v1': () => import('./rationalism').then(module => module.default),
+    'dissident_right_culture': () => import('./rightw_culture').then(module => module.default),
+    'foundation_ai': () => import('./foundation_ai').then(module => module.default),
 
     // When you add a new preset file, add a new line here:
     // 'my-new-preset': () => import('./my-new-preset').then(module => module.default),
