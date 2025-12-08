@@ -8,7 +8,6 @@ const importPresets = () => {
   // In a typical browser environment, we can't dynamically read the file system
   // So we need to manually list out possible imports, but in a way that makes adding new ones easy
   const presetModules = {
-    'cold-war': () => import('./cold-war').then(module => module.default),
     'alexandria': () => import('./alexandria').then(module => module.default),
     'glasnost': () => import('./glasnost').then(module => module.default),
     'philo-sci': () => import('./philo-sci').then(module => module.default),
@@ -28,6 +27,7 @@ const importPresets = () => {
     'rationalism_v1': () => import('./rationalism').then(module => module.default),
     'dissident_right_culture': () => import('./rightw_culture').then(module => module.default),
     'foundation_ai': () => import('./foundation_ai').then(module => module.default),
+    'millennial_adolescence': () => import('./adolescence').then(module => module.default),
 
     // When you add a new preset file, add a new line here:
     // 'my-new-preset': () => import('./my-new-preset').then(module => module.default),
@@ -43,9 +43,5 @@ const importPresets = () => {
 export const getPresets = async (): Promise<PresetConfig[]> => {
   return await importPresets();
 };
-
-// For backwards compatibility, also export the cold-war preset directly
-import coldWarPreset from './cold-war';
-export const presets = [coldWarPreset];
 
 export type { PresetConfig } from './types'; 

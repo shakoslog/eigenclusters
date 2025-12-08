@@ -8,8 +8,6 @@ interface ModelSpecificationProps {
 }
 
 export default function ModelSpecification({ isOpen, onClose }: ModelSpecificationProps) {
-  if (!isOpen) return null;
-
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const dragOffset = useRef({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -48,6 +46,8 @@ export default function ModelSpecification({ isOpen, onClose }: ModelSpecificati
     };
     setIsDragging(true);
   };
+
+  if (!isOpen) return null;
 
   return (
     <div

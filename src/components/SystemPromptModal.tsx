@@ -19,8 +19,6 @@ export default function SystemPromptModal({
   error,
   onRetry,
 }: SystemPromptModalProps) {
-  if (!isOpen) return null;
-
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const dragOffset = useRef({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -51,6 +49,8 @@ export default function SystemPromptModal({
       window.removeEventListener('mouseup', handleMouseUp);
     };
   }, [isDragging]);
+
+  if (!isOpen) return null;
 
   const handleContainerClick = (event: React.MouseEvent<HTMLDivElement>) => {
     event.stopPropagation();

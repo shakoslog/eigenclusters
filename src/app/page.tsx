@@ -10,7 +10,6 @@ import { GridRows, GridColumns } from '@visx/grid';
 import { localPoint } from '@visx/event';
 import { useTooltip, Tooltip } from '@visx/tooltip';
 import { voronoi } from '@visx/voronoi';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PatternLines } from '@visx/pattern';
 import { scaleTime } from '@visx/scale';
 
@@ -21,7 +20,6 @@ import scienceLongPreset from '@/lib/presets/science-long';
 import britishMonarchyPreset from '@/lib/presets/british_monarchy';
 import dwNominatePreset from '@/lib/presets/dw-nominate';
 import evolutionOfSciencePreset from '@/lib/presets/evolution_of_science';
-import coldWarPreset from '@/lib/presets/cold-war';
 import glasnostPreset from '@/lib/presets/glasnost';
 import renaissancePreset from '@/lib/presets/renaissance';
 import alexandriaPreset from '@/lib/presets/alexandria';
@@ -41,6 +39,8 @@ import militaryPreset from '@/lib/presets/military';
 import rationalismPreset from '@/lib/presets/rationalism';
 import rightWingCulturePreset from '@/lib/presets/rightw_culture';
 import foundationAIPreset from '@/lib/presets/foundation_ai';
+import adolescencePreset from '@/lib/presets/adolescence';
+import lanaDelReyPreset from '@/lib/presets/lana_del_rey';
 
 // Define a type for presets
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
@@ -82,11 +82,6 @@ const getPresetSpecificConfig = (presetId: string) => {
       return {
         chartHeight: 600,
         maxClusters: 8, // Focused on political dimensions
-      };
-    case 'cold-war':
-      return {
-        chartHeight: 600, // Taller chart for cold war data
-        maxClusters: 10,  // Limit to 10 clusters for readability
       };
     case 'glasnost':
       return {
@@ -145,15 +140,40 @@ function EigenClustersApp() {
   const [selectedPointPanel, setSelectedPointPanel] = useState<{
     x: number;
     y: number;
+    width: number;
+    height: number;
     isDragging: boolean;
+    isResizing: boolean;
     offsetX: number;
     offsetY: number;
-  }>({
-    x: 16,
-    y: 16,
-    isDragging: false,
-    offsetX: 0,
-    offsetY: 0,
+  }>(() => {
+    // Initialize from localStorage if available
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('selectedPointPanelSize');
+      if (saved) {
+        const { width, height } = JSON.parse(saved);
+        return {
+          x: 16,
+          y: 16,
+          width: width || 320,
+          height: height || 288,
+          isDragging: false,
+          isResizing: false,
+          offsetX: 0,
+          offsetY: 0,
+        };
+      }
+    }
+    return {
+      x: 16,
+      y: 16,
+      width: 320,
+      height: 288,
+      isDragging: false,
+      isResizing: false,
+      offsetX: 0,
+      offsetY: 0,
+    };
   });
   const [infoTab, setInfoTab] = useState<'overviews' | 'selected-point'>('overviews');
   
@@ -228,10 +248,11 @@ function EigenClustersApp() {
     { id: 'rationalism_v1', name: 'The Rationalist Sphere (2005-2025)', preset: { ...rationalismPreset, name: 'The Rationalist Sphere (2005-2025)', description: "A genealogy of the Rationalist, Effective Altruist, and 'Tech Right' intellectual subcultures." } },
     { id: 'dissident_right_culture', name: 'Dissident-Right Cultural Manifold (1995-2025)', preset: { ...rightWingCulturePreset, name: 'Dissident-Right Cultural Manifold (1995-2025)', description: 'Mapping the major dissident-right ideological eigenclusters from Buchanan to the AI-accelerants.' } },
     { id: 'foundation_ai', name: 'Foundation-Model Trajectories (1990-2025)', preset: { ...foundationAIPreset, name: 'Foundation-Model Trajectories (1990-2025)', description: 'How AI research paradigms shifted from symbolic logic and kernel methods to transformer-era foundation models.' } },
+    { id: 'millennial_adolescence', name: 'Millennial Adolescence (1999-2016)', preset: { ...adolescencePreset, name: 'Millennial Adolescence (1999-2016)', description: 'Tracking the mediated existentialism and cultural currents that defined late-millennial adolescence.' } },
+    { id: 'lana_del_rey', name: 'Lana Del Rey Artistic Manifold (2005-2025)', preset: { ...lanaDelReyPreset, name: 'Lana Del Rey Artistic Manifold (2005-2025)', description: 'Tracking the evolution of mythic americana, submission dynamics, and confessional realism in her artistic identity.' } },
     { id: 'film_history', name: 'Cinema & Social Change (1960-2024)', preset: { ...filmPreset, name: 'Cinema & Social Change (1960-2024)', description: 'How film reflected and shaped the cultural revolutions of the late 20th century.' } },
     { id: 'internet_history', name: 'The Digital Revolution (1989-2025)', preset: { ...internetPreset, name: 'The Digital Revolution (1989-2025)', description: "From the World Wide Web to AI: the trajectory of the internet's impact on human cognition." } },
     { id: 'military_history', name: 'Latent Clusters of Military Strategy (1890-1950)', preset: { ...militaryPreset, name: 'Latent Clusters of Military Strategy (1890-1950)', description: 'Tracking the evolution of warfare, logistics, and state capacity from the late 19th century to the Cold War.' } },
-    { id: 'cold-war', name: 'Cold War Analysis (1945-1991)', preset: coldWarPreset },
     { id: 'glasnost', name: 'Glasnost Analysis (1983-1991)', preset: glasnostPreset },
   ];
 
@@ -282,8 +303,38 @@ function EigenClustersApp() {
     }));
   }, [searchParamsString, selectedPreset]);
   
-  // Sync from URL on mount and param change
+  // Helper to get first 3 cluster IDs from a preset
+  const getDefaultClusters = useCallback((preset: PresetConfig) => {
+    const clusters = preset.cachedResult?.clusters;
+    if (!clusters) return [];
+    return Object.keys(clusters).sort((a, b) => {
+      const numA = parseInt(a.split('_')[0]);
+      const numB = parseInt(b.split('_')[0]);
+      if (!isNaN(numA) && !isNaN(numB)) return numA - numB;
+      return a.localeCompare(b);
+    }).slice(0, 3);
+  }, []);
+
+  // Set default clusters on initial mount only
+  const [initialized, setInitialized] = useState(false);
   useEffect(() => {
+    if (initialized) return;
+    setInitialized(true);
+    
+    const params = new URLSearchParams(searchParamsString);
+    const clustersParam = params.get('clusters');
+    
+    // Only set defaults if no clusters in URL
+    if (!clustersParam) {
+      const defaults = getDefaultClusters(selectedPreset);
+      setSelectedClusters(defaults);
+    }
+  }, [initialized, searchParamsString, selectedPreset, getDefaultClusters]);
+
+  // Sync from URL changes (back/forward navigation only)
+  useEffect(() => {
+    if (!initialized) return;
+    
     const params = new URLSearchParams(searchParamsString);
     const datasetId = params.get('dataset');
     const clustersParam = params.get('clusters');
@@ -291,36 +342,31 @@ function EigenClustersApp() {
 
     if (datasetId) {
       const found = availablePresets.find(p => p.id === datasetId);
-      if (found) {
-        if (found.preset.id !== selectedPreset.id) {
-          // Dataset changed, update everything
-          setSelectedPreset(found.preset);
-          setSelectedClusters(urlClusterIds);
-        } else {
-          // Same dataset, check if clusters need sync (e.g. back button)
-          const isSame = urlClusterIds.length === selectedClusters.length && 
-                         urlClusterIds.every(id => selectedClusters.includes(id));
-          if (!isSame) {
-            setSelectedClusters(urlClusterIds);
-          }
-        }
+      if (found && found.preset.id !== selectedPreset.id) {
+        // Dataset changed via URL (back button), sync everything
+        setSelectedPreset(found.preset);
+        setSelectedClusters(urlClusterIds);
       }
-    } else if (selectedClusters.length > 0 && !clustersParam) {
-      // No dataset param (home), clear clusters if URL cleared them
-      setSelectedClusters([]);
     }
-  }, [searchParamsString, selectedPreset.id]);
+  }, [searchParamsString, initialized]);
 
   // Handler for preset selection that updates URL
   const handlePresetSelect = (presetOption: typeof availablePresets[0]) => {
     setSelectedPreset(presetOption.preset);
-    setSelectedClusters([]);
     setSelectedPoint(null);
+    
+    // Default to first 3 clusters
+    const clusterIds = getDefaultClusters(presetOption.preset);
+    setSelectedClusters(clusterIds);
     
     // Update URL without full reload
     const params = new URLSearchParams(searchParamsString);
     params.set('dataset', presetOption.id);
-    params.delete('clusters');
+    if (clusterIds.length > 0) {
+      params.set('clusters', clusterIds.join(','));
+    } else {
+      params.delete('clusters');
+    }
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
   };
   
@@ -356,14 +402,12 @@ function EigenClustersApp() {
 
   const clearSelectedPoint = useCallback(() => {
     setSelectedPoint(null);
-    setInfoTab('overviews');
-    updateUrlParams({ point_cluster: null, point_year: null, info_tab: null });
+    updateUrlParams({ point_cluster: null, point_year: null });
   }, [updateUrlParams]);
 
   const handleClick = useCallback(
     (point: any, setSelectedPoint: any) => {
       setSelectedPoint(point.data);
-      setInfoTab('selected-point');
       setSelectedPointPanel(prev => ({
         ...prev,
         x: prev.x || 0,
@@ -372,10 +416,9 @@ function EigenClustersApp() {
       updateUrlParams({
         point_cluster: point.data.clusterId,
         point_year: String(point.data.year),
-        info_tab: 'selected-point',
       });
     },
-    [setInfoTab, updateUrlParams]
+    [updateUrlParams]
   );
   
   // Transform data for the selected preset
@@ -472,8 +515,6 @@ function EigenClustersApp() {
   // Then use it in your component
   const config = getPresetSpecificConfig(selectedPreset.id);
   
-  // Add these state variables to your component
-  const [yearFilter, setYearFilter] = useState<string>('');
   
   // Add this function to your component
   const resetZoom = () => {
@@ -516,10 +557,7 @@ function EigenClustersApp() {
       nice: true
     });
     
-    // Filter data by year if yearFilter is set
-    const filteredData = yearFilter 
-      ? transformedData.filter(d => d.year.toString().includes(yearFilter))
-      : transformedData;
+    const filteredData = transformedData;
     
     // Create voronoi for better point interaction
     const allPoints: Array<{ x: number; y: number; data: any }> = [];
@@ -554,85 +592,101 @@ function EigenClustersApp() {
     
     return (
       <div>
-        <div className="mb-4 flex gap-2 items-center">
-          <input
-            type="text"
-            placeholder="Filter by year..."
-            value={yearFilter}
-            onChange={(e) => setYearFilter(e.target.value)}
-            className="bg-black/40 border border-white/30 rounded px-2 py-1 text-white text-sm w-36 placeholder:text-white/40"
-          />
-          <button
-            onClick={() => setYearFilter('')}
-            className="text-xs uppercase tracking-[0.2em] text-white/60 hover:text-white"
-          >
-            Clear
-          </button>
-        </div>
-        
         <div className="relative">
           {selectedPoint && (
             <div
-              className="absolute z-10 w-72 rounded-lg border border-white/20 bg-black/85 text-xs text-white shadow-lg backdrop-blur"
+              className="absolute z-10 rounded-lg border border-white/20 bg-black/95 text-xs text-white shadow-xl backdrop-blur flex flex-col"
               style={{
                 left: selectedPointPanel.x,
                 top: selectedPointPanel.y,
+                width: selectedPointPanel.width,
+                height: selectedPointPanel.height,
+                minWidth: 200,
+                minHeight: 150,
               }}
             >
               <div
-                className="flex cursor-move items-center justify-between gap-2 rounded-t-lg border-b border-white/10 bg-white/5 px-4 py-2"
-              onMouseDown={e => {
-                e.stopPropagation();
-                setSelectedPointPanel(prev => ({
-                  ...prev,
-                  isDragging: true,
-                  offsetX: e.clientX - selectedPointPanel.x,
-                  offsetY: e.clientY - selectedPointPanel.y,
-                }));
-              }}
+                className="flex cursor-move items-center justify-between gap-2 border-b border-white/10 bg-white/5 px-3 py-2 rounded-t-lg flex-shrink-0"
+                onMouseDown={e => {
+                  e.stopPropagation();
+                  setSelectedPointPanel(prev => ({
+                    ...prev,
+                    isDragging: true,
+                    offsetX: e.clientX - selectedPointPanel.x,
+                    offsetY: e.clientY - selectedPointPanel.y,
+                  }));
+                }}
               >
                 <div>
                   <p className="text-sm font-semibold text-white">
                     {selectedPoint.clusterName}
                   </p>
-                  <p className="text-white/60">
-                    {selectedPoint.year} ·{' '}
-                    {typeof selectedPoint.value === 'number'
-                      ? selectedPoint.value.toFixed(2)
-                      : selectedPoint.value}
-                    % variance
+                  <p className="text-white/50 text-[0.7rem]">
+                    {selectedPoint.year} · {typeof selectedPoint.value === 'number'
+                      ? selectedPoint.value.toFixed(1)
+                      : selectedPoint.value}%
                   </p>
                 </div>
                 <button
-                  onClick={clearSelectedPoint}
-                  className="text-white/60 hover:text-white"
+                  onMouseDown={e => e.stopPropagation()}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    clearSelectedPoint();
+                  }}
+                  className="text-white/40 hover:text-white text-lg leading-none p-1"
                   aria-label="Clear selected point"
                 >
-                  ✕
+                  ×
                 </button>
               </div>
               <div
-                className="cursor-default px-4 pb-4"
+                className="flex-1 overflow-y-auto px-3 py-2 space-y-2"
                 onMouseDown={e => e.stopPropagation()}
               >
                 {selectedPoint.description && (
-                  <p className="mt-2 text-white/80">
-                    {selectedPoint.description}
-                  </p>
+                  <div>
+                    <p className="text-white/90 leading-relaxed">{selectedPoint.description}</p>
+                  </div>
                 )}
                 {selectedPoint.manifestations?.length > 0 && (
-                  <ul className="mt-2 list-disc space-y-1 pl-4 text-white/70">
-                    {selectedPoint.manifestations.slice(0, 3).map((item: string, idx: number) => (
-                      <li key={`${item}-${idx}`}>{item}</li>
-                    ))}
-                  </ul>
+                  <div>
+                    <p className="text-[0.65rem] uppercase tracking-wider text-white/50 mb-1 mt-1">Key Manifestations</p>
+                    <ul className="list-disc pl-4 space-y-1 text-white/80">
+                      {selectedPoint.manifestations.map((item: string, idx: number) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
+                {selectedPoint.clusterDescription && (
+                  <div className="p-2 bg-white/5 rounded border border-white/10 mt-2">
+                    <p className="text-[0.65rem] uppercase tracking-wider text-white/40 mb-1">About this cluster</p>
+                    <p className="text-white/60 italic leading-relaxed text-[0.7rem]">{selectedPoint.clusterDescription}</p>
+                  </div>
+                )}
+              </div>
+              {/* Resize handle */}
+              <div
+                className="absolute bottom-0 right-0 w-4 h-4 cursor-se-resize"
+                onMouseDown={e => {
+                  e.stopPropagation();
+                  setSelectedPointPanel(prev => ({
+                    ...prev,
+                    isResizing: true,
+                    offsetX: e.clientX,
+                    offsetY: e.clientY,
+                  }));
+                }}
+              >
+                <svg className="w-4 h-4 text-white/30" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 22H20V20H22V22ZM22 18H20V16H22V18ZM18 22H16V20H18V22ZM22 14H20V12H22V14ZM18 18H16V16H18V18ZM14 22H12V20H14V22Z" />
+                </svg>
               </div>
             </div>
           )}
           {selectedPointPanel.isDragging && (
             <div
-              className="fixed inset-0 z-10"
+              className="fixed inset-0 z-20"
               onMouseMove={e => {
                 setSelectedPointPanel(prev => ({
                   ...prev,
@@ -646,6 +700,41 @@ function EigenClustersApp() {
                   isDragging: false,
                 }))
               }
+            />
+          )}
+          {selectedPointPanel.isResizing && (
+            <div
+              className="fixed inset-0 z-20 cursor-se-resize"
+              onMouseMove={e => {
+                setSelectedPointPanel(prev => {
+                  const deltaX = e.clientX - prev.offsetX;
+                  const deltaY = e.clientY - prev.offsetY;
+                  const newWidth = Math.max(200, prev.width + deltaX);
+                  const newHeight = Math.max(150, prev.height + deltaY);
+                  return {
+                    ...prev,
+                    width: newWidth,
+                    height: newHeight,
+                    offsetX: e.clientX,
+                    offsetY: e.clientY,
+                  };
+                });
+              }}
+              onMouseUp={() => {
+                setSelectedPointPanel(prev => {
+                  // Save to localStorage
+                  if (typeof window !== 'undefined') {
+                    localStorage.setItem('selectedPointPanelSize', JSON.stringify({
+                      width: prev.width,
+                      height: prev.height,
+                    }));
+                  }
+                  return {
+                    ...prev,
+                    isResizing: false,
+                  };
+                });
+              }}
             />
           )}
         
@@ -787,38 +876,38 @@ function EigenClustersApp() {
   };
   
   return (
-    <div className="min-h-screen bg-black text-white p-6">
+    <div className="min-h-screen bg-black text-white p-3 sm:p-6">
       <header className="mb-8">
-        <div className="text-xl font-mono text-white/40 mb-4">CULTURAL EIGENCLUSTERS</div>
+        <div className="text-base sm:text-xl font-mono text-white/40 mb-3 sm:mb-4">CULTURAL EIGENCLUSTERS</div>
         
         <div className="space-y-4 mb-6">
-          <p className="text-sm text-white/70 max-w-4xl leading-relaxed">
+          <p className="text-xs sm:text-sm text-white/70 max-w-4xl leading-relaxed">
             Each colored line tracks the "cultural dominance" of a specific theme over time. A higher value means that theme was more influential in the cultural landscape.
             Cultural dominance is a relative metric with no intrinsic unit. Click on any point in a series to see the historical catalysts that drove that movement.
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2">
             <button
               onClick={handleOpenSystemPrompt}
-              className="inline-flex items-center px-3 py-1 text-[0.75rem] font-semibold uppercase tracking-[0.25em] text-black bg-white border border-gray-500 shadow-[2px_2px_0_rgba(0,0,0,0.45)] transition hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0_rgba(0,0,0,0.45)]"
+              className="inline-flex items-center px-2 sm:px-3 py-1 text-[0.65rem] sm:text-[0.75rem] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.25em] text-black bg-white border border-gray-500 shadow-[2px_2px_0_rgba(0,0,0,0.45)] transition hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0_rgba(0,0,0,0.45)]"
             >
-              View System Prompt
+              System Prompt
             </button>
             <button 
               onClick={() => setShowModelSpec(true)}
-              className="inline-flex items-center px-3 py-1 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-purple-100 border border-purple-500/40 bg-purple-500/10 hover:bg-purple-500/20 transition-colors rounded"
+              className="inline-flex items-center px-2 sm:px-3 py-1 text-[0.65rem] sm:text-[0.75rem] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-purple-100 border border-purple-500/40 bg-purple-500/10 hover:bg-purple-500/20 transition-colors rounded"
             >
-              Model Specification
+              Model Spec
             </button>
             <button
               onClick={() => setShowWhatIsThis(true)}
-              className="inline-flex items-center px-3 py-1 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-emerald-100 border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500/20 transition-colors rounded"
+              className="inline-flex items-center px-2 sm:px-3 py-1 text-[0.65rem] sm:text-[0.75rem] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-emerald-100 border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500/20 transition-colors rounded"
             >
               What is this?
             </button>
           </div>
         </div>
 
-        <h1 className="text-3xl font-bold tracking-tight text-white">{selectedPreset.name}</h1>
+        <h1 className="text-xl sm:text-3xl font-bold tracking-tight text-white">{selectedPreset.name}</h1>
       </header>
       
       <ModelSpecification isOpen={showModelSpec} onClose={() => setShowModelSpec(false)} />
@@ -833,25 +922,25 @@ function EigenClustersApp() {
       <WhatIsThisModal isOpen={showWhatIsThis} onClose={() => setShowWhatIsThis(false)} />
       
       {/* Preset Selector */}
-      <div className="mb-6 bg-black/30 border border-white/20 rounded p-4">
-        <div className="flex justify-between items-center mb-3">
-          <h2 className="text-lg">Select Dataset</h2>
+      <div className="mb-4 sm:mb-6 bg-black/30 border border-white/20 rounded p-3 sm:p-4">
+        <div className="flex justify-between items-center mb-2 sm:mb-3">
+          <h2 className="text-base sm:text-lg">Select Dataset</h2>
         </div>
-        <div className="grid grid-cols-2 gap-3 text-[0.92rem]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 text-[0.85rem] sm:text-[0.92rem]">
           {displayedPresets.map(preset => (
             <button
               key={preset.id}
-              className={`p-4 rounded text-left border transition ${
+              className={`p-2.5 sm:p-4 rounded text-left border transition ${
                 selectedPreset.id === preset.preset.id 
                   ? 'bg-blue-900 border-blue-500 shadow-[3px_3px_0_rgba(0,0,0,0.35)]' 
                   : 'bg-black/50 border-white/10 hover:bg-black/70'
               }`}
               onClick={() => handlePresetSelect(preset)}
             >
-              <div className="font-semibold text-[1rem] leading-snug text-white break-words">
+              <div className="font-semibold text-[0.85rem] sm:text-[1rem] leading-snug text-white break-words">
                 {preset.name}
               </div>
-              <div className="text-sm text-white/70 leading-snug break-words">
+              <div className="text-xs sm:text-sm text-white/70 leading-snug break-words hidden sm:block">
                 {preset.preset.description}
               </div>
             </button>
@@ -860,9 +949,9 @@ function EigenClustersApp() {
       </div>
       
       <main className="flex flex-col gap-6">
-        <div className="flex gap-4 items-start">
+        <div className="flex flex-col lg:flex-row gap-4 items-stretch">
           {/* Cluster selector */}
-          <div className="w-1/3 bg-black/30 border border-white/20 rounded p-4">
+          <div className="w-full lg:w-1/3 bg-black/30 border border-white/20 rounded p-3 sm:p-4 flex flex-col">
             <div className="flex gap-2 mb-4">
               <button 
                 onClick={selectAllVisible}
@@ -878,7 +967,7 @@ function EigenClustersApp() {
               </button>
             </div>
             
-            <div className="max-h-96 overflow-y-auto">
+            <div className="flex-1 overflow-y-auto">
               {filteredClusters.map((cluster, index) => (
                 <div 
                   key={cluster.id}
@@ -903,7 +992,7 @@ function EigenClustersApp() {
           </div>
           
           {/* Chart */}
-          <div className="flex-1 bg-black/30 border border-white/20 rounded p-4">
+          <div className="w-full lg:flex-1 bg-black/30 border border-white/20 rounded p-3 sm:p-4 overflow-x-auto">
             <div className="text-sm text-white/70 mb-2">
               [Interactive Chart. Click on the points to see more information]
             </div>
@@ -917,104 +1006,6 @@ function EigenClustersApp() {
           </div>
         </div>
         
-        {/* Tabbed information panel */}
-        <div className="bg-black/30 border border-white/20 rounded p-4">
-          <Tabs
-            value={infoTab}
-            onValueChange={(value) => {
-              const nextValue =
-                (value as 'overviews' | 'selected-point') ?? 'overviews';
-              setInfoTab(nextValue);
-              updateUrlParams({
-                info_tab: nextValue === 'overviews' ? null : nextValue,
-              });
-            }}
-            className="w-full"
-          >
-            <TabsList className="grid grid-cols-2 mb-4">
-              <TabsTrigger value="overviews" className="data-[state=active]:bg-blue-900/50">
-                Cluster Overviews
-              </TabsTrigger>
-              <TabsTrigger value="selected-point" className="data-[state=active]:bg-blue-900/50 relative">
-                Selected Point
-                <span className="absolute -top-1 -right-1 flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
-                </span>
-              </TabsTrigger>
-            </TabsList>
-            
-            {/* Cluster Overviews Tab */}
-            <TabsContent value="overviews" className="mt-0">
-              {selectedClusters.length === 0 ? (
-                <p className="text-white/70">Select clusters to view their descriptions</p>
-              ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {selectedClusters.map(clusterId => {
-                    const clusterInfo = allClusters.find(c => c.id === clusterId);
-                    const clusterData = selectedPreset.cachedResult?.clusters[clusterId];
-                    const color = COLORS[selectedClusters.indexOf(clusterId) % COLORS.length];
-                    
-                    return (
-                      <div key={clusterId} className="border border-white/10 rounded p-3">
-                        <div className="flex items-center gap-2 mb-2">
-                          <div 
-                            className="w-3 h-3 rounded-full"
-                            style={{ backgroundColor: color }}
-                          ></div>
-                          <h4 className="font-bold">
-                            {clusterInfo?.name || clusterId}
-                          </h4>
-                        </div>
-                        <p className="text-sm text-white/80">
-                          {clusterData?.description || "No description available for this cluster."}
-                        </p>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-            </TabsContent>
-            
-            {/* Selected Point Tab */}
-            <TabsContent value="selected-point" className="mt-0">
-              {selectedPoint ? (
-                <div className="flex flex-col">
-                  <div className="mb-3">
-                    <h3 className="text-lg font-bold">
-                      {selectedPoint.clusterName} ({selectedPoint.year})
-                    </h3>
-                  </div>
-
-                  {selectedPoint.clusterDescription && (
-                    <div className="mb-4 p-3 bg-white/5 rounded border border-white/10">
-                      <h4 className="text-sm font-bold text-blue-400 mb-1">Cluster Overview:</h4>
-                      <p className="text-sm italic text-white/80">{selectedPoint.clusterDescription}</p>
-                    </div>
-                  )}
-                  
-                  <div className="mb-4">
-                    <h4 className="text-sm font-bold text-white/70 mb-1">Year Overview:</h4>
-                    <p className="text-sm">{selectedPoint.description}</p>
-                  </div>
-                  
-                  {selectedPoint.manifestations.length > 0 && (
-                    <div>
-                      <h4 className="text-sm font-bold text-white/70 mb-1">Key Manifestations:</h4>
-                      <ul className="list-disc pl-5 space-y-1">
-                        {selectedPoint.manifestations.map((item: string, idx: number) => (
-                          <li key={idx} className="text-sm">{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <p className="text-white/70">Click on a point in the chart to see details</p>
-              )}
-            </TabsContent>
-          </Tabs>
-        </div>
       </main>
     </div>
   );

@@ -5,7 +5,6 @@ import { postwarJapanData } from './presets/postwar-japan';
 import { PresetConfig } from './presets/types';
 
 // Import individual presets directly
-import coldWarPreset from './presets/cold-war';
 import alexandriaPreset from './presets/alexandria';
 import glasnostPreset from './presets/glasnost';
 import philoSciPreset from './presets/philo-sci';
@@ -16,7 +15,6 @@ import literaturePreset from './presets/literature';
 
 // Export all presets
 export const presets: PresetConfig[] = [
-  coldWarPreset,
   alexandriaPreset,
   glasnostPreset,
   philoSciPreset,
