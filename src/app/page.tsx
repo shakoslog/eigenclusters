@@ -921,38 +921,12 @@ function EigenClustersApp() {
       />
       <WhatIsThisModal isOpen={showWhatIsThis} onClose={() => setShowWhatIsThis(false)} />
       
-      {/* Preset Selector */}
-      <div className="mb-4 sm:mb-6 bg-black/30 border border-white/20 rounded p-3 sm:p-4">
-        <div className="flex justify-between items-center mb-2 sm:mb-3">
-          <h2 className="text-base sm:text-lg">Select Dataset</h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 text-[0.85rem] sm:text-[0.92rem]">
-          {displayedPresets.map(preset => (
-            <button
-              key={preset.id}
-              className={`p-2.5 sm:p-4 rounded text-left border transition ${
-                selectedPreset.id === preset.preset.id 
-                  ? 'bg-blue-900 border-blue-500 shadow-[3px_3px_0_rgba(0,0,0,0.35)]' 
-                  : 'bg-black/50 border-white/10 hover:bg-black/70'
-              }`}
-              onClick={() => handlePresetSelect(preset)}
-            >
-              <div className="font-semibold text-[0.85rem] sm:text-[1rem] leading-snug text-white break-words">
-                {preset.name}
-              </div>
-              <div className="text-xs sm:text-sm text-white/70 leading-snug break-words hidden sm:block">
-                {preset.preset.description}
-              </div>
-            </button>
-          ))}
-        </div>
-      </div>
-      
       <main className="flex flex-col gap-6">
-        <div className="flex flex-col lg:flex-row gap-4 items-stretch">
-          {/* Cluster selector */}
-          <div className="w-full lg:w-1/3 bg-black/30 border border-white/20 rounded p-3 sm:p-4 flex flex-col">
-            <div className="flex gap-2 mb-4">
+        {/* Chart and Cluster Selector Row */}
+        <div className="flex flex-col lg:flex-row gap-4">
+          {/* Cluster selector - fixed height to match chart */}
+          <div className="w-full lg:w-1/4 bg-black/30 border border-white/20 rounded p-3 sm:p-4 flex flex-col" style={{ maxHeight: '580px' }}>
+            <div className="flex gap-2 mb-3 flex-shrink-0">
               <button 
                 onClick={selectAllVisible}
                 className="bg-blue-600 text-white px-3 py-1 rounded text-sm"
@@ -967,7 +941,7 @@ function EigenClustersApp() {
               </button>
             </div>
             
-            <div className="flex-1 overflow-y-auto">
+            <div className="flex-1 overflow-y-auto min-h-0">
               {filteredClusters.map((cluster, index) => (
                 <div 
                   key={cluster.id}
@@ -1006,6 +980,32 @@ function EigenClustersApp() {
           </div>
         </div>
         
+        {/* Dataset Selector - now below the chart */}
+        <div className="bg-black/30 border border-white/20 rounded p-3 sm:p-4">
+          <div className="flex justify-between items-center mb-2 sm:mb-3">
+            <h2 className="text-base sm:text-lg">Select Dataset</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 text-[0.85rem] sm:text-[0.92rem]">
+            {displayedPresets.map(preset => (
+              <button
+                key={preset.id}
+                className={`p-2.5 sm:p-4 rounded text-left border transition ${
+                  selectedPreset.id === preset.preset.id 
+                    ? 'bg-blue-900 border-blue-500 shadow-[3px_3px_0_rgba(0,0,0,0.35)]' 
+                    : 'bg-black/50 border-white/10 hover:bg-black/70'
+                }`}
+                onClick={() => handlePresetSelect(preset)}
+              >
+                <div className="font-semibold text-[0.85rem] sm:text-[1rem] leading-snug text-white break-words">
+                  {preset.name}
+                </div>
+                <div className="text-xs sm:text-sm text-white/70 leading-snug break-words hidden sm:block">
+                  {preset.preset.description}
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
       </main>
     </div>
   );

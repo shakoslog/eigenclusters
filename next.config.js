@@ -2,6 +2,8 @@ const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enable turbopack with empty config to silence warning
+  turbopack: {},
   webpack: (config, { isServer }) => {
     // Add rule for Monaco Editor
     config.module.rules.push({
