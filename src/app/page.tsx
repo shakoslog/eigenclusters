@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useMemo, useCallback, Suspense } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, Suspense, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import { LinePath } from '@visx/shape';
 import { scaleLinear } from '@visx/scale';
@@ -137,6 +137,7 @@ function EigenClustersApp() {
   // State for selected clusters
   const [selectedClusters, setSelectedClusters] = useState<string[]>([]);
   const [selectedPoint, setSelectedPoint] = useState<any>(null);
+  const popupScrollRef = useRef<HTMLDivElement>(null);
   const [selectedPointPanel, setSelectedPointPanel] = useState<{
     x: number;
     y: number;
@@ -405,6 +406,13 @@ function EigenClustersApp() {
     updateUrlParams({ point_cluster: null, point_year: null });
   }, [updateUrlParams]);
 
+  // Scroll popup to top when a new point is selected
+  useEffect(() => {
+    if (selectedPoint && popupScrollRef.current) {
+      popupScrollRef.current.scrollTop = 0;
+    }
+  }, [selectedPoint]);
+
   const handleClick = useCallback(
     (point: any, setSelectedPoint: any) => {
       setSelectedPoint(point.data);
@@ -640,6 +648,7 @@ function EigenClustersApp() {
                 </button>
               </div>
               <div
+                ref={popupScrollRef}
                 className="flex-1 overflow-y-auto px-3 py-2 space-y-2"
                 onMouseDown={e => e.stopPropagation()}
               >
