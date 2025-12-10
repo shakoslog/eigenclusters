@@ -360,9 +360,11 @@ function EigenClustersApp() {
     const clusterIds = getDefaultClusters(presetOption.preset);
     setSelectedClusters(clusterIds);
     
-    // Update URL without full reload
+    // Update URL without full reload - clear any selected point from previous dataset
     const params = new URLSearchParams(searchParamsString);
     params.set('dataset', presetOption.id);
+    params.delete('point_cluster');
+    params.delete('point_year');
     if (clusterIds.length > 0) {
       params.set('clusters', clusterIds.join(','));
     } else {
