@@ -133,6 +133,7 @@ function EigenClustersApp() {
   const [systemPromptLoading, setSystemPromptLoading] = useState(false);
   const [systemPromptError, setSystemPromptError] = useState<string | null>(null);
   const [showWhatIsThis, setShowWhatIsThis] = useState(false);
+  const [mobileNoticeDismissed, setMobileNoticeDismissed] = useState(false);
   
   // State for selected clusters
   const [selectedClusters, setSelectedClusters] = useState<string[]>([]);
@@ -888,6 +889,27 @@ function EigenClustersApp() {
   
   return (
     <div className="min-h-screen bg-black text-white p-3 sm:p-6">
+      {/* Mobile notice - only shown on small screens */}
+      {!mobileNoticeDismissed && (
+        <div className="lg:hidden mb-4 p-4 bg-amber-900/30 border border-amber-500/40 rounded-lg">
+          <div className="flex items-start justify-between gap-3">
+            <div className="flex-1">
+              <p className="text-amber-200 text-sm font-medium mb-1">Best on Desktop</p>
+              <p className="text-amber-200/70 text-xs leading-relaxed">
+                This interactive visualization works best on a desktop or tablet. You can still explore below, but some features may be limited on mobile.
+              </p>
+            </div>
+            <button
+              onClick={() => setMobileNoticeDismissed(true)}
+              className="text-amber-200/60 hover:text-amber-200 text-lg leading-none p-1 flex-shrink-0"
+              aria-label="Dismiss notice"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
+      
       <header className="mb-8">
         <div className="text-base sm:text-xl font-mono text-white/40 mb-3 sm:mb-4">CULTURAL EIGENCLUSTERS</div>
         
@@ -933,6 +955,33 @@ function EigenClustersApp() {
       <WhatIsThisModal isOpen={showWhatIsThis} onClose={() => setShowWhatIsThis(false)} />
       
       <main className="flex flex-col gap-6">
+        {/* Dataset Selector - at the top */}
+        <div className="bg-black/30 border border-white/20 rounded p-3 sm:p-4">
+          <div className="flex justify-between items-center mb-2 sm:mb-3">
+            <h2 className="text-base sm:text-lg">Select Dataset</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 text-[0.85rem] sm:text-[0.92rem]">
+            {displayedPresets.map(preset => (
+              <button
+                key={preset.id}
+                className={`p-2.5 sm:p-4 rounded text-left border transition ${
+                  selectedPreset.id === preset.preset.id 
+                    ? 'bg-blue-900 border-blue-500 shadow-[3px_3px_0_rgba(0,0,0,0.35)]' 
+                    : 'bg-black/50 border-white/10 hover:bg-black/70'
+                }`}
+                onClick={() => handlePresetSelect(preset)}
+              >
+                <div className="font-semibold text-[0.85rem] sm:text-[1rem] leading-snug text-white break-words">
+                  {preset.name}
+                </div>
+                <div className="text-xs sm:text-sm text-white/70 leading-snug break-words hidden sm:block">
+                  {preset.preset.description}
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Chart and Cluster Selector Row */}
         <div className="flex flex-col lg:flex-row gap-4">
           {/* Cluster selector - fixed height to match chart */}
@@ -988,33 +1037,6 @@ function EigenClustersApp() {
                 <p>No data available</p>
               </div>
             )}
-          </div>
-        </div>
-        
-        {/* Dataset Selector - now below the chart */}
-        <div className="bg-black/30 border border-white/20 rounded p-3 sm:p-4">
-          <div className="flex justify-between items-center mb-2 sm:mb-3">
-            <h2 className="text-base sm:text-lg">Select Dataset</h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 text-[0.85rem] sm:text-[0.92rem]">
-            {displayedPresets.map(preset => (
-              <button
-                key={preset.id}
-                className={`p-2.5 sm:p-4 rounded text-left border transition ${
-                  selectedPreset.id === preset.preset.id 
-                    ? 'bg-blue-900 border-blue-500 shadow-[3px_3px_0_rgba(0,0,0,0.35)]' 
-                    : 'bg-black/50 border-white/10 hover:bg-black/70'
-                }`}
-                onClick={() => handlePresetSelect(preset)}
-              >
-                <div className="font-semibold text-[0.85rem] sm:text-[1rem] leading-snug text-white break-words">
-                  {preset.name}
-                </div>
-                <div className="text-xs sm:text-sm text-white/70 leading-snug break-words hidden sm:block">
-                  {preset.preset.description}
-                </div>
-              </button>
-            ))}
           </div>
         </div>
       </main>
