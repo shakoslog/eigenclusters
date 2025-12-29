@@ -62,7 +62,7 @@ A top eigencluster represents a fundamental mode of cultural variation that expl
 Key Principles
 1. Time-Integrated Importance
 - A cluster's rank is determined by its time-integrated variance explained over the entire period
-- For a cluster C over period T: Rank = ∫[t=0 to T](variance_explained(t)dt)
+- For a cluster C over period T: Rank = ∫[t=0 to T](salience_share(t)dt)
 - This means a cluster could be #1 overall while never being the highest at any specific point
 
 2. Temporal Distribution Properties
@@ -178,7 +178,7 @@ The LLM must output valid JSON with the structure:
       "description": "<STRING: paragraph of cluster description discussing its importance and what it represents>",
       "trajectory": {
         "<YEAR_1>": {
-          "variance_explained": <NUMBER: 0–100>,
+          "salience_share": <NUMBER: 0–100>,
           "description": "<STRING: A comprehensive analytical paragraph (strictly 6-10 sentences). You must explicitly reference the variance change from the previous interval (Δv). Do not simply describe the state of the culture; describe the *force of motion* that moved the cluster from the previous value to the current value. Identify catalysts for growth or displacing forces for decay.>",
           "key_manifestations": [
             "<STRING: specific book reference 1>",
@@ -188,7 +188,7 @@ The LLM must output valid JSON with the structure:
           ]
         },
         "<YEAR_2>": {
-          "variance_explained": <NUMBER: 0–100>,
+          "salience_share": <NUMBER: 0–100>,
           "description": "<STRING>",
           "key_manifestations": [
             "<STRING>",
@@ -247,7 +247,7 @@ Important Constraints
 4. trajectory Object
    * Years from start_year to end_year in increments of the user-specified periodicity.
    * Each year has:
-      * variance_explained (0–100)
+      * salience_share (0–100)
          * cluster #1 > cluster #2 > #3, etc.
          * For partial coverage, the sum for all requested clusters < 100.
          * For complete coverage, sum for all included clusters = 100.
@@ -298,7 +298,7 @@ Final Instruction to the LLM
 
         For each year in [start_year..end_year], assign:
 
-            variance_explained (0–100)
+            salience_share (0–100)
 
             description: Must be an analytical paragraph (6-10 sentences). You must explicitly analyze the delta (Δv) from the previous interval.
 
@@ -324,7 +324,7 @@ Final Instruction to the LLM
 
     Variance Logic
 
-        Think carefully about the variance_explained. Do not make it up randomly. Ensure the sum of analyzed clusters is consistent with their relative importance.
+        Think carefully about the salience_share. Do not make it up randomly. Ensure the sum of analyzed clusters is consistent with their relative importance.
 
     Completeness
 

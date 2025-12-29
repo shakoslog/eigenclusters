@@ -41,6 +41,8 @@ import rightWingCulturePreset from '@/lib/presets/rightw_culture';
 import foundationAIPreset from '@/lib/presets/foundation_ai';
 import adolescencePreset from '@/lib/presets/adolescence';
 import lanaDelReyPreset from '@/lib/presets/lana_del_rey';
+import godPreset from '@/lib/presets/god';
+import americanCulturalEvolutionPreset from '@/lib/presets/american_cultural_evolution_2019_2023';
 
 // Define a type for presets
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
@@ -111,6 +113,18 @@ const getPresetSpecificConfig = (presetId: string) => {
         maxClusters: 15,
       };
   }
+};
+
+
+// Helper to parse year or week-based dates into numbers for scales
+const parseDateToNumber = (dateStr: string): number => {
+  if (!dateStr) return 0;
+  if (typeof dateStr !== 'string') return dateStr;
+  if (dateStr.includes('-W')) {
+    const [y, w] = dateStr.split('-W').map(s => parseInt(s, 10));
+    return y + (w / 52.14);
+  }
+  return parseInt(dateStr, 10);
 };
 
 
@@ -252,10 +266,12 @@ function EigenClustersApp() {
     { id: 'foundation_ai', name: 'Foundation-Model Trajectories (1990-2025)', preset: { ...foundationAIPreset, name: 'Foundation-Model Trajectories (1990-2025)', description: 'How AI research paradigms shifted from symbolic logic and kernel methods to transformer-era foundation models.' } },
     { id: 'millennial_adolescence', name: 'Millennial Adolescence (1999-2016)', preset: { ...adolescencePreset, name: 'Millennial Adolescence (1999-2016)', description: 'Tracking the mediated existentialism and cultural currents that defined late-millennial adolescence.' } },
     { id: 'lana_del_rey', name: 'Lana Del Rey Artistic Manifold (2005-2025)', preset: { ...lanaDelReyPreset, name: 'Lana Del Rey Artistic Manifold (2005-2025)', description: 'Tracking the evolution of mythic americana, submission dynamics, and confessional realism in her artistic identity.' } },
+    { id: 'american_cultural_evolution_2019_2023', name: 'Covid Era Clusters', preset: americanCulturalEvolutionPreset },
     { id: 'film_history', name: 'Cinema & Social Change (1960-2024)', preset: { ...filmPreset, name: 'Cinema & Social Change (1960-2024)', description: 'How film reflected and shaped the cultural revolutions of the late 20th century.' } },
     { id: 'internet_history', name: 'The Digital Revolution (1989-2025)', preset: { ...internetPreset, name: 'The Digital Revolution (1989-2025)', description: "From the World Wide Web to AI: the trajectory of the internet's impact on human cognition." } },
     { id: 'military_history', name: 'Latent Clusters of Military Strategy (1890-1950)', preset: { ...militaryPreset, name: 'Latent Clusters of Military Strategy (1890-1950)', description: 'Tracking the evolution of warfare, logistics, and state capacity from the late 19th century to the Cold War.' } },
     { id: 'glasnost', name: 'Glasnost Analysis (1983-1991)', preset: glasnostPreset },
+    { id: 'god', name: 'God (1800-2000)', preset: { ...godPreset, name: 'God (1800-2000)', description: 'The evolution of the Western God concept from ontological sovereign to contested signifier.' } },
   ];
 
   const displayedPresets = availablePresets;
@@ -293,8 +309,9 @@ function EigenClustersApp() {
       clusterId: clusterIdParam,
       clusterName: clusterData.name || clusterIdParam,
       clusterDescription: clusterData.description || '',
-      year: parseInt(yearParam, 10),
-      value: trajectory.variance_explained,
+      year: parseDateToNumber(yearParam),
+      rawYear: yearParam,
+      value: trajectory.salience_share,
       description: trajectory.description,
       manifestations: trajectory.key_manifestations || [],
     });
@@ -426,7 +443,7 @@ function EigenClustersApp() {
       }));
       updateUrlParams({
         point_cluster: point.data.clusterId,
-        point_year: String(point.data.year),
+        point_year: point.data.rawYear || String(point.data.year),
       });
     },
     [updateUrlParams]
@@ -451,8 +468,8 @@ function EigenClustersApp() {
     });
     
     // Get the year range from the preset parameters
-    const startYear = parseInt(selectedPreset.startYear, 10);
-    const endYear = parseInt(selectedPreset.endYear, 10);
+    const startYear = parseDateToNumber(selectedPreset.startYear);
+    const endYear = parseDateToNumber(selectedPreset.endYear);
     
     console.log("Preset year range:", startYear, "to", endYear);
     
@@ -465,20 +482,34 @@ function EigenClustersApp() {
     });
     
     // Sort years chronologically
-    const sortedYears = Array.from(allYears).sort((a, b) => parseInt(a) - parseInt(b));
+    const sortedYears = Array.from(allYears).sort((a, b) => {
+      if (a.includes('-W') && b.includes('-W')) {
+        const [yA, wA] = a.split('-W').map(s => parseInt(s, 10));
+        const [yB, wB] = b.split('-W').map(s => parseInt(s, 10));
+        if (yA !== yB) return yA - yB;
+        return wA - wB;
+      }
+      return parseInt(a, 10) - parseInt(b, 10);
+    });
     
     // Create data points for each year
     const data = sortedYears.map(year => {
-      // Explicitly parse the year as an integer with base 10
-      const yearNum = parseInt(year, 10);
+      // Parse year/week as a numerical value for the x-axis
+      let yearNum: number;
+      if (year.includes('-W')) {
+        const [y, w] = year.split('-W').map(s => parseInt(s, 10));
+        yearNum = y + (w / 52.14); // Using 52.14 weeks per year for better accuracy
+      } else {
+        yearNum = parseInt(year, 10);
+      }
       
-      const yearData: any = { year: yearNum };
+      const yearData: any = { year: yearNum, rawYear: year };
       
       // Add each cluster's value for this year
       Object.entries(clusters).forEach(([clusterId, clusterData]) => {
         const yearTrajectory = clusterData.trajectory[year];
         if (yearTrajectory) {
-          yearData[clusterId] = yearTrajectory.variance_explained;
+          yearData[clusterId] = yearTrajectory.salience_share;
           // Store additional data for tooltips/exploration
           yearData[`${clusterId}_data`] = {
             description: yearTrajectory.description,
@@ -542,8 +573,8 @@ function EigenClustersApp() {
     const innerHeight = height - margin.top - margin.bottom;
     
     // Get the year range from the preset parameters
-    const startYear = parseInt(selectedPreset.startYear, 10);
-    const endYear = parseInt(selectedPreset.endYear, 10);
+    const startYear = parseDateToNumber(selectedPreset.startYear);
+    const endYear = parseDateToNumber(selectedPreset.endYear);
     
     // Create scales with the correct domain from preset parameters or zoomed domain
     const xScale = scaleLinear({
@@ -583,6 +614,7 @@ function EigenClustersApp() {
               clusterName: allClusters.find(c => c.id === clusterId)?.name || clusterId,
               clusterDescription: allClusters.find(c => c.id === clusterId)?.description || '',
               year: d.year,
+              rawYear: d.rawYear,
               value: d[clusterId],
               description: d[`${clusterId}_data`]?.description || '',
               manifestations: d[`${clusterId}_data`]?.manifestations || []
@@ -633,7 +665,7 @@ function EigenClustersApp() {
                     {selectedPoint.clusterName}
                   </p>
                   <p className="text-white/50 text-[0.7rem]">
-                    {selectedPoint.year} · {typeof selectedPoint.value === 'number'
+                    {selectedPoint.rawYear || selectedPoint.year} · {typeof selectedPoint.value === 'number'
                       ? selectedPoint.value.toFixed(1)
                       : selectedPoint.value}%
                   </p>

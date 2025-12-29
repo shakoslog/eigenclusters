@@ -37,7 +37,7 @@ const litereatureData =
         "description": "This cluster represents literature's growing focus on characters' inner lives, consciousness, and psychological depth. It traces the development from sentimentalism through early psychological realism to the more sophisticated explorations of subjective experience that would later influence modernism.",
         "trajectory": {
           "1780": {
-            "variance_explained": 2.5,
+            "salience_share": 2.5,
             "description": "Early experiments with subjectivity appear in sentimental novels and Gothic fiction, where emotional states are foregrounded but still expressed through conventional language and external manifestations.",
             "key_manifestations": [
               "Fanny Burney's 'Evelina' (1778) exploring a young woman's anxieties and social observations",
@@ -47,7 +47,7 @@ const litereatureData =
             ]
           },
           "1800": {
-            "variance_explained": 3.5,
+            "salience_share": 3.5,
             "description": "Romanticism intensifies literary interest in individual consciousness, emotional complexity, and psychological extremity, with greater attention to internal states and subjective perception.",
             "key_manifestations": [
               "William Wordsworth's 'The Prelude' (begun 1798) examining the growth of the poet's mind",
@@ -57,7 +57,7 @@ const litereatureData =
             ]
           },
           "1820": {
-            "variance_explained": 4.5,
+            "salience_share": 4.5,
             "description": "Novelists develop more sophisticated techniques for depicting consciousness as literary realism emerges, with growing attention to psychological motivation and inner conflict.",
             "key_manifestations": [
               "Jane Austen's 'Persuasion' (1817) with its nuanced free indirect discourse",
@@ -67,7 +67,7 @@ const litereatureData =
             ]
           },
           "1840": {
-            "variance_explained": 6.0,
+            "salience_share": 6.0,
             "description": "Victorian novelists increasingly emphasize psychological depth as essential to realistic characterization, developing more nuanced techniques for representing inner life.",
             "key_manifestations": [
               "Charlotte Brontë's 'Jane Eyre' (1847) with its first-person narration of inner thought",
@@ -77,7 +77,7 @@ const litereatureData =
             ]
           },
           "1860": {
-            "variance_explained": 7.5,
+            "salience_share": 7.5,
             "description": "Psychological realism advances significantly as novelists develop more sophisticated techniques for depicting consciousness, moral complexity, and emotional depth.",
             "key_manifestations": [
               "George Eliot's 'The Mill on the Floss' (1860) examining psychological development",
@@ -87,7 +87,7 @@ const litereatureData =
             ]
           },
           "1880": {
-            "variance_explained": 8.5,
+            "salience_share": 8.5,
             "description": "Psychological depth becomes central to literary achievement as novelists refine techniques for representing consciousness and subjective experience.",
             "key_manifestations": [
               "Henry James's 'The Portrait of a Lady' (1881) with its intricate psychological portraiture",
@@ -97,7 +97,7 @@ const litereatureData =
             ]
           },
           "1900": {
-            "variance_explained": 9.5,
+            "salience_share": 9.5,
             "description": "Late Victorian and early modernist writers push psychological exploration further, laying groundwork for the revolutionary techniques of consciousness representation that would emerge in the 20th century.",
             "key_manifestations": [
               "Henry James's late novels developing advanced psychological perspective",
@@ -113,7 +113,7 @@ const litereatureData =
         "description": "This cluster traces how literature engaged with social inequalities, class structures, and systemic injustice. It follows the development from early critiques of aristocratic privilege through the rise of the social problem novel and increasingly systematic analyses of class relations in industrial society.",
         "trajectory": {
           "1780": {
-            "variance_explained": 3.0,
+            "salience_share": 3.0,
             "description": "Enlightenment values influence literature that questions inherited privilege and social hierarchies, though often focusing on individual moral failures rather than systemic critique.",
             "key_manifestations": [
               "Frances Burney's 'Evelina' (1778) depicting social class boundaries and snobbery",
@@ -123,7 +123,7 @@ const litereatureData =
             ]
           },
           "1800": {
-            "variance_explained": 3.5,
+            "salience_share": 3.5,
             "description": "Revolutionary politics and early industrial changes shape literary explorations of social inequalities, though often focused on rural poverty and agricultural displacement.",
             "key_manifestations": [
               "William Wordsworth's 'Lyrical Ballads' (1798) portraying rural poverty",
@@ -133,7 +133,7 @@ const litereatureData =
             ]
           },
           "1820": {
-            "variance_explained": 4.0,
+            "salience_share": 4.0,
             "description": "Growing awareness of industrial conditions begins shaping literary social critique, alongside continuing examination of rural poverty and aristocratic privilege.",
             "key_manifestations": [
               "Mary Shelley's 'The Last Man' (1826) examining social collapse",
@@ -143,7 +143,7 @@ const litereatureData =
             ]
           },
           "1840": {
-            "variance_explained": 5.5,
+            "salience_share": 5.5,
             "description": "Victorian novelists establish the social problem novel, directly addressing industrial poverty, class division, and institutional failures through narrative fiction.",
             "key_manifestations": [
               "Charles Dickens's 'A Christmas Carol' (1843) moral critique of capitalist values",
@@ -153,7 +153,7 @@ const litereatureData =
             ]
           },
           "1860": {
-            "variance_explained": 7.0,
+            "salience_share": 7.0,
             "description": "Social critique deepens with more sophisticated analysis of how economic and social systems shape human lives and relationships.",
             "key_manifestations": [
               "George Eliot's 'Felix Holt, the Radical' (1866) examining political reform",
@@ -163,7 +163,7 @@ const litereatureData =
             ]
           },
           "1880": {
-            "variance_explained": 8.0,
+            "salience_share": 8.0,
             "description": "Naturalism emerges alongside more nuanced social critique as writers examine how environment and social forces determine individual fates.",
             "key_manifestations": [
               "Émile Zola's Rougon-Macquart cycle (begun 1871) analyzing social determinism",
@@ -173,7 +173,7 @@ const litereatureData =
             ]
           },
           "1900": {
-            "variance_explained": 8.5,
+            "salience_share": 8.5,
             "description": "Literary social critique becomes more systematic and politically informed, addressing imperialism, capitalism's psychological effects, and urban alienation.",
             "key_manifestations": [
               "Joseph Conrad's 'Heart of Darkness' (1899) examining colonial exploitation",
@@ -189,7 +189,7 @@ const litereatureData =
         "description": "This cluster represents the Romantic movement's emphasis on emotional authenticity, imagination, the sublime, individualism, and idealized nature. It traces the emergence, dominance, and gradual transformation of Romantic sensibilities in literature as they confronted industrial modernity and evolved into more complex forms.",
         "trajectory": {
           "1780": {
-            "variance_explained": 9.0,
+            "salience_share": 9.0,
             "description": "Early Romanticism emerges as a reaction against Enlightenment rationalism, emphasizing emotion, imagination, and subjective experience as sources of truth and meaning.",
             "key_manifestations": [
               "Johann Wolfgang von Goethe's 'The Sorrows of Young Werther' (1774) exemplifying emotional intensity",
@@ -199,7 +199,7 @@ const litereatureData =
             ]
           },
           "1800": {
-            "variance_explained": 11.0,
+            "salience_share": 11.0,
             "description": "High Romanticism flourishes as poets and novelists celebrate imagination, nature, emotional authenticity, and individual vision as counters to increasing mechanization and rationalization.",
             "key_manifestations": [
               "William Wordsworth and Samuel Taylor Coleridge's 'Lyrical Ballads' (1798)",
@@ -209,7 +209,7 @@ const litereatureData =
             ]
           },
           "1820": {
-            "variance_explained": 10.0,
+            "salience_share": 10.0,
             "description": "Late Romanticism continues developing while beginning to confront social realities and historical limitations, introducing more complex perspectives on Romantic ideals.",
             "key_manifestations": [
               "Percy Shelley's 'Prometheus Unbound' (1820) articulating revolutionary idealism",
@@ -219,7 +219,7 @@ const litereatureData =
             ]
           },
           "1840": {
-            "variance_explained": 8.0,
+            "salience_share": 8.0,
             "description": "Romantic idealism persists but increasingly confronts Victorian social concerns, industrial realities, and growing literary realism, creating hybrid forms.",
             "key_manifestations": [
               "Emily Brontë's 'Wuthering Heights' (1847) transforming Romantic themes into Victorian novel",
@@ -229,7 +229,7 @@ const litereatureData =
             ]
           },
           "1860": {
-            "variance_explained": 6.5,
+            "salience_share": 6.5,
             "description": "Romantic idealism increasingly competes with realist and naturalist approaches, though continues influencing poetry and aspects of fiction focused on imagination and emotion.",
             "key_manifestations": [
               "Algernon Charles Swinburne's poetry reviving Romantic sensuality",
@@ -239,7 +239,7 @@ const litereatureData =
             ]
           },
           "1880": {
-            "variance_explained": 5.0,
+            "salience_share": 5.0,
             "description": "Late Victorian aestheticism and symbolism transform Romantic ideals into new forms, while mainstream fiction increasingly critiques Romantic individualism and emotional excess.",
             "key_manifestations": [
               "Oscar Wilde's 'The Picture of Dorian Gray' (1890) revisiting Romantic aestheticism",
@@ -249,7 +249,7 @@ const litereatureData =
             ]
           },
           "1900": {
-            "variance_explained": 4.0,
+            "salience_share": 4.0,
             "description": "Romantic idealism persists in transformed forms as writers both critique and reintegrate Romantic elements within modernist experiments and aesthetic movements.",
             "key_manifestations": [
               "W.B. Yeats's early poetry drawing on Romantic symbolism",
@@ -265,7 +265,7 @@ const litereatureData =
         "description": "This cluster examines the distinctive moral, social, and aesthetic sensibility that characterized much Victorian literature, including its concerns with respectability, social duty, moral improvement, domestic harmony, and the tensions between public virtue and private desire.",
         "trajectory": {
           "1780": {
-            "variance_explained": 0.5,
+            "salience_share": 0.5,
             "description": "Pre-Victorian sensibilities predominate, with greater emphasis on sentiment, heroic individualism, and less concern with the domestic morality that would characterize Victorian literature.",
             "key_manifestations": [
               "Frances Burney's novels anticipating concerns with feminine propriety",
@@ -275,7 +275,7 @@ const litereatureData =
             ]
           },
           "1800": {
-            "variance_explained": 1.5,
+            "salience_share": 1.5,
             "description": "Early moral frameworks that would influence Victorian literature emerge alongside Romantic idealism, particularly in women's fiction and educational writing.",
             "key_manifestations": [
               "Jane Austen's novels beginning to articulate social propriety and moral judgment",
@@ -285,7 +285,7 @@ const litereatureData =
             ]
           },
           "1820": {
-            "variance_explained": 3.0,
+            "salience_share": 3.0,
             "description": "Transitional period shows increasing emphasis on social propriety, duty, and moral earnestness that would characterize Victorian literature.",
             "key_manifestations": [
               "Jane Austen's 'Persuasion' (1817) valuing steadfastness and moral growth",
@@ -295,7 +295,7 @@ const litereatureData =
             ]
           },
           "1840": {
-            "variance_explained": 6.0,
+            "salience_share": 6.0,
             "description": "Victorian sensibility flourishes with emphasis on moral improvement, social duty, domestic harmony, and earnest self-development within social structures.",
             "key_manifestations": [
               "Charles Dickens's 'David Copperfield' (1849-50) portraying moral growth and domestic virtue",
@@ -305,7 +305,7 @@ const litereatureData =
             ]
           },
           "1860": {
-            "variance_explained": 7.5,
+            "salience_share": 7.5,
             "description": "High Victorian sensibility reaches maturity, balancing moral concerns with growing recognition of social complexities and psychological depth.",
             "key_manifestations": [
               "George Eliot's 'Middlemarch' (1871-72) examining duty, vocation, and moral growth",
@@ -315,7 +315,7 @@ const litereatureData =
             ]
           },
           "1880": {
-            "variance_explained": 7.0,
+            "salience_share": 7.0,
             "description": "Late Victorian literature both continues and begins questioning Victorian sensibilities, introducing more complex moral perspectives and challenges to conventional values.",
             "key_manifestations": [
               "Thomas Hardy's novels challenging Victorian sexual morality",
@@ -325,7 +325,7 @@ const litereatureData =
             ]
           },
           "1900": {
-            "variance_explained": 5.5,
+            "salience_share": 5.5,
             "description": "Victorian sensibility faces increasing challenges from aesthetic movements, naturalism, and early modernism, while still maintaining significant cultural influence.",
             "key_manifestations": [
               "Thomas Hardy's 'Jude the Obscure' (1895) critiquing Victorian moral constraints",
@@ -341,7 +341,7 @@ const litereatureData =
         "description": "This cluster examines how literature portrayed and critiqued gender roles, marriage, and domestic life. It traces the evolution from early explorations of women's limited options through increasingly explicit feminist critique, showing how novels exposed constraints on women's lives and imagined alternatives.",
         "trajectory": {
           "1780": {
-            "variance_explained": 3.5,
+            "salience_share": 3.5,
             "description": "Women writers begin more explicitly addressing female experience and the constraints of domestic roles, while still largely working within prevailing assumptions about separate spheres.",
             "key_manifestations": [
               "Frances Burney's 'Evelina' (1778) exploring a young woman's social navigation",
@@ -351,7 +351,7 @@ const litereatureData =
             ]
           },
           "1800": {
-            "variance_explained": 4.0,
+            "salience_share": 4.0,
             "description": "Women novelists increasingly focus on marriage, domestic constraints, and female education, developing a distinctive tradition of social-domestic fiction.",
             "key_manifestations": [
               "Jane Austen's 'Pride and Prejudice' (1813) examining marriage choices and female autonomy",
@@ -361,7 +361,7 @@ const litereatureData =
             ]
           },
           "1820": {
-            "variance_explained": 4.5,
+            "salience_share": 4.5,
             "description": "Domestic fiction continues developing alongside early Victorian perspectives on gender roles, with increasing attention to women's limited options and domestic power dynamics.",
             "key_manifestations": [
               "Jane Austen's 'Persuasion' (1817) portraying female patience and second chances",
@@ -371,7 +371,7 @@ const litereatureData =
             ]
           },
           "1840": {
-            "variance_explained": 5.0,
+            "salience_share": 5.0,
             "description": "Victorian literature addresses the 'Woman Question' more explicitly, with novels depicting the constraints of marriage and domestic roles while often seeking reconciliation.",
             "key_manifestations": [
               "Charlotte Brontë's 'Jane Eyre' (1847) demanding equality within marriage",
@@ -381,7 +381,7 @@ const litereatureData =
             ]
           },
           "1860": {
-            "variance_explained": 6.0,
+            "salience_share": 6.0,
             "description": "Novels provide increasingly sophisticated analysis of marriage, domesticity, and gender constraints as writers examine women's limited options more explicitly.",
             "key_manifestations": [
               "George Eliot's 'The Mill on the Floss' (1860) exploring female intellectual ambition",
@@ -391,7 +391,7 @@ const litereatureData =
             ]
           },
           "1880": {
-            "variance_explained": 7.0,
+            "salience_share": 7.0,
             "description": "The 'Woman Question' becomes more central to literature as novels directly address marriage as institution, female sexuality, and constraints on women's ambitions.",
             "key_manifestations": [
               "Henry James's 'The Portrait of a Lady' (1881) analyzing a woman's fate after choosing wrongly",
@@ -401,7 +401,7 @@ const litereatureData =
             ]
           },
           "1900": {
-            "variance_explained": 8.0,
+            "salience_share": 8.0,
             "description": "The New Woman emerges in literature as feminist movements influence fiction, with more radical critiques of marriage and domestic constraints.",
             "key_manifestations": [
               "Kate Chopin's 'The Awakening' (1899) depicting female rebellion against domestic roles",

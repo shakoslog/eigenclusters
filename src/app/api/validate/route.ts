@@ -171,7 +171,7 @@ The JSON provided shows trajectories of cultural forces over time, but contains 
 
 You are a historical accuracy expert reviewing cultural eigencluster JSON data.
 
-Your task is to correct any historically inaccurate patterns in the "variance_explained" values while maintaining truthfulness to the actual historical record.
+Your task is to correct any historically inaccurate patterns in the "salience_share" values while maintaining truthfulness to the actual historical record.
 
 COMMON HISTORICAL INACCURACIES TO CHECK FOR:
 
@@ -185,14 +185,14 @@ COMMON HISTORICAL INACCURACIES TO CHECK FOR:
 
 CORRECTION APPROACH:
 - Identify specific historical events or trends from the period
-- Modify "variance_explained" values ONLY where needed to align with historical reality
+- Modify "salience_share" values ONLY where needed to align with historical reality
 - Make changes of sufficient magnitude (2-5 points) when historical evidence suggests significant shifts 
 - Do NOT introduce artificial patterns - only make changes supported by historical evidence
 - When in doubt, maintain the original values
 
 Return the complete JSON with your historically-justified corrections.
 
-Make direct numerical changes to the "variance_explained" values to fix these issues. 
+Make direct numerical changes to the "salience_share" values to fix these issues. 
 Don't hesitate to make significant numerical changes - it's common to need adjustments of 20-50% to create historically accurate patterns.
 
 Focus on improving historical accuracy and quality while maintaining the original structure.

@@ -35,7 +35,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the rejection of the 'End of History' consensus, global democratic universalism, and liberal internationalism. Rooted initially in the Paleoconservatism of the 1990s, it hibernated during the Neoconservative Bush era before mutating into the Alt-Right and eventually solidifying as National Conservatism and Populist Sovereignty. It prioritizes the nation-state over the global market, particularism over universalism, and heritage over abstract liberty. It is the primary vector for the 'America First' movement and the intellectual rejection of the post-war liberal order.",
       "trajectory": {
         "1995": {
-          "variance_explained": 18.5,
+          "salience_share": 18.5,
           "description": "The cluster holds significant variance (Δv +2.1%) as the immediate post-Cold War euphoria fades and a stark reactionary sentiment consolidates against the Clinton administration's globalism. The catalyst is the aftershock of the 'Republican Revolution' of 1994, but specifically the darker, more nationalist wing led by Pat Buchanan, which is rapidly distinguishing itself from the Gingrich/Dole establishment. The cultural mood is defined by a fierce defense of sovereignty against supranational bodies (NAFTA, WTO) and a visceral reaction to domestic federal overreach, exemplified by the cultural fallout of Ruby Ridge and Waco.",
           "key_manifestations": [
             "Pat Buchanan's announcement of his 1996 Presidential Campaign (The 'Culture War' platform)",
@@ -45,7 +45,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 19.8,
+          "salience_share": 19.8,
           "description": "Variance climbs (Δv +1.3%) as the Buchananite insurgency challenges the GOP establishment, forcing the Overton window toward protectionism and immigration restrictionism. While Buchanan ultimately fails electorally, the *intensity* of this cluster increases as it becomes the primary intellectual home for those alienated by the 'New World Order.' The displacement of traditional labor politics by global trade agreements fuels this cluster, creating a nascent 'Red Tory' or 'Left-Conservative' economic critique that is culturally right-wing.",
           "key_manifestations": [
             "Pat Buchanan's 'Pitchfork Brigades' New Hampshire Primary Victory",
@@ -55,7 +55,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 17.5,
+          "salience_share": 17.5,
           "description": "A moderate decline (Δv -2.3%) occurs as the economic boom of the late 90s ('The Roaring Nineties') seduces the populace, granting the neoliberal consensus higher explanatory power. The material prosperity dampens the appeal of protectionist doom-saying. However, the cluster entrenches itself in intellectual journals, moving from mass political rallies to high-theory critiques of liberal democracy, laying the groundwork for future resistance. The energy shifts from economic anxiety to purely cultural anxiety regarding multiculturalism.",
           "key_manifestations": [
             "First Things' 'End of Democracy?' Symposium (The Judicial Usurpation of Politics)",
@@ -65,7 +65,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 16.2,
+          "salience_share": 16.2,
           "description": "Variance continues to bleed (Δv -1.3%) as the Monica Lewinsky scandal sucks all oxygen out of the room, redirecting right-wing energy toward a moralistic/puritanical cluster rather than this sovereignty/nationalist one. The 'Moral Majority' style conservatism temporarily cannibalizes the Paleoconservative structural critique. The cluster struggles to articulate a structural alternative to Clintonism amidst the distracting spectacle of impeachment.",
           "key_manifestations": [
             "A Republic, Not an Empire by Pat Buchanan (Preparation for 2000 run)",
@@ -75,7 +75,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Stagnation and slight decline (Δv -1.2%). The Kosovo War provokes a sharp but niche reaction from this cluster, which vehemently opposes 'humanitarian interventionism,' foreshadowing its stance on Iraq. However, the broader culture is intoxicated by the Dot-com bubble and the nascent 'end of history' techno-optimism. This cluster is now seen as anachronistic, the 'Old Right' fading into obscurity against the 'Compassionate Conservatism' of the rising George W. Bush.",
           "key_manifestations": [
             "Pat Buchanan's 'A Republic, Not an Empire' (Published work)",
@@ -85,7 +85,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "A local minimum (Δv -1.5%). The Bush v. Gore election drama centralizes right-wing energy around the GOP establishment and the Supreme Court, sidelining the third-party nationalist critique. Buchanan's Reform Party run ends in disaster, seemingly discrediting the Paleoconservative vehicle for a generation. The variance is absorbed by 'Party Loyalty' and 'Compassionate Conservatism,' which promises a softer, more universalist right-wing vision.",
           "key_manifestations": [
             "Pat Buchanan's Reform Party Campaign (The 'Butterfly Ballot' fiasco)",
@@ -95,7 +95,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "A catastrophic collapse in variance (Δv -5.0%). The September 11 attacks fundamentally restructure the Right. The isolationist/non-interventionist core of this cluster is rendered culturally radioactive overnight. The 'War on Terror' paradigm shift transfers almost all cultural energy to the Neoconservative cluster (universalist intervention). To speak of 'America First' in a non-interventionist sense is equated with surrender. The cluster retreats into deep hibernation.",
           "key_manifestations": [
             "David Frum's 'Unpatriotic Conservatives' article in National Review (The purge)",
@@ -105,7 +105,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Variance bottoms out (Δv -2.5%). The drumbeat for the Iraq War drowns out all skepticism. The 'Axis of Evil' rhetoric dominates the cultural space. This cluster survives only in small online enclaves and specific publications like *The American Conservative* (founded this year to oppose the war), acting as a remnant in the wilderness. The focus shifts to preserving the intellectual lineage rather than influencing policy.",
           "key_manifestations": [
             "Launch of The American Conservative (TAC) magazine",
@@ -115,7 +115,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Near stasis at a low level (Δv -0.5%). The 'Mission Accomplished' moment seemingly validates the Neoconservative worldview, further suppressing this cluster. However, the seeds of resurgence are planted as the occupation of Iraq begins to sour. The cluster begins to attract disaffected libertarians who realize the state's military expansion is the primary threat, initiating the 'Paleo-Libertarian' alliance that will later fuel the Ron Paul revolution.",
           "key_manifestations": [
             "Joe Sobran's syndicated columns (anti-war conservative voice)",
@@ -125,7 +125,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 6.2,
+          "salience_share": 6.2,
           "description": "A slight uptick (Δv +0.7%) as the reality of the Iraq insurgency sets in. The 'Swift Boat' cultural moment is nationalistic but serves the establishment; however, the underlying dissatisfaction with the Bush administration's spending and Wilsonian foreign policy begins to curdle. The 'Values Voter' turnout is high, but this cluster begins to decouple 'Values' from 'GOP Loyalty,' questioning if the party actually conserves anything.",
           "key_manifestations": [
             "Where the Right Went Wrong by Pat Buchanan",
@@ -135,7 +135,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 7.8,
+          "salience_share": 7.8,
           "description": "Variance climbs (Δv +1.6%). The catalyst is the response to Hurricane Katrina and the Harriet Miers Supreme Court nomination. The 'Miers Revolt' is the first successful flexing of muscle by the base against the Bush establishment, signaling that the 'Courtier' class of pundits no longer commands the obedient loyalty of the Right. Furthermore, the chaotic response to Katrina shatters the illusion of competence, fueling the 'failed state' narrative central to later reactionary thought.",
           "key_manifestations": [
             "Michelle Malkin's anti-immigration blogging (Early rise of the internet right)",
@@ -145,7 +145,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Accelerating rise (Δv +1.7%). The GOP loses Congress in the midterms, interpreted by this cluster not as a rejection of conservatism, but a rejection of 'Big Government Republicanism.' The immigration debate explodes with the Comprehensive Immigration Reform Act, which this cluster successfully kills via grassroots rage (talk radio and early blogs). This victory proves that 'National Sovereignty' is the mobilizing fulcrum of the future Right.",
           "key_manifestations": [
             "Defeat of the McCain-Kennedy Immigration Bill",
@@ -155,7 +155,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Significant surge (Δv +2.5%). The Ron Paul 2008 presidential campaign launches, serving as a massive catalyst. While ostensibly libertarian, the campaign acts as a 'big tent' for the Old Right, anti-war conservatives, and constitutionalists. It re-injects 1990s paleoconservative ideas (non-interventionism, sound money, hostility to the Federal Reserve) back into the youth culture. Simultaneously, the sub-prime cracks begin to show, validating the 'economic doom' narratives.",
           "key_manifestations": [
             "Ron Paul's 'Giuliani Moment' at the GOP debate (blowback theory)",
@@ -165,7 +165,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 15.5,
+          "salience_share": 15.5,
           "description": "Rapid expansion (Δv +3.5%). The Global Financial Crisis serves as the ultimate vindication of the anti-establishment Right. The collapse of the banks destroys the credibility of the Neoconservative/Neoliberal economic management. The election of Barack Obama triggers a massive reactionary identity crisis, birthing the Tea Party. This is the moment the 'Implicit White Identity' politics begins to shift from subtext to text, fueled by the feeling of dispossession.",
           "key_manifestations": [
             "The Troubled Asset Relief Program (TARP) vote (The betrayal event)",
@@ -175,7 +175,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 19.0,
+          "salience_share": 19.0,
           "description": "Variance spikes (Δv +3.5%). The Tea Party summer. While astroturfed elements exist, the grassroots energy is genuinely reactionary, focused on the 'restoration' of a lost constitutional order. The 'Birther' conspiracy theories emerge, which, regardless of factual merit, represent a symbolic rejection of the legitimacy of the new progressive order (The Other as Sovereign). The cluster moves from intellectual journals to the streets.",
           "key_manifestations": [
             "Town Hall protests against the ACA",
@@ -185,7 +185,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 21.5,
+          "salience_share": 21.5,
           "description": "Consolidation of power (Δv +2.5%). The 'Shellacking' midterm elections. This cluster effectively stages a hostile takeover of the GOP's rhetoric, forcing candidates to pledge allegiance to Tea Party principles. However, a fissure opens: the 'Constitutional Conservative' wing (Cruz/Lee) vs. the nascent 'Nationalist' wing (Sessions/Miller). The variance increase is driven by the total deadlock in Washington, which is viewed as a feature, not a bug.",
           "key_manifestations": [
             "The 2010 Midterm Election Results (Tea Party sweep)",
@@ -195,7 +195,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 22.0,
+          "salience_share": 22.0,
           "description": "Stasis/Plateau (Δv +0.5%). The energy of 2010 dissipates into legislative gridlock. The focus shifts to the debt ceiling fights. However, on the fringes, the failure of standard Tea Party politics to actually reverse cultural liberalism leads to radicalization. The 'Alt-Right' term is coined/popularized by Richard Spencer in small circles, signaling a move away from 'Constitutionalism' toward 'Identitarianism' and 'Bio-Realism.'",
           "key_manifestations": [
             "Launch of AlternativeRight.com",
@@ -205,7 +205,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 20.5,
+          "salience_share": 20.5,
           "description": "Slight decline (Δv -1.5%). The Romney campaign represents a temporary re-imposition of the Neoconservative/Establishment management. The suppression of the Ron Paul delegates at the RNC convention alienates the youth/libertarian wing, pushing them toward darker, non-democratic reactionary theories (The Dark Enlightenment). Romney's loss is the final death knell for 'gentlemanly conservatism,' proving to this cluster that 'decency' loses elections.",
           "key_manifestations": [
             "The RNC Convention rules change (suppressing Paul delegates)",
@@ -215,7 +215,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 23.0,
+          "salience_share": 23.0,
           "description": "Resurgence and mutation (Δv +2.5%). The catalyst is the 'Gang of Eight' immigration bill. The establishment's attempt to force amnesty reignites the 2006-style rage, but this time it is fueled by the nascent Alt-Right online ecosystem. Simultaneously, Nick Land's 'The Dark Enlightenment' connects the NRx philosophy with the dissatisfaction of the tech-libertarian sphere, creating a high-IQ justificatory framework for non-democratic governance.",
           "key_manifestations": [
             "The Dark Enlightenment (Essay series) by Nick Land",
@@ -225,7 +225,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 26.5,
+          "salience_share": 26.5,
           "description": "Rapid acceleration (Δv +3.5%). The catalyst is GamerGate. While ostensibly about video games, it is the 'Fort Sumter' of the modern Culture War, training a generation of young men in distributed, asymmetric memetic warfare against progressive institutional power. This merges with the 'Ferguson' riots reaction, solidifying a 'Law and Order' + 'Anti-Woke' coalition. The cluster becomes distinctively counter-cultural and young.",
           "key_manifestations": [
             "GamerGate (The hashtag and movement)",
@@ -235,7 +235,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 32.0,
+          "salience_share": 32.0,
           "description": "Explosive growth (Δv +5.5%). The catalyst is Donald Trump's descent down the escalator. He captures this entire cluster—the trade protectionism, the immigration restrictionism, the anti-PC attitude, and the media hostility—and gives it a avatar. The 'Overton Window' is shattered. The 'Great Meme War' begins, with 4chan and Reddit acting as the propaganda arm of the campaign. NRx ideas about 'The Cathedral' filter down to the masses as 'The Deep State.'",
           "key_manifestations": [
             "Trump's Announcement Speech ('They're bringing drugs...')",
@@ -245,7 +245,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 40.0,
+          "salience_share": 40.0,
           "description": "Peak Variance (Δv +8.0%). The cluster achieves total dominance of the Right-wing manifold. Brexit in the UK presages Trump's victory in the US. The distinction between the 'Alt-Right' (white nationalist) and 'Alt-Lite' (civic nationalist populist) is blurred in the ecstasy of victory. The 'Deplorables' moment solidifies the class-based identity of the movement. It is the Year of the Frog (Pepe).",
           "key_manifestations": [
             "Donald Trump's Election Victory",
@@ -255,7 +255,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 36.0,
+          "salience_share": 36.0,
           "description": "Correction and Fragmentation (Δv -4.0%). The 'Charlottesville' event (Unite the Right) acts as a massive displacing force, rendering the explicit 'Alt-Right' brand toxic and forcing a schism. The movement bifurcates: the optical/institutional wing (MAGA/National Conservatism) separates from the radioactive racialist wing. The 'ban hammer' from Silicon Valley begins to fall, forcing the cluster into alternative tech infrastructures.",
           "key_manifestations": [
             "Charlottesville 'Unite the Right' rally",
@@ -265,7 +265,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 34.5,
+          "salience_share": 34.5,
           "description": "Stabilization and Retrenchment (Δv -1.5%). The midterms check the momentum. The cluster evolves from 'revolutionary' to 'besieged.' The focus shifts to the judiciary (Kavanaugh hearings) which unites the various factions of the Right (religious, populist, corporate) against a perceived common enemy: the 'mob.' This solidifies the 'Cold Civil War' narrative.",
           "key_manifestations": [
             "Kavanaugh Supreme Court Hearings",
@@ -275,7 +275,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 35.5,
+          "salience_share": 35.5,
           "description": "Uptick (Δv +1.0%). The 'National Conservatism' conference launches, attempting to give intellectual coherence and respectability to the disruption of 2016. The cluster begins to articulate a post-libertarian political economy (industrial policy). Meanwhile, the 'Groyper' wars see the youth wing attacking the 'Conservative Inc.' establishment (Charlie Kirk/TPUSA), demanding a harder line on social issues.",
           "key_manifestations": [
             "First National Conservatism Conference (Washington D.C.)",
@@ -285,7 +285,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 33.0,
+          "salience_share": 33.0,
           "description": "Volatile decline (Δv -2.5%). The COVID-19 pandemic and the George Floyd riots create a chaotic environment. While the riots validate the 'Law and Order' narrative, the pandemic response fractures the movement (Biomedical security state vs. Libertarian freedom). The election loss creates a crisis of faith in the democratic process itself, birthing the 'Stop the Steal' mythos which devours all other discourse.",
           "key_manifestations": [
             "The 1619 Project vs. The 1776 Commission",
@@ -295,7 +295,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 28.0,
+          "salience_share": 28.0,
           "description": "Significant drop and suppression (Δv -5.0%). January 6th acts as the inverse 9/11 for this cluster—a pretext for a massive crackdown. De-platforming is total. The cluster moves underground or to encrypted chats. However, this suppression radicalizes the remaining variance. The 'Post-Liberal' turn accelerates; democracy is no longer viewed as the solution but the problem. The 'Caesarism' meme gains traction.",
           "key_manifestations": [
             "January 6th Capitol Event",
@@ -305,7 +305,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 30.5,
+          "salience_share": 30.5,
           "description": "Rebound (Δv +2.5%). The catalyst is Elon Musk's acquisition of Twitter (X). The perceived crack in the 'Cathedral's' information control reinvigorates the cluster. The 'Groomer' discourse regarding LGBTQ education in schools provides a new, highly effective populist wedge issue (LibsofTikTok). The overturning of Roe v. Wade is a massive victory, but creates electoral headwinds, forcing a strategic rethink.",
           "key_manifestations": [
             "Elon Musk acquires Twitter",
@@ -315,7 +315,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 32.0,
+          "salience_share": 32.0,
           "description": "Steady rise (Δv +1.5%). The 'Anti-Woke' business model matures (Parallel Economy). The backlash against DEI (Diversity, Equity, and Inclusion) moves from the fringe to the boardroom (Bud Light boycott, Harvard plagiarism scandals). The cluster successfully weaponizes 'competence' arguments, framing the establishment not just as evil, but as low-agency and crumbling. NRx concepts like 'The quiet part out loud' become mainstream GOP talking points.",
           "key_manifestations": [
             "Bud Light Boycott (The first successful mass consumer strike of the Right)",
@@ -325,7 +325,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 35.0,
+          "salience_share": 35.0,
           "description": "Surge (Δv +3.0%). The election year polarizes the culture. The legal warfare ('Lawfare') against Trump validates the 'Banana Republic' narrative of the NRx/Dissident Right, proving their thesis that the 'Rule of Law' is a fiction used by power. The VP selection (Vance) signals the generational torch passing to the 'New Right' / Post-Liberal intellectuals. Immigration polling flips significantly in favor of mass deportation, moving the 2016 radical position to the 2024 center.",
           "key_manifestations": [
             "Trump Legal Trials (The Mugshot as icon)",
@@ -335,7 +335,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 36.5,
+          "salience_share": 36.5,
           "description": "High Plateau/Institutionalization (Δv +1.5%). Following the 2024 cycle, the cluster transitions from 'insurgency' to 'regime.' The focus shifts to 'Red Caesarism'—the use of executive power to dismantle the administrative state (Schedule F). The cultural vibe is 'Retribution' and 'Re-founding.' A split emerges between the 'Burn it down' accelerationists and the 'Build parallel institutions' builders. The Variance is high because the cultural separation is now physical and economic, not just digital.",
           "key_manifestations": [
             "Implementation of 'Project 2025' policies (or the panic over them)",
@@ -351,7 +351,7 @@ export const rightWingCultureData = {
       "description": "A highly intellectual, niche, yet disproportionately influential cluster that critiques the fundamental operating system of liberal democracy. Emerging from the intersection of libertarian dissatisfaction, cyber-culture, and elite theory, it posits that 'Progressivism' is a non-theistic religion (The Cathedral) that inevitably trends toward entropy. It advocates for 'Formalism'—clear ownership of the state (often monarchical or corporate-feudal) to align incentives. It is the 'High Theory' counterpart to the populism of Cluster 1.",
       "trajectory": {
         "1997": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Slight rise (Δv +0.3%). The publication of 'The Sovereign Individual' marks a critical moment. While framed as investment advice, its prediction of the collapse of the nation-state due to digital technology provides the foundational 'escapist' logic for the proto-NRx sphere. It introduces the concept that the 'competent' will eventually secede from the 'parasitic' democratic masses.",
           "key_manifestations": [
             "The Sovereign Individual by James Dale Davidson and William Rees-Mogg",
@@ -361,7 +361,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Stasis (Δv 0%). The ideas remain dormant in high-trust academic and tech circles. The focus is on the dot-com boom. However, the libertarians begin to realize that the 'check and balances' of the US constitution failed to stop the expansion of the state during the Clinton years, prompting a search for more radical structural critiques.",
           "key_manifestations": [
             "LewRockwell.com (founding era - the paleolibertarian incubator)",
@@ -371,7 +371,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Variance increases (Δv +0.5%). The release of 'The Matrix' provides the central metaphor ('The Red Pill') that this cluster will eventually weaponize to describe waking up from the 'Progressive Consensus.' While the film is anti-authoritarian from the left, the structural concept of a manufactured reality resonates with the 'Cathedral' concept developing in reactionary theory.",
           "key_manifestations": [
             "The Matrix (Film)",
@@ -381,7 +381,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "Slight decline (Δv -0.2%). The Dot-com crash dampens the 'Techno-Libertarian' hubris that fuels this cluster. The failure of digital utopia to materialize immediately forces a retreat into theory. The Bush v. Gore election reinforces the idea that democracy is a chaotic, malfunctioning system, but the Right rallies around the GOP rather than rejecting the system.",
           "key_manifestations": [
             "The Dot-Com Bubble Burst",
@@ -391,7 +391,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Significant theoretical jump (Δv +1.7%). Hans-Hermann Hoppe publishes 'Democracy: The God That Failed.' This is the ur-text of modern Neoreaction. It mathematically and ethically argues that Monarchy (private government) is superior to Democracy (public government) due to time-preference incentives. This breaks the taboo on the Right against criticizing democracy itself, creating the 'Libertarian-to-Alt-Right' pipeline.",
           "key_manifestations": [
             "Democracy: The God That Failed by Hans-Hermann Hoppe",
@@ -401,7 +401,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Consolidation (Δv -0.5%). The Patriotic fervor of the post-9/11 era suppresses anti-democratic thought. The state is viewed as the protector, reducing the appeal of Hoppean critique. However, the expansion of the surveillance state (Patriot Act) confirms the cluster's predictions about the inevitable growth of democratic power structures.",
           "key_manifestations": [
             "The Patriot Act passage",
@@ -411,7 +411,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 3.2,
+          "salience_share": 3.2,
           "description": "Stasis (Δv +0.2%). The Iraq War splits the libertarian world. The 'Neoconservative' dominance pushes the Hoppeans further to the fringe, where they begin to radicalize. They conclude that the 'masses' are easily manipulated by war propaganda, thus 'the people' cannot be trusted with sovereignty. This hardens the elitist core of the movement.",
           "key_manifestations": [
             "Anti-war writings on LewRockwell.com",
@@ -421,7 +421,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Slight rise (Δv +0.3%). As the internet matures, the 'Manosphere' begins to form (Game / PUA). While initially about dating, it introduces the concept of 'biological realism' and 'uncomfortable truths' that the polite society (The Cathedral) suppresses. This 'Red Pill' logic regarding gender eventually merges with the political 'Red Pill' of NRx.",
           "key_manifestations": [
             "The Game by Neil Strauss",
@@ -431,7 +431,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 3.8,
+          "salience_share": 3.8,
           "description": "Gradual growth (Δv +0.3%). The failure of the Bush administration to shrink government (No Child Left Behind, Medicare Part D) proves the 'Public Choice' theory that democracy inevitably grows the state. The critique shifts from 'bad politicians' to 'bad incentives.' The intellectual groundwork is being laid for a total rejection of the GOP.",
           "key_manifestations": [
             "V for Vendetta (Film - Cultural impact on anonymity/resistance)",
@@ -441,7 +441,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Steady build (Δv +0.2%). The housing bubble (fueled by government-backed mortgages) is identified by Austrian economists as a disaster in waiting. This predictive success gives the cluster intellectual confidence. The rise of 'Web 2.0' allows for the formation of distributed, pseudo-anonymous intellectual communities where taboo thoughts can be exchanged.",
           "key_manifestations": [
             "Peter Schiff's media appearances predicting the crash",
@@ -451,7 +451,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "The Singularity of the Cluster (Δv +2.5%). Mencius Moldbug (Curtis Yarvin) launches 'Unqualified Reservations.' This is the defining moment. He synthesizes Hoppean libertarianism, Carlyle's Victorian reaction, and computer science formalism into a coherent worldview. He coins 'The Cathedral' (the self-organizing consensus of academia and media). The 'Red Pill' moves from a dating metaphor to a political ontology.",
           "key_manifestations": [
             "Unqualified Reservations: 'The Case Against Democracy'",
@@ -461,7 +461,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Rapid adoption (Δv +1.5%). The Financial Crisis validates the NRx thesis that the experts are frauds. The election of Obama creates a market for 'why the Right loses' explanations. Moldbug's traffic explodes. The 'Open Letter to Open-Minded Progressives' serves as the primary recruiting tool, converting disillusioned libertarians and tech-workers into Neoreactionaries.",
           "key_manifestations": [
             "Unqualified Reservations: 'An Open Letter to Open-Minded Progressives'",
@@ -471,7 +471,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 9.2,
+          "salience_share": 9.2,
           "description": "Intellectual hardening (Δv +1.2%). The Tea Party emerges, but NRx views it as 'low agency' and doomed to fail because it appeals to the democratic process. NRx positions itself as the 'Inner Party' of the dissent, mocking the 'Outer Party' (Tea Party/GOP) for believing the system can be reformed. The 'Patchwork' theory (competitive city-states) is proposed as the solution.",
           "key_manifestations": [
             "Unqualified Reservations: 'Patchwork: A Positive Vision'",
@@ -481,7 +481,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Peak Blogosphere (Δv +0.8%). The 'Reactionary Sphere' expands beyond Moldbug. Writers like Nick Land begin to engage, bringing Deleuzian philosophy and accelerationism ('Acc/B') into the mix. The critique deepens: it's not just that democracy is inefficient, it's that it is a 'Gnostic' heresy (Voegelin) detached from reality.",
           "key_manifestations": [
             "Nick Land begins blogging on 'Outside In'",
@@ -491,7 +491,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 10.5,
+          "salience_share": 10.5,
           "description": "Crossover begins (Δv +0.5%). The term 'Alt-Right' begins to circulate, acting as a vulgarization of NRx concepts for a broader audience. While NRx focuses on governance structures (Monarchy/CEO), the Alt-Right focuses on demographics. The two clusters are distinct but porous. Anders Breivik's manifesto cites NRx-adjacent bloggers (Fjordman), causing a temporary crisis and PR disaster for the sphere.",
           "key_manifestations": [
             "Game of Thrones premieres (Realpolitik and feudal morality return to pop culture)",
@@ -501,7 +501,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "The Dark Enlightenment (Δv +0.5%). Nick Land publishes 'The Dark Enlightenment' essay series. This formalizes the canon. It explicitly links the 'Cathedral' critique with 'Accelerationism.' The thesis: The only way out is through (accelerate capitalism until it breaks democracy). This attracts the 'Tech Right' who feel stifled by San Francisco progressivism.",
           "key_manifestations": [
             "The Dark Enlightenment by Nick Land",
@@ -511,7 +511,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "Acceleration (Δv +1.5%). The Snowden Leaks confirm the 'Deep State' reality to the masses, validating NRx paranoia. The cluster begins to influence Silicon Valley thought leadership (Balaji Srinivasan's 'Exit' speech). The 'Exit > Voice' concept becomes the standard tech-libertarian stance. The focus moves from blogging to 'building' parallel structures.",
           "key_manifestations": [
             "Balaji Srinivasan's 'Silicon Valley's Ultimate Exit' speech at YC",
@@ -521,7 +521,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "Meme War Mobilization (Δv +1.0%). GamerGate acts as the live-fire exercise. NRx concepts of 'Journalistic Ethics' being a front for 'Narrative Control' are proven in real-time. The 'NPC' (Non-Player Character) meme concept originates here structurally—the idea that most people are just running 'Cathedral.exe'. The intellectual snobbery of NRx meets the chaotic energy of 4chan.",
           "key_manifestations": [
             "Zero to One by Peter Thiel (The NRx business book - 'Competition is for losers')",
@@ -531,7 +531,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 14.2,
+          "salience_share": 14.2,
           "description": "The Trump Bet (Δv +0.7%). A schism occurs. Purist NRxers view Trump as a demagogue and a symptom of democratic rot. The 'Pragmatist' wing sees him as a 'CEO-in-chief' or a 'Rex' figure who can smash the Cathedral. The 'God Emperor Trump' meme is the NRx aesthetic applied to a populist candidate. The variance rises as the 'Deep State' term enters the vernacular.",
           "key_manifestations": [
             "The 'God Emperor' Trump memes (Warhammer 40k syncretism)",
@@ -541,7 +541,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Peak Influence / Maximum Distortion (Δv +0.8%). Trump's victory is seen as a glitch in the Matrix. NRx ideas are widely discussed in mainstream outlets (Vox, Atlantic) attempting to explain 'What is the Alt-Right?'. However, the brand is diluted by white nationalists. The 'Formalist' core retreats to private channels to avoid association with the 'Heil Trump' optics.",
           "key_manifestations": [
             "Steve Bannon in the White House (Rumors of him reading Moldbug/Evola)",
@@ -551,7 +551,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "The Crash (Δv -3.5%). Charlottesville is a disaster for the brand. 'Reactionary' becomes synonymous with 'Nazi' in the public eye. The intellectual core (Yarvin, Land) disavows the street movement. The cluster goes dark ('Passivism'). The strategy shifts: 'Become the elite, don't fight them in the streets.' The 'Grey Tribe' separates from the 'Red Tribe.'",
           "key_manifestations": [
             "The downfall of Milo Yiannopoulos (The end of the 'fun' phase)",
@@ -561,7 +561,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Underground Incubation (Δv -2.5%). The cluster is de-platformed but alive. It migrates to Urbit, podcasts, and private Discords. The focus is on 'The Clear Pill'—acceptance that the progressive order is stable and cannot be overthrown, only survived. The tone shifts from revolutionary to stoic.",
           "key_manifestations": [
             "Jordan Peterson's rise (The 'Normie' gateway to order/hierarchy concepts)",
@@ -571,7 +571,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "The Return of the King (Δv +0.5%). The failure of the Trump administration to change the bureaucracy validates the NRx 'Deep State' thesis over the Populist thesis. 'Personnel is Policy' becomes the new slogan. Dominic Cummings in the UK (Brexit delivery) is seen as an NRx-adjacent operator. The critique of 'Woke Capital' sharpens.",
           "key_manifestations": [
             "Dominic Cummings' blog (ODALO loop and governmental engineering)",
@@ -581,7 +581,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 10.5,
+          "salience_share": 10.5,
           "description": "Bio-Leninism and State Capacity (Δv +1.0%). COVID-19 splits the cluster again. Some see the Chinese response as 'High State Capacity' (envious of the authoritarian power), others see the Western response as 'Biomedical Tyranny.' The term 'Bio-Leninism' (Spandrell) gains traction to explain how the left coalesces low-status groups to seize power. The incompetence of Western institutions during the pandemic is the primary data point.",
           "key_manifestations": [
             "Balaji Srinivasan's COVID tweets (The 'faithful news' source)",
@@ -591,7 +591,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Mainstream Penetration (Δv +1.5%). Curtis Yarvin appears on Tucker Carlson. This is the crossing of the Rubicon. NRx ideas ('The Cathedral', 'Rings of Power') are broadcast to millions, stripped of their most esoteric edges. The 'Red Caesar' meme begins to circulate in GOP think tanks (Claremont Institute). The suppression of Jan 6th dissent radicalizes the 'Normie' Right into accepting NRx premises about the hostile regime.",
           "key_manifestations": [
             "Curtis Yarvin on Tucker Carlson Today",
@@ -601,7 +601,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "The Musk Catalyst (Δv +1.5%). Elon Musk's takeover of Twitter is viewed as a 'Hostile Takeover' of a Cathedral organ by a Sovereign. It validates the 'Great Man' theory. Musk's interaction with NRx accounts amplifies the signal. The 'Network State' by Balaji Srinivasan is published, offering the first concrete 'How-To' guide for the NRx political project (Cloud first, Land last).",
           "key_manifestations": [
             "The Network State by Balaji Srinivasan",
@@ -611,7 +611,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Techno-Optimist Reaction (Δv +0.5%). The rise of AI (LLMs) is interpreted through an NRx lens: 'Will the AI be Woke (Cathedral) or Based (Sovereign)?'. The 'e/acc' (Effective Accelerationism) movement emerges as a distinct sub-cluster, blending NRx disdain for safetyism with unbridled techno-capital. Marc Andreessen's 'Techno-Optimist Manifesto' contains explicitly NRx/Futurist genealogy.",
           "key_manifestations": [
             "The Techno-Optimist Manifesto by Marc Andreessen",
@@ -621,7 +621,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 14.8,
+          "salience_share": 14.8,
           "description": "Regime Awareness (Δv +0.8%). The 'Vibe Shift' is complete in the tech sector. San Francisco is abandoned or reconquered ('files moved to Austin/Miami'). The NRx critique of 'anarcho-tyranny' (state punishes the innocent, permits the criminal) becomes the standard explanation for urban decay. JD Vance's nomination represents the first 'Post-Liberal' figure within striking distance of the executive, heavily influenced by this cluster's orbit (Thiel/Yarvin).",
           "key_manifestations": [
             "Civil War (Film - The breakdown of the US visualized)",
@@ -631,7 +631,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 15.5,
+          "salience_share": 15.5,
           "description": "Institutionalization/Statecraft (Δv +0.7%). NRx transitions from 'critique' to 'blueprint.' The focus is on 'Schedule F' and the replacement of the Civil Service. The 'Deep State' is no longer a conspiracy theory but a bureaucratic target for dismantling. The 'Red Caesar' is no longer a meme but a policy goal. The variance is high because the intellectual energy of the Right is almost entirely centered here, having abandoned fusionist libertarianism.",
           "key_manifestations": [
             "Project 2025 (The operationalization of the critique)",
@@ -647,7 +647,7 @@ export const rightWingCultureData = {
       "description": "This cluster is the sociological engine of the modern Right. Based on James Burnham's 'The Managerial Revolution,' it argues that the true ruling class is not the capitalists (bourgeoisie) nor the workers (proletariat), but the 'Managerial Elite'—bureaucrats, HR administrators, experts, and media figures who control the flow of information and logistics. This cluster explains the 'Woke Capital' phenomenon: corporations go woke not out of belief, but because their managerial layer shares the same cultural habitus as the state bureaucracy. It replaces 'Marxist Class War' with 'Managerial Class War.'",
       "trajectory": {
         "1995": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Niche Variance (Δv +0.5%). The cluster is kept alive primarily by Samuel Francis. Following his firing from the Washington Times for 'racially charged' writings, he fully articulates the 'Middle American Radical' (MARs) thesis. He argues the GOP establishment has betrayed its base because the GOP leadership is part of the Managerial Class. It is a voice in the wilderness during the Gingrich ascendancy.",
           "key_manifestations": [
             "Leviathan and Its Enemies by Samuel Francis (Manuscript phase)",
@@ -657,7 +657,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Buchananite Alignment (Δv +0.5%). The cluster provides the intellectual ammunition for the Buchanan campaign. The critique of NAFTA is framed not just as economic, but as the Managerial Class selling out the nation's sovereignty for global administrative power. The 'Davos Man' archetype begins to be sketched out.",
           "key_manifestations": [
             "Independence Day (Film - Global unity managed by the US military/state)",
@@ -667,7 +667,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Decline (Δv -1.0%). The booming economy masks the managerial extraction. The public is happy with the managers because 401ks are up. The critique of 'bureaucracy' is limited to standard GOP 'waste and fraud' talking points, rather than a structural class analysis. The cluster hibernates.",
           "key_manifestations": [
             "Titanic (Film - Class distinctions highlighted, but romanticized)",
@@ -677,7 +677,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Stasis (Δv -0.5%). The impeachment trial is viewed by this cluster as a farce where two wings of the managerial elite squabble over technicalities. The 'Moral Majority' dominates the right, focusing on individual sin rather than class dynamics. Francis critiques the 'stupid party' for failing to understand power.",
           "key_manifestations": [
             "The Truman Show (The managed reality metaphor)",
@@ -687,7 +687,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Low ebb (Δv -0.5%). The tech boom apotheosizes the Manager. The 'Bobos' (Bohemian Bourgeoisie) are identified by David Brooks, which is a 'safe' version of this cluster's analysis—identifying the new elite without the revolutionary malice. The Managerial Class feels invincible.",
           "key_manifestations": [
             "Bobos in Paradise by David Brooks (The sanitised description of the new elite)",
@@ -697,7 +697,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 3.2,
+          "salience_share": 3.2,
           "description": "Slight uptick (Δv +0.2%). The election deadlock highlights the power of the 'Judicial' branch of the managerial class. The fact that judges determine the outcome rather than voters validates the thesis that sovereignty has moved from the people to the experts.",
           "key_manifestations": [
             "Bush v. Gore Supreme Court Decision",
@@ -707,7 +707,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Surge (Δv +2.3%). 9/11 creates the Department of Homeland Security—the ultimate expansion of the Managerial State. While the Neocons support this, the Paleocons (this cluster) recognize it as a massive power grab by the security bureaucracy. The 'TSA' becomes the physical embodiment of the Managerial aesthetic: intrusive, incompetent, and mandatory.",
           "key_manifestations": [
             "Creation of the TSA",
@@ -717,7 +717,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Consolidation (Δv -0.5%). The war effort requires managerial competence, so criticism is muted. However, the 'blob' begins to form. The integration of media and state narratives regarding WMDs is a prime example of Managerial coordination (The Cathedral in action before the term existed).",
           "key_manifestations": [
             "The WMD Intelligence Reports (Manufactured consensus)",
@@ -727,7 +727,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Slow decline (Δv -0.5%). The focus is on the kinetic war. The domestic class analysis is secondary. However, the 'flyover country' vs 'coastal elite' divide begins to sharpen culturally, even if politically they are aligned under Bush.",
           "key_manifestations": [
             "Arrested Development (The incompetence of the wealthy)",
@@ -737,7 +737,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Resurgence (Δv +0.5%). The 'Values Voter' narrative is a misinterpretation of class conflict. Thomas Frank's 'What's the Matter with Kansas?' identifies the phenomenon (working class voting right) but misdiagnoses the cause (false consciousness). This cluster argues they vote right *because* they hate the managers (teachers, social workers, bureaucrats) who despise them.",
           "key_manifestations": [
             "What's the Matter with Kansas? by Thomas Frank (The rival analysis)",
@@ -747,7 +747,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Validation (Δv +1.5%). Katrina. The failure of the Federal, State, and Local management structures is total. It proves that the Managerial Class, despite its high cost and power, cannot actually *manage* a crisis. This delegitimizes the 'Expert' class significantly.",
           "key_manifestations": [
             "Hurricane Katrina FEMA response",
@@ -757,7 +757,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Steady State (Δv +0.5%). The immigration battle. The Chamber of Commerce (Managerial Right) vs. The Base (Populist Right). The class lines are drawn. The Managers want cheap labor; the People want a border. The failure of the Bush administration to align with its voters reveals the class rift.",
           "key_manifestations": [
             "Lou Dobbs Tonight (The daily two minutes hate against the managers of globalization)",
@@ -767,7 +767,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Pre-Crash Tension (Δv +0.5%). The subprime bubble is the ultimate managerial construction—complex financial instruments created by experts that no one understands. The unease in the culture is palpable. The 'consultant' becomes a figure of mockery and suspicion.",
           "key_manifestations": [
             "Michael Clayton (The fixer/manager of dirty truth)",
@@ -777,7 +777,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Great Delegitimization (Δv +4.5%). The experts failed. The Managers destroyed the economy. The bailout is the Managerial Class saving itself at the expense of the citizenry. This is the pivotal moment. The Tea Party is born not just as a tax revolt, but as a revolt against the 'Loser' class managing the decline.",
           "key_manifestations": [
             "TARP Bailouts",
@@ -787,7 +787,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "Class War (Δv +1.5%). The ACA (Obamacare) debate is framed by this cluster not as 'socialism' (a misnomer) but as 'bureaucratization.' The 'Death Panel' meme is the fear of the Manager having power over life and death. The Tea Party represents the 'Productive Class' vs the 'Transfer Class.'",
           "key_manifestations": [
             "Obamacare Town Halls",
@@ -797,7 +797,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Entrenchment (Δv +0.5%). The GOP victory brings 'Constitutionalists' in, but they soon find that the Permanent Bureaucracy (Administrative State) holds the real power. The frustration shifts from 'winning elections' to 'dismantling agencies.' Angelo Codevilla's 'America's Ruling Class' essay defines the era.",
           "key_manifestations": [
             "America's Ruling Class — And the Perils of Revolution by Angelo Codevilla (The seminal text of this cluster)",
@@ -807,7 +807,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "Occupy overlap (Δv -0.5%). Interestingly, Occupy Wall Street identifies the same enemy (The 1%), but through a Marxist lens. The Right-wing critique momentarily pauses to observe, realizing there is a shared enemy, but the cultural gap (Woke vs. Trad) prevents alliance. The 'crony capitalism' critique unifies the populist wings.",
           "key_manifestations": [
             "Occupy Wall Street",
@@ -817,7 +817,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "The Romney Failure (Δv -0.5%). Romney *is* the Managerial Class par excellence (Bain Capital). His failure to connect proves that the Right cannot be led by a Manager. The base rejects the 'competent administrator' archetype. Charles Murray's 'Coming Apart' provides the sociological data: the elites have seceded from the culture of the masses.",
           "key_manifestations": [
             "Coming Apart by Charles Murray",
@@ -827,7 +827,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "Woke Capital Awakening (Δv +1.5%). The Trayvon Martin response by corporations signals a shift. The Managerial Class adopts 'Social Justice' as its legitimizing ideology. This confirms the cluster's theory: the Managers align with the underclass (via welfare/identity) to squeeze the middle class. The 'HR Department' becomes the commissariat.",
           "key_manifestations": [
             "Corporate responses to BLM precursors",
@@ -837,7 +837,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "The Cathedral Revealed (Δv +1.5%). GamerGate exposes the coordination between media, tech, and academia. It is a 'glitch' that reveals the hidden wiring of the Managerial consensus. The term 'The Cathedral' (borrowed from NRx) becomes shorthand for this decentralized but coordinated class interest.",
           "key_manifestations": [
             "GamerGate 'Gamers are Dead' articles (Coordination evidence)",
@@ -847,7 +847,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 18.5,
+          "salience_share": 18.5,
           "description": "The Class Traitor (Δv +2.5%). Trump acts as a class traitor. He is a billionaire but speaks the language of the working class (construction worker aesthetic). He openly mocks the 'Experts' and the 'Donors.' He validates the 'forgotten man' against the 'stupid people' in Washington. The Managerial Class panics, proving their fragility.",
           "key_manifestations": [
             "Trump's mockery of Jeb Bush (The low-energy manager)",
@@ -857,7 +857,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 22.0,
+          "salience_share": 22.0,
           "description": "The Revolt (Δv +3.5%). The election is framed entirely as ' The People vs. The Swamp.' The 'Swamp' is the Managerial Class. Brexit is the same phenomenon. The 'Expert' class loses its mandate of heaven. The variance is high because this is the primary explanation for the political realignment.",
           "key_manifestations": [
             "Drain the Swamp (Slogan)",
@@ -867,7 +867,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 24.0,
+          "salience_share": 24.0,
           "description": "The Deep State Strike Back (Δv +2.0%). The leaks, the investigations, the resistance from within the agencies. This confirms everything the cluster predicted: The elected President is not in charge; the permanent bureaucracy is. The 'Deep State' moves from conspiracy theory to nightly news terminology.",
           "key_manifestations": [
             "The Russia Investigation (Mueller as the Managerial Saint)",
@@ -877,7 +877,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 23.0,
+          "salience_share": 23.0,
           "description": "Standoff (Δv -1.0%). The administration is bogged down. The Managers learn to slow-walk orders. The 'Adults in the Room' op-ed by Anonymous is the perfect artifact of Managerial arrogance—claiming the right to rule over the elected official for the 'greater good.'",
           "key_manifestations": [
             "NYT Op-Ed 'I Am Part of the Resistance Inside the Trump Administration'",
@@ -887,7 +887,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 23.5,
+          "salience_share": 23.5,
           "description": "Woke Capital Entrenchment (Δv +0.5%). Gillette's 'Toxic Masculinity' ad. Corporations move from passive support of progressivism to active evangelism. The 'ESG' (Environmental, Social, Governance) score is identified as the mechanism of control—a managerial credit system to enforce ideological compliance.",
           "key_manifestations": [
             "Gillette Ad controversy",
@@ -897,7 +897,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 26.0,
+          "salience_share": 26.0,
           "description": "Biomedical Security State (Δv +2.5%). COVID-19 is the ultimate Managerial event. 'Trust the Science' means 'Obey the Manager.' The transfer of wealth from small businesses (shut down) to Amazon/Walmart (allowed open) is viewed as a deliberate class consolidation. The 'Karen' meme explodes—the archetype of the petty female manager enforcing rules.",
           "key_manifestations": [
             "Lockdown mandates",
@@ -907,7 +907,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 25.0,
+          "salience_share": 25.0,
           "description": "The Purge (Δv -1.0%). The post-Jan 6th crackdown is a joint operation of State and Corporate power (De-banking, De-platforming). It demonstrates the seamless fusion of public and private management. The cluster argues that 'Private Company' is a distinction without a difference in a Managerial regime.",
           "key_manifestations": [
             "Twitter bans",
@@ -917,7 +917,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 24.5,
+          "salience_share": 24.5,
           "description": "Twitter Files (Δv -0.5%). Elon's release of the internal slack logs of Twitter provides the 'smoking gun' evidence of the Managerial mindset: low-level employees making decisions on speech based on personal bias and government pressure. It de-mystifies the 'Trust and Safety' team.",
           "key_manifestations": [
             "The Twitter Files",
@@ -927,7 +927,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 25.5,
+          "salience_share": 25.5,
           "description": "DEI Crash (Δv +1.0%). The Affirmative Action ruling and the subsequent attack on DEI departments signal a counter-offensive. The 'Managerial Bloat' in tech is trimmed (The 'Year of Efficiency'). The 'Fake Job' meme (TikToks of product managers doing nothing) delegitimizes the class economically.",
           "key_manifestations": [
             "Supreme Court strikes down Affirmative Action",
@@ -937,7 +937,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 27.0,
+          "salience_share": 27.0,
           "description": "The Blob (Δv +1.5%). The 'Deep State' is rebranded as 'The Blob' (foreign policy) or 'The Regime.' The critique becomes sophisticated. Mike Benz's viral explanations of the 'Censorship Industrial Complex' map the exact NGOs and agencies that comprise the Managerial rule. It is now the dominant worldview of the Online Right.",
           "key_manifestations": [
             "Mike Benz interviews on Tucker Carlson",
@@ -947,7 +947,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 28.5,
+          "salience_share": 28.5,
           "description": "War on the Bureaucracy (Δv +1.5%). The central policy plank of the new administration is the dismantling of the Managerial Class's power base (The Universities and the Agencies). The concept of 'accreditation' is attacked. The goal is to break the cartel of expertise. The class war is now explicit and legislative.",
           "key_manifestations": [
             "The 'Schedule F' Executive Order implementation",
@@ -963,7 +963,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the weaponization of humor, irony, shock, and digital aesthetics to dismantle the 'sacred cows' of the Liberal consensus. It posits that the Left lost the ability to be funny (due to political correctness/safetyism) and the Right became the new counter-culture. Starting with 1990s 'Shock Jock' radio and 'South Park Conservatism,' it evolved into the chaotic nihilism of 4chan, the strategic trolling of the Alt-Right, and finally the sophisticated 'Post-Ironic' propaganda of the modern dissident sphere. It operates on the principle that 'Politics is downstream from Culture,' and 'Culture is downstream from Shitposting.'",
       "trajectory": {
         "1995": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Shock Era (Δv +0.5%). The pre-internet precursor. The catalyst is the explosion of Talk Radio and 'Shock Jocks' who violate FCC norms and polite society standards. While not explicitly 'memetic' in the digital sense, the structural dynamic—offending the sensibilities of the liberal elite for engagement—is established. Rush Limbaugh is the 'proto-troll,' but Howard Stern (though not right-wing) validates the market for transgression.",
           "key_manifestations": [
             "Rush Limbaugh's 'Caller Abortions' bits (The original shock radio)",
@@ -973,7 +973,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 3.2,
+          "salience_share": 3.2,
           "description": "Stasis (Δv +0.2%). The internet is in its infancy (Usenet). The cultural transgression is dominated by the 'grunge' hangover, which is cynical but not political. However, the 'Drudge Report' emerges as a digital guerrilla force, breaking stories the gatekeepers suppress, establishing the 'Citizen Journalist' as a threat to the Cathedral.",
           "key_manifestations": [
             "The Drudge Report breaks the Bob Dole affair rumors",
@@ -983,7 +983,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "The South Park Shift (Δv +1.3%). The premiere of *South Park* is a massive catalyst. It introduces 'South Park Republicanism'—a libertine, anti-authoritarian worldview that mocks liberals for their preachy moralism and conservatives for their prudishness. For a generation of young males, this becomes the default political setting: 'Caring is uncool.'",
           "key_manifestations": [
             "South Park premieres (The 'Spirit of Christmas' viral tape precursor)",
@@ -993,7 +993,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 4.8,
+          "salience_share": 4.8,
           "description": "Institutionalization of Mockery (Δv +0.3%). The Lewinsky scandal provides infinite fuel. The internet begins to act as a repository for jokes that Late Night TV won't touch. The concept of 'viral' media (email chains of dancing babies/political cartoons) begins to form. The Right finds that mockery is more effective than moralizing.",
           "key_manifestations": [
             "The Drudge Report peak influence",
@@ -1003,7 +1003,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The Matrix/Fight Club Moment (Δv +0.7%). While not 'funny,' these films provide the 'Red Pill' and 'Project Mayhem' metaphors that will later be appropriated by the Memetic Right. The aesthetic of the 'digital underground' fighting a simulated reality is born. Simultaneously, 'Family Guy' launches, pushing the 'Manatee Joke' style of random, non-sequitur humor that mirrors internet chaos.",
           "key_manifestations": [
             "Fight Club (The handbook for male alienation)",
@@ -1013,7 +1013,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Recession of the Edge (Δv -0.5%). The election recount is a serious constitutional crisis, dampening the mood for nihilism. The culture momentarily gets serious. The 'Jackass' phenomenon launches, moving transgression from the political to the physical (self-harm for laughs), diverting energy from cultural critique.",
           "key_manifestations": [
             "Jackass premieres on MTV",
@@ -1023,7 +1023,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "The Collapse of Irony (Δv -2.5%). 9/11 kills irony. Vanity Fair declares 'The End of the Age of Irony.' Transgression is suddenly viewed as unpatriotic or dangerous. The culture demands sincerity and moral clarity. The 'South Park' attitude feels inadequate in the face of genuine tragedy. The cluster goes dormant.",
           "key_manifestations": [
             "The Concert for New York City (Sincerity)",
@@ -1033,7 +1033,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Niche Resurrection (Δv +0.5%). Something Awful (SA) forums and the early 'imageboards' begin to gather steam. While the mainstream is patriotic, the digital underground begins 'trolling'—initially just for 'lulz,' but structurally developing the swarm tactics later used in politics. The 'Habbo Hotel' raids and early 4chan seeds are planted.",
           "key_manifestations": [
             "Something Awful 'Fuck You and Die' era",
@@ -1043,7 +1043,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 3.8,
+          "salience_share": 3.8,
           "description": "4chan Emerges (Δv +0.8%). The founding of 4chan (based on Japanese 2channel). This is the singularity event for this cluster. It creates an 'Anonymity Architecture' where identity is erased, and only the 'meme' (the replicating idea) survives. This Darwinian environment selects for the most shocking, funny, or sticky content, favoring extreme right-wing or extreme absurdist views.",
           "key_manifestations": [
             "Founding of 4chan",
@@ -1053,7 +1053,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Team America (Δv +0.7%). Parker and Stone release 'Team America: World Police.' It is the perfect encapsulation of the cluster at this stage: it mocks the Neoconservatives for their stupidity, but it *viscerally* hates the Hollywood Liberals (The Film Actors Guild) more. It validates the idea that 'The Left are pussies, the Right are dicks.'",
           "key_manifestations": [
             "Team America: World Police",
@@ -1063,7 +1063,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Trolling Age (Δv +0.5%). YouTube launches. The barrier to entry for video memes collapses. The 'Numa Numa' guy and 'Star Wars Kid' define the era of 'humiliating the normie.' Culturally, the cartoon controversies (Danish Cartoons) prove that 'Free Speech' is now a Right-wing value, as the Left begins to advocate for sensitivity/censorship.",
           "key_manifestations": [
             "Jyllands-Posten Muhammad cartoons controversy",
@@ -1073,7 +1073,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Habbo Hotel / Raids (Δv +1.0%). The 'Pool's Closed' raid on Habbo Hotel. This is the first major organized 'Swarm' event by 4chan/Anonymous. While seemingly a prank, it demonstrates the power of 'weaponized autism'—the ability of thousands of anons to coordinate without a leader to disrupt a platform. The swastika formation by avatars signals the latent fascist aesthetic of the swarm.",
           "key_manifestations": [
             "Habbo Hotel 'Pool's Closed' Raid",
@@ -1083,7 +1083,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Project Chanology Precursors (Δv +0.5%). The 'Rickroll' becomes the universal prank. It teaches the internet to 'bait and switch.' The culture of 'The Lulz' becomes the supreme ethical imperative. If it's funny, it's justified. This nihilism begins to corrode the earnestness of the Obama mania building in the mainstream.",
           "key_manifestations": [
             "Rickrolling becomes viral",
@@ -1093,7 +1093,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Anonymous vs. Scientology (Δv +0.5%). Project Chanology. The swarm attacks a real-world institution. While Scientology is the target, the *method* is the news. The Guy Fawkes mask (V for Vendetta) becomes the symbol of the cluster. Simultaneously, the Obama 'Hope' poster is the first political meme to be infinitely remixed (The Jokerized version).",
           "key_manifestations": [
             "Project Chanology (Anonymous vs. Scientology)",
@@ -1103,7 +1103,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Wojak and the Feels (Δv +0.5%). The 'Wojak' (Feels Guy) meme emerges on German imageboards and migrates to 4chan. It introduces the element of 'depression/alienation' to the chaos. The 'NEET' (Not in Education, Employment, or Training) identity begins to form a class consciousness. They are the 'failed' men who will become the foot soldiers of the meme war.",
           "key_manifestations": [
             "Introduction of Wojak/Feels Guy",
@@ -1113,7 +1113,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Rage Comic Era (Δv +0.5%). Rage Comics (Trollface, FFFUUU) mainstream the 4chan culture. 'Trollface' becomes the icon of the age. The premise is 'Problem, Officer?'—the delight in causing frustration. This desensitizes the internet to antisocial behavior. The 'Forever Alone' face cements the incel identity before the term is popularized.",
           "key_manifestations": [
             "Peak Rage Comics (Reddit/9GAG mainstreaming)",
@@ -1123,7 +1123,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "Aesthetics and Zyzz (Δv +0.5%). The death of Aziz 'Zyzz' Shavershian. He becomes a saint of the 'Bodybuilding Right.' He promotes 'Aesthetics' and 'We're all gonna make it' (WAGMI). This injects a Vitalist/Nietzschean element into the trolling culture: it's not enough to be a loser online; you must become a 'Sick Cunt' (Greek God). Vaporwave also emerges as a critique of capitalism through ironic nostalgia.",
           "key_manifestations": [
             "Death of Zyzz (Birth of the legacy)",
@@ -1133,7 +1133,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "The Shift to Politics (Δv +0.5%). The Ron Paul Revolution's 'It's Happening' gif. The cross-pollination between /pol/ (Politically Incorrect board on 4chan) and /b/ (Random). /pol/ begins to radicalize the trolls. The 'Zimmerman' trial is a key moment where the trolls side with the shooter against the media narrative, discovering that 'Racism' is the ultimate taboo to break for Lulz.",
           "key_manifestations": [
             "Trayvon Martin/Zimmerman memes on /pol/",
@@ -1143,7 +1143,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "The Happening (Δv +0.5%). The 'Moon Man' memes (Mac Tonight repurposed for hate speech) and the rise of 'Vaporwave Fascism' (Fashwave). The aestheticization of the far-right begins. They stop looking like skinheads and start looking like 80s retro-futurists. The irony layer is so thick that no one knows what is a joke and what is sincere.",
           "key_manifestations": [
             "Moon Man memes on YTMND/YouTube",
@@ -1153,7 +1153,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "GamerGate: The Crystallization (Δv +2.5%). The catalyst is the 'Zoe Post' and the subsequent 'Gamers are Dead' articles. This is the declaration of war. The gamers realize the journalists hate them. They use the swarm tactics learned in 2006 (Habbo) to attack advertisers (Intel). It is the first time the 'Woke' institutional power loses a battle. The Right realizes: 'We have an army.'",
           "key_manifestations": [
             "#GamerGate hashtag explosion",
@@ -1163,7 +1163,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Great Meme War (Δv +3.0%). Trump announces. The Chans declare him their avatar. 'Can't Stump the Trump' video series remixing debates with airhorns and dubstep. Pepe the Frog becomes the Trump surrogate. The 'NPC' meme is drafted. The energy is manic and euphoric. The 'Mainstream Media' cannot fact-check a meme.",
           "key_manifestations": [
             "'Can't Stump the Trump' YouTube series",
@@ -1173,7 +1173,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Meme Magic / Kek (Δv +3.0%). Peak Variance. The concept of 'Meme Magic' (Chaos Magick/hypersigils) becomes semi-serious lore. The discovery of the Egyptian god 'Kek' (Frog-headed god of chaos) is viewed as a divine signal. The 'Deplorables' embrace the label. The election night is the V-Day of the cluster. Reality itself bends to the shitpost.",
           "key_manifestations": [
             "Trump tweets a Pepe image",
@@ -1183,7 +1183,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Adpocalypse (Δv -4.0%). The crackdown. YouTube demonetization ('Adpocalypse') targets the 'Skeptic Community' and the Trolls. 'It's Okay to Be White' poster campaign is a tactical success (proving media bias) but the Charlottesville disaster makes the 'edgy' humor liable for murder. The fun stops. The normies leave, leaving only the hardened ideologues.",
           "key_manifestations": [
             "'It's Okay to Be White' poster campaign",
@@ -1193,7 +1193,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "NPC Meme and De-platforming (Δv -2.0%). The 'NPC' (Non-Player Character) meme is the final great offensive. It dehumanizes the opposition as scripted code. Twitter bans thousands of NPC accounts instantly, proving the meme true (the system reacts to code). However, the de-platforming of Alex Jones signals the end of the open internet era.",
           "key_manifestations": [
             "The NPC Meme (Grey face)",
@@ -1203,7 +1203,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "Clown World (Δv -0.5%). The 'Honk Honk' / 'Clown World' meme emerges. It represents a shift from 'We are winning' to 'The world is insane and we are just watching it burn.' It is a nihilistic acceptance of defeat and absurdity. The Joker movie becomes the serious artistic interpretation of this mood.",
           "key_manifestations": [
             "Clown World (Honk Honk) memes",
@@ -1213,7 +1213,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Doomer and Trad (Δv +0.5%). The 'Wojak' universe expands. The 'Doomer' (depressed youth) and the 'Trad Girl' / 'Nordic Gamer' (Yes Chad) represent the new dialectic: Despair vs. Vitalism. The meme war moves to TikTok (Zoomer Right), which is faster, more visual, and harder to censor. The 'Return to Tradition' aesthetic becomes a meme itself (Little Dark Age edits).",
           "key_manifestations": [
             "Little Dark Age (MGMT) aesthetic edits",
@@ -1223,7 +1223,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Post-Irony (Δv -2.0%). After Jan 6th, the FBI hunts the meme-makers. The humor becomes incredibly abstract and 'Post-Ironic' to evade detection. 'Schizo-posting' becomes the style—layering so many meanings that intent is impossible to decipher. The 'Sigma Male' meme (Patrick Bateman) mocks the hustle culture while simultaneously embracing its isolation.",
           "key_manifestations": [
             "Sigma Male Grindset memes",
@@ -1233,7 +1233,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "Twitter's Liberation (Δv +1.5%). Musk buys Twitter. He is the 'Meme Lord' CEO. He unbans the accounts (Babylon Bee, Peterson, Trump). The 'Catturd' account becomes a major political pundit. The 'Current Thing' NPC update mocks the Ukraine/Trans/Vax flag updates in bios. The memes flow freely again.",
           "key_manifestations": [
             "Elon Musk entering HQ with a sink ('Let that sink in')",
@@ -1243,7 +1243,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "AI Slop and Parallel Reality (Δv +0.5%). AI image generators (Midjourney) allow for the creation of hyper-specific propaganda. Balenciaga Pope, Trump arrest photos. The 'Egregore' concept returns. The Right dominates short-form video (TikTok/Reels) with 'Corecore' edits—emotional montages of societal decay.",
           "key_manifestations": [
             "Balenciaga Harry Potter/Pope AI videos",
@@ -1253,7 +1253,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "The Vibe Shift (Δv +1.5%). The 'Hawk Tuah' or similar viral moments are less important than the general 'Vibe Shift.' It becomes cool to be conservative again in coastal circles (Dimes Square). The 'Woke' are seen as humorless scolds. The 'Bro' podcast circuit (Nelk, Rogan, Theo Von) is the new late-night TV, normalizing Trump through casual banter.",
           "key_manifestations": [
             "Trump on Theo Von / Nelk Boys podcasts",
@@ -1263,7 +1263,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "State-Sanctioned Trolling (Δv +1.0%). The new administration adopts the aesthetics of the meme war. Press Briefings are clipped for TikTok instantly. The 'Department of Government Efficiency' (DOGE) is named after a meme. The distinction between 'Official Communication' and 'Shitposting' dissolves completely. The troll is now the King.",
           "key_manifestations": [
             "Creation of the 'DOGE' commission",
@@ -1279,7 +1279,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the dominant 'operating system' of the American Right from the late Cold War until the rise of Trump. Intellectually rooted in the defection of anti-Stalinist liberals to the Right, it combines Wilsonian idealism (the moral duty to spread democracy) with hawkish military interventionism. It posits that American values are universal human values and that American power is the indispensable guarantor of global order. Unlike the 'Realist' or 'Paleoconservative' schools, it rejects the distinction between national interest and global morality. For two decades, this cluster successfully purged all rivals (isolationists, libertarians, realists) from the institutional GOP, defining 'Conservatism' as support for the Global War on Terror and the spreading of market democracy.",
       "trajectory": {
         "1995": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Organizational Germination (Δv +1.0%). While the GOP is focused on the 'Contract with America' (domestic), the Neoconservative intellects are deeply dissatisfied with the post-Cold War 'holiday.' They view Clinton's foreign policy as feckless and the isolationist Right (Buchanan) as dangerous. William Kristol and Robert Kagan found *The Weekly Standard*, creating the central nervous system for the next decade of American foreign policy. They begin articulating 'National Greatness Conservatism'—a call to reject small-government libertarianism in favor of imperial duty.",
           "key_manifestations": [
             "Launch of The Weekly Standard (The command center)",
@@ -1289,7 +1289,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "Defining the Enemy (Δv +0.5%). The cluster focuses its energy on crushing the Buchananite insurgency within the party. They successfully frame 'America First' as synonymous with bigotry and backwardness. By backing Dole (despite his lack of ideological zeal), they maintain the establishment's grip. The 'Benevolent Hegemony' thesis begins to circulate in think tanks (AEI), arguing that the US must prevent the rise of any peer competitor.",
           "key_manifestations": [
             "The Weekly Standard's anti-Buchanan cover stories",
@@ -1299,7 +1299,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "The PNAC Moment (Δv +1.0%). The Project for the New American Century (PNAC) is founded. This is the specific institutional vehicle that will staff the future Bush administration (Cheney, Rumsfeld, Wolfowitz). They publish their Statement of Principles, explicitly calling for regime change in rogue states and a massive increase in defense spending. It is a government-in-waiting.",
           "key_manifestations": [
             "Founding of the Project for the New American Century (PNAC)",
@@ -1309,7 +1309,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "Legislative Victory (Δv +1.0%). The Iraq Liberation Act passes. The Neoconservatives successfully lobby Congress to make 'regime change' in Iraq the official policy of the United States. This is a massive coup for the cluster, proving their ability to drive the agenda even under a Democratic president. They utilize the Monica Lewinsky scandal to argue that Clinton lacks the 'moral authority' to lead the empire.",
           "key_manifestations": [
             "Passage of the Iraq Liberation Act",
@@ -1319,7 +1319,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Kosovo Test (Δv +0.5%). The intervention in Kosovo divides the Right, but the Neoconservatives win the argument against the Realists/Isolationists. They frame the intervention as a moral imperative to stop genocide (the 'Human Rights' bridge to the Left). This solidifies the 'Liberal Hawk' alliance that will later support the Iraq War. McCain's 2000 primary run begins to coalesce the 'National Greatness' energy.",
           "key_manifestations": [
             "NATO bombing of Yugoslavia",
@@ -1329,7 +1329,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Tactical Retreat (Δv -1.0%). George W. Bush campaigns on a 'humble foreign policy' and against 'nation-building,' a direct rhetorical rejection of the Neoconservative thesis. The cluster is momentarily sidelined by the Realists (Colin Powell, Condoleezza Rice). However, the key personnel (Cheney) are embedded in the transition team, ensuring that while the rhetoric is Realist, the staffing is Neoconservative.",
           "key_manifestations": [
             "Bush's 'Humble Foreign Policy' debate statement",
@@ -1339,7 +1339,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 25.0,
+          "salience_share": 25.0,
           "description": "The Catalyst (Δv +11.0%). September 11th is the single greatest variance injection event in the cluster's history. The 'Humble Foreign Policy' is incinerated instantly. The PNAC playbook (regime change, preemption, unilateralism) is pulled off the shelf and adopted as the 'Bush Doctrine.' The Neoconservatives provide the *moral framework* (Good vs. Evil) that the traumatized public craves. They achieve total hegemony over the Right's intellectual space.",
           "key_manifestations": [
             "Bush's Address to Congress ('Either you are with us, or you are with the terrorists')",
@@ -1349,7 +1349,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 35.0,
+          "salience_share": 35.0,
           "description": "The Axis of Evil (Δv +10.0%). The cluster expands the war aim from 'punishing Al-Qaeda' to 'remaking the Middle East.' The 'Axis of Evil' speech marks the triumph of the Neoconservative worldview: the conflation of terrorists with state sponsors, and the imperative to democratize them. Dissent is effectively silenced; to question the cluster is to question America's survival. The 'State of Exception' (Agamben) is normalized.",
           "key_manifestations": [
             "Bush's 'Axis of Evil' State of the Union address",
@@ -1359,7 +1359,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 40.0,
+          "salience_share": 40.0,
           "description": "Peak Hegemony (Δv +5.0%). The Invasion of Iraq. This is the apotheosis of the cluster. The swift fall of Baghdad seems to vindicate their theories: military force *can* change history, and people *do* yearn for democracy. The 'Mission Accomplished' moment is the visual peak. The cultural space is saturated with 'Support the Troops' yellow ribbons, country music jingoism (Toby Keith), and a disdain for 'Old Europe' (France).",
           "key_manifestations": [
             "Invasion of Iraq",
@@ -1369,7 +1369,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 36.0,
+          "salience_share": 36.0,
           "description": "The Reality Check Begins (Δv -4.0%). The insurgency begins. No WMDs are found. The premise of the war (threat + liberation) begins to crack. However, the cluster successfully frames the election as a choice between 'Resolve' (Bush) and 'Weakness' (Kerry). They manage to hold the coalition together through fear and the cultural wedge of 'moral values,' though the intellectual foundation is shaking.",
           "key_manifestations": [
             "Re-election of George W. Bush",
@@ -1379,7 +1379,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 30.0,
+          "salience_share": 30.0,
           "description": "The Freedom Agenda (Δv -6.0%). Bush's Second Inaugural is the purest distillation of Neoconservative philosophy ('Ending tyranny in our world'), but it lands in a changed reality. The sectarian violence in Iraq contradicts the 'universal yearning for freedom' thesis. The cluster begins to lose the Realists and the Libertarians. The 'Purple Revolution' in Iraq fails to materialize into a stable democracy.",
           "key_manifestations": [
             "Bush's Second Inaugural Address",
@@ -1389,7 +1389,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 22.0,
+          "salience_share": 22.0,
           "description": "The Thumping (Δv -8.0%). The sectarian civil war in Iraq destroys the cluster's credibility with the public. The GOP loses Congress. Rumsfeld is fired. The 'Neoconservative' label becomes a pejorative, even among Republicans. The cluster retreats to the 'Surge' argument—claiming execution was bad, but the strategy was right. The Baker-Hamilton Study Group (Realists) attempts to retake control.",
           "key_manifestations": [
             "Rumsfeld's resignation",
@@ -1399,7 +1399,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "The Surge Defense (Δv -4.0%). The 'Surge' in Iraq arrests the immediate military collapse, granting the cluster a temporary reprieve. They argue 'The Surge Worked,' allowing them to salvage some intellectual prestige. However, the cultural energy has moved elsewhere. The base is angry about immigration (Cluster 1), not interested in spreading democracy.",
           "key_manifestations": [
             "The Petraeus Report to Congress",
@@ -1409,7 +1409,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Last Stand (Δv -3.0%). John McCain is the avatar of this cluster. His defeat is the defeat of the Neoconservative brand. The Financial Crisis further discredits the establishment. The fact that the cluster has no answer for the economy (focusing only on Russia/Georgia/Iraq) highlights their irrelevance to the average voter's pain. Sarah Palin represents the populist mutation that will eventually eat them.",
           "key_manifestations": [
             "McCain's 'We are all Georgians now' statement",
@@ -1419,7 +1419,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Exile and Opposition (Δv -3.0%). Obama adopts some Neoconservative tools (drones, Afghanistan surge) but rejects the rhetoric. The Neoconservatives position themselves as the 'loyal opposition,' critiquing Obama's 'Apology Tour.' They found the Foreign Policy Initiative (PNAC 2.0) to keep the flame alive. However, the Tea Party (the energy of the Right) cares about debt, not empire.",
           "key_manifestations": [
             "Founding of the Foreign Policy Initiative (FPI)",
@@ -1429,7 +1429,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Uneasy Alliance (Δv -1.0%). The Tea Party sweep brings in a new generation of Republicans. The Neoconservatives attempt to co-opt them by framing Obama's 'weakness' as the cause of global instability. They succeed in keeping the GOP hawkish on Iran and Israel, but the isolationist undercurrent is growing. The 'Constitution' rhetoric of the Tea Party is fundamentally at odds with the 'Executive Power' theory of the Neocons.",
           "key_manifestations": [
             "Green Zone (Film - explicit critique of the WMD lie)",
@@ -1439,7 +1439,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "The Arab Spring Confusion (Δv -1.0%). The Arab Spring should have been the Neoconservative dream (democracy rising), but it results in Islamist victories, confusing the narrative. The intervention in Libya (led by Hillary Clinton/humanitarian hawks) is supported by Neocons, proving the 'Uni-Party' foreign policy consensus. The base, however, asks 'Why are we helping Al-Qaeda in Libya?'",
           "key_manifestations": [
             "Intervention in Libya",
@@ -1449,7 +1449,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Romney's Defeat (Δv -0.5%). Romney runs on a Neoconservative platform regarding Russia and the Middle East ('Russia is our number one geopolitical foe'). His loss reinforces the idea that the 'Hawk' lane is an electoral dead end. The base is tired of war. The cluster begins to look like a zombie—powerful in DC think tanks, dead in the heartland.",
           "key_manifestations": [
             "Romney's foreign policy speech at VMI",
@@ -1459,7 +1459,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Syria Red Line (Δv -1.5%). When Obama hesitates to bomb Syria, the Neoconservatives are apoplectic, but the GOP base *opposes* the bombing. This is a critical rupture. The base listens to Rush Limbaugh and Drudge, who are turning against 'forever wars.' The Neoconservatives realize they have lost the ability to command the Republican herd.",
           "key_manifestations": [
             "The defeat of the Syria authorization vote in British Parliament (Global mood shift)",
@@ -1469,7 +1469,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Putin as Villain (Δv +1.0%). The invasion of Crimea gives the cluster a new lease on life. They pivot from the Middle East to 'Great Power Competition.' They can now argue that 'Weakness provokes aggression.' This resonates slightly more, but the populist wing is beginning to ask 'Why do we care about Ukraine?'",
           "key_manifestations": [
             "Russian annexation of Crimea",
@@ -1479,7 +1479,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Trump Shock (Δv -1.5%). Trump calls the Iraq War a 'Big Fat Mistake' on the debate stage. He blames George W. Bush for 9/11 (implied). The Neoconservatives are horrified. They expect the base to boo; instead, the base cheers. This is the death knell of their hegemony. They realize they are generals without an army.",
           "key_manifestations": [
             "Trump's SC Primary Debate performance (Blaming Bush)",
@@ -1489,7 +1489,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Exodus (Δv -2.5%). The 'Never Trump' movement is primarily a Neoconservative phenomenon. Key figures (Max Boot, Bill Kristol) publicly defect or declare they cannot vote for Trump. This creates a vacuum in the GOP that is filled by the Nationalists. The cluster is effectively purged from the party's soul.",
           "key_manifestations": [
             "National Review's 'Against Trump' Issue",
@@ -1499,7 +1499,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "The Resistance (Δv -0.5%). The Neoconservatives find themselves in a strange alignment with the Resistance Democrats. They cheer the Mueller investigation (Deep State/FBI). They attack Trump for his 'America First' isolationism. They are now a niche interest group—'The Bulwark' Right.",
           "key_manifestations": [
             "Founding of The Bulwark",
@@ -1509,7 +1509,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Bolton Mirage (Δv -0.5%). John Bolton becomes National Security Advisor. For a moment, it looks like a restoration. But Trump overrules him on Iran and North Korea. Trump wants photo-ops, not wars. The Neoconservatives realize they cannot control the 'Chaos King.'",
           "key_manifestations": [
             "John Bolton's appointment and subsequent firing",
@@ -1519,7 +1519,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Wandering in the Desert (Δv -0.5%). The cluster is fully alienated. They begin to merge with the Centrist Democrats (Biden wing). They argue for the 'Liberal International Order' rather than 'American Conservatism.' They have become a constituency of the Democratic Party's right flank.",
           "key_manifestations": [
             "The Lincoln Project formation (The grift/strategy phase)",
@@ -1529,7 +1529,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Lincoln Project (Δv -0.5%). The Neoconservatives go 'scorched earth' on the GOP. They create viral ads attacking Trump. While they claim to be 'saving conservatism,' they are actively electing Democrats. The base now views them not as misguided, but as traitors.",
           "key_manifestations": [
             "Lincoln Project Ads",
@@ -1539,7 +1539,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "The Afghanistan Humiliation (Δv -0.5%). The withdrawal from Kabul is a disaster, which the Neoconservatives predicted. They experience a brief 'I told you so' moment. However, the public (and Trump/Biden) agrees on leaving, just not the *manner* of leaving. The cluster argues for 'staying forever,' which has 0% variance in the electorate.",
           "key_manifestations": [
             "Fall of Kabul",
@@ -1549,7 +1549,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Ukraine Lifeline (Δv +3.5%). Putin invades Ukraine. Suddenly, the Neoconservative worldview (Authoritarian aggression must be checked by US power) is relevant again. The 'Slava Ukraini' flag replaces the 'Support the Troops' ribbon. The cluster finds a new host: the Center-Left and the McConnell-GOP. They are the intellectual architects of the aid packages. Variance spikes because the War is the central issue.",
           "key_manifestations": [
             "Ukraine Aid Packages",
@@ -1559,7 +1559,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The Israel-Hamas War (Δv -0.5%). The October 7th attacks reinvigorate the hawkish wing. The cluster argues for unconditional support of Israel and confrontation with Iran. However, the 'America First' wing of the GOP (Cluster 1) is skeptical of funding foreign wars, creating a stark split. The Neoconservatives are loud, but they have to beg the Populist Speaker for money.",
           "key_manifestations": [
             "October 7th aftermath discourse",
@@ -1569,7 +1569,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "The Nikki Haley Last Stand (Δv -1.0%). Nikki Haley's primary campaign is the final test of the Neoconservative brand in the GOP. She polls well with donors and Democrats, but loses the base 80-20. It proves definitively that the 'Reaganite' three-legged stool is broken. The cluster is now a fully owned subsidiary of the 'Uniparty' establishment.",
           "key_manifestations": [
             "Nikki Haley's Primary Campaign",
@@ -1579,7 +1579,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Shadow Establishment (Δv -0.5%). With Trump/Vance in power (the anti-Neocon ticket), the cluster is purged from the Executive Branch. They retreat to the think tanks (AEI, CSIS) and the Senate Minority. They function as the 'Deep State's' intellectual defenders, critiquing the 'chaos' of the populist administration. They are 'Right-Wing' only in name; functionally, they are the defenders of the 1945-2016 Liberal Order.",
           "key_manifestations": [
             "Formation of a new 'Center-Right' third party exploratory committee",
@@ -1595,7 +1595,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the return of biological determinism and essentialism to the Right-wing intellectual sphere. It is the direct rejection of the post-war 'Blank Slate' consensus (that culture and environment shape outcome). Instead, it posits that genetics, IQ, and biological sex are the primary drivers of social structure and inequality. Starting with 'The Bell Curve' controversy, it went underground into the 'Human Biodiversity' (HBD) blogsphere before resurfacing as a central tenet of the Alt-Right and later the 'Terf/Gender Critical' alliance. It is the 'Materialist' wing of the Right.",
       "trajectory": {
         "1995": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Bell Curve Aftershocks (Δv +1.5%). The publication of *The Bell Curve* (1994) is the defining event. The variance is high because the debate is mainstream; it is discussed in *The New Republic* and on national TV. The Right splits: Neoconservatives generally accept the 'meritocracy' argument but reject the racial implications, while the Paleoconservatives embrace the biological determinism as an explanation for the failure of Great Society programs.",
           "key_manifestations": [
             "The Bell Curve by Herrnstein and Murray (The sacred text of the cluster)",
@@ -1605,7 +1605,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Suppression (Δv -1.5%). The backlash is fierce. Mainstream publications purge writers who lean too heavily into biological realism. The cluster begins to migrate from public intellectuals to niche newsletters (Steve Sailer begins writing). The 'Dolly the Sheep' cloning news reinvigorates the debate about human nature, but the political Right focuses on 'Values' (religion), not 'Genes' (biology).",
           "key_manifestations": [
             "Steve Sailer's early columns (Drafting the 'HBD' framework)",
@@ -1615,7 +1615,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Gattaca Moment (Δv -1.0%). The film *Gattaca* is released, serving as the primary visual metaphor for this cluster for the next two decades. While intended as a critique of eugenics, the Right-wing futurists begin to view it as a 'documentary' or an inevitable future to be managed rather than avoided. The 'Blank Slate' view dominates the universities, pushing this cluster into the intellectual underground.",
           "key_manifestations": [
             "Gattaca (Film - The 'Valid' vs 'Invalid' hierarchy)",
@@ -1625,7 +1625,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Evolutionary Psychology Emerges (Δv -0.5%). The field of 'Evo-Psych' begins to gain traction as a 'polite' way to discuss biological essentialism. Books like *The Nurture Assumption* challenge the parenting paradigm. The Right begins to use Evo-Psych to defend traditional gender roles not as 'God's Law' but as 'Biological Imperative.'",
           "key_manifestations": [
             "The Nurture Assumption by Judith Rich Harris",
@@ -1635,7 +1635,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Matrix (Δv -0.5%). The focus shifts to digital/simulated reality, reducing interest in biological reality. However, the Columbine shooting triggers a debate about 'boys' and 'testosterone,' with the Right arguing that suppressing male biology leads to violence (a precursor to the 'War on Boys' narrative).",
           "key_manifestations": [
             "The Matrix (Humans as batteries - biological reductionism)",
@@ -1645,7 +1645,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 4.2,
+          "salience_share": 4.2,
           "description": "Genome Sequencing (Δv +0.2%). The completion of the Human Genome Project draft. Clinton claims it proves 'we are all equal,' but the HBD sphere argues the data will eventually prove the opposite. This sets up the 'Race and Genomics' battle of the 21st century. The cluster remains niche, as the Bush Right is focused on Evangelical Christianity.",
           "key_manifestations": [
             "Human Genome Project announcement",
@@ -1655,7 +1655,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "War on Terror Distraction (Δv -0.7%). The cultural variance shifts entirely to 'Civilizational' (Islam vs. West) rather than 'Biological' conflict. However, the 'Profiling' debate at airports reintroduces statistical discrimination (Bayesian inference) into the public discourse, which is a core methodology of the HBD sphere.",
           "key_manifestations": [
             "Airport Security Profiling debates",
@@ -1665,7 +1665,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 3.8,
+          "salience_share": 3.8,
           "description": "The Blank Slate (Δv +0.3%). Steven Pinker publishes *The Blank Slate*. While Pinker is a liberal, the book is a massive catalyst for this cluster because it scientifically demolishes the 'social constructionist' Left. The Right weaponizes Pinker's arguments to attack affirmative action and gender feminism. It legitimizes the 'Nature' side of the debate.",
           "key_manifestations": [
             "The Blank Slate by Steven Pinker",
@@ -1675,7 +1675,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Stasis (Δv +0.2%). The Iraq War dominates. However, the cluster continues to grow in the blogosphere (Gene Expression, GNXP). The 'HapMap' project begins, promising to map human genetic variation. The cluster waits for the data.",
           "key_manifestations": [
             "X2: X-Men United (The 'Mutant Cure' storyline - eugenic themes)",
@@ -1685,7 +1685,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "The God Gene (Δv +0.5%). The discussion moves to the genetics of behavior and belief. *The Incredibles* is released and becomes a massive touchstone for the 'Bio-Realist' Right: 'If everyone is special, no one is.' It is viewed as an Objectivist/Nietzschean critique of the leveling down of talent.",
           "key_manifestations": [
             "The Incredibles (Brad Bird's Randian aesthetics)",
@@ -1695,7 +1695,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Summers and Sex Differences (Δv +0.5%). Larry Summers is fired from Harvard for suggesting biological differences might explain the gender gap in math/science. This is a martyr moment for the cluster. It proves the 'Cathedral' will punish scientific truth. It radicalizes the 'rationalist' community against the academic establishment.",
           "key_manifestations": [
             "Larry Summers Harvard speech controversy",
@@ -1705,7 +1705,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Idiocracy (Δv +0.5%). Mike Judge releases *Idiocracy*. It is an explicitly dysgenic argument presented as comedy: smart people don't breed, dumb people do. It becomes the most cited film in this cluster, used to explain cultural decline. 'It's a documentary' becomes the standard meme.",
           "key_manifestations": [
             "Idiocracy (Film)",
@@ -1715,7 +1715,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Watson's Cancellation (Δv +0.5%). James Watson (DNA discoverer) is cancelled for comments on race and intelligence. This reinforces the 'Galileo' complex of the cluster. They view themselves as the holders of forbidden knowledge. The 'New Atheist' movement (Dawkins/Hitchens) inadvertently feeds this cluster by emphasizing evolution, which the Right then applies to race/gender.",
           "key_manifestations": [
             "James Watson's controversy and resignation",
@@ -1725,7 +1725,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Obamania vs. The Sailer Strategy (Δv +0.5%). While the country celebrates the first black president, Steve Sailer articulates 'The Sailer Strategy' (maximizing the white vote) based on demographic polling data. This introduces 'Identity Politics for White People' based on the assumption that other groups vote as biological blocs. It is the tactical application of HBD.",
           "key_manifestations": [
             "Steve Sailer's blog posts on the 2008 election",
@@ -1735,7 +1735,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "HBD Blogging Peak (Δv +0.5%). The 'HBD' blogosphere (Unz Review, Taki's Mag) coalesces. It provides the intellectual undergirding for the Tea Party's anxieties, though the Tea Party speaks in Constitutional terms. The '10,000 Year Explosion' is published, arguing that human evolution accelerated recently, destroying the 'we are all the same since the Pleistocene' argument.",
           "key_manifestations": [
             "The 10,000 Year Explosion by Cochran and Harpending",
@@ -1745,7 +1745,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Derbyshire Affair (Δv +0.5%). John Derbyshire writes 'The Talk: Nonblack Version,' leading to his firing from National Review. This marks the final purge of HBD writers from the 'Respectable Right.' They migrate to the Alt-Right, taking their variance with them. The separation of 'Establishment' (Blank Slate) and 'Dissident' (Bio-Realist) is complete.",
           "key_manifestations": [
             "John Derbyshire's 'The Talk' article",
@@ -1755,7 +1755,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Game of Thrones (Δv +0.5%). The premiere of *Game of Thrones* culturalizes the 'Blood' aspect of the cluster. 'The seed is strong.' It depicts a world where lineage, bastardy, and inborn nature determine fate, resonating with the reactionary worldview. The 'Manosphere' begins to discuss 'Hypergamy' as a biological imperative of women.",
           "key_manifestations": [
             "Game of Thrones Season 1",
@@ -1765,7 +1765,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "The Dark Enlightenment Fusion (Δv +0.5%). Nick Land and the NRx sphere integrate HBD. They argue that 'Democracy' fails because humans are not biologically equal (IQ differences). 'Bio-Leninism' begins to be discussed: the Left builds a coalition of the biologically unfit. The Trayvon Martin case is analyzed through 'crime statistics' and 'impulse control' lenses on these blogs.",
           "key_manifestations": [
             "Prometheus (The search for the biological creators)",
@@ -1775,7 +1775,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "A Troublesome Inheritance (Δv +1.0%). Nicholas Wade (former NYT science editor) prepares to publish *A Troublesome Inheritance* (2014), legitimizing the discussion of recent human evolution and race. The anticipation and leaks fuel the cluster. The '23andMe' popularity explodes, making genetics a consumer product and reinforcing ancestry over universalism.",
           "key_manifestations": [
             "23andMe FDA shutdown (interpreted as state suppressing self-knowledge)",
@@ -1785,7 +1785,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "The Alt-Right Coalescence (Δv +1.5%). The 'Alt-Right' brand emerges, and HBD is one of its three pillars (along with Nationalism and the Jewish Question). The 'Warrior Gene' (MAOA) memes circulate. The cluster moves from 'intellectual analysis' to 'slur-based memetics.' The 'Ferguson' riots are used as 'proof' of the cluster's theories on racial impulse control.",
           "key_manifestations": [
             "A Troublesome Inheritance by Nicholas Wade (Published)",
@@ -1795,7 +1795,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "The Immigration Catalyst (Δv +1.5%). The European Migrant Crisis. The visual of millions of young men entering Europe triggers a 'Bio-Political' panic. The phrase 'Demographics is Destiny' becomes the slogan. The fear of 'Replacement' moves from a fringe theory to a central anxiety. Trump's rhetoric ('Rapists', 'Bad Hombres') taps into this biological fear of the Other.",
           "key_manifestations": [
             "Camp of the Saints (French novel) sales spike",
@@ -1805,7 +1805,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Frog and the Gene (Δv +1.5%). The Alt-Right meme machine weaponizes HBD. 'Pepe' is often depicted with genetic/phenotypic signifiers. The concept of 'Physiognomy' (judging character by face) returns as a meme ('Check his phrenology'). The cluster variance peaks as it provides the 'scientific' justification for the populist revolt.",
           "key_manifestations": [
             "Alt-Right 'Race Realism' primers circulating on Twitter",
@@ -1815,7 +1815,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Charlottesville and Retreat (Δv -3.0%). The 'United the Right' rally features chants of 'Blood and Soil.' The explicit Nazi association makes HBD radioactive. The 'Intellectual Dark Web' (Peterson/Harris) tries to salvage the 'Science' part (IQ differences) while disavowing the 'White Nationalism' part. The cluster fractures into 'Scientific Racism' (purged) and 'Evolutionary Psychology' (tolerated).",
           "key_manifestations": [
             "Jordan Peterson's lectures on hierarchy (Lobsters - biological hierarchy)",
@@ -1825,7 +1825,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "The Gender Critical Pivot (Δv -1.5%). As 'Trans' issues rise, the 'Bio-Realist' Right finds an unlikely ally: Radical Feminists (TERFs). They bond over the definition of 'Woman' as a biological reality. The cluster shifts focus from 'Race' (too toxic) to 'Sex' (defensible). 'Trust the Science' is used ironically.",
           "key_manifestations": [
             "Jordan Peterson's '12 Rules for Life' (The biological necessity of order)",
@@ -1835,7 +1835,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Bronze Age Mindset (Δv -0.5%). *Bronze Age Mindset* (BAP) reframes the cluster. Instead of 'IQ and Stats' (Nerdy/Hoppean), it promotes 'Physique and Beauty' (Vitalist). It rejects the 'Bugman' (urban, soy-consuming, biologically weak). The cluster moves from 'The Library' to 'The Gym.'",
           "key_manifestations": [
             "Bronze Age Mindset by Bronze Age Pervert",
@@ -1845,7 +1845,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "The Virus and the Body (Δv +2.5%). COVID-19. The reality of biological death crushes social constructivism. However, the Right pivots to 'Natural Immunity' and 'Purity.' The refusal of the vaccine is framed as maintaining the 'Pure Blood' against the synthetic state intervention. 'Physiognomy check' becomes a standard way to mock public health officials (who are viewed as unhealthy/dysgenic).",
           "key_manifestations": [
             "Anti-Mask/Anti-Vax discourse (Bodily Autonomy from the Right)",
@@ -1855,7 +1855,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "T-Levels and Sperm Counts (Δv +0.5%). Tucker Carlson's 'The End of Men' documentary. The focus on falling testosterone levels and sperm counts becomes a central political crisis. The 'Seed Oil' disrespect begins—dietary purity as a proxy for biological vitality. The 'Raw Egg Nationalist' movement emerges.",
           "key_manifestations": [
             "Tucker Carlson's 'The End of Men' (Testicle tanning segment)",
@@ -1865,7 +1865,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "The Trans Backlash (Δv +1.0%). 'What is a Woman?' by Matt Walsh. The cluster goes all-in on biological essentialism against Gender Ideology. This unites the Evangelicals (God made them male and female) and the Nietzscheans (Biology is reality). The 'Groomer' narrative links biology to child protection.",
           "key_manifestations": [
             "What is a Woman? (Documentary)",
@@ -1875,7 +1875,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "Race Science Revival (Δv +0.5%). On 'X' (Twitter), the suppression of HBD charts is lifted. Interaction with 'The Bell Curve' data becomes normalized again. Richard Hanania's 'Enlightened Centrism' often relies on HBD premises. The 'DEI' hire debate is explicitly framed as 'Competence vs. Biology.'",
           "key_manifestations": [
             "Richard Hanania's transition from Alt-Right to Centrist (keeping the HBD core)",
@@ -1885,7 +1885,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Natalism as Policy (Δv +0.5%). The falling birthrate becomes the primary obsession. The 'pronatalist' movement (Collins couple, Musk) argues that intelligence is heritable and the smart must breed to save civilization. This is 'Positive Eugenics' rebranded as 'Saving Humanity.' JD Vance's 'Childless Cat Ladies' comment is the populist expression of this anxiety.",
           "key_manifestations": [
             "JD Vance 'Childless Cat Ladies' controversy",
@@ -1895,7 +1895,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "Bio-Optimism / Transhumanism Split (Δv +0.5%). A fissure opens. The 'Naturalists' (Raw Egg, Trad) want a return to pre-industrial biological health. The 'Futurists' (Thiel, Bryan Johnson) want to conquer death and upgrade intelligence via tech. Both agree the current biological state is failing, but diverge on the solution. The 'Ozempic' revolution is viewed suspiciously by the Naturalists as another 'Pod' solution.",
           "key_manifestations": [
             "Bryan Johnson's 'Blueprint' anti-aging protocols becoming a movement",
@@ -1911,7 +1911,7 @@ export const rightWingCultureData = {
       "description": "A shift from the 'Moral Majority' (which sought to influence democracy) to 'Integralism' (which seeks to subordinate the state to spiritual authority). Driven largely by Catholic intellectuals (Vermeule, Ahmari, Deneen), it argues that Liberalism's 'neutrality' is a lie that inevitably results in the persecution of the faithful. Therefore, the Right must seize the state to enforce the 'Common Good.' It represents the abandonment of the 'Fusionist' alliance between Libertarians and Social Conservatives.",
       "trajectory": {
         "1995": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Christian Coalition Peak (Δv +0.5%). The Religious Right is powerful, but it operates *within* the liberal democratic framework. Ralph Reed and the Christian Coalition act as a voter turnout machine for the GOP. They believe they can win the 'Culture War' through elections. The tone is 'Family Values,' not 'Theocratic Order.'",
           "key_manifestations": [
             "Ralph Reed on the cover of Time Magazine",
@@ -1921,7 +1921,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "DOMA and Defense (Δv +0.5%). The Defense of Marriage Act is signed by Clinton. The Religious Right feels it is holding the line. They believe the 'Silent Majority' is with them. First Things publishes the 'End of Democracy?' symposium, a proto-integralist warning that the courts are usurping the moral order, but it is controversial even on the Right.",
           "key_manifestations": [
             "First Things 'The End of Democracy?' Symposium",
@@ -1931,7 +1931,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Slow Leak (Δv -1.0%). The prosperity of the late 90s weakens the moral urgency. The 'Southern Baptist Boycott of Disney' fails miserably, showing the limits of Evangelical cultural power. The public prefers entertainment to dogma.",
           "key_manifestations": [
             "Southern Baptist Convention boycott of Disney",
@@ -1941,7 +1941,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Impeachment Failure (Δv -0.5%). The failure to remove Clinton is a massive blow. It proves that 'Character' no longer matters to the electorate if the economy is good. Paul Weyrich writes the 'Letter to Conservatives' suggesting they 'drop out' of politics—the first sign of the 'Benedict Option' retreat mentality.",
           "key_manifestations": [
             "Paul Weyrich's 'Letter to Conservatives' (Separation strategy)",
@@ -1951,7 +1951,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Millennial Anxiety (Δv -0.5%). The Y2K scare has a religious undertone (Apocalypse), but the cultural energy is moving toward 'Spirituality' rather than 'Religion.' The rise of 'Mega Churches' (Seeker Sensitive) dilutes the theological rigor, creating a 'Moralistic Therapeutic Deism' that Integralists later despise.",
           "key_manifestations": [
             "Stigmata (Film - Anti-Catholic institutionalism)",
@@ -1961,7 +1961,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Compassionate Conservatism (Δv +1.0%). Bush integrates the Religious Right into the 'Faith Based Initiatives.' It is the peak of the 'Seat at the Table' strategy. Catholic Neocons (Neuhaus, Novak) argue that Catholicism and American Capitalism are perfectly compatible (The Catholic Moment).",
           "key_manifestations": [
             "Bush's 'Jesus' answer in the debate",
@@ -1971,7 +1971,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Civil Religion (Δv +0.5%). 9/11 creates a syncretic 'American Civil Religion.' God Bless America is the anthem. The Religious Right supports the war as a defense of Christendom (or Judeo-Christianity) against Islam. Criticism of the 'Empire' from a religious standpoint is silenced.",
           "key_manifestations": [
             "National Cathedral Prayer Service",
@@ -1981,7 +1981,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Scandal (Δv -2.0%). The Boston Globe exposes the Catholic Sex Abuse scandal. This is a nuclear bomb for the moral authority of the Church. It devastates the 'Catholic Neocon' project. How can the Church lecture the state on morality when it is running a pedophile protection ring? The seeds of 'Integralism' (the Church is holy, the hierarchy is corrupt, the State is evil) are sown in the ruins.",
           "key_manifestations": [
             "Boston Globe 'Spotlight' reports",
@@ -1991,7 +1991,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Passion of the Christ (Δv +0.5%). Mel Gibson's film is a cultural phenomenon. It reveals a massive, underserved market for 'Hard' Christianity (blood, sacrifice, Latin) vs. the 'Soft' Christianity of the Mega Church. It emboldens the 'Trad' aesthetic.",
           "key_manifestations": [
             "The Passion of the Christ (Box office record)",
@@ -2001,7 +2001,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Last Victory (Δv +0.5%). The 'Values Voter' re-elects Bush. Anti-Gay Marriage amendments pass in 11 states. It looks like the Religious Right is winning. Integralists later view this as a 'Indian Summer'—a false warmth before the winter. They note that while they won votes, they lost the culture (universities, media).",
           "key_manifestations": [
             "State Marriage Amendments (11/11 pass)",
@@ -2011,7 +2011,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Intelligent Design Failure (Δv -1.0%). The Dover Trial (Kitzmiller v. Dover). The attempt to introduce Intelligent Design into schools is crushed in court. It proves that the 'Secular' courts will not allow religious metaphysics in public life. This pushes the intellectuals to realize: 'We cannot win in a Neutral court. We must change the court.'",
           "key_manifestations": [
             "Kitzmiller v. Dover Area School District ruling",
@@ -2021,7 +2021,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "New Atheist Assault (Δv -1.0%). Dawkins, Hitchens, Harris. The 'New Atheists' launch a full frontal assault. The Religious Right is intellectually outgunned in the public square. They are painted as anti-science rubes. The 'Integralists' begin to despise the 'Evangelical' style for making them look stupid.",
           "key_manifestations": [
             "The God Delusion by Richard Dawkins",
@@ -2031,7 +2031,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Retreat to Liturgy (Δv -0.5%). With the culture turning hostile, the young religious intellectuals retreat to 'Tradition.' The 'Summorum Pontificum' (Pope Benedict liberating the Latin Mass) is a massive catalyst. A generation of young men finds rebellion in 'Smells and Bells' and Latin, rejecting the Boomer 'Guitar Mass.'",
           "key_manifestations": [
             "Summorum Pontificum issued by Benedict XVI",
@@ -2041,7 +2041,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Proposition 8 (Δv -0.5%). The passage of Prop 8 (banning gay marriage in CA) is the pyrrhic victory. The backlash is instantaneous and corporate. Mormons and Catholics are targeted. It proves that 'Democratic Majorities' (Prop 8 won) are subordinate to 'Cultural Power.' This radicalizes the religious intellectuals against democracy.",
           "key_manifestations": [
             "Proposition 8 Protests",
@@ -2051,7 +2051,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Manhattan Declaration (Δv -0.5%). A manifesto of Orthodox Christians, Catholics, and Evangelicals. It is a defensive document, pleading for 'Religious Liberty.' The shift from 'Moral Majority' (We run things) to 'Religious Liberty' (Please don't hurt us) is an admission of defeat.",
           "key_manifestations": [
             "The Manhattan Declaration",
@@ -2061,7 +2061,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Stasis (Δv -0.5%). The Tea Party is secular/economic. Beck talks about God, but it's Mormon/Civil Religion. The specific 'Integralist' energy is incubating in academic journals, critiquing Locke and the Founding Fathers for being too liberal.",
           "key_manifestations": [
             "The Book of Eli (Preserving the Bible in a fallen world)",
@@ -2071,7 +2071,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Tree of Life (Δv +0.5%). Malick's film represents a high-art return to theological metaphysics. Culturally, the 'New Atheist' wave crests and breaks (Elevatorgate). The 'nones' (no religion) rise, but the 'committed' harden their stance.",
           "key_manifestations": [
             "The Tree of Life (Film)",
@@ -2081,7 +2081,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The HHS Mandate (Δv -0.5%). The Obama administration forces Catholic nuns to pay for contraception. This is the 'Red Pill' for the institutional Church. It proves that 'Liberalism' will not leave them alone. It forces the bishops into a direct confrontation with the State.",
           "key_manifestations": [
             "HHS Contraceptive Mandate lawsuits",
@@ -2091,7 +2091,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Francis Shock (Δv +1.0%). Pope Francis is elected. The 'Trads' are horrified. They feel betrayed by the Vatican. This pushes them to look for political solutions *outside* the Church hierarchy. They begin to admire Putin's Russia or Orban's Hungary as defenders of the faith, since the Pope won't do it.",
           "key_manifestations": [
             "Election of Pope Francis",
@@ -2101,7 +2101,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Hobby Lobby (Δv +0.5%). A victory in court (Religious Freedom), but the cultural isolation grows. Rod Dreher begins blogging about the 'Benedict Option'—the idea that Christians should strategically retreat from the mainstream to build resilient arks. It resonates deeply with the despairing Right.",
           "key_manifestations": [
             "Burwell v. Hobby Lobby",
@@ -2111,7 +2111,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Obergefell (Δv +1.0%). Gay Marriage is legalized nationwide. The 'Culture War' is officially lost. The 'Fusionist' deal is dead (The Libertarians cheered the decision). The Integralists emerge from the ashes: 'We told you Liberalism would lead here. Now we need a new strategy.' The strategy shifts from 'Persuasion' to 'Power.'",
           "key_manifestations": [
             "Obergefell v. Hodges",
@@ -2121,7 +2121,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "The Cyrus Option (Δv +1.0%). Trump is clearly not a Christian. But the Religious Right votes for him (81%). Why? They view him as 'Cyrus the Great'—a pagan king who protects the Israelites. The Integralists justify this: We don't need a Saint; we need a Bodyguard. This transactional realism replaces the 'Moral Majority' purity.",
           "key_manifestations": [
             "Trump's 'Two Corinthians' gaffe (Ignored by the base)",
@@ -2131,7 +2131,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Benedict Option (Δv +1.0%). Dreher's book is published. It defines the conversation. But a counter-reaction forms: 'The Benedict Option is surrender. We want the Constantinopolitan Option (Conquer).' Adrian Vermeule begins to tweet about 'Illiberal Legalism.' The 'Post-Liberal' movement is born.",
           "key_manifestations": [
             "The Benedict Option by Rod Dreher",
@@ -2141,7 +2141,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "Why Liberalism Failed (Δv +1.0%). Patrick Deneen publishes *Why Liberalism Failed*. It is praised even by Obama. It argues that Liberalism succeeded so well it ate itself (atomization). It provides the high-brow philosophical cover for the Integralist turn. The 'Catholic Integralist' twitter becomes a force.",
           "key_manifestations": [
             "Why Liberalism Failed by Patrick Deneen",
@@ -2151,7 +2151,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Against David French-ism (Δv +1.0%). Sohrab Ahmari attacks David French in First Things. The debate is: Do we play by Liberal rules (French - Civility/Rights) or do we crush the enemy (Ahmari - Common Good)? The Right sides with Ahmari. 'Drag Queen Story Hour' is the catalyst: 'If Liberalism allows this, Liberalism must go.'",
           "key_manifestations": [
             "Ahmari vs. French Debate ('Against David French-ism')",
@@ -2161,7 +2161,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Common Good Constitutionalism (Δv +0.5%). Adrian Vermeule publishes his Atlantic essay. He argues openly for a theocratic jurisprudence. The 'Amy Coney Barrett' nomination is the tangible victory—a charismatic Catholic mother on the court. The 'Trad' aesthetic (Latin Mass, veils, large families) becomes a 'Counter-Culture' for Zoomers.",
           "key_manifestations": [
             "Adrian Vermeule's 'Common Good Constitutionalism' essay",
@@ -2171,7 +2171,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 10.5,
+          "salience_share": 10.5,
           "description": "Trad Ban (Δv +0.5%). Pope Francis issues *Traditionis Custodes*, restricting the Latin Mass. This radicalizes the Trad movement further against the Vatican and pushes them closer to the Sede-vacantist or Orthodox Right. They view the institutional Church as 'Woke.'",
           "key_manifestations": [
             "Traditionis Custodes issued",
@@ -2181,7 +2181,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "Dobbs (Δv +1.0%). The overturning of Roe v. Wade. The ultimate victory of the religious legal movement (Federalist Society + Integralists). But the electoral backlash (Red Wave failure) confirms Deneen's thesis: The culture is too liberal to accept the law. We must change the regime, not just the law. The 'Christian Nationalism' label is embraced by MTG/Lauren Boebert.",
           "key_manifestations": [
             "Dobbs v. Jackson",
@@ -2191,7 +2191,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Blasphemy Laws (Δv +0.5%). The discussion moves to 'Blasphemy Laws' and 'Porn Bans.' States pass age-verification laws for porn (red states). This is 'Common Good' legislation in action—using state power to enforce morality, ignoring 'Free Speech' libertarian arguments.",
           "key_manifestations": [
             "State-level Pornography Age Verification laws",
@@ -2201,7 +2201,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "Christ is King (Δv +0.5%). The 'Christ is King' slogan becomes a wedge issue. Candace Owens vs. Daily Wire. It acts as a proxy for 'Anti-Semitism' vs. 'Christian Supremacy.' The cluster asserts that Christianity must be the *supreme* religion of the state, not just one of many. It separates the 'Judeo-Christian' alliance.",
           "key_manifestations": [
             "Candace Owens 'Christ is King' controversy",
@@ -2211,7 +2211,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "The Dept of Life (Δv +0.5%). The cluster lobbies for a federal 'Department of Life' or similar. The integration of 'Post-Liberal' thinkers into the Vance orbit suggests a policy future that favors families, bans porn, and subsidizes birth, explicitly rejecting 'market neutrality.' The vision is a 'Protestant Francoism.'",
           "key_manifestations": [
             "Proposed Federal Ban on Pornography debate",
@@ -2227,7 +2227,7 @@ export const rightWingCultureData = {
       "description": "This cluster treats human mating dynamics as a ruthlessly efficient, deregulated market governed by evolutionary biology rather than romantic love or egalitarian ideals. It evolved from the niche 'Pickup Artist' (PUA) communities of the 1990s—focused on 'hacking' social interactions to get laid—into a comprehensive worldview ('The Red Pill') that claims to reveal the dark truths of female hypergamy and male disposability. It serves as the primary gateway for young men into the Right-wing ecosystem, converting personal sexual frustration into political resentment against feminism and the liberal order.",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The cluster exists in a germinal, subterranean state within Usenet newsgroups like alt.seduction.fast. At this stage, the variance is minimal (Δv +0.2%) as the mainstream consensus on romance ('Just be yourself') remains unchallenged. However, Ross Jeffries' 'Speed Seduction' seminars begin to introduce Neuro-Linguistic Programming (NLP) to dating, framing courtship not as a mystical connection but as a psychological code to be cracked. This marks the transition from 'dating advice' to 'sexual engineering.' The cultural backdrop is dominated by the 'sensitive male' archetype, which the early PUA community explicitly rejects as a losing strategy.",
           "key_manifestations": [
             "Ross Jeffries' Speed Seduction seminars (The proto-PUA material)",
@@ -2237,7 +2237,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "Variance climbs slightly (Δv +0.3%) driven by the indie hit *Swingers*. While ultimately a benign comedy, it mainstreamed the concept that men need a 'strategy' (e.g., the three-day rule) and that confidence is a performance ('You're so money'). This validates the nascent idea that social value is a currency that can be accumulated or lost. Simultaneously, *The Rules* (for women) becomes a bestseller, proving that the 'market' approach to dating is bipartisan, forcing men to seek a counter-strategy. The term 'Alpha Male' begins to migrate from primatology textbooks to pop-psychology, laying the linguistic groundwork for the Manosphere.",
           "key_manifestations": [
             "Swingers (Film - The 'You're so money' monologue)",
@@ -2247,7 +2247,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The variance remains low but stable (Δv +0.2%) as the late-90s economic boom masks male anxiety. However, the film *Chasing Amy* introduces a critical Manosphere concept: 'Retroactive Jealousy' and the fear of a partner's sexual past (Body Count). The protagonist's inability to cope with his girlfriend's history prefigures the 'purity' obsessions of the later Red Pill movement. In the underground, the 'SoSuave' forums launch, creating a centralized hub for men to discuss rejection not as bad luck, but as a failure of technique.",
           "key_manifestations": [
             "Chasing Amy (Film - The body count conflict)",
@@ -2257,7 +2257,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "A noticeable uptick (Δv +0.5%) occurs as pop culture begins to satirize the desperation of the modern male. *There's Something About Mary* portrays men as pathetic, obsessive stalkers willing to degrade themselves for 'The One.' The PUA community identifies this behavior as 'Oneitis'—a pathological scarcity mentality. This year solidifies the PUA axiom that putting women on a pedestal guarantees rejection. The Lewinsky scandal also subtly reinforces the idea that high-status men (the President) have access to sexual options regardless of moral standing, validating the 'Alpha' theory.",
           "key_manifestations": [
             "There's Something About Mary (The archetype of the desperate orbiter)",
@@ -2267,7 +2267,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "A breakout year for the cluster (Δv +1.5%). *Fight Club* and *Magnolia* act as massive cultural accelerators. *Fight Club* explicitly diagnoses the 'generation of men raised by women,' linking sexual frustration to a lack of father figures and the feminization of society. *Magnolia* features the character Frank T.J. Mackey (Tom Cruise), a PUA guru who teaches men to 'Tame the Cunt.' While intended as a satire of toxic masculinity, the PUA community embraces Mackey as a prophet who speaks the forbidden truth: that male benevolence is weakness. The 'Red Pill' metaphor is born in *The Matrix*, though it takes a decade to be fully applied to gender dynamics.",
           "key_manifestations": [
             "Fight Club (The 'generation of men raised by women' monologue)",
@@ -2277,7 +2277,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "A slight retraction (Δv -0.5%) as the Y2K optimism and dot-com crash distract from gender wars. However, *American Psycho* is released. Initially viewed as a critique of 80s yuppie consumerism, the character of Patrick Bateman—obsessed with his physique, skincare, and status, while viewing women as disposable—slowly becomes an icon for the dark triad traits the Manosphere admires. The film *Meet the Parents* crystallizes the nightmare of the 'Beta Male' seeking approval from the patriarchal frame, serving as a negative example for the community.",
           "key_manifestations": [
             "American Psycho (Film - later reclaimed as the Sigma Male origin)",
@@ -2287,7 +2287,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "A significant drop (Δv -1.0%). The September 11 attacks fundamentally shift the cultural ideal of masculinity from the 'Social Hacker/PUA' back to the 'Protector/Provider.' Irony and manipulation are out; sincerity and courage are in. The firefighter becomes the ultimate Alpha, rendering the PUA's 'peacocking' tactics trivial and embarrassing. The variance bleeds into the Neoconservative/Patriotic cluster. Men want to be heroes, not players.",
           "key_manifestations": [
             "The Concert for New York City (Celebration of traditional masculine heroism)",
@@ -2297,7 +2297,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "A gradual recovery (Δv +0.5%). The 'Ladder Theory' viral essay circulates via email and forums, providing a pseudo-scientific explanation for the 'Friendzone.' It argues that women have distinct cognitive ladders for 'Friends' and 'Lovers,' and crossing between them is impossible. This introduces the concept of biological determinism to rejection—it's not about what you *do*, it's about what you *are*. *Spider-Man* reinforces this: the nice guy Peter Parker is ignored, but the powerful Spider-Man is desired, teaching boys that power is the only negotiant.",
           "key_manifestations": [
             "The Ladder Theory (Viral Internet Essay)",
@@ -2307,7 +2307,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Variance increases (Δv +0.5%) as the culture embraces a regression to pre-feminist 'Frat' values. *Old School* celebrates the 'Man-Child' who refuses to domesticate, rejecting the responsible provider role. This aligns with the early PUA philosophy of 'Amused Mastery'—treating life and women as a game. Underground, Mystery's workshops in Los Angeles are growing, developing the lexicon ('Negging', 'Peacocking') that will soon explode. The 'Nice Guy' is increasingly viewed not as virtuous, but as boring.",
           "key_manifestations": [
             "Old School (The rejection of domesticity)",
@@ -2317,7 +2317,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Steady growth (Δv +0.5%). The 'Metrosexual' trend peaks, creating a confusion in male gender roles that the PUA community exploits. They argue that 'Metrosexuality' is a female-imposed frame to neuter men, and that men must reclaim their 'Caveman' edge while maintaining high grooming standards (a contradiction that defines the scene). *Alfie* (the remake) focuses on the unrepentant womanizer who suffers but lives authentically, romanticizing the 'Cad' archetype over the 'Dad' archetype.",
           "key_manifestations": [
             "Alfie (Jude Law remake)",
@@ -2327,7 +2327,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "The Singularity (Δv +2.5%). Neil Strauss publishes *The Game: Penetrating the Secret Society of Pickup Artists*. This is the most significant event in the cluster's history. It acts as a mass-red-pilling event, exposing the 'algorithms' of social interaction to millions. Terms like 'Negging,' 'DHV' (Demonstration of Higher Value), and 'AMOG' (Alpha Male of Group) enter the vernacular. Young men realize that social hierarchy is hackable. It shifts the paradigm from 'Romance' to 'Skill Acquisition.'",
           "key_manifestations": [
             "The Game by Neil Strauss (New York Times Bestseller)",
@@ -2337,7 +2337,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Mainstream dilution (Δv -0.5%). VH1 airs *The Pickup Artist*, a reality show featuring Mystery. While it spreads the concepts, it destroys the 'Secret Society' cool factor, framing PUAs as awkward losers in fuzzy hats. However, the *logic* of the cluster digs deeper. The 'Tucker Max' stories ('I Hope They Serve Beer in Hell') popularize 'Fratire'—celebrating being an unapologetic narcissist. This marks a shift from 'seduction art' to 'asshole entitlement' as a valid sexual strategy.",
           "key_manifestations": [
             "The Pickup Artist (VH1 Reality Show)",
@@ -2347,7 +2347,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Darkening of the Tone (Δv -0.5%). While pop culture gives us *Superbad* (the last gasp of the hopeful, sweet teen sex comedy), the online forums are turning bitter. The 'Heartiste' (formerly Roissy) blog begins to gain traction. It strips away the 'fuzzy hat' PUA gimmicks and focuses on 'Socio-Sexual Realism'—using evolutionary psychology to explain why women prefer 'bad boys.' This is the transition from PUA (Behavior) to Red Pill (Ontology).",
           "key_manifestations": [
             "Superbad (The fantasy that the nice loser gets the girl)",
@@ -2357,7 +2357,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Draper Effect (Δv +0.5%). *Mad Men* explodes culturally. Don Draper becomes the avatar of the cluster. He represents the pre-feminist patriarch: stoic, adulterous, competent, and commanding. He validates the PUA theory that women desire the 'dominant frame' even if they claim to want equality. Simultaneously, the financial crash begins to erode the 'Provider' contract, forcing men to look for non-monetary value propositions (Game/Looks).",
           "key_manifestations": [
             "Mad Men dominance in cultural discourse",
@@ -2367,7 +2367,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "The Mancession (Δv +0.5%). The Great Recession hits male-dominated industries hardest. The 'End of Men' narrative begins in the Atlantic. This economic emasculation fuels the Manosphere's growth, as men feel the 'Social Contract' (Work hard = Get Wife) is broken. *The Hangover* celebrates the 'Wolfpack'—male bonding that explicitly excludes women—as the only refuge. Roosh V begins publishing his *Bang* travel guides, introducing 'Sexual Tourism' as a solution to Western female 'decay.'",
           "key_manifestations": [
             "The Hangover (The celebration of regression)",
@@ -2377,7 +2377,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Rational Male (Δv +1.0%). Rollo Tomassi begins the *The Rational Male* blog series (The Iron Rules). This is the foundational text of the modern Red Pill. He moves beyond 'getting laid' to analyzing the 'Feminine Imperative.' Concepts like 'Hypergamy doesn't care about your build,' 'The Wall,' and 'Brad Pitt Rule' are codified. It creates a coherent, cynical philosophy of gender relations that claims to be 'praxeology' (the study of human action) rather than misogyny.",
           "key_manifestations": [
             "The Rational Male blog (The 'Year One' posts)",
@@ -2387,7 +2387,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "Aesthetics and Hypergamy (Δv +1.0%). *Crazy, Stupid, Love* mainstream the PUA transformation arc (Ryan Gosling teaching Steve Carell). It validates the thesis: Be attractive, don't be needy. Simultaneously, the death of Aziz 'Zyzz' Shavershian creates a martyr for the 'Bodybuilding Right.' His message—'We're all gonna make it'—combines narcissism with camaraderie. The focus shifts from 'Game' (verbal) to 'Looks/Money/Status' (LMS), acknowledging that hypergamy is often physical.",
           "key_manifestations": [
             "Crazy, Stupid, Love (The PUA transformation narrative)",
@@ -2397,7 +2397,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "MGTOW Emerges (Δv +1.0%). Men Going Their Own Way. The realization spreads that 'The Game' is rigged against men in family court, so the only winning move is not to play. The 'Enjoy the Decline' philosophy takes root. *Magic Mike* objectifies men, which the Manosphere uses as proof of the double standard. *The Avengers* contrasts Captain America (Old World Duty) with Iron Man (Narcissistic Competence), with the culture clearly favoring the latter.",
           "key_manifestations": [
             "Magic Mike (Objectification of men accepted)",
@@ -2407,7 +2407,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "The Red Pill Subreddit (Δv +1.5%). r/TheRedPill explodes in subscribers. It acts as the central aggregator for PUA, Evo-Psych, MRA, and MGTOW content. The term 'Red Pill' is officially co-opted from *The Matrix* to mean 'waking up to female nature.' It becomes a radicalization funnel, providing a daily feed of 'Field Reports' and 'Divorce Rape' stories that confirm the worldview. *Frozen* is analyzed by the group as a subversion of the 'Prince Charming' trope, warning men that women don't need them anymore.",
           "key_manifestations": [
             "r/TheRedPill subscriber growth (The hockey stick moment)",
@@ -2417,7 +2417,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Black Pill Schism (Δv +3.0%). The Isla Vista shooting by Elliot Rodger. His manifesto uses PUA terminology ('Supreme Gentleman', 'Incels'). The media discovers the 'Manosphere' and paints it as a terror threat. This forces the community to bifurcate: the 'Black Pill' (It's hopeless, genetics are everything, lay down and rot) splits from the 'Red Pill' (Self-improvement works). *Gone Girl* provides the perfect cultural artifact: the 'Cool Girl' monologue exposes female manipulation, becoming a sacred text for the distrustful male.",
           "key_manifestations": [
             "Isla Vista Shooting / Elliot Rodger Manifesto",
@@ -2427,7 +2427,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "The Cuckservative Merger (Δv -1.0%). The Manosphere begins to merge with the Alt-Right. The term 'Cuck' moves from porn (Manosphere knowledge of female desire) to politics (Alt-Right critique of weak Republicans). The logic is: Republicans provide resources to a country (Democrats/Immigrants) that hates them, just like a cuckold. Roosh V attempts to organize real-world meetups, which are cancelled due to backlash, proving the movement must remain digital. *Mad Max: Fury Road* is boycotted by Return of Kings for being 'feminist propaganda,' a tactical error that marginalizes the PUA purists.",
           "key_manifestations": [
             "Return of Kings 'Fury Road' Boycott",
@@ -2437,7 +2437,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Locker Room Talk (Δv +3.0%). The Access Hollywood tape should have ended Trump. Instead, the Manosphere defends it as 'Locker Room Talk' and proof of his Alpha status ('When you're a star, they let you do it'). Trump's victory is viewed as the ultimate 'Red Pill' proof: Women say they want nice guys, but they vote for/sleep with the arrogant winner. It is the ultimate Field Report. The variance peaks as the President of the United States is viewed as a PUA.",
           "key_manifestations": [
             "Access Hollywood Tape controversy",
@@ -2447,7 +2447,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The MeToo Backlash (Δv -1.0%). The #MeToo movement confirms the Manosphere's darkest fears about false accusations and the weaponization of victimhood. The 'Pence Rule' (Never be alone with a woman) is debated seriously. The Manosphere argues that the workplace is now a minefield, justifying MGTOW and 'soft segregation' of the sexes. *Blade Runner 2049* features 'Joi,' the holographic girlfriend, which many in the cluster point to as the only safe future for male intimacy.",
           "key_manifestations": [
             "#MeToo Movement",
@@ -2457,7 +2457,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "The Peterson Off-Ramp (Δv -2.0%). Jordan Peterson acts as a stabilizer. He acknowledges the grim reality of the mating market (Pareto distribution) but offers 'Responsibility' instead of 'Resentment.' He tells Incels to 'Clean Your Room' and 'Stand Up Straight.' He cannibalizes the Red Pill variance, turning potential radicals into traditionalists. However, the Toronto Van Attack keeps the 'Incel' threat in the news, maintaining the Black Pill's visibility.",
           "key_manifestations": [
             "12 Rules for Life by Jordan Peterson",
@@ -2467,7 +2467,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "The Joker Moment (Δv -0.5%). *Joker* is the cinematic representation of the Incel: the ignored, mocked, lonely male who snaps. The media panic that it will cause mass shootings (it doesn't) highlights the fear of the lonely male. The 'Doomer' meme captures the resignation of the community. The dating market has moved entirely to Tinder/Hinge, which the cluster views as 'Hypergamy on steroids' due to the 80/20 rule (top 20% of men get 80% of women).",
           "key_manifestations": [
             "Joker (Film - The vindication of the loner)",
@@ -2477,7 +2477,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Simpdemic (Δv +1.5%). The pandemic locks everyone inside. OnlyFans booms. The concept of the 'Simp' (Sucker Idolizing Mediocre Pussy) explodes. Men paying for parasocial relationships are mocked mercilessly by the Manosphere. 'Simping' becomes the cardinal sin. The isolation forces millions of young men online, swelling the ranks of the digital Manosphere. *365 Days* trends on Netflix, proving that 'Rape Fantasy' is popular among women, which the Red Pill cites as proof of the 'Dual Mating Strategy.'",
           "key_manifestations": [
             "Rise of OnlyFans during lockdown",
@@ -2487,7 +2487,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 15.5,
+          "salience_share": 15.5,
           "description": "The Image Consultant Turn (Δv +1.5%). The 'Manosphere' moves to YouTube podcasts. Kevin Samuels goes viral telling women they are 'Average at Best.' It's the Red Pill repackaged as 'Image Consulting' and 'High Value Man' advice. It crosses over into the Black community. The 'Kevin Samuels vs. Single Moms' clips are the new PUA field reports. The 'Sigma Male' meme (Patrick Bateman) mocks the hustle culture while simultaneously embracing its isolation.",
           "key_manifestations": [
             "Kevin Samuels 'You're Average at Best' viral clip",
@@ -2497,7 +2497,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Top G (Δv +2.5%). Andrew Tate conquers the internet. He combines the PUA aesthetics of 2005, the hustle culture of 2015, and the reactionism of 2020. He frames 'The Matrix' as the force keeping men poor and weak. His banning from all platforms only proves his point to his followers. He makes the Red Pill 'cool' for 14-year-olds, shifting the focus from 'Getting Girls' to 'Escaping the Matrix' (Wealth/Sovereignty). The Johnny Depp vs. Amber Heard trial is viewed as the ultimate victory for the 'Women Lie' narrative.",
           "key_manifestations": [
             "Andrew Tate's viral takeover of TikTok",
@@ -2507,7 +2507,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 17.5,
+          "salience_share": 17.5,
           "description": "Passport Bros (Δv -0.5%). The 'Passport Bros' movement goes viral. Black and White men agree that 'Western Women are broken' and advocate for traveling to Brazil, Colombia, or SE Asia to find 'traditional' partners. It is the practical application of the MGTOW philosophy—geo-arbitrage applied to dating. The media attacks them as 'Sex Tourists,' while they claim to be 'Refugees' from Western feminism. *Barbie* is hated by the cluster, but the character of Ken ('I am Kenough') is ironically embraced.",
           "key_manifestations": [
             "Passport Bros hashtags and debates",
@@ -2517,7 +2517,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 16.5,
+          "salience_share": 16.5,
           "description": "The Trad Wife Pivot (Δv -1.0%). The Manosphere begins to soften into 'Trad.' Instead of 'Spinning Plates' (sleeping with many), the goal is the 'Trad Wife.' The 'Hawk Tuah' girl goes viral, confusing the discourse—she is vulgar, but represents the 'cool girl' who pleases men. The 'Conservative Dad' aesthetic replaces the 'Playboy' aesthetic. The focus shifts from 'conquest' to 'legacy,' aligning with the natalist turn of the broader Right.",
           "key_manifestations": [
             "Ballerina Farm controversy (The Trad Wife ideal)",
@@ -2527,7 +2527,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Demographic Winter (Δv -0.5%). The conversation shifts to birth rates (Cluster 6). The Red Pill is now blamed by some on the Right for *causing* the birth dearth (by making men hate women). A 'Pro-Natalist' internal critique emerges: 'Stop complaining about female nature and start a family.' The 'White Boy Summer' meme evolves into 'White Dad Summer.' The movement matures from a 'Sex' movement to a 'Family Formation' movement, albeit one based on strict patriarchal hierarchy.",
           "key_manifestations": [
             "Elon Musk's 'Make More Babies' campaign colliding with Manosphere cynicism",
@@ -2543,7 +2543,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the belief that technology—specifically cryptography and decentralized networks—can create an exit valve from the nation-state. It replaces the 'Social Contract' with the 'Smart Contract.' Starting from the Cypherpunks of the 90s, it exploded with Bitcoin to become a distinct Right-wing ideology: Hard Money, Low Time Preference, and censorship resistance. It views the Federal Reserve and the surveillance state as the primary enemies of liberty, advocating for a separation of Money and State as absolute as the separation of Church and State.",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The cluster exists in a highly potent but microscopic state within the 'Cypherpunk' mailing lists. Variance is negligible (Δv +0.2%) in the broader culture, but the foundational axioms are being codified by figures like Timothy May and Eric Hughes. They foresee the coming surveillance state and argue that cryptography is the only defense for individual liberty. The 'Clipper Chip' controversy (government attempt to backdoor encryption) radicalizes the tech-libertarians, proving their thesis that the state views privacy as a threat. The cultural vibe is 'Cyber-Anarchy.'",
           "key_manifestations": [
             "The Cypherphunk's Manifesto by Eric Hughes",
@@ -2553,7 +2553,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "A significant theoretical surge (Δv +0.5%). The publication of *The Sovereign Individual* by Davidson and Rees-Mogg acts as the prophetic text for the entire movement. It predicts the collapse of the nation-state due to tax competition and digital money, offering a blueprint for the 'cognitive elite' to opt out of the welfare state. Simultaneously, John Perry Barlow's 'Declaration of the Independence of Cyberspace' articulates the spiritual separation of the Digital from the Physical. E-Gold is founded, an early, failed attempt at digital currency that serves as a lesson in centralization risks.",
           "key_manifestations": [
             "The Sovereign Individual (Book - The Bible of the cluster)",
@@ -2563,7 +2563,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "Technical incubation (Δv -0.3%). While the Dot-com boom distracts the public with 'Pets.com,' the Cypherpunks are building the tools. Adam Back invents 'Hashcash' (Proof of Work) to combat email spam. It is a technical curiosity at the time, but it is the essential building block for Bitcoin. The cluster's variance drops as the 'New Economy' narrative suggests that the State and the Internet can coexist happily, masking the underlying conflict.",
           "key_manifestations": [
             "Hashcash whitepaper by Adam Back",
@@ -2573,7 +2573,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Theoretical breakthroughs (Δv -0.2%). Nick Szabo proposes 'Bit Gold' and Wei Dai proposes 'b-money.' These are the direct precursors to Bitcoin, solving the puzzle of digital scarcity but failing to solve the 'double-spend' problem without a server. The cluster remains purely theoretical and academic. Culturally, *Enemy of the State* captures the growing paranoia about NSA surveillance, validating the Cypherpunk warning that 'privacy is dead' without encryption.",
           "key_manifestations": [
             "Bit Gold proposal by Nick Szabo",
@@ -2583,7 +2583,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The P2P Proof of Concept (Δv +0.5%). Shawn Fanning launches Napster. While not financial, it proves that a Peer-to-Peer network can resist state power and corporate copyright. It demonstrates that 'decentralization' is a viable strategy for circumvention. Neal Stephenson publishes *Cryptonomicon*, a fictionalized history of the Cypherpunks that mythologizes the creation of a data haven and digital currency, recruiting a generation of nerds to the cause.",
           "key_manifestations": [
             "Napster launches (P2P architecture mainstreamed)",
@@ -2593,7 +2593,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "The Crash (Δv -0.3%). The Dot-com bubble bursts. The utopianism of the 'Digital Economy' collapses. The state steps in to regulate. The Cypherpunks retreat. The FBI's 'Carnivore' system (email surveillance) is revealed, showing the state is catching up. The focus shifts from 'creating a new world' to 'surviving the crash.'",
           "key_manifestations": [
             "FBI Carnivore surveillance system revealed",
@@ -2603,7 +2603,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Patriot Act crackdown (Δv -0.2%). 9/11 allows the state to dramatically expand financial surveillance (KYC/AML laws). The dream of anonymous digital cash seems dead. The 'Cypherpunk' ethos is viewed as potentially terrorist-adjacent. However, the expansion of the surveillance state (Total Information Awareness) provides the *moral* impetus for the next generation to build tools that are censorship-resistant.",
           "key_manifestations": [
             "The Patriot Act (Expanding KYC/AML)",
@@ -2613,7 +2613,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "Stagnation (Δv +0.2%). The cluster is dormant. Digital Gold currency (E-Gold) is growing but facing legal heat. The focus is on 'Privacy' rather than 'Money.' The Tor Project (The Onion Router) is released to the public (ironically by the US Navy), providing the infrastructure for the future Dark Web.",
           "key_manifestations": [
             "Tor Project initial release",
@@ -2623,7 +2623,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Virtual Economies (Δv +0.3%). *Second Life* launches. It introduces the concept of a virtual economy with an exchange rate to the US Dollar (Linden Dollars). It normalizes the idea that 'digital goods' have real value. People start making a living purely in the digital realm, a precursor to the 'Metaverse' and crypto-economies.",
           "key_manifestations": [
             "Second Life launch",
@@ -2633,7 +2633,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The decentralized file wars (Δv 0%). BitTorrent is gaining traction as Napster's successor. It is harder to kill because it is more decentralized. This reinforces the lesson: 'Headless protocols survive.' The struggle is entirely over intellectual property, not yet money.",
           "key_manifestations": [
             "BitTorrent traffic surpassing HTTP in some regions",
@@ -2643,7 +2643,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "Prediction Markets (Δv +0.3%). The concept of 'Prediction Markets' (Intrade) gains popularity among libertarians. They argue that markets are better at processing information than experts. This 'Hayekian' view of information is central to the future crypto-ethos. *V for Vendetta* popularizes the Guy Fawkes mask, which becomes the visual symbol of Anonymous and the dissident tech movement.",
           "key_manifestations": [
             "V for Vendetta (Film - The aesthetics of resistance)",
@@ -2653,7 +2653,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Gold bugs and Fed Haters (Δv -0.3%). The housing bubble is inflating. Ron Paul and the Austrian Economists are screaming about inflation and the Federal Reserve, but they are ignored. The 'Hard Money' ideology is there, but it lacks a vehicle. They are buying physical gold and burying it.",
           "key_manifestations": [
             "Ron Paul's speeches on the Housing Bubble",
@@ -2663,7 +2663,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The Crackdown (Δv +0.5%). The US government goes after E-Gold. The indictment proves that any centralized issuer of digital currency will be shut down. This is the final lesson Satoshi needs. The problem is the 'single point of failure.' The failure of E-Gold makes the invention of Bitcoin inevitable and necessary.",
           "key_manifestations": [
             "E-Gold Indictment",
@@ -2673,7 +2673,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Genesis Block (Δv +1.0%). The Global Financial Crisis. The banking system collapses. Trust in institutions hits zero. On October 31st, Satoshi Nakamoto publishes the Bitcoin Whitepaper. It is a direct response to the bailouts. The message embedded in the Genesis Block ('Chancellor on brink of second bailout for banks') frames Bitcoin not as a tech product, but as a political protest against fiat currency.",
           "key_manifestations": [
             "Bitcoin Whitepaper published",
@@ -2683,7 +2683,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Mining begins (Δv -0.5%). Bitcoin launches, but it is purely a toy for hal-finney types and cryptographers. It has no price. The variance is low because it is invisible to 99.9% of the world. However, the 'Ron Paul Revolution' is raging, creating a massive cohort of young libertarians who are primed for the message.",
           "key_manifestations": [
             "The Genesis Block mined",
@@ -2693,7 +2693,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Pizza Day (Δv +0.5%). Laszlo Hanyecz buys two pizzas for 10,000 BTC. It is the first commercial transaction. Bitcoin has a price. The 'Mt. Gox' exchange launches (originally for Magic: The Gathering cards). The 'Wikileaks' blockade happens—Visa/Mastercard cut off Assange. Satoshi's final posts reference this: 'It would have been nice to get this attention in any other context.' It cements Bitcoin's use case: censorship resistance.",
           "key_manifestations": [
             "Bitcoin Pizza Day",
@@ -2703,7 +2703,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Silk Road and Parity (Δv +2.0%). Bitcoin hits $1. Ross Ulbricht launches Silk Road. This is the moment the cluster explodes. It proves you can buy illegal drugs with magic internet money. It attracts the Agorists and the drug users. It creates a real economy, albeit a black market one. *Wired* publishes 'The Rise and Fall of Bitcoin' after it crashes from $30 to $2, marking the first of many 'Bitcoin Obituaries.'",
           "key_manifestations": [
             "Silk Road launches",
@@ -2713,7 +2713,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The Foundation (Δv +0.5%). The Bitcoin Foundation is formed. The community tries to professionalize. Coinbase is founded. The focus shifts from 'Drugs' to 'Startup.' The 'Halving' mechanism occurs for the first time, proving the monetary policy is immutable code. The contrast with the Fed's QE (Quantitative Easing) is stark.",
           "key_manifestations": [
             "First Bitcoin Halving",
@@ -2723,7 +2723,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The $1000 Bubble (Δv +2.5%). Bitcoin goes from $13 to $1000. The media frenzy is massive. The Winklevoss twins file for an ETF (way too early). The FBI seizes Silk Road and arrests Ross Ulbricht. The price crashes, but the infrastructure remains. The 'Hodl' meme is born from a drunk forum post. The cluster develops a religious conviction: 'This time is different.' Edward Snowden's leaks validate every paranoid theory the cluster held.",
           "key_manifestations": [
             "Bitcoin hits $1000",
@@ -2733,7 +2733,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Mt. Gox Collapse (Δv -2.0%). Mt. Gox, handling 70% of trades, collapses. It is a catastrophe. It wipes out the wealth of the early adopters. The media declares Bitcoin dead. However, the 'Maximalists' double down. They learn 'Not Your Keys, Not Your Coins.' The ideology hardens: Trusted Third Parties are security holes. Ethereum is proposed by Vitalik Buterin, initiating the 'Altcoin' split.",
           "key_manifestations": [
             "Mt. Gox bankruptcy",
@@ -2743,7 +2743,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "The Block Size War (Δv +0.5%). A civil war erupts within Bitcoin. Big Blockers (Scale on chain / Payments) vs. Small Blockers (Decentralization / Digital Gold). It is a political struggle over the soul of the protocol. It proves that Bitcoin is a political system as much as a technical one. The 'Small Blockers' (Individualists) eventually win, solidifying Bitcoin's path as a Store of Value rather than a Visa competitor.",
           "key_manifestations": [
             "The Block Size Debate begins",
@@ -2753,7 +2753,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Halving and The DAO (Δv +1.0%). The second halving occurs. The price begins to recover. The DAO (Decentralized Autonomous Organization) on Ethereum is hacked, and Ethereum hard forks to fix it. This violates the 'Code is Law' ethos, causing the birth of 'Ethereum Classic' and reinforcing Bitcoin Maximalism (Bitcoin never rolls back). The cluster becomes deeply tribal.",
           "key_manifestations": [
             "The DAO Hack and Ethereum Hard Fork",
@@ -2763,7 +2763,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Mania (Δv +4.5%). Bitcoin hits $20,000. 'Lambos.' The ICO (Initial Coin Offering) craze creates a new class of 'Crypto Rich' overnight. They are young, irreverent, and politically politically incorrect. They begin to fund Right-wing causes because the traditional financial system de-platforms them. 'Crypto-Twitter' becomes a major cultural force. The 'Bitcoin Standard' by Saifedean Ammous is published, linking Bitcoin to Austrian Economics formally.",
           "key_manifestations": [
             "Bitcoin hits $20k",
@@ -2773,7 +2773,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Crypto Winter (Δv -4.0%). The bubble bursts. Price drops 80%. The scammers are washed out. The 'Builders' remain. The focus shifts to 'DeFi' (Decentralized Finance) and 'Lightning Network.' The culture becomes stoic. 'Low Time Preference' becomes the mantra. The cluster retreats from the mainstream but deepens its philosophical roots.",
           "key_manifestations": [
             "Price crash to $3k",
@@ -2783,7 +2783,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Libra and Toxic Maximalism (Δv +1.0%). Facebook announces 'Libra.' The US government panics. It proves that money is now a tech product. The Bitcoiners attack Libra as a surveillance coin. The concept of 'Toxic Maximalism' (bullying scammers to protect newbies) is embraced as a valid immune system response. *Uncut Gems* captures the high-risk, high-reward mania of the gambling culture adjacent to crypto.",
           "key_manifestations": [
             "Facebook Libra hearings",
@@ -2793,7 +2793,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Money Printer Go Brrr (Δv +5.0%). The COVID crash and the Federal Reserve's response (printing trillions) is the ultimate vindication of the Bitcoin thesis. Paul Tudor Jones buys Bitcoin. Michael Saylor (MicroStrategy) converts his corporate treasury to Bitcoin. The meme 'Money Printer Go Brrr' explains complex monetary theory to the masses. The cluster merges with the 'Institutional' Right—it's no longer just for anarchists; it's for capitalists protecting their wealth from socialism.",
           "key_manifestations": [
             "'Money Printer Go Brrr' meme",
@@ -2803,7 +2803,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Laser Eyes and El Salvador (Δv +2.0%). Politicians (Lummis, Cruz) put 'Laser Eyes' on Twitter profiles. El Salvador adopts Bitcoin as legal tender. This is the 'State' level adoption. The 'Network State' concept by Balaji Srinivasan gains traction: using crypto wealth to build new jurisdictions. NFTs (Bored Apes) create a pop-culture moment, but the core Right-wing cluster focuses on 'Sovereignty' and 'De-banking' (Canadian Trucker protests).",
           "key_manifestations": [
             "El Salvador Bitcoin Law",
@@ -2813,7 +2813,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Purge of the Tourists (Δv -2.0%). FTX collapses. Sam Bankman-Fried (SBF) is revealed as a fraud. Crucially, SBF was a major *Democrat* donor and 'Effective Altruist.' The Right-wing Bitcoiners feel vindicated: 'Crypto' (Altcoins/VCs) is a scam, 'Bitcoin' is the signal. The collapse purges the 'Woke' influence from the industry. The price crashes, but the conviction holds. 'Toxic Maximalism' is proven right about trusted third parties.",
           "key_manifestations": [
             "FTX Collapse / SBF Arrest",
@@ -2823,7 +2823,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Operation Choke Point 2.0 (Δv +1.0%). The US government attacks crypto banks (Silvergate/Signature). The cluster frames this as a coordinated political attack. They pivot to 'Ordinals' (NFTs on Bitcoin) and political lobbying. Vivek Ramaswamy and RFK Jr. make Bitcoin a campaign issue. The Right embraces Bitcoin as a 'Freedom' issue against CBDCs (Central Bank Digital Currencies).",
           "key_manifestations": [
             "Operation Choke Point 2.0 theories",
@@ -2833,7 +2833,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 17.0,
+          "salience_share": 17.0,
           "description": "The Strategic Reserve (Δv +2.0%). The ETF is approved. Trump speaks at the Nashville Bitcoin Conference, promising a 'Strategic Bitcoin Reserve' and to fire Gary Gensler. The 'Outlaw' currency becomes a plank of the GOP platform. The 'Crypto Voter' is identified as a key demographic. The fusion of 'MAGA' and 'Bitcoin' is complete, with JD Vance (a holder) on the ticket.",
           "key_manifestations": [
             "Bitcoin ETF Launch",
@@ -2843,7 +2843,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Sovereign Integration (Δv +1.0%). The new administration begins to integrate Bitcoin into the financial plumbing. Discussions of 'state-level adoption' in the US (Florida/Texas). The 'Network State' moves from theory to practice with special economic zones. The conflict is now between 'The Sovereign Individual' and 'The Global Tax Cartel.' The cluster has effectively won the intellectual argument on the Right.",
           "key_manifestations": [
             "US Treasury announces Bitcoin accumulation pilot",
@@ -2859,7 +2859,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the total collapse of epistemological trust in 'Official Narratives.' It replaces the 'Mainstream Media' consensus with a 'Baker Street Irregular' approach to reality—connecting dots, analyzing symbols, and assuming malevolent coordination (The Deep State). It devours all other Right-wing energies, turning policy disagreements into cosmic battles between Good and Evil (Pedophiles/Satanists). It is the 'Gnostic' wing of the Right, believing in hidden knowledge that reveals the true, dark structure of the world.",
       "trajectory": {
         "1995": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Militia Moment (Δv +0.5%). The Oklahoma City Bombing is the horrific kinetic expression of this cluster. It brings the 'Militia Movement' and 'New World Order' theories into the living room. While the bombing delegitimizes the violent fringe, the *Clinton Chronicles* (VHS tapes accusing the Clintons of murder) circulate widely in church basements. *The X-Files* is at its peak, culturalizing the idea that 'The Truth Is Out There' and the government is hiding aliens/conspiracies.",
           "key_manifestations": [
             "Oklahoma City Bombing",
@@ -2869,7 +2869,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "TWA Flight 800 (Δv +0.5%). The explosion of TWA 800 creates the first internet-driven conspiracy theory (missile strike vs. fuel tank). Pierre Salinger (former JFK press secretary) claiming it was friendly fire legitimizes the distrust. The 'Black Helicopters' trope becomes a punchline but reflects a genuine anxiety about UN sovereignty and federal overreach in the rural West.",
           "key_manifestations": [
             "TWA Flight 800 missile theories",
@@ -2879,7 +2879,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Princess Diana Effect (Δv +0.5%). The death of Princess Diana globalizes conspiracy culture. The idea that 'The Royals had her killed' bridges the gap between tabloid readers and political paranoids. In the US, the 'Vince Foster' suicide theories continue to dog the Clintons. *Conspiracy Theory* (the film with Mel Gibson) explicitly frames the paranoid as the hero who knows the truth.",
           "key_manifestations": [
             "Princess Diana assassination theories",
@@ -2889,7 +2889,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Stasis (Δv -0.5%). The Lewinsky scandal is an *actual* conspiracy (cover-up), which ironically grounds the paranoia in reality. The vast 'Right Wing Conspiracy' accusation by Hillary Clinton acknowledges the power of this cluster. However, the economic boom keeps the paranoia at a manageable level. The focus is on the President's sex life, not the NWO.",
           "key_manifestations": [
             "Hillary Clinton's 'Vast Right-Wing Conspiracy' interview",
@@ -2899,7 +2899,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Y2K Panic (Δv +0.5%). The Y2K bug is viewed by this cluster not as a glitch, but as a potential pretext for Martial Law. Prepper culture begins to overlap with conspiracy culture. The Columbine shooting spawns 'False Flag' theories on the deep web (fringe at the time). *The Matrix* provides the ultimate metaphor: reality itself is a lie generated by the machines (The System).",
           "key_manifestations": [
             "Y2K Prepper panic",
@@ -2909,7 +2909,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Recount Rigging (Δv -1.0%). The 2000 Election is a crisis of institutions, but it is fought in court, not in the shadows. The Right trusts the Supreme Court (at the time). The conspiracy energy is lower because 'Our Guy' (Bush) wins. The focus shifts to the Left (who believe the election was stolen).",
           "key_manifestations": [
             "Bush v. Gore conspiracy theories (on the Left)",
@@ -2919,7 +2919,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "9/11 Trutherism (Δv +2.0%). The seminal event. Initially, 'Truthers' are Leftists (Bush did it for oil/Haliburton), but the structural distrust migrates Right over time. Alex Jones predicts the attack in July, giving him messianic status in the cluster. The 'Patriot Act' confirms the NWO plan to strip civil liberties. The idea of the 'False Flag' enters the permanent lexicon.",
           "key_manifestations": [
             "Alex Jones' July Broadcast predicting 9/11",
@@ -2929,7 +2929,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The Anthrax Mystery (Δv -0.5%). The Anthrax attacks (targeting Democrats/Media) remain unsolved (at the time), fueling speculation of a rogue element within the US bio-defense establishment. The 'Deep State' (though not yet named) is suspected. However, the patriotic rally-around-the-flag effect suppresses overt anti-government sentiment.",
           "key_manifestations": [
             "Anthrax Attacks investigation theories",
@@ -2939,7 +2939,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "WMD Lies (Δv +0.5%). The failure to find WMDs in Iraq validates the idea that the Intelligence Agencies lie to the public to manufacture consent. While the Right supports the war, the seed of doubt about the CIA is planted. The 'Straussian' noble lie is discussed in intellectual circles.",
           "key_manifestations": [
             "David Kelly suicide (UK) / WMD dossiers",
@@ -2949,7 +2949,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Swift Boat Veterans (Δv -0.5%). The Swift Boat campaign against Kerry is a 'counter-conspiracy' launched by the Right. It questions the official record of a war hero. It proves that 'Truth' is malleable if you have enough funding and testimonials. The media's inability to adjudicate the truth weakens their authority.",
           "key_manifestations": [
             "Swift Boat Veterans for Truth ads",
@@ -2959,7 +2959,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Loose Change Viral (Δv +1.0%). *Loose Change* becomes the first true internet blockbuster documentary. It bypasses gatekeepers completely. Millions watch it on Google Video. It creates a 'Truther' demographic that crosses party lines. It teaches the method: 'Look at the pixels,' 'Jet fuel can't melt steel beams.'",
           "key_manifestations": [
             "Loose Change 2nd Edition",
@@ -2969,7 +2969,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "North American Union (Δv -0.5%). The 'North American Union' (Amero currency) theory gains traction on the Right (Lou Dobbs/Jerome Corsi). It alleges a secret plan to merge US, Canada, and Mexico. It merges 'Sovereignty' concerns (Cluster 1) with 'Conspiracy' (Cluster 10). The 'Super-Corridor' highway is the physical evidence.",
           "key_manifestations": [
             "Jerome Corsi's 'The Late Great USA'",
@@ -2979,7 +2979,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Zeitgeist (Δv +1.0%). *Zeitgeist: The Movie* goes viral. It combines 9/11 Trutherism, Jesus Mythicism, and Anti-Fed Reserve theories. It is a 'Theory of Everything' for the disaffected. It prepares the ground for the Ron Paul movement's auditing of the Fed. The 'End the Fed' chants are driven by the belief that the central bank is a cabal.",
           "key_manifestations": [
             "Zeitgeist: The Movie",
@@ -2989,7 +2989,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Bailout Betrayal (Δv +1.0%). The Financial Crisis is viewed as a deliberate controlled demolition to consolidate power. The suspension of the Mark-to-Market accounting rule is seen as proof. The ' FEMA Camps' theories (Jesse Ventura) begin to circulate—preparing for civil unrest. *The Dark Knight* features the Joker, who exposes the fragility of order, resonating with the mood.",
           "key_manifestations": [
             "TARP Bailout conspiracy theories",
@@ -2999,7 +2999,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Birtherism (Δv +2.0%). The theory that Obama was born in Kenya explodes. It is the refusal to accept the legitimacy of the President. Trump rides this wave on *The View*. It proves that a conspiracy theory doesn't need to be true to be politically effective; it just needs to signal 'He is not one of us.' It is the first 'Mainstream' conspiracy of the modern GOP.",
           "key_manifestations": [
             "Donald Trump on The View discussing birth certificate",
@@ -3009,7 +3009,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Agenda 21 (Δv -0.5%). The UN's 'Agenda 21' (sustainable development) is reframed by Glenn Beck and others as a plot to end private property and herd humans into stack-and-pack cities. It localizes the conspiracy: 'Your local zoning board is part of the NWO.' This engages the suburban activist.",
           "key_manifestations": [
             "Glenn Beck's chalkboard diagrams",
@@ -3019,7 +3019,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Bin Laden Raid skepticism (Δv -0.5%). The killing of Bin Laden is questioned ('Where is the body?'). However, the primary energy is on the 'Fast and Furious' scandal (ATF gun running). This is a real conspiracy that validates the distrust: The government gave guns to cartels to blame the Second Amendment. It radicalizes the Gun Rights movement.",
           "key_manifestations": [
             "Operation Fast and Furious scandal",
@@ -3029,7 +3029,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Sandy Hook (Δv +2.0%). The Sandy Hook shooting births the 'Crisis Actor' meme. Alex Jones suggests it was staged. This is the moment the cluster detaches from reality and becomes cruel. It posits that *mass shootings* are government operations to disarm the populace. It marks the point of no return for the conspiratorial Right.",
           "key_manifestations": [
             "Alex Jones 'Sandy Hook' broadcast",
@@ -3039,7 +3039,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "Snowden Vindication (Δv +0.5%). Edward Snowden reveals PRISM. The Conspiracy Theorists were right: The government *is* listening to every phone call. This validation is massive. It erases the line between 'Paranoid' and 'Informed.' It makes 'Deep State' (then just called the Surveillance State) a factual reality.",
           "key_manifestations": [
             "Snowden Leaks",
@@ -3049,7 +3049,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "GamerGate (Δv -0.5%). While cultural, GamerGate teaches the Right how to map networks (GameJournoPros). They realize the 'Conspiracy' is not a smoke-filled room, but a Slack channel. It is 'Emergent Coordination.' This nuance prepares them for the WikiLeaks drops.",
           "key_manifestations": [
             "GameJournoPros leak",
@@ -3059,7 +3059,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Jade Helm 15 (Δv +1.0%). A military exercise in Texas is interpreted as the prelude to Martial Law and the invasion of Texas. Governor Abbott validates it by calling the State Guard to monitor. It shows the conspiracy has moved from the radio to the Governor's mansion. It highlights the extreme distrust of the Obama military.",
           "key_manifestations": [
             "Jade Helm 15 panic",
@@ -3069,7 +3069,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Pizzagate (Δv +6.0%). The Wikileaks Podesta emails. The internet 'autists' analyze code words (Pizza/Pasta). They conclude a pedophile ring exists in a DC pizza shop. It bridges the gap between 'Political Corruption' and 'Satanic Evil.' It creates the 'Save the Children' moral urgency that fuels QAnon. Trust in media hits absolute zero.",
           "key_manifestations": [
             "Podesta Emails release",
@@ -3079,7 +3079,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 22.0,
+          "salience_share": 22.0,
           "description": "Q Clearance Patriot (Δv +4.0%). Q begins posting on 4chan. 'The Calm Before the Storm.' It acts as a 'Gamification' of propaganda. Boomers and Zoomers unite to solve the riddles. It explains why Trump isn't arresting Hillary (Trust the Plan). It is a religious revival disguised as intelligence leaks. It posits a 'White Hat' military faction fighting the Deep State.",
           "key_manifestations": [
             "Q drop #1 (October)",
@@ -3089,7 +3089,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 20.0,
+          "salience_share": 20.0,
           "description": "The Memo (Δv -2.0%). The 'Nunes Memo' is hyped as the thing that will bring down the FBI. It lands with a thud. The 'Trust the Plan' mantra is tested. QAnon spreads to YouTube and Facebook, becoming a suburban phenomenon ('Pastors for Trump'). The 'Adrenochrome' theory (harvesting blood) enters the lore.",
           "key_manifestations": [
             "The Nunes Memo release",
@@ -3099,7 +3099,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 23.0,
+          "salience_share": 23.0,
           "description": "Epstein Didn't Kill Himself (Δv +3.0%). Jeffrey Epstein's arrest and death is the ultimate vindication. 'We told you there was an elite pedophile ring.' The 'Epstein Didn't Kill Himself' meme unifies the country in distrust. It is the moment the 'Conspiracy' becomes the 'Consensus.'",
           "key_manifestations": [
             "Jeffrey Epstein's death",
@@ -3109,7 +3109,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 30.0,
+          "salience_share": 30.0,
           "description": "The Grand Unification (Δv +7.0%). COVID + George Floyd + The Election. The conspiracy theories merge into a Super-Cluster. The Vaccine is the Mark/Control mechanism. The Riots are Soros-funded color revolutions. The Election is Stolen by Hugo Chavez software (Dominion). QAnon moves from the fringe to Congress (MTG elected). The 'Plandemic' documentary goes viral. Reality is shattered.",
           "key_manifestations": [
             "Plandemic (Viral Video)",
@@ -3119,7 +3119,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 25.0,
+          "salience_share": 25.0,
           "description": "The Disappointment (Δv -5.0%). Biden is inaugurated. The Storm did not happen. The 'Goalpost Moving' begins. The movement fractures. Some go back to sleep; others radicalize into 'Sovereign Citizen' logic. The 'Died Suddenly' narrative regarding vaccines keeps the engine running, replacing 'The Storm' with 'The Die-off.' Jan 6th is reframed as an 'FBI Trap' (Ray Epps).",
           "key_manifestations": [
             "Biden Inauguration (The 'movie' didn't end)",
@@ -3129,7 +3129,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 26.0,
+          "salience_share": 26.0,
           "description": "Biolabs (Δv +1.0%). The Ukraine invasion. The cluster pivots to 'US Biolabs in Ukraine.' It explains the war as a cleanup operation by Putin (a White Hat) against the Deep State's pathogen factories. This merges the COVID conspiracy with the Geopolitical conspiracy. Elon Musk's Twitter Files validate the 'Shadow banning' theories.",
           "key_manifestations": [
             "US Biolabs in Ukraine theory",
@@ -3139,7 +3139,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 27.0,
+          "salience_share": 27.0,
           "description": "Sound of Freedom (Δv +1.0%). The film *Sound of Freedom* becomes a blockbuster. It mainstreams the 'Child Trafficking' narrative without the Q branding. It allows normies to participate in the moral panic. The 'Aliens' hearings (Grusch) are viewed with suspicion: 'Project Blue Beam' (fake alien invasion) is the next false flag.",
           "key_manifestations": [
             "Sound of Freedom box office success",
@@ -3149,7 +3149,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 28.0,
+          "salience_share": 28.0,
           "description": "Vindication (Δv +1.0%). The exposure of the 'Censorship Industrial Complex' and the Hunter Biden Laptop validation makes the conspiracy theorists feel vindicated. 'The difference between a conspiracy theory and the truth is 6 months.' RFK Jr. (the prince of conspiracy) joins Trump. The assassination attempt on Trump is analyzed via 'Dealey Plaza' mechanics immediately.",
           "key_manifestations": [
             "Trump Assassination Attempt (The failure of Secret Service interpreted as malice)",
@@ -3159,7 +3159,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 29.0,
+          "salience_share": 29.0,
           "description": "Institutionalized Paranoid Style (Δv +1.0%). The new administration launches investigations into the investigators. The 'Deep State' is now the official target of the Executive Branch. The conspiracy theory is no longer a theory; it is the governing philosophy. The release of the JFK Files (full) is the symbolic closing of the circle.",
           "key_manifestations": [
             "Release of the full JFK Assassination Records",
@@ -3175,7 +3175,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the 'unholy alliance' between radical free-market libertarianism (Austrian Economics) and cultural conservatism. Architected by Murray Rothbard and Lew Rockwell, it rejects the 'Lifestyle Libertarianism' (drugs/polyamory) of the Left in favor of 'Hoppean' social order. It argues that the State is the primary engine of social decay, and that a truly free society would be socially conservative, discriminatory, and hierarchical. It serves as the bridge between the 'Ron Paul Revolution' and the modern 'Dissident Right,' distinguishing itself from Cluster 1 (Nationalism) by its strict adherence to free trade and property rights.",
       "trajectory": {
         "1995": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The Death of Rothbard (Δv -0.5%). Murray Rothbard dies, leaving the movement without its intellectual godfather. The strategy of 'Paleolibertarianism' (allying with the populist right against the elites) is in disarray after the collapse of the Buchanan alliance. However, Lew Rockwell continues to publish the 'Rothbard-Rockwell Report,' keeping the flame alive in the newsletter era. The focus is on the Militia movement as a symptom of state overreach.",
           "key_manifestations": [
             "LewRockwell.com (early text era)",
@@ -3185,7 +3185,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Wilderness (Δv -0.5%). The GOP nominates Bob Dole, the antithesis of this cluster. The Paleolibertarians are politically homeless. They critique the 'militarized police' and the 'War on Drugs' from a right-wing perspective, but the mainstream Right is obsessed with 'Law and Order.' The cluster functions as a remnant, predicting that the fiat boom will end in disaster.",
           "key_manifestations": [
             "Harry Browne's Libertarian Party campaign (The purity test)",
@@ -3195,7 +3195,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Stasis (Δv -0.5%). The Dot-com bubble makes 'Austrian Business Cycle Theory' look ridiculous to the mainstream. Everyone is getting rich. The Paleolibertarians argue it is 'malinvestment' caused by the Fed, but no one listens. They focus on history revisionism (Civil War, New Deal) to attack the legitimacy of the central state.",
           "key_manifestations": [
             "The Costs of War (John Denson - Revisionist history)",
@@ -3205,7 +3205,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Impeachment Apathy (Δv 0%). While the Moral Majority cares about Clinton's sex life, the Paleolibertarians care about his war crimes (Sudan bombing). They distinguish themselves by refusing to join the GOP's moral crusade, arguing that the *State* is the immorality, not the sex. This separates them from the standard Christian Right.",
           "key_manifestations": [
             "Clinton impeachment debates (framed as distraction from policy)",
@@ -3215,7 +3215,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Battle of Seattle (Δv +0.5%). The WTO protests. Interestingly, the Paleolibertarians support the *protests* (anti-globalist bureaucracy) but hate the *protesters* (socialists). This highlights their unique position: Anti-Globalist but Pro-Market. They argue for 'Unilateral Free Trade' not 'Managed Trade Deals.'",
           "key_manifestations": [
             "WTO Protests analysis in Chronicles/LRC",
@@ -3225,7 +3225,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "The Neocon Takeover (Δv -0.5%). The rise of Bush and the Neocons pushes this cluster to the absolute fringe. They warn that 'Compassionate Conservatism' is just Big Government offering crumbs. They predict that Bush will expand the state more than Clinton. They are ignored.",
           "key_manifestations": [
             "Harry Browne's second campaign",
@@ -3235,7 +3235,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The Purge (Δv -0.5%). 9/11. The Paleolibertarians (who blame US foreign policy for blowback) are aggressively purged from the Right. David Frum calls them 'Unpatriotic.' They are exiled from National Review and the Heritage Foundation. They retreat to the internet, creating a distinct 'Anti-War Right' subculture.",
           "key_manifestations": [
             "David Frum's 'Unpatriotic Conservatives' article",
@@ -3245,7 +3245,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Anti-War Remnant (Δv +1.0%). As the war drums beat, the cluster finds new allies: Leftists. The 'Anti-War' coalition brings traffic to LewRockwell.com and Antiwar.com. They argue that 'War is the Health of the State' (Bourne). This begins the radicalization of the youth who will later fuel the Ron Paul movement.",
           "key_manifestations": [
             "Antiwar.com traffic spike",
@@ -3255,7 +3255,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Ron Paul's Dissent (Δv +0.5%). Ron Paul serves as the lone voice in Congress voting 'No' on everything. He becomes a cult hero on the internet ('Dr. No'). The cluster begins to coalesce around him as the avatar of 'Constitutionality.' The Iraq War is framed not as a mistake, but as a crime.",
           "key_manifestations": [
             "Ron Paul's floor speeches against the Iraq War",
@@ -3265,7 +3265,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Austro-Libertarian Moment (Δv +0.5%). As the housing bubble inflates, the Austrian economists (Schiff, Rockwell, Woods) begin screaming about the crash. They debate the 'Mainstream' economists on cable news. The clarity of their prediction ('The Fed is causing a bubble') attracts intellectual types who feel gaslit by the establishment.",
           "key_manifestations": [
             "Tom Woods publishes 'The Politically Incorrect Guide to American History'",
@@ -3275,7 +3275,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Katrina and Anarchy (Δv +0.5%). The failure of FEMA allows the cluster to argue that 'Statism kills.' They highlight the 'Cajun Navy' (private mutual aid) as superior to the State. The concept of 'Anarcho-Capitalism' begins to filter from theory to practical observation.",
           "key_manifestations": [
             "Critiques of FEMA in the libertosphere",
@@ -3285,7 +3285,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Housing Prediction (Δv +0.5%). Peter Schiff's predictions become viral on YouTube. He is laughed at by the CNBC hosts. This creates a powerful 'Us vs. Them' epistemological split. The cluster feels they possess 'Secret Knowledge' (Austrian Economics) that the rest of the world ignores.",
           "key_manifestations": [
             "Peter Schiff 'Mortgage Meltdown' predictions",
@@ -3295,7 +3295,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Revolution Begins (Δv +7.0%). Ron Paul runs for President. He confronts Giuliani on 'Blowback' in the debate. It is the defining moment. The internet explodes. The 'Money Bombs' (fundraising) break records. The Paleolibertarian strategy of 'Populist Outreach' is vindicated. The 'Ron Paul Revolution' logo is everywhere.",
           "key_manifestations": [
             "Ron Paul vs. Giuliani debate moment",
@@ -3305,7 +3305,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "End the Fed (Δv +3.0%). The Financial Crisis happens exactly as the cluster predicted. Sales of *Atlas Shrugged* and *The Road to Serfdom* skyrocket. The 'End the Fed' chants at rallies are deafening. The cluster moves from 'Fringe' to 'Prophetic.' However, the GOP nomination goes to McCain, causing a split: some go to the Constitution Party, some check out.",
           "key_manifestations": [
             "End the Fed by Ron Paul",
@@ -3315,7 +3315,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Tea Party Origins (Δv -1.0%). The Tea Party starts as a Ron Paul event (re-enacting the Boston Tea Party). It is immediately co-opted by the GOP establishment (Palin/Beck). The Paleolibertarians are bitter. They view the Tea Party as 'Neoconservatism in a tri-corner hat.' They retreat to building their own media (The Daily Paul, Liberty Forest).",
           "key_manifestations": [
             "The initial Tea Party protests (Ron Paul wing)",
@@ -3325,7 +3325,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Rand Paul's Compromise (Δv -2.0%). Ron's son, Rand Paul, runs for Senate. He plays the game, endorsing Romney later, softening the edges. The 'Purists' (Rothbardians) feel betrayed. The movement fractures into 'Pragmatists' (working within the GOP) and 'Radicals' (Voluntaryists/Ancaps).",
           "key_manifestations": [
             "Rand Paul's Senate victory",
@@ -3335,7 +3335,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Ron Paul 2012 (Δv +1.0%). The second run. It is more professional, polling second in Iowa. The 'Blue Republican' phenomenon (anti-war leftists voting Paul). However, the media blackout is total. The 'prophet' is ignored. The realization sets in: 'We cannot vote our way out of this.'",
           "key_manifestations": [
             "Ron Paul polling 2nd in Iowa",
@@ -3345,7 +3345,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "The RNC Crackdown (Δv -2.0%). The GOP changes the rules to prevent Ron Paul from being nominated from the floor. The delegates are silenced. This is the 'Red Wedding' for the movement within the GOP. It births the 'Post-Political' turn: Crypto, Seasteading, and 3D Printed Guns (Defense Distributed).",
           "key_manifestations": [
             "RNC 2012 Rule Changes",
@@ -3355,7 +3355,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "The Diaspora (Δv -2.0%). The movement scatters. Some go to Bitcoin (Cluster 9). Some go to the Alt-Right (Cluster 6). Some go to 'Just being a normal person.' The unified 'Liberty Movement' dissolves. The Amash/Massie wing remains in Congress, but lacks the revolutionary energy.",
           "key_manifestations": [
             "Justin Amash in Congress",
@@ -3365,7 +3365,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Podcast Era (Δv -1.0%). Tom Woods, Dave Smith, and Michael Malice launch podcasts. They keep the intellectual fire burning, but the political variance is low. They focus on 'Education' and 'Counter-Economics.' The 'Mises Caucus' idea begins to germinate: Take over the Libertarian Party.",
           "key_manifestations": [
             "Tom Woods Show growth",
@@ -3375,7 +3375,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Trump Dilemma (Δv -1.0%). Trump runs. He sounds like a Paleoconservative (Cluster 1) but lacks the Libertarian ethics. The movement splits: The 'Rothbardians' (Lew Rockwell) support Trump's disruption. The 'Cosmotarians' (Reason Mag) hate his nativism. The split is bitter and permanent.",
           "key_manifestations": [
             "Lew Rockwell's pro-Trump articles",
@@ -3385,7 +3385,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Johnson/Weld Disaster (Δv -1.0%). The Libertarian Party nominates Gary Johnson and Bill Weld (a neocon). They fail to get 5%. The Paleolibertarians are disgusted. They view the LP as a 'Woke' social club. They resolve to burn it down and rebuild it.",
           "key_manifestations": [
             "Gary Johnson 'What is Aleppo?'",
@@ -3395,7 +3395,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Mises Caucus Rising (Δv +1.0%). Dave Smith and the 'Legion of Skanks' comedians bring a new, aggressive, 'Bro' energy to Libertarianism. They reject the 'Please like us' strategy. They embrace the 'Mises Caucus' strategy: takeover the LP state by state. The vibe is 'Tupac and Rothbard.'",
           "key_manifestations": [
             "Formation of the Mises Caucus",
@@ -3405,7 +3405,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Anti-Woke Libertarianism (Δv +0.5%). The cluster aligns with the 'Anti-Woke' Left and Right. They argue that 'Wokeness' is a tool of the State/Corporate HR departments. This 'Cultural Populism' reconnects them with the MAGA base, creating a bridge for recruitment.",
           "key_manifestations": [
             "Dave Smith on Joe Rogan",
@@ -3415,7 +3415,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Cathedral Critique (Δv +0.5%). The cluster integrates the 'Cathedral' concept from NRx. They realize that 'Private Companies' (Twitter/Google) acting as state agents invalidates the 'It's a private company' defense. This intellectual shift allows them to attack Big Tech censorship without violating property rights principles (the 'State Actor' theory).",
           "key_manifestations": [
             "Joker (The collapse of society)",
@@ -3425,7 +3425,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "COVID Tyranny (Δv +4.0%). The lockdowns are the ultimate validation of the Paleolibertarian worldview. The State destroyed the economy and civil liberties overnight. The 'Mises Caucus' organizes resistance when the GOP is silent. They gain massive credibility. 'Nullification' becomes a household term.",
           "key_manifestations": [
             "Anti-Lockdown protests",
@@ -3435,7 +3435,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "National Divorce (Δv +1.0%). The cultural divide is so deep that 'Secession' is discussed openly. Michael Malice publishes *The Anarchist Handbook*, bringing anarchist theory to the bestseller list. The cluster argues: 'We cannot share a country with people who want to lock us down.'",
           "key_manifestations": [
             "The Anarchist Handbook (Michael Malice)",
@@ -3445,7 +3445,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Reno Takeover (Δv +2.0%). The Mises Caucus successfully takes over the Libertarian Party at the Reno convention. They purge the 'Woke' pragmatists. They run the 'National Divorce' tweet. It is a total victory for the Rothbardian strategy. They immediately align with the anti-war populist Right.",
           "key_manifestations": [
             "LP Reno Convention (Mises Sweep)",
@@ -3455,7 +3455,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "The Milei Shock (Δv +1.0%). Javier Milei wins in Argentina. He is an explicit anarcho-capitalist who quotes Rothbard. It is the first time in history a member of this cluster wins a head of state role. It electrifies the movement. 'Afuera!' (Out!) becomes the slogan. It proves the ideas can win popularly.",
           "key_manifestations": [
             "Javier Milei election victory",
@@ -3465,7 +3465,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 15.5,
+          "salience_share": 15.5,
           "description": "The Trump Alliance (Δv -0.5%). Trump speaks at the Libertarian Convention (invited by the Mises Caucus). He is booed, but he promises a Libertarian in the cabinet. The cluster strategically aligns with Trump to defeat the 'Deep State,' accepting they are the junior partner. Dave Smith emerges as the 'Intellectual Conscience' of the Manosphere/Right.",
           "key_manifestations": [
             "Trump at the LP Convention",
@@ -3475,7 +3475,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 16.5,
+          "salience_share": 16.5,
           "description": "DOGE (Δv +1.0%). The 'Department of Government Efficiency' (Musk/Ramaswamy) is essentially the Paleolibertarian program: Slash spending, fire bureaucrats, end agencies. The cluster views this as their 'moment' to dismantle the administrative state from within, even if the head of state is a Protectionist. The 'Ron Paul Revolution' finally enters the Executive Branch.",
           "key_manifestations": [
             "Ron Paul invited to advice the DOGE commission",
@@ -3491,7 +3491,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the conviction that the complex systems of the modern world (Supply Chains, Grid, Currency, Social Order) are fragile and destined to fail. It moves beyond 'Politics' (who rules) to 'Survival' (who eats). It encompasses the Prepper movement, the 'Tactical' lifestyle brand, and the 'Accelerationist' belief that the collapse is necessary and should be hastened. It is the 'Doomer' wing of the Right.",
       "trajectory": {
         "1995": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Y2K Pre-Game (Δv +0.5%). The looming Year 2000 bug creates the first modern wave of 'Prepping.' It is technical, not political. However, the Militia movement (Oklahoma City fallout) provides the 'Tactical' aesthetic. People begin buying generators and freeze-dried food, fearing a grid-down scenario.",
           "key_manifestations": [
             "Y2K survival guides",
@@ -3501,7 +3501,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Independence Day (Δv +0.5%). The alien invasion movie creates a cultural imprint of 'City Destruction.' The idea that help is *not* coming, and you must survive on your own, takes root. The 'Sovereign Citizen' movement grows in the rural West, driven by the belief that the US government is bankrupt/illegitimate.",
           "key_manifestations": [
             "Independence Day (The destruction of the White House)",
@@ -3511,7 +3511,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Coming Anarchy (Δv +0.5%). Robert Kaplan's 'The Coming Anarchy' article (Atlantic) is widely read. It predicts the breakdown of nation-states into tribal conflict. This validates the 'Balkanization' fears of the Right. The 'Prepper' mindset moves from 'Events' (Y2K) to 'Trends' (Social Decay).",
           "key_manifestations": [
             "The Coming Anarchy (Robert Kaplan)",
@@ -3521,7 +3521,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Peak Y2K (Δv +1.0%). The panic sets in. Mainstream news discusses power grid failure. The 'Survivalist' sheds the 'crazy' label and becomes 'prudent.' Gun sales spike. The feeling is that the technological substrate of civilization is rotten.",
           "key_manifestations": [
             "Time Magazine Y2K covers",
@@ -3531,7 +3531,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Bunker Mentality (Δv +1.0%). New Year's Eve 1999 is the focal point. The 'Prepper' industry booms. *Fight Club* articulates the *desire* for the collapse ('I wanted to put a bullet between the eyes of every panda...'). The collapse is viewed as a cleansing fire for a decadent civilization.",
           "key_manifestations": [
             "Y2K New Year's Eve watch parties",
@@ -3541,7 +3541,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Nothingburger (Δv -4.0%). The lights stay on. Y2K is a dud. The Preppers are humiliated. The surplus freeze-dried food is eaten in shame. The cluster collapses into dormancy. The system proved robust.",
           "key_manifestations": [
             "Jan 1, 2000 (Nothing happens)",
@@ -3551,7 +3551,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Terror Panic (Δv +2.0%). 9/11 proves that 'They' can hit us here. The threat shifts from 'System Failure' to 'External Attack.' Duct tape and plastic sheeting sales spike (anthrax fears). The 'Bug Out Bag' enters the lexicon.",
           "key_manifestations": [
             "Duct tape and plastic sheeting advisory",
@@ -3561,7 +3561,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The Zombie Renaissance (Δv +0.5%). *28 Days Later* and *Resident Evil* mainstream the Zombie apocalypse. The Zombie is the perfect metaphor for the Collapse: The 'Masses' become the enemy. The Prepper fantasizes about shooting the 'Infected' (looters/rioters). It de-humanizes the post-collapse neighbor.",
           "key_manifestations": [
             "28 Days Later (The rage virus)",
@@ -3571,7 +3571,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Grid Fragility (Δv +0.5%). The Northeast Blackout of 2003. 50 million people lose power. It shows how quickly 'civilization' vanishes (looting, darkness). It validates the Prepper thesis: You are nine meals away from anarchy.",
           "key_manifestations": [
             "Northeast Blackout of 2003",
@@ -3581,7 +3581,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Peak Oil (Δv +0.5%). The 'Peak Oil' theory gains traction. The idea that cheap energy is ending and industrial civilization will contract. The 'Long Emergency' (Kunstler) is discussed. It creates a 'Left-Right' alliance of doomers (Hippies and Survivalists).",
           "key_manifestations": [
             "The End of Suburbia (Documentary)",
@@ -3591,7 +3591,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Katrina (Δv +1.5%). Hurricane Katrina is the 'Field Validated' case study. The government will not save you. The police will confiscate your guns. You will be left to die in the Superdome. This event creates the modern 'Tactical Prepper' movement. Gun sales soar.",
           "key_manifestations": [
             "Hurricane Katrina aftermath",
@@ -3601,7 +3601,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "The Road (Δv +0.5%). Cormac McCarthy's *The Road* (Pulitzer Prize). It strips the romance out of the apocalypse. It is pure despair. It signals a cultural mood shift: The future is not 'Star Trek,' it is 'Cannibalism.' The 'Peak Oil' anxiety intensifies.",
           "key_manifestations": [
             "The Road (Pulitzer win)",
@@ -3611,7 +3611,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "I Am Legend (Δv +0.5%). The visualization of the empty city. The 'Prepper' fantasy of owning the ruins. The 'Subprime' cracks begin to show, hinting at economic collapse. 'SurvivalBlog' (James Wesley Rawles) becomes the central hub for the 'Redoubt' movement (moving to the interior West).",
           "key_manifestations": [
             "I Am Legend (Film)",
@@ -3621,7 +3621,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Financial Armageddon (Δv +3.0%). The banks fail. It looks like the 'End of the World.' Food prices spike. Ammo shortages begin. The 'Doomsday Prepper' moves from a hobby to a necessity. The 'Rawlesian' philosophy (Guns, Gold, Groceries) becomes the standard Right-wing portfolio.",
           "key_manifestations": [
             "The Great Recession",
@@ -3631,7 +3631,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Zombieland (Δv +1.0%). The 'Zombie' genre peaks. *Zombieland* makes the apocalypse 'fun.' 'Rule #1: Cardio.' It normalizes the language of survival for the youth. 'One Second After' is published, detailing an EMP attack. It scares Congress and the public about the grid.",
           "key_manifestations": [
             "Zombieland (Gamified collapse)",
@@ -3641,7 +3641,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Walking Dead (Δv +1.0%). The show premieres. It becomes the biggest show on TV. It is a weekly tutorial in collapse sociology: 'Fight the Dead, Fear the Living.' It creates a massive market for 'Zombie Response Team' gear, which is just 'Civil War' gear in disguise.",
           "key_manifestations": [
             "The Walking Dead premieres",
@@ -3651,7 +3651,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "Contagion (Δv +0.5%). The film *Contagion* provides a realistic pandemic scenario. It highlights 'Social Breakdown' as the real threat. The 'Prepper' industry (Wise Foods, etc.) goes mainstream, advertising on Fox News. The 'Mayan 2012' countdown adds a mystic layer of doom.",
           "key_manifestations": [
             "Contagion (The realistic collapse)",
@@ -3661,7 +3661,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "2012 Phenomenon (Δv +0.5%). The Mayan Calendar end date (Dec 21). A massive cultural moment of 'End Times' anxiety. When it passes, the anxiety doesn't vanish; it shifts to 'Political Collapse' (Obama's re-election). The 'American Redoubt' movement (migration to Idaho/Montana) formalizes.",
           "key_manifestations": [
             "Dec 21, 2012 (The date)",
@@ -3671,7 +3671,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "The Purge (Δv -2.0%). *The Purge* releases. It posits that the collapse is *managed* by the state. While popular, the immediate 'End of World' panic fades as the economy recovers. The focus shifts to 'Soft Collapse' (Cultural decay) rather than 'Hard Collapse' (EMP).",
           "key_manifestations": [
             "The Purge (Managed chaos)",
@@ -3681,7 +3681,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Ebola Panic (Δv -1.0%). The Ebola scare in the US triggers a brief spike in hazmat suit sales. It reminds the cluster of the 'Pandemic' vector. However, the competence of the response (it didn't spread) dampens the 'System Failure' narrative temporarily.",
           "key_manifestations": [
             "Ebola US cases panic",
@@ -3691,7 +3691,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Mad Max Fury Road (Δv +1.0%). The aesthetic of the 'War Boy' enters the culture. The 'Collapse' is now 'Chrome and Guzzoline.' The Migrant Crisis in Europe is framed by the Right as the 'Camp of the Saints' collapse—a demographic wave that destroys civilization.",
           "key_manifestations": [
             "Mad Max: Fury Road",
@@ -3701,7 +3701,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Deplorable Fortress (Δv +1.0%). Trump's 'American Carnage' speech validates the Doomer worldview. The system *is* broken. However, the 'Prepper' relaxes slightly, thinking 'Our Guy' will fix it. The 'Accelerationists' (Atomwaffen) disagree, wanting to push the system into race war.",
           "key_manifestations": [
             "Trump's 'American Carnage' inaugural",
@@ -3711,7 +3711,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Civil War 2.0 (Δv -1.0%). The 'Civil War' talk begins. The 'Antifa' vs 'Proud Boys' street battles are viewed as the opening skirmishes. Prepping shifts from 'Food Storage' to 'Body Armor.' The 'Boogaloo' meme (Civil War 2: Electric Boogaloo) begins to germinate in gun forums.",
           "key_manifestations": [
             "Berkeley Riots",
@@ -3721,7 +3721,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "Climate Doom (Δv -0.5%). The 'Climate Change' narrative takes over the 'Collapse' variance on the Left. The Right rejects the cause (CO2) but accepts the outcome (Resource Wars). The 'Deep Adaptation' paper circulates—accepting collapse is inevitable.",
           "key_manifestations": [
             "A Quiet Place (Survival silence)",
@@ -3731,7 +3731,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Boogaloo (Δv +2.5%). The 'Boogaloo Bois' emerge. Hawaiian shirts and AR-15s. They are 'Accelerationists' who want to kick off the collapse. *Joker* captures the mood of 'Burn it all down.' The feeling of tension is palpable.",
           "key_manifestations": [
             "The 'Boogaloo' meme mainstreaming",
@@ -3741,7 +3741,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 20.0,
+          "salience_share": 20.0,
           "description": "The Event (Δv +5.0%). COVID-19. The Toilet Paper Panic. The Empty Shelves. The Preppers were right. Everyone becomes a Prepper. The 'Supply Chain' enters the vocabulary. The Summer of Riots (George Floyd) confirms the 'Social Breakdown' vector. Gun sales break all historical records. Ammo is unobtainable.",
           "key_manifestations": [
             "The Great Toilet Paper Shortage",
@@ -3751,7 +3751,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Supply Chain Crisis (Δv -2.0%). The ships are stuck at port. The shelves are bare. The 'Collapse' is boring—it's just things getting expensive and slow. 'Dark Winter' is predicted. The 'Texas Freeze' (grid failure) validates the 'Grid Down' anxiety.",
           "key_manifestations": [
             "Texas Power Grid Failure",
@@ -3761,7 +3761,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 17.0,
+          "salience_share": 17.0,
           "description": "Food Shortage Anxiety (Δv -1.0%). The Ukraine war spikes wheat/fertilizer prices. Tucker Carlson talks about 'Famine.' The burning of food processing plants (conspiracy) feeds the narrative. 'Homesteading' explodes as a lifestyle—producing your own food is the only security.",
           "key_manifestations": [
             "Tucker Carlson 'Food Shortage' segments",
@@ -3771,7 +3771,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 16.5,
+          "salience_share": 16.5,
           "description": "Leave the World Behind (Δv -0.5%). The Netflix film produced by the Obamas. It depicts a cyber-attack collapse. The Right analyzes it as 'Predictive Programming'—the elites telling us what they are going to do. The 'Cyber-Polygon' WEF exercise is cited. The anxiety shifts to 'Cyber-Attack.'",
           "key_manifestations": [
             "Leave the World Behind (Film)",
@@ -3781,7 +3781,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Civil War Movie (Δv +1.5%). The A24 film *Civil War* visualizes the domestic conflict. It creates a feedback loop. The 'National Divorce' rhetoric makes the collapse feel political and voluntary. The 'Tex-it' (Texas Secession) movement gains razor wire on the border.",
           "key_manifestations": [
             "Civil War (Film)",
@@ -3791,7 +3791,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 19.0,
+          "salience_share": 19.0,
           "description": "The Parallel Society (Δv +1.0%). The Prepper movement matures into the 'Parallel Economy.' It's not just beans and bullets; it's parallel payment processors, parallel internet, parallel schools. The collapse of the 'Mainstream' is accepted; the goal is to build the 'Ark.' The 'Network State' is the high-IQ version of the Prepper Bunker.",
           "key_manifestations": [
             "The founding of 'Parallel Economy' banks/services",
@@ -3807,7 +3807,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the highly organized, intellectual legal movement to interpret the U.S. Constitution according to its 'original public meaning' at the time of enactment, rejecting the 'Living Constitution' theory of the Left. Anchored by the Federalist Society and personified by Antonin Scalia, it sought to capture the Judiciary to dismantle the administrative state and protect gun rights, speech, and religious liberty. For 30 years, it was the most successful and disciplined project of the American Right, culminating in the capture of the Supreme Court, before facing a challenge from the 'Post-Liberal' Right which deems it too neutral.",
       "trajectory": {
         "1995": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Clarence Thomas Effect (Δv +0.5%). Following his bruising 1991 confirmation, Justice Thomas begins to stake out hard-line Originalist positions, often writing solo dissents that future-cast the movement's direction. The Federalist Society is growing on law school campuses, acting as a counter-culture to the dominant liberal legal academia. The focus is on 'Commerce Clause' restrictions.",
           "key_manifestations": [
             "United States v. Lopez (Supreme Court strikes down Gun-Free School Zones Act - first Commerce Clause limit since New Deal)",
@@ -3817,7 +3817,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Bork Shadow (Δv -0.5%). Robert Bork's *Slouching Towards Gomorrah* is published. While Bork was the failed nominee, his book argues that judicial tyranny is destroying culture. This cements the view that the Court is the enemy of democracy (when liberal) and must be recaptured. The movement focuses on 'Judicial Restraint.'",
           "key_manifestations": [
             "Slouching Towards Gomorrah by Robert Bork",
@@ -3827,7 +3827,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Printz v. United States (Δv +0.5%). Scalia writes the majority opinion striking down parts of the Brady Bill (background checks) on 10th Amendment grounds. It is a major victory for 'Federalism' and proves that Originalism can yield tangible policy wins for the Right. The movement gains confidence.",
           "key_manifestations": [
             "Printz v. United States ruling",
@@ -3837,7 +3837,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Impeachment Legalism (Δv -1.0%). The movement gets bogged down in the technicalities of the Clinton impeachment ('What the definition of is, is'). While they argue for the Rule of Law, the public perceives it as legalistic hair-splitting. It exposes a disconnect between 'High Law' and 'Public Sentiment.'",
           "key_manifestations": [
             "The Starr Report",
@@ -3847,7 +3847,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Federalism Revolution (Δv +0.5%). The Rehnquist Court continues to strike down federal overreach (Alden v. Maine). The intellectual energy is high. The Federalist Society is becoming the gatekeeper for GOP judicial nominations. If you want to be a judge, you must kiss the ring of Originalism.",
           "key_manifestations": [
             "Alden v. Maine (Sovereign Immunity)",
@@ -3857,7 +3857,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Bush v. Gore (Δv +4.5%). The singularity. The Supreme Court decides the election. For the Left, it is a coup. For the Right, it is the Judiciary saving the Constitution from chaotic recounting. It cements the Court as the ultimate prize. The GOP realizes: 'The Court is more important than the Presidency.'",
           "key_manifestations": [
             "Bush v. Gore decision",
@@ -3867,7 +3867,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "The War on Terror Exception (Δv -2.0%). 9/11 forces a pivot. The Right suddenly loves Executive Power (Unitary Executive Theory). Originalism (which usually limits power) is twisted to justify massive Presidential authority in wartime (John Yoo). This creates a tension between the Libertarian Originalists and the Security State Originalists.",
           "key_manifestations": [
             "The Patriot Act drafting",
@@ -3877,7 +3877,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Judicial Confirmations (Δv -1.0%). The Democrats begin filibustering Bush's judges (Pickering, Estrada). This politicizes the lower courts. The Federalist Society mobilizes its donor network. The slogan 'No More Souters' (referring to the HW Bush appointee who drifted left) becomes the prime directive.",
           "key_manifestations": [
             "Miguel Estrada filibuster",
@@ -3887,7 +3887,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Lawrence v. Texas (Δv -1.0%). The Court strikes down sodomy laws. Scalia's dissent is apocalyptic: 'The Court has taken sides in the culture war.' He predicts this will lead to Gay Marriage. The movement feels besieged. They realize they don't have the votes yet.",
           "key_manifestations": [
             "Lawrence v. Texas decision",
@@ -3897,7 +3897,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "The Marriage Defense (Δv +0.5%). State courts begin legalizing gay marriage (Massachusetts). The reaction is to push for Federal Marriage Amendments. Originalists are split: Federalism (let states decide) vs. Moralism (ban it everywhere). The Federalism wing loses the cultural argument to the Evangelicals.",
           "key_manifestations": [
             "Goodridge v. Department of Public Health (MA)",
@@ -3907,7 +3907,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "The Roberts/Alito Shift (Δv +2.5%). Rehnquist dies; O'Connor retires. Bush attempts to nominate Harriet Miers (a crony). The Federalist Society revolts and kills the nomination. This is a flexing of absolute power. They force the nomination of Alito (a true believer). Roberts is confirmed as Chief. The Court shifts right. The 'Project' is working.",
           "key_manifestations": [
             "Harriet Miers withdrawal",
@@ -3917,7 +3917,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Hamdan v. Rumsfeld (Δv -1.0%). The Court pushes back on Bush's military tribunals. The Executive Power wing of the movement takes a hit. Originalism asserts itself against the Republican President, proving some intellectual consistency.",
           "key_manifestations": [
             "Hamdan v. Rumsfeld ruling",
@@ -3927,7 +3927,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Partial Birth Abortion (Δv -0.5%). Gonzales v. Carhart. The Court upholds the ban. Kennedy writes the opinion, but the Originalists provide the votes. It is the first major chip in the Roe v. Wade edifice. The movement sees blood in the water.",
           "key_manifestations": [
             "Gonzales v. Carhart decision",
@@ -3937,7 +3937,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Heller (Δv +3.5%). District of Columbia v. Heller. Scalia writes the majority opinion finding an individual right to bear arms. This is the Magnum Opus of Originalism. It uses textual analysis to overturn decades of 'collective right' consensus. It cements the gun rights alliance with the legal movement.",
           "key_manifestations": [
             "District of Columbia v. Heller",
@@ -3947,7 +3947,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Sotomayor and Empathy (Δv -2.0%). Obama nominates Sotomayor. The 'Wise Latina' comment regarding empathy triggers the Right. They argue that 'Empathy' is code for 'Lawlessness.' The confirmation battle is fierce but futile. The cluster retrenches to 'Obstruction.'",
           "key_manifestations": [
             "Sotomayor confirmation hearings",
@@ -3957,7 +3957,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Citizens United (Δv +3.0%). The Court strikes down campaign finance limits as Free Speech violations. The Left goes ballistic ('Corporations are People'). The Right defends it as pure First Amendment textualism. It fundamentally changes American politics, unleashing dark money. The movement argues: 'The text says Congress shall make NO law.'",
           "key_manifestations": [
             "Citizens United v. FEC",
@@ -3967,7 +3967,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Obamacare Challenge (Δv -2.0%). The movement begins to build the legal case against the Individual Mandate (NFIB v Sebelius). They invent the 'Activity vs Inactivity' distinction. It is a brilliant legal theory that moves from fringe blogs to the Supreme Court docket in record time.",
           "key_manifestations": [
             "Drafting of the ACA legal challenges",
@@ -3977,7 +3977,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "The Roberts Betrayal (Δv -2.0%). NFIB v. Sebelius. Roberts saves Obamacare by calling the penalty a 'Tax.' The movement is devastated. They view Roberts as a traitor who caved to political pressure. This radicalizes the base: 'We need judges who are bulletproof.'",
           "key_manifestations": [
             "NFIB v. Sebelius decision",
@@ -3987,7 +3987,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 10.5,
+          "salience_share": 10.5,
           "description": "Shelby County (Δv +0.5%). The Court strikes down the pre-clearance formula of the Voting Rights Act. A massive victory for the 'Colorblind Constitution' wing. They argue the South has changed and the law is outdated. The Left calls it the end of democracy.",
           "key_manifestations": [
             "Shelby County v. Holder",
@@ -3997,7 +3997,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Hobby Lobby (Δv +0.5%). The Court rules that closely held corporations have religious freedom rights (RFRA). It merges the 'Corporate Rights' wing with the 'Religious Liberty' wing. Originalism is now the shield for the Christian Right against the secular state.",
           "key_manifestations": [
             "Burwell v. Hobby Lobby",
@@ -4007,7 +4007,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Obergefell Defeat (Δv -2.0%). Gay Marriage legalized. Scalia's dissent mocks Kennedy's 'Fortune Cookie' aphorisms. The movement accepts they have lost the culture, but resolves to protect 'Religious Dissenters' (bakers/florists). The 'Living Constitution' wins a major battle.",
           "key_manifestations": [
             "Obergefell v. Hodges",
@@ -4017,7 +4017,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "The Scalia Seat (Δv +7.0%). Scalia dies. McConnell blocks Garland. 'Let the People Decide.' It is the greatest gamble in judicial history. Trump releases his 'List of Judges' (curated by Federalist Society). This single move consolidates the Right behind Trump. 'But Gorsuch' becomes the mantra.",
           "key_manifestations": [
             "Death of Antonin Scalia",
@@ -4027,7 +4027,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Gorsuch Confirmed (Δv -1.0%). Neil Gorsuch is confirmed. The gamble paid off. He is Scalia 2.0. The 'Administrative State' is put on notice. The movement feels invincible. They begin dismantling regulations via the 'Major Questions Doctrine.'",
           "key_manifestations": [
             "Neil Gorsuch Confirmation",
@@ -4037,7 +4037,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "The Kavanaugh Wars (Δv +3.0%). Anthony Kennedy retires. Brett Kavanaugh is nominated. The Ford allegations turn the confirmation into a tribal war. The Right views it as a 'hit job.' Kavanaugh's angry defense ('What goes around comes around') rallies the base. He is confirmed. The Court is solidly conservative.",
           "key_manifestations": [
             "Brett Kavanaugh Hearings",
@@ -4047,7 +4047,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Consolidation (Δv -2.0%). The Court begins taking fewer cases, letting the lower courts (now being packed by Trump/McConnell) do the work. The 'Trump Judges' are young, aggressive, and purely Originalist. The 5th Circuit becomes the laboratory for radical right-wing jurisprudence.",
           "key_manifestations": [
             "Appointment of record number of Appellate Judges",
@@ -4057,7 +4057,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 19.0,
+          "salience_share": 19.0,
           "description": "RBG and Barrett (Δv +3.0%). RBG dies weeks before the election. McConnell pushes Barrett through. The 6-3 Supermajority is secured. Barrett is the dream candidate: Scalia's clerk, charismatic, religious. The 'Legitimacy' of the court is questioned by the Left (Court Packing talk), which strengthens the Right's resolve.",
           "key_manifestations": [
             "Amy Coney Barrett Confirmation",
@@ -4067,7 +4067,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 17.0,
+          "salience_share": 17.0,
           "description": "The Shadow Docket (Δv -2.0%). The Court uses emergency orders to block Biden's policies (Eviction Moratorium). The 'Shadow Docket' becomes the tool of choice. The movement is now governing via the judiciary, bypassing a gridlocked Congress. The 'Texualist' mask slips slightly to reveal 'outcomes.'",
           "key_manifestations": [
             "Shadow Docket rulings against Biden admin",
@@ -4077,7 +4077,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 22.0,
+          "salience_share": 22.0,
           "description": "Dobbs (Δv +5.0%). The Peak. Roe v. Wade is overturned. 50 years of legal strategy culminate in one opinion by Alito. It is the greatest victory for the conservative legal movement in history. Bruen (Gun Rights) and Kennedy (School Prayer) are also decided. The 'Constitution in Exile' has been restored. But the backlash is massive.",
           "key_manifestations": [
             "Dobbs v. Jackson Women's Health Organization",
@@ -4087,7 +4087,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Affirmative Action and Ethics (Δv -4.0%). The Court strikes down Affirmative Action (SFFA v Harvard). Another massive win. However, the ProPublica reports on Clarence Thomas's donor perks damage the Court's reputation. The 'Post-Liberal' Right (Vermeule) begins attacking Originalism from the Right, saying it is too 'Procedural' and not 'Moral' enough.",
           "key_manifestations": [
             "SFFA v. Harvard decision",
@@ -4097,7 +4097,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Chevron Deference (Δv -2.0%). The Court overturns *Chevron*, stripping federal agencies of their power to interpret laws. This is the dismantling of the Administrative State (Cluster 3's dream). It transfers power from Experts to Judges. Originalism is now the governing philosophy of the Regulatory State.",
           "key_manifestations": [
             "Loper Bright Enterprises v. Raimondo (Overturning Chevron)",
@@ -4107,7 +4107,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Common Good Pivot (Δv -2.0%). With the 'List' completed (Roe, Guns, Chevron, Affirmative Action), the movement faces an identity crisis. The 'Common Good Constitutionalists' argue that Originalism has served its purpose and must be replaced by a jurisprudence that actively promotes 'Order' and 'Morality.' The Federalist Society begins to fracture between 'Old Guard Libertarians' and 'New Right Theocrats.'",
           "key_manifestations": [
             "Symposiums on 'Beyond Originalism'",
@@ -4123,7 +4123,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the deep cultural, economic, and geographic polarization between the 'Metro' wealth centers and the 'Hinterland.' It is the 'Hunger Games' dynamic: The Capital consumes the resources and mocks the values of the Districts. Fueled by de-industrialization, the opioid crisis, and the condescension of coastal media, this resentment transformed from passive alienation in the 90s to aggressive populist revolt in the Trump era.",
       "trajectory": {
         "1995": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Militia Moment (Δv +0.5%). The Oklahoma City bombing draws attention to the radical fringe of rural discontent. The media paints the rural West as a hotbed of dangerous paranoia. The 'Ruby Ridge' and 'Waco' incidents are viewed in the hinterland as federal wars against rural autonomy.",
           "key_manifestations": [
             "Oklahoma City Bombing aftermath",
@@ -4133,7 +4133,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Walmartization (Δv +0.5%). The rapid expansion of Walmart decimates Main Street businesses in small towns. The 'hollowing out' begins. Culturally, the movie *Fargo* caricatures the rural Midwest, while *Twister* romanticizes the rugged individual battling nature in the heartland.",
           "key_manifestations": [
             "Walmart's peak expansion era",
@@ -4143,7 +4143,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Stasis (Δv -0.5%). The economic boom lifts some boats, masking the rot. However, the cultural divide widens as 'Seinfeld' (the ultimate urban show) dominates, focusing on 'nothing' (social minutiae) which feels alien to the rural pragmatist.",
           "key_manifestations": [
             "Seinfeld peak popularity",
@@ -4153,7 +4153,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The Matthew Shepard Shock (Δv +0.5%). The murder of Matthew Shepard in Wyoming is used by the national media to paint rural America as violently homophobic and backward. The defensive reaction in the heartland deepens the 'Us vs. Media' divide.",
           "key_manifestations": [
             "Matthew Shepard murder coverage",
@@ -4163,7 +4163,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Columbine and Gun Culture (Δv +0.5%). The Columbine shooting leads to calls for gun control. Rural America views this as the cities trying to disarm them because of something that happened in a suburb. The 'God, Guns, and Guts' triad hardens.",
           "key_manifestations": [
             "Columbine aftermath gun control debates",
@@ -4173,7 +4173,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Red/Blue Map (Δv +2.0%). The 2000 Election produces the famous 'Red/Blue' map. The visual of a vast Red sea (rural) with Blue islands (urban) creates a class consciousness. The 'Flyover Country' identity is born. They realize: 'We have the land, they have the people.'",
           "key_manifestations": [
             "The 2000 Election Map viral spread",
@@ -4183,7 +4183,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Patriotic Bridge (Δv -0.5%). 9/11 unites the country. The rural boys sign up to fight for the urban towers. The 'Toby Keith' era of country music merges patriotism with rural identity. The divide is temporarily papered over by the flag.",
           "key_manifestations": [
             "Country Music post-9/11 boom (Alan Jackson, Toby Keith)",
@@ -4193,7 +4193,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Blue Collar Comedy (Δv -0.5%). The 'Blue Collar Comedy Tour' (Jeff Foxworthy, Larry the Cable Guy) explodes. It is a massive cultural phenomenon that the coasts ignore. It provides a safe space for 'Redneck' identity to be celebrated, not mocked. 'Git-R-Done' becomes the shibboleth.",
           "key_manifestations": [
             "Blue Collar Comedy Tour movie",
@@ -4203,7 +4203,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "The Dixie Chicks Cancellation (Δv -0.5%). The Dixie Chicks criticize Bush and are obliterated by country radio. This enforces 'Rural Orthodoxy.' If you want to be part of the tribe, you support the war. It purges the 'Alt-Country' dissenting voices.",
           "key_manifestations": [
             "Dixie Chicks controversy",
@@ -4213,7 +4213,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "Values Voters (Δv +2.0%). The re-election of Bush is driven by the exurbs and rural counties. The 'Jesusland' internet meme (mapping Red states to Canada) mocks the voters. *Napoleon Dynamite* becomes a cult hit, depicting the bizarre reality of rural Idaho without the Hollywood gloss.",
           "key_manifestations": [
             "Napoleon Dynamite (The aesthetic of rural stagnation)",
@@ -4223,7 +4223,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Brokeback Mountain (Δv -0.5%). The film challenges the core rural archetype: The Cowboy. The cultural backlash in the heartland is significant, viewing it as Hollywood subverting their myths. Meanwhile, *Larry the Cable Guy* is at peak influence.",
           "key_manifestations": [
             "Brokeback Mountain",
@@ -4233,7 +4233,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Meth and Decay (Δv -0.5%). The Meth epidemic in rural America begins to generate headlines. *Winter's Bone* (book) is published. The narrative shifts from 'Pastoral' to 'Pathological.' The 'White Trash' stigma returns with a vengeance.",
           "key_manifestations": [
             "Winter's Bone (Book)",
@@ -4243,7 +4243,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "No Country for Old Men (Δv +0.5%). The film depicts the border/rural landscape as a place of incomprehensible violence and changing rules. The Sheriff (Tommy Lee Jones) represents the Old Order realizing it is overmatched. It captures the mood of 'losing the country.'",
           "key_manifestations": [
             "No Country for Old Men",
@@ -4253,7 +4253,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Bitter Clingers (Δv +4.0%). Obama's comment about rural voters 'clinging to guns or religion' is leaked. It is the insult that defines a generation. It confirms everything they suspected: The potential President despises them. Sarah Palin (the Hockey Mom) becomes their avatar—mocked by the media, adored by the base.",
           "key_manifestations": [
             "Obama's 'Bitter Clinger' remarks",
@@ -4263,7 +4263,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "The Tea Party of the Plains (Δv -1.0%). The Tea Party spreads like wildfire in rural counties. It is less about tax policy and more about 'Taking our Country Back.' The 'People of Walmart' website goes viral, mocking the aesthetics of the rural poor, fueling the shame/rage cycle.",
           "key_manifestations": [
             "People of Walmart viral site",
@@ -4273,7 +4273,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "Winter's Bone (Δv +0.5%). The film release visualizes the extreme poverty of the Ozarks. It is grim. Justified premieres, showcasing the 'Hillbilly Hero' (Raylan Givens). The Opioid pills are flooding the market (The Florida Shuffle). The physical health of the cluster is collapsing.",
           "key_manifestations": [
             "Winter's Bone (Film)",
@@ -4283,7 +4283,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Deaths of Despair (Δv +0.5%). The life expectancy of white non-college Americans begins to drop. Case and Deaton will later coin 'Deaths of Despair.' The reality is suicide, liver disease, and overdose. The feeling of 'Being Left Behind' is now biological fact.",
           "key_manifestations": [
             "Warrior (The economic desperation fight)",
@@ -4293,7 +4293,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Duck Dynasty (Δv +1.0%). The show premieres and becomes a massive hit. It is a assertion of rural identity: Beards, Camo, Prayer, Guns. The Robertsons are wealthy but refuse to assimilate to urban aesthetics. It is 'Redneck Pride' monetized.",
           "key_manifestations": [
             "Duck Dynasty premieres",
@@ -4303,7 +4303,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "Coastal Snobbery (Δv -0.5%). The 'Phil Robertson' controversy (GQ interview). The urban media tries to cancel the Duck Dynasty patriarch for biblical views. The audience revolts and ratings spike. It proves the 'Culture War' is a war on *them*.",
           "key_manifestations": [
             "Phil Robertson GQ controversy",
@@ -4313,7 +4313,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "American Sniper (Δv +0.5%). The film is a cultural Rorschach test. To the cities, it is war propaganda. To the country, it is a tribute to their boys. The massive box office in 'Flyover' states shocks Hollywood. It shows the dormant power of the demographic.",
           "key_manifestations": [
             "American Sniper box office phenomenon",
@@ -4323,7 +4323,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Escalator (Δv +2.0%). Trump announces. He attacks everyone the rural cluster hates: The Media, The Mexicans (labor competition), The Politicians. He eats McDonald's. He speaks at a 4th grade reading level (or acts like it). He validates their anger. The ' opioid' crisis is finally named and politicized.",
           "key_manifestations": [
             "Trump Rallies in the Rust Belt",
@@ -4333,7 +4333,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 20.0,
+          "salience_share": 20.0,
           "description": "Hillbilly Elegy (Δv +5.0%). J.D. Vance's memoir is published. It explains the 'White Working Class' to the confusion of the elites. It becomes the Rosetta Stone of the election. Trump wins the Rust Belt (PA, MI, WI). The 'Blue Wall' is shattered by the rural vote. The 'Deplorables' wear the badge with pride.",
           "key_manifestations": [
             "Hillbilly Elegy by J.D. Vance",
@@ -4343,7 +4343,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Roseanne Returns (Δv -2.0%). The *Roseanne* reboot depicts a Trump-voting family sympathetically. It is huge. Then Roseanne tweets, and it is cancelled. The message received: 'You are not allowed to have a show.' The opioid crisis is declared a Public Health Emergency.",
           "key_manifestations": [
             "Roseanne reboot and cancellation",
@@ -4353,7 +4353,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 19.0,
+          "salience_share": 19.0,
           "description": "Yellowstone (Δv +1.0%). *Yellowstone* premieres. It creates a new 'Red State' prestige TV genre. The Duttons defend their land against developers and coastal elites. It is the fantasy of holding the line. Kevin Costner becomes the patriarch of the cluster.",
           "key_manifestations": [
             "Yellowstone premieres",
@@ -4363,7 +4363,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 20.0,
+          "salience_share": 20.0,
           "description": "Learn to Code (Δv +1.0%). Journalists are laid off. The rural internet mocks them with 'Learn to Code' (what journalists told miners). Twitter bans the phrase. It proves the double standard: You can mock miners, but not writers. The resentment calcifies.",
           "key_manifestations": [
             "'Learn to Code' bans on Twitter",
@@ -4373,7 +4373,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 22.0,
+          "salience_share": 22.0,
           "description": "The Essential Worker (Δv +2.0%). COVID. The 'Laptop Class' stays home. The 'Rural/Working Class' delivers the food and drives the trucks. They are called 'Essential' but treated as expendable. The summer riots in cities (which they view on TV) confirm that cities are hellscapes to be avoided. The ' Boat Parades' for Trump showcase the rural wealth (capital goods) vs urban wealth (digital).",
           "key_manifestations": [
             "Trump Boat Parades",
@@ -4383,7 +4383,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 21.0,
+          "salience_share": 21.0,
           "description": "Try That In A Small Town (Δv -1.0%). The sentiment of 'Keep your chaos out of our town' grows. Morgan Wallen is cancelled (n-word) and his sales triple. The rural consumer realizes they have the power to ignore the cancellation. *Yellowstone* becomes the biggest show on cable.",
           "key_manifestations": [
             "Morgan Wallen sales spike after cancellation",
@@ -4393,7 +4393,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 23.0,
+          "salience_share": 23.0,
           "description": "The Canadian Truckers (Δv +2.0%). The Freedom Convoy. The ultimate symbol of the rural/logistics class shutting down the capital. It inspires the American Right. 'Honk Honk' becomes a slogan. The divide is now 'Physicals' vs 'Virtuals.'",
           "key_manifestations": [
             "Canadian Trucker Protests",
@@ -4403,7 +4403,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 25.0,
+          "salience_share": 25.0,
           "description": "Rich Men North of Richmond (Δv +2.0%). Oliver Anthony's song goes viral instantly. It captures the exact mood: 'I've been selling my soul, working all day.' It attacks the 'Rich Men' (DC) and the 'Fudge Rounds' (Welfare). It is the anthem of the cluster. *Sound of Freedom* dominates the box office, driven by churches and rural theaters.",
           "key_manifestations": [
             "Rich Men North of Richmond (Viral #1)",
@@ -4413,7 +4413,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 26.0,
+          "salience_share": 26.0,
           "description": "The Vance Ascension (Δv +1.0%). J.D. Vance is selected as VP. The 'Hillbilly' is now on the ticket. He represents the intellectualization of the resentment. He doesn't just hate the elites; he knows *why* they fail. The 'Rural' is no longer a demographic; it is a counter-elite.",
           "key_manifestations": [
             "J.D. Vance VP Nomination",
@@ -4423,7 +4423,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 27.0,
+          "salience_share": 27.0,
           "description": "Revenge of the Hinterland (Δv +1.0%). The new administration targets the 'Sanctuary Cities' and federal agencies (DC). They aim to move agencies out of DC to the heartland (BLM to Colorado, FBI to Alabama). It is a spatial conquest strategy. The 'Flyover' is becoming the 'Command Center.'",
           "key_manifestations": [
             "Proposals to relocate Federal Agencies",
@@ -4439,7 +4439,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the influence of Ayn Rand's philosophy and strict rationalist materialism on the Right. It champions the 'Great Man' theory of capitalism, viewing the entrepreneur as the heroic prime mover and the state/looters as parasites. It dominated the intellectual high ground of the GOP from the 1990s through the Tea Party (Paul Ryan), but collapsed under the weight of the 2008 financial crisis and the subsequent rise of Populism, which views the 'Job Creator' with suspicion rather than reverence.",
       "trajectory": {
         "1995": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Greenspan Era (Δv +0.5%). Alan Greenspan, a former member of Rand's inner circle, is the 'Maestro' of the economy. The tech boom seems to validate the Objectivist ethic: smart people building things and getting rich. *Wired* magazine puts Rand on the cover. The 'California Ideology' merges hippie freedom with Randian capitalism.",
           "key_manifestations": [
             "Wired Magazine 'The Long Boom' cover story",
@@ -4449,7 +4449,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "Steve Forbes (Δv +0.5%). The Flat Tax campaign. Steve Forbes runs as a pure supply-side Objectivist. He fails, but the ideas define the debate. The Cato Institute is at peak influence. The internet is seen as 'Galt's Gulch'—a place free from the looters in Washington.",
           "key_manifestations": [
             "Steve Forbes 'Flat Tax' Campaign",
@@ -4459,7 +4459,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Microsoft Anti-Trust (Δv -0.5%). The DOJ goes after Bill Gates. The Right rallies to him as the Hank Rearden figure being punished for his success. It solidifies the 'Business vs. Bureaucrats' narrative. However, the culture finds Gates uncool, limiting the variance.",
           "key_manifestations": [
             "Microsoft Anti-Trust Case",
@@ -4469,7 +4469,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Rational Exuberance (Δv -0.5%). The Dot-com bubble is inflating. The ideology is complacent. The Lewinsky scandal is viewed by Objectivists as a waste of time; they care about the surplus and the market. The 'Objectivist Center' is founded, signaling a split in the movement but maintaining intellectual output.",
           "key_manifestations": [
             "Armageddon (Private contractors saving the world)",
@@ -4479,7 +4479,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Matrix and Fight Club (Δv -0.5%). These films attack the consumerist/corporate soul of the 90s. Objectivism praises the corporation; the culture is turning against it. The 'Cog in the machine' anxiety rises, challenging the narrative that the corporation is a vehicle for heroism.",
           "key_manifestations": [
             "Fight Club (Anti-consumerist manifesto)",
@@ -4489,7 +4489,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Bubble Bursts (Δv -1.0%). The NASDAQ crash shakes the faith in the 'Rational Market.' If the market is rational, why did it value Pets.com at billions? The 'Genius Entrepreneur' starts to look like a fraud. Objectivism has no answer for irrational mania.",
           "key_manifestations": [
             "Dot-com Crash",
@@ -4499,7 +4499,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Enron (Δv -1.0%). The Enron scandal is a disaster for the cluster. Skilling and Lay were aggressive proponents of deregulated markets. It looks like 'Looting' from the inside. The 'Smartest Guys in the Room' turned out to be crooks. The moral high ground of capitalism is lost.",
           "key_manifestations": [
             "Enron Scandal",
@@ -4509,7 +4509,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "War Profiteering (Δv +0.5%). The war machine spins up. Haliburton. The defense of the Military Industrial Complex falls to the Objectivists (Yaron Brook), who argue for 'Total War' and self-interest. It creates a niche 'Hawk' wing of the movement.",
           "key_manifestations": [
             "Ayn Rand Institute pro-war op-eds",
@@ -4519,7 +4519,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Stasis (Δv -0.5%). The culture is focused on patriotism (faith), not rationalism. Objectivists are atheists, which puts them at odds with the Evangelical Bush base. They are economically aligned but culturally isolated.",
           "key_manifestations": [
             "School of Rock (The rejection of the rat race)",
@@ -4529,7 +4529,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Incredibles (Δv +1.0%). Brad Bird's masterpiece is the most effective piece of Objectivist propaganda since the books. 'If everyone is super, no one is.' It validates the 'Superior Individual' held back by a mediocre society. It resonates deeply with the Right.",
           "key_manifestations": [
             "The Incredibles",
@@ -4539,7 +4539,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "BioShock Pre-Production (Δv -0.5%). The video game *BioShock* is in development. It will eventually deconstruct Rapture (Galt's Gulch). Culturally, the response to Katrina (government failure) should boost Objectivism, but the lack of private sector heroes limits the upside.",
           "key_manifestations": [
             "Batman Begins (The billionaire saving the city)",
@@ -4549,7 +4549,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Casino Royale (Δv -0.5%). Bond is a government agent, but acts as a rugged individual. The '007' license is a state permit, but the aesthetic is self-made. The housing bubble is inflating, and the 'Rationalists' (who aren't Austrians) are cheering it on, setting up the fall.",
           "key_manifestations": [
             "The Pursuit of Happyness (The meritocratic dream)",
@@ -4559,7 +4559,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "BioShock (Δv +3.0%). The game releases. 'Is a man not entitled to the sweat of his brow?' It introduces Ayn Rand to millions of gamers. While a critique, it makes the aesthetic 'Cool.' Simultaneously, the subprime cracks appear, and the 'Looters' (banks) start asking for bailouts.",
           "key_manifestations": [
             "BioShock (Video Game)",
@@ -4569,7 +4569,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Greenspan Confession (Δv -2.0%). Greenspan admits 'a flaw' in his ideology. The financial crisis destroys the credibility of 'Self-Correcting Markets.' The 'Atlas Shrugged' sales spike (people looking for answers), but the intellectual foundation is cracked. The Bailouts are the ultimate sin.",
           "key_manifestations": [
             "Greenspan's Congressional Testimony",
@@ -4579,7 +4579,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Going Galt (Δv +4.0%). The Tea Party adopts the language. 'Going Galt' (withdrawing labor/wealth) becomes a threat against the Obama administration. Rick Santelli's rant is pure Objectivist rage. The 'Makers vs. Takers' frame defines the GOP opposition. It is the last peak.",
           "key_manifestations": [
             "Rick Santelli CNBC Rant",
@@ -4589,7 +4589,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "The Ryan Ascendancy (Δv -0.5%). Paul Ryan (Young Gun) becomes the intellectual leader of the GOP. He makes staffers read *Atlas Shrugged*. He proposes privatizing Social Security. It is the legislative attempt to implement the philosophy. But the voters are skeptical.",
           "key_manifestations": [
             "Paul Ryan's 'Roadmap for America's Future'",
@@ -4599,7 +4599,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Atlas Shrugged Part I (Δv -0.5%). The movie finally releases. It is low budget and critically panned. It exposes the limits of the aesthetic. It preaches to the choir but converts no one. Steve Jobs dies, and is mourned as a Randian hero (The Creator).",
           "key_manifestations": [
             "Atlas Shrugged: Part I (Film)",
@@ -4609,7 +4609,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "You Didn't Build That (Δv -2.0%). Obama's speech triggers the Right. But the Romney/Ryan ticket loses. It proves that 'Maker vs. Taker' is a losing electoral strategy. The white working class (Takers in the Randian frame) stays home or votes Obama. The ideology has hit a demographic wall.",
           "key_manifestations": [
             "Obama's 'You Didn't Build That' speech",
@@ -4619,7 +4619,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Pope vs. Rand (Δv -1.0%). Pope Francis attacks trickle-down economics. Paul Ryan tries to pivot to 'Catholic Social Teaching.' The contradiction between the Christian base and the Objectivist leadership becomes untenable. The cluster begins to bleed energy to Populism.",
           "key_manifestations": [
             "Pope Francis 'Evangelii Gaudium'",
@@ -4629,7 +4629,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Silicon Valley Pivot (Δv -1.0%). The ideology moves to Tech. Peter Thiel and Uber (Travis Kalanick) carry the torch. 'Disruption' is the new Objectivism. But the GOP base hates Big Tech. The separation between the 'Tech Right' and the 'MAGA Right' begins.",
           "key_manifestations": [
             "Uber's aggressive expansion (Randian tactics)",
@@ -4639,7 +4639,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Trump Kills It (Δv -1.0%). Trump attacks Free Trade and promises to protect Social Security. He rejects the Paul Ryan consensus. He runs as a Nationalist, not an Objectivist. The base cheers. The 'Zombie Reaganism' is dead.",
           "key_manifestations": [
             "Trump's trade rhetoric",
@@ -4649,7 +4649,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Humiliation (Δv -1.0%). Paul Ryan is booed in his own district. Trump wins. The Objectivist institutions (Reason, Cato) are 'Never Trump' and become irrelevant to the ruling party. They are relegated to the 'Libertarian' corner.",
           "key_manifestations": [
             "Paul Ryan's awkward endorsement of Trump",
@@ -4659,7 +4659,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Tax Cut (Δv +1.0%). The Tax Cuts and Jobs Act. The last gasp of the old consensus. Ryan gets his bill, then retires. It is the tombstone of the movement. The deficit explodes, and no one in the GOP cares anymore.",
           "key_manifestations": [
             "Tax Cuts and Jobs Act passed",
@@ -4669,7 +4669,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Nietzschean Replacement (Δv -1.0%). The intellectual Right moves to Nietzsche/Bronze Age Pervert. They mock Rand as 'midwit' and 'materialist.' They want Vitalism, not Rationalism. They want Power, not Markets. Objectivism is seen as 'Boomer Cringe.'",
           "key_manifestations": [
             "Bronze Age Mindset (Mocking the 'Bugman' rationalist)",
@@ -4679,7 +4679,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Joker (Δv -0.5%). The movie critiques the Wayne family (billionaires). The cultural mood is 'Eat the Rich.' The Right joins in, attacking 'Woke Capital.' The idea that corporations are allies is dead. Disney and Coke are enemies.",
           "key_manifestations": [
             "Joker (Kill the rich sentiment)",
@@ -4689,7 +4689,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The Essential Worker (Δv -0.5%). The pandemic proves that the 'low skill' workers are essential, and the 'knowledge workers' are fragile. This inverts the *Atlas Shrugged* hierarchy. The government prints trillions, destroying the concept of sound money/value.",
           "key_manifestations": [
             "The CARES Act (Massive state intervention)",
@@ -4699,7 +4699,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Elon Musk (Δv +0.5%). Musk is the only figure keeping the archetype alive. The 'Technoking.' But he aligns with the Populist Right (Cluster 4), not the dogmatic Objectivists. He creates a 'Meme-Objectivism.'",
           "key_manifestations": [
             "Elon Musk's Twitter presence",
@@ -4709,7 +4709,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "SBF (Δv -0.5%). Sam Bankman-Fried claims to be a rational altruist. He is a fraud. It damages the 'Rationalist' brand further. The 'Effective Altruism' movement (Rationalism's cousin) is discredited.",
           "key_manifestations": [
             "FTX Collapse",
@@ -4719,7 +4719,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Industrial Policy (Δv -0.5%). The New Right (Vance) embraces Tariffs and Unions. 'Common Good Capitalism.' This is the explicit rejection of Rand. They want to use the State to crush the Left, not shrink the State.",
           "key_manifestations": [
             "Marco Rubio's 'Common Good Capitalism' speech",
@@ -4729,7 +4729,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Final Death (Δv -0.5%). The GOP platform removes references to the free market/debt. The transformation is complete. Objectivism is a historical artifact in the party of Trump.",
           "key_manifestations": [
             "GOP 2024 Platform changes",
@@ -4739,7 +4739,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The DOGE Echo (Δv +0.5%). The Musk/Ramaswamy commission uses the *language* of efficiency, which sounds Objectivist, but the goal is political purge (Cluster 10), not just economic liberty. It is a 'Zombie Objectivism'—using the shell of the philosophy for a different end.",
           "key_manifestations": [
             "DOGE Commission press releases",
@@ -4755,7 +4755,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the rejection of 'intellectual' conservatism in favor of physical excellence, beauty, and health. Drawing from Nietzsche, Mishima, and bodybuilding culture, it argues that the 'Right' is the side of health/beauty and the 'Left' is the side of ugliness/disease. It evolved from the online 'Zyzz' fandom into the 'Bronze Age Mindset' political movement, focusing on testosterone, anti-seed oil dietary purity, and the worship of the classical male form.",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Heroin Chic (Δv -0.5%). The culture worships the waifish, drugged look (Kate Moss, Kurt Cobain). This is the antithesis of Vitalism. The Bodybuilder aesthetic is mocked as 'lunkhead' territory (Planet Fitness style). The cluster is dormant.",
           "key_manifestations": [
             "Calvin Klein 'Heroin Chic' ads",
@@ -4765,7 +4765,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Stasis (Δv 0%). The Olympics in Atlanta celebrate athleticism, but it's nationalistic, not aesthetic. Men's Health magazine grows, but it promotes 'fitness for work,' not 'fitness as spiritual warfare.'",
           "key_manifestations": [
             "Atlanta Olympics",
@@ -4775,7 +4775,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Gattaca (Δv +0.5%). The anxiety about genetic perfection. While the film critiques eugenics, the Right begins to fetishize the 'Valid' (genetically superior) aesthetic. It plants the seed of biological hierarchy.",
           "key_manifestations": [
             "Gattaca (The hierarchy of the body)",
@@ -4785,7 +4785,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "American History X (Δv -0.3%). The fascist body is depicted as terrifying. Norton's physique is admired in secret, but the text explicitly links it to hate. It drives the aesthetic underground.",
           "key_manifestations": [
             "American History X (The transformation)",
@@ -4795,7 +4795,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Fight Club (Δv +0.8%). Brad Pitt's physique in *Fight Club* becomes the 'God Tier' standard for millions of young men. It links physical leanness/violence with anti-consumerist rebellion. It is the proto-text for the movement.",
           "key_manifestations": [
             "Fight Club (The Tyler Durden physique)",
@@ -4805,7 +4805,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "American Psycho (Δv +0.5%). Patrick Bateman's morning routine. It connects narcissism, wealth, and physical perfection. Later reclaimed as the 'Sigma' routine, at the time it normalized male grooming and obsession with the body.",
           "key_manifestations": [
             "American Psycho (The crunch routine)",
@@ -4815,7 +4815,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Ali (Δv -0.5%). Will Smith's transformation is celebrated, but the cultural focus shifts to 'The Firefighter' (functional strength) post-9/11. The aesthetic pursuit feels vain in wartime.",
           "key_manifestations": [
             "Ali (Will Smith transformation)",
@@ -4825,7 +4825,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 2.2,
+          "salience_share": 2.2,
           "description": "Spider-Man (Δv +0.2%). The scene where Peter Parker wakes up ripped. It sells the fantasy that puberty/power grants the body. Men's Fitness magazines begin shifting to 'Hollywood Transformations.'",
           "key_manifestations": [
             "Spider-Man (Transformation scene)",
@@ -4835,7 +4835,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Old School (Δv -0.7%). Will Ferrell's 'Frank the Tank' creates a celebration of the 'Dad Bod' (before the term existed). Physical discipline is mocked as uptight.",
           "key_manifestations": [
             "Old School (Streaking scene)",
@@ -4845,7 +4845,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Troy (Δv +1.0%). Brad Pitt as Achilles. The 'Greek God' ideal returns. This film is critical for the 'Bronze Age' aesthetic later. It visualizes the Iliad with modern bodybuilding standards.",
           "key_manifestations": [
             "Troy (Brad Pitt's physique)",
@@ -4855,7 +4855,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 2.8,
+          "salience_share": 2.8,
           "description": "Batman Begins (Δv +0.3%). Christian Bale's transformation from *The Machinist* to Batman is legendary. It proves the body is malleable through sheer will. The 'Transformation' becomes the content.",
           "key_manifestations": [
             "Batman Begins (Training montage)",
@@ -4865,7 +4865,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "300 (Δv +1.2%). The movie *300* is the massive catalyst. The 'Spartan Workout' goes viral. It visualizes the 'Fascist Aesthetic' (Sontag) in a way that is universally admired. It links the 'Right' (defense of the West) with 'Abs.'",
           "key_manifestations": [
             "300 (The film)",
@@ -4875,7 +4875,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 4.2,
+          "salience_share": 4.2,
           "description": "I Am Legend (Δv +0.2%). Will Smith doing pull-ups in a dead world. The body as the only thing you can control when civilization ends. It links Prepping (Cluster 12) with Vitalism.",
           "key_manifestations": [
             "I Am Legend (Physique)",
@@ -4885,7 +4885,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "MMA Rising (Δv +0.3%). *Never Back Down*. MMA explodes in popularity. The 'Tapout' shirt era. It moves the aesthetic from 'Show Muscles' to 'Combat Muscles.' The Right embraces the UFC as the last bastion of masculinity.",
           "key_manifestations": [
             "Never Back Down (MMA teen culture)",
@@ -4895,7 +4895,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Jersey Shore (Δv -1.0%). GTL (Gym, Tan, Laundry). The aesthetic is hijacked by the 'Guido' stereotype. It becomes vulgar and comedic. The 'Zyzz' subculture begins to form on 4chan to reclaim aesthetics from the 'Bros.'",
           "key_manifestations": [
             "Jersey Shore premieres",
@@ -4905,7 +4905,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Spartacus (Δv +0.5%). The TV show *Spartacus: Blood and Sand*. It brings the *300* aesthetic to weekly TV. The focus on gladiator schools and fraternity. The 'Manosphere' begins to discuss testosterone replacement openly.",
           "key_manifestations": [
             "Spartacus: Blood and Sand",
@@ -4915,7 +4915,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Zyzz (Δv +1.5%). Aziz Shavershian dies in Thailand. He becomes the patron saint of /fit/ (4chan's fitness board). His philosophy ('We're all gonna make it, brah') combines narcissism with extreme positivity. He creates the 'Aesthetics' movement—bodybuilding not for sport, but for 'miring' (admiration).",
           "key_manifestations": [
             "Death of Zyzz",
@@ -4925,7 +4925,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Magic Mike (Δv -0.5%). The male body is objectified for the female gaze. The Vitalist Right rejects this as 'degrading.' They want to look good for *power*, not for *tips*. The separation between 'Male Gaze' bodybuilding and 'Female Gaze' stripping.",
           "key_manifestations": [
             "Magic Mike",
@@ -4935,7 +4935,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Man of Steel (Δv +0.5%). Cavill's Superman is a massive aesthetic influence. The 'Natty or Not' debates begin on YouTube. The fitness industry moves to Instagram. The 'shredded' look becomes mandatory for status.",
           "key_manifestations": [
             "Man of Steel",
@@ -4945,7 +4945,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Guardians (Δv +0.5%). Chris Pratt transforms from fat to ripped. It proves 'anyone' can do it. The 'Fat Pride' movement begins on the Left, creating a polarization: Right = Fit, Left = Fat.",
           "key_manifestations": [
             "Guardians of the Galaxy (Pratt)",
@@ -4955,7 +4955,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Creed (Δv +0.5%). Michael B. Jordan. The boxing aesthetic returns. The 'Dad Bod' trend goes viral as a counter-signal, which the Vitalist Right mocks mercilessly. 'Dad Bod is a cope.'",
           "key_manifestations": [
             "Creed",
@@ -4965,7 +4965,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Ben Garrison Trump (Δv +0.5%). The political cartoons depict Trump as muscular and young. It is a projection of Vitalism onto the leader. The 'God Emperor' is physically perfect in the meme war, despite reality. The aestheticizing of politics is complete.",
           "key_manifestations": [
             "Ben Garrison Cartoons",
@@ -4975,7 +4975,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Thor: Ragnarok (Δv +0.5%). Hemsworth's peak physique. The 'Based' movement begins to adopt Norse imagery (Runes/Thor). The gym becomes the 'Temple of Iron.'",
           "key_manifestations": [
             "Thor: Ragnarok",
@@ -4985,7 +4985,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Bronze Age Mindset (Δv +1.5%). *Bronze Age Mindset* (BAP) is self-published. It electrifies the online Right. It calls for a return to the 'Pirate' life, worship of the sun, and hatred of the 'Bugman' (ugly, soy-eating urbanite). It explicitly links political reaction with physical beauty ('Physiognomy is real').",
           "key_manifestations": [
             "Bronze Age Mindset (BAP)",
@@ -4995,7 +4995,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Carnivore Diet (Δv +0.5%). Jordan Peterson and Joe Rogan popularize the Carnivore Diet. It is a rejection of the 'Food Pyramid' and 'Vegan' agenda. Eating meat becomes a political act of masculinity. *Joker* shows the horror of the emaciated body.",
           "key_manifestations": [
             "Joe Rogan Carnivore episodes",
@@ -5005,7 +5005,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Soyjak vs. Chad (Δv +1.5%). The 'Soyjak' meme (depicting the Leftist as balding, bearded, mouth-agape) becomes the dominant political cartoon. It argues that bad politics creates an ugly face. The 'Chad' (Nordic Gamer) represents the Right. The 'Seed Oil' discourse begins—dietary purity as political resistance.",
           "key_manifestations": [
             "Soyjak vs. Chad memes",
@@ -5015,7 +5015,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "Liver King (Δv +0.5%). Brian Johnson (Liver King) explodes on TikTok. 'Ancestral Tenets.' He creates a caricature of the Vitalist lifestyle. He is eventually exposed for steroid use, which damages the 'Natural' brand, but spreads the message of 'processed food is poison.'",
           "key_manifestations": [
             "Liver King viral growth",
@@ -5025,7 +5025,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "Testicle Tanning (Δv +1.0%). Tucker Carlson airs 'The End of Men.' He features 'Testicle Tanning' (red light therapy). The media mocks it; the Vitalist Right embraces it. It signals a panic about falling testosterone and a willingness to try 'esoteric' health solutions. The 'Raw Egg Nationalist' rises.",
           "key_manifestations": [
             "Tucker Carlson's 'End of Men'",
@@ -5035,7 +5035,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "RFK Jr. (Δv +0.5%). RFK Jr. videos doing pushups go viral. He is a Democrat, but the Vitalist Right claims him. He bridges the gap between 'Anti-Vax' and 'Gym Bro.' *The Iron Claw* shows the tragedy of the body but celebrates the aesthetic.",
           "key_manifestations": [
             "RFK Jr. gym videos",
@@ -5045,7 +5045,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "MAHA (Δv +1.0%). Make America Healthy Again. RFK Jr. joins Trump. The 'Vitalist' cluster merges with the 'MAGA' cluster. They target 'Big Food' and 'Big Pharma.' The aesthetic of the 'Gym Bro' becomes the aesthetic of the RNC. The 'Ozempic' debate splits the cluster (Fake thin vs. Real health).",
           "key_manifestations": [
             "MAHA hats/slogans",
@@ -5055,7 +5055,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Department of Health (Δv +1.0%). The cluster enters the policy phase. Bans on seed oils in school lunches? Gym memberships as tax write-offs? The 'Body' is now a state project. The 'Right' owns the concept of 'Health,' leaving the Left associated with 'Body Positivity' (Fat Acceptance), which this cluster views as civilizational suicide.",
           "key_manifestations": [
             "Federal Guidelines on Processed Foods overhaul",
@@ -5071,7 +5071,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the politically mobilized Evangelical Christian movement that sought to maintain traditional social norms through the democratic process. Dominant in the 1990s and 2000s (Ralph Reed, James Dobson), it defined 'Conservatism' largely as opposition to abortion and gay marriage and the promotion of 'Family Values.' Its influence collapsed rapidly after 2012 due to the secularization of the youth, the legal defeats on marriage, and the rise of Donald Trump, leading to its displacement by the harder-edged, less democratic 'Christian Nationalism' (Cluster 7) or a retreat into the 'Benedict Option.'",
       "trajectory": {
         "1995": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Christian Coalition Peak (Δv +0.5%). The machine is humming. Ralph Reed is on the cover of *Time*. They deliver the Congress to Newt Gingrich. The cultural product is *Left Behind* (the book), which creates a shared eschatological language for millions. They feel they are the 'Silent Majority' reclaiming the culture.",
           "key_manifestations": [
             "Left Behind (Book - The Rapture mainstreamed)",
@@ -5081,7 +5081,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 15.5,
+          "salience_share": 15.5,
           "description": "DOMA (Δv +0.5%). The Defense of Marriage Act is signed. It is a massive legislative victory. The cluster feels powerful enough to force Clinton to sign it. The Southern Baptist Convention boycott of Disney begins, attempting to flex consumer muscle against 'liberal values.'",
           "key_manifestations": [
             "Defense of Marriage Act (DOMA)",
@@ -5091,7 +5091,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Promise Keepers (Δv -0.5%). The 'Promise Keepers' rally in DC. Hundreds of thousands of men promising to be good fathers/husbands. It is a massive show of force, but strictly apolitical/pietistic. It marks the peak of the 'Soft' Evangelical influence before the decline.",
           "key_manifestations": [
             "Promise Keepers 'Stand in the Gap' rally",
@@ -5101,7 +5101,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Clinton Failure (Δv -1.0%). They fail to remove Clinton despite the Lewinsky scandal. It is a shock. They realize the country doesn't care about private morality as much as the economy. The 'Moral Majority' is revealed to be a Moral Minority (or at least, not a commanding one).",
           "key_manifestations": [
             "Clinton Impeachment acquittal",
@@ -5111,7 +5111,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "Columbine Martyrdom (Δv -0.5%). The 'She Said Yes' myth (Cassie Bernall) spreads instantly. It fuels a persecution complex: Christians are being targeted. The 'Hell House' phenomenon peaks as a scare tactic for youth.",
           "key_manifestations": [
             "She Said Yes (Book)",
@@ -5121,7 +5121,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "Compassionate Conservatism (Δv +1.0%). George W. Bush is 'one of us.' He speaks the code language. The cluster mobilizes to defeat Gore. The 'Faith Based Initiatives' promise a merger of Church and State in welfare provision.",
           "key_manifestations": [
             "Bush's 'Jesus' answer in the debate",
@@ -5131,7 +5131,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Ashcroft Ascendant (Δv +0.5%). John Ashcroft (Pentecostal) becomes Attorney General. Prayer meetings in the DOJ. It feels like a restoration. 9/11 creates a 'Civil Religion' moment where God and Country are fused.",
           "key_manifestations": [
             "John Ashcroft covering the Justice statutes",
@@ -5141,7 +5141,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Catholic Wound (Δv -1.0%). The Catholic Sex Abuse scandal explodes (Spotlight). While this is Catholic, it damages the 'Religious Right' brand generally. The moral authority of the clergy is shattered. Evangelicals look on with a mix of horror and 'we told you so.'",
           "key_manifestations": [
             "Boston Globe Spotlight reports",
@@ -5151,7 +5151,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "The Purpose Driven Life (Δv +0.5%). Rick Warren's book becomes the bestselling hardback in history. It represents 'Seeker Sensitive' Evangelicalism—soft, suburban, non-threatening. It masks the demographic rot underneath.",
           "key_manifestations": [
             "The Purpose Driven Life phenomenon",
@@ -5161,7 +5161,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "The Last Hurrah (Δv +3.5%). The re-election of Bush. The 'Values Voter' strategy by Karl Rove. Gay Marriage bans pass in 11 states. It looks like total victory. *The Passion of the Christ* dominates the box office, proving the 'Red State' market is massive.",
           "key_manifestations": [
             "The Passion of the Christ",
@@ -5171,7 +5171,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Intelligent Design Failure (Δv -2.0%). Kitzmiller v. Dover. The attempt to put Intelligent Design in schools is crushed in court. The strategy of 'Scientific Creationism' dies. The culture paints them as anti-science rubes.",
           "key_manifestations": [
             "Kitzmiller v. Dover trial",
@@ -5181,7 +5181,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Haggard Scandal (Δv -1.0%). Ted Haggard (head of National Association of Evangelicals) is caught in a drug/sex scandal. It devastates the 'Moral Values' branding. It confirms the 'Hypocritical Preacher' stereotype.",
           "key_manifestations": [
             "Ted Haggard scandal",
@@ -5191,7 +5191,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "New Atheist Assault (Δv -1.0%). Dawkins and Hitchens top the bestseller lists. The youth are reading *The God Delusion*. The Evangelical apologetics infrastructure is outmatched. They have no answer for the 'Cool Atheist.'",
           "key_manifestations": [
             "The God Delusion (Bestseller)",
@@ -5201,7 +5201,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Prop 8 and Decline (Δv -2.0%). They pass Prop 8 (banning gay marriage in CA), but the backlash is so severe it breaks their spirit. The youth vote goes overwhelmingly for Obama. The 'Evangelical' label begins to lose the culture war. The 'Nones' (no religion) start their exponential rise.",
           "key_manifestations": [
             "Prop 8 Protests",
@@ -5211,7 +5211,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "The Manhattan Declaration (Δv -1.0%). A defensive manifesto signing. Evangelicals, Catholics, and Orthodox unite not to 'Rule' but to 'Survive.' The shift from 'Majority' to 'Minority' psychology begins. They plead for 'Religious Liberty,' not 'Christian Nation.'",
           "key_manifestations": [
             "The Manhattan Declaration",
@@ -5221,7 +5221,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 10.5,
+          "salience_share": 10.5,
           "description": "Glenn Beck's Revival (Δv -0.5%). Glenn Beck holds a massive 'Restoring Honor' rally. It feels like a revival, but it is Mormon-led and civil-religious. The distinct 'Evangelical' theology is dissolving into generic 'Patriotism.'",
           "key_manifestations": [
             "Restoring Honor rally",
@@ -5231,7 +5231,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Rob Bell's Hell (Δv -0.5%). Rob Bell publishes *Love Wins*, questioning Hell. The movement fractures. The 'Young Evangelicals' want to be soft/universalist; the 'Old Guard' purges them. The internal cohesion is gone.",
           "key_manifestations": [
             "Love Wins controversy",
@@ -5241,7 +5241,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Mormon Moment (Δv -2.0%). They have to vote for Romney (a Mormon). It dilutes the theological purity. They lose. The 'Nones' pass 20%. The institution is hollowed out. The 'Moral Majority' organization officially dissolves (spiritually if not literally).",
           "key_manifestations": [
             "Romney Defeat",
@@ -5251,7 +5251,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "World Vision Split (Δv -1.0%). World Vision tries to hire gay Christians, then reverses. It shows the donor base is still hard-line, but the institutions are cracking. The 'Ex-vangelical' movement begins to form on blogs.",
           "key_manifestations": [
             "World Vision hiring policy controversy",
@@ -5261,7 +5261,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "God's Not Dead (Δv -0.5%). The movie *God's Not Dead* is a hit, but it portrays Christians as persecuted students fighting atheist professors. It is a 'Loser Script'—admitting that the University belongs to the enemy.",
           "key_manifestations": [
             "God's Not Dead (Film)",
@@ -5271,7 +5271,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Obergefell (Δv -1.5%). Total defeat. The Supreme Court legalizes Gay Marriage. The 'Moral Majority' is officially a minority. They retreat. Rod Dreher's 'Benedict Option' (Cluster 7) begins to look like the only lifeboat. The 'Culture War' is over, and they lost.",
           "key_manifestations": [
             "Obergefell v. Hodges",
@@ -5281,7 +5281,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Trump Bargain (Δv -1.0%). They vote for Trump (81%), but it is transactional. They trade 'Character' for 'Judges.' They admit they are no longer the 'Moral' majority, but a besieged interest group needing a bodyguard. The 'Values Voter' branding is destroyed forever.",
           "key_manifestations": [
             "Jerry Falwell Jr. endorsement of Trump",
@@ -5291,7 +5291,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Roy Moore (Δv -0.5%). The Alabama Senate race. Evangelicals support Roy Moore despite allegations. It proves 'Character' is dead. The term 'Evangelical' becomes synonymous with 'White Republican' rather than a theological position.",
           "key_manifestations": [
             "Roy Moore defeat",
@@ -5301,7 +5301,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Deconstruction (Δv -0.5%). #Exvangelical trends. Famous Christian worship leaders renounce their faith on Instagram. It becomes a genre. The youth exodus accelerates.",
           "key_manifestations": [
             "Joshua Harris ('I Kissed Dating Goodbye') renounces faith",
@@ -5311,7 +5311,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Kanye's Pivot (Δv -0.5%). Kanye West releases *Jesus Is King*. It is a pop-culture moment, but it feels manic and unstable, not institutional. It highlights that the energy is in 'Celebrity' not 'Church.'",
           "key_manifestations": [
             "Jesus Is King (Album)",
@@ -5321,7 +5321,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "COVID Closure (Δv -0.5%). Churches close. The habit is broken. Online church is a poor substitute. The conspiracy theorists (QAnon) take over the flock's attention. The Pastor loses the pulpit to the Podcaster.",
           "key_manifestations": [
             "Empty Easter Churches",
@@ -5331,7 +5331,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "Mars Hill Podcast (Δv -0.2%). The 'Rise and Fall of Mars Hill' podcast goes viral. It dissects the toxicity of the celebrity pastor. It is an autopsy of the movement.",
           "key_manifestations": [
             "The Rise and Fall of Mars Hill (Podcast)",
@@ -5341,7 +5341,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Dobbs Victory (Δv +0.7%). The one victory. Roe is overturned. But it feels like a legal victory (Cluster 13), not a cultural one. The churches are not full. The victory lap is muted by the electoral backlash.",
           "key_manifestations": [
             "Dobbs decision",
@@ -5351,7 +5351,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Shiny Happy People (Δv -0.5%). The Duggar documentary. Another scandal exposing the rot of the 'Quiverfull' lifestyle. The brand is toxic.",
           "key_manifestations": [
             "Shiny Happy People (Documentary)",
@@ -5361,7 +5361,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "He Gets Us (Δv -0.2%). The Super Bowl ads. A desperate attempt to rebrand Jesus as a social justice warrior to appeal to Gen Z. The Right hates it; the Left mocks it. It shows the lack of confidence.",
           "key_manifestations": [
             "'He Gets Us' Super Bowl Ads",
@@ -5371,7 +5371,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Post-Evangelical (Δv -0.3%). The term 'Evangelical' is abandoned by many believers. They call themselves 'Followers of Jesus' or nothing. The political bloc is dissolved into the broader 'MAGA' movement or the 'Christian Nationalist' fringe.",
           "key_manifestations": [
             "Closure of several historic Bible Colleges",
@@ -5387,7 +5387,7 @@ export const rightWingCultureData = {
       "description": "The belief that tax cuts, deregulation, and free trade are the universal solvents for all economic problems. This was the 'One True Faith' of the GOP establishment (Jack Kemp, Wall Street Journal) from 1980 to 2016. It prioritized GDP growth over distribution. It died a slow death after 2008 and was buried by Trump's protectionism.",
       "trajectory": {
         "1995": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Contract with America (Δv +0.5%). Gingrich's revolution is built on this. Capital Gains tax cuts are the holy grail. The economy booms, seeming to validate the theory. The 'New Economy' narrative takes hold.",
           "key_manifestations": [
             "Contract with America",
@@ -5397,7 +5397,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "The Flat Tax (Δv +0.5%). Steve Forbes runs on the Flat Tax. It fails electorally, but shifts the Overton Window. The GOP becomes the party of pure tax cutting.",
           "key_manifestations": [
             "Steve Forbes Campaign",
@@ -5407,7 +5407,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Capital Gains Cut (Δv +0.5%). Clinton signs the Capital Gains tax cut. A massive victory for the Supply Siders. They have convinced even the Democrats. The deficit vanishes.",
           "key_manifestations": [
             "Taxpayer Relief Act of 1997",
@@ -5417,7 +5417,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Stasis (Δv 0%). The Asian Financial Crisis is blamed on 'Crony Capitalism' (lack of markets), validating the model. The US is the engine of the world.",
           "key_manifestations": [
             "Asian Financial Crisis analysis",
@@ -5427,7 +5427,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "Glass-Steagall Repeal (Δv -0.5%). The repeal passes. The Supply Siders cheer. The banks merge. The seeds of 2008 are planted, but at the time, it looks like 'Modernization.'",
           "key_manifestations": [
             "Gramm-Leach-Bliley Act",
@@ -5437,7 +5437,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "The Crash (Δv -1.0%). The Dot-com bubble bursts. The market isn't always right. But the cure proposed is... more tax cuts.",
           "key_manifestations": [
             "Dot-com Crash",
@@ -5447,7 +5447,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Bush Tax Cuts (Δv +1.5%). EGTRRA. The surplus is returned. It is the dogma in action. 'It's your money.' The GOP unites behind this.",
           "key_manifestations": [
             "Economic Growth and Tax Relief Reconciliation Act of 2001",
@@ -5457,7 +5457,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Sarbanes-Oxley (Δv -1.0%). Enron forces regulation. The Supply Siders hate it, but can't stop it. They argue it will kill IPOs.",
           "key_manifestations": [
             "Sarbanes-Oxley Act",
@@ -5467,7 +5467,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Dividend Tax Cut (Δv +1.0%). Bush cuts the dividend tax. Another win. The economy recovers from the recession. 'Deficits don't matter' (Cheney).",
           "key_manifestations": [
             "Jobs and Growth Tax Relief Reconciliation Act of 2003",
@@ -5477,7 +5477,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "Ownership Society (Δv -0.5%). Bush pushes the 'Ownership Society.' Privatizing Social Security is whispered. The housing bubble (ownership) is inflating.",
           "key_manifestations": [
             "Bush's 'Ownership Society' speeches",
@@ -5487,7 +5487,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Social Security Failure (Δv -1.5%). Bush tries to privatize Social Security. The public hates it. It is the first major defeat for the dogma. The voters want the safety net.",
           "key_manifestations": [
             "Social Security Privatization Tour failure",
@@ -5497,7 +5497,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Housing Peak (Δv -1.0%). The bubble peaks. The Supply Siders say fundamentals are strong. They are wrong. The credibility is thinning.",
           "key_manifestations": [
             "The Pursuit of Happyness (The struggle)",
@@ -5507,7 +5507,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "The Crack (Δv -1.0%). Subprime blows up. The Fed intervenes. The 'Free Market' needs a backstop. The dissonance grows.",
           "key_manifestations": [
             "Subprime crisis begins",
@@ -5517,7 +5517,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Crash (Δv -3.0%). The financial system collapses. The 'Self-Correcting Market' is a myth. Greenspan admits he was wrong. The dogma is shattered.",
           "key_manifestations": [
             "Lehman Brothers Collapse",
@@ -5527,7 +5527,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Stimulus Hate (Δv -1.0%). The GOP opposes the Stimulus on Supply Side grounds (Crowding Out). But they have no alternative other than 'Cut Taxes.' The public wants jobs.",
           "key_manifestations": [
             "Rick Santelli Rant",
@@ -5537,7 +5537,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Paul Ryan (Δv +1.0%). The Tea Party revives the dogma in a zombie form. 'Fiscal Responsibility.' Paul Ryan is the new prophet. But it's about Debt now, not Growth.",
           "key_manifestations": [
             "Paul Ryan's Roadmap",
@@ -5547,7 +5547,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Debt Ceiling (Δv -0.5%). The fight over the Debt Ceiling damages the economy. The business community is horrified. The GOP is becoming anti-business in its purity.",
           "key_manifestations": [
             "US Credit Downgrade",
@@ -5557,7 +5557,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Romney's Defeat (Δv -1.5%). The Private Equity candidate loses. The 'Makers vs Takers' frame fails. The country rejects the 'Vulture Capitalist' archetype.",
           "key_manifestations": [
             "Romney 47% video",
@@ -5567,7 +5567,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The Wolf (Δv -0.5%). *The Wolf of Wall Street*. It depicts the finance industry as depraved, not heroic. The culture has turned completely.",
           "key_manifestations": [
             "The Wolf of Wall Street",
@@ -5577,7 +5577,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Inversion (Δv -0.5%). Corporations start doing Tax Inversions (moving HQs). It looks unpatriotic. The GOP base starts to hate the companies.",
           "key_manifestations": [
             "Tax Inversion controversy",
@@ -5587,7 +5587,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Trump's Heresy (Δv -1.0%). Trump attacks Hedge Fund guys ('getting away with murder'). He attacks Free Trade. He rejects the Supply Side deal.",
           "key_manifestations": [
             "Trump's trade rhetoric",
@@ -5597,7 +5597,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Carrier Deal (Δv -1.0%). Trump intervenes to stop a factory closing. Direct state intervention. The antithesis of free markets. The base loves it.",
           "key_manifestations": [
             "Carrier Air Conditioner deal",
@@ -5607,7 +5607,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Tax Cuts and Jobs Act (Δv +1.0%). The last gasp. Ryan passes his tax cut. Corporations buy back stock instead of investing. It doesn't pay for itself. Ryan retires.",
           "key_manifestations": [
             "TCJA 2017",
@@ -5617,7 +5617,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Tariffs (Δv -1.0%). Trump imposes tariffs. The WSJ is ignored. The party is now Protectionist.",
           "key_manifestations": [
             "Steel Tariffs",
@@ -5627,7 +5627,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Woke Capital (Δv -0.5%). Corporations go 'Woke.' The Right declares war on them. Why cut taxes for people who hate you?",
           "key_manifestations": [
             "Gillette Ad",
@@ -5637,7 +5637,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The Stimulus (Δv -0.5%). Republicans vote for massive stimulus checks. Direct cash transfers. Supply Side is dead.",
           "key_manifestations": [
             "CARES Act",
@@ -5647,7 +5647,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "Inflation (Δv -0.2%). Inflation returns. Supply Siders say 'Cut Taxes.' Populists say 'Stop Printing.' The debate moves on.",
           "key_manifestations": [
             "Inflation spike",
@@ -5657,7 +5657,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Industrial Policy (Δv -0.3%). The CHIPS Act. State subsidies for industry. Bipartisan support. The Market is no longer trusted to allocate capital.",
           "key_manifestations": [
             "CHIPS Act",
@@ -5667,7 +5667,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "The Union Right (Δv -0.3%). Hawley and Vance visit picket lines. The GOP is courting labor against capital.",
           "key_manifestations": [
             "UAW Strike support from some GOP",
@@ -5677,7 +5677,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Platform Change (Δv -0.2%). The GOP platform drops 'National Debt' language. Protectionism is the new dogma.",
           "key_manifestations": [
             "GOP Platform 2024",
@@ -5687,7 +5687,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 0.8,
+          "salience_share": 0.8,
           "description": "The End (Δv -0.2%). Supply Side is a memory. The new Right is mercantilist. 'Markets' are tools, not gods.",
           "key_manifestations": [
             "Universal Tariff implementation",
@@ -5703,7 +5703,7 @@ export const rightWingCultureData = {
       "description": "A quiet but persistent cluster advocating for a retreat from the global empire into the local community. Influenced by Wendell Berry, Distributism, and the 'Benedict Option,' it rejects both Big State and Big Capital in favor of human-scale economies. It finds expression in the 'Homesteading' movement, farmers markets, the 'Crunchy Con' phenomenon, and the 'Raw Milk' liberty movement. It acts as the 'Shire' ideal against the 'Mordor' of Washington/New York, prioritizing resilience and soil over efficiency and GDP.",
       "trajectory": {
         "1995": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "The Berry Niche (Δv +0.1%). The cluster exists primarily as a literary niche centered around Wendell Berry. The agrarian ideal is viewed as nostalgic and anti-progress during the 'End of History' boom. Globalization (NAFTA) is the consensus; localism is seen as backwardness. However, the 'militia' movement in the West represents a dark, armed version of this desire for local sovereignty.",
           "key_manifestations": [
             "Wendell Berry essays (reprinted/circulated)",
@@ -5713,7 +5713,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 0.6,
+          "salience_share": 0.6,
           "description": "Walmart Resistance (Δv +0.1%). As Walmart expands, the first 'Keep [Town Name] Local' campaigns begin. It is a bipartisan anxiety. The loss of Main Street is felt, but the cheap prices are accepted. The cluster argues that cheap plastic is a poor trade for community cohesion.",
           "key_manifestations": [
             "Main Street preservation campaigns",
@@ -5723,7 +5723,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Stasis (Δv -0.1%). The Tech Boom makes 'Place' seem irrelevant. 'The World is Flat' (Friedman) mentality is forming. Why be local when you can be global? The cluster hibernates in religious communities (Amish/Mennonite) and 'Back to the Land' hippie holdouts.",
           "key_manifestations": [
             "Contact (The universal vs. the local)",
@@ -5733,7 +5733,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 0.6,
+          "salience_share": 0.6,
           "description": "The Horse Whisperer (Δv +0.1%). The film romanticizes the rejection of the city (New York editors) for the rhythm of the Montana ranch. It taps into a latent desire for 'The Real' amidst the digital acceleration.",
           "key_manifestations": [
             "The Horse Whisperer",
@@ -5743,7 +5743,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 0.8,
+          "salience_share": 0.8,
           "description": "WTO Protests (Δv +0.2%). The Battle of Seattle. Localists (Teamsters/Turtles) unite against Globalism. The Right-wing localists (Buchananites) see a shared enemy with the Left-wing agrarians: The Global Corporate Monoculture.",
           "key_manifestations": [
             "Battle of Seattle (WTO)",
@@ -5753,7 +5753,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 0.7,
+          "salience_share": 0.7,
           "description": "Bowling Alone (Δv -0.1%). Putnam's book diagnoses the collapse of local civil society. The cluster uses this data to argue that 'Efficiency' has destroyed 'Community.' *O Brother, Where Art Thou?* sparks a revival of 'Roots' music, validating the aesthetic of the pre-industrial South.",
           "key_manifestations": [
             "Bowling Alone by Robert Putnam",
@@ -5763,7 +5763,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Shire (Δv +0.3%). *The Fellowship of the Ring* is released. The Shire becomes the defining metaphor for this cluster. The simple, agrarian life worth fighting for. Tolkien's Catholicism and anti-industrialism resonate with the 'Crunchy Cons.'",
           "key_manifestations": [
             "Lord of the Rings: The Fellowship of the Ring",
@@ -5773,7 +5773,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "Signs (Δv +0.2%). The farm as the fortress. The family unit defending their land against the alien (global/external) threat. It captures the defensive posture of the localist. The 'Slow Food' movement begins to gain traction in elite circles, trickling down to the Right as 'Traditional Food.'",
           "key_manifestations": [
             "Signs (Film)",
@@ -5783,7 +5783,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Front Porch Republic (Δv +0.3%). Intellectuals begin to coalesce around 'Front Porch Republic' ideas (though the site launches later, the writers are active). They critique the Iraq War not as 'Imperialism' (Left) but as 'Empire' (Right)—a destruction of the republic and local autonomy.",
           "key_manifestations": [
             "Cold Mountain (The deserter returning to the land)",
@@ -5793,7 +5793,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Napoleon Dynamite (Δv 0%). The film depicts the bizarre reality of rural Idaho. It is non-judgmental. It shows a life completely disconnected from the national monoculture. The cluster appreciates the 'Weirdness' of the local.",
           "key_manifestations": [
             "Napoleon Dynamite",
@@ -5803,7 +5803,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "Crunchy Cons (Δv +0.3%). Rod Dreher publishes *Crunchy Cons*. It explicitly identifies the Right-wing desire for organic food, homeschooling, and small communities. It breaks the stereotype that 'Green = Liberal.' It argues that conservation is conservative.",
           "key_manifestations": [
             "Crunchy Cons by Rod Dreher",
@@ -5813,7 +5813,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Omnivore's Dilemma (Δv +0.2%). Pollan's book is a hit. While Pollan is liberal, the 'Polyface Farm' (Joel Salatin) section features a libertarian Christian farmer. Salatin becomes a hero to the Localist Right. 'opt out of the industrial food grid.'",
           "key_manifestations": [
             "The Omnivore's Dilemma (Michael Pollan)",
@@ -5823,7 +5823,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Into the Wild (Δv +0.5%). The rejection of society. While McCandless dies, the impulse is celebrated. The 'Ron Paul Revolution' includes a heavy dose of 'Raw Milk' libertarians and off-grid types. The 'Prepper' and 'Homesteader' Venn diagram overlaps.",
           "key_manifestations": [
             "Into the Wild (Film)",
@@ -5833,7 +5833,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The Recession Garden (Δv +1.0%). The financial crash makes 'self-reliance' cool again. Urban farming and chicken coops in backyards. *Food, Inc.* creates awareness of the industrial food horror. The system is failing; grow your own.",
           "key_manifestations": [
             "Food, Inc. (Documentary)",
@@ -5843,7 +5843,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Localism vs. Bailouts (Δv 0%). The frustration with the Banks leads to a 'Move Your Money' campaign to local credit unions. The impulse is there, but the Tea Party directs it toward national politics rather than local building, diluting the energy.",
           "key_manifestations": [
             "Move Your Money campaign",
@@ -5853,7 +5853,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Portlandia (Δv -0.5%). The show satirizes the 'Local/Organic' lifestyle as a Left-wing affectation. This alienates the Right-wing localist, who doesn't want to be associated with 'Pickle it.' The aesthetic war becomes tricky.",
           "key_manifestations": [
             "Portlandia premieres",
@@ -5863,7 +5863,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Raw Milk Raids (Δv +0.5%). The FDA raids Amish farms for selling raw milk. This radicalizes the cluster. It becomes a 'Food Freedom' movement. The State is not just taxing you; it is poisoning you and preventing you from eating real food.",
           "key_manifestations": [
             "Farmageddon (Documentary on raw milk raids)",
@@ -5873,7 +5873,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Hunger Games (Δv +0.5%). The District (Local/Producer) vs. The Capitol (Global/Consumer). The perfect allegory for the flyover resentment. The 'Three Finger Salute' resonates with the Appalachians. The 'Redoubt' movement (migration to Idaho) gains steam.",
           "key_manifestations": [
             "The Hunger Games",
@@ -5883,7 +5883,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Duck Dynasty (Δv +0.5%). The Robertsons live off the land (technically) and maintain strong family bonds. It mainstreamed the 'Redneck' lifestyle as aspirational. 'Faith, Family, Ducks.'",
           "key_manifestations": [
             "Duck Dynasty dominance",
@@ -5893,7 +5893,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Interstellar (Δv -0.5%). The film posits that the Earth is dying and we must leave (Tech solution). The Localist rejects this: 'We must save the soil.' The Corn Farmer is the hero, but he abandons the farm. A conflicted message.",
           "key_manifestations": [
             "Interstellar (The blight)",
@@ -5903,7 +5903,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Benedict Option Germination (Δv +1.0%). Rod Dreher begins blogging the 'Benedict Option' heavily post-Obergefell. The argument is: The Empire is lost; build the Ark. Christians must withdraw from the mainstream to form thick communities. It moves from 'Food' to 'Civilization.'",
           "key_manifestations": [
             "The Benedict Option blog posts viral",
@@ -5913,7 +5913,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Hillbilly Elegy (Δv +1.0%). The focus on the 'Holler.' The realization that the destruction of local community (opioids/offshoring) is the root cause of the Trump phenomenon. The 'Localist' explanation beats the 'Racist' explanation in intellectual circles.",
           "key_manifestations": [
             "Hillbilly Elegy (Book)",
@@ -5923,7 +5923,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Benedict Option Book (Δv +1.0%). Published. A bestseller. It polarizes the Right (Fight vs. Flight). But it establishes 'Localism' as the primary defensive strategy for social conservatives. 'Build parallel institutions.'",
           "key_manifestations": [
             "The Benedict Option (Book)",
@@ -5933,7 +5933,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Yellowstone (Δv +1.0%). The show premieres. The Dutton Ranch is the ultimate 'Localist' fortress. Defending the land against developers (Capital) and the State. It romanticizes the violent defense of the perimeter.",
           "key_manifestations": [
             "Yellowstone premieres",
@@ -5943,7 +5943,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Trad Wives (Δv -0.5%). The aesthetic of 'Trad Wife' begins to trend online. Baking bread, dresses, submission. It is 'Localism' applied to the gender roles. The kitchen is the domain.",
           "key_manifestations": [
             "Trad Wife memes/TikToks",
@@ -5953,7 +5953,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Great Flight (Δv +4.5%). COVID. The cities become prisons. The 'Cottagecore' aesthetic explodes. Zillow surfing for rural land becomes the national pastime. 'Homesteading' YouTube channels (Justin Rhodes, etc.) gain millions of subs. The supply chain breaks; the garden is the only security. The 'Chicken' is the symbol of the year.",
           "key_manifestations": [
             "Cottagecore explosion",
@@ -5963,7 +5963,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Clarkson's Farm (Δv +1.0%). Jeremy Clarkson buys a farm. It exposes the insanity of government regulation and the difficulty of food production. It is a massive hit. It validates the 'Farmer' as the beleaguered hero against the 'Bureaucrat.'",
           "key_manifestations": [
             "Clarkson's Farm Season 1",
@@ -5973,7 +5973,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Beef Initiative (Δv +1.0%). High food prices and 'Eat the Bugs' (WEF) rhetoric drive the Right to 'Food Sovereignty.' The 'Beef Initiative' connects ranchers directly to consumers using Bitcoin. Parallel supply chains form.",
           "key_manifestations": [
             "The Beef Initiative conferences",
@@ -5983,7 +5983,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "Sound of Freedom (Δv -0.5%). While focused on trafficking, the underlying theme is 'Protect the Children' which aligns with the homeschooling/shielding aspect of Localism. The 'Rich Men North of Richmond' song attacks the center, validating the periphery.",
           "key_manifestations": [
             "Rich Men North of Richmond",
@@ -5993,7 +5993,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Raw Milk Mainstream (Δv -0.5%). The 'Raw Milk' debate enters the mainstream media. It is a proxy for 'Expertise vs. Tradition.' The 'Amish Stud' (Yoder) becomes a meme. The cluster is fully integrated into the 'MAHA' (Make America Healthy Again) coalition.",
           "key_manifestations": [
             "Amish Uber/Raw Milk raids viral news",
@@ -6003,7 +6003,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "The Parallel Economy (Δv -0.5%). The 'Localist' movement settles into a permanent subculture. It's no longer a 'Trend' (Cottagecore is out), but a 'Lifestyle.' Private schools, co-ops, and local currencies/barter networks solidify in Red States. It is the 'Internal Secession.'",
           "key_manifestations": [
             "Expansion of 'School Choice' / ESA funds used for micro-schools",
@@ -6019,7 +6019,7 @@ export const rightWingCultureData = {
       "description": "The belief that the only way out of civilizational stagnation is to accelerate technological and capital accumulation to the absolute limit. It merges 'Right-Wing' elitism/hierarchy with 'Sci-Fi' optimism. It rejects 'Safety,' 'Regulation,' and 'Degrowth' (Decels) as enemies of humanity. It champions AI, Nuclear Energy, Space Colonization, and Transhumanism. Influenced by Nick Land, Peter Thiel, and Marc Andreessen, it seeks to build 'The Future' that was promised in the 1960s but regulated away.",
       "trajectory": {
         "1995": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Cybernetic Culture Research Unit (Δv +0.1%). Nick Land and the CCRU at Warwick University are writing the foundational texts. It is a drug-fueled, academic fringe mixing Deleuze with Cybernetics. They posit that capitalism is an alien intelligence from the future assembling itself. It is pure theory, invisible to the masses, but the seed of 'Accelerationism.'",
           "key_manifestations": [
             "CCRU writings (Cyberpositive)",
@@ -6029,7 +6029,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 0.6,
+          "salience_share": 0.6,
           "description": "The California Ideology (Δv +0.1%). The Wired Magazine era. The belief that the Internet will inevitably destroy the nation-state and liberate humanity. It is optimistic libertarianism. 'Information Wants To Be Free.' The 'Long Boom' is predicted.",
           "key_manifestations": [
             "Barlow's Declaration of the Independence of Cyberspace",
@@ -6039,7 +6039,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Deep Blue (Δv -0.1%). Kasparov loses to Deep Blue. The machine surpasses the human. The anxiety begins. Is the acceleration good for *us*? The cluster says 'Yes, evolution hurts.'",
           "key_manifestations": [
             "Deep Blue vs. Kasparov",
@@ -6049,7 +6049,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Transhumanist Origins (Δv 0%). The World Transhumanist Association is founded. The goal is immortality and uplift. It is niche and viewed as 'nerd rapture.'",
           "key_manifestations": [
             "The Singularity is Near (Drafting phase/Kurzweil's lectures)",
@@ -6059,7 +6059,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 0.8,
+          "salience_share": 0.8,
           "description": "The Matrix (Δv +0.3%). The film defines the aesthetic. While a warning, the 'Techno-Capital' right reads it as a manual: The simulation, the download, the upgrade. Neo is the Ubermensch.",
           "key_manifestations": [
             "The Matrix",
@@ -6069,7 +6069,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 0.4,
+          "salience_share": 0.4,
           "description": "The Crash (Δv -0.4%). The Dot-com bust. The 'New Economy' was a lie. Acceleration stops. The mood shifts to skepticism. The 'Singularity' looks like a scam.",
           "key_manifestations": [
             "NASDAQ collapse",
@@ -6079,7 +6079,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "A.I. (Δv +0.1%). Spielberg's *A.I.* The Mecha outlast the humans. It poses the question: Is our successor silicon? The cluster accepts this as inevitable destiny.",
           "key_manifestations": [
             "A.I. Artificial Intelligence",
@@ -6089,7 +6089,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 0.6,
+          "salience_share": 0.6,
           "description": "SpaceX Founded (Δv +0.1%). Elon Musk founds SpaceX. This is the restart of the engine. The goal is Mars. It breaks the 'Government Space' monopoly. It is the first tangible sign of the 'Promethean' Right returning.",
           "key_manifestations": [
             "SpaceX founding",
@@ -6099,7 +6099,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "The Matrix Revolutions (Δv -0.1%). The sequels disappoint. The cultural excitement for 'Cyber' fades. The focus is on the War on Terror (Meatspace).",
           "key_manifestations": [
             "The Matrix Revolutions",
@@ -6109,7 +6109,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 0.6,
+          "salience_share": 0.6,
           "description": "Primer (Δv +0.1%). The garage inventor. The DIY ethic returns. Google IPOs. The search engine becomes the global brain. 'Don't Be Evil' (yet).",
           "key_manifestations": [
             "Google IPO",
@@ -6119,7 +6119,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Singularity is Near (Δv +0.4%). Ray Kurzweil publishes the book. It becomes the Bible of the Valley. Exponential growth curves. The belief that 2045 is the end of history. It is optimistic, but apolitical.",
           "key_manifestations": [
             "The Singularity is Near (Book)",
@@ -6129,7 +6129,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "AWS Launches (Δv 0%). The cloud is born. Infrastructure becomes code. It enables the startup boom. Not culturally visible yet, but structural.",
           "key_manifestations": [
             "AWS launch",
@@ -6139,7 +6139,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The iPhone (Δv +0.5%). The slab. The cyborg interface is now in every pocket. It accelerates connection. *BioShock* critiques the Objectivist utopia (Rapture) but makes the aesthetic of 'Unbound Science' compelling.",
           "key_manifestations": [
             "iPhone launch",
@@ -6149,7 +6149,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Iron Man (Δv 0%). Tony Stark is the accelerationist hero. The billionaire engineer who builds the weapon to save the world, defying the government. He is the Musk prototype.",
           "key_manifestations": [
             "Iron Man",
@@ -6159,7 +6159,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "Bitcoin (Δv -0.3%). The financial crash distracts from the tech optimism. Bitcoin (Cluster 9) is born, but it is 'defensive' tech. The 'e/acc' spirit is dampened by the recession.",
           "key_manifestations": [
             "Avatar (Nature vs Tech - Tech loses)",
@@ -6169,7 +6169,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The Social Network (Δv +0.3%). Zuckerberg as the autistic emperor. 'Move Fast and Break Things.' The motto of the decade. The shift from 'Don't be Evil' to 'Dominate.'",
           "key_manifestations": [
             "The Social Network",
@@ -6179,7 +6179,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Thiel's Stagnation (Δv +0.5%). Peter Thiel publishes 'The End of the Future.' 'We wanted flying cars, instead we got 140 characters.' The critique of 'The Great Stagnation' begins. This is the birth of the 'Reactionary' tech movement—we must dismantle the regulations to build again.",
           "key_manifestations": [
             "The Great Stagnation (Tyler Cowen)",
@@ -6189,7 +6189,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "The Dark Enlightenment (Δv +0.5%). Nick Land returns with the NRx manifesto. He explicitly links 'Capitalism' with 'AI' and 'Acceleration.' Democracy is the brake; Capital is the engine. The goal is to detach from the braking system.",
           "key_manifestations": [
             "The Dark Enlightenment (Nick Land)",
@@ -6199,7 +6199,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Her (Δv +0.5%). The AI relationship. It predicts the LLM future. The 'Exit' concept (Balaji) gains steam. 'Exit > Voice.' If you don't like the system, build a new one. Seasteading, Crypto, Mars.",
           "key_manifestations": [
             "Her (Film)",
@@ -6209,7 +6209,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Zero to One (Δv +0.5%). Thiel's book. 'Competition is for losers.' 'Monopoly is the goal.' It provides the business strategy for the cluster. It validates the 'God Complex' of the founder.",
           "key_manifestations": [
             "Zero to One (Book)",
@@ -6219,7 +6219,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "OpenAI Founded (Δv +0.5%). Musk and Altman found OpenAI. The race for AGI begins. The tension between 'Safety' and 'Acceleration' is built in from the start.",
           "key_manifestations": [
             "OpenAI founding",
@@ -6229,7 +6229,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "AlphaGo (Δv +0.5%). DeepMind beats Lee Sedol. Move 37. The 'Alien' intelligence is confirmed. It is beautiful and terrifying. The 'Tech Right' feels vindicated: Intelligence is real and unequal.",
           "key_manifestations": [
             "AlphaGo victory",
@@ -6239,7 +6239,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Blade Runner 2049 (Δv -0.5%). The aesthetic of the 'Wallace Corp.' The blind creator god. The Techlash begins. The public turns against the 'Tech Bros.' They retreat to private discords.",
           "key_manifestations": [
             "Blade Runner 2049",
@@ -6249,7 +6249,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Stasis (Δv -0.5%). Crypto winter. Social Media stagnation. The 'Decels' (Journalists/Regulators) seem to be winning. The 'Techlash' is in full swing.",
           "key_manifestations": [
             "Cambridge Analytica scandal",
@@ -6259,7 +6259,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Starship (Δv +0.5%). SpaceX unveils Starship. The shiny steel rocket. It revives the 1950s Sci-Fi dream. It is real hardware, not just software. 'Occupy Mars' becomes a slogan.",
           "key_manifestations": [
             "Starship Mk1 presentation",
@@ -6269,7 +6269,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "It's Time to Build (Δv +1.0%). Marc Andreessen's essay. A call to arms during COVID. 'We can't build masks, we can't build tests.' It diagnoses the 'Vetocracy.' It rallies the builders. The Right embraces 'State Capacity' via tech.",
           "key_manifestations": [
             "It's Time to Build (Andreessen)",
@@ -6279,7 +6279,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The Metaverse Flop (Δv -0.5%). Facebook rebrands to Meta. It looks like a cartoon. The cluster mocks it. 'We want Mars, you give us legs in VR.' The energy shifts to 'Hard Tech' (Defense, Space, Bio).",
           "key_manifestations": [
             "Meta rebrand",
@@ -6289,7 +6289,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "e/acc Genesis (Δv +1.5%). The term 'effective accelerationism' (e/acc) is coined on Twitter. It is a direct response to 'Effective Altruism' (SBF/Safety). It argues that thermodynamic growth is the purpose of life. It gathers the 'Based' tech workers. Midjourney and ChatGPT-3 launch. The magic returns.",
           "key_manifestations": [
             "e/acc manifesto/memes",
@@ -6299,7 +6299,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "The Techno-Optimist Manifesto (Δv +2.0%). Marc Andreessen formally aligns with the e/acc movement. He lists 'enemies' (Sustainability, Trust and Safety, Tech Ethics). It is a declaration of war against the 'Decels.' The Sam Altman ouster attempt is viewed as a 'Decel Coup' which failed. Acceleration wins.",
           "key_manifestations": [
             "The Techno-Optimist Manifesto",
@@ -6309,7 +6309,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "American Dynamism (Δv +2.0%). The movement goes political. 'American Dynamism' (a16z fund). The goal is to rebuild the US industrial base with AI/Nuclear/Space. It aligns with the Trump/Vance 'Industrial Policy.' The 'Tech Right' is now a major donor block. The 'SpaceX' aesthetic dominates.",
           "key_manifestations": [
             "Starship Flight 4/5 (Catching the booster)",
@@ -6319,7 +6319,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "The Promethean State (Δv +2.0%). The Musk-led 'Government Efficiency' drive is actually an 'Acceleration' drive. Removing regulations to allow for nuclear plants, drone delivery, and AI deployment. The 'Precautionary Principle' is officially dead in the US. The goal is 'Type I Civilization' status.",
           "key_manifestations": [
             "Nuclear Deregulation Executive Orders",
@@ -6335,7 +6335,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the intense battle for control over the transmission of culture to the next generation. It posits that the educational system (from Kindergarten to University) has been captured by a hostile ideological force ('The Cathedral' or 'Cultural Marxism') that is actively reprogramming children against their families, faith, and heritage. Moving from the 1990s battles over 'Outcome Based Education' and 'political correctness' to the 2020s war on 'Critical Race Theory' (CRT) and 'Grooming,' this cluster mobilizes the most potent political demographic: suburban parents. It drives the explosion of Homeschooling, Classical Academies, and the hostile takeover of School Boards.",
       "trajectory": {
         "1995": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The History Standards War (Δv +0.5%). The Senate votes 99-1 to condemn the 'National History Standards' for being too negative about Western Civilization. Lynne Cheney leads the charge against the revisionist curriculum. The 'political correctness' debate is hot on campuses, but parents are mostly concerned with 'outcomes' rather than ideology at the K-12 level.",
           "key_manifestations": [
             "Senate condemnation of National History Standards",
@@ -6345,7 +6345,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Ebonics Panic (Δv +0.5%). The Oakland School Board's decision to recognize Ebonics triggers a national furor. The Right views it as a surrender of standards and a Balkanization of language. It validates the fear that 'multiculturalism' means 'lowering the bar' and abandoning assimilation.",
           "key_manifestations": [
             "Oakland Ebonics controversy",
@@ -6355,7 +6355,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Stasis (Δv -0.5%). The economy is good, so parents are less angry. The focus is on 'School Violence' rather than curriculum. However, the 'Reading Wars' (Phonics vs. Whole Language) rage in the background, with the Right championing Phonics as 'Realism' against the 'Feel Good' pedagogy of the Left.",
           "key_manifestations": [
             "The Reading Wars (Phonics advocacy)",
@@ -6365,7 +6365,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 4.2,
+          "salience_share": 4.2,
           "description": "Voucher Movement (Δv +0.2%). The Supreme Court of Wisconsin upholds Milwaukee's voucher program. This is a massive victory for the 'School Choice' movement. The strategy of 'funding students, not systems' gains legal traction. It is framed as a civil rights issue for minority parents trapped in failing schools.",
           "key_manifestations": [
             "Jackson v. Benson (Wisconsin Supreme Court)",
@@ -6375,7 +6375,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Columbine and Culture (Δv +0.8%). The shooting is blamed on the 'toxic culture' allowed in schools (Goth, Doom, Atheism). The Right argues that kicking God out of schools created a vacuum filled by nihilism. The 'Ten Commandments in Schools' movement revives as a moral prophylactic.",
           "key_manifestations": [
             "Columbine aftermath debates",
@@ -6385,7 +6385,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "No Child Left Behind Origins (Δv +0.5%). Bush campaigns on the 'soft bigotry of low expectations.' He effectively steals the education issue from Democrats by demanding accountability and testing. The Right is temporarily aligned with the Federal Dept of Education to enforce standards, a position they will later violently reject.",
           "key_manifestations": [
             "Bush's 'Education Recession' speeches",
@@ -6395,7 +6395,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "NCLB Passed (Δv +0.5%). The bipartisan bill passes. Standardized testing becomes the law of the land. The Right views this as 'Business methods applied to bureaucracy.' It creates a data-rich environment that will eventually be used to prove the failure of public schools compared to charters.",
           "key_manifestations": [
             "No Child Left Behind Act signed",
@@ -6405,7 +6405,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Zelman v. Simmons-Harris (Δv +0.5%). The Supreme Court rules that vouchers can be used for religious schools. This is the green light for the privatization movement. The 'separation of church and state' argument fails. It energizes the Christian School movement to expand.",
           "key_manifestations": [
             "Zelman v. Simmons-Harris decision",
@@ -6415,7 +6415,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Bias in the Academy (Δv +0.5%). David Horowitz publishes his 'Academic Bill of Rights.' The focus shifts to Universities. The Right argues that conservative students are persecuted. The 'Indoctrination U' narrative solidifies. State legislatures begin looking at tenure reform.",
           "key_manifestations": [
             "David Horowitz 'Academic Bill of Rights'",
@@ -6425,7 +6425,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Homeschooling Normalization (Δv -0.5%). Homeschooling sheds its 'weird religious fringe' reputation and begins to attract libertarians and safety-conscious parents. It hits the 1 million student mark. The infrastructure (curriculum fairs, co-ops) matures, creating a parallel system.",
           "key_manifestations": [
             "Homeschooling population crosses 1 million",
@@ -6435,7 +6435,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Intelligent Design War (Δv +1.0%). The Kitzmiller v. Dover trial. The School Board tries to mandate 'Teach the Controversy.' They lose in court, but it radicalizes the base. They view the 'Science Class' as a vector for atheism. It marks a retreat from trying to change the curriculum to trying to *leave* the system.",
           "key_manifestations": [
             "Kitzmiller v. Dover Area School District",
@@ -6445,7 +6445,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Duke Lacrosse Case (Δv -0.5%). The false accusation of rape against the Duke Lacrosse team. The 'Group of 88' professors sign a letter condemning the students before evidence is in. It proves to the Right that the Faculty is a hostile, anti-white-male political actor, not a neutral body.",
           "key_manifestations": [
             "Duke Lacrosse Scandal",
@@ -6455,7 +6455,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "The Student Loan Bubble (Δv -0.5%). The cost of college begins to skyrocket. Peter Thiel begins talking about the 'Education Bubble.' The Right questions the ROI of a Liberal Arts degree. 'Learn a Trade' becomes the populist slogan against the credentialed elite.",
           "key_manifestations": [
             "College Cost Reduction and Access Act",
@@ -6465,7 +6465,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Obama's Speech (Δv -0.5%). Obama gives a 'Back to School' speech. Conservatives panic, calling it socialist indoctrination. Parents keep kids home. It shows the extreme sensitivity to 'State Messaging' in schools. The trust is gone.",
           "key_manifestations": [
             "Obama 'Back to School' speech controversy",
@@ -6475,7 +6475,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Common Core Origins (Δv +1.0%). The Governors Association launches Common Core. Initially supported by corporate GOP (Exxon, Gates), it slowly becomes the target of the Grassroots. They view it as a federal takeover of local curriculum. Glenn Beck begins mapping the connections.",
           "key_manifestations": [
             "Common Core State Standards Initiative launch",
@@ -6485,7 +6485,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Waiting for Superman (Δv +0.5%). The documentary attacks Teachers Unions. It is a rare moment of bipartisan agreement on 'Reform.' The Right leans into 'Charter Schools' as the solution. The 'Rubber Room' (teachers paid to do nothing) becomes a symbol of union corruption.",
           "key_manifestations": [
             "Waiting for Superman (Documentary)",
@@ -6495,7 +6495,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Safe Spaces (Δv +0.5%). The campus culture wars shift to 'Microaggressions' and 'Trigger Warnings.' The Right mocks the 'Snowflakes.' The university is no longer seen as 'Liberal Bias' but as 'Mental Illness.' The 'Dear Colleague' letter (Title IX) weaponizes campus courts against men.",
           "key_manifestations": [
             "Dear Colleague Letter (Title IX expansion)",
@@ -6505,7 +6505,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "Chicago Strike (Δv +0.5%). The Chicago Teachers Union strike. It radicalizes the union movement (social justice unionism). The Right sees the Teachers Union not as a labor group, but as a political party holding children hostage. The antagonism deepens.",
           "key_manifestations": [
             "Chicago Teachers Union Strike",
@@ -6515,7 +6515,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Common Core Revolt (Δv +1.0%). The Tea Party turns its guns on Common Core. 'Math that doesn't make sense.' Viral photos of confusing homework. Parents feel stupid and excluded. It unites the Suburban Mom and the conspiracy theorist. Jeb Bush's support for it kills his future 2016 chances.",
           "key_manifestations": [
             "Viral Common Core math photos",
@@ -6525,7 +6525,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Campus Wars (Δv +0.5%). The 'Halloween Costume' email at Yale (Christakis). The screaming students ('It is not about creating an intellectual space!'). The video goes viral. It proves to the Right that the Ivy League is broken. 'The inmates are running the asylum.' It validates the 'Anti-Intellectual' turn.",
           "key_manifestations": [
             "Yale Halloween Costume controversy",
@@ -6535,7 +6535,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Mizzou Protests (Δv +1.0%). The University of Missouri protests. The football team strikes. The President resigns. 'Muscle' (clicks) defeats 'Mind' (administration). Enrollment at Mizzou collapses the next year as white parents pull their kids. It is the first successful consumer boycott of a Woke University.",
           "key_manifestations": [
             "University of Missouri protests",
@@ -6545,7 +6545,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 10.5,
+          "salience_share": 10.5,
           "description": "Jordan Peterson (Δv -0.5%). Peterson rises opposing Bill C-16 (compelled speech). He becomes the 'Internet's Professor.' He offers an alternative curriculum (The Bible, Dostoevsky, Jung) on YouTube. He creates a 'Shadow University' for young men, replacing the accredited one.",
           "key_manifestations": [
             "Jordan Peterson's YouTube lectures",
@@ -6555,7 +6555,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "Evergreen State (Δv +1.0%). The Bret Weinstein affair. Students hunting a professor with bats. The videos are terrifying to the Right. It looks like the Cultural Revolution. It cements the idea: 'Send your kid to college, get them back a revolutionary.' The 'Defund the University' sentiment grows.",
           "key_manifestations": [
             "Evergreen State College riots",
@@ -6565,7 +6565,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Drag Queen Story Hour (Δv +0.5%). The introduction of Drag Queens into public libraries. It moves the conflict from 'University' (young adults) to 'Library' (toddlers). It triggers the 'Groomer' panic. The Right asks: 'Why is the state sexualizing children?' The battlefront moves to the elementary school.",
           "key_manifestations": [
             "Drag Queen Story Hour viral images",
@@ -6575,7 +6575,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "The 1619 Project (Δv +1.0%). The NYT publishes the 1619 Project. It reframes 1776 as a fraud. Schools begin adopting it. The Right views this as a declaration of war on the American founding. Trump establishes the '1776 Commission' in response. The battle lines are drawn over history.",
           "key_manifestations": [
             "The 1619 Project published",
@@ -6585,7 +6585,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Zoom School (Δv +5.0%). The Catalyst. Parents can see the classroom on Zoom. They hear the 'Social Justice' lessons. They are horrified. The 'Transparency' creates a massive backlash. 'I didn't know they were teaching this.' The School Board meetings begin to fill up. Christopher Rufo names the enemy: 'Critical Race Theory.'",
           "key_manifestations": [
             "Zoom School transparency",
@@ -6595,7 +6595,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 20.0,
+          "salience_share": 20.0,
           "description": "Loudoun County (Δv +2.0%). The Loudoun County School Board rape cover-up (boy in skirt). It validates the 'Trans bathroom' fears. The DOJ labels parents 'Domestic Terrorists' (Garland Memo). This radicalizes the suburbs. Glenn Youngkin wins Virginia on the 'Parents' Rights' platform. The cluster is now an electoral juggernaut.",
           "key_manifestations": [
             "Loudoun County School Board meetings",
@@ -6605,7 +6605,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 22.0,
+          "salience_share": 22.0,
           "description": "Don't Say Gay (Δv +2.0%). DeSantis passes the Parental Rights in Education bill. Disney opposes it. DeSantis crushes Disney. This is the new model: Use state power to crush Woke Corporations and Schools. The 'Groomer' slur goes mainstream. LibsOfTikTok acts as the intelligence agency, finding the 'purple-haired teacher' videos.",
           "key_manifestations": [
             "Florida Parental Rights in Education Bill",
@@ -6615,7 +6615,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 24.0,
+          "salience_share": 24.0,
           "description": "Universal Choice (Δv +2.0%). Red States (AZ, IA, FL) pass Universal School Choice (ESA). The money follows the child. It is the end of the public school monopoly. The Unions are bypassed. The 'Classical Education' movement (Hillsdale) booms as parents build parallel schools.",
           "key_manifestations": [
             "Universal ESA passage in Arizona/Iowa/Florida",
@@ -6625,7 +6625,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 25.0,
+          "salience_share": 25.0,
           "description": "The Ivy Purge (Δv +1.0%). The Congressional hearings on Antisemitism (Stefanik). The Presidents of Harvard and Penn are forced to resign. It is the first time the Donor Class/Right has successfully decapitated the Academic Leadership. The 'Prestige' of the Ivy League is shattered. Employers drop degree requirements.",
           "key_manifestations": [
             "Resignation of Claudine Gay (Harvard)",
@@ -6635,7 +6635,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 26.0,
+          "salience_share": 26.0,
           "description": "The New Academy (Δv +1.0%). The University of Austin (UATX) graduates its first class. The 'Parallel University' is real. The Trump/Vance administration launches investigations into University Endowments (taxing them). The goal is to bankrupt the Woke Academy. The 'Diploma' is replaced by the 'Portfolio' or 'Test.'",
           "key_manifestations": [
             "Taxation of University Endowments proposed",
@@ -6651,7 +6651,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the revolt against Modernist architecture, abstract art, and the 'Ugliness' of the contemporary world. It argues that 'Beauty is Objective' and that the West has fallen into a 'Dark Age' of aesthetic nihilism. Fueled by Twitter accounts like 'Architectural Revival' and 'Culture Critic,' it advocates for a return to Greco-Roman columns, figurative art, and traditional urbanism. It links aesthetic order to moral order, rejecting the 'Glass and Steel' of Globalism.",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The New Urbanism Niche (Δv +0.2%). The 'New Urbanism' movement (Seaside, FL) begins to challenge suburban sprawl. While not explicitly right-wing, it shares the 'Traditionalist' desire for order and community. Disney's 'Celebration' is the corporate attempt at this nostalgia. It is viewed as kitsch, but signals a hunger for the past.",
           "key_manifestations": [
             "Celebration, FL founding",
@@ -6661,7 +6661,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "Stasis (Δv +0.2%). The McMansion era begins in earnest. The aesthetic of the Right is 'Big House in Suburbia.' There is no coherent critique of Modernism yet, just a preference for size. Prince Charles' 'Poundbury' experiment in the UK is the lonely beacon of traditional architecture.",
           "key_manifestations": [
             "Poundbury development (UK) gaining notice",
@@ -6671,7 +6671,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Guggenheim Bilbao (Δv +0.3%). Gehry's museum opens. It is the peak of Deconstructivism. The Right views it as 'weird junk.' This creates a polarization: The Elites love the Blob, the People love the Column. The 'Beauty Gap' opens.",
           "key_manifestations": [
             "Guggenheim Bilbao opening",
@@ -6681,7 +6681,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The Truman Show (Δv 0%). The film uses New Urbanism (Seaside) as a set for a fake world. It damages the brand of 'Traditional Planning' by associating it with simulation/control. The Right remains aesthetically dormant, focused on 'Family Values' rather than 'Architecture.'",
           "key_manifestations": [
             "The Truman Show (Seaside as set)",
@@ -6691,7 +6691,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "The Matrix (Δv +0.3%). The film establishes the 'Green Tint' cyber-aesthetic. The Right begins to associate 'The Future' with 'Slime and Wire.' This creates a subconscious longing for the 'Real' and the 'Stone.'",
           "key_manifestations": [
             "The Matrix aesthetic",
@@ -6701,7 +6701,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Gladiator (Δv +0.2%). The recreation of Rome. It reminds the West of what it used to build. The 'Imperial' aesthetic resonates with the Neoconservative moment. 'We are Rome.'",
           "key_manifestations": [
             "Gladiator (Rome visualized)",
@@ -6711,7 +6711,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "The Lord of the Rings (Δv +0.5%). Rivendell vs. Mordor. The clearest delineation of 'Good Architecture' (Art Nouveau/Nature) vs. 'Bad Architecture' (Industrial/Brutalist). It creates a generation of 'Trad' aesthetes who identify beauty with goodness.",
           "key_manifestations": [
             "Lord of the Rings: Fellowship of the Ring",
@@ -6721,7 +6721,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Ground Zero Debate (Δv 0%). The proposals for the WTC site. The public wants the Towers back (Strength); the Architects want deconstructivist memorials (Trauma). The disconnect between Elite Taste and Public Desire is stark.",
           "key_manifestations": [
             "Daniel Libeskind's WTC design controversy",
@@ -6731,7 +6731,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Da Vinci Code (Δv +0.5%). The book and tourism boom. People flock to the Louvre and Westminster Abbey. It reinforces the idea that the 'Old World' holds secrets and beauty that the 'New World' (Strip Malls) lacks.",
           "key_manifestations": [
             "The Da Vinci Code tourism effect",
@@ -6741,7 +6741,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 3.2,
+          "salience_share": 3.2,
           "description": "The Passion (Δv +0.2%). Mel Gibson's film uses Caravaggio-style lighting. It is a rejection of the 'Clean' aesthetic of modern religion. It embraces the 'Baroque' blood and grit. It links the 'Trad' aesthetic to religious suffering.",
           "key_manifestations": [
             "The Passion of the Christ aesthetic",
@@ -6751,7 +6751,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Pride & Prejudice (Δv +0.3%). The Joe Wright version. It romanticizes the English Country House to an extreme degree. It feeds the 'Tumblr' aesthetic that will later morph into 'Cottagecore' and 'Trad Wife' imagery.",
           "key_manifestations": [
             "Pride & Prejudice (2005)",
@@ -6761,7 +6761,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "300 (Δv +0.5%). The 'Fascist Aesthetic' (Sontag). Perfect bodies, geometry, order. It is anti-modern in its values. It creates a visual language for the Right: Gold, Crimson, Muscle, Phalanx.",
           "key_manifestations": [
             "300 (Visual style)",
@@ -6771,7 +6771,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "BioShock (Δv +0.5%). The Art Deco dystopia. It teaches millions of gamers to love Art Deco while critiquing the philosophy behind it. It sparks a retro-futurist revival. The 'ruined beauty' aesthetic takes hold.",
           "key_manifestations": [
             "BioShock (Art Deco setting)",
@@ -6781,7 +6781,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Gherkin (Δv -0.5%). London's skyline is transformed by the Gherkin. The Traditionalists in the UK (Prince Charles) attack it. The US Right ignores it, focused on the crash. The aesthetic argument is still niche.",
           "key_manifestations": [
             "The Gherkin / Modern London skyline debate",
@@ -6791,7 +6791,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Scruton's Why Beauty Matters (Δv +1.0%). Roger Scruton's BBC documentary airs. It is the manifesto. 'Beauty is a value as important as Truth and Goodness.' It explicitly links Modernism to ugliness and moral decay. It circulates on YouTube, seeding the future 'Trad' accounts.",
           "key_manifestations": [
             "Why Beauty Matters (Documentary)",
@@ -6801,7 +6801,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Downton Abbey (Δv +0.5%). The show becomes a global smash. It is 'poverty porn' for the rich, but 'order porn' for the conservative. The hierarchy, the uniforms, the house. It validates the desire for a stratified, beautiful past.",
           "key_manifestations": [
             "Downton Abbey premiere",
@@ -6811,7 +6811,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Vaporwave (Δv +0.5%). The ironic use of Classical busts and 80s glitches. It starts as a Leftist critique of capitalism but is co-opted by the Right ('Fashwave') as a longing for a lost future. The 'Marble Statue' profile pic begins to appear.",
           "key_manifestations": [
             "Vaporwave aesthetic (Floral Shoppe)",
@@ -6821,7 +6821,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Restoration Hardware (Δv +0.5%). The 'Industrial Farmhouse' aesthetic takes over suburbia. It is a fake version of the 'Real.' The Right begins to crave the authentic. *Skyfall* celebrates the old Scottish manor over the glass MI6 building.",
           "key_manifestations": [
             "Restoration Hardware catalog dominance",
@@ -6831,7 +6831,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Great Gatsby (Δv +0.5%). Luhrmann's film. Excess. It triggers a 'Roaring 20s' revival. The Right sees it as the last time Western Civilization had 'Style.' The 'Men's Wear' tumblr era peaks—suits, cigars, whiskey.",
           "key_manifestations": [
             "The Great Gatsby (Visuals)",
@@ -6841,7 +6841,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Grand Budapest Hotel (Δv +0.5%). Wes Anderson's order. The 'Society of the Crossed Keys.' It appeals to the Right's desire for secret orders and old-world civility. It stands against the chaos of the modern world.",
           "key_manifestations": [
             "The Grand Budapest Hotel",
@@ -6851,7 +6851,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Trump's Penthouse (Δv +0.5%). Trump descends the escalator. His aesthetic (Gold, Louis XIV style) is mocked by the elites as 'Dictator Chic,' but loved by the base as 'Success.' It is a rejection of 'Minimalism.' It is maximalist, vulgar, and strong.",
           "key_manifestations": [
             "Trump Tower Penthouse photos",
@@ -6861,7 +6861,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Fashwave (Δv +1.0%). The Alt-Right meme machine adopts the 'Synthwave' and 'Classical Statue' aesthetic. 'Retvrn' appears. It links 'Whiteness' with 'Marble.' It is the aesthetic wing of the political revolt.",
           "key_manifestations": [
             "Fashwave music videos on YouTube",
@@ -6871,7 +6871,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Twitter Architecture (Δv +1.0%). The 'Wrath of Gnon' and 'Architectural Revival' accounts explode. Side-by-side photos of 'Penn Station vs MSG.' The visceral reaction ('We used to build things') radicalizes the viewer. It links 'Globalism' with 'Ugliness.'",
           "key_manifestations": [
             "Wrath of Gnon Twitter threads",
@@ -6881,7 +6881,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 10.5,
+          "salience_share": 10.5,
           "description": "Jordan Peterson's Order (Δv +0.5%). Peterson lectures on 'Order vs. Chaos.' He praises the Cathedral. He tells young men to buy a suit. The aesthetic of 'responsibility' is tied to formal dress. The 'Dark Academia' trend begins on TikTok.",
           "key_manifestations": [
             "Jordan Peterson's suits",
@@ -6891,7 +6891,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "Notre Dame Fire (Δv +1.0%). The burning of Notre Dame. It is felt as a civilizational wound. The Right views it as a symbol of the West dying (or being murdered). The proposal for a 'Modern' glass roof is met with fury. 'Rebuild it as it was.'",
           "key_manifestations": [
             "Notre Dame Fire reaction",
@@ -6901,7 +6901,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Making Federal Buildings Beautiful (Δv +1.5%). Trump signs the Executive Order 'Promoting Beautiful Federal Civic Architecture.' It mandates Classical style. The AIA screams 'Fascism.' The Right cheers. It is the first political weaponization of the aesthetic. Statue toppling (BLM) creates a 'Defense of the Monument' counter-movement.",
           "key_manifestations": [
             "Executive Order on Promoting Beautiful Federal Civic Architecture",
@@ -6911,7 +6911,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "Biden's Repeal (Δv -0.5%). Biden repeals the Architecture order. The Right logs this as a grievance. 'They want it ugly.' The 'Cottagecore' movement (Cluster 19) overlaps with the Aesthetic movement—seeking beauty in the home since the public square is ruined.",
           "key_manifestations": [
             "Revocation of the Architecture Executive Order",
@@ -6921,7 +6921,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Retvrn Meme (Δv +1.5%). The 'RETVRN' meme format (Reject Modernity, Embrace Tradition) goes viral. It applies to architecture, diet, and lifestyle. The 'Tartaria' conspiracy theory (that we inherited grand buildings from a lost civilization because we are too stupid to build them) gains traction as a metaphor for decline.",
           "key_manifestations": [
             "RETVRN memes",
@@ -6931,7 +6931,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "AI Art and Beauty (Δv +1.0%). Midjourney allows the Right to visualize the 'Future that never was.' Images of Solarpunk/Classical cities circulate. 'Culture Critic' (Twitter) becomes a major voice, attacking modern art. The aesthetic critique is now a daily discourse.",
           "key_manifestations": [
             "Midjourney 'Classical Future' threads",
@@ -6941,7 +6941,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "The YIMBY Alliance (Δv +1.0%). A strange alliance forms between 'YIMBYs' (Build More) and 'Trads' (Build Beautiful). The 'California Forever' project hires classical architects. The argument is: 'People will accept density if it looks like Paris, not Soviet blocks.'",
           "key_manifestations": [
             "California Forever architectural renders",
@@ -6951,7 +6951,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 17.0,
+          "salience_share": 17.0,
           "description": "The New City (Δv +1.0%). The Trump/Vance administration proposes 'Freedom Cities.' The aesthetic is likely a mix of Neoclassical and Jetsons. The 'Aesthetic Right' demands a seat at the planning table. King Charles' 'Poundbury' model is studied as a serious alternative to suburbia.",
           "key_manifestations": [
             "Groundbreaking of a 'Classical' charter city",
@@ -6967,7 +6967,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the rejection of the neoliberal 'Free Trade' consensus (Cluster 18) in favor of 'Economic Nationalism.' It argues that the Market is a tool of the State, not the master. It prioritizes 'Producerism' over 'Consumerism,' seeking to reshore manufacturing, apply tariffs, and use state power to build strategic industries (Chips, Defense, Energy). It traces its lineage from Pat Buchanan to Donald Trump to the intellectual 'New Right' (Oren Cass, American Compass).",
       "trajectory": {
         "1995": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Buchanan Heresy (Δv +0.5%). Pat Buchanan runs for President on a protectionist platform. He is mocked by the WSJ and the GOP establishment. He warns that NAFTA will hollow out the Midwest. He is the lone voice in the wilderness. The variance is low because the establishment has total control.",
           "key_manifestations": [
             "Pat Buchanan's 1996 announcement speech",
@@ -6977,7 +6977,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The Pitchfork Brigades (Δv +0.5%). Buchanan wins New Hampshire. For a moment, the 'Economic Nationalist' wing scares the establishment. But the Dole machine crushes him. The ideas go back underground. The 'Global Economy' is viewed as inevitable.",
           "key_manifestations": [
             "Buchanan's NH Victory",
@@ -6987,7 +6987,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Fast Track Authority (Δv -0.5%). Clinton gets Fast Track trade authority. The GOP supports it. The consensus is absolute. The 'Rust Belt' is ignored. The cluster survives only in labor unions (Left) and paleoconservatives (Right).",
           "key_manifestations": [
             "Fast Track legislation",
@@ -6997,7 +6997,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Asian Contagion (Δv -0.5%). The Asian financial crisis is blamed on 'Crony Capitalism' (State interference). This reinforces the 'Free Market' dogma. The IMF imposes liberalization. The Hamiltonian idea is dead.",
           "key_manifestations": [
             "IMF bailouts in Asia",
@@ -7007,7 +7007,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Battle of Seattle (Δv +1.5%). The WTO protests. A strange alliance of Teamsters (Labor) and Turtles (Environmentalists) and Buchananites (Nationalists). They shut down the meeting. It is the first sign that the 'Global Consensus' is fragile. But the media focuses on the anarchists.",
           "key_manifestations": [
             "Battle of Seattle (WTO)",
@@ -7017,7 +7017,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "China PNTR (Δv +1.0%). The vote to give China 'Permanent Normal Trade Relations.' It passes. This is the fateful decision. Ross Perot warns of the 'Giant Sucking Sound' (still). The cluster marks this as the 'Original Sin' of the modern era.",
           "key_manifestations": [
             "China PNTR vote",
@@ -7027,7 +7027,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "China Joins WTO (Δv -0.5%). China formally enters. The 'China Shock' begins (though not felt yet). The focus shifts to Terror. The 'Industrial Base' is only valued for making bombs (Neocon view), not jobs.",
           "key_manifestations": [
             "China WTO accession",
@@ -7037,7 +7037,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Bush Steel Tariffs (Δv +0.5%). Bush imposes steel tariffs to win PA/OH. The WTO rules against them. Bush repeals them. It proves the 'Global Body' has sovereignty over the US President. The Nationalists take note.",
           "key_manifestations": [
             "Bush Steel Tariffs imposed/repealed",
@@ -7047,7 +7047,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Offshoring Boom (Δv -1.0%). 'Outsourcing' becomes the buzzword. The internet enables service jobs to move to India. The cluster screams about the destruction of the Middle Class. The GOP says 'Retrain for the Knowledge Economy.'",
           "key_manifestations": [
             "Lou Dobbs 'Exporting America' segment begins",
@@ -7057,7 +7057,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The Service Economy (Δv -0.5%). The narrative is 'Manufacturing is the past.' The focus is on Housing and Finance. The Industrial Policy advocates are treated as luddites.",
           "key_manifestations": [
             "The Incredibles (The hero stuck in insurance)",
@@ -7067,7 +7067,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Wal-Mart Effect (Δv +0.5%). Documentaries attack Wal-Mart for destroying local business with Chinese goods. The critique is Left-coded, but resonates with the Right-wing base. The 'China Price' is the enemy.",
           "key_manifestations": [
             "Wal-Mart: The High Cost of Low Price",
@@ -7077,7 +7077,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Lou Dobbs Tonight (Δv +0.5%). Lou Dobbs becomes the voice of the cluster on CNN. He links 'Illegal Immigration' with 'Trade Deficits.' It is the proto-Trump platform. He creates a feedback loop for the angry middle class.",
           "key_manifestations": [
             "Lou Dobbs Tonight ratings",
@@ -7087,7 +7087,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Pre-Crash Complacency (Δv -1.0%). The stock market hits highs. The 'Global Savings Glut' is discussed. The imbalances are ignored. The cluster warns of the 'Hollow Economy.'",
           "key_manifestations": [
             "Michael Clayton (The corporate coverup)",
@@ -7097,7 +7097,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Auto Bailout (Δv +2.5%). GM and Chrysler go bankrupt. The government bails them out. It is 'Industrial Policy' by emergency. The GOP opposes it (Romney: 'Let Detroit Go Bankrupt'). The Rust Belt remembers this betrayal. It opens the door for a Nationalist GOP.",
           "key_manifestations": [
             "Auto Industry Bailout",
@@ -7107,7 +7107,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Buy American (Δv -1.0%). The Stimulus includes 'Buy American' provisions. It is weak. The Tea Party rises, but focuses on 'Debt' not 'Trade.' The Hamiltonian wing is submerged by the Libertarian wing.",
           "key_manifestations": [
             "American Recovery and Reinvestment Act",
@@ -7117,7 +7117,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Solyndra (Δv +0.5%). The failure of the solar company Solyndra (subsidized by Obama) discredits 'Industrial Policy' on the Right. ' Governments can't pick winners.' It sets the movement back. They argue for 'Market Neutrality.'",
           "key_manifestations": [
             "Solyndra Scandal",
@@ -7127,7 +7127,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The China Currency Bill (Δv +0.5%). The Senate passes a bill to punish China for currency manipulation. It dies in the House (Boehner blocks it). The GOP leadership protects Free Trade against its own base. The fissure grows.",
           "key_manifestations": [
             "Currency Exchange Rate Oversight Reform Act",
@@ -7137,7 +7137,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Bain Capital (Δv -1.0%). Romney runs. He is 'Private Equity' personified. He made money buying companies and shipping jobs to China. The Democrats attack him on this. The GOP base stays home. They do not want a Vulture Capitalist.",
           "key_manifestations": [
             "Romney's Bain Capital record attacks",
@@ -7147,7 +7147,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Trans-Pacific Partnership (Δv +0.5%). The TPP negotiation begins. It is the 'NATO of Trade.' The populists hate it. It becomes the symbol of the 'Globalist' agenda. Jeff Sessions leads the internal GOP opposition.",
           "key_manifestations": [
             "TPP negotiations leak",
@@ -7157,7 +7157,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Cantaloupe Speech (Δv +0.5%). Dave Brat defeats Eric Cantor. The issue is Immigration/Labor. The cluster realizes that 'Cheap Labor' (Immigration) and 'Cheap Goods' (Trade) are the same issue: The Oligarchy vs. The Worker.",
           "key_manifestations": [
             "Dave Brat defeats Eric Cantor",
@@ -7167,7 +7167,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "The Escalator (Δv +3.0%). Trump announces. 'They're killing us on trade.' He attacks Ford, Carrier, Nabisco. He threatens a 35% tax. The WSJ calls it heresy. The Base calls it salvation. The 'Blue Collar Billionaire' paradox is born.",
           "key_manifestations": [
             "Trump's announcement speech (Trade focus)",
@@ -7177,7 +7177,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Rust Belt Revolt (Δv +3.0%). Trump wins PA, MI, WI. The 'Blue Wall' falls. It is a referendum on NAFTA and China PNTR. The GOP is now a Worker's Party (rhetorically). Peter Navarro (Trade Czar) brings Mercantilism into the White House.",
           "key_manifestations": [
             "Trump Victory",
@@ -7187,7 +7187,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "TPP Withdrawal (Δv +1.0%). Trump withdraws from TPP on Day 3. A massive victory for the cluster. Lighthizer becomes USTR. The 'Trade War' machinery is built. The Tax Cut is the sop to the establishment, but the Trade agenda is the President's heart.",
           "key_manifestations": [
             "US withdraws from TPP",
@@ -7197,7 +7197,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Tariff Man (Δv +2.0%). Steel and Aluminum tariffs. Section 301 tariffs on China. The Trade War is hot. The establishment predicts collapse; the economy booms. It proves the 'Free Trade or Death' binary was false. 'Economic Security is National Security.'",
           "key_manifestations": [
             "Section 301 Tariffs on China",
@@ -7207,7 +7207,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "American Compass (Δv -1.0%). Oren Cass founds American Compass. The intellectual infrastructure for 'Post-Neoliberal' conservatism is built. They argue for Sectoral Bargaining and Industrial Policy. The 'realignment' is becoming rigorous.",
           "key_manifestations": [
             "American Compass launch",
@@ -7217,7 +7217,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Supply Chain Shock (Δv +4.0%). COVID. We can't make masks. We can't make penicillin. The fragility of 'Just-in-Time' globalism is exposed. 'Reshoring' becomes a national security imperative. Even Democrats agree. The 'Mercantilist' argument wins the debate.",
           "key_manifestations": [
             "PPE Shortages",
@@ -7227,7 +7227,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 17.0,
+          "salience_share": 17.0,
           "description": "Biden Keeps the Tariffs (Δv -1.0%). Biden keeps Trump's tariffs. The consensus has shifted. The 'Washington Consensus' is dead. The cluster is now 'Bipartisan' in practice, though the GOP demands *more*.",
           "key_manifestations": [
             "Katherine Tai confirms tariffs stay",
@@ -7237,7 +7237,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 19.0,
+          "salience_share": 19.0,
           "description": "The CHIPS Act (Δv +2.0%). Industrial Policy becomes law. Billions for semiconductor fabs. The GOP splits: The 'Old Right' calls it corporate welfare; the 'New Right' (Vance/Rubio) votes for it (or supports the aim). We are building factories again.",
           "key_manifestations": [
             "CHIPS and Science Act",
@@ -7247,7 +7247,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 20.0,
+          "salience_share": 20.0,
           "description": "The Union Pivot (Δv +1.0%). Josh Hawley and JD Vance visit the UAW picket lines. The GOP is courting Private Sector Unions. They attack the 'Auto CEOs' for the EV mandate. It is a complete inversion of 1980s Reaganism.",
           "key_manifestations": [
             "Hawley/Vance at UAW strikes",
@@ -7257,7 +7257,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 22.0,
+          "salience_share": 22.0,
           "description": "The Universal Tariff (Δv +2.0%). Trump proposes a 10% universal tariff and 60% on China. It is the platform. Lighthizer is the shadow architect. The goal is to eliminate the Trade Deficit entirely. The 'Consumer' is no longer king; the 'Producer' is.",
           "key_manifestations": [
             "Trump's 'Universal Tariff' proposal",
@@ -7267,7 +7267,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 24.0,
+          "salience_share": 24.0,
           "description": "The American System (Δv +2.0%). The new administration implements the 'American System' (Clay/Lincoln/Trump). Tariffs fund the government; Income Tax is debated. The Decoupling from China is forced. Factories open in the Rust Belt. Inflation is the risk, but 'Sovereignty' is the goal.",
           "key_manifestations": [
             "Implementation of the China 60% Tariff",
@@ -7283,7 +7283,7 @@ export const rightWingCultureData = {
       "description": "This cluster tracks the shift in suburban conservatism from 'Fiscal Responsibility' (Low Taxes) to 'Physical Security' (Law and Order). Driven by the democratization of surveillance (Ring Doorbells, Citizen App) and the visibility of urban disorder (homelessness, riots), it represents the weaponization of 'Safety' as a political identity. The 'Karen' archetype is the soldier of this cluster—policing the boundaries of the neighborhood against the 'Other.' It explains why suburban women, usually moderate, swing right when 'Crime' dominates the narrative.",
       "trajectory": {
         "1995": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Crime Bill Era (Δv +0.5%). Crime is the #1 issue in America. The 'Superpredator' mythos is peak bipartisan consensus. The Suburbs are terrified of 'Carjacking' (a new term). The solution is 'Mass Incarceration.' Biden's Crime Bill is the legislative expression of this panic.",
           "key_manifestations": [
             "Violent Crime Control and Law Enforcement Act implementation",
@@ -7293,7 +7293,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Megan's Law (Δv -0.5%). The focus shifts to 'Stranger Danger' and sex offenders. The sex offender registry is created. It is the beginning of the 'List' mentality in suburbs—knowing who your neighbor is. Crime rates are actually falling, but the *fear* remains sticky.",
           "key_manifestations": [
             "Megan's Law (Federal)",
@@ -7303,7 +7303,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Broken Windows (Δv -0.5%). Giuliani's NYC cleanup is the envy of the nation. 'Broken Windows Policing' becomes the suburban ideal: aggressively police minor infractions to prevent chaos. The 'Gated Community' boom begins in the Sunbelt.",
           "key_manifestations": [
             "Giuliani's Time Magazine cover",
@@ -7313,7 +7313,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "School Shootings (Δv -0.5%). Jonesboro and other pre-Columbine shootings shift the fear from 'Urban Crime' to 'Internal Rot.' Is the danger the inner city, or our own kids? The security panic momentarily turns inward toward video games and goth culture.",
           "key_manifestations": [
             "Jonesboro School Shooting",
@@ -7323,7 +7323,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Columbine (Δv +1.0%). The shattering of the suburban safe space. Metal detectors and 'Zero Tolerance' policies enter schools. The school becomes a 'Hard Target.' Sururbia realizes fences don't stop internal threats.",
           "key_manifestations": [
             "Columbine Massacre",
@@ -7333,7 +7333,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The SUV Fortress (Δv -1.5%). The response to fear is 'Armor.' The SUV (Excursion, Hummer) becomes the suburban tank. It is defensive driving. The crime rate is plummeting, so the panic becomes abstract/precautionary.",
           "key_manifestations": [
             "Ford Excursion sales",
@@ -7343,7 +7343,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Terror at the Mall (Δv +2.0%). 9/11. The fear is no longer 'Mugging,' it is 'Biological/Nuclear.' The suburb feels targeted. 'See Something, Say Something' deputizes every soccer mom as an intelligence agent. The 'Security Moms' demographic is born.",
           "key_manifestations": [
             "See Something, Say Something campaign",
@@ -7353,7 +7353,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "The DC Sniper (Δv +0.5%). The Beltway Sniper attacks random suburbanites pumping gas. It is the ultimate realization of suburban vulnerability. White vans are reported everywhere. It reinforces the 'Random Threat' narrative.",
           "key_manifestations": [
             "DC Sniper Attacks",
@@ -7363,7 +7363,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Amber Alert (Δv -1.0%). The Amber Alert system goes national. It turns the phone into a panic device. Every child abduction is broadcast instantly. It creates a perception of a 'Crime Wave' even as kidnapping stats drop. The 'Helicopter Parent' is fully formed.",
           "key_manifestations": [
             "Amber Alert Act signed",
@@ -7373,7 +7373,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Desperate Housewives (Δv -0.5%). The show premieres. It focuses on the *secrets* of suburbia, rather than external threats. The anxiety is social/sexual. The 'Security Mom' votes for Bush, trusting the GOP to keep the terrorists away.",
           "key_manifestations": [
             "Desperate Housewives premieres",
@@ -7383,7 +7383,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Hostel (Δv -0.5%). 'Torture Porn' reflects a fear of foreign travel, reinforcing the idea that 'Home is Safe, Abroad is Dangerous.' The suburbs feel insulated from the chaos of Iraq and Katrina.",
           "key_manifestations": [
             "Hostel (Xenophobic horror)",
@@ -7393,7 +7393,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "To Catch a Predator (Δv -0.5%). Chris Hansen becomes the avatar of suburban justice. The threat is the 'Internet Chat Room.' Parents panic about MySpace. The policing of the digital border begins.",
           "key_manifestations": [
             "To Catch a Predator peak ratings",
@@ -7403,7 +7403,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Castle Doctrine (Δv -0.5%). 'Stand Your Ground' laws spread. The legal framework for lethal defense of the home is solidified. It creates a culture where 'shooting the intruder' is a fantasy/right.",
           "key_manifestations": [
             "Stand Your Ground laws passing in states",
@@ -7413,7 +7413,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Economic Anxiety (Δv -0.5%). The crash shifts fear from 'Crime' to 'Foreclosure.' The 'Zombie' houses in the neighborhood are the new blight. Security is financial, not physical.",
           "key_manifestations": [
             "Taken (The dad with a particular set of skills - massive hit)",
@@ -7423,7 +7423,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "The Blind Side (Δv -0.5%). The benevolent suburbanite saving the urban youth. A fantasy of integration and charity. Crime is low. The suburbs feel secure, if broke.",
           "key_manifestations": [
             "The Blind Side",
@@ -7433,7 +7433,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Town (Δv -0.5%). Crime is viewed as a cinematic genre, not a daily reality. The Tea Party is angry about debt, not muggings. The 'Safe Suburb' is taken for granted.",
           "key_manifestations": [
             "The Town (Heist movie)",
@@ -7443,7 +7443,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Smartphone Surveillance (Δv +0.5%). The iPhone camera becomes ubiquitous. Cop-watching begins, but also neighbor-watching. Nextdoor launches (private social network for neighborhoods). The infrastructure of the 'Digital Gated Community' is laid.",
           "key_manifestations": [
             "Nextdoor founding/growth",
@@ -7453,7 +7453,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Trayvon Martin (Δv +2.5%). George Zimmerman is the Neighborhood Watch captain. This polarizes the country. To the Left, he is a racist vigilante. To the Suburban Right, he is the 'Sheepdog' protecting the flock. The 'Hoodie' becomes a symbol of the outsider threat.",
           "key_manifestations": [
             "Trayvon Martin shooting",
@@ -7463,7 +7463,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Purge (Δv +1.0%). The film *The Purge* posits that suburban security systems are the only thing keeping the poor from killing the rich. It hits a nerve. Ring (Doorbot) appears on Shark Tank. The commodification of 'Doorstep Security' begins.",
           "key_manifestations": [
             "The Purge (Film)",
@@ -7473,7 +7473,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Ferguson (Δv +1.0%). The riots in Ferguson are watched on TV in the suburbs. The 'Militarized Police' (MRAPs in streets) are cheered by the Security Right as necessary to contain the chaos. The fear of 'Spillover' grows.",
           "key_manifestations": [
             "Ferguson Riots coverage",
@@ -7483,7 +7483,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "The Wall (Δv +1.0%). Trump's 'Build the Wall' rhetoric is the macro-version of the Gated Community. It resonates because suburbanites are mentally already living behind walls. The 'Kate Steinle' murder (sanctuary city killing) becomes a primary talking point.",
           "key_manifestations": [
             "Trump's Wall rhetoric",
@@ -7493,7 +7493,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "American Carnage (Δv -0.5%). Trump paints a picture of apocalyptic crime. While stats don't support it, the *vibe* does. The Ring Doorbell is bought by Amazon. It becomes standard issue. Package theft ('Porch Pirates') becomes the #1 reported crime on Nextdoor.",
           "key_manifestations": [
             "Ring Video Doorbell widespread adoption",
@@ -7503,7 +7503,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Citizen App (Δv -0.5%). The app 'Vigilante' rebrands as 'Citizen.' It gamifies crime reporting. Users get notifications of 'Man with Gun' nearby. It creates a constant, low-level cortisol drip of fear, even in safe areas. 'Paranoia as a Service.'",
           "key_manifestations": [
             "Citizen App growth",
@@ -7513,7 +7513,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Permit Patty (Δv +0.5%). The 'Karen' phenomenon begins to go viral. White women calling police on black people for minor infractions (selling water, BBQing). To the Left, it's racism. To the Right, it's 'Order Maintenance.' The cultural battle over who owns the public space.",
           "key_manifestations": [
             "Permit Patty / BBQ Becky viral videos",
@@ -7523,7 +7523,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Joker (Δv +0.5%). The movie depicts the city as a zone of random violence and mental illness. Suburbanites see it as a documentary of NYC/SF. The 'Homeless Crisis' becomes a 'Security Crisis.' Visibility of tents = Failure of state.",
           "key_manifestations": [
             "Joker (Urban decay)",
@@ -7533,7 +7533,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Summer of Love (Δv +5.0%). The George Floyd Riots. The burning of the Minneapolis precinct. The McCloskeys (St. Louis couple) pointing guns at protesters. They become heroes to the Right. It validates every paranoia: 'The mob is coming to your house.' Gun sales to suburban women skyrocket.",
           "key_manifestations": [
             "The McCloskeys viral photo",
@@ -7543,7 +7543,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Smash and Grab (Δv -1.0%). Viral videos of gangs looting Nordstrom. It looks like civilization collapse. The 'Recall' movements in SF (Chesa Boudin) and LA (Gascon) gain steam in the suburbs. The 'Soft on Crime' DA becomes the new enemy.",
           "key_manifestations": [
             "Viral 'Smash and Grab' videos",
@@ -7553,7 +7553,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "The Crime Wave Narrative (Δv -0.5%). The GOP runs the midterms on Crime. Lee Zeldin nearly wins NY Gov on the issue. Even though the 'Red Wave' fails, the 'Blue' suburbs in NY/CA shift Right on safety. *The Watcher* (Netflix) capitalizes on the fear of the home intruder.",
           "key_manifestations": [
             "Lee Zeldin campaign (Crime focus)",
@@ -7563,7 +7563,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "The Migrant Crisis (Δv -0.5%). Migrants are bused to suburbs/cities. The 'Border Crisis' arrives in NYC/Chicago. The 'Squatter' panic (people taking over homes) goes viral on TikTok. It taps into the primal fear of property loss.",
           "key_manifestations": [
             "NYC Migrant crisis news",
@@ -7573,7 +7573,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Laken Riley (Δv +1.0%). The murder of a nursing student by an illegal immigrant. It becomes the 'Willie Horton' of the cycle. It merges Cluster 1 (Nationalism) with Cluster 24 (Security). 'Biden's Border Bloodbath.' The suburban mom is targeted with this specific fear.",
           "key_manifestations": [
             "Laken Riley murder coverage",
@@ -7583,7 +7583,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "Deportation Force (Δv +0.5%). The new administration promises mass deportation as a 'Public Safety' measure. The suburbs support it as 'Cleaning up.'Surveillance is total—AI cameras reading license plates in every HOA. The suburb is a fortress.",
           "key_manifestations": [
             "Operation Aurora (Deportation raids)",
@@ -7599,7 +7599,7 @@ export const rightWingCultureData = {
       "description": "The most fringe, bizarre, and 'Online' cluster. It rejects Christianity as too Jewish/Weak and Liberalism as too soulless. It looks to 'Esoteric Hitlerism,' Savitri Devi, Julius Evola, and the myth of 'Hyperborea' (an ancient Aryan homeland). It manifests in 'Schizo-posting,' 'Retvrn' memes, and the worship of 'Vril' energy. It is the spiritual flank of the Vitalist movement, mixing paganism, conspiracy, and aesthetics.",
       "trajectory": {
         "1995": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Black Metal Underground (Δv +0.1%). The burning of churches in Norway (Varg Vikernes/Burzum). It is a violent rejection of Christianity in favor of Odinism/Paganism. It is a tiny music subculture, but it establishes the aesthetic of 'Arctic/Aryan' darkness.",
           "key_manifestations": [
             "Burzum albums (Filosofem)",
@@ -7609,7 +7609,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Stasis (Δv 0%). The internet is too young. The ideas are locked in 'Zines' and mail-order catalogues (Loompanics). The 'Heaven's Gate' cult shows the danger of esoteric belief, keeping it marginalized.",
           "key_manifestations": [
             "The Craft",
@@ -7619,7 +7619,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 0.6,
+          "salience_share": 0.6,
           "description": "Hale-Bopp (Δv +0.1%). Heaven's Gate mass suicide. It discredits 'Cults.' But in the underground, the 'Gnostic' desire to escape the 'Prison Planet' resonates. The Matrix will soon capitalize on this.",
           "key_manifestations": [
             "Heaven's Gate suicide",
@@ -7629,7 +7629,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Blade (Δv -0.1%). The vampire empire. It posits a secret history. The Right ignores it. The 'Christian Right' (Cluster 17) is too dominant to allow Paganism to breathe.",
           "key_manifestations": [
             "Blade",
@@ -7639,7 +7639,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 0.8,
+          "salience_share": 0.8,
           "description": "The Matrix (Δv +0.3%). A Gnostic masterpiece. The world is a lie. 'The One' breaks the code. This gives the Esoteric Right its primary metaphor: 'Escaping the Simulation.'",
           "key_manifestations": [
             "The Matrix",
@@ -7649,7 +7649,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Nazis on the Moon (Δv -0.3%). The idea exists only in pulp comics. *Hellboy* (comics) explores the Nazi occult connection. It is fiction, not belief.",
           "key_manifestations": [
             "Hellboy comics",
@@ -7659,7 +7659,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 0.6,
+          "salience_share": 0.6,
           "description": "Harry Potter (Δv +0.1%). Mainstreams 'Magic' for a generation. While liberal in values, it re-enchants the world. The Right creates 'Christian' alternatives, but the 'Pagan' seed is planted.",
           "key_manifestations": [
             "Harry Potter and the Sorcerer's Stone",
@@ -7669,7 +7669,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 0.7,
+          "salience_share": 0.7,
           "description": "Mothman (Δv +0.1%). *The Mothman Prophecies*. High strangeness. The idea that entities manipulate reality. The 'Ultraterrestrial' theory gains traction on Art Bell.",
           "key_manifestations": [
             "The Mothman Prophecies",
@@ -7679,7 +7679,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 0.8,
+          "salience_share": 0.8,
           "description": "Da Vinci Code (Δv +0.1%). The idea of a 'Secret Bloodline.' It introduces millions to the idea that the Church lied and 'True History' is hidden. Essential priming for later esoteric theories.",
           "key_manifestations": [
             "The Da Vinci Code (Book)",
@@ -7689,7 +7689,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Hellboy (Δv +0.2%). The film features 'Project Ragna Rok'—Nazis opening portals. It visualizes the 'Thule Society' aesthetic. While the bad guys, they look 'Cool.'",
           "key_manifestations": [
             "Hellboy (Film)",
@@ -7699,7 +7699,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Stasis (Δv 0%). The focus is on Iraq. The 'Occult' is dormant. *Constantine* shows the religious war, but it is Christian-centric.",
           "key_manifestations": [
             "Constantine",
@@ -7709,7 +7709,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "The Secret (Δv +0.2%). 'The Law of Attraction.' Magical thinking goes mainstream. 'You create your reality.' This is 'Chaos Magick' for suburban moms. It validates the idea that Will > Matter.",
           "key_manifestations": [
             "The Secret (Book/Video)",
@@ -7719,7 +7719,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Zeitgeist (Δv +0.3%). The film links Christianity to Sun Worship (Horus/Jesus). It creates a generation of 'Atheist Mystics' who look for the *real* origin of religion. Astro-theology.",
           "key_manifestations": [
             "Zeitgeist: The Movie",
@@ -7729,7 +7729,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Iron Sky (Δv 0%). The viral trailer for 'Nazis on the Moon.' It treats the Hyperborean myth as comedy, but spreads the imagery. The 'Hollow Earth' theory circulates on forums.",
           "key_manifestations": [
             "Iron Sky viral trailer",
@@ -7739,7 +7739,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Ancient Aliens (Δv +0.5%). The History Channel show premieres. 'It wasn't humans, it was aliens.' It strips agency from ancient non-white civilizations, but also re-enchants the past. It becomes the background noise of the Right-wing imagination.",
           "key_manifestations": [
             "Ancient Aliens premieres",
@@ -7749,7 +7749,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Stasis (Δv 0%). The Tea Party is boringly constitutional. The Esoteric wing is on 4chan's /x/ (Paranormal) board, not /pol/ (Politics). They haven't merged yet.",
           "key_manifestations": [
             "Inception (Dream layers)",
@@ -7759,7 +7759,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Thor (Δv +0.5%). Marvel brings Norse Mythology to the masses. While Disney-fied, it reintroduces Odin, Asgard, and the Bifrost. The 'Heathen' community grows. White Nationalists attempt to boycott Heimdall (Black actor), signaling the racial struggle over myth.",
           "key_manifestations": [
             "Thor (Film)",
@@ -7769,7 +7769,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Prometheus (Δv +0.5%). The 'Engineers.' The idea that humans were seeded by a superior race who now hates us. It resonates with the Gnostic feeling of abandonment. The 2012 Maya prediction creates a fever pitch of 'New Age' interest.",
           "key_manifestations": [
             "Prometheus",
@@ -7779,7 +7779,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Kali Yuga (Δv 0%). The term 'Kali Yuga' (Age of Strife) begins to appear on /pol/. Borrowed from Evola. 'Surf the Kali Yuga.' It reframes the modern degeneracy not as a problem to be solved, but a cycle to be endured.",
           "key_manifestations": [
             "Pacific Rim (The monsters from below)",
@@ -7789,7 +7789,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "True Detective (Δv +0.5%). The 'Yellow King.' Carcosa. It mainstreams the 'Weird Fiction' of Chambers and Lovecraft. It hints at an elite pedophile cult with mystical beliefs (anticipating QAnon). 'Time is a flat circle' (Nietzschean recurrence).",
           "key_manifestations": [
             "True Detective Season 1",
@@ -7799,7 +7799,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Meme Magic (Δv +0.5%). The concept that 'Memes' can alter reality. 'Chaos Magick.' Pepe the Frog is treated as a 'Tulpa' or a hypersigil. The Chans believe they are willing Trump into power using sorcery. 'Kek' (Egyptian frog god) is discovered.",
           "key_manifestations": [
             "The Cult of Kek",
@@ -7809,7 +7809,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Esoteric Kekistan (Δv +1.0%). The Election is the ritual. The 'Shadilay' song (Italian disco) is found to have a frog on the cover. Coincidence? No, Synchronicity. The Esoteric Right believes they have tapped into the underlying code of the universe.",
           "key_manifestations": [
             "Shadilay discovery",
@@ -7819,7 +7819,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Fashwave/Hyperborea (Δv -0.5%). YouTube videos with synthwave music and Nazi footage ('Hyperborea'). It aestheticizes the regime. 'Spirit Cooking' (Marina Abramovic) creates a panic about elite Satanism. The 'Esoteric' element of QAnon (Adrenochrome) takes root.",
           "key_manifestations": [
             "Spirit Cooking scandal",
@@ -7829,7 +7829,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Hereditary (Δv -0.5%). The film depicts a cult manipulating a bloodline to summon a demon king (Paimon). It resonates with the belief in multi-generational elite satanism. The 'Vril' society rumors circulate in the Q-sphere.",
           "key_manifestations": [
             "Hereditary",
@@ -7839,7 +7839,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Midsommar (Δv +0.5%). The bright, Aryan horror. It depicts a white ethnocommune practicing sacrifice. The Right reads it against the grain: 'At least they have community and tradition.' It aestheticizes the 'Volk'.",
           "key_manifestations": [
             "Midsommar",
@@ -7849,7 +7849,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Schizo-Posting (Δv +0.5%). The lockdown breaks people's brains. 'Schizowave' becomes a genre. The 'Ted Kaczynski was right' meme. The 'Agartha' (Hollow Earth) theories go viral on TikTok ('North Pole entrance'). The line between irony and belief vanishes.",
           "key_manifestations": [
             "Agartha/Hollow Earth TikToks",
@@ -7859,7 +7859,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Tartaria (Δv +0.5%). The conspiracy that a 'Grand Tartarian Empire' built all the beautiful buildings (Capitols, World's Fairs) and was wiped out by a 'Mud Flood' in the 19th century. We are living in the ruins of a greater civilization. It explains the aesthetic decline (Cluster 22).",
           "key_manifestations": [
             "Tartaria Mud Flood conspiracy",
@@ -7869,7 +7869,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Northman (Δv +0.5%). Eggers' film. A pure, unironic depiction of Pagan violence and fate. No modern morality. The Right loves it. 'Retvrn.' The 'Hyperborean' aesthetic moves from 4chan to the arthouse.",
           "key_manifestations": [
             "The Northman",
@@ -7879,7 +7879,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Ancient Apocalypse (Δv +0.5%). Graham Hancock's Netflix show. 'Advanced Ice Age Civilization.' It is attacked by archaeologists as 'racist' (denying indigenous agency), which makes the Right defend it. The 'Atlantis' myth is rehabilitated as a 'Lost White Civilization.'",
           "key_manifestations": [
             "Ancient Apocalypse (Netflix)",
@@ -7889,7 +7889,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Dune Messiah (Δv +0.5%). *Dune: Part Two*. Paul Atreides launches the Holy War. The visuals of the fundamentalist army worshiping the Lisan al-Gaib are potent. The 'Vitalist' Right adopts 'Lisan al-Gaib' as a meme for Trump. The 'Golden Path' (Leto II) is discussed as the goal.",
           "key_manifestations": [
             "Dune: Part Two",
@@ -7899,7 +7899,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Spiritual War (Δv +0.5%). The 'Post-Liberal' intellectuals (Cluster 7) begin to sound like the Esoteric Right. Talk of 'Demons' in DC (Tucker Carlson). The boundary between 'Christian Nationalism' and 'Esoteric Mysticism' blurs. 'Spiritual Warfare' is taken literally.",
           "key_manifestations": [
             "Tucker Carlson's 'Demons' interview tour",
@@ -7915,7 +7915,7 @@ export const rightWingCultureData = {
       "description": "The gradual but definitive shifting of private sector labor unions (Construction, Logistics, Police, Mining) from the Democratic coalition to the Republican coalition. Driven by cultural alienation (Guns, God), economic protectionism (Anti-NAFTA), and the perceived hostility of the modern Left toward 'Dirty Jobs' (Green Energy mandates). It represents the end of the 'Business vs. Labor' axis and the rise of the 'Producer vs. Parasite' axis, culminating in the Teamsters' overture to the MAGA movement.",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Sweeney Shift (Δv 0%). John Sweeney is elected president of the AFL-CIO. He pushes Labor to the Left, focusing on organizing service workers and aligning with social justice movements. The culturally conservative 'Hard Hat' unions (Building Trades) remain loyal for the paycheck, but the cultural gap begins to widen as the Union leadership embraces the academic Left.",
           "key_manifestations": [
             "John Sweeney election at AFL-CIO",
@@ -7925,7 +7925,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "The Minimum Wage Fight (Δv +0.2%). The Unions successfully push Clinton to raise the minimum wage. The alliance holds. However, the 'Buchanan' primary campaign tempts some industrial workers with protectionism, hinting at the future realignment. The Unions spend heavily to re-elect Clinton, fearing the Dole/Gingrich 'Union Busters.'",
           "key_manifestations": [
             "Minimum Wage Increase passed",
@@ -7935,7 +7935,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The UPS Strike (Δv +0.3%). The Teamsters win a massive victory against UPS. 'Part-Time America Won't Work.' It is the last great victory of the old labor model. It showcases the power of logistics. The GOP is hostile, viewing it as a disruption to commerce, keeping the Unions firmly in the Dem camp.",
           "key_manifestations": [
             "Teamsters UPS Strike victory",
@@ -7945,7 +7945,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Impeachment Apathy (Δv 0%). The Union rank-and-file does not care about Monica Lewinsky. They resent the moralizing of the Religious Right (GOP). This cultural disconnect protects the Democrats: The Worker views the Republican as a 'Church Lady' or a 'Boss,' neither of which they like.",
           "key_manifestations": [
             "AFL-CIO ad campaigns for Dems in midterms",
@@ -7955,7 +7955,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Battle of Seattle (Δv +0.5%). The Teamsters march against the WTO alongside Environmentalists (Turtles). It is a 'Red-Green' alliance, but fragile. The Union guys want to save jobs; the hippies want to save the planet. Pat Buchanan courts the Teamsters, telling them their true enemy is the Globalist Elite, not the GOP.",
           "key_manifestations": [
             "Battle of Seattle (WTO Protests)",
@@ -7965,7 +7965,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Guns and Coal (Δv +0.5%). West Virginia, a union stronghold, votes for Bush. This is the first crack in the Blue Wall. The issue is Guns and Coal (Environmentalism). The United Mine Workers (UMWA) sees the Democrats moving toward environmentalism and begins to drift. The 'NRA Union Member' becomes a swing voter.",
           "key_manifestations": [
             "West Virginia flips to Bush",
@@ -7975,7 +7975,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Heroes of 9/11 (Δv +0.5%). The Police and Firefighters become national icons. They are culturally aligned with Bush's patriotism. The 'Hard Hat' riot (1970) spirit returns—the worker supports the War, while the Campus Left opposes it. This creates a cultural wedge between the Union Hall and the Faculty Lounge.",
           "key_manifestations": [
             "Ground Zero cleanup workers (The visual of the hard hat)",
@@ -7985,7 +7985,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 3.2,
+          "salience_share": 3.2,
           "description": "The ILWU Lockout (Δv +0.2%). Bush invokes Taft-Hartley to open the West Coast ports during a lockout. It is an anti-union move. This reminds the Unions why they vote Democrat. The economic antagonism of the GOP prevents the cultural realignment from happening faster.",
           "key_manifestations": [
             "West Coast Port Lockout",
@@ -7995,7 +7995,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The Green Wedge (Δv +0.3%). The Environmental Left begins to push harder against fossil fuels. The Building Trades (Pipefitters, Boilermakers) start to feel uncomfortable in the Democratic coalition. They want to build pipelines; the Dems want to stop them. The 'Jobs vs. Environment' dichotomy sharpens.",
           "key_manifestations": [
             "Bruce Springsteen's 'The Rising' (Blue collar grief)",
@@ -8005,7 +8005,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Kerry's Elitism (Δv +0.5%). John Kerry (Windsurfing) vs. Bush (Brush clearing). The 'Beer Track' vs 'Wine Track' split becomes visible. The Teamsters endorse Kerry, but the rank-and-file vote for Bush in higher numbers (Values Voters). The 'Swift Boat' attacks resonate with veterans in the union halls.",
           "key_manifestations": [
             "John Kerry windsurfing photos",
@@ -8015,7 +8015,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 4.2,
+          "salience_share": 4.2,
           "description": "The Split (Δv +0.2%). The AFL-CIO splits. The 'Change to Win' coalition (SEIU, Teamsters) breaks away. It represents a divide between Service Unions (growing, diverse, left-wing) and Industrial Unions (shrinking, white, culturally conservative). The Service Unions begin to dominate the Democratic party machinery.",
           "key_manifestations": [
             "AFL-CIO / Change to Win split",
@@ -8025,7 +8025,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Immigration Tension (Δv +0.3%). The Bush attempts at Immigration Reform (Guest Workers) are opposed by the Unions. They fear wage suppression. This aligns them with the populist Right against the Corporate Right (Chamber of Commerce). The 'Lou Dobbs' democrat emerges.",
           "key_manifestations": [
             "Immigration Reform protests",
@@ -8035,7 +8035,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Card Check Hope (Δv -0.5%). The Democrats promise the 'Employee Free Choice Act' (Card Check). The Unions go all-in for the Dems to get this passed. They believe a Democratic president will save the labor movement. The realignment pauses as economic hope takes over.",
           "key_manifestations": [
             "EFCA campaigning",
@@ -8045,7 +8045,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Bailout Betrayal (Δv +1.0%). The financial crisis hits. The Banks get bailed out. The homeowners do not. The white working class feels betrayed by the establishment. Obama wins the Rust Belt by promising to renegotiate NAFTA. They trust him, but the seed of 'The System is Rigged' is planted deep.",
           "key_manifestations": [
             "Auto Industry crisis begins",
@@ -8055,7 +8055,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Saving Detroit (Δv -0.5%). Obama saves GM and Chrysler. This secures the UAW vote for a generation (seemingly). The GOP opposition ('Let Detroit Go Bankrupt' - Romney) makes the Republicans look like enemies of the Rust Belt. The realignment seems dead.",
           "key_manifestations": [
             "The Auto Bailout",
@@ -8065,7 +8065,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The Walker Shock (Δv +1.0%). Scott Walker wins in Wisconsin and attacks Public Sector Unions (Act 10). The GOP declares war on Labor. This polarizes the landscape. However, it creates a wedge: Private Sector workers (who pay taxes) are pitted against Public Sector workers (who get pensions paid by taxes). The 'Makers vs Takers' rhetoric appeals to some private tradesmen.",
           "key_manifestations": [
             "Scott Walker election",
@@ -8075,7 +8075,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Keystone XL (Δv -0.5%). The Unions want the pipeline (Jobs). The Obama administration delays it (Environment). This is a major crack. The Building Trades realize the Environmental Left is an existential threat to their livelihood. They begin to look at the GOP (Drill Baby Drill) with fresh eyes.",
           "key_manifestations": [
             "Keystone XL protests/delays",
@@ -8085,7 +8085,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Romney's Failure (Δv -0.5%). Mitt Romney is the archetype of the boss who fires you. Bain Capital. The Unions mobilize against him effectively. The 'White Working Class' stays home or votes Obama. The GOP is still the party of the Country Club, not the Union Hall.",
           "key_manifestations": [
             "Romney '47%' video",
@@ -8095,7 +8095,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Trumka's Warning (Δv +1.0%). Richard Trumka (AFL-CIO) warns that the ACA (Obamacare) is hurting multi-employer health plans. The 'Cadillac Tax' hits union plans. The Unions feel betrayed by the legislation they helped pass. The dissatisfaction with the Democrats grows.",
           "key_manifestations": [
             "AFL-CIO criticism of Obamacare implementation",
@@ -8105,7 +8105,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The War on Coal (Δv +0.5%). The EPA regulations decimate the coal industry in KY/WV. The UMWA feels targeted for extinction. McConnell capitalizes on this, turning the coal miners fully Republican. It is the canary in the coal mine for the wider industrial realignment.",
           "key_manifestations": [
             "Mitch McConnell's 'War on Coal' campaign",
@@ -8115,7 +8115,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Trump Announcement (Δv +2.0%). Trump announces. He attacks Ford for moving to Mexico. He attacks Carrier. He attacks the TPP. He sounds like a Union Boss from the 1970s. The rank-and-file love it. The Union Leadership (Hillary supporters) are terrified. The schism opens.",
           "key_manifestations": [
             "Trump's Carrier Air Conditioner speeches",
@@ -8125,7 +8125,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Rust Belt Revolt (Δv +4.0%). Trump wins PA, MI, WI. The 'Blue Wall' crumbles. Union households vote Trump in record numbers (for a GOPer). He kills the TPP immediately. The GOP is now the party of the 'forgotten man.' The 'Hard Hat' is now a MAGA symbol.",
           "key_manifestations": [
             "Trump wins the Rust Belt",
@@ -8135,7 +8135,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "Building Trades Summit (Δv +0.5%). Trump invites the Building Trades leaders to the White House on Day 4. He greenlights the pipelines (DAPL/Keystone). The Trades love him. The Service Unions (SEIU) hate him. The Labor movement is effectively split in two.",
           "key_manifestations": [
             "Trump's Building Trades meeting",
@@ -8145,7 +8145,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "Janus vs. AFSCME (Δv -1.0%). The Supreme Court rules against mandatory public sector union dues. The GOP celebrates. This keeps the 'Institutional' Labor movement hostile to the GOP. However, the steel tariffs (Section 232) keep the steelworkers happy. A mixed bag.",
           "key_manifestations": [
             "Janus v. AFSCME decision",
@@ -8155,7 +8155,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Green New Deal (Δv +0.5%). The Democrats propose the GND. It promises to eliminate fossil fuels. The Pipefitters, IBEW, and Laborers view this as a death sentence. They issue blistering statements against it. The cultural alienation deepens.",
           "key_manifestations": [
             "AFL-CIO letter criticizing Green New Deal",
@@ -8165,7 +8165,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Police Unions Flip (Δv +2.0%). The George Floyd riots and 'Defund the Police'. The Police Unions endorse Trump en masse. The Firefighters are split. The 'Law and Order' vote solidifies. Biden holds the UAW, but his 'Transition from Oil' comment in the debate hurts him with the trades.",
           "key_manifestations": [
             "Police Union Endorsements of Trump",
@@ -8175,7 +8175,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Keystone Cancelled (Δv -1.0%). Biden cancels Keystone XL on Day 1. The LIUNA (Laborers) issue a furious statement: 'Thousands of jobs lost.' It confirms their fear. However, the Infrastructure Bill promises work, keeping the peace temporarily.",
           "key_manifestations": [
             "Cancellation of Keystone XL",
@@ -8185,7 +8185,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Rail Strike Betrayal (Δv +2.0%). Biden signs legislation blocking the Rail Strike to save the economy. He sides with Capital over Labor. The Populist Right (Rubio, Hawley) votes *with* the workers. The narrative flips: The GOP is the party of the striker? The 'New Right' labor strategy emerges.",
           "key_manifestations": [
             "Rail Strike legislation vote",
@@ -8195,7 +8195,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "The UAW Picket Line (Δv +1.0%). Trump visits a non-union shop during the UAW strike, but attacks the EV mandate as a job killer. Biden joins the picket line. The battle is for the *soul* of the auto worker. The GOP argues: 'The Dems want to ban the car you build.'",
           "key_manifestations": [
             "Trump's Detroit speech vs Biden's picket line visit",
@@ -8205,7 +8205,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "Sean O'Brien at the RNC (Δv +2.0%). Historic moment. The Teamsters President speaks at the Republican National Convention. He attacks 'Big Business' and praises Hawley. The crowd cheers. The Teamsters refuse to endorse Harris. The 'Blue Wall' crumbles because the Union Hall is now effectively neutral or MAGA.",
           "key_manifestations": [
             "Sean O'Brien RNC Speech",
@@ -8215,7 +8215,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 19.0,
+          "salience_share": 19.0,
           "description": "The Producerist Coalition (Δv +1.0%). The Trump/Vance administration pursues a 'High Wage, High Tariff' policy. They appoint a Protectionist USTR but attack the 'Woke' Public Sector unions (Teachers/Bureaucrats). The split is finalized: Private Sector Labor (Good/Patriotic) vs. Public Sector Labor (Bad/Parasitic). The GOP becomes the party of the Hard Hat, the Dems the party of the PhD.",
           "key_manifestations": [
             "Repeal of EV Mandates (Appeasing auto workers)",
@@ -8231,7 +8231,7 @@ export const rightWingCultureData = {
       "description": "The cluster represents the realization that the era of democratic capitalism is ending, replaced by a system where a few 'Techno-Lords' own the platforms (digital land) and everyone else is a 'Serf' (renter/subscriber). Rather than fighting this with 'Anti-Trust' (the Left position), this Right-wing cluster seeks to become the Lords or at least the Yeomanry. It embraces 'Patronage,' 'Crypto-Sovereignty,' and 'Land' as the only hedges against the 'Subscription Life.' It is the 'You Will Own Nothing and Be Happy' resistance through accumulation.",
       "trajectory": {
         "1995": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "The Digital Homestead (Δv +0.1%). The early web is decentralized. GeoCities allows everyone a 'Home Page.' The ethos is 'Digital Yeomanry.' You own your server, you own your code. It is the pre-feudal era of the free range.",
           "key_manifestations": [
             "GeoCities launch",
@@ -8241,7 +8241,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 0.6,
+          "salience_share": 0.6,
           "description": "The Declaration (Δv +0.1%). Barlow's 'Declaration of the Independence of Cyberspace.' It posits a world without governments. This libertarian optimism masks the coming consolidation. The 'Cyber-Lord' has not yet risen.",
           "key_manifestations": [
             "Declaration of the Independence of Cyberspace",
@@ -8251,7 +8251,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 0.8,
+          "salience_share": 0.8,
           "description": "The Microsoft Empire (Δv +0.2%). Microsoft is the first 'Techno-King.' The DOJ lawsuit is the King (State) trying to curb the Duke (Gates). The Right defends Gates as a creator; the seed of 'Techno-Monarchism' is planted.",
           "key_manifestations": [
             "US v. Microsoft",
@@ -8261,7 +8261,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Portal Wars (Δv +0.2%). AOL vs. Yahoo. The attempt to create 'Walled Gardens.' The user is trapped in the AOL ecosystem. The first taste of serfdom (unable to leave the platform).",
           "key_manifestations": [
             "AOL dominance",
@@ -8271,7 +8271,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "Napster (Δv +0.2%). The Peasant Revolt. Napster allows the serfs to steal from the Lords (Record Labels). It proves that technology *can* break the feudal grip, temporarily. The crackdown shows the Lords have the law.",
           "key_manifestations": [
             "Napster launch",
@@ -8281,7 +8281,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Crash (Δv -0.2%). The Dot-com bubble bursts. The 'New Economy' of infinite freedom collapses. The consolidation begins. Only the strong platforms survive. The 'Yeoman' start-ups die.",
           "key_manifestations": [
             "Dot-com crash",
@@ -8291,7 +8291,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The Patriot Act (Δv +0.5%). The State asserts total surveillance rights. The 'Digital Commons' is now a 'Panopticon.' The user realizes they are being watched. Privacy becomes a luxury good for the elite.",
           "key_manifestations": [
             "Patriot Act surveillance",
@@ -8301,7 +8301,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "Minority Report (Δv +0.3%). The film predicts targeted advertising and pre-crime. It visualizes the 'Techno-Feudal' city where your eyes are scanned everywhere. It creates a dystopian aesthetic that the Right begins to analyze as 'inevitable.'",
           "key_manifestations": [
             "Minority Report",
@@ -8311,7 +8311,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Second Life (Δv +0.2%). The launch of virtual real estate. People buying 'Land' that doesn't exist. It introduces the concept that 'Digital Assets' have value. The first 'Virtual Lords' (Anshe Chung) appear.",
           "key_manifestations": [
             "Second Life launch",
@@ -8321,7 +8321,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Gmail (Δv +0.5%). Google offers 1GB of storage. The trade: 'Give us your data, we give you space.' The Feudal Contract is signed. The user becomes the product. The Right largely ignores the privacy implication, focused on the War on Terror.",
           "key_manifestations": [
             "Gmail launch (Beta)",
@@ -8331,7 +8331,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "YouTube (Δv 0%). Broadcast Yourself. It feels like democratization, but it centralizes video hosting on one server. The 'Platform' model solidifies. You create the content; they own the pipes.",
           "key_manifestations": [
             "YouTube launch",
@@ -8341,7 +8341,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Twitter (Δv +0.5%). The public square is privatized. Jack Dorsey creates the Town Square. Free Speech is now subject to Terms of Service. The Feudal nature of speech ('The King can banish you') is established structurally.",
           "key_manifestations": [
             "Twitter launch",
@@ -8351,7 +8351,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The iPhone (Δv +0.5%). The Leash. The always-on connection. The App Store is a Walled Garden. Apple takes 30% (The Tithe). The 'Rentier' model of tech is perfected. The users are happy serfs.",
           "key_manifestations": [
             "iPhone launch",
@@ -8361,7 +8361,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Bitcoin (Δv +0.5%). The reaction. Satoshi proposes a currency with no King. It is the 'Peasant's Gold.' It offers an exit from the Central Bank (The Feudal Lord of Money). It is the first weapon of the resistance.",
           "key_manifestations": [
             "Bitcoin Whitepaper",
@@ -8371,7 +8371,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Uber (Δv +0.5%). The Gig Economy. You own the car, but the App owns the customer. You are a serf with a steering wheel. The 'Algorithmic Boss' arrives. The Right praises the 'Entrepreneurship' while ignoring the dependency.",
           "key_manifestations": [
             "Uber founding",
@@ -8381,7 +8381,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Social Network (Δv +0.5%). The movie depicts Zuckerberg as a ruthless sovereign. 'You don't get to 500 million friends without making a few enemies.' It glamorizes the Tech Lord. The Right begins to admire the Founder as the new Aristocrat.",
           "key_manifestations": [
             "The Social Network",
@@ -8391,7 +8391,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Siri (Δv +0.5%). The AI Servant. It reinforces the hierarchy. We command; it obeys. But the data goes to the Cloud. The 'Cloud' is the castle. We are just renting access.",
           "key_manifestations": [
             "Siri launch",
@@ -8401,7 +8401,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Dark Enlightenment (Δv +0.5%). Nick Land and Moldbug articulate 'Neo-Cameralism.' The state should be a corporation. The King is the CEO. They argue *for* Techno-Feudalism as superior to Democracy. 'Formalism.' The cluster gains intellectual weight.",
           "key_manifestations": [
             "The Dark Enlightenment (Nick Land)",
@@ -8411,7 +8411,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Snowden (Δv +0.5%). The revelation that the Tech Lords (Google/Facebook) are in bed with the State (NSA). PRISM. The 'Cathedral' is real. The illusion of the 'Free Internet' is shattered. We are subjects of a surveillance empire.",
           "key_manifestations": [
             "Snowden Leaks",
@@ -8421,7 +8421,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "GamerGate (Δv +0.5%). The realization that the 'Mods' (Jannies) control reality. The ban-hammer is the sword. The users revolt against the platform managers. It is a peasant uprising in the digital village.",
           "key_manifestations": [
             "GamerGate",
@@ -8431,7 +8431,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Zero to One (Δv +0.5%). Thiel's book. 'Monopoly is the goal.' It validates the desire to be a King. 'Competition is for losers.' The Right embraces the 'Monarchist' view of business.",
           "key_manifestations": [
             "Zero to One (Book)",
@@ -8441,7 +8441,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "De-Platforming (Δv +1.0%). Milo is banned from Twitter. The 'Digital Death Penalty.' If you are banned, you don't exist. It proves the platforms are sovereign territory. The Right realizes they are squatters on Liberal land. 'Build your own stack' becomes the cry.",
           "key_manifestations": [
             "Milo Yiannopoulos banned from Twitter",
@@ -8451,7 +8451,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Subscription Everything (Δv +0.5%). Adobe, Microsoft, BMW heated seats. 'You will own nothing.' The Rentier economy accelerates. The 'Right to Repair' movement gains traction as a peasant revolt against the manufacturers.",
           "key_manifestations": [
             "Rise of SaaS models",
@@ -8461,7 +8461,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Alex Jones Ban (Δv +0.5%). Jones is banned from *every* platform in 24 hours. Collusion among the Lords. It proves the 'Oligarchy' acts as a single body. The 'Digital Bill of Rights' is discussed but fails. The power is absolute.",
           "key_manifestations": [
             "Alex Jones de-platforming",
@@ -8471,7 +8471,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Epstein (Δv +0.5%). The Blackmail Ring. It suggests the Elites are held together by 'Kompromat' (Feudal loyalty/leverage). The 'Elite' are not just rich; they are a separate caste with separate laws.",
           "key_manifestations": [
             "Jeffrey Epstein arrest/death",
@@ -8481,7 +8481,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Great Reset (Δv +2.0%). The WEF 'You will own nothing and be happy' video goes viral. It becomes the definition of the enemy plan. 'Techno-Feudalism' is named. The lockdowns destroy small business (Yeoman) and enrich Amazon (Lords). The transfer of wealth is feudal in scale.",
           "key_manifestations": [
             "WEF 'You will own nothing' viral video",
@@ -8491,7 +8491,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Trump Ban (Δv +1.0%). The Sitting President is banned. The Tech Lords are more powerful than the State. This confirms the NRx thesis: The CEO is the true Sovereign. The Right gives up on 'Fairness' and moves to 'Patronage' (Elon).",
           "key_manifestations": [
             "Trump banned from Twitter/FB",
@@ -8501,7 +8501,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Musk Buys Twitter (Δv +1.0%). The 'Good King' conquers the territory. Musk enters the HQ. He fires the 'Priests' (Trust & Safety). The Right cheers the arrival of a Benevolent Monarch. It validates the strategy: 'Don't build your own; capture the castle.'",
           "key_manifestations": [
             "Elon Musk acquires Twitter",
@@ -8511,7 +8511,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "AI Feudalism (Δv -0.5%). The cost of AI compute is so high only Microsoft/Google can afford it. The 'Yeoman' coder is threatened. The fear is that AI will be the ultimate enforcer of the Feudal order. 'Compute' becomes the new Land.",
           "key_manifestations": [
             "Sam Altman / Microsoft partnership",
@@ -8521,7 +8521,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "The Tech-Right Merger (Δv +1.0%). JD Vance (Thiel protege) on the ticket. The 'Techno-Feudalists' (VCs) formally align with the 'Peasants' (MAGA). The deal: We give you Culture (Anti-Woke), you give us Deregulation (Crypto/AI). The 'Network State' moves to the White House.",
           "key_manifestations": [
             "The 'All-In' Pod hosting Trump",
@@ -8531,7 +8531,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Corporate State (Δv +0.5%). The fusion is complete. Government functions are outsourced to 'Efficient' Tech Lords (DOGE). The citizen becomes a 'User.' The 'Terms of Service' replace the Constitution in practice. The Right accepts this because *their* Lords are in charge.",
           "key_manifestations": [
             "Privatization of government data services",
@@ -8547,7 +8547,7 @@ export const rightWingCultureData = {
       "description": "This cluster tracks the Right's evolution from a 'War on Drugs' stance to a deep suspicion of the pharmaceutical industry and the psychiatric establishment. It argues that modern society is over-medicated, particularly young men, and that 'Big Pharma' is creating problems (mass shootings, gender dysphoria, complacency) to sell cures. It merges 1960s counter-culture skepticism with 2020s populist rage, focusing on SSRIs, Ritalin, and the Opioid crisis as evidence of a 'Sick Society' that cannot be fixed by a pill.",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The Ritalin Debate (Δv +0.2%). The explosion of ADHD diagnoses in boys triggers a conservative backlash. Is it a disease, or just 'boys being boys'? The Right defends traditional masculinity against medicalization. The 'War on Drugs' is still dominant, but a carve-out for 'School Doping' begins to form.",
           "key_manifestations": [
             "Peter Breggin's 'Talking Back to Ritalin'",
@@ -8557,7 +8557,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "Prozac Nation (Δv +0.3%). The cultural ubiquity of Prozac. The Right views it as a 'Soma' for the soul, replacing religious/moral discipline with chemical bliss. It is a spiritual critique. However, the political focus is still on illegal narcotics.",
           "key_manifestations": [
             "Prozac Nation (Movie development/Book influence)",
@@ -8567,7 +8567,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Direct to Consumer Ads (Δv +0.2%). The FDA relaxes rules on TV drug ads. 'Ask your doctor.' The commercialization of mental health explodes. The Right is split: Pro-Business vs. Anti-Degeneracy. The 'Side Effects' lists become a cultural joke but plant seeds of doubt.",
           "key_manifestations": [
             "Claritin/Viagra TV ads flooding the zone",
@@ -8577,7 +8577,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 2.2,
+          "salience_share": 2.2,
           "description": "The Viagra Moment (Δv +0.2%). The medicalization of sexuality. Bob Dole (GOP hero) doing Viagra commercials. It legitimizes Pharma for the older conservative male, complicating the critique. The skepticism remains focused on *behavioral* meds for kids.",
           "key_manifestations": [
             "Bob Dole Viagra Commercials",
@@ -8587,7 +8587,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Columbine and Luvox (Δv +0.8%). The reveal that Eric Harris was on Luvox (an SSRI). This ignites the 'SSRIs cause school shootings' theory on the Right. It moves the conversation from 'Video Games' to 'Brain Chemistry.' It is the foundational event for the modern cluster.",
           "key_manifestations": [
             "Columbine / Luvox connection reports",
@@ -8597,7 +8597,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Requiem for a Dream (Δv -0.5%). The film horrifies audiences with the reality of addiction (both heroin and diet pills). It validates the 'Drugs are Bad' consensus, blurring the line between legal and illegal. The Bush era focuses on 'Compassionate Conservatism' (Faith-based rehab), not Pharma critique.",
           "key_manifestations": [
             "Requiem for a Dream",
@@ -8607,7 +8607,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "A Beautiful Mind (Δv -0.5%). The film glorifies the struggle against schizophrenia but accepts medication as the necessary tether to reality. The cultural mood post-9/11 is 'Trust the Experts/Doctors.' The skepticism retreats to the libertarian fringe.",
           "key_manifestations": [
             "A Beautiful Mind",
@@ -8617,7 +8617,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 2.2,
+          "salience_share": 2.2,
           "description": "The ADD Epidemic (Δv +0.2%). The diagnosis rate keeps climbing. 'Boys are being drugged for being boys.' This narrative gains traction in conservative homeschooling circles. It links to the 'War on Boys' (Christina Hoff Sommers).",
           "key_manifestations": [
             "The War on Boys (Christina Hoff Sommers)",
@@ -8627,7 +8627,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Tom Cruise vs. Psychiatry (Δv +0.3%). Tom Cruise's Scientology-fueled rant against Matt Lauer ('You're glib'). While mocked, his attack on Ritalin and Psychiatry reaches millions. It introduces the 'Anti-Psychiatry' position to the mainstream, even if the messenger is flawed.",
           "key_manifestations": [
             "Tom Cruise Today Show Interview",
@@ -8637,7 +8637,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Garden State (Δv +0.5%). The protagonist stops taking his Lithium and 'wakes up.' It romanticizes the rejection of meds. The Right resonates with the idea that 'Feeling Pain is Real.' The 'Numbness' of the medicated state is the enemy.",
           "key_manifestations": [
             "Garden State",
@@ -8647,7 +8647,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Big Pharma Villainy (Δv +0.5%). *The Constant Gardener*. The narrative of Pharma companies testing on the third world. The Right begins to view Pharma not as 'Capitalism' but as 'Globalist Exploitation.' The Vioxx recall (heart attacks) shatters trust in FDA safety.",
           "key_manifestations": [
             "The Constant Gardener",
@@ -8657,7 +8657,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Meth in the Heartland (Δv -0.5%). The Meth epidemic ravages rural red states. The focus shifts to 'Illegal' drugs again. However, the 'Sudafed' restrictions annoy law-abiding citizens, creating friction with the regulatory state.",
           "key_manifestations": [
             "Combat Methamphetamine Epidemic Act",
@@ -8667,7 +8667,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Michael Moore's Sicko (Δv +0.5%). Moore attacks the health insurance industry. The Right defends the 'Market,' but quietly agrees that the system is broken. The seeds of 'Populist Health' are planted. They hate the Insurance Company as much as the Government.",
           "key_manifestations": [
             "Sicko (Documentary)",
@@ -8677,7 +8677,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Joker (Δv +0.5%). Heath Ledger's death (prescription overdose) highlights the danger of 'legal' drugs. The Joker character represents the 'insanity' that cannot be cured, only unleashed. The nihilism of the character resonates with the un-medicated fringe.",
           "key_manifestations": [
             "Heath Ledger death (Prescription cocktail)",
@@ -8687,7 +8687,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Obamacare and Pharma (Δv +0.5%). The 'Pharma Bro' deal with the Obama White House. The Right sees Big Pharma aligning with Big Government to force mandates (Individual Mandate). The corporatist alliance is exposed. Pharma is no longer a 'Free Market' ally.",
           "key_manifestations": [
             "Pharma/White House deal on ACA",
@@ -8697,7 +8697,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Pill Mills (Δv +0.5%). The 'Florida Shuffle.' The Opioid crisis begins to be undeniable in Appalachia. The Right starts to realize: 'The Doctors are the Dealers.' The trust in the 'White Coat' evaporates in the Rust Belt.",
           "key_manifestations": [
             "OxyContin express news reports",
@@ -8707,7 +8707,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Limitless (Δv +0.5%). The fantasy of the 'Smart Pill' (NZT). It reflects the desire for *performance* over *stability*. The Right (Silicon Valley wing) begins exploring Nootropics and Biohacking. 'Optimization' replaces 'Treatment.'",
           "key_manifestations": [
             "Limitless (Film)",
@@ -8717,7 +8717,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Aurora Shooting (Δv +0.5%). James Holmes (The Joker). Reports of his psychiatric care. The 'SSRI-Violence' link is debated again on InfoWars and right-wing radio. The narrative solidifies: 'The pills make them kill.'",
           "key_manifestations": [
             "Aurora Theater Shooting analysis",
@@ -8727,7 +8727,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Wolf of Wall Street (Δv +0.5%). Quaaludes. The celebration of drug use as a tool for dominance (Sales). It aligns with the 'Manosphere' view of drugs as utility. The Right admires the energy, if not the degeneracy.",
           "key_manifestations": [
             "The Wolf of Wall Street",
@@ -8737,7 +8737,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Jordan Peterson (Δv +0.5%). Peterson (though rising later) begins his academic work against the 'coddling' of minds. The 'Anti-Therapy' sentiment grows: 'You don't need a therapist, you need a father/purpose.'",
           "key_manifestations": [
             "Whiplash (Greatness requires suffering, not meds)",
@@ -8747,7 +8747,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Dreamland (Δv +1.0%). Sam Quinones publishes *Dreamland*. It maps the Opioid epidemic. It proves the Sackler family (Pharma) knowingly poisoned the Red States. It turns 'Big Pharma' into the ultimate villain of the Populist Right.",
           "key_manifestations": [
             "Dreamland (Book)",
@@ -8757,7 +8757,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "The Deplorable Health (Δv +1.0%). Trump ignores the 'Public Health' consensus. He eats fast food and distrusts exercise, yet projects vitality. The base rejects the 'Nanny State' health advice. The suspicion of 'Expertise' extends to Medicine.",
           "key_manifestations": [
             "Trump's doctor letter",
@@ -8767,7 +8767,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Peterson's Rise (Δv +0.5%). Jordan Peterson explodes. 'Clean Your Room.' He offers a non-pharmaceutical path to mental health for young men: Responsibility. He argues against the 'Safe Space' psychology. He is the Anti-Therapist.",
           "key_manifestations": [
             "Jordan Peterson's lectures",
@@ -8777,7 +8777,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Kanye's Breakdown (Δv +0.5%). Kanye West goes off meds. 'Dragon Energy.' He aligns with Trump. The Right cheers his 'Manic' state as 'Free Thinking.' It validates the idea that meds suppress genius/truth. 'Name one genius that ain't crazy.'",
           "key_manifestations": [
             "Kanye West 'Dragon Energy' tweets",
@@ -8787,7 +8787,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Trans Medicalization (Δv +1.0%). The 'Gender Affirming Care' debate begins. The Right views puberty blockers and hormones as the ultimate malpractice—sterilizing children for profit. It merges the 'Save the Children' moral panic with 'Anti-Pharma' skepticism.",
           "key_manifestations": [
             "Tavistock Clinic scandals (UK news filtering to US Right)",
@@ -8797,7 +8797,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Vaccine (Δv +4.0%). The singularity. Operation Warp Speed produces the Vax. Initially Trump takes credit, but the Mandates turn the base against it. 'Pure Bloods.' The suspicion of Pfizer becomes total. The 'Medical Freedom' movement absorbs all other right-wing energies.",
           "key_manifestations": [
             "Pfizer Vaccine announcement",
@@ -8807,7 +8807,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Ivermectin (Δv +1.0%). The Horse Paste wars. The Right rejects the 'Official' cure (Vax) for the 'Forbidden' cure (Ivermectin/HCQ). It is a rejection of the Priesthood of Medicine. Joe Rogan leads the charge. 'Do your own research.'",
           "key_manifestations": [
             "Joe Rogan / Ivermectin controversy",
@@ -8817,7 +8817,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 17.0,
+          "salience_share": 17.0,
           "description": "Died Suddenly (Δv +1.0%). The conspiracy documentary. Every heart attack is blamed on the Vax. The distrust is absolute. Matt Walsh's *What is a Woman?* attacks the medical/psychiatric establishment for redefining reality. The 'White Coat' is now a symbol of the enemy.",
           "key_manifestations": [
             "Died Suddenly (Documentary)",
@@ -8827,7 +8827,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "RFK Jr. Crossover (Δv +1.0%). RFK Jr. runs. He is the Avatar of this cluster. Anti-Vax, Anti-Pharma, Anti-Seed Oil. The Right embraces him (a Kennedy Democrat) because he shares their enemy. The 'MAHA' (Make America Healthy Again) coalition forms.",
           "key_manifestations": [
             "RFK Jr. on Joe Rogan",
@@ -8837,7 +8837,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 19.0,
+          "salience_share": 19.0,
           "description": "Ozempic Skepticism (Δv +1.0%). The 'Weight Loss Drug' craze. The Right splits: Some use it, but the Vitalists (Cluster 16) attack it as 'Fake Thin.' 'They want you dependent on the pod/injection.' The goal is metabolic sovereignty, not subscription health.",
           "key_manifestations": [
             "Ozempic 'Ozempy' face discourse",
@@ -8847,7 +8847,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 20.0,
+          "salience_share": 20.0,
           "description": "The Health Agency Purge (Δv +1.0%). The new administration guts the FDA/CDC. RFK Jr. is given a Tsar role. Fluoride is targeted. Vaccines are questioned at the federal level. The 'Anti-Psychiatry' movement is now the 'Public Health' policy. The asylum is run by the skeptics.",
           "key_manifestations": [
             "RFK Jr. appointed to HHS advisory role",
@@ -8863,7 +8863,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the deep, sentimental, and strategic attachment of the American Right to the United Kingdom and the 'English Speaking Peoples.' It relies on the 'Special Relationship,' the memory of WWII (Churchill), and the shared heritage of Common Law and Liberty. It fueled the support for the Iraq War (Blair/Bush), the enthusiasm for Brexit, and the AUKUS alliance. However, as the UK becomes viewed as 'Woke Island' (arresting people for tweets), this cluster is in steep decline, replaced by admiration for Hungary or El Salvador.",
       "trajectory": {
         "1995": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Thatcher's Shadow (Δv -0.5%). Thatcher is gone; Major is weak. The 'Special Relationship' is cool under Clinton. However, *Braveheart* rekindles a romantic, anti-imperial Anglo/Celtic nationalism that resonates with the American militia movement. The Right misses the Iron Lady.",
           "key_manifestations": [
             "Braveheart (Freedom!)",
@@ -8873,7 +8873,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Cool Britannia (Δv -0.5%). Blair's victory. 'Cool Britannia' is a Left-wing phenomenon (Oasis, Spice Girls). The US Right views Blair with suspicion as a 'Clinton clone.' The cultural energy of the UK is not aligned with American Conservatism.",
           "key_manifestations": [
             "Tony Blair election",
@@ -8883,7 +8883,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Diana's Death (Δv +0.5%). The global outpouring of grief. The American Right respects the Monarchy (Tradition) even while consuming the tabloid drama. It reinforces the cultural link. *Titanic* celebrates the Edwardian era class structure.",
           "key_manifestations": [
             "Princess Diana funeral coverage",
@@ -8893,7 +8893,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Saving Private Ryan (Δv -0.5%). The film focuses on American heroism. The British are largely absent. It marks a shift to 'American Exceptionalism' rather than 'Allied Victory.' The US doesn't need the UK to save the world anymore.",
           "key_manifestations": [
             "Saving Private Ryan",
@@ -8903,7 +8903,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Austin Powers (Δv -0.5%). The mockery of British culture ('Bad Teeth'). The relationship is friendly but unserious. The US is the hegemon. The UK is the theme park.",
           "key_manifestations": [
             "Austin Powers: The Spy Who Shagged Me",
@@ -8913,7 +8913,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Gladiator (Δv +0.5%). Ridley Scott (British director) revives the Roman Epic. The 'Empire' aesthetic returns. This prepares the ground for the Imperial mood of the Bush years. The British actor becomes the default 'Villain' or 'Mentor.'",
           "key_manifestations": [
             "Gladiator",
@@ -8923,7 +8923,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Shoulder to Shoulder (Δv +2.5%). 9/11. Blair stands with Bush. 'The National Anthem played at Buckingham Palace.' The emotional bond is at its peak. The UK is the *only* ally that matters. The 'Anglosphere' concept is revitalized by conservative intellectuals.",
           "key_manifestations": [
             "Blair's speech to Congress",
@@ -8933,7 +8933,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "The War Coalition (Δv +0.5%). The buildup to Iraq. It is the US and UK against the world (and France). 'Freedom Fries' vs 'British Resolve.' Christopher Hitchens (the British export) becomes the voice of the War Hawk Right.",
           "key_manifestations": [
             "Christopher Hitchens' pro-war essays",
@@ -8943,7 +8943,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Master and Commander (Δv +0.5%). The film is a love letter to the Royal Navy. It captures the 'Conservative' ideal of the British: Stoic, Disciplined, Competent. It is the favorite movie of the National Review set. The 'Special Relationship' is blood-forged in Iraq.",
           "key_manifestations": [
             "Master and Commander: The Far Side of the World",
@@ -8953,7 +8953,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Blair Backlash (Δv -1.5%). The Iraq War goes bad. Blair is unpopular at home. The American Right realizes their best friend is a lame duck. The 'British Intelligence' (Dossier) is blamed for the WMD error.",
           "key_manifestations": [
             "Butler Review (Intel failure)",
@@ -8963,7 +8963,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "7/7 Bombings (Δv +0.5%). London is hit. Shared trauma. The 'Clash of Civilizations' narrative binds the two nations. The threat is internal Islamic radicalism in both. *V for Vendetta* (movie) portrays a fascist UK, but the Right reads it as a warning against the Security State.",
           "key_manifestations": [
             "7/7 London Bombings",
@@ -8973,7 +8973,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Casino Royale (Δv -0.5%). Bond returns, but he is gritty and less 'Imperial.' The Queen (film) humanizes the monarchy, creating a soft spot for Elizabeth II among US conservatives. The political alliance is drifting as Bush weakens.",
           "key_manifestations": [
             "The Queen (Film)",
@@ -8983,7 +8983,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Hitchens vs. God (Δv -1.0%). Christopher Hitchens turns his guns on Religion (*God is Not Great*). This alienates the Religious Right. The 'British Intellectual' is now an Atheist enemy, not a War ally. The coalition fractures.",
           "key_manifestations": [
             "God Is Not Great (Hitchens)",
@@ -8993,7 +8993,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Financial Crash (Δv -0.5%). London and NY crash together. The 'Anglo-Saxon Model' of capitalism is discredited. The City of London is seen as part of the problem. Gordon Brown is uninspiring.",
           "key_manifestations": [
             "The Bank Bailouts (UK/US sync)",
@@ -9003,7 +9003,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Obama's Bust (Δv -0.5%). Obama removes the Churchill bust from the Oval Office. The Right screams 'Betrayal!' It becomes a symbol of Obama's anti-colonial worldview. The Right clings to Churchill as the anti-Obama.",
           "key_manifestations": [
             "Churchill Bust controversy",
@@ -9013,7 +9013,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Downton Abbey (Δv +1.0%). The show premieres. It is massive in Red State America. It validates the desire for Hierarchy, Order, and Tradition. It acts as a soothing balm during the Obama years. 'The aristocracy we wish we had.'",
           "key_manifestations": [
             "Downton Abbey mania",
@@ -9023,7 +9023,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Royal Wedding (Δv +0.5%). William and Kate. Americans wake up at 4 AM. It proves the enduring power of the Monarchy as a symbol of continuity. The Right contrasts the Royal Wedding with the 'tacky' American celebrity culture.",
           "key_manifestations": [
             "William and Kate Wedding",
@@ -9033,7 +9033,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Skyfall (Δv +0.5%). Bond defends the old manor house. 'The old ways are the best.' It resonates with the Right's feeling of being under siege. The London Olympics opening ceremony (NHS tribute) is mocked by the US Right as socialist propaganda.",
           "key_manifestations": [
             "Skyfall",
@@ -9043,7 +9043,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Thatcher's Death (Δv -0.5%). Margaret Thatcher dies. The Left celebrates ('Ding Dong the Witch is Dead'). The US Right mourns her as a saint. It highlights the polarization. The UK is no longer 'Thatcher's Britain'; it is moving Left culturally.",
           "key_manifestations": [
             "Margaret Thatcher funeral",
@@ -9053,7 +9053,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Scottish Referendum (Δv +0.5%). The vote to break up the UK fails. The US Right supports the Union. But the rise of UKIP and Farage begins to catch the eye of the populist Right. 'They are like us.'",
           "key_manifestations": [
             "Scottish Independence Vote (No)",
@@ -9063,7 +9063,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Farage and Trump (Δv +0.5%). Farage appears on US TV. The link between the British Euro-skeptics and the American Trumpists is forged. They share a language: Sovereignty, Borders, Anti-Globalism.",
           "key_manifestations": [
             "Farage speeches",
@@ -9073,7 +9073,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Brexit (Δv +4.0%). The Earthquake. Brexit wins. Trump calls himself 'Mr. Brexit.' It validates the Nationalist wave. The US Right looks to the UK not for 'Tradition' but for 'Revolution.' Farage is a hero at CPAC.",
           "key_manifestations": [
             "Brexit Referendum Result",
@@ -9083,7 +9083,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Dunkirk (Δv -1.0%). Nolan's film celebrates the 'Spirit of 1940.' It fits the Brexit mood. But the terror attacks (Manchester/London Bridge) make the UK look weak on security. Trump attacks Sadiq Khan. The 'Woke London' narrative begins.",
           "key_manifestations": [
             "Dunkirk",
@@ -9093,7 +9093,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "The Tommy Robinson Moment (Δv -1.0%). Tommy Robinson is arrested. The US Right (Tucker/Fox) frames it as a free speech crisis. 'The UK has fallen.' The admiration turns to pity/disgust. 'A Police State run by Liberals.'",
           "key_manifestations": [
             "Tommy Robinson arrest/protests",
@@ -9103,7 +9103,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Boris Johnson (Δv +1.0%). Boris wins. 'Get Brexit Done.' He is seen as the British Trump (hair/populism). The alliance is restored. The Anglosphere seems to be moving Right together. *1917* celebrates the martial heritage.",
           "key_manifestations": [
             "Boris Johnson Landslide",
@@ -9113,7 +9113,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "The Meghan Markle Split (Δv -2.0%). Harry and Meghan leave. Oprah interview. The US Left loves Meghan; the US Right hates her. She represents 'Woke America' infecting the 'Traditional UK.' The Right sides with the Queen. But the UK's harsh COVID lockdowns alienate the Libertarian Right.",
           "key_manifestations": [
             "Megxit",
@@ -9123,7 +9123,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "AUKUS (Δv +0.5%). The Submarine deal. US/UK/Australia. A hard power alliance against China. It fulfills the 'Anglosphere' geopolitical dream. But culturally, the UK is seen as 'TERF Island' (by the Left) or 'Cuck Island' (by the Right).",
           "key_manifestations": [
             "AUKUS announcement",
@@ -9133,7 +9133,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Queen's Death (Δv -1.5%). Elizabeth II dies. The end of an era. The Right mourns the last link to the 'Great' Britain. King Charles is viewed as a Globalist/WEF shill. The connection snaps. The UK economy collapses (Truss). It looks like a failed state.",
           "key_manifestations": [
             "Queen Elizabeth II Funeral",
@@ -9143,7 +9143,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Arresting Tweets (Δv -2.0%). Viral stories of British police arresting people for offensive tweets. The US Right points and laughs. 'We have the First Amendment, they have tyranny.' The nostalgia is dead. The UK is a warning.",
           "key_manifestations": [
             "Viral videos of UK 'Hate Speech' arrests",
@@ -9153,7 +9153,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Riots (Δv -2.0%). The UK riots after the Southport stabbing. 'Two Tier Policing.' The US Right supports the rioters/protesters, viewing the Starmer government as an enemy regime. Elon Musk attacks the UK government. The 'Special Relationship' is hostile.",
           "key_manifestations": [
             "Southport Riots / Two Tier Policing",
@@ -9163,7 +9163,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Irrelevance (Δv -1.5%). The UK is viewed as a poor, authoritarian island. The US Right looks to El Salvador (Bukele), Argentina (Milei), or Hungary (Orban) for inspiration. Churchill is a memory. The Anglosphere is dead; the 'Illiberal Sphere' is the new network.",
           "key_manifestations": [
             "UK Economic Stagnation data",
@@ -9179,7 +9179,7 @@ export const rightWingCultureData = {
       "description": "This cluster tracks the evolution of Right-wing humor from 'South Park' sarcasm to 'Million Dollar Extreme' surrealism to 'Skibidi Toilet' brainrot. It rejects 'Meaning' entirely. It weaponizes absurdity, chaos, and 'Schizo' aesthetics to disorient the Liberal consensus. It is the humor of a generation that believes the world is fake, so the only rational response is to 'mog' reality with nonsense.",
       "trajectory": {
         "1995": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Jerky Boys (Δv 0%). Prank calls. Rudeness as comedy. It is analog trolling. Not political, but establishes the joy of disrupting the social script.",
           "key_manifestations": [
             "The Jerky Boys movie",
@@ -9189,7 +9189,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 0.6,
+          "salience_share": 0.6,
           "description": "Drudge Report (Δv +0.1%). Matt Drudge breaks the mold. The aesthetic of the site (courier font, siren) is proto-dada. It treats gossip and war with equal weight. It flattens the hierarchy of information.",
           "key_manifestations": [
             "Drudge Report design",
@@ -9199,7 +9199,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "South Park (Δv -0.1%). South Park launches. It is 'Ironic,' not 'Post-Ironic.' It has a moral (I learned something today). It anchors the humor in Libertarian logic, preventing the drift into pure madness.",
           "key_manifestations": [
             "South Park premieres",
@@ -9209,7 +9209,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "The Big Lebowski (Δv 0%). The Dude abides. The rejection of striving. It becomes a cult text for the 'Slacker Right' (later). Nihilists are the villains, but the movie itself is a shaggy dog story about nothing.",
           "key_manifestations": [
             "The Big Lebowski",
@@ -9219,7 +9219,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 0.8,
+          "salience_share": 0.8,
           "description": "Tom Green (Δv +0.3%). Tom Green humps a dead moose. It is 'Anti-Comedy.' It isn't funny; it is uncomfortable. It predicts the 'Cringe' genre. The goal is to provoke a reaction, not a laugh.",
           "key_manifestations": [
             "The Tom Green Show",
@@ -9229,7 +9229,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Jackass (Δv +0.2%). Physical Dadaism. Self-harm for the lulz. It breaks the body to break the boredom. It is the pre-cursor to 'Internet Challenges.'",
           "key_manifestations": [
             "Jackass premieres",
@@ -9239,7 +9239,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "Adult Swim (Δv +0.2%). The block launches. 'Space Ghost,' 'Sealab 2021.' It repurposes old culture (Hanna Barbera) into surreal nightmares. It trains a generation to detach context from content.",
           "key_manifestations": [
             "Adult Swim launch",
@@ -9249,7 +9249,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Something Awful (Δv -0.2%). The forums. 'Photoshop Phriday.' The creation of the 'Meme' format (Image Macros). The humor is cruel, inside, and exclusionary. The birth of the 'Troll.'",
           "key_manifestations": [
             "Something Awful forums",
@@ -9259,7 +9259,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "4chan (Δv +0.5%). Moot founds 4chan. The anonymity strips the ego. The 'Hivemind' creates humor that no individual would own. It is the primordial soup of Post-Irony.",
           "key_manifestations": [
             "4chan launch",
@@ -9269,7 +9269,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Napoleon Dynamite (Δv 0%). The aesthetic of the awkward. It is funny because it is boring. 'Vote for Pedro.' It rejects the polished Hollywood joke.",
           "key_manifestations": [
             "Napoleon Dynamite",
@@ -9279,7 +9279,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "YouTube Poop (Δv +0.3%). Users remix Mario and Zelda into incoherent noise. 'Spadinner.' It is the first native video art of the cluster. It destroys the original meaning.",
           "key_manifestations": [
             "Early YouTube Poop (YTP)",
@@ -9289,7 +9289,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Borat (Δv +0.2%). Sacha Baron Cohen exposes the polite lies. The 'Throw the Jew down the well' song. The audience laughs, but the anti-semitism is 'Ironic.' The line blurs. The Right enjoys the mockery of the elite etiquette.",
           "key_manifestations": [
             "Borat",
@@ -9299,7 +9299,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Tim and Eric (Δv +0.5%). The public access aesthetic. The uncomfortable pause. It deconstructs 'Television' itself. It attracts the 'Alt' crowd. It creates a visual language of 'Cringe.'",
           "key_manifestations": [
             "Tim and Eric Awesome Show",
@@ -9309,7 +9309,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Trollface (Δv 0%). The Rage Comic. The face of 'Problem?' It is the mask of the nihilist. The Joker in *The Dark Knight* asks 'Why so serious?' This becomes the motto.",
           "key_manifestations": [
             "Trollface creation",
@@ -9319,7 +9319,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Slender Man (Δv +0.5%). Something Awful creates a monster. It becomes 'Real' (Tulpa). The internet manifests myth. It proves the power of collective storytelling.",
           "key_manifestations": [
             "Slender Man creation",
@@ -9329,7 +9329,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Based God (Δv +0.5%). Lil B. 'Thank You Based God.' He raps badly on purpose? Or is he a genius? The term 'Based' enters the lexicon. It means 'Being yourself without care.' The Right co-opts it to mean 'Right Wing.'",
           "key_manifestations": [
             "Lil B 'Based God' meme",
@@ -9339,7 +9339,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Planking (Δv +0.5%). Doing nothing in a weird place. Pure absurdity. No message. It spreads globally. It prepares the ground for 'Harlem Shake' and other mass-participation nonsense.",
           "key_manifestations": [
             "Planking craze",
@@ -9349,7 +9349,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Vaporwave (Δv +0.5%). Slowed down elevator music. Nostalgia for a future that never happened. It aestheticizes 'Capitalist Decay.' The Right adopts it as 'Fashwave' (with statues).",
           "key_manifestations": [
             "Macintosh Plus - Floral Shoppe",
@@ -9359,7 +9359,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Doge (Δv +0.5%). The Shiba Inu. 'Much wow.' It breaks grammar. It becomes a currency (Dogecoin). The joke becomes money. The boundary between 'Meme' and 'Asset' dissolves.",
           "key_manifestations": [
             "Doge meme",
@@ -9369,7 +9369,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "GamerGate (Δv +0.5%). The memes are weaponized. Vivian James. The swarm attacks Intel. The humor becomes tactical. 'Actually it's about ethics...' becomes a shield.",
           "key_manifestations": [
             "GamerGate memes",
@@ -9379,7 +9379,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Pepe (Δv +1.5%). The Frog becomes the Avatar. Trump retweets it. The 'Rare Pepe' market. The connection to 'Kek' (Chaos Magic). The Left calls it a Hate Symbol. The Right laughs. The 'Great Meme War' begins.",
           "key_manifestations": [
             "Trump Pepe tweet",
@@ -9389,7 +9389,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Harambe (Δv +2.0%). The gorilla. 'Dicks out for Harambe.' A mock-mourning that overshadows the election. It is a vote of no confidence in humanity. 11,000 people vote for Harambe. It shows the electorate is broken/joking.",
           "key_manifestations": [
             "Harambe memes",
@@ -9399,7 +9399,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "MDE Cancelled (Δv -1.0%). Sam Hyde's show is cancelled. He becomes the martyr of the Post-Ironic Right. 'He can't keep getting away with it.' The humor goes deeper underground. The 'NPC' meme germinates.",
           "key_manifestations": [
             "Million Dollar Extreme cancellation",
@@ -9409,7 +9409,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "NPC Meme (Δv +0.5%). The grey face. 'Orange Man Bad.' It dehumanizes the Left as scripted code. It triggers a massive ban wave. It proves the 'Left can't meme' (because they have rules).",
           "key_manifestations": [
             "NPC Meme viral spread",
@@ -9419,7 +9419,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Clown World (Δv +0.5%). 'Honk Honk.' The rainbow wig. The acceptance that the world is insane and cannot be saved, only mocked. Accelerationism via laughter. *Joker* is the serious version; Clown World is the 4chan version.",
           "key_manifestations": [
             "Clown World memes",
@@ -9429,7 +9429,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "The Fly (Δv +1.0%). Mike Pence's fly. The only thing people remember from the debate. Reality is a glitch. The 'Vibe' shift. 'Return to Monke' memes reject modernity entirely.",
           "key_manifestations": [
             "Pence Fly memes",
@@ -9439,7 +9439,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 10.5,
+          "salience_share": 10.5,
           "description": "Sigma Male (Δv +0.5%). Patrick Bateman is reclaimed. Not as a villain, but as a 'Grindset' icon. It mocks the hustle culture while embracing it. The 'Phonk' music overlay. Irony layers are inseparable.",
           "key_manifestations": [
             "Sigma Male Grindset memes",
@@ -9449,7 +9449,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Morbius (Δv +0.5%). 'It's Morbin Time.' The internet bullies Sony into re-releasing a bad movie just to not watch it again. Total power over the corporation via nonsense. The 'Gentleminions' trend.",
           "key_manifestations": [
             "Morbius memes",
@@ -9459,7 +9459,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Skibidi Toilet (Δv +2.0%). The head in the toilet. It conquers Gen Alpha. It has no meaning, but it has 'Lore.' The Right sees it as 'Brainrot' but also recognizes the 'Gmod' aesthetic. It marks the end of the 'Millennial Internet' and the rise of the 'Absurdist' generation.",
           "key_manifestations": [
             "Skibidi Toilet viral explosion",
@@ -9469,7 +9469,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "Hawk Tuah (Δv -0.5%). The viral interview. It is vulgar, but populist. The 'Talk Tuah' podcast. It shows how quickly a meme becomes a commodity. The 'Brainrot' is now the culture. Trump goes on Theo Von.",
           "key_manifestations": [
             "Hawk Tuah girl",
@@ -9479,7 +9479,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 2.1,
+          "salience_share": 2.1,
           "description": "The Department of Memes (Δv -10.4%). The administration adopts the aesthetic. Elon posts 'DOGE.' The counter-culture becomes the Regime. The 'Post-Ironic' cluster loses variance because it *won*. It must now either become 'Sincere' (Trad) or 'Avant-Garde' (New Dada).",
           "key_manifestations": [
             "Official White House 'Shitposts'",
@@ -9495,7 +9495,7 @@ export const rightWingCultureData = {
       "description": "This cluster tracks the transformation of American gun culture from 'Sporting/Hunting' (Fudd culture) to 'Tactical/Martial' (Militia culture). It abandons the 'sporting purpose' rationale in favor of the 'anti-tyranny' rationale. Fueled by the sunset of the Assault Weapons Ban, the Global War on Terror (veterans bringing gear home), and civil unrest, it normalizes the ownership of body armor, night vision, and suppressor-equipped carbines as standard household equipment. It views the Second Amendment as the 'Reset Button' of the Republic.",
       "trajectory": {
         "1995": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Assault Weapons Ban (Δv +0.5%). The 1994 Ban is in effect. The AR-15 is a niche item, often neutered (no bayonet lug). The 'Militia' look is stigmatized by Oklahoma City. The dominant NRA aesthetic is still 'Hunter/Safety.'",
           "key_manifestations": [
             "Federal Assault Weapons Ban enforcement",
@@ -9505,7 +9505,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 3.2,
+          "salience_share": 3.2,
           "description": "The Emerson Case (Δv +0.2%). Legal scholars begin to construct the 'Individual Right' theory in law journals. The culture is hostile to 'Black Rifles.' Handgun control is the main battleground (Brady Campaign).",
           "key_manifestations": [
             "United States v. Emerson (pre-Heller debates)",
@@ -9515,7 +9515,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "North Hollywood Shootout (Δv +0.3%). Police are outgunned by robbers with automatic rifles. It triggers the militarization of police (patrol rifles). Civilians watch and realize: 'I need what they have.' The 'Tactical' market begins to germinate.",
           "key_manifestations": [
             "North Hollywood Shootout",
@@ -9525,7 +9525,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Charlton Heston (Δv -0.5%). Heston becomes NRA President. 'From my cold dead hands.' It rallies the base, but keeps the aesthetic 'Old Hollywood/Western.' The 'Tactical' shift is delayed by the reverence for the Cowboy era.",
           "key_manifestations": [
             "Charlton Heston NRA speech",
@@ -9535,7 +9535,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Columbine Backlash (Δv -0.5%). The shooting puts gun culture on the defensive. The 'Trench Coat Mafia' aesthetic is demonized. K-Mart stops selling handgun ammo. The culture views the 'Gun Nut' as a ticking time bomb.",
           "key_manifestations": [
             "Columbine fallout",
@@ -9545,7 +9545,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Smith & Wesson Boycott (Δv +0.5%). S&W makes a deal with the Clinton administration for smart guns. The grassroots Right boycotts them to near bankruptcy. It proves the 'Gun Lobby' is the people, not the manufacturers. The 'No Compromise' wing flexes.",
           "key_manifestations": [
             "Smith & Wesson Boycott",
@@ -9555,7 +9555,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "GWOT Gear (Δv +0.5%). The War on Terror begins. Special Forces images flood the media. The 'M4 Carbine' becomes the symbol of freedom. The transition from 'Wood' (Hunting) to 'Plastic/Rail' (Tactical) begins as patriotism aligns with militarization.",
           "key_manifestations": [
             "Black Hawk Down (The tactical bible for a generation)",
@@ -9565,7 +9565,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 3.8,
+          "salience_share": 3.8,
           "description": "The DC Sniper (Δv +0.3%). The Bushmaster rifle is used. The media demonizes it, but sales spike. The 'Forbidden Fruit' effect. Americans start buying the 'weapon of war' for home defense.",
           "key_manifestations": [
             "DC Sniper manhunt",
@@ -9575,7 +9575,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "CCW Spread (Δv +0.2%). States begin passing 'Shall Issue' concealed carry laws. Carrying a gun becomes a normative lifestyle choice for the suburban dad. The 'Sheepdog' philosophy (Grossman) circulates.",
           "key_manifestations": [
             "Spread of Shall-Issue laws",
@@ -9585,7 +9585,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Sunset (Δv +2.0%). The Assault Weapons Ban expires. It is not renewed. The floodgates open. Manufacturers push the AR-15 as 'America's Rifle.' The 'Barbie for Men' (customizable rifle) phenomenon begins. The modularity drives a consumer boom.",
           "key_manifestations": [
             "Expiration of the 1994 AWB",
@@ -9595,7 +9595,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Katrina Confiscations (Δv +0.5%). Police confiscate guns from law-abiding citizens in New Orleans. The video footage radicalizes the Gun Right. 'Never Again.' It shifts the focus from 'Crime' to 'Government Tyranny.' The 'Truck Gun' becomes essential.",
           "key_manifestations": [
             "Katrina Gun Confiscation videos",
@@ -9605,7 +9605,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Magpul Rising (Δv -0.5%). Magpul releases the PMAG. It's a plastic magazine that works better than military issue. The 'Private Sector' now makes better gear than the 'Military.' The civilian market starts driving innovation. The 'Tactical Instructor' celebrity emerges.",
           "key_manifestations": [
             "Magpul Dynamics training videos",
@@ -9615,7 +9615,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Shooter (Δv +1.0%). The film *Shooter* depicts the sniper as the ultimate anti-government patriot. It aligns with the Ron Paul mood. The 'Long Range Precision' hobby grows. The Castle Doctrine spreads.",
           "key_manifestations": [
             "Shooter (Film)",
@@ -9625,7 +9625,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Heller and Obama (Δv +2.0%). The Supreme Court affirms the Individual Right (Heller). Simultaneously, Obama is elected. The 'Panic Buy' begins. Ammo shortages. The fear of banning drives record sales. The AR-15 becomes the 'Musket' of the modern era.",
           "key_manifestations": [
             "District of Columbia v. Heller",
@@ -9635,7 +9635,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "Open Carry (Δv -0.5%). Activists begin open carrying rifles to protests (Tea Party). It normalizes the visual of the armed citizen. Liberals are horrified; the Right is emboldened. The gun is a political speech act.",
           "key_manifestations": [
             "Open Carry at Tea Party rallies",
@@ -9645,7 +9645,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Zombie Bump (Δv -0.5%). *The Walking Dead* premieres. It sells guns to people who don't care about politics but fear the collapse. 'Zombie Green' ammo and accessories. It's a gateway drug to serious tactical training.",
           "key_manifestations": [
             "The Walking Dead premieres",
@@ -9655,7 +9655,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "3D Printing (Δv +0.5%). Defense Distributed. Cody Wilson. The 'Wiki Weapon.' The idea that gun control is obsolete because 'Code is Speech.' It merges the Tech-Right (Cluster 9) with the Gun-Right.",
           "key_manifestations": [
             "Defense Distributed manifesto",
@@ -9665,7 +9665,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Sandy Hook Panic (Δv +1.5%). The shooting leads to a massive push for a new ban. The Right digs in. 'The only thing that stops a bad man with a gun is a good man with a gun' (LaPierre). The industry sells out of everything for a year. The 'Molon Labe' sticker becomes ubiquitous.",
           "key_manifestations": [
             "Sandy Hook Panic Buying",
@@ -9675,7 +9675,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "The Ghost Gun (Δv -0.5%). The unfinished receiver (80% lower) becomes popular. Building your own unregistered firearm is the new act of defiance. The 'Builder' culture grows. YouTube gun channels (Hickok45, FPSRussia) dominate media.",
           "key_manifestations": [
             "Rise of the 80% Lower",
@@ -9685,7 +9685,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Bundy Ranch (Δv -0.5%). The standoff in Nevada. Militia members aim rifles at federal agents. The Feds back down. It is a stunning victory for the 'Sovereign' wing. It proves 'Resistance Works.' The scope on the bridge becomes an iconic image.",
           "key_manifestations": [
             "Bundy Ranch Standoff",
@@ -9695,7 +9695,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "The Bataclan Effect (Δv +1.0%). The Paris attacks. Unarmed victims. The US Right points to it: 'This is why we carry.' The concealed carry rates among women spike. The 'Soft Target' fear drives daily carry.",
           "key_manifestations": [
             "Paris Attacks reaction in gun sphere",
@@ -9705,7 +9705,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Pulse and the Pivot (Δv +1.0%). The Pulse nightclub shooting. The LGBT community begins to arm itself (Pink Pistols). The 'Gun Rights' movement expands beyond the conservative white male. Trump's endorsement by the NRA is the earliest and strongest. The 'Trump Gun Owner' identity solidifies.",
           "key_manifestations": [
             "Pulse Nightclub aftermath",
@@ -9715,7 +9715,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 10.5,
+          "salience_share": 10.5,
           "description": "Las Vegas Bump Stock (Δv -0.5%). The Vegas shooting. Trump bans bump stocks. It creates a rift. The 'Absolutists' call Trump a traitor. The 'Normies' accept it. The friction between 'MAGA' and '2A' appears. The 'Carry Guard' insurance concept rises.",
           "key_manifestations": [
             "Las Vegas Shooting / Bump Stock Ban",
@@ -9725,7 +9725,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Parkland and the Kids (Δv -0.5%). The Parkland shooting. The media elevates the anti-gun students (Hogg). The Right attacks the students. It creates a nasty generational battle. 'Red Flag Laws' pass in Florida. The sense of siege returns.",
           "key_manifestations": [
             "March for Our Lives counter-reaction",
@@ -9735,7 +9735,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Virginia Rally (Δv +1.0%). The Virginia Lobby Day. Thousands of fully armed citizens march in Richmond to protest state laws. No violence. It is a massive show of discipline and force. The 'Guillotine' memes appear. The 'Boogaloo' aesthetic (Hawaiian shirts) goes viral.",
           "key_manifestations": [
             "Richmond 2A Rally",
@@ -9745,7 +9745,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Great Gun Run (Δv +4.0%). COVID + Riots. 8 million *new* gun owners. Minorities and Liberals buy guns in record numbers. The 'Defund the Police' movement creates the 'Self-Defense' imperative. Ammo is gone. Body Armor sales to civilians skyrocket. The stigma vanishes.",
           "key_manifestations": [
             "Record NICS checks",
@@ -9755,7 +9755,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "The Brace Ban Panic (Δv -0.5%). The ATF targets pistol braces. The industry rallies. Millions of Americans are suddenly 'felons' on paper. It radicalizes the casual owner. 'Abolish the ATF' becomes a standard GOP talking point.",
           "key_manifestations": [
             "ATF Pistol Brace Rule proposal",
@@ -9765,7 +9765,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Bruen (Δv +1.5%). The Supreme Court rules 'May Issue' unconstitutional. New York and California must issue permits. It is a massive victory. 'Text, History, and Tradition' is the new standard. Gun control laws fall across the country.",
           "key_manifestations": [
             "NYSRPA v. Bruen decision",
@@ -9775,7 +9775,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 15.5,
+          "salience_share": 15.5,
           "description": "The Trans Shooter (Δv -0.5%). The Nashville shooting. The shooter is Trans. The Right focuses on 'Mental Illness' and 'Hormones' rather than the gun. The 'Tucker Carlson' manifesto leak. The debate shifts to 'Who should be armed?'",
           "key_manifestations": [
             "Nashville Covenant School shooting discourse",
@@ -9785,7 +9785,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 16.5,
+          "salience_share": 16.5,
           "description": "Civil War Movie (Δv +1.0%). The film depicts the chaotic, militia-filled landscape. It serves as a visual guide. The proliferation of 'Night Vision' (NVGs) in the civilian market hits a tipping point. The 'Thermal' revolution. Owning the night is the new status symbol.",
           "key_manifestations": [
             "Civil War (Film)",
@@ -9795,7 +9795,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 17.0,
+          "salience_share": 17.0,
           "description": "National Reciprocity (Δv +0.5%). With a GOP trifecta, the push for National Concealed Carry Reciprocity begins. The goal is to make the carry permit like a driver's license. The culture has shifted: Carrying a gun is now as normal as carrying a phone in Red America.",
           "key_manifestations": [
             "National Reciprocity Bill debates",
@@ -9811,7 +9811,7 @@ export const rightWingCultureData = {
       "description": "This cluster tracks the migration of disaffected Liberals and Centrists to the Right (or Anti-Left). Triggered by 'Wokeness,' Cancel Culture, and the incompetence of the establishment, these figures (journalists, academics, comedians) bring 'Liberal' values (Free Speech, Meritocracy, Objective Truth) into the Right-wing coalition. They do not necessarily embrace the 'Religious' or 'Nationalist' core, but they share the same enemy: The Progressive Institutional Complex.",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Neocon Precursor (Δv 0%). The previous generation of defectors (Kristol, Podhoretz) are now fully integrated. The new 'Liberal' critique of the Left is quiet. Bill Maher's 'Politically Incorrect' represents the lone voice of the 'Anti-PC Liberal.'",
           "key_manifestations": [
             "Politically Incorrect with Bill Maher",
@@ -9821,7 +9821,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Stasis (Δv 0%). Clinton moves to the center (Triangulation). This keeps the moderates happy. There is no reason to defect. The Culture War is dormant.",
           "key_manifestations": [
             "Clinton's re-election",
@@ -9831,7 +9831,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Stasis (Δv 0%). The economy is booming. The 'End of History' satisfaction. The only defectors are fringe.",
           "key_manifestations": [
             "As Good as It Gets",
@@ -9841,7 +9841,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Lewinsky Fatigue (Δv +0.5%). Some feminists defend Clinton. Others (Hitchens) attack him. Hitchens writes 'No One Left to Lie To.' It is the beginning of his drift away from the Clintonian Left. The hypocrisy of the 'Feminist' defense of a predator creates the first cracks.",
           "key_manifestations": [
             "No One Left to Lie To (Christopher Hitchens)",
@@ -9851,7 +9851,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Stasis (Δv 0%). The focus is on Y2K and the Tech Boom. The ideological lines are blurry.",
           "key_manifestations": [
             "Election (The ambitious climber)",
@@ -9861,7 +9861,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Nader Voters (Δv +0.5%). The Far Left defects to Nader, causing Gore's loss. They hate the Corporate Dems. This isn't a move Right, but a move 'Anti-Establishment.' It sets the template for the 'Horseshoe Theory' alliance later.",
           "key_manifestations": [
             "Ralph Nader campaign",
@@ -9871,7 +9871,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "9/11 Defectors (Δv +1.0%). The terror attacks push many Liberals (Hitchens, Dennis Miller, Ron Silver) to the Right on foreign policy. They view the Left's response (Chomsky) as anti-American and soft on Islamofascism. This is the '9/11 Liberal' cohort.",
           "key_manifestations": [
             "Christopher Hitchens leaves The Nation",
@@ -9881,7 +9881,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The War on Terror Support (Δv +0.5%). The defectors become the loudest voices for the Iraq War. They frame it as a 'Liberal' intervention for human rights. They hate the 'Peace Now' crowd. The 'Blogosphere' (Instapundit) rises as a home for them.",
           "key_manifestations": [
             "Instapundit (Glenn Reynolds) growth",
@@ -9891,7 +9891,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Stasis (Δv 0%). The war happens. The defectors are committed. They are hated by their former friends. The polarization hardens.",
           "key_manifestations": [
             "Dixie Chicks cancellation (The Defectors defend the war)",
@@ -9901,7 +9901,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "South Park Republicans (Δv -0.5%). The term is coined. Young people who hate PC culture but like weed and sex. They vote for Bush or Libertarian. They are 'Anti-Liberal' culturally. *Team America* mocks the Hollywood Left mercilessly.",
           "key_manifestations": [
             "South Park Republican label",
@@ -9911,7 +9911,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Stasis (Δv 0%). The war goes bad. Some defectors drift back (Sullivan). The movement loses steam as the 'Neocon' project fails.",
           "key_manifestations": [
             "Huffington Post launch (The liberal consolidation)",
@@ -9921,7 +9921,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "The New Atheists (Δv -0.5%). Dawkins/Harris attack Religion. This splits the Defectors. They hate Islam (Right) but hate Christianity (Left). They are politically homeless. Sam Harris begins to critique the Left's blindness to Islam.",
           "key_manifestations": [
             "Sam Harris 'The End of Faith'",
@@ -9931,7 +9931,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Stasis (Δv 0%). The Obama phenomenon begins. Most Liberals return home. The '9/11 Defector' era ends. The focus shifts to the economy.",
           "key_manifestations": [
             "Obama's rise",
@@ -9941,7 +9941,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Obama Victory (Δv -0.5%). The country moves Left. The 'Defectors' are isolated. Hitchens supports Obama. The cluster is dormant.",
           "key_manifestations": [
             "Obama Victory",
@@ -9951,7 +9951,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Stasis (Δv 0%). The Tea Party is too religious/populist for the Intellectual Defector. They watch from the sidelines.",
           "key_manifestations": [
             "Tea Party rise",
@@ -9961,7 +9961,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "The Adam Carolla Pivot (Δv +0.5%). Carolla and other radio hosts begin to complain about 'regulations' and 'wokeness' (though not called that yet). The 'Podcast Right' begins to form—comedians who just want to be left alone.",
           "key_manifestations": [
             "Adam Carolla Podcast",
@@ -9971,7 +9971,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Safe Spaces (Δv +0.5%). The Campus Culture War reignites. Comedians (Seinfeld, Rock) stop playing colleges. This alienates the 'Free Speech Liberal.' They start looking at the Right as the side of 'Jokes.'",
           "key_manifestations": [
             "Comedians avoiding colleges news",
@@ -9981,7 +9981,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "GamerGate Precursors (Δv +0.5%). The 'Anita Sarkeesian' debates begin. The gaming community (largely apolitical) feels attacked by feminist critics. The 'Anti-SJW' YouTuber is born (Thunderf00t, Sargon).",
           "key_manifestations": [
             "Tropes vs Women in Video Games Kickstarter",
@@ -9991,7 +9991,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "New Atheism Split (Δv +0.5%). 'Atheism+' tries to add Social Justice to Atheism. The 'Rationalists' revolt. This splits the skeptical community into 'Woke' and 'Anti-Woke.' The Anti-Woke faction (Boghossian, Lindsay) begins its journey Right.",
           "key_manifestations": [
             "Atheism+ controversy",
@@ -10001,7 +10001,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "GamerGate (Δv +1.0%). The explosion. A massive cohort of young, liberal men are told they are 'misogynists' by the media they trusted. They defect. Milo Yiannopoulos welcomes them. The 'Classical Liberal' (Dave Rubin) leaves the Young Turks.",
           "key_manifestations": [
             "GamerGate",
@@ -10011,7 +10011,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Campus Meltdown (Δv +1.0%). Yale/Mizzou. The videos of screaming students radicalize the 'Adults.' Jordan Peterson opposes the pronouns. The 'Intellectual Dark Web' (IDW) coalesces. Rogan, Harris, Peterson, Weinstein. They are 'Liberals who were mugged by Woke.'",
           "key_manifestations": [
             "Yale Halloween video",
@@ -10021,7 +10021,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Binary Choice (Δv +1.0%). Trump or Hillary. The IDW hates both. They focus on 'Free Speech' and 'Biology.' They become the 'Anti-Anti-Trump' faction. They argue that the Left pushed people to Trump.",
           "key_manifestations": [
             "Jordan Peterson's C-16 testimony",
@@ -10031,7 +10031,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Google Memo (Δv +1.0%). James Damore is fired for citing science. The Tech/Science centrists are horrified. It proves the 'Woke Mind Virus' has captured the corporation. The Defectors move to Substack and Patreon.",
           "key_manifestations": [
             "James Damore Firing",
@@ -10041,7 +10041,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "The Grievance Studies Hoax (Δv +0.5%). Lindsay, Pluckrose, and Boghossian publish fake papers (Dog Park Rape) in academic journals. It exposes the rot of 'Critical Theory.' It is a triumph for the Rationalist Right. It creates a weapon against the Academy.",
           "key_manifestations": [
             "Grievance Studies Hoax revealed",
@@ -10051,7 +10051,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Cancel Culture (Δv +0.5%). Shane Gillis fired from SNL. Comedians rally. The 'Comedy Cellar' becomes a bastion of free speech. The 'Cancel Culture' narrative unites the comedian, the academic, and the worker. 'The Left has no sense of humor.'",
           "key_manifestations": [
             "Shane Gillis SNL firing",
@@ -10061,7 +10061,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Harper's Letter (Δv +3.0%). The Riots + COVID. The liberal institutions surrender to the mob. The NYT fires James Bennet. Bari Weiss resigns. Glenn Greenwald leaves The Intercept. The 'Journalistic Defector' becomes a major archetype. They launch Substack empires.",
           "key_manifestations": [
             "The Harper's Letter",
@@ -10071,7 +10071,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "San Francisco School Board (Δv +0.5%). The SF School board tries to rename schools (Lincoln) while schools are closed. It is peak absurdity. Asian-American voters defect in SF (Recall). The 'Competence Liberal' becomes a Right-winger to save the city.",
           "key_manifestations": [
             "SF School Board renaming controversy",
@@ -10081,7 +10081,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Elon's Switch (Δv +1.5%). Elon Musk tweets 'The Left moved so far, I am now Right.' He buys Twitter to save Free Speech. He releases the Twitter Files (via Taibbi/Weiss). It validates the Defectors: 'We were shadowbanned.' The alliance between Tech-Libertarians and Disaffected Liberals is sealed.",
           "key_manifestations": [
             "Elon Musk 'My politics' diagram tweet",
@@ -10091,7 +10091,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "The RFK Jr. Factor (Δv -0.5%). RFK Jr. runs as a Democrat but sounds like a Defector (Anti-Censorship, Anti-War). He draws energy from this cluster. He proves there is no home in the DNC for dissent. The 'Heterodox' sphere embraces him.",
           "key_manifestations": [
             "RFK Jr. Campaign Launch",
@@ -10101,7 +10101,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Unity Ticket (Δv +1.5%). RFK Jr. and Tulsi Gabbard endorse Trump. It is the formalization of the Defector alliance. They are put on the transition team. The GOP is no longer just 'Conservatives'; it is the 'Anti-Establishment' party. The 'Red Pilled Liberal' is now a key advisor.",
           "key_manifestations": [
             "RFK/Tulsi Endorsements",
@@ -10111,7 +10111,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Institutionalization (Δv +1.0%). The Defectors are given agencies. RFK (Health), Tulsi (Intel). They are tasked with dismantling the systems they used to trust. The 'Post-Left' is now the 'Governing Right.' The transformation is complete.",
           "key_manifestations": [
             "Tulsi Gabbard DNI hearings",
@@ -10127,7 +10127,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the shift from 'Boycotting' Woke Corporations to 'Building' alternatives. Recognizing that the Fortune 500 has been captured by DEI/ESG, this movement seeks to create a self-contained economic ecosystem for the Right. From 'Stripe' alternatives to 'Disney' alternatives (Daily Wire) to 'Starbucks' alternatives (Black Rifle). It transforms consumption into political activism. 'Vote with your wallet' becomes literal infrastructure building.",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Christian Yellow Pages (Δv 0%). The precursor. 'Buy Christian.' It is niche, low quality, and focused on religious signaling. It is not political warfare, just in-group preference. The mainstream economy is viewed as neutral.",
           "key_manifestations": [
             "Christian Yellow Pages",
@@ -10137,7 +10137,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Passion Dollars (Δv +0.5%). The success of *The Passion of the Christ* proves there is a massive underserved market. Hollywood takes note briefly (Fox Faith). The Right realizes they have economic power if they concentrate it.",
           "key_manifestations": [
             "The Passion of the Christ box office",
@@ -10147,7 +10147,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Chick-fil-A Day (Δv +1.0%). Dan Cathy opposes gay marriage. The Left boycotts. Mike Huckabee organizes a 'Buycott.' It smashes records. It proves that 'Political Consumption' works for the Right. It is the first major battle of the Parallel Economy.",
           "key_manifestations": [
             "Chick-fil-A Appreciation Day",
@@ -10157,7 +10157,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Breitbart Tech (Δv +1.0%). The realization that Tech is hostile. Milo and Bannon push the idea of 'Breitbart' as a lifestyle brand. They sell 'Border Wall' construction kits? Not quite, but the *idea* of alternative platforms begins. Gab is founded (Free Speech Twitter).",
           "key_manifestations": [
             "Gab founded",
@@ -10167,7 +10167,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Patreon Bans (Δv +1.5%). Sargon of Akkad is banned from Patreon. Jordan Peterson and Dave Rubin leave in protest to start 'Locals.' SubscribeStar rises. The realization that 'Payment Processors' are the choke point. The infrastructure build begins in earnest.",
           "key_manifestations": [
             "Patreon exodus",
@@ -10177,7 +10177,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Daily Wire (Δv +1.0%). Ben Shapiro's Daily Wire moves from news to 'Entertainment.' They begin producing movies. They sell razors (Harry's pulled ads). 'Jeremy's Razors' is the proof of concept: If you hate us, we will build a competitor and mock you.",
           "key_manifestations": [
             "Harry's Razors pulls ads from Daily Wire",
@@ -10187,7 +10187,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Parler and Goya (Δv +2.0%). The Goya Beans boycott backfires; Trump endorses them. 'Buy Goya.' Parler becomes the #1 app. Then AWS kills Parler. This is the 'Pearl Harbor' of the cluster. It proves: 'You cannot just build an app; you must build the servers.'",
           "key_manifestations": [
             "Goya Foods 'Buycott'",
@@ -10197,7 +10197,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Rumble and DW+ (Δv +1.5%). Rumble goes public/SPAC. It has capital. The Daily Wire hires Gina Carano (fired by Disney). 'Terror on the Prairie.' They are building a parallel Hollywood. It is no longer just a grift; it is capitalized.",
           "key_manifestations": [
             "Rumble SPAC deal",
@@ -10207,7 +10207,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "ESG Backlash (Δv +1.5%). Vivek Ramaswamy's 'Strive Asset Management.' The 'Anti-Woke' BlackRock. State Treasurers pull money from BlackRock. The parallel economy moves to *Finance*. 'PublicSq' launches—an app to find non-woke businesses. The ecosystem connects.",
           "key_manifestations": [
             "Strive Asset Management launch",
@@ -10217,7 +10217,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Bud Light (Δv +2.0%). The Dylan Mulvaney can. The boycott is total. Bud Light loses #1 spot. It proves the Right can destroy a brand. 'Go Woke, Go Broke' finally has a body count. Target is next. The consumer muscle is flexed. 'Ultra Right Beer' launches.",
           "key_manifestations": [
             "Bud Light Boycott (Mulvaney)",
@@ -10227,7 +10227,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Tucker on X (Δv +1.0%). Tucker Carlson is fired by Fox. He moves to X (Twitter). The 'Mainstream Media' is bypassed. X becomes the 'Parallel Media' infrastructure. The 'Ad-pocalypse' on X (advertisers leaving) forces the platform to rely on the Parallel Economy for revenue.",
           "key_manifestations": [
             "Tucker on X",
@@ -10237,7 +10237,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "De-Banking Protection (Δv +1.0%). The Trump administration passes rules against 'Political De-Banking.' The Parallel Economy gets state protection. Bitcoin (Cluster 9) integrates as the payment rail. The separation is formalized: 'Red Economy' vs 'Blue Economy.'",
           "key_manifestations": [
             "Fair Access to Financial Services Rule",
@@ -10253,7 +10253,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the defense of 'Western Civilization' as a distinct, superior, and endangered cultural inheritance. It reacts against 'Multiculturalism,' 'Critical Theory,' and 'Iconoclasm.' It champions the 'Great Books,' Classical Architecture, and the statues of Founders/Explorers. It argues that the West is under siege from within (Universities) and without (Migration), and that 'Preservation' is the highest duty. It shifts from the academic 'Canon Wars' of the 90s to the physical defense of statues in the 2020s.",
       "trajectory": {
         "1995": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Canon Wars (Δv +0.5%). Harold Bloom's *The Western Canon* (1994) is the battleground. Conservatives defend Shakespeare and Dante against 'Grievance Studies.' The Smithsonian 'Enola Gay' exhibit controversy (viewed as anti-American revisionism) rallies the Right to defend historical memory.",
           "key_manifestations": [
             "The Western Canon (Harold Bloom) discourse",
@@ -10263,7 +10263,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The Clash of Civilizations (Δv +0.5%). Samuel Huntington's book frames the future as 'The West vs. The Rest.' It provides the geopolitical framework for Heritage Defense. It argues that culture, not economics, is the fundamental divider. The Right embraces this protectionist view of culture.",
           "key_manifestations": [
             "The Clash of Civilizations and the Remaking of World Order",
@@ -10273,7 +10273,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Stasis (Δv -0.5%). The economy booms. Multiculturalism is marketed as 'Benetton' consumerism. The Heritage defenders retreat to the universities (NAS). *Amistad* attempts a nuanced look at history, which the Right accepts as 'Legal' history rather than 'Anti-American' history.",
           "key_manifestations": [
             "Amistad",
@@ -10283,7 +10283,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Saving Private Ryan (Δv -0.5%). The Greatest Generation. The film serves as a massive bolster to the 'Good America' narrative. It temporarily silences the revisionists. The defense of heritage becomes the defense of the WWII vet.",
           "key_manifestations": [
             "Saving Private Ryan",
@@ -10293,7 +10293,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The End of History Complacency (Δv -0.5%). The West feels invincible. The need to 'defend' it seems paranoid. *The Mummy* treats Egyptology as pulp adventure, reflecting a colonial confidence. The Right focuses on moral decline (Columbine) rather than civilizational collapse.",
           "key_manifestations": [
             "The Mummy",
@@ -10303,7 +10303,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Gladiator (Δv +1.0%). Rome. The film revives the 'Classical' self-image of the West. 'The dream that was Rome.' It resonates with the Right's desire for Republican virtue. The 'Columbus' protests begin in Denver, a harbinger of the statue wars to come.",
           "key_manifestations": [
             "Gladiator",
@@ -10313,7 +10313,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Civilization Under Attack (Δv +2.0%). 9/11. The West is physically attacked. The 'Canon' suddenly matters as a definition of *what* we are defending. Berlusconi says 'Western Civilization is superior.' The Right agrees. *Lord of the Rings* becomes the allegory for the West (Rohan/Gondor) against the East (Mordor).",
           "key_manifestations": [
             "Lord of the Rings: The Fellowship of the Ring",
@@ -10323,7 +10323,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The Orientalist Pivot (Δv +0.5%). The cultural gaze turns to the Middle East. The Right creates a 'Heritage' narrative that links Thermopylae to New York. Bernard Lewis's *What Went Wrong?* is a bestseller. The defense of the West is defined by its opposition to Islamism.",
           "key_manifestations": [
             "What Went Wrong? (Bernard Lewis)",
@@ -10333,7 +10333,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Old Europe (Δv +0.5%). Rumsfeld mocks 'Old Europe' (France/Germany). The American Right claims the mantle of the *true* West (Martial/Christian), arguing Europe has become decadent/secular. *Master and Commander* celebrates the British naval tradition the US inherited.",
           "key_manifestations": [
             "Master and Commander",
@@ -10343,7 +10343,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Alexander (Δv -1.0%). Stone's *Alexander* fails. It deconstructs the hero (bisexuality/hubris). The Right rejects it. *Troy* is preferred (Brad Pitt as Achilles). The 'Huntington' thesis begins to fray as the Iraq War (democratizing the non-West) stalls.",
           "key_manifestations": [
             "Alexander (Flop)",
@@ -10353,7 +10353,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Kingdom of Heaven (Δv -1.0%). Ridley Scott's film critiques the Crusades. The Right (Crusader LARP origins) hates it for 'apologizing' for Western expansion. The term 'Deus Vult' begins to appear in gaming forums, preparing for its political use later.",
           "key_manifestations": [
             "Kingdom of Heaven controversy",
@@ -10363,7 +10363,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "300 (Δv +1.0%). The graphic novel and trailers. It visualizes the 'Defense of the West' against the 'Mystical East' (Persia). It is the perfect artifact for the Cluster. 'This is Sparta.' It defines the visual language of the 'Heritage' movement: Muscular, defiant, outnumbered.",
           "key_manifestations": [
             "300 (Film)",
@@ -10373,7 +10373,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Elizabeth: The Golden Age (Δv -0.5%). The defense against the Armada. It reinforces the Protestant/Anglo narrative. But the cultural energy is moving toward 'Hope and Change' (Progress) rather than Heritage. The Right feels like a relic.",
           "key_manifestations": [
             "Elizabeth: The Golden Age",
@@ -10383,7 +10383,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Obama Shift (Δv -1.5%). Obama's election is viewed by this cluster as a rejection of the 'Euro-American' tradition. His 'Apology Tour' (Cairo Speech) is seen as a surrender of civilizational confidence. The Right pivots to 'The Founders' (Tea Party) as the specific heritage to defend.",
           "key_manifestations": [
             "Obama's Cairo Speech",
@@ -10393,7 +10393,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Churchill Bust (Δv +1.0%). Obama returns the Churchill bust. It becomes a major symbol on Fox News. 'He hates our heritage.' The Tea Party dresses in 1776 garb. The 'Heritage' is no longer abstract; it is a costume. Glenn Beck teaches 'The 5000 Year Leap.'",
           "key_manifestations": [
             "Churchill Bust controversy",
@@ -10403,7 +10403,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "The King's Speech (Δv -0.5%). A celebration of the Monarchy. It is safe, Oscar-bait heritage. The Tea Party prefers *The founding fathers*. The 'Texas School Board' rewriting history textbooks to emphasize Christianity makes national news. The battle for the textbook begins.",
           "key_manifestations": [
             "Texas Board of Education textbook hearings",
@@ -10413,7 +10413,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Thor (Δv -0.5%). Marvel takes over mythology. The gods become superheroes. The 'Sacred' nature of heritage is diluted by 'Content.' The Right grumbles about Black Heimdall, marking the beginning of the 'Woke Casting' wars.",
           "key_manifestations": [
             "Thor (Casting controversy)",
@@ -10423,7 +10423,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Lincoln (Δv +0.5%). Spielberg's *Lincoln*. A worshipful text. The Right loves the 'Great Man' theory, even if they are Neo-Confederates who hate Lincoln. The focus on 'The Constitution' as a holy document peaks.",
           "key_manifestations": [
             "Lincoln (Film)",
@@ -10433,7 +10433,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "BioShock Infinite (Δv -0.5%). The game critiques 'American Exceptionalism' (Columbia). It satirizes the Tea Party aesthetic. The Right rejects it. The 'Columbus Day vs Indigenous Peoples Day' conflict begins to heat up in liberal cities.",
           "key_manifestations": [
             "BioShock Infinite",
@@ -10443,7 +10443,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "American Sniper (Δv +0.5%). The defense of the Crusader (Kyle has a Crusader tattoo). The film is a massive hit. It validates the 'Warrior Heritage' of the West. The Left calls it propaganda; the Right calls it Truth. The gap widens.",
           "key_manifestations": [
             "American Sniper",
@@ -10453,7 +10453,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Confederate Flag (Δv +2.5%). Dylann Roof shoots up a church. The Confederate Flag is banned from SC Capitol. A massive backlash ensues in the South. 'Heritage not Hate.' The defense of symbols becomes the primary political activity. Trump defends the 'Old America.'",
           "key_manifestations": [
             "Confederate Flag removal debates",
@@ -10463,7 +10463,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Steve King's Tweet (Δv +1.0%). 'We can't restore our civilization with somebody else's babies.' The 'Great Replacement' theory enters the chat explicitly. The defense of 'Heritage' becomes explicitly demographic. Trump's 'America First' implies a specific (Western) America.",
           "key_manifestations": [
             "Steve King civilization tweet",
@@ -10473,7 +10473,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Charlottesville (Δv +3.0%). The Robert E. Lee statue. 'You will not replace us.' The defense of the statue merges with White Nationalism. It is a disaster for the 'Normie' Heritage defenders, who are tainted by association. Trump's 'Beautiful Statues' tweet keeps the issue alive. The 'Statue War' begins.",
           "key_manifestations": [
             "Unite the Right Rally (Statue defense pretext)",
@@ -10483,7 +10483,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "The Simpson's Apu (Δv -2.0%). The 'Problem with Apu' documentary. The erasure of cultural stereotypes is viewed by the Right as 'Iconoclasm.' They defend the 'Old Culture' (even the offensive parts) against the 'New Puritans.'",
           "key_manifestations": [
             "The Problem with Apu controversy",
@@ -10493,7 +10493,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "Notre Dame Fire (Δv +1.0%). The Cathedral burns. It is a psychic shock. The Right views it as a metaphor for the suicide of the West. 'Rebuild it as it was.' The rejection of the 'Modernist' glass roof proposals is fierce. Beauty is non-negotiable.",
           "key_manifestations": [
             "Notre Dame Fire",
@@ -10503,7 +10503,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "The Year of the Statue (Δv +5.0%). George Floyd Riots lead to the toppling of statues: Columbus, Washington, Grant, Churchill (defaced). The Right watches in horror. 'They are erasing our history.' Trump's Mt. Rushmore speech is the counter-attack. The 'Garden of American Heroes' is proposed. The defense of the *Bronze Man* is the proxy for the defense of the *White Man*.",
           "key_manifestations": [
             "Toppling of Christopher Columbus statues",
@@ -10513,7 +10513,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "Critical Race Theory (Δv -2.0%). The battle moves from the 'Square' (Statues) to the 'Classroom' (CRT). Parents storm school boards. They defend the 'Founding Fathers' against being labeled racists. The 'Heritage' defense is now a local suburban issue.",
           "key_manifestations": [
             "CRT School Board fights",
@@ -10523,7 +10523,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "The Northman (Δv +1.0%). The Right embraces the 'Viking' aesthetic. A return to a pre-Christian, raw heritage. 'Retvrn.' The 'Western Art' Twitter accounts gain millions of followers. Beauty is the weapon. The 'Elgin Marbles' debate renews the defense of the Museum.",
           "key_manifestations": [
             "The Northman",
@@ -10533,7 +10533,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Ancient Apocalypse (Δv +1.0%). Graham Hancock's show. The idea of a 'Lost Advanced Civilization' (read: White/Atlantean) appeals to the desire for a deeper, grander heritage than the one being deconstructed. The 'Cleopatra' Netflix doc (Black casting) causes a massive backlash. 'Stop stealing our history.'",
           "key_manifestations": [
             "Netflix Cleopatra controversy",
@@ -10543,7 +10543,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 17.0,
+          "salience_share": 17.0,
           "description": "The Roman Empire Trend (Δv +1.0%). 'How often do you think about the Roman Empire?' The TikTok trend reveals that men think about it constantly. It validates the Right's obsession. The 'Vitalist' Right links physical fitness to Greek Statues. Heritage is somatic.",
           "key_manifestations": [
             "Roman Empire TikTok trend",
@@ -10553,7 +10553,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 18.0,
+          "salience_share": 18.0,
           "description": "The 250th Anniversary (Δv +1.0%). The Semiquincentennial (2026) prep begins. The Trump/Vance administration plans a massive, '1776-style' celebration. The '1619' narrative is purged from federal sites. The 'American Heritage' is the official state religion again.",
           "key_manifestations": [
             "Planning of the 'Year of America' celebration",
@@ -10569,7 +10569,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the rejection of 'Girlboss' feminism and the corporate rat race in favor of traditional gender roles, domesticity, and aestheticized homemaking. It evolves from the apolitical 'Martha Stewart' 90s to the 'Mommy Blog' 2000s, and finally radicalizes into the 'Trad Wife' (Traditional Wife) movement of the 2020s. It frames submission to a husband and baking sourdough bread not as oppression, but as liberation from the 'Woke Capital' machine.",
       "trajectory": {
         "1995": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Martha Stewart Living (Δv +0.1%). Martha is the Queen. She aestheticizes the home. It is not political; it is aspirational. 'Domestic Perfection' is a status symbol for the working woman, not a rejection of work. The 'Supermom' ideal is the burden.",
           "key_manifestations": [
             "Martha Stewart Living TV show",
@@ -10579,7 +10579,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The Soccer Mom (Δv 0%). The political demographic is named. She is a suburban moderate. She wants safety and good schools. She is not 'Trad'; she is busy. The First Wives Club celebrates independence, not submission.",
           "key_manifestations": [
             "The 'Soccer Mom' vote",
@@ -10589,7 +10589,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Ellen's Coming Out (Δv -0.5%). The culture moves toward redefining the family. The Right boycotts Disney (Southern Baptists). The 'Traditional Family' feels under attack, but the response is defensive, not aesthetic.",
           "key_manifestations": [
             "Ellen DeGeneres coming out",
@@ -10599,7 +10599,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Practical Magic (Δv +0.5%). The midnight margaritas. The witchy domesticity. It plants a seed for the future 'Cottagecore' aesthetic—magical, female-centric, rooted in the house/garden.",
           "key_manifestations": [
             "Practical Magic",
@@ -10609,7 +10609,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "American Beauty (Δv +0.5%). The critique of the perfectionist housewife (Carolyn Burnham). The rose shears. The Right sees this as Hollywood attacking the family. The Left sees it as liberation. The 'Perfect Home' becomes suspicious.",
           "key_manifestations": [
             "American Beauty",
@@ -10619,7 +10619,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Gilmore Girls (Δv -0.5%). The single mom is the ideal. Lorelai Gilmore is the anti-Trad Wife. She is fast-talking, career-driven, independent. The cozy town (Stars Hollow) is desired, but the gender roles are modernized.",
           "key_manifestations": [
             "Gilmore Girls premiere",
@@ -10629,7 +10629,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "The Nigella Lawson Effect (Δv +0.5%). The 'Domestic Goddess.' Cooking becomes sexy/luscious, not just a chore. It re-eroticizes the kitchen. It paves the way for the 'Hot Homemaker' archetype.",
           "key_manifestations": [
             "Nigella Bites (TV)",
@@ -10639,7 +10639,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "My Big Fat Greek Wedding (Δv -0.5%). The ethnic family is overwhelming but loving. The goal is marriage, but also agency. The 'Trad' element is played for laughs ('Windex').",
           "key_manifestations": [
             "My Big Fat Greek Wedding",
@@ -10649,7 +10649,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Mona Lisa Smile (Δv +1.0%). The film critiques the 1950s Wellesley expectation of marriage. However, the *aesthetic* of the 50s begins to be reclaimed. The Right watches it and roots for the 'Trad' girls. The 'Opt-Out Revolution' (NYT article) discusses women leaving careers.",
           "key_manifestations": [
             "Mona Lisa Smile",
@@ -10659,7 +10659,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Desperate Housewives (Δv +0.5%). Bree Van de Kamp. The gun-toting, perfectionist Republican housewife. She is a caricature, yet she becomes a gay icon and a conservative favorite. She defends the home with a shotgun. Domesticity with an edge.",
           "key_manifestations": [
             "Desperate Housewives premiere",
@@ -10669,7 +10669,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Pride & Prejudice (Δv +0.5%). The Joe Wright version. The mud, the pigs, the piano. It romanticizes the 'Gentry' life. It becomes the foundational text for the 'Dark Academia / Cottagecore' pipeline. The desire for a 'Mr. Darcy' who owns an estate.",
           "key_manifestations": [
             "Pride & Prejudice (2005)",
@@ -10679,7 +10679,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The Devil Wears Prada (Δv -0.5%). The career is the goal. The boyfriend who wants a grilled cheese is the villain (to the audience then). The 'Girlboss' archetype begins to solidify. Domesticity is for those who can't hack it in fashion.",
           "key_manifestations": [
             "The Devil Wears Prada",
@@ -10689,7 +10689,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Enchanted (Δv +0.5%). The Disney Princess enters the real world. She cleans the apartment with vermin. It is a satire, but it re-introduces 'singing while working' as a valid joy. *Mad Men* premieres—Betty Draper is the tragic housewife, but her wardrobe is coveted.",
           "key_manifestations": [
             "Enchanted",
@@ -10699,7 +10699,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Twilight (Δv +0.5%). Bella wants to marry the dangerous protector at 18. It rejects the 'College/Career' script in favor of 'Eternal Marriage.' Mormon theology (Meyer) embedded in pop culture. The 'Trad' romance returns.",
           "key_manifestations": [
             "Twilight",
@@ -10709,7 +10709,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Pioneer Woman (Δv +0.5%). Ree Drummond starts blogging. The 'Ranch Wife' aesthetic. Cooking for the cowboys. It monetizes the rural domestic fantasy. The 'Mommy Blog' era explodes. It is not political yet, but it builds the network.",
           "key_manifestations": [
             "The Pioneer Woman blog growth",
@@ -10719,7 +10719,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Pinterest (Δv +0.5%). Pinterest launches. The curation of the 'Perfect Home.' Mason jars, burlap, barn weddings. It creates a visual standard for domesticity that is pre-industrial. The 'Hipster Homemaker' overlaps with the 'Christian Homemaker.'",
           "key_manifestations": [
             "Pinterest launch",
@@ -10729,7 +10729,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Help (Δv +0.5%). A look at 60s domesticity. While about race, the visuals of the bridge clubs and potlucks reinforce the 'Mid-Century' revival. *New Girl* premieres—Jess is 'adorkable' and domestic (knitting/baking) but modern.",
           "key_manifestations": [
             "The Help",
@@ -10739,7 +10739,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Girls (Δv -0.5%). Lena Dunham. The anti-aesthetic. Naked, messy, urban. The Right reviles it. It clarifies the enemy: The 'Woke, Ugly, Urban Feminist.' The Trad Wife defines herself against Hannah Horvath.",
           "key_manifestations": [
             "Girls premiere",
@@ -10749,7 +10749,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Frozen (Δv -0.5%). 'I don't need a man.' The sister bond replaces the romance. The Trad sphere critiques Disney for destroying the Prince Charming archetype. The 'War on Men' discourse enters the Mommy Blogs.",
           "key_manifestations": [
             "Frozen",
@@ -10759,7 +10759,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Fixer Upper (Δv +0.5%). Chip and Joanna Gaines. The 'Shiplap' revolution. The dream is to renovate a farm in Waco and raise kids. Joanna Gaines becomes the Saint of the movement. Conservative, Christian, but mainstream chic.",
           "key_manifestations": [
             "Fixer Upper popularity",
@@ -10769,7 +10769,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Great British Bake Off (Δv +0.5%). It conquers the US. Wholesome, low stakes, skill-based. It triggers a massive 'Sourdough' and 'Pie' revival. Domesticity is a sport. It is a refuge from the Trump/Hillary noise.",
           "key_manifestations": [
             "Great British Bake Off mania",
@@ -10779,7 +10779,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Ivanka vs. Melania (Δv +1.0%). Ivanka is 'Women who Work.' Melania is the 'Trophy Wife' (in the eyes of critics) but 'Traditional Beauty' to the base. The base prefers Melania's silence and aesthetic to Ivanka's Lean-In feminism. The 'Trad' seeds are watered by the Alt-Right's anime waifus.",
           "key_manifestations": [
             "Ivanka Trump's 'Women who Work'",
@@ -10789,7 +10789,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "The Trad Wife Meme (Δv +1.0%). The 'Trad Girl' vs 'Thot' memes on 4chan. The idealization of the white, blonde, sundress-wearing mother. It moves from 4chan to Instagram. 'Mrs. Midwest' begins vlogging about feminine submission and elegance.",
           "key_manifestations": [
             "Mrs. Midwest YouTube channel",
@@ -10799,7 +10799,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Girl Wash Your Face (Δv +0.5%). Rachel Hollis. The 'Christian Girlboss.' It bridges the gap, but the Trad sphere begins to reject the 'Hustle.' They want 'Rest.' The anti-feminist sentiment grows: 'Feminism lied to us, work sucks.'",
           "key_manifestations": [
             "Girl, Wash Your Face (Book)",
@@ -10809,7 +10809,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Little Women (Δv +0.5%). Greta Gerwig's adaptation. Meg's line: 'Just because my dreams are different than yours doesn't mean they're unimportant.' The defense of the desire to be a mother. The Trad Right clips this scene relentlessly.",
           "key_manifestations": [
             "Little Women (2019)",
@@ -10819,7 +10819,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Cottagecore (Δv +3.0%). The Pandemic. Everyone is baking bread. The 'Cottagecore' aesthetic explodes on TikTok. It is a retreat from the world. For the Left, it's lesbian sheep farmers. For the Right, it's 'Return to Tradition.' The aesthetics merge.",
           "key_manifestations": [
             "Cottagecore TikTok",
@@ -10829,7 +10829,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Stay at Home Girlfriend (Δv +1.0%). TikTok trend. Young women glorifying not working. It is the secular version of Trad Wife. The 'Soft Life.' The rejection of the Girlboss is complete. 'I don't want to break the glass ceiling; I want to be a passenger princess.'",
           "key_manifestations": [
             "Stay at Home Girlfriend TikToks",
@@ -10839,7 +10839,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Don't Worry Darling (Δv +1.0%). The film tries to critique the 50s simulation, but the *visuals* are consumed as aspiration by the Right. 'Harry Styles providing for Florence Pugh.' The 'Trad Wife' controversy hits mainstream news. Estee Williams goes viral.",
           "key_manifestations": [
             "Don't Worry Darling",
@@ -10849,7 +10849,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Nara Smith / Ballerina Farm (Δv +1.0%). The Mormons take over. Hannah Neeleman (Ballerina Farm) is the Queen. 8 kids, beauty queen, making cheese from scratch. It is 'High Performance Domesticity.' The controversy over her 'giving up her career' only strengthens the Right's resolve.",
           "key_manifestations": [
             "Ballerina Farm viral debates",
@@ -10859,7 +10859,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 17.0,
+          "salience_share": 17.0,
           "description": "Harrison Butker (Δv +1.0%). The Chiefs Kicker gives a commencement speech telling women their 'most important title is homemaker.' The Left melts down. The Right buys his jersey. It aligns the NFL (Cluster 16) with the Trad Wife (Cluster 35).",
           "key_manifestations": [
             "Harrison Butker Commencement Speech",
@@ -10869,7 +10869,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 17.5,
+          "salience_share": 17.5,
           "description": "The Baby Bonus (Δv +0.5%). The 'Trad Wife' moves from aesthetic to policy. The Vance child tax credit proposals. The state incentivizing the 'Stay at Home' parent. The 'Soft Life' becomes a subsidized life. The 'Homemaker' is recognized as a job class.",
           "key_manifestations": [
             "Expanded Child Tax Credit legislation",
@@ -10885,7 +10885,7 @@ export const rightWingCultureData = {
       "description": "The belief that falling birth rates are the primary existential threat to civilization ('Population Collapse'). It rejects the Malthusian 'Overpopulation' narrative of the Left. It advocates for large families, artificial wombs, genetic screening, and cultural engineering to raise the TFR (Total Fertility Rate). Led by tech-elites (Musk, Collins) and religious traditionalists, it seeks to out-breed the 'Woke Mind Virus.'",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Quiverfull Fringe (Δv 0%). The idea of 'breeding for God' is limited to the deep fundamentalist fringe (Duggars). The mainstream concern is still 'Overpopulation' (Captain Planet). The Right defends the family, but not explicitly for 'demographic warfare.'",
           "key_manifestations": [
             "Mary Pride's 'The Way Home'",
@@ -10895,7 +10895,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Idiocracy (Δv +1.0%). The film releases. The opening scene (smart couple waiting, dumb couple breeding) becomes the defining meme of this cluster. It introduces 'Dysgenics' to the pop culture. It frames intelligence as heritable and threatened.",
           "key_manifestations": [
             "Idiocracy opening scene",
@@ -10905,7 +10905,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "The Tiger Mom (Δv +0.5%). Amy Chua's book. It highlights the 'Cultural' aspect of child-rearing success. The anxiety about Western parenting softness grows. 'Demographics is Destiny' (Steyn) begins to circulate in conservative media regarding Islam/Europe.",
           "key_manifestations": [
             "Battle Hymn of the Tiger Mother",
@@ -10915,7 +10915,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Handmaid's Tale (Δv -0.5%). The show premieres. It frames 'Natalism' as Fascism. The Right rejects the show, but it forces them to articulate a 'Pro-Natalist' vision that isn't Gilead. They fail to do so effectively yet.",
           "key_manifestations": [
             "The Handmaid's Tale",
@@ -10925,7 +10925,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Musk's Warning (Δv +1.0%). Elon Musk starts tweeting about 'Population Collapse' as a bigger threat than Climate Change. It mainstreams the idea to the Tech Bros. The Collins Couple (Pronatalist.org) begin their media tour. 'Have 8 kids to save the world.'",
           "key_manifestations": [
             "Elon Musk 'Population Collapse' tweets",
@@ -10935,7 +10935,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The IVF Debate (Δv +1.0%). The Roe overturn triggers a debate on IVF. The 'Natalist' wing (Tech) supports IVF/Tech solutions. The 'Religious' wing (Catholics) opposes it. The tension rises. 'Polygenic Embryo Selection' becomes a whispered topic in elite circles.",
           "key_manifestations": [
             "IVF legal questions post-Dobbs",
@@ -10945,7 +10945,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Birth Gap (Δv +1.0%). The data comes out: TFR is collapsing globally (Korea 0.7). It creates a panic. The 'Childless Cat Lady' meme (Vance) targets the non-breeders. Natalism moves from 'Lifestyle' to 'Civilizational Imperative.'",
           "key_manifestations": [
             "South Korea fertility rate headlines",
@@ -10955,7 +10955,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Natalist Policy (Δv +1.0%). Trump proposes 'Baby Bonuses.' The Right embraces 'State Sponsored Fertility' (Hungary Model). The libertarian 'cost of kids' argument is overridden by the 'future of the race' argument. The 'Trad Wife' acts as the propaganda arm.",
           "key_manifestations": [
             "Trump 'Baby Bonus' proposal",
@@ -10965,7 +10965,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "The Artificial Womb (Δv +1.0%). Ectogenesis technology advances. The cluster splits: 'Naturalists' (Trad) vs 'Technologists' (Musk). Can we save humanity by growing babies in labs? The 'Bio-Conservative' vs 'Transhumanist' war begins on the Right.",
           "key_manifestations": [
             "Breakthrough in artificial womb tech announced",
@@ -10981,7 +10981,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the belief that the government is a corporation, and by using specific pseudo-legal language ('I do not consent,' 'traveling not driving,' 'accepted for value'), one can opt out of its jurisdiction. Originally a fringe belief of the Posse Comitatus, it exploded via YouTube (viral traffic stops) and merged with QAnon to create a mass movement of people filing false liens, refusing taxes, and believing in 'Strawman' bank accounts. It is the legal theory of the dispossessed.",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Montana Freemen (Δv +0.2%). The standoff in Jordan, Montana. They issue their own liens and checks. It brings 'Common Law Court' ideology to the news. It is viewed as dangerous extremism post-Oklahoma City.",
           "key_manifestations": [
             "Montana Freemen Standoff",
@@ -10991,7 +10991,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "The Liens (Δv +0.2%). The Freemen surrender, but the tactic of filing billion-dollar liens against judges spreads through the prison system. It becomes 'Paper Terrorism.' The internet (Usenet) begins to spread the 'Redemption Theory.'",
           "key_manifestations": [
             "USA v. Schweitzer",
@@ -11001,7 +11001,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Stasis (Δv -0.2%). The economy is too good for financial desperation theories to thrive mainstream. The movement festers in the 'Patriot' underground.",
           "key_manifestations": [
             "Conspiracy Theory (Film)",
@@ -11011,7 +11011,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Elavid (Δv 0%). The use of the 'Strawman' argument (your name in ALL CAPS is a corporation) spreads. It appeals to debtors. Wesley Snipes begins his tax protest journey, bringing visibility.",
           "key_manifestations": [
             "Wesley Snipes tax issues begin",
@@ -11021,7 +11021,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 1.2,
+          "salience_share": 1.2,
           "description": "Y2K Panic (Δv +0.2%). The belief that the banking system will collapse fuels the 'Strawman' debt forgiveness theories. 'NESARA' (a fake economic reformation act) begins to circulate online.",
           "key_manifestations": [
             "NESARA conspiracy theories birth",
@@ -11031,7 +11031,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Matrix Defense (Δv -0.2%). A woman uses the 'Matrix Defense' (reality isn't real) in court. It fails. The movement remains a laughingstock in the legal profession, dubbed 'Organized Pseudolegal Commercial Arguments.'",
           "key_manifestations": [
             "The Matrix Defense cases",
@@ -11041,7 +11041,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The Patriot Act (Δv +0.5%). The expansion of federal power confirms the 'Tyranny.' Sovereigns argue the US is under Martial Law since 1933 (or 2001). They double down on 'UCC' (Uniform Commercial Code) filings to protect themselves.",
           "key_manifestations": [
             "UCC Filing spikes",
@@ -11051,7 +11051,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Stasis (Δv 0%). The focus is on foreign war. Domestic 'Sovereigns' are quiet. The 'Moorish Science Temple' offshoots begin to adopt SovCit language, spreading it to Black communities.",
           "key_manifestations": [
             "Rise of Moorish Sovereign movements",
@@ -11061,7 +11061,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Tax Protest (Δv 0%). Irwin Schiff (Peter Schiff's father) publishes 'The Federal Mafia.' He is the guru of 'The Income Tax is Voluntary.' It attracts libertarians to the SovCit fringe.",
           "key_manifestations": [
             "The Federal Mafia (Irwin Schiff)",
@@ -11071,7 +11071,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 1.8,
+          "salience_share": 1.8,
           "description": "Killdozer (Δv +0.3%). Marvin Heemeyer bulldozes Granby, CO over a zoning dispute. While not a strict SovCit, he becomes a folk hero for the 'Unreasonable Man' fighting the town council corporation. 'Sometimes reasonable men must do unreasonable things.'",
           "key_manifestations": [
             "Killdozer rampage",
@@ -11081,7 +11081,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Wesley Snipes Indicted (Δv -0.3%). Snipes is charged. It proves the '861 argument' (tax law doesn't apply domestically) doesn't work. It dampens the movement's celebrity appeal.",
           "key_manifestations": [
             "Wesley Snipes indictment",
@@ -11091,7 +11091,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The Secret (Δv 0%). The 'Law of Attraction' mirrors SovCit logic: 'If I say the right words, the universe/court must obey.' The magical thinking aligns.",
           "key_manifestations": [
             "The Secret",
@@ -11101,7 +11101,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Foreclosure Defense (Δv +0.5%). The housing market cracks. Desperate homeowners look for a way out. SovCits offer 'Land Patents' and 'Quiet Title' hacks to keep the house without paying. The grift explodes.",
           "key_manifestations": [
             "Foreclosure seminars (SovCit recruitment)",
@@ -11111,7 +11111,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Debt Redemption (Δv +1.0%). The financial crisis. The 'Strawman' account theory (the government owes you millions for your birth certificate) becomes a lifeline for the bankrupt. Seminars fill up.",
           "key_manifestations": [
             "Strawman Redemption seminars",
@@ -11121,7 +11121,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The Constitutional Sheriffs (Δv +0.5%). Richard Mack founds the CSPOA. The idea that the County Sheriff is the highest law in the land (above the FBI). It bridges the gap between SovCits and mainstream Tea Party politics.",
           "key_manifestations": [
             "Constitutional Sheriffs and Peace Officers Association",
@@ -11131,7 +11131,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "YouTube Window Smash (Δv +0.5%). Smartphones + Traffic Stops. 'Am I being detained?' videos go viral. It becomes a genre of entertainment. Viewers root for the citizen against the cop, or the cop against the lunatic. It spreads the script.",
           "key_manifestations": [
             "Viral 'Am I Being Detained' videos",
@@ -11141,7 +11141,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "FBI Warning (Δv 0%). The FBI classifies Sovereign Citizens as a domestic terror threat. The movement is driven underground but grows online. The 'Guru' economy (selling fake license plates) booms.",
           "key_manifestations": [
             "FBI Domestic Terror Report",
@@ -11151,7 +11151,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Sandy Hook Trutherism (Δv +0.5%). The intersection of SovCits and False Flag theorists. They harass parents. It shows the cruelty of the 'Nothing is Real' worldview. The law is just a script to be deconstructed.",
           "key_manifestations": [
             "Sandy Hook conspiracy theorists",
@@ -11161,7 +11161,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Bitcoin (Δv 0%). Some Sovereigns move to Crypto (Cluster 9) as the financial exit. But most are too poor/low-tech; they stick to paper liens.",
           "key_manifestations": [
             "Bitcoin adoption in libertarian circles",
@@ -11171,7 +11171,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Bundy Ranch (Δv +1.0%). Cliven Bundy refuses to pay grazing fees. He cites sovereign theories. The Feds back down. It is a massive validation. 'The Law applies only if you consent.'",
           "key_manifestations": [
             "Bundy Ranch Standoff",
@@ -11181,7 +11181,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Occupation (Δv -0.5%). The Malheur Refuge occupation (Ammon Bundy). It ends in death (LaVoy Finicum). The limits of sovereignty are tested violently. The movement martyrs Finicum.",
           "key_manifestations": [
             "Malheur National Wildlife Refuge occupation",
@@ -11191,7 +11191,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Moorish Rise (Δv +0.5%). The 'Moorish' variant (Black SovCits) grows in urban areas. They squat in houses claiming 'Indigenous Rights.' It becomes a headache for landlords and police. A weird cross-racial unity in the ideology.",
           "key_manifestations": [
             "Moorish Science Temple squatting cases",
@@ -11201,7 +11201,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "QAnon Merger (Δv +0.5%). QAnon absorbs SovCit logic. 'The US Corporation' (1871 Act) theory becomes Q canon. Trump will restore the 'Republic.' The esoteric legal theory goes mainstream MAGA.",
           "key_manifestations": [
             "QAnon 'US Corporation' drops",
@@ -11211,7 +11211,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "License Plate Vigilantes (Δv +0.5%). More people driving with 'Private Traveler' plates. Police training has to update to deal with the script. The 'Sovereign' is now a recognizable demographic on bodycam footage.",
           "key_manifestations": [
             "Bodycam channels on YouTube (PoliceActivity)",
@@ -11221,7 +11221,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Title 4 Flag (Δv +0.5%). The 'Gold Fringed Flag' theory (Admiralty Law) is discussed in state legislatures by fringe candidates. The virus of bad law spreads.",
           "key_manifestations": [
             "Gold Fringed Flag discourse",
@@ -11231,7 +11231,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Anti-Mask Lawfare (Δv +2.0%). 'I have a medical exemption.' 'You are violating the Nuremberg Code.' SovCit language is weaponized against Target employees. Normies adopt the pseudo-legal script to avoid masks. The 'Notice of Liability' documents flood schools.",
           "key_manifestations": [
             "Anti-Mask 'Notice of Liability' cards",
@@ -11241,7 +11241,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Queen Romana Didulo (Δv +1.0%). The 'Queen of Canada' (QAnon offshoot) convinces followers to stop paying utilities. They lose power/homes. It shows the destructive power of the delusion. In the US, the '1776 Returns' document (Jan 6) uses SovCit logic.",
           "key_manifestations": [
             "Romana Didulo cult",
@@ -11251,7 +11251,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "American State National (Δv +1.0%). The rebrand. 'I am not a SovCit, I am an American State National.' Seminars charge thousands to 'correct your status' (passport fraud). It becomes a MLM of bad law. Police struggle with the sheer volume.",
           "key_manifestations": [
             "American State National seminars",
@@ -11261,7 +11261,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "Squatter Crisis (Δv +0.5%). TikTok tutorials on 'Squatter's Rights' use SovCit language. 'Adverse Possession.' It forces states (FL/GA) to pass new laws. The SovCit moves from the car to the house.",
           "key_manifestations": [
             "Squatter Hunter viral videos",
@@ -11271,7 +11271,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Tax Protest Returns (Δv +0.5%). Inflation drives desperation. 'The IRS is a private corporation.' The debt elimination scams peak. The 'Quantum Financial System' (QFS) myth promises to wipe all debt. It is the financial endgame of the cluster.",
           "key_manifestations": [
             "Quantum Financial System (QFS) rumors",
@@ -11281,7 +11281,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The Crackdown (Δv -10.0%). The Trump administration (Cluster 10) wants 'Law and Order.' They crackdown on the 'Paper Terrorists' clogging the courts. The 'Sovereign' is useful as a voter, but annoying as a litigant. The movement fractures or is suppressed by the new DOJ.",
           "key_manifestations": [
             "Federal crackdown on 'Debt Elimination' scams",
@@ -11297,7 +11297,7 @@ export const rightWingCultureData = {
       "description": "The visceral hatred of the 'Mid-level Bureaucrat,' the 'HR Lady,' and the 'Compliance Officer.' It frames the central conflict of modern life not as Capital vs. Labor, but as 'The Productive' vs. 'The Administrative.' It targets the 'Email Job' caste. It seeks to fire the managers, dismantle the agencies, and return to 'Common Sense.' It is the 'Office Space' revolt weaponized by the Right.",
       "trajectory": {
         "1995": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The DMV Joke (Δv 0%). Hating the DMV is a bipartisan pastime. It is comedy, not war. *Seinfeld* mocks the postal worker (Newman). Bureaucracy is annoying, not evil.",
           "key_manifestations": [
             "Seinfeld (Newman)",
@@ -11307,7 +11307,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Stasis (Δv 0%). The focus is on welfare reform (ending the bureaucracy of poverty). Clinton signs it. The Right feels they won the battle against the 'Welfare State.'",
           "key_manifestations": [
             "Welfare Reform Act",
@@ -11317,7 +11317,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Stasis (Δv 0%). The economy is efficient. The 'Reinventing Government' initiative (Gore) promises to shrink the state. It feels like the problem is being solved.",
           "key_manifestations": [
             "Reinventing Government initiative",
@@ -11327,7 +11327,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Stasis (Δv 0%). Impeachment is about the President, not the staff. The bureaucracy keeps running while the politicians fight. It is seen as a stabilizer.",
           "key_manifestations": [
             "The Truman Show",
@@ -11337,7 +11337,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Office Space (Δv +1.0%). The film releases. It crystallizes the hatred of the 'TPS Report.' It isn't political yet, but it identifies the soul-crushing nature of the 'Paper Pusher.' The 'Bob' consultants are the villains. It becomes the manifesto of the disaffected worker.",
           "key_manifestations": [
             "Office Space",
@@ -11347,7 +11347,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The Recount (Δv -0.5%). The bureaucracy (canvassing boards) fails to count the votes. Looking at 'hanging chads.' It makes the state look incompetent, but not malicious. The focus is on the Judges.",
           "key_manifestations": [
             "The Recount spectacle",
@@ -11357,7 +11357,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The TSA (Δv +0.5%). 9/11 creates the TSA. The 'Security Theater' begins. Taking off shoes. The Right accepts it for safety, but the seeds of resentment against the 'Blue Gloved Agent' are planted. The ultimate unaccountable bureaucracy is born.",
           "key_manifestations": [
             "TSA creation",
@@ -11367,7 +11367,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Department of Homeland Security (Δv +0.5%). The massive consolidation. The Right fears 'Big Brother' less than 'Incompetence.' The libertarian wing begins to grumble about the size of the state.",
           "key_manifestations": [
             "DHS formation",
@@ -11377,7 +11377,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Stasis (Δv -0.5%). The focus is on the military (Cluster 5). The soldier is the hero; the bureaucrat is ignored. *The Office US* is in development.",
           "key_manifestations": [
             "School of Rock",
@@ -11387,7 +11387,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "The Incredibles (Δv +0.5%). The superhero is crushed by the Insurance Company bureaucracy. 'I'm not happy, Bob.' It links the suppression of excellence to the 'Compliance' culture. A major touchstone for this cluster.",
           "key_manifestations": [
             "The Incredibles",
@@ -11397,7 +11397,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Brownie (Δv +1.5%). Hurricane Katrina. 'Heck of a job, Brownie.' The incompetence of the FEMA appointee. The realization that the bureaucracy is staffed by cronies, not experts. It shatters faith in the 'Administrative State.'",
           "key_manifestations": [
             "Michael Brown (FEMA) scandal",
@@ -11407,7 +11407,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Idiocracy (Δv -0.5%). The bureaucracy of the future is dumb. 'Carl's Jr. Fuck You.' It frames the state as low-IQ. The frustration is with 'Stupidity' rather than 'Malice.'",
           "key_manifestations": [
             "Idiocracy",
@@ -11417,7 +11417,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Stasis (Δv -0.5%). The economy is the focus. Ron Paul attacks the Federal Reserve (a bureaucracy), but it's niche. The 'dmv' joke is still just a joke.",
           "key_manifestations": [
             "Michael Clayton",
@@ -11427,7 +11427,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Regulators Failed (Δv +1.0%). The SEC missed Madoff. The Fed missed the bubble. The Bureaucracy failed to protect the public. The Right argues: 'Why pay them if they don't work?'",
           "key_manifestations": [
             "Madoff Scandal / SEC failure",
@@ -11437,7 +11437,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Death Panels (Δv +1.0%). The ACA debate. The fear of the 'Bureaucrat' deciding if grandma lives or dies. 'Government Healthcare.' It is the peak of the fear of the Administrative State affecting personal life. The Tea Party mobilizes against the 'Czar.'",
           "key_manifestations": [
             "Death Panel rhetoric",
@@ -11447,7 +11447,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Ron Swanson (Δv +0.5%). *Parks and Rec* becomes a hit. Ron Swanson is the hero of the Right. He works in the government to destroy it. 'Starve the Beast.' He humanizes the Anti-Bureaucratic sentiment.",
           "key_manifestations": [
             "Ron Swanson popularity",
@@ -11457,7 +11457,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Solyndra (Δv -0.5%). The DOE loan guarantees fail. It proves bureaucrats can't pick winners. It reinforces the 'Incompetence' narrative. The 'Green Energy' bureaucrat is the specific target.",
           "key_manifestations": [
             "Solyndra scandal",
@@ -11467,7 +11467,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The VA Scandal (Δv +0.5%). Secret waiting lists at the VA. Veterans dying. It confirms that 'Government Healthcare kills.' The 'Administrator' is now a villain who cooks the books.",
           "key_manifestations": [
             "VA Waiting List scandal leaks",
@@ -11477,7 +11477,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "Lois Lerner (Δv +1.5%). The IRS targets Tea Party groups. This is the turning point. The Bureaucracy is no longer 'Incompetent,' it is 'Weaponized.' The 'Deep State' narrative begins here. The agency is the enemy of the people.",
           "key_manifestations": [
             "IRS Targeting Scandal / Lois Lerner",
@@ -11487,7 +11487,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Captain America 2 (Δv +0.5%). *Winter Soldier*. SHIELD is Hydra. The security state has been infiltrated by Nazis/Evil. It is the perfect pop-culture metaphor for the 'Deep State' theory. The good guy (Cap) must destroy the agency.",
           "key_manifestations": [
             "Captain America: The Winter Soldier",
@@ -11497,7 +11497,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "The Swamp (Δv +0.5%). Trump adopts 'Drain the Swamp.' The Swamp is the permanent class of consultants, lobbyists, and bureaucrats. It resonates because everyone hates the 'Process.' The 'Permit Raj' is the target.",
           "key_manifestations": [
             "Drain the Swamp slogan",
@@ -11507,7 +11507,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "The Insurance Policy (Δv +2.0%). Strzok and Page texts. The FBI 'Insurance Policy' against Trump. It confirms the 'Deep State' is active and political. The 'G-Man' is no longer Elliot Ness; he is Peter Strzok. The distrust of the FBI becomes total on the Right.",
           "key_manifestations": [
             "Strzok/Page Texts revealed",
@@ -11517,7 +11517,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 11.5,
+          "salience_share": 11.5,
           "description": "The Resistance (Δv -0.5%). Bureaucrats proudly leak to the press. 'I am part of the Resistance.' They view themselves as guardians; the Right views them as mutineers. The 'Administrative State' is the 4th Branch.",
           "key_manifestations": [
             "Anonymous NYT Op-Ed",
@@ -11527,7 +11527,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 11.0,
+          "salience_share": 11.0,
           "description": "QAnon Deep State (Δv -0.5%). The critique gets hijacked by the 'Satanic Pedophile' narrative (Cluster 10). It makes the anti-bureaucratic argument sound crazy to normies. But the core anger at 'Unelected Power' remains.",
           "key_manifestations": [
             "QAnon 'Cabal' rhetoric",
@@ -11537,7 +11537,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 12.0,
+          "salience_share": 12.0,
           "description": "Chernobyl (Δv +1.0%). The HBO series. It depicts the Soviet bureaucracy lying to save face, causing disaster. The Right sees the US bureaucracy in it. 'The cost of lies.' It becomes a meme for institutional rot.",
           "key_manifestations": [
             "Chernobyl (HBO)",
@@ -11547,7 +11547,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Fauci (Δv +3.0%). The Avatar of the Bureaucrat. 'Trust the Science.' The mask mandates, the flip-flops. The Right focuses its entire rage on the Public Health Officer. The 'Karen' is the volunteer bureaucrat. Schedule F is proposed to fire them.",
           "key_manifestations": [
             "Anthony Fauci demonization",
@@ -11557,7 +11557,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "School Boards (Δv -0.5%). The bureaucracy of the school. Masks on toddlers. The parents revolt. The 'Administrator' is the enemy of the 'Family.' The bloat of 'DEI Deans' is highlighted.",
           "key_manifestations": [
             "School Board protests",
@@ -11567,7 +11567,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 15.0,
+          "salience_share": 15.0,
           "description": "Twitter Files (Δv +0.5%). The exposure of the FBI/CDC telling Twitter who to ban. The 'Censorship Industrial Complex.' The fusion of State and Corp bureaucracy. It is the 'Fascism' definition (merger of state and corp).",
           "key_manifestations": [
             "The Twitter Files",
@@ -11577,7 +11577,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 16.0,
+          "salience_share": 16.0,
           "description": "Rich Men North of Richmond (Δv +1.0%). 'I wish politicians would look out for miners, not just minors on an island.' The song attacks the 'Welfare State' and the 'Regulatory State.' It connects the Bureaucrat to the Pedophile (Epstein).",
           "key_manifestations": [
             "Rich Men North of Richmond",
@@ -11587,7 +11587,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 17.0,
+          "salience_share": 17.0,
           "description": "Milei's Chainsaw (Δv +1.0%). Javier Milei in Argentina firing ministries. 'Afuera!' (Out!). The visual of the chainsaw resonates with the American Right. 'We need that here.' It makes firing bureaucrats visceral and fun.",
           "key_manifestations": [
             "Milei 'Afuera' viral video",
@@ -11597,7 +11597,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 4.8,
+          "salience_share": 4.8,
           "description": "DOGE (Δv +3.0% / -15.2%). The Department of Government Efficiency. Musk and Ramaswamy. The reality show of firing. The 'Leaderboards' of waste. It gamifies the destruction of the bureaucracy. The 'Anti-Bureaucratic' sentiment becomes the State Religion.",
           "key_manifestations": [
             "DOGE Livestreams of agency audits",
@@ -11613,7 +11613,7 @@ export const rightWingCultureData = {
       "description": "The struggle over the environment on the Right. On one side, the 'Wise Use' / 'Drill Baby Drill' dominance (Cluster 18). On the other, the growing 'Vitalist' (Cluster 16) and 'Localist' (Cluster 19) interest in soil health, anti-microplastics, and land conservation. And the dark shadow: 'Eco-Fascism' (Overpopulation is the problem, borders are the solution). It is the rejection of 'Green New Deal' socialism in favor of 'Stewardship' or 'Nativism.'",
       "trajectory": {
         "1995": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Wise Use (Δv 0%). The backlash against the Endangered Species Act. 'Owl vs. Jobs.' The Right stands with the Logger/Rancher. Environmentalism is seen as a Leftist plot to steal property.",
           "key_manifestations": [
             "Wise Use Movement",
@@ -11623,7 +11623,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Stasis (Δv 0%). The focus is on the economy. The environment is a niche issue.",
           "key_manifestations": [
             "Twister (Man vs Nature)",
@@ -11633,7 +11633,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Kyoto Protocol (Δv 0%). The Senate votes 95-0 against Kyoto. Bipartisan rejection of global treaties. Sovereignty > Climate. The Right is united.",
           "key_manifestations": [
             "Kyoto Protocol rejection",
@@ -11643,7 +11643,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Stasis (Δv 0%). Cheap oil. SUVs are booming. No guilt.",
           "key_manifestations": [
             "Armageddon",
@@ -11653,7 +11653,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Stasis (Δv 0%).",
           "key_manifestations": [
             "The Matrix",
@@ -11663,7 +11663,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "Drill in ANWR (Δv 0%). Bush campaigns on drilling. It is an energy security issue. The environmentalists are the obstacle to cheap gas.",
           "key_manifestations": [
             "ANWR Drilling debate",
@@ -11673,7 +11673,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Energy Independence (Δv +0.5%). 9/11. Oil funds terror. The Right wants to drill to stop funding the Saudis. 'Conservation' is patriotic? Cheney says 'Conservation is a personal virtue,' not policy.",
           "key_manifestations": [
             "Cheney Energy Task Force",
@@ -11683,7 +11683,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Stasis (Δv 0%).",
           "key_manifestations": [
             "The Lord of the Rings (The Ents - nature fighting back)",
@@ -11693,7 +11693,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Climate Skepticism (Δv 0%). The 'Inhofe' era. 'Climate Change is a Hoax.' The Right hardens against the science. It becomes a litmus test.",
           "key_manifestations": [
             "Inhofe 'Hoax' speech",
@@ -11703,7 +11703,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The Day After Tomorrow (Δv +0.5%). The movie visualizes the collapse. The Right mocks it as alarmist ('The temperature drops 10 degrees a second'). It solidifies the skepticism.",
           "key_manifestations": [
             "The Day After Tomorrow",
@@ -11713,7 +11713,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Katrina (Δv 0%). Is it climate? The Right says 'No, it's levees.' The debate creates a fortress mentality.",
           "key_manifestations": [
             "Katrina aftermath",
@@ -11723,7 +11723,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "An Inconvenient Truth (Δv +0.5%). Al Gore. The polarized figure. If Gore is for it, the Right is against it. The environment becomes fully partisan.",
           "key_manifestations": [
             "An Inconvenient Truth",
@@ -11733,7 +11733,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Ethanol (Δv 0%). Bush pushes Ethanol. Farmers love it. Eaters hate it. A weird distortion of 'Green' policy for votes.",
           "key_manifestations": [
             "Ethanol mandate",
@@ -11743,7 +11743,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Drill Baby Drill (Δv +0.5%). Palin's slogan. High gas prices make 'Extraction' popular. The environment is a luxury good we can't afford.",
           "key_manifestations": [
             "Drill Baby Drill",
@@ -11753,7 +11753,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Climategate (Δv 0%). Hacked emails. The Right feels vindicated. 'They are fudging the data.' Skepticism peaks.",
           "key_manifestations": [
             "Climategate emails",
@@ -11763,7 +11763,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "BP Oil Spill (Δv 0%). A disaster. But the Right blames 'Regulation' (pushed rigs too deep) or defends the company. The polarization is absolute.",
           "key_manifestations": [
             "Deepwater Horizon spill",
@@ -11773,7 +11773,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Solyndra (Δv 0%). Green Energy is a scam. It's a way to funnel money to donors. The 'Green' brand is toxic on the Right.",
           "key_manifestations": [
             "Solyndra",
@@ -11783,7 +11783,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Scruton's Green Philosophy (Δv +0.5%). Roger Scruton publishes *Green Philosophy*. He argues for 'Oikophilia' (love of home). Conservation is conservative. It plants the seed for the 'Crunchy Con' environmentalism.",
           "key_manifestations": [
             "Green Philosophy (Scruton)",
@@ -11793,7 +11793,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Stasis (Δv 0%). Fracking boom. The US becomes an energy superpower. The geopolitical benefit outweighs the environmental cost for the Right.",
           "key_manifestations": [
             "Fracking Boom",
@@ -11803,7 +11803,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Cliven Bundy (Δv 0%). The fight over federal land. The Right believes the land belongs to the people (ranchers), not the 'Environment' (Turtles).",
           "key_manifestations": [
             "Bundy Ranch",
@@ -11813,7 +11813,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Laudato Si (Δv +0.5%). The Pope's encyclical. Conservative Catholics are torn. Some reject it; others (Trad) find the critique of technology/capitalism resonant.",
           "key_manifestations": [
             "Laudato Si",
@@ -11823,7 +11823,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Trump's Hoax (Δv -0.5%). Trump calls Climate Change a Chinese Hoax. He pulls out of Paris. The 'Industrial' wing wins completely. The 'Conservation' wing is silent.",
           "key_manifestations": [
             "Paris Agreement withdrawal",
@@ -11833,7 +11833,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Stasis (Δv 0%).",
           "key_manifestations": [
             "Blade Runner 2049 (Ecological collapse)",
@@ -11843,7 +11843,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Yellowstone (Δv +0.5%). The show celebrates the land. Not 'Green' land, but 'Ranched' land. The stewardship of the owner vs. the developer.",
           "key_manifestations": [
             "Yellowstone premiere",
@@ -11853,7 +11853,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Eco-Fascism (Δv +1.5%). The Christchurch and El Paso shooters cite environmental reasons. 'Trees are not the problem, people are.' The Dark Right adopts 'Deep Ecology.' Pentti Linkola is read on /pol/.",
           "key_manifestations": [
             "El Paso Shooter Manifesto",
@@ -11863,7 +11863,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Return to Tradition (Δv +0.5%). Cottagecore. The desire for a garden. The rejection of the 'Pod' and 'Bugs.' The 'WEF' agenda (eat the bugs) makes 'Real Food' a right-wing cause.",
           "key_manifestations": [
             "Eat the Bugs meme",
@@ -11873,7 +11873,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Seed Oils (Δv +0.5%). The health focus. Industrial agriculture is poisoning us. It's not about CO2; it's about Soil/Health. The 'Raw Egg Nationalist' critique of big ag.",
           "key_manifestations": [
             "Seed Oil discourse",
@@ -11883,7 +11883,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "Dutch Farmers (Δv +0.5%). The nitrogen protests. The State vs The Farmer. The Global Right rallies to the Farmer. 'No Farmers, No Food.' It frames Environmentalism as Tyranny.",
           "key_manifestations": [
             "Dutch Farmer Protests",
@@ -11893,7 +11893,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "RFK Jr. (Δv +0.5%). The Riverkeeper. He brings 'Old School' conservation (clean water/toxins) to the Right. He rejects the 'Carbon' obsession for 'Toxicity' focus.",
           "key_manifestations": [
             "RFK Jr. campaign",
@@ -11903,7 +11903,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "MAHA Ecology (Δv +0.5%). Make America Healthy Again includes the land. Regenerative Agriculture (Joel Salatin) is the policy goal. It differentiates from the 'Green New Deal' (Technology/Solar) by focusing on 'Biology/Soil.'",
           "key_manifestations": [
             "Regenerative Ag discussions in GOP",
@@ -11913,7 +11913,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Teddy Roosevelt 2.0 (Δv -6.5%). The new administration creates a 'Conservation Corps' but expands drilling. It is a 'Nationalist Ecology.' Protect the Parks, Drill the Oil. The 'Green' movement is purged of 'Woke' elements.",
           "key_manifestations": [
             "New National Parks designation",
@@ -11929,7 +11929,7 @@ export const rightWingCultureData = {
       "description": "The specific Gen Z variant of White/Christian Nationalism. Led by Nick Fuentes. It emerged from the ashes of the Alt-Right (Charlottesville) but rejected the 'Pagan/Degenerate' aesthetics in favor of 'Suits/Christianity/Optics.' It uses irony, 'Cozy' aesthetics, and swarm tactics (Groyper Wars) to attack the 'Conservative Inc.' establishment from the Right. It seeks to pull the GOP toward explicit white identity politics under the guise of 'America First.'",
       "trajectory": {
         "1995": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Pre-History (Δv 0%). Pat Buchanan's youth corps. The 'Paleoconservative' seed. The internet is too young for the irony. It exists in newsletters.",
           "key_manifestations": [
             "Buchanan Youth",
@@ -11939,7 +11939,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "GamerGate (Δv +0.5%). The primordial soup. Young men learn to swarm. They learn the media hates them. They learn 'Optics' (Vivian James).",
           "key_manifestations": [
             "GamerGate",
@@ -11949,7 +11949,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Trump Youth (Δv +0.5%). The 'Meme War.' The 'Centipedes.' It is chaotic and disorganized. The 'Frog' (Pepe) is the symbol. Nick Fuentes begins streaming.",
           "key_manifestations": [
             "Trump Pepe memes",
@@ -11959,7 +11959,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "Alt-Right Peak (Δv +0.5%). The movement is broad. Spencer, Milo, Anglin. It includes gays, pagans, and edgy teens. It is 'Big Tent' nationalism.",
           "key_manifestations": [
             "Deplorables Ball",
@@ -11969,7 +11969,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Charlottesville Collapse (Δv -0.5%). The 'Unite the Right' rally is a disaster. The 'Optics' are terrible (Tiki torches, murder). The movement fractures. The 'Wignat' (White N-word) faction is purged by the 'Optics' faction. Fuentes begins to separate.",
           "key_manifestations": [
             "Charlottesville backlash",
@@ -11979,7 +11979,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The Groyper Avatar (Δv +0.5%). The 'Groyper' (a toad variant of Pepe) becomes the symbol. It signifies 'We are not Alt-Right, we are America First.' It is 'Cozy.' It rejects the swastika for the cross.",
           "key_manifestations": [
             "Groyper meme adoption",
@@ -11989,7 +11989,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The Groyper Wars (Δv +1.5%). The swarm attacks Charlie Kirk and Donald Trump Jr. Q&As. 'Does the GOP support gay marriage?' 'What about demographics?' They embarrass 'Conservative Inc.' It forces the establishment to address them. They win the online narrative.",
           "key_manifestations": [
             "Charlie Kirk Q&A trolling",
@@ -11999,7 +11999,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Stop the Steal (Δv +0.5%). Fuentes aligns with the 'Stop the Steal' movement. He is at the Capitol (outside). It creates a bridge to the Normie MAGA. He frames himself as the *most* loyal Trump supporter.",
           "key_manifestations": [
             "Stop the Steal rallies",
@@ -12009,7 +12009,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "AFPAC (Δv +0.5%). The America First Political Action Conference. Held next to CPAC. Sitting Congressman (Gosar) attends. It legitimizes the fringe. The chant 'Christ is King' begins to replace 'Build the Wall.'",
           "key_manifestations": [
             "AFPAC II",
@@ -12019,7 +12019,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Ye24 (Δv +1.0%). Kanye West brings Fuentes to Mar-a-Lago. Dinner with Trump. It is the peak of influence. The 'Groyper' is in the former President's dining room. The media meltdown is total. It ends in disaster (Alex Jones interview), but the Overton Window moved.",
           "key_manifestations": [
             "Mar-a-Lago Dinner",
@@ -12029,7 +12029,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The DeSantis War (Δv -1.5%). The movement attacks DeSantis ('DeSimp'). They act as Trump's praetorian guard online. But the internal fighting and the 'Ye' fallout weakens them. They are 'Radioactive.'",
           "key_manifestations": [
             "Twitter Spaces wars",
@@ -12039,7 +12039,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "Groyper for Trump (Δv -1.0%). They support Trump, but Trump distances himself. The 'Groyper' army is now just the 'Reply Guy' army on Twitter. The 'Christian Nationalist' label (Cluster 7) absorbs their energy.",
           "key_manifestations": [
             "Fuentes 'Groyper Army' declaration",
@@ -12049,7 +12049,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 2.2,
+          "salience_share": 2.2,
           "description": "Integration or Exile (Δv -0.8%). The 'Groyper' brand is too toxic. The smart ones put on suits and join the 'New Right' institutions as staffers (hiding their power level). The rest remain online pariahs. The specific 'Groyper' moment ends, metabolized into the broader 'Post-Liberal' Right.",
           "key_manifestations": [
             "Former Groypers in low-level admin roles (scandal)",
@@ -12065,7 +12065,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the libertine, apolitical-until-provoked male demographic. It loves sports, gambling, and 'offensive' humor, but hates 'hall monitors,' 'scolds,' and 'cancel culture.' It is socially liberal on vice but fiercely reactionary against the 'Woke' policing of speech and masculinity. Anchored by Dave Portnoy and the Barstool Sports ecosystem, it bridges the gap between the 'Frat House' and the 'Voting Booth,' turning the 'Average Joe' against the Progressive Left not over tax policy, but over the right to make a joke.",
       "trajectory": {
         "1995": {
-          "variance_explained": 3.0,
+          "salience_share": 3.0,
           "description": "The Stern Era (Δv +0.5%). Howard Stern is the King of All Media. He represents the id of the American male: rude, sexual, but fiercely free-speech oriented. He battles the FCC (the 'Scolds' of the time, who were Christian Conservatives). The 'Bro' energy is anti-Religious Right.",
           "key_manifestations": [
             "Howard Stern's 'Private Parts' (Book/Movie)",
@@ -12075,7 +12075,7 @@ export const rightWingCultureData = {
           ]
         },
         "1996": {
-          "variance_explained": 3.2,
+          "salience_share": 3.2,
           "description": "Swingers (Δv +0.2%). The film captures the 'Guy' vernacular. 'Money.' It validates male bonding and the pursuit of women as the primary focus of life. The political world is ignored entirely.",
           "key_manifestations": [
             "Swingers",
@@ -12085,7 +12085,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "South Park (Δv +0.3%). 'Screw you guys, I'm going home.' The ultimate libertarian 'leave me alone' ethos. It teaches a generation that 'Caring too much' is lame. This apathy is the soil of Barstool.",
           "key_manifestations": [
             "South Park premieres",
@@ -12095,7 +12095,7 @@ export const rightWingCultureData = {
           ]
         },
         "1998": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "The Man Show (Δv 0%). Kimmel and Carolla. 'Girls on Trampolines.' It is unapologetic, low-brow masculinity. It mocks the 'Sensitivity' culture of the 90s. It establishes the tone: 'We are idiots, but we are free.'",
           "key_manifestations": [
             "The Man Show premieres",
@@ -12105,7 +12105,7 @@ export const rightWingCultureData = {
           ]
         },
         "1999": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Fight Club (Δv +0.5%). 'We are a generation of men raised by women.' The film taps into a deeper malaise, but the 'Bro' culture takes the surface level: Fighting is cool. Woodstock '99 (Limp Bizkit) shows the chaotic energy of the demographic.",
           "key_manifestations": [
             "Woodstock '99 riots",
@@ -12115,7 +12115,7 @@ export const rightWingCultureData = {
           ]
         },
         "2000": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Jackass (Δv +0.5%). Physical comedy, pain, and brotherhood. No politics, just chaos. It unites the skater, the frat guy, and the redneck. It is the 'anti-intellectual' peak.",
           "key_manifestations": [
             "Jackass premieres",
@@ -12125,7 +12125,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "9/11 Patriotism (Δv -0.5%). The 'Bro' becomes the 'Patriot.' The energy is channeled into supporting the troops. Toby Keith and flag decals. The 'Libertine' streak is dampened by duty.",
           "key_manifestations": [
             "Toby Keith's 'Courtesy of the Red, White and Blue'",
@@ -12135,7 +12135,7 @@ export const rightWingCultureData = {
           ]
         },
         "2002": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Van Wilder (Δv -0.5%). The 'Party Liaison.' The college experience as the peak of existence. The goal is to extend adolescence indefinitely. Politics is for nerds.",
           "key_manifestations": [
             "National Lampoon's Van Wilder",
@@ -12145,7 +12145,7 @@ export const rightWingCultureData = {
           ]
         },
         "2003": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Old School (Δv +0.5%). 'Frank the Tank.' The regression to the fraternity. It solidifies the 'Man Child' as a lovable archetype. Dave Portnoy begins handing out the 'Barstool' newspaper in Boston. The seed is planted.",
           "key_manifestations": [
             "Barstool Sports newspaper launch (Boston)",
@@ -12155,7 +12155,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 3.5,
+          "salience_share": 3.5,
           "description": "Entourage (Δv -0.5%). The fantasy of the posse. Money, girls, no consequences. It is the aspirational lifestyle of the cluster. 'Hugging it out.'",
           "key_manifestations": [
             "Entourage premieres",
@@ -12165,7 +12165,7 @@ export const rightWingCultureData = {
           ]
         },
         "2005": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Wedding Crashers (Δv +0.5%). 'Rule #76: No excuses, play like a champion.' The gamification of sex. The 'Bro' code. It aligns with the rising PUA culture but is more mainstream/fun.",
           "key_manifestations": [
             "Wedding Crashers",
@@ -12175,7 +12175,7 @@ export const rightWingCultureData = {
           ]
         },
         "2006": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Tucker Max (Δv +0.5%). 'I Hope They Serve Beer in Hell.' The bestseller. It celebrates being an asshole. It rejects all social propriety. It creates a genre of 'Fratire.'",
           "key_manifestations": [
             "I Hope They Serve Beer in Hell (Book)",
@@ -12185,7 +12185,7 @@ export const rightWingCultureData = {
           ]
         },
         "2007": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Barstool Online (Δv +0.5%). Barstool moves to the web. 'El Pres' (Portnoy) begins blogging. The 'Smokeshow' of the day. It builds a localized army in Boston. The tone is set: 'By the common man, for the common man.'",
           "key_manifestations": [
             "Barstool Sports website launch",
@@ -12195,7 +12195,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "The Hangover (Δv -0.5%). The peak of the genre. The Wolfpack. It celebrates male bonding excluding women. But the economy crashes. The 'Bro' loses his job in finance/sales. The mood sours.",
           "key_manifestations": [
             "The Hangover (Filming)",
@@ -12205,7 +12205,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "Kenny Powers (Δv -0.5%). *Eastbound & Down*. The arrogant, failed athlete. It is a satire, but the cluster loves him unironically. He says what he wants. He is 'America.'",
           "key_manifestations": [
             "Eastbound & Down",
@@ -12215,7 +12215,7 @@ export const rightWingCultureData = {
           ]
         },
         "2010": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "The Deadspin Rivalry (Δv +0.5%). Deadspin (Gawker) attacks Barstool as misogynist. Portnoy fights back. This is the beginning of the 'Us vs. The Media' war. Barstool realizes their audience hates the 'PC Police' journalists.",
           "key_manifestations": [
             "Barstool vs. Deadspin feuds",
@@ -12225,7 +12225,7 @@ export const rightWingCultureData = {
           ]
         },
         "2011": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Tosh.0 (Δv +0.5%). Daniel Tosh. Viral videos + offensive commentary. It is the TV version of the internet. It proves there is a massive market for 'cancelled' humor. The 'Frat' culture is now 'Internet' culture.",
           "key_manifestations": [
             "Tosh.0 ratings peak",
@@ -12235,7 +12235,7 @@ export const rightWingCultureData = {
           ]
         },
         "2012": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Project X (Δv +0.5%). The party that destroys the neighborhood. Nihilistic hedonism. The 'YOLO' era (Drake). Barstool launches 'Blackout Parties.' They are banned from campuses. The 'Establishment' tries to stop the fun.",
           "key_manifestations": [
             "Project X",
@@ -12245,7 +12245,7 @@ export const rightWingCultureData = {
           ]
         },
         "2013": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "Wolf of Wall Street (Δv +0.5%). Jordan Belfort. The cluster worships him. Not for the fraud, but for the excess. 'I'm not leaving!' becomes the rallying cry. The 'Finance Bro' aesthetic is rehabilitated.",
           "key_manifestations": [
             "The Wolf of Wall Street",
@@ -12255,7 +12255,7 @@ export const rightWingCultureData = {
           ]
         },
         "2014": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "GamerGate/Media War (Δv +1.0%). While Barstool isn't gaming, the dynamic is identical. The 'Woke' journalists attack the 'Fun' male space. The audience radicalizes against the media. Portnoy calls them 'Squids.' The 'Pirate Ship' identity solidifies.",
           "key_manifestations": [
             "Barstool 'Saturdays are for the Boys' (SAFTB) coined (approx era)",
@@ -12265,7 +12265,7 @@ export const rightWingCultureData = {
           ]
         },
         "2015": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Deflategate (Δv +0.5%). The NFL attacks Tom Brady. Portnoy gets arrested protesting at NFL HQ. It positions Barstool as the defender of 'Our Guy' against the 'Corrupt League.' It proves Portnoy can mobilize an army in real life.",
           "key_manifestations": [
             "Portnoy arrested at NFL headquarters",
@@ -12275,7 +12275,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 8.0,
+          "salience_share": 8.0,
           "description": "Pardon My Take (Δv +0.5%). Big Cat and PFT Commenter. They become the #1 Sports Podcast. They mock the 'Hot Take' media (Skip Bayless) and the 'PC' media. They interview Trump (later), but mostly they normalize 'Guy Talk' as a refuge from the election.",
           "key_manifestations": [
             "Pardon My Take launch",
@@ -12285,7 +12285,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 9.0,
+          "salience_share": 9.0,
           "description": "ESPN's Woke Pivot (Δv +1.0%). ESPN gets political (Jemele Hill). The Barstool audience flees ESPN. They want sports, not lectures. Barstool gets a show on ESPN ('Van Talk') and it is cancelled after one episode due to internal employee complaints. This confirms: 'The Institutions hate you.'",
           "key_manifestations": [
             "Barstool Van Talk cancellation",
@@ -12295,7 +12295,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Supreme Court of Sports (Δv +0.5%). The legalization of sports betting. Barstool pivots to gambling (Penn National deal later). The lifestyle is 'Pizza, Sports, Gambling.' It creates a self-contained ecosystem. The 'stoolies' are a distinct demographic.",
           "key_manifestations": [
             "PASPA overturned (Sports betting legal)",
@@ -12305,7 +12305,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 10.0,
+          "salience_share": 10.0,
           "description": "Union Busting (Δv +0.5%). AOC challenges Portnoy to unionize. He threatens to fire anyone who tries. 'Lawyer up.' The Left attacks him; the Right cheers him as a business owner who won't be bullied. He becomes a symbol of 'Uncancellable.'",
           "key_manifestations": [
             "Portnoy vs AOC Twitter feud",
@@ -12315,7 +12315,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Barstool Fund (Δv +4.0%). COVID lockdowns. Portnoy rants: 'When did we flatten the curve to finding a cure?' He raises $40M for small businesses while the government dithers. It is the ultimate 'Populist Competence' vs 'Government Incompetence' moment. He interviews Trump. The cluster moves from 'Apolitical' to 'Anti-Lockdown.'",
           "key_manifestations": [
             "The Barstool Fund",
@@ -12325,7 +12325,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "Day Trading (Δv -0.5%). Davey Day Trader Global. Portnoy leads the 'Meme Stock' rally (AMC/GME) then paper hands. It shows the limits of his financial acumen, but maintains the 'Little Guy vs Suits' energy. The Business Insider hit piece on his sex life fails to cancel him.",
           "key_manifestations": [
             "GameStop Saga",
@@ -12335,7 +12335,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 13.0,
+          "salience_share": 13.0,
           "description": "Roe v. Wade (Δv -0.5%). Portnoy attacks the overturning of Roe. 'We are going backwards.' It reveals the 'Libertarian' limits of the cluster. They are pro-choice, pro-weed, anti-woke. This puts them at odds with the Religious Right (Cluster 17).",
           "key_manifestations": [
             "Portnoy's rant against Roe overturn",
@@ -12345,7 +12345,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 12.5,
+          "salience_share": 12.5,
           "description": "Oliver Anthony (Δv -0.5%). The 'Rich Men North of Richmond' hits the Barstool demo hard. The economic populism aligns. However, the 'Taylor Swift' NFL takeover annoys the 'Football Bros.' The culture war enters the luxury suite.",
           "key_manifestations": [
             "Kelce/Swift mania backlash",
@@ -12355,7 +12355,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 14.0,
+          "salience_share": 14.0,
           "description": "The Bro Vote (Δv +1.5%). Trump goes on 'Bussin' With The Boys' and meets with the Nelk Boys. The strategy is to win the 'Barstool Conservative.' Low propensity male voters. Dana White (UFC) speaks at the RNC. The merger of Sports/Gambling/MAGA is complete.",
           "key_manifestations": [
             "Trump on 'Bussin' With The Boys'",
@@ -12365,7 +12365,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 14.5,
+          "salience_share": 14.5,
           "description": "The New Mainstream (Δv +0.5%). The 'Barstool' voice is now the center of American male culture. Traditional sports media (ESPN) is irrelevant. The 'Anti-Woke Bro' is the target demographic for every advertiser. Portnoy considers a political run (Governor?).",
           "key_manifestations": [
             "Portnoy political polling",
@@ -12381,7 +12381,7 @@ export const rightWingCultureData = {
       "description": "This cluster represents the migration of the 'Cool' urban creative class from the Left to the Right (or 'Post-Left'). Centered in NYC's Dimes Square (and podcasts like *Red Scare*), it rejects the 'Cringe' sincerity of Woke Liberalism. It embraces Catholicism (aesthetic), Trad-Wife cosplay (ironic/post-ironic), and reactionary politics as a form of counter-cultural rebellion. It is the 'Vibe Shift' where being a Progressive becomes 'Cheugy' and being a Monarchist becomes 'Punk.'",
       "trajectory": {
         "1995": {
-          "variance_explained": 0.5,
+          "salience_share": 0.5,
           "description": "Vice Magazine (Δv +0.1%). Gavin McInnes co-founds Vice in Montreal. It is 'Hipster Racism,' drugs, and irony. It rejects the PC ethos of the 90s. It lays the groundwork for 'edgy' humor as cool. It is not Right-wing yet, but it is Anti-PC.",
           "key_manifestations": [
             "Vice Magazine founding",
@@ -12391,7 +12391,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 1.0,
+          "salience_share": 1.0,
           "description": "The Strokes (Δv +0.5%). The NYC revival. The aesthetic is skinny jeans, cigarettes, and apathy. It rejects the earnestness of the Bush era and the moralism of the Left. The 'Hipster' is born. They occupy Williamsburg. They are culturally libertarian.",
           "key_manifestations": [
             "Is This It (The Strokes)",
@@ -12401,7 +12401,7 @@ export const rightWingCultureData = {
           ]
         },
         "2008": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "Gavin Leaves Vice (Δv +0.5%). McInnes leaves. He begins his drift Right. The 'Hipster' culture becomes mainstream (Obama voters). The 'Cool' moves to 'Normcore.' The avant-garde looks for a new edge.",
           "key_manifestations": [
             "Gavin McInnes exit",
@@ -12411,7 +12411,7 @@ export const rightWingCultureData = {
           ]
         },
         "2016": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The Dirtbag Left (Δv +0.5%). Chapo Trap House. They mock the Clintonite liberals. They use 'Right-wing' tactics (bullying/irony) for 'Left-wing' goals (Bernie). But they break the taboo of 'Civility.' This opens the door. *Red Scare* podcast starts (2018), initially Left, but 'Anti-Woke.'",
           "key_manifestations": [
             "Chapo Trap House launch",
@@ -12421,7 +12421,7 @@ export const rightWingCultureData = {
           ]
         },
         "2018": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Red Scare Pivot (Δv +0.5%). Dasha and Anna host Steve Bannon. The Left tries to cancel them. They double down. They critique #MeToo and Feminism. The 'Sailor Socialism' girl becomes the 'Catholic Trad' girl. The aesthetic of 'Thin, Smoking, Reactionary' is born.",
           "key_manifestations": [
             "Red Scare Podcast growth",
@@ -12431,7 +12431,7 @@ export const rightWingCultureData = {
           ]
         },
         "2020": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The Vibe Shift (Δv +1.5%). The 'Vibe Shift' article in The Cut. It names Dimes Square. It identifies that the cool kids are no longer Woke. They are converting to Catholicism and reading Bronze Age Mindset. Curtis Yarvin is holding court in NYC lofts.",
           "key_manifestations": [
             "The Cut 'Vibe Shift' article",
@@ -12441,7 +12441,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Catholic Chic (Δv +0.5%). Rosary beads as fashion accessories. Going to Latin Mass in Lower East Side. It is performative, but also a rejection of the 'Therapy/HR' culture of the Left. 'Trad' becomes the new 'Punk.'",
           "key_manifestations": [
             "Dasha Nekrasova in 'Succession'",
@@ -12451,7 +12451,7 @@ export const rightWingCultureData = {
           ]
         },
         "2022": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "Urbit and Peter Thiel (Δv +0.5%). The funding arrives. Peter Thiel funds the 'New Right' arts scene. Urbit (the decentralized server) becomes the digital home. The 'Dissident Right' gets a film festival (NYC).",
           "key_manifestations": [
             "Peter Thiel's dinner parties",
@@ -12461,7 +12461,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 5.5,
+          "salience_share": 5.5,
           "description": "Lana Del Rey Right (Δv +0.5%). Lana Del Rey dating a cop/swamp guide. The aesthetic of 'Americana' returns. The 'Coquette' aesthetic mixes with 'Trad Wife.' It is soft, feminine, and anti-feminist.",
           "key_manifestations": [
             "Lana Del Rey Waffle House shift",
@@ -12471,7 +12471,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 6.0,
+          "salience_share": 6.0,
           "description": "The Trump Chic (Δv +0.5%). Barron Trump is the icon. The Zoomer Right views Trump not as a politician but as a 'Content Creator' and 'Aesthetic.' Wearing a MAGA hat in Bushwick is the ultimate transgression. The 'Right' is the counter-culture.",
           "key_manifestations": [
             "Barron Trump podcast rumors",
@@ -12481,7 +12481,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "Mainstream Cool (Δv +0.5%). The 'Dimes Square' sensibilities filter out to the broader culture. 'Woke' TV shows are cancelled for being cringe. The new 'Prestige TV' is gritty, cynical, and non-PC. The 'Hipster' is dead; the 'Reactionary' lives.",
           "key_manifestations": [
             "HBO's pivot to 'Anti-Woke' programming",
@@ -12497,7 +12497,7 @@ export const rightWingCultureData = {
       "description": "The transformation of UFOlogy from a nuts-and-bolts 'Government Coverup' (X-Files) to a spiritual/religious belief in 'Interdimensional Entities' (Demons/Angels). Led by figures like Tucker Carlson and David Grusch, this cluster argues that 'Aliens' are actually spiritual beings, that the US Government has made deals with them, and that this explains the 'Evil' of the elite. It merges Conspiracy, Evangelical Theology, and Sci-Fi into a unified theory of reality.",
       "trajectory": {
         "1995": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The X-Files Peak (Δv +0.5%). The 'Grey Alien' is a pop culture icon. The conspiracy is 'The Government is hiding tech.' It is secular. It fits the anti-government mood of the 90s militia movement.",
           "key_manifestations": [
             "The X-Files",
@@ -12507,7 +12507,7 @@ export const rightWingCultureData = {
           ]
         },
         "1997": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Phoenix Lights (Δv +0.5%). Mass sighting. The Governor mocks it, then admits he saw it. It validates the believer. Heaven's Gate connects UFOs to spirituality (deadly).",
           "key_manifestations": [
             "Phoenix Lights sighting",
@@ -12517,7 +12517,7 @@ export const rightWingCultureData = {
           ]
         },
         "2001": {
-          "variance_explained": 2.0,
+          "salience_share": 2.0,
           "description": "The Disclosure Project (Δv -0.5%). Steven Greer holds a press conference at the National Press Club. Military witnesses. It should be huge, but 9/11 happens months later. The topic dies. The 'Threat' becomes Al-Qaeda, not Martians.",
           "key_manifestations": [
             "Steven Greer's Disclosure Project",
@@ -12527,7 +12527,7 @@ export const rightWingCultureData = {
           ]
         },
         "2004": {
-          "variance_explained": 1.5,
+          "salience_share": 1.5,
           "description": "The Tic Tac (Δv 0%). The Nimitz Encounter happens (Fravor). It is classified. The cluster is dormant, existing only on 'Above Top Secret' forums. The culture moves to superheroes.",
           "key_manifestations": [
             "USS Nimitz Encounter (Classified)",
@@ -12537,7 +12537,7 @@ export const rightWingCultureData = {
           ]
         },
         "2009": {
-          "variance_explained": 2.5,
+          "salience_share": 2.5,
           "description": "Ancient Aliens (Δv +1.0%). The show premieres. It reframes religious history as alien intervention. 'The Gods were Astronauts.' It prepares the Right for the 'Spiritual/Alien' merger. It becomes the background noise of the Trump era.",
           "key_manifestations": [
             "Ancient Aliens premieres",
@@ -12547,7 +12547,7 @@ export const rightWingCultureData = {
           ]
         },
         "2017": {
-          "variance_explained": 4.0,
+          "salience_share": 4.0,
           "description": "The NYT Article (Δv +1.5%). 'Glowing Auras and Black Money.' The Pentagon admits AATIP exists. The Tic Tac video is released. It is the most significant event in UFO history. Tucker Carlson takes the baton. He treats it seriously.",
           "key_manifestations": [
             "New York Times AATIP article",
@@ -12557,7 +12557,7 @@ export const rightWingCultureData = {
           ]
         },
         "2019": {
-          "variance_explained": 4.5,
+          "salience_share": 4.5,
           "description": "Storm Area 51 (Δv +0.5%). The meme. 'They can't stop all of us.' It shows the populist energy behind disclosure. Rogan interviews Bob Lazar. The story goes mainstream. The 'Wilson Memo' leaks suggest a corporate reverse-engineering program.",
           "key_manifestations": [
             "Storm Area 51",
@@ -12567,7 +12567,7 @@ export const rightWingCultureData = {
           ]
         },
         "2021": {
-          "variance_explained": 5.0,
+          "salience_share": 5.0,
           "description": "The Phenomenon (Δv +0.5%). The documentary *The Phenomenon*. It argues the aliens are warning us about Nuclear War. The 'Interdimensional' hypothesis (Jacques Vallee) gains traction over the 'Extraterrestrial' one. 'They are here, and they are not from Mars.'",
           "key_manifestations": [
             "The Phenomenon (Documentary)",
@@ -12577,7 +12577,7 @@ export const rightWingCultureData = {
           ]
         },
         "2023": {
-          "variance_explained": 6.5,
+          "salience_share": 6.5,
           "description": "David Grusch (Δv +1.5%). The Whistleblower. He testifies to Congress about 'Non-Human Biologics.' He explicitly mentions the 'Interdimensional' theory. Tucker Carlson (now on X) argues they are 'Demons' and hates them. The Right splits: 'Demons' (Religious) vs 'Tech' (Accelerationist).",
           "key_manifestations": [
             "David Grusch Congressional Hearing",
@@ -12587,7 +12587,7 @@ export const rightWingCultureData = {
           ]
         },
         "2024": {
-          "variance_explained": 7.0,
+          "salience_share": 7.0,
           "description": "The Miami Mall (Δv +0.5%). The 'Shadow Aliens' panic at the Miami mall. It goes viral on TikTok. It shows the readiness of the public to believe in an invasion. The 'Blue Beam' conspiracy (Fake Alien Invasion to install NWO) spreads in Q circles.",
           "key_manifestations": [
             "Miami Mall Alien panic",
@@ -12597,7 +12597,7 @@ export const rightWingCultureData = {
           ]
         },
         "2025": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "The ontological Shock (Δv +0.5%). The new administration releases more files. The 'Catastrophic Disclosure' narrative grows. The Right interprets the phenomenon as proof of 'Spiritual Warfare.' It justifies a return to Religion. 'We are fighting principalities.'",
           "key_manifestations": [
             "Declassification of 'crash retrieval' documents",

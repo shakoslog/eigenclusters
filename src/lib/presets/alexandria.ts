@@ -36,7 +36,7 @@ const alexandriaData = {
         "description": "This cluster represents the surge in scientific exploration and methodology during the Hellenistic period, particularly in Alexandria. The pursuit of knowledge in fields such as mathematics, physics, and biology was characterized by systematic experimentation and documentation, significantly advancing the scientific understanding of the time.",
         "trajectory": {
           "-300": {
-            "variance_explained": 4.2,
+            "salience_share": 4.2,
             "description": "Scientific exploration is beginning to flourish as Alexandria becomes a hub for scholars. The establishment of research institutions fosters initial innovation in various scientific disciplines.",
             "key_manifestations": [
               "Early works of Euclid",
@@ -46,7 +46,7 @@ const alexandriaData = {
             ]
           },
           "-260": {
-            "variance_explained": 5.6,
+            "salience_share": 5.6,
             "description": "Scientific inquiry explodes with revolutionary breakthroughs in mathematics, physics, and engineering. This period represents the golden age of Alexandrian science.",
             "key_manifestations": [
               "Euclid's Elements reaches completion",
@@ -56,7 +56,7 @@ const alexandriaData = {
             ]
           },
           "-220": {
-            "variance_explained": 5.8,
+            "salience_share": 5.8,
             "description": "Scientific inquiry reaches its absolute peak, with monumental works in mathematics, engineering and astronomy that would define scientific understanding for millennia.",
             "key_manifestations": [
               "Archimedes' On the Sphere and Cylinder",
@@ -66,7 +66,7 @@ const alexandriaData = {
             ]
           },
           "-180": {
-            "variance_explained": 4.3,
+            "salience_share": 4.3,
             "description": "Scientific momentum begins to slow following the golden age, though important work continues. Political pressures begin to limit access to resources for pure research.",
             "key_manifestations": [
               "Continuation of mathematical traditions",
@@ -76,7 +76,7 @@ const alexandriaData = {
             ]
           },
           "-140": {
-            "variance_explained": 3.7,
+            "salience_share": 3.7,
             "description": "Scientific activity declines as institutional support weakens. Focus shifts toward commentaries on earlier works rather than groundbreaking new research.",
             "key_manifestations": [
               "Commentaries on Euclid's Elements",
@@ -86,7 +86,7 @@ const alexandriaData = {
             ]
           },
           "-100": {
-            "variance_explained": 3.2,
+            "salience_share": 3.2,
             "description": "Scientific inquiry faces significant challenges, but astronomical studies see renewed interest, creating an important counter-trend to the general scientific decline.",
             "key_manifestations": [
               "Early work by Hipparchus of Rhodes",
@@ -96,7 +96,7 @@ const alexandriaData = {
             ]
           },
           "-60": {
-            "variance_explained": 4.1,
+            "salience_share": 4.1,
             "description": "A renaissance in astronomical science occurs even as other fields continue to decline. Systematic observation and mathematical modeling create significant advancements.",
             "key_manifestations": [
               "Early astronomical works of Ptolemy",
@@ -106,7 +106,7 @@ const alexandriaData = {
             ]
           },
           "-30": {
-            "variance_explained": 3.5,
+            "salience_share": 3.5,
             "description": "As Alexandria's institutions face crisis, astronomical research remains relatively robust while other scientific fields decline precipitously. Roman interest in practical science creates selective support.",
             "key_manifestations": [
               "Continued astronomical observations",
@@ -122,7 +122,7 @@ const alexandriaData = {
         "description": "Philosophical Syncretism refers to the blending of different philosophical traditions during the Hellenistic period. In Alexandria, Greek philosophy intermingled with Egyptian and Near Eastern thought, leading to new schools of thought and the evolution of ideas in ethics, metaphysics, and epistemology.",
         "trajectory": {
           "-300": {
-            "variance_explained": 3.2,
+            "salience_share": 3.2,
             "description": "Philosophical syncretism is in its formative stage, with Greek philosophy beginning to encounter Egyptian and Near Eastern thought in the newly established Alexandria.",
             "key_manifestations": [
               "Early Stoic teachings reaching Alexandria",
@@ -132,7 +132,7 @@ const alexandriaData = {
             ]
           },
           "-260": {
-            "variance_explained": 3.8,
+            "salience_share": 3.8,
             "description": "Philosophical schools begin to diversify as Stoicism gains prominence alongside continued Platonic and Aristotelian traditions, creating a more complex philosophical landscape.",
             "key_manifestations": [
               "Growth of Stoic philosophy under Cleanthes and Chrysippus",
@@ -142,7 +142,7 @@ const alexandriaData = {
             ]
           },
           "-220": {
-            "variance_explained": 4.2,
+            "salience_share": 4.2,
             "description": "Philosophical diversity continues to expand with rival schools developing distinct identities yet engaging in productive dialogue through Alexandrian institutions.",
             "key_manifestations": [
               "Establishment of distinct Epicurean communities",
@@ -152,7 +152,7 @@ const alexandriaData = {
             ]
           },
           "-180": {
-            "variance_explained": 4.8,
+            "salience_share": 4.8,
             "description": "Philosophical syncretism accelerates as political uncertainty drives interest in ethical systems and personal well-being, creating fertile ground for philosophical innovation.",
             "key_manifestations": [
               "Rise of Cynicism in response to royal excess",
@@ -162,7 +162,7 @@ const alexandriaData = {
             ]
           },
           "-140": {
-            "variance_explained": 5.4,
+            "salience_share": 5.4,
             "description": "Philosophical syncretism reaches its peak as mature schools systematically incorporate elements from diverse traditions, creating new philosophical syntheses.",
             "key_manifestations": [
               "Flourishing of Middle Platonism",
@@ -172,7 +172,7 @@ const alexandriaData = {
             ]
           },
           "-100": {
-            "variance_explained": 5.1,
+            "salience_share": 5.1,
             "description": "Syncretic philosophy maintains strength even as other intellectual domains weaken. Roman interest in Greek philosophy provides new audience and influence.",
             "key_manifestations": [
               "Philosophical exchanges with visiting Roman intellectuals",
@@ -182,7 +182,7 @@ const alexandriaData = {
             ]
           },
           "-60": {
-            "variance_explained": 4.9,
+            "salience_share": 4.9,
             "description": "Philosophical activity remains robust despite institutional challenges, with distinctive Alexandrian contributions to several traditions maintaining intellectual vitality.",
             "key_manifestations": [
               "Early developments of Neoplatonic thought",
@@ -192,7 +192,7 @@ const alexandriaData = {
             ]
           },
           "-30": {
-            "variance_explained": 4.7,
+            "salience_share": 4.7,
             "description": "As traditional institutions decline, philosophical activity shifts to smaller communities and private instruction, maintaining significant cultural influence despite reduced scale.",
             "key_manifestations": [
               "Philo of Alexandria's synthesis of Jewish and Greek thought",
@@ -208,7 +208,7 @@ const alexandriaData = {
         "description": "Library Institutionality highlights the development, structure, and influence of the Library of Alexandria as a central cultural and scholarly institution. It encompasses the collection practices, scholarly activities, and the role of the library in preserving and disseminating knowledge across various fields.",
         "trajectory": {
           "-300": {
-            "variance_explained": 5.7,
+            "salience_share": 5.7,
             "description": "The Library of Alexandria experiences explosive growth under Ptolemaic patronage, rapidly becoming the preeminent knowledge institution in the Mediterranean world.",
             "key_manifestations": [
               "Foundation of the Library of Alexandria by Ptolemy I",
@@ -218,7 +218,7 @@ const alexandriaData = {
             ]
           },
           "-260": {
-            "variance_explained": 5.4,
+            "salience_share": 5.4,
             "description": "The library reaches institutional maturity with developed cataloging systems, scholarly practices, and reputation attracting intellectuals from across the Mediterranean.",
             "key_manifestations": [
               "Callimachus' development of Pinakes cataloging system",
@@ -228,7 +228,7 @@ const alexandriaData = {
             ]
           },
           "-220": {
-            "variance_explained": 4.9,
+            "salience_share": 4.9,
             "description": "Library institutionality begins facing challenges from political instability and competition from rival libraries, though it remains the predominant center of learning.",
             "key_manifestations": [
               "Competition from Pergamum Library",
@@ -238,7 +238,7 @@ const alexandriaData = {
             ]
           },
           "-180": {
-            "variance_explained": 4.2,
+            "salience_share": 4.2,
             "description": "Political turmoil creates significant institutional challenges, with damage to collections and reduced patronage, though scholarly activity continues.",
             "key_manifestations": [
               "Collection losses during civil unrest in Alexandria",
@@ -248,7 +248,7 @@ const alexandriaData = {
             ]
           },
           "-140": {
-            "variance_explained": 3.7,
+            "salience_share": 3.7,
             "description": "The institution undergoes partial recovery under periods of stable leadership, but never recaptures its former dominance as resources are directed elsewhere.",
             "key_manifestations": [
               "Selective restoration of damaged collections",
@@ -258,7 +258,7 @@ const alexandriaData = {
             ]
           },
           "-100": {
-            "variance_explained": 3.3,
+            "salience_share": 3.3,
             "description": "Institutional decline accelerates as political priorities shift away from scholarship, yet dedicated librarians maintain core functions despite reduced resources.",
             "key_manifestations": [
               "Significant reduction in acquisition budgets",
@@ -268,7 +268,7 @@ const alexandriaData = {
             ]
           },
           "-60": {
-            "variance_explained": 2.8,
+            "salience_share": 2.8,
             "description": "The library suffers catastrophic damage during Caesar's Alexandrian campaign, destroying significant portions of the collection and undermining institutional continuity.",
             "key_manifestations": [
               "Fire during Caesar's Alexandria campaign of 48 BCE",
@@ -278,7 +278,7 @@ const alexandriaData = {
             ]
           },
           "-30": {
-            "variance_explained": 2.0,
+            "salience_share": 2.0,
             "description": "The once-great institution exists as a shadow of its former self, with fragmented collections and minimal resources as Alexandria transitions to Roman rule.",
             "key_manifestations": [
               "Efforts to rebuild limited portions of the collection",
@@ -294,7 +294,7 @@ const alexandriaData = {
         "description": "Hellenistic Art Innovation captures the dynamic and evolving artistic styles and practices during the Hellenistic period. It encompasses advancements in sculpture, architecture, and decorative arts, reflecting the cultural and societal changes of the time, particularly in Alexandria.",
         "trajectory": {
           "-300": {
-            "variance_explained": 3.8,
+            "salience_share": 3.8,
             "description": "Hellenistic art is developing distinctive characteristics as Greek artistic traditions encounter Egyptian aesthetic sensibilities in the new cosmopolitan setting.",
             "key_manifestations": [
               "Early Ptolemaic royal portraiture blending Greek and Egyptian elements",
@@ -304,7 +304,7 @@ const alexandriaData = {
             ]
           },
           "-260": {
-            "variance_explained": 4.1,
+            "salience_share": 4.1,
             "description": "Artistic innovation accelerates with mature Alexandrian styles emerging in multiple media, characterized by emotional expressiveness and technical sophistication.",
             "key_manifestations": [
               "Sculptures showing dramatic emotional expressions",
@@ -314,7 +314,7 @@ const alexandriaData = {
             ]
           },
           "-220": {
-            "variance_explained": 3.7,
+            "salience_share": 3.7,
             "description": "Artistic production maintains high technical standards but experiences some standardization as distinctive Alexandrian styles become codified and replicated.",
             "key_manifestations": [
               "Standardized approaches to royal portraiture",
@@ -324,7 +324,7 @@ const alexandriaData = {
             ]
           },
           "-180": {
-            "variance_explained": 3.2,
+            "salience_share": 3.2,
             "description": "Economic pressures lead to reduced artistic patronage, creating a period of limited innovation although technical standards remain high.",
             "key_manifestations": [
               "Smaller scale commissions replacing monumental works",
@@ -334,7 +334,7 @@ const alexandriaData = {
             ]
           },
           "-140": {
-            "variance_explained": 3.5,
+            "salience_share": 3.5,
             "description": "Art experiences a significant revival with a new wave of stylistic innovation driven by cross-cultural exchange with Rome and other Mediterranean centers.",
             "key_manifestations": [
               "Emergence of baroque tendencies in sculpture",
@@ -344,7 +344,7 @@ const alexandriaData = {
             ]
           },
           "-100": {
-            "variance_explained": 4.3,
+            "salience_share": 4.3,
             "description": "Artistic production reaches a secondary peak with distinctive late Hellenistic styles characterized by emotional intensity and technical virtuosity responding to changing tastes.",
             "key_manifestations": [
               "Highly dramatic sculptural groups",
@@ -354,7 +354,7 @@ const alexandriaData = {
             ]
           },
           "-60": {
-            "variance_explained": 3.9,
+            "salience_share": 3.9,
             "description": "Political instability creates uneven artistic production with exceptional works alongside periods of disruption, as Roman influence grows increasingly dominant.",
             "key_manifestations": [
               "Roman-influenced portraiture gaining prominence",
@@ -364,7 +364,7 @@ const alexandriaData = {
             ]
           },
           "-30": {
-            "variance_explained": 3.0,
+            "salience_share": 3.0,
             "description": "The transition to Roman rule transforms artistic production, with distinctive Alexandrian traditions continuing but increasingly absorbed into broader Imperial artistic language.",
             "key_manifestations": [
               "Ptolemaic artistic traditions adapting to Roman patronage",
@@ -380,7 +380,7 @@ const alexandriaData = {
         "description": "Literary Engineering pertains to the systematic study and creation of literature, including the development of genres, narrative techniques, and the integration of scientific and philosophical ideas within literary works during the Hellenistic period.",
         "trajectory": {
           "-300": {
-            "variance_explained": 2.9,
+            "salience_share": 2.9,
             "description": "Literary activity begins taking distinctive Alexandrian forms as the library attracts poets and writers experimenting with new approaches to traditional genres.",
             "key_manifestations": [
               "Early Alexandrian poetry by Philitas of Cos",
@@ -390,7 +390,7 @@ const alexandriaData = {
             ]
           },
           "-260": {
-            "variance_explained": 3.4,
+            "salience_share": 3.4,
             "description": "Literary production diversifies with innovative approaches to poetry, scholarly commentary, and the emergence of distinctively Alexandrian literary aesthetics.",
             "key_manifestations": [
               "Callimachus' influential literary program favoring brevity and erudition",
@@ -400,7 +400,7 @@ const alexandriaData = {
             ]
           },
           "-220": {
-            "variance_explained": 3.9,
+            "salience_share": 3.9,
             "description": "Literary engineering reaches early maturity with sophisticated critical principles, innovative genres, and productive tension between competing literary approaches.",
             "key_manifestations": [
               "Apollonius vs. Callimachus literary debate",
@@ -410,7 +410,7 @@ const alexandriaData = {
             ]
           },
           "-180": {
-            "variance_explained": 4.5,
+            "salience_share": 4.5,
             "description": "Literary activity reaches its peak as mature Alexandrian traditions influence wider Mediterranean literature while maintaining distinctive scholarly character.",
             "key_manifestations": [
               "Aristarchus of Samothrace's critical editions",
@@ -420,7 +420,7 @@ const alexandriaData = {
             ]
           },
           "-140": {
-            "variance_explained": 4.7,
+            "salience_share": 4.7,
             "description": "Literary engineering maintains strength even as other clusters decline, with Alexandrian critical principles providing foundation for wider Hellenistic literary world.",
             "key_manifestations": [
               "Expansion of Alexandrian literary influence to Rome",
@@ -430,7 +430,7 @@ const alexandriaData = {
             ]
           },
           "-100": {
-            "variance_explained": 4.4,
+            "salience_share": 4.4,
             "description": "Literary activity finds new audiences as Alexandrian approaches influence emerging Roman literary culture while continuing local traditions.",
             "key_manifestations": [
               "Literary exchanges with visiting Roman poets",
@@ -440,7 +440,7 @@ const alexandriaData = {
             ]
           },
           "-60": {
-            "variance_explained": 4.2,
+            "salience_share": 4.2,
             "description": "Literary engineering remains relatively robust despite institutional challenges, as scholarly literary traditions find support from Roman intellectual circles.",
             "key_manifestations": [
               "Didymus Chalcenterus' prolific scholarly output",
@@ -450,7 +450,7 @@ const alexandriaData = {
             ]
           },
           "-30": {
-            "variance_explained": 3.9,
+            "salience_share": 3.9,
             "description": "As Alexandria transitions to Roman rule, literary traditions maintain significant influence through their adoption by Roman literary culture.",
             "key_manifestations": [
               "Roman neoteric poets drawing on Alexandrian traditions",
@@ -466,7 +466,7 @@ const alexandriaData = {
         "description": "Ptolemaic Political Dynamics examines the governance, political strategies, and socio-political interactions of the Ptolemaic dynasty ruling Egypt. This cluster includes the internal politics of the Ptolemaic court, relations with neighboring states, and policies affecting cultural and scholarly institutions like the Library of Alexandria.",
         "trajectory": {
           "-300": {
-            "variance_explained": 5.2,
+            "salience_share": 5.2,
             "description": "The Ptolemaic dynasty establishes firm political control through innovative governance combining Greek and Egyptian elements, with strong patronage of cultural institutions.",
             "key_manifestations": [
               "Ptolemy I Soter's consolidation of power",
@@ -476,7 +476,7 @@ const alexandriaData = {
             ]
           },
           "-260": {
-            "variance_explained": 4.8,
+            "salience_share": 4.8,
             "description": "Ptolemaic governance reaches peak effectiveness under Ptolemy II Philadelphus, with stable administration, strategic marriages, and significant territorial control.",
             "key_manifestations": [
               "Ptolemy II's marriage to his sister Arsinoe II",
@@ -486,7 +486,7 @@ const alexandriaData = {
             ]
           },
           "-220": {
-            "variance_explained": 4.2,
+            "salience_share": 4.2,
             "description": "Political decline begins under Ptolemy IV as competent governance gives way to court intrigue, weakening administrative effectiveness despite continued cultural patronage.",
             "key_manifestations": [
               "Increased influence of court favorites over competent administrators",
@@ -496,7 +496,7 @@ const alexandriaData = {
             ]
           },
           "-180": {
-            "variance_explained": 3.8,
+            "salience_share": 3.8,
             "description": "Internal dynastic conflicts and external pressures from Rome and the Seleucids create political instability, with brief periods of recovery failing to reverse decline.",
             "key_manifestations": [
               "Roman intervention in Ptolemaic succession disputes",
@@ -506,7 +506,7 @@ const alexandriaData = {
             ]
           },
           "-140": {
-            "variance_explained": 3.4,
+            "salience_share": 3.4,
             "description": "Continued dynastic strife weakens Ptolemaic authority, with increasing Roman influence over succession and foreign policy despite occasional capable rulers.",
             "key_manifestations": [
               "Ptolemy VIII expelling intellectuals from Alexandria",
@@ -516,7 +516,7 @@ const alexandriaData = {
             ]
           },
           "-100": {
-            "variance_explained": 2.9,
+            "salience_share": 2.9,
             "description": "Ptolemaic autonomy rapidly diminishes as Roman influence becomes increasingly direct, with rulers maintaining cultural patronage as one of few remaining areas of independent action.",
             "key_manifestations": [
               "Roman support becoming essential for succession",
@@ -526,7 +526,7 @@ const alexandriaData = {
             ]
           },
           "-60": {
-            "variance_explained": 2.2,
+            "salience_share": 2.2,
             "description": "Ptolemaic rule becomes effectively dependent on Roman approval, with Cleopatra VII attempting innovative strategies to preserve Egyptian independence.",
             "key_manifestations": [
               "Cleopatra VII's alliances with Caesar and Mark Antony",
@@ -536,7 +536,7 @@ const alexandriaData = {
             ]
           },
           "-30": {
-            "variance_explained": 1.0,
+            "salience_share": 1.0,
             "description": "The Ptolemaic dynasty collapses completely with Cleopatra's defeat and death, as Egypt transitions to direct Roman rule ending the Hellenistic period in Alexandria.",
             "key_manifestations": [
               "Battle of Actium and defeat of Antony and Cleopatra",

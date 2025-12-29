@@ -42,7 +42,7 @@ export const humeData = {
     "description": "This cluster represents the initial, high-variance phase of the Enlightenment, characterized by a firm belief in the universality of human reason, the perfectibility of man, and the application of rational principles to all areas of life, from governance to philosophy. It is rooted in the legacy of Descartes and Leibniz, advocating for deductive, *a priori* certainty. While dominant early on, its explanatory power wanes as emergent forces\u2014particularly empiricism and sentimentalism\u2014introduce skepticism and nuance to its claims of pure, unmediated rational access to truth, leading to a secular trend of decline in its overall cultural variance over the century as competing epistemologies gained traction.",
     "trajectory": {
       "1700": {
-        "variance_explained": 7.8,
+        "salience_share": 7.8,
         "description": "The variance for Enlightenment Universalism stands at an influential 7.8%, reflecting its entrenched status as the prevailing intellectual paradigm, having inherited the confidence of the late 17th-century Scientific Revolution and Cartesian rationalism. The cultural landscape is dominated by the belief that logical deduction and mathematics can uncover fundamental truths about the world and humanity, exemplified by the flourishing of academic institutions and the widespread acceptance of reason-based political theory. This high value is maintained by the institutional inertia of the intellectual elite, whose philosophical output continues to frame all discourse through a lens of rational order. The force of stasis is the sheer weight of institutional and academic momentum, which has not yet been significantly challenged by alternative epistemologies of sentiment or experience.",
         "key_manifestations": [
           "Gottfried Wilhelm Leibniz's 'The Monadology' (1714, written)",
@@ -52,7 +52,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 7.7,
+        "salience_share": 7.7,
         "description": "The variance sees a slight decrease to 7.7% (\u0394v = -0.1%), indicating the very beginning of a long-term wane in the absolute dominance of pure Cartesian rationalism, even as it remains the top cluster. This minimal negative delta is not yet a displacement but a subtle sign of intellectual diversification. The catalyst for this minimal decay is the growing interest in practical, observational science and a subtle shift in philosophical focus towards moral and social questions that pure mathematical reason struggled to fully encompass. Intellectual centers begin to debate the limits of purely deductive systems, paving the way for more experience-based approaches. This shift is more noticeable in the emerging literature of sensibility, which posits a non-rational foundation for moral and aesthetic judgment.",
         "key_manifestations": [
           "Anthony Ashley Cooper, 3rd Earl of Shaftesbury's 'A Letter Concerning Enthusiasm' (1708)",
@@ -62,7 +62,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 7.6,
+        "salience_share": 7.6,
         "description": "The cluster continues its slow descent to 7.6% (\u0394v = -0.1%), as abstract rationalist systems face increasing pressure from the burgeoning empirical movement, particularly in Great Britain. While Universalism and Reason still govern political and scientific thought, its explanatory power in the realm of human nature and moral philosophy is being displaced by the 'moral sense' theories that ground ethics in feeling, not pure reason. This negative delta reflects a gradual decoupling of reason from morality, a key foundational stone of the earlier Enlightenment. The emerging focus on observation over pure speculation, galvanized by figures like Berkeley, subtly erodes the primacy of innate, self-evident rational truths.",
         "key_manifestations": [
           "George Berkeley's 'Three Dialogues between Hylas and Philonous' (1713)",
@@ -72,7 +72,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance now settles at 7.5% (\u0394v = -0.1%), as the slow displacement by both philosophical empiricism and the sentimental mode gains momentum. The catalyst for this persistent, albeit gentle, negative delta is the intellectual shift from the deductive certainty of Continental Rationalism towards the inductive and probabilistic methods championed by the Newtonian legacy. Intellectual conversation is moving away from the construction of grand, all-encompassing systems of rational thought. The rise of philosophical skepticism concerning rational metaphysics, even within the rationalist camp, contributes to the slight erosion of Universalism's unchallenged authority. The shift manifests in literature that increasingly emphasizes observed human conduct over abstract rational ideals.",
         "key_manifestations": [
           "Lady Mary Wortley Montagu's early correspondence, showcasing empirical observation of society (ongoing)",
@@ -82,7 +82,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 7.4,
+        "salience_share": 7.4,
         "description": "The cluster holds at 7.4% (\u0394v = -0.1%), demonstrating a steady, systemic decrease in its total cultural variance. The displacing force is the consolidation of empirical methodologies across science and nascent social theory, which increasingly question the starting premises of pure *a priori* reason. The cultural conversation is gradually transitioning from 'what can pure reason tell us' to 'what do our observations and senses tell us'. This negative delta is a consequence of the rising institutional and academic acceptance of John Locke's epistemology, which directly challenges the rationalist model of innate ideas. The focus on human experience, rather than divine or mathematical certainty, subtly de-prioritizes abstract Universalism.",
         "key_manifestations": [
           "Antoine Coysevox's 'Fame Riding Pegasus' (1702), representing Baroque/rationalist triumph",
@@ -92,7 +92,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 7.3,
+        "salience_share": 7.3,
         "description": "The variance drops to 7.3% (\u0394v = -0.1%), with the marginal decline continuing, primarily displaced by the formal introduction of empiricism into the Scottish and French intellectual spheres. The catalyst for this sustained decrease is the growing philosophical attention to sensation and association of ideas as the origin of all knowledge, a view incompatible with unmediated rational intuition. The cultural momentum is shifting towards an inductive worldview, where universal laws must be derived from repeated observations rather than posited by reason alone. This erosion of *a priori* certainty undermines the confidence in a purely rational, universal human nature that defined the cluster's peak influence.",
         "key_manifestations": [
           "Francis Hutcheson's 'An Inquiry into the Original of Our Ideas of Beauty and Virtue' (1725), grounding morality in sense",
@@ -102,7 +102,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 7.1,
+        "salience_share": 7.1,
         "description": "A slightly steeper decline to 7.1% (\u0394v = -0.2%) is observed, indicating that the pressure from rival clusters is intensifying. The primary displacing force is the emerging cultural impact of **Empirical Epistemology (Cluster #5)**, whose philosophical tenets are now being applied rigorously by the new generation of thinkers, most notably a young David Hume. Hume\u2019s early work (written during this period) directly assaults the rationalist foundations of causation, substance, and self, arguing that they are derived from custom and sensation rather than reason. This intellectual challenge, circulating in manuscript and among students, causes a rapid deceleration in the belief in purely rational foundations for knowledge, thereby accelerating the decline of this cluster's total cultural sway.",
         "key_manifestations": [
           "David Hume's 'A Treatise of Human Nature' (begun writing in the late 1720s, reflecting the intellectual current)",
@@ -112,7 +112,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 6.9,
+        "salience_share": 6.9,
         "description": "The variance drops to 6.9% (\u0394v = -0.2%), a sustained acceleration in decline. The core displacing force is the public circulation and reaction to the explicit anti-rationalist implications of the new wave of empiricism. The full scope of grounding all knowledge in sensory impressions\u2014even moral and metaphysical knowledge\u2014begins to register in the broader cultural milieu, challenging the moral and political authority previously derived from Universal Reason. This negative delta reflects a cultural crisis of confidence in deductive certainty, where abstract systems are viewed with growing suspicion in favor of concrete, observed facts of human nature and society. The focus shifts to the 'limits' of reason, a concept antithetical to pure Universalism.",
         "key_manifestations": [
           "David Hume's 'A Treatise of Human Nature' (Volume I and II published 1739-1740, representing the zenith of empirical challenge)",
@@ -122,7 +122,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 6.7,
+        "salience_share": 6.7,
         "description": "The variance for Enlightenment Universalism falls to 6.7% (\u0394v = -0.2%), marking a clear and consistent pattern of being displaced by philosophical and cultural currents that prioritize experience and emotion. The primary displacement is the intellectual and public backlash, or rather, the *lack* of intellectual excitement, following the publication of Hume\u2019s 'Treatise'. The work's skepticism, while intellectually rigorous, failed to immediately gain a broad following, signifying that the more radical aspects of Empiricism were now serving as the *displacing force* against Rationalist metaphysics. Universalism's continued decline is thus a result of its failure to incorporate the new empirical facts of human psychological experience into its rigid, deductive structure, creating a philosophical vacuum.",
         "key_manifestations": [
           "The initial, muted public reception of David Hume's 'A Treatise of Human Nature' (1739-40)",
@@ -132,7 +132,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The cluster further declines to 6.5% (\u0394v = -0.2%), continuing its steady, secular trend downward as the new cultural-intellectual synthesis begins to crystallize around empiricism and sentimentalism. The sustained negative delta is driven by the ascendancy of **The Sentimental Mode (Cluster #2)**, which offers a competing foundation for morality and social cohesion based on shared feeling rather than abstract reason. This shift is crucial, as the Universalist project had hinged on reason's ability to provide a common ground for morality and politics. With emotion now providing a powerful alternative, the need for a strict, deductive Rationalism diminishes, acting as a powerful cultural displacing force, particularly in popular literature and social reform movements.",
         "key_manifestations": [
           "Publication of Condillac's 'Essai sur l'origine des connaissances humaines' (1746), a French Lockean-Empiricist treatise",
@@ -142,7 +142,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 6.3,
+        "salience_share": 6.3,
         "description": "The variance drops to 6.3% (\u0394v = -0.2%), maintaining a consistent rate of decline. The displacing force is the establishment of the 'man of feeling' as a cultural ideal, which stands in direct contrast to the purely rational 'man of reason' championed by this cluster. This negative delta reflects a public and intellectual fatigue with high-level metaphysical speculation and an increased preference for philosophical and literary works grounded in the immediate, observable facts of human behavior and feeling. The success of the French *Encyclop\u00e9die* project, despite its rationalist roots, ultimately relies on the empirical compilation of disparate facts, subtly undermining the belief in a single, overarching rational system.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Discourse on the Arts and Sciences' (1750), a foundational critique of pure rationalist progress",
@@ -152,7 +152,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 6.1,
+        "salience_share": 6.1,
         "description": "The cluster falls to 6.1% (\u0394v = -0.2%). The primary displacing force is the international spread of **Philosophical Skepticism (Cluster #6)**, which Hume's later, more accessible works (like the *Enquiries*) made unavoidable. The Universalist project, which required absolute rational certainty, could not withstand the skeptical attack on inductive inference and causation. This accelerated decline is not a rejection of reason itself, but a rejection of *unbounded* reason; the Enlightenment turns its skeptical rational tools against its own foundational premises, causing this cluster's cultural footprint to shrink as philosophical focus pivots to what can be known from experience *despite* the limits of reason. This crisis of rational foundations is the core negative catalyst.",
         "key_manifestations": [
           "David Hume's 'Four Dissertations' (1757), including 'The Natural History of Religion', further secularizing thought",
@@ -162,7 +162,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 5.8,
+        "salience_share": 5.8,
         "description": "The variance sees a more pronounced drop to 5.8% (\u0394v = -0.3%), reflecting the peak influence of Rousseau's and the Sentimental Mode's critique of purely rational, civilized society. The catalyst for this negative delta is the pervasive cultural shift toward 'primitivism' and the 'noble savage,' where natural instinct and feeling are elevated above the abstract constructions of reason, as articulated powerfully in Rousseau's works. The Universalist model, which posits a single, rational path to civilization, is displaced by a relativistic and emotional understanding of human flourishing. This decline is therefore fueled by a growing cultural preference for emotional authenticity over cold rational calculus, impacting everything from education to political theory.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Julie, or the New Heloise' (1761), an overwhelming success for sentimentalism",
@@ -172,7 +172,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The cluster continues its decline to 5.5% (\u0394v = -0.3%), as the political and economic implications of empiricism and liberalism begin to formalize. The primary displacing force is the ascendancy of **Commercial Society and Polite Culture (Cluster #4)**, whose principles of self-interest and unintended order (as theorized by Hume and Smith) directly counter the rationalist need for planned, deductive social structures. The intellectual shift from a 'social contract' based on rational assent to one based on utility and passion-guided interests is the main catalyst for this reduction in variance. The Enlightenment project itself is becoming less about Universal Reason and more about practical, empirical social mechanics, a move that minimizes the cultural space for pure rationalist deduction.",
         "key_manifestations": [
           "Adam Ferguson's 'An Essay on the History of Civil Society' (1767), applying empirical history to social development",
@@ -182,7 +182,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance for Universalism falls to 5.2% (\u0394v = -0.3%), entering a phase where it is no longer the defining characteristic of the Enlightenment, but merely one, albeit influential, sub-set. The catalyst for this negative delta is the growing political instability in the American colonies, which demonstrated that rational consensus was insufficient to govern political reality. This real-world failure of pure rationalism as a political force acts as a major displacing force, shifting intellectual focus toward political economy, practical governance, and the role of passions in conflict. The cultural conversation moves from the idealized rational republic to the empirically observed constraints of self-interest and liberty in a commercial society.",
         "key_manifestations": [
           "Baron d'Holbach's 'The System of Nature' (1770), an extreme materialist and determinist rationalism that alienated many moderates",
@@ -192,7 +192,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 4.9,
+        "salience_share": 4.9,
         "description": "The variance drops to 4.9% (\u0394v = -0.3%), reflecting the significant cultural and intellectual upheaval caused by the start of the American Revolution. The American Declaration of Independence (1776), while drawing on Universalist claims of 'self-evident' truths, ultimately grounds its political project in empirical grievances and the Lockean, individualistic tradition. This juxtaposition acts as a displacing force, demonstrating the practical inadequacy of pure rationalist theory without the grounding of observed, historical experience and individual rights. The Revolution pivots the cultural discussion from abstract Universalism to concrete republicanism and empirical political mechanics, further marginalizing the purely deductive approach.",
         "key_manifestations": [
           "The American Declaration of Independence (1776), a document that blends Universalist rhetoric with Lockean Empiricism",
@@ -202,7 +202,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The cluster sees a steep decline to 4.5% (\u0394v = -0.4%), a significant loss of cultural variance, due to the ascendance of the early Romantic/Sublime aesthetics and the sustained impact of the American Revolution. The catalyst for this accelerated negative delta is the growing cultural exhaustion with the perceived 'coldness' of pure reason, leading to a profound shift in aesthetics towards the dramatic, the emotional, and the irrational, as captured by **The Sublime (Cluster #12)**. This emotional counter-current acts as a powerful displacing force in literature and art, arguing that the deepest truths lie outside the bounds of Cartesian rationality, thereby rapidly shrinking the explanatory power of Universalism in the cultural sphere.",
         "key_manifestations": [
           "Immanuel Kant's 'Critique of Pure Reason' (1781), a foundational attempt to save Universalism by grounding it in subjective, rather than objective, rational structures",
@@ -212,7 +212,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 4.1,
+        "salience_share": 4.1,
         "description": "The variance drops further to 4.1% (\u0394v = -0.4%), with the American experiment now underway and the philosophical challenge from Immanuel Kant reaching the intellectual centers. The primary displacing force is the combination of political *realpolitik* (post-Revolutionary governance) and Kant's new philosophical synthesis, which, while attempting to validate reason, fundamentally limits its objective reach to the phenomenal world. This critical philosophical move dramatically curtails the scope of Enlightenment Universalism's original ambition\u2014to know the world *as it is* through pure reason\u2014resulting in this sustained negative delta. The cultural focus irrevocably shifts to practical administration and subjective experience.",
         "key_manifestations": [
           "The debate over the United States Constitution (1787), a purely pragmatic and empirical approach to governance",
@@ -222,7 +222,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 3.7,
+        "salience_share": 3.7,
         "description": "The variance declines again to 3.7% (\u0394v = -0.4%), as the French Revolution erupts, providing a dramatic, real-world refutation of the slow, rational progress initially promised by this cluster. The French Revolution acts as the ultimate catalyst for decay, its initial universalist rhetoric quickly devolving into the Reign of Terror, demonstrating the failure of abstract, *a priori* rationalism to contain the passions of man. The subsequent political and cultural turn to **Romanticism (Cluster #12's evolution)**, which explicitly rejects the cold, systemic nature of the Revolution, is the major displacing force. This crisis of reason accelerates the cluster's decline to its lowest point yet, as its core tenets become associated with political chaos.",
         "key_manifestations": [
           "Edmund Burke's 'Reflections on the Revolution in France' (1790), an influential critique of abstract rationalist political theory",
@@ -232,7 +232,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 3.4,
+        "salience_share": 3.4,
         "description": "The variance settles at 3.4% (\u0394v = -0.3%), stabilizing at a low level of cultural influence. At this point, Enlightenment Universalism is relegated to a historical background concept, its tenets primarily visible in the institutional structures it helped establish (academies, bureaucracies). The sustained negative delta is driven by the dominance of **The Sublime and Proto-Romantic Emotion (Cluster #12)**, which has almost entirely displaced rational order as the guiding aesthetic and philosophical principle of the day. The cultural memory of the Terror acts as the final displacing force, cementing the idea that the greatest human truths are found in the irrational, the historical, and the passionate, not the abstract, universal, and reasonable.",
         "key_manifestations": [
           "The continued, brutal phase of the French Revolution and the rise of Napoleon (1799), marking the end of the Age of Reason's political project",
@@ -242,7 +242,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 3.2,
+        "salience_share": 3.2,
         "description": "The variance ends the century at 3.2% (\u0394v = -0.2%), a modest decline from the previous period, which reflects its final entrenchment as a background principle. Universalism and pure Reason are now a legacy, not a driver. The core of its explanatory power is now focused on the institutional structures of modern states and the scientific method (as refined by empiricism). The displacement is complete; the cultural landscape is now dominated by the synthesis of empiricism, sentimentalism, and Romantic passion, leaving this cluster as a receding philosophical ancestor. The final trajectory is a dramatic rise and fall, demonstrating the competitive nature of cultural forces.",
         "key_manifestations": [
           "The Concordat of 1801, marking a pragmatic, not purely rationalist, end to the religious strife of the Revolution",
@@ -258,7 +258,7 @@ export const humeData = {
     "description": "This cluster captures the cultural shift from reason-based morality to one grounded in innate human feeling, sympathy, and 'moral sense.' This philosophical and aesthetic development, heavily influenced by Shaftesbury and Hutcheson, posits that humans are naturally endowed with a capacity for moral and aesthetic judgment independent of pure rational deduction. Culturally, it manifests in the emphasis on sensibility, tears, the 'man of feeling,' and literature that explores the intricacies of human emotion and sympathy as the glue of commercial society. This cluster shows a secular trend of increase, acting as a core countervailing force to pure Rationalism, and peaks right before the full eruption of Romanticism, which it directly feeds into.",
     "trajectory": {
       "1700": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The Sentimental Mode begins at 5.0%, representing a significant, but not yet dominant, challenge to Rationalist supremacy. The concept of innate moral sense, divorced from purely rational calculation, had been introduced by earlier thinkers like Shaftesbury, serving as the **catalyst** for this cluster's establishment. This early variance reflects the cultural fatigue with strict, pessimistic Calvinist doctrines and Hobbesian self-interest, creating a fertile ground for a more benevolent view of human nature. The intellectual momentum is driven by a desire to find a more intuitive and emotionally satisfying basis for social order and virtue, which would provide the foundation for Hume and Smith's moral philosophy later in the century. The variance is maintained by the philosophical elite grappling with the nature of innate goodness.",
         "key_manifestations": [
           "Anthony Ashley Cooper, 3rd Earl of Shaftesbury's 'An Inquiry Concerning Virtue or Merit' (1699)",
@@ -268,7 +268,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance sees a slight increase to 5.2% (\u0394v = +0.2%), continuing the initial rise. The catalyst for this growth is the public reaction against the perceived cynicism of works like Mandeville's 'Fable of the Bees,' which argued that private vices lead to public benefits. The Sentimental Mode offered a morally satisfying counter-narrative, asserting the genuine goodness of human impulse, which gained traction among a populace desiring an ethical system not based purely on divine command or cold utility. This positive delta reflects a deepening commitment to a benevolent view of human nature within the intellectual and nascent public sphere, setting the stage for the formal moral sense school.",
         "key_manifestations": [
           "The continued influence of The Spectator, promoting 'politeness' and 'benevolence' as social virtues (begun 1711)",
@@ -278,7 +278,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 5.4,
+        "salience_share": 5.4,
         "description": "The cluster continues its steady ascent to 5.4% (\u0394v = +0.2%). The catalyst is the philosophical formalization of the moral sense. Francis Hutcheson, a central figure, began to articulate a clear theory of an internal sense that apprehends moral distinctions, mirroring the senses for beauty. This positive delta represents the philosophical establishment of the cluster's core concept. The cultural influence of this idea begins to move from the philosophical text to the moralizing literature of the time, where acts of spontaneous generosity and feeling are celebrated as the highest virtue, directly influencing the emerging narrative forms.",
         "key_manifestations": [
           "Francis Hutcheson's early lectures and writing, formalizing the moral sense concept (mid-1710s)",
@@ -288,7 +288,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 5.6,
+        "salience_share": 5.6,
         "description": "The variance rises to 5.6% (\u0394v = +0.2%), indicating a continued, gradual increase in cultural penetration. The catalyst for this sustained positive delta is the growing philosophical influence of Lockean empiricism (Cluster #5), which paradoxically, by challenging innate ideas in the rationalist sense, created a space for Hutcheson to argue that the moral sense, though innate, operates like an external sense\u2014receiving 'impressions' of virtue and vice. This synthesis provides a powerful, non-rational, but scientifically acceptable foundation for morality, accelerating its appeal. The cluster is growing by providing a palatable, emotional alternative to both dogmatic religion and cold rationalism.",
         "key_manifestations": [
           "Francis Hutcheson's 'Inquiry into the Original of Our Ideas of Beauty and Virtue' (1725, representing the formal synthesis of sense and morality)",
@@ -298,7 +298,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 5.8,
+        "salience_share": 5.8,
         "description": "The cluster sees a strong rise to 5.8% (\u0394v = +0.2%). The catalyst for this continued growth is the increasing literary and popular acceptance of the 'sensibility' as a mark of refined character, especially in the growing middle class. The ability to feel deeply, to shed a tear, and to sympathize becomes a social signifier of moral superiority. This positive delta reflects the social reification of the philosophical principle: the 'man of feeling' is now a cultural ideal. This is crucial because it gives the abstract principle immediate, practical relevance in daily life, fashion, and social interaction, pushing its explanatory power upwards across all cultural domains.",
         "key_manifestations": [
           "The publication of early works by Samuel Richardson, laying the groundwork for the psychological and emotional novel",
@@ -308,7 +308,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance reaches 6.0% (\u0394v = +0.2%), now clearly gaining on the Rationalist cluster. The primary catalyst is the institutional success of Hutcheson, whose theories are now widely taught and accepted, particularly in Scotland, creating a robust intellectual framework for the sentiment-based approach to human nature. This positive delta is the result of a cultural consensus that rational calculation alone is inadequate for explaining moral action and social cooperation; it is sympathy and feeling that truly bind society. This intellectual environment directly influences the young David Hume and Adam Smith, who will base their seminal works on the observed, empirical facts of this moral sense.",
         "key_manifestations": [
           "Francis Hutcheson's 'An Essay on the Nature and Conduct of the Passions and Affections' (1728, formalizing the system)",
@@ -318,7 +318,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 6.3,
+        "salience_share": 6.3,
         "description": "The cluster sees an accelerated rise to 6.3% (\u0394v = +0.3%). The major catalyst for this positive delta is the intellectual confrontation with the radical implications of early empiricism (Hume\u2019s nascent work), which threatened to dissolve all rational foundations for morality. The Sentimental Mode, by providing an immediate, non-rational, yet deeply felt basis for moral distinctions, becomes the most culturally satisfying answer to skepticism. It is the necessary bridge that allows the Enlightenment to embrace empiricism without collapsing into moral nihilism. This rise shows the cluster's function as a cultural stabilizer during a period of epistemological upheaval, increasing its explanatory power in moral and social theory.",
         "key_manifestations": [
           "David Hume's early intellectual confrontation with his predecessors, forcing a clearer definition of the moral sense's empirical basis",
@@ -328,7 +328,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 6.6,
+        "salience_share": 6.6,
         "description": "The variance reaches 6.6% (\u0394v = +0.3%). The catalyst for this continued high growth is the emergence of the sentimental novel, which provides the primary vehicle for mass cultural transmission of the moral sense theory. Authors like Samuel Richardson demonstrate how the subtle workings of sympathy, virtue, and emotional struggle can drive an entire narrative. This positive delta reflects the successful popularization of the cluster's core ideas into mainstream entertainment and cultural discourse, making 'feeling' a central object of public interest and analysis. The Sentimental Mode is now deeply embedded in the everyday understanding of human relations, eclipsing pure rational analysis in this domain.",
         "key_manifestations": [
           "Samuel Richardson's 'Pamela; or, Virtue Rewarded' (1740, representing the zenith of the emotional novel), though published slightly later, was widely discussed and read in this period",
@@ -338,7 +338,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 6.9,
+        "salience_share": 6.9,
         "description": "The variance increases significantly to 6.9% (\u0394v = +0.3%). The major catalyst for this spike is the immense, pan-European success of Samuel Richardson's 'Pamela.' This novel not only reifies the 'Man/Woman of Feeling' archetype but makes the nuanced, internal emotional life of the individual the subject of high cultural importance. The positive delta reflects the Sentimental Mode\u2019s successful establishment of the interior psychological world as a legitimate, primary source of cultural explanatory power, surpassing the external, universal reason of earlier Rationalism. This moment marks the fusion of philosophical theory with mass literary appeal, securing its position as a dominant cultural force.",
         "key_manifestations": [
           "Samuel Richardson's 'Pamela; or, Virtue Rewarded' (1740), setting the standard for the sentimental novel",
@@ -348,7 +348,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 7.1,
+        "salience_share": 7.1,
         "description": "The cluster continues its steady rise to 7.1% (\u0394v = +0.2%). The catalyst for this growth is the literary and intellectual refinement of the Sentimental project. Authors now explore the ambiguities and contradictions of the 'man of feeling,' adding depth and nuance to the cultural phenomenon. This positive delta reflects a movement from simple moralizing to complex psychological realism, which is driven by the realization that true virtue is often a matter of internal struggle and self-deception, not just spontaneous feeling. The cluster is growing by incorporating a more mature, empirical understanding of human psychology, exemplified by the shift from *Pamela* to Richardson's later, more complex works.",
         "key_manifestations": [
           "Samuel Richardson's 'Clarissa' (1748), a darker, more complex exploration of sensibility and virtue in distress",
@@ -358,7 +358,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 7.3,
+        "salience_share": 7.3,
         "description": "The variance reaches 7.3% (\u0394v = +0.2%). The catalyst for this increase is the direct cultural and intellectual appropriation of the Sentimental Mode by the burgeoning political philosophy, notably through the works of Rousseau, who transforms the 'moral sense' into a political principle\u2014the 'general will' as an expression of collective sentiment. This positive delta reflects the successful colonization of political thought by the emotional epistemology, making the cluster highly relevant to discussions of government and social structure. The cultural narrative is now less about what a man *thinks* and more about what he *feels* and how those feelings ought to structure society.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Discourse on the Arts and Sciences' (1750), challenging Enlightenment rationalism in favor of natural feeling",
@@ -368,7 +368,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance rises to 7.5% (\u0394v = +0.2%), reaching a major peak of influence. The catalyst is the formal, academic crystallization of the Sentimental Mode into a complete system of political and moral philosophy, most notably with Adam Smith\u2019s 'Theory of Moral Sentiments.' Smith grounds all social interaction, moral judgment, and the functioning of a commercial society in the mechanism of *sympathy* and the *impartial spectator.* This positive delta represents the ultimate vindication of the cluster's core premise: that feeling, not reason, is the true foundation of social order. It is now the most powerful explanatory framework for human behavior across all intellectual domains.",
         "key_manifestations": [
           "Adam Smith's 'The Theory of Moral Sentiments' (1759, representing the scientific apex of the moral sense school)",
@@ -378,7 +378,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 7.7,
+        "salience_share": 7.7,
         "description": "The cluster continues its ascent to 7.7% (\u0394v = +0.2%). The primary catalyst for this sustained growth is the cultural dominance of the sentimental literary style, particularly exemplified by Rousseau's *Julie, or the New Heloise*, which becomes an international phenomenon. This positive delta is driven by the cultural appetite for intense, authentic emotional expression, validating the belief that feeling is the truest guide to morality and life. The 'man of feeling' is now the dominant cultural ideal, celebrated in art, literature, and social conduct, allowing the Sentimental Mode to successfully displace the rationalist ideal in the popular imagination.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Julie, or the New Heloise' (1761), a massive commercial and cultural success",
@@ -388,7 +388,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 7.8,
+        "salience_share": 7.8,
         "description": "The variance reaches its peak at 7.8% (\u0394v = +0.1%), maintaining its position as the defining mode of cultural expression. The catalyst for this final surge is the literary refinement of the 'sentimental journey' trope, exemplified by Sterne, which transforms the sentimental experience into a self-conscious and aesthetically valuable cultural performance. This delta, though small, represents the Sentimental Mode's complete saturation of literature and travel writing. However, the slowing rate of growth indicates a point of inflection: the very intensity and proliferation of the sentimental style now invite the critique of **Irony and Hypocrisy (Cluster #14's evolution)**, foreshadowing its eventual decay.",
         "key_manifestations": [
           "Laurence Sterne's 'A Sentimental Journey Through France and Italy' (1768), which perfects the genre",
@@ -398,7 +398,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 7.6,
+        "salience_share": 7.6,
         "description": "The variance drops to 7.6% (\u0394v = -0.2%), marking the beginning of a secular decline from its peak. The primary displacing force is the inherent critique of its own excesses, manifesting as a cultural suspicion of the *performance* of feeling (i.e., hypocrisy) and the philosophical challenge from political economy. The public is growing weary of the often overwrought emotionalism in literature. Adam Smith's simultaneous publication of *The Wealth of Nations* refocuses attention on cold, rational self-interest in the economic sphere, displacing sentiment as the sole explanatory power of social behavior. This negative delta reflects the cultural exhaustion with the 'man of feeling' archetype.",
         "key_manifestations": [
           "Oliver Goldsmith's 'She Stoops to Conquer' (1773), a satire of the overly refined sentimental comedy",
@@ -408,7 +408,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 7.3,
+        "salience_share": 7.3,
         "description": "The variance drops to 7.3% (\u0394v = -0.3%), accelerating its decline. The major displacing force is the political radicalization of the sentimental mode, as seen in the rhetoric of the American Revolution. When emotional appeals for liberty and virtue become tied to bloody conflict, the idealized, gentle 'sentimental' ideal loses its innocence and cultural appeal. The need for practical, pragmatic governance in the new republic displaces the cultural preoccupation with private feeling. The negative delta reflects the cultural shift from a private, moral epistemology to a public, political one, where the mildness of the Sentimental Mode is inadequate for the drama of the age.",
         "key_manifestations": [
           "The rhetorical use of sentimental appeals for liberty in American Revolutionary pamphlets (e.g., Thomas Paine's 'Common Sense', 1776)",
@@ -418,7 +418,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 6.8,
+        "salience_share": 6.8,
         "description": "The variance sees a steep drop to 6.8% (\u0394v = -0.5%). The dominant displacing force is the full, dramatic emergence of **The Sublime and Proto-Romantic Emotion (Cluster #12)**, which takes the Sentimental Mode's emphasis on feeling but amplifies it to a level of awe, terror, and the transcendent, making the Sentimental Mode seem tame by comparison. The cultural conversation moves from the mild, domestic tear to the violent, untamed passion of nature and the individual genius. This large negative delta reflects a cultural preference for the intense, non-rational sublime over the genteel, moralizing sensibility. The philosophical basis of the cluster is now fully superseded by the aesthetic of the sublime.",
         "key_manifestations": [
           "The publication of the early, full-blown Gothic novels (e.g., Horace Walpole's 'The Castle of Otranto' (1764, but influence peaks here) and Ann Radcliffe's works), embracing terror and the irrational",
@@ -428,7 +428,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 6.3,
+        "salience_share": 6.3,
         "description": "The variance falls to 6.3% (\u0394v = -0.5%), a sustained, rapid decay. The primary displacing force is the political realization of the Sentimental project's radical implications in the early stages of the French Revolution, where appeals to 'fraternity' and 'natural rights' quickly descend into mob violence and the Terror. This association with political chaos irrevocably taints the cluster's cultural appeal, making the mild Sentimental Mode seem politically dangerous and practically naive. This negative delta reflects a widespread cultural retreat from the idea of basing government on unchecked feeling, leading to a revival of more pragmatic or historically grounded political thought.",
         "key_manifestations": [
           "The early, passionate rhetoric of the French Revolution's National Assembly, invoking Rousseau and the general will",
@@ -438,7 +438,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 5.8,
+        "salience_share": 5.8,
         "description": "The variance drops to 5.8% (\u0394v = -0.5%), as the Sentimental Mode is fully displaced by the dominant aesthetic of high Romanticism. The cultural focus shifts from the domestic, moral sentiment to the transcendent, often irrational, sublime. The catalyst for this negative delta is the intellectual backlash against the French Revolution's Reign of Terror, which demonstrated the catastrophic failure of basing political authority on abstract, emotional 'virtue.' Edmund Burke's critique (1790) is a major displacing force, arguing that social order must be based on historical custom, not the fleeting 'feelings' of the populace, thereby destroying the cluster's political relevance and severely curtailing its cultural footprint.",
         "key_manifestations": [
           "Edmund Burke's 'Reflections on the Revolution in France' (1790), a powerful attack on the sentimental and rationalist foundations of the Revolution",
@@ -448,7 +448,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 5.4,
+        "salience_share": 5.4,
         "description": "The variance falls to 5.4% (\u0394v = -0.4%), reflecting its final decay into a set of historical literary conventions. The primary displacing force is the complete triumph of Romantic subjectivity and imagination, which views the Sentimental Mode as too mild, too moralizing, and too socially constrained. The negative delta is a consequence of the cultural preference for individual, titanic emotion over polite, shared sympathy. The cluster's explanatory power is now limited to the history of the novel and moral philosophy, having been almost entirely superseded in high culture by the radical new aesthetic of the Sublime.",
         "key_manifestations": [
           "The publication of 'Lyrical Ballads' (1798) by Wordsworth and Coleridge, formally rejecting the conventions of 18th-century poetry, including the Sentimental Mode",
@@ -458,7 +458,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The cluster ends the century at 5.0% (\u0394v = -0.4%), having returned to its starting variance but now as a receding force, not an emergent one. The final negative delta reflects its displacement by the fully formed Romantic and historical-pragmatic (conservative) counter-forces. The 'man of feeling' is now the 'Romantic genius' or the 'political pragmatist.' Its explanatory power is now entrenched in the structure of the moral philosophy it helped create (Smith's legacy), but as a living cultural aesthetic, it has been largely superseded. The final trajectory is a dramatic rise and fall, demonstrating the competitive nature of cultural forces.",
         "key_manifestations": [
           "The popularization of the 'historical novel' (e.g., Walter Scott's early work), displacing the psychological-sentimental novel",
@@ -474,7 +474,7 @@ export const humeData = {
     "description": "This cluster encapsulates the cultural dominance of the Newtonian worldview: a universe governed by universal, mathematical laws, accessible through observation and experiment. It represents the triumph of the mechanistic model, where complex phenomena are reducible to simple forces (gravity, inertia). Culturally, its influence extends beyond science into philosophy, theology (Deism), and aesthetics (classical order). Its high initial variance is maintained by institutional inertia, but its explanatory power gradually wanes over the century not from outright rejection, but from its principles becoming so universally accepted that they turn into background assumptions, as the intellectual frontier shifts to the human sciences (Empiricism, Moral Sense).",
     "trajectory": {
       "1700": {
-        "variance_explained": 7.1,
+        "salience_share": 7.1,
         "description": "Natural Philosophy begins with a high variance of 7.1%, representing the consolidated triumph of Isaac Newton's *Philosophi\u00e6 Naturalis Principia Mathematica* and *Opticks*. The cultural landscape is fixated on the idea of a mathematically ordered, clockwork universe. The **catalyst** for this high variance is the institutionalization of Newtonian physics in leading universities like Cambridge and Oxford, making its principles the mandatory foundation of all scientific and metaphysical thought. This period is marked by the popularization of the new mechanical cosmology, which provides a satisfyingly rational and elegant framework for understanding the physical world, thereby pushing its cultural explanatory power to an extremely high level.",
         "key_manifestations": [
           "Isaac Newton's 'Opticks' (1704), widely read for its experimental method and light theory",
@@ -484,7 +484,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 7.1,
+        "salience_share": 7.1,
         "description": "The variance remains stable at 7.1% (\u0394v = 0.0%), demonstrating a period of entrenchment and consolidation rather than growth or decay. The stasis is driven by the cluster's sheer academic and popular momentum: Newtonianism is now the intellectual baseline against which all other scientific and philosophical claims must be measured. The primary cultural activity is the wide-scale interpretation and popularization of Newton\u2019s work, extending its principles to new fields. The minimal change reflects a cultural phase where the intellectual energy is spent on *applying* the system, rather than *creating* it, but its foundational status ensures its high explanatory power remains unchallenged.",
         "key_manifestations": [
           "The popularization of experimental demonstrations in public lectures (e.g., those by Stephen Hales)",
@@ -494,7 +494,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 7.1,
+        "salience_share": 7.1,
         "description": "The variance remains static at 7.1% (\u0394v = 0.0%), confirming the entrenchment of Newtonian thought as the non-negotiable cultural baseline. The stasis is a reflection of the intellectual effort poured into defending the system, such as in the famous **Leibniz-Clarke Correspondence** (begun 1715, but reflecting ongoing tensions), which rigorously tested the metaphysical implications of absolute space and time. This cultural effort ensures the cluster\u2019s dominance by resolving intellectual challenges in its favor, allowing the scientific principles to become fully assimilated into the Western intellectual framework. This maintenance of variance is crucial before the focus shifts to other domains.",
         "key_manifestations": [
           "Samuel Clarke's defense of Newton in the Leibniz-Clarke Correspondence (begun 1715, highly influential in this period)",
@@ -504,7 +504,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 7.1,
+        "salience_share": 7.1,
         "description": "The cluster's variance holds at 7.1% (\u0394v = 0.0%), continuing a phase of powerful cultural entrenchment. The stasis is driven by the successful global export of Newtonian science, notably to France via the writings of Voltaire and the Marquis du Ch\u00e2telet, which fully establishes it as the trans-national scientific lingua franca of the Enlightenment. The cultural explanatory power remains high because the mechanical worldview is now the *source* of the Enlightenment's overall confidence in reason and progress. The principles are so established that the cultural energy shifts to disseminating and celebrating them, rather than fundamentally altering them, ensuring its static dominance.",
         "key_manifestations": [
           "Voltaire's extensive popularization of Newton in his writing (e.g., 'Letters Concerning the English Nation', 1733)",
@@ -514,7 +514,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The variance sees a slight dip to 7.0% (\u0394v = -0.1%), indicating the very marginal beginning of displacement. The catalyst for this small negative delta is the cultural intellectual shift toward **Empirical Epistemology (Cluster #5)** and **The Sentimental Mode (Cluster #2)**, which refocus the scientific method away from celestial mechanics and toward the observable, subjective facts of human nature. This decline is not a rejection of Newton's findings but a reduction in the *uniqueness* of his explanatory power; the intellectual vanguard is moving to new, less-charted territories (human science), causing the variance of the 'pure' mechanical philosophy cluster to subtly decline in relative importance.",
         "key_manifestations": [
           "The rising interest in galvanism and electricity, new empirical fields outside of pure mechanics (e.g., works by Benjamin Franklin later in the period)",
@@ -524,7 +524,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The variance holds steady at 7.0% (\u0394v = 0.0%). The stasis reflects the continued, stable power of the mechanical worldview, particularly in the realm of practical engineering and colonial exploration (Cluster #13). The cultural energy is now channeled into applying the mechanistic worldview to economic and social phenomena, transforming it into the analytical background for early Political Economy. The principle of 'natural laws' in physics is being translated to 'natural laws' in society, ensuring the cluster's high variance is maintained even as the core physics work stabilizes, showing entrenchment via methodological transfer.",
         "key_manifestations": [
           "Montesquieu's empirical approach to law and government, seeking 'natural laws' in the social sphere (e.g., 'The Spirit of the Laws', 1748)",
@@ -534,7 +534,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 6.9,
+        "salience_share": 6.9,
         "description": "The variance declines marginally to 6.9% (\u0394v = -0.1%). The catalyst for this slight negative delta is the philosophical and cultural reaction to David Hume's early, radical empiricism (Cluster #5), which uses the very standards of Newtonian observation and induction to critically dismantle the rational basis of concepts like causation and substance. While Hume is a *product* of the Newtonian method, his skepticism serves as a significant displacing force to the older cluster's *metaphysical confidence*. The certainty that a mechanical universe implies simple, knowable truths is challenged, reducing the philosophical explanatory power of the pure Newtonian model.",
         "key_manifestations": [
           "David Hume's 'A Treatise of Human Nature' (begun in the late 1720s), applying the empirical method skeptically to the mind",
@@ -544,7 +544,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 6.8,
+        "salience_share": 6.8,
         "description": "The cluster falls to 6.8% (\u0394v = -0.1%), a small but persistent reduction in its relative influence. The displacing force is the growing cultural prominence of the **Sentimental Mode (Cluster #2)**, which asserts that the core of human truth lies in the emotional and moral realm, one not reducible to mechanical laws. The increasing literary and popular focus on passion and virtue minimizes the cultural space available for purely mechanistic explanations of the universe. This negative delta reflects a cultural shift in priorities, where the physics of stars begins to hold less sway than the physics of the heart in public discourse, though the methodology remains sacrosanct.",
         "key_manifestations": [
           "The rise of the sentimental novel, which focuses on the complexity of internal, non-mechanical human feeling",
@@ -554,7 +554,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 6.7,
+        "salience_share": 6.7,
         "description": "The variance drops to 6.7% (\u0394v = -0.1%). The catalyst for this sustained negative delta is the institutional success of the competing **Empirical Epistemology (Cluster #5)**, which, while using Newton's method, shifts the focus from the grand, certain mechanical system to a more contingent, observation-dependent, and probabilistic worldview. Newtonian mechanics is now being treated less as a divinely revealed system and more as a highly effective, but potentially limited, empirical model. This subtle shift in philosophical framing, popularized by Hume's more accessible *Enquiries*, acts as the long-term displacing force, eroding the certainty that was the initial cultural appeal of the cluster.",
         "key_manifestations": [
           "David Hume's 'An Enquiry concerning Human Understanding' (1748, begun earlier), emphasizing observation and custom over rational certainty",
@@ -564,7 +564,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 6.6,
+        "salience_share": 6.6,
         "description": "The variance falls to 6.6% (\u0394v = -0.1%). The displacing force is the cultural saturation of the mechanical worldview. As the principles of gravity and motion are fully incorporated into all levels of education and popular science, they cease to be a dynamic source of cultural variance and become entrenched *knowledge*. The negative delta reflects the cultural economy's shift to new, dynamic sources of intellectual excitement, such as the emerging fields of electricity, chemistry, and human psychology. While the system remains foundational, its novelty and therefore its cultural explanatory power are diminished in a relative sense.",
         "key_manifestations": [
           "Benjamin Franklin's experiments with electricity (ongoing, leading to his famous 1752 kite experiment), representing a new empirical frontier",
@@ -574,7 +574,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance drops to 6.5% (\u0394v = -0.1%), indicating that the secular decline is set, driven by the emergence of social physics and Political Economy (Cluster #4). The catalyst is the philosophical pivot from explaining the cosmos to explaining society. Thinkers like Rousseau and Smith are using empirical methods to describe social 'forces' (sympathy, self-interest) that operate with a quasi-mechanical regularity, effectively displacing the pure physics model as the most culturally relevant application of 'natural law.' This negative delta reflects the transfer of the most dynamic intellectual energy from the mechanical world to the moral world.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Discourse on the Arts and Sciences' (1750), a foundational critique of rationalist-scientific progress",
@@ -584,7 +584,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 6.3,
+        "salience_share": 6.3,
         "description": "The variance declines more steeply to 6.3% (\u0394v = -0.2%). The primary displacing force is the explicit, radical **Philosophical Skepticism (Cluster #6)**, which Hume's accessible works now make unavoidable. The Humean attack on induction means that while the mathematical predictions of Newtonian mechanics are still accepted, the metaphysical certainty behind the cluster\u2014the belief in an objectively rational, knowable causal chain\u2014is permanently undermined. This negative delta reflects a deep cultural questioning of the foundational guarantees of the mechanical worldview, shifting the focus to epistemology and away from the content of the physics itself.",
         "key_manifestations": [
           "David Hume's 'Four Dissertations' (1757), including his critique of the metaphysical implications of the mechanical cosmos",
@@ -594,7 +594,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 6.1,
+        "salience_share": 6.1,
         "description": "The variance drops to 6.1% (\u0394v = -0.2%). The displacing force is the successful application of the empirical method to history and political science, which moves the cultural conversation to the observed *diversity* of human systems rather than the *uniformity* of physical systems. Thinkers like Gibbon and Ferguson are using a Newtonian-like, cause-and-effect model to study the rise and fall of empires, which minimizes the cultural explanatory power of 'pure' mechanics. This negative delta is a consequence of intellectual specialization: the scientific revolution has done its job, and the cultural challenge is now to use its methods to understand the social and historical world, thereby moving its principles into the background.",
         "key_manifestations": [
           "Edward Gibbon's 'The History of the Decline and Fall of the Roman Empire' (begun 1776, but intellectual currents build here), applying systematic, empirical methods to history",
@@ -604,7 +604,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 5.8,
+        "salience_share": 5.8,
         "description": "The variance sees a steeper decline to 5.8% (\u0394v = -0.3%). The primary displacing force is the full emergence of **Political Economy (Cluster #10)** as a distinct, powerful cultural force, culminating in Adam Smith\u2019s magnum opus. The cultural fascination with the 'invisible hand'\u2014a quasi-mechanical force that governs society\u2014displaces the pure fascination with the 'visible hand' of planetary forces. This negative delta reflects a cultural shift from the physics of the cosmos to the mechanics of the market, where the explanatory power of Newtonian order is transferred and generalized, leading to a reduction in the specific variance explained by the original cluster itself.",
         "key_manifestations": [
           "Adam Smith's 'The Wealth of Nations' (1776, written in this period), which formalizes the mechanistic model of economic self-interest",
@@ -614,7 +614,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance falls to 5.5% (\u0394v = -0.3%), as the cultural energy is fully absorbed by the competing forces of economic and political change. The displacing force is the growing political instability (leading to the American Revolution), which introduces the variable of human freedom and unpredictable passion, which is difficult to reconcile with the rigid determinism of the mechanical worldview. This negative delta is a consequence of cultural events demonstrating the limits of a purely mechanical explanation of the human and political world, shifting the focus to individual liberty, rights, and the non-rational forces of revolution.",
         "key_manifestations": [
           "Baron d'Holbach's 'The System of Nature' (1770), an extreme, deterministic defense of mechanical materialism that causes widespread backlash",
@@ -624,7 +624,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 5.1,
+        "salience_share": 5.1,
         "description": "The variance sees a steep drop to 5.1% (\u0394v = -0.4%). The catalyst for this accelerated negative delta is the American Revolution itself, which acts as a cultural shockwave that destabilizes the comforting predictability of the clockwork universe, as political events prove intensely unpredictable. The primary displacing force is the ascendance of **Republicanism (Cluster #9)** and its necessary emphasis on contingency, human agency, and non-mechanical ideals like liberty and self-governance. The intellectual conversation must now integrate political passion and unpredictable human choice, which fundamentally lessens the total explanatory power of a deterministic, purely mechanical model for the whole of culture.",
         "key_manifestations": [
           "Adam Smith's 'The Wealth of Nations' (1776), which formally establishes Political Economy and its 'invisible hand' as the new 'social mechanics'",
@@ -634,7 +634,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 4.7,
+        "salience_share": 4.7,
         "description": "The variance falls to 4.7% (\u0394v = -0.4%). The primary displacing force is the emergence of **The Sublime and Proto-Romantic Emotion (Cluster #12)**, which fundamentally rejects the elegance and order of the Newtonian mechanical model in aesthetics. The cultural focus shifts to the infinite, the awesome, and the terrifying in nature, elements which are non-quantifiable and actively defy mechanistic comprehension. This negative delta reflects a profound aesthetic and spiritual displacement: the mechanical world is now perceived as 'cold' and 'limiting,' causing the core explanatory power of the cluster to recede dramatically in literature and art.",
         "key_manifestations": [
           "Immanuel Kant's 'Critique of Pure Reason' (1781), which formally analyzes the limits of human reason to know the world, including mechanical causality",
@@ -644,7 +644,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 4.3,
+        "salience_share": 4.3,
         "description": "The variance drops to 4.3% (\u0394v = -0.4%), solidifying its retreat from cultural prominence. The final intellectual displacing force is Immanuel Kant's philosophy, which, by demonstrating that the mechanical, Newtonian framework is a condition of subjective human understanding rather than an objective truth of the world-in-itself, effectively removes the metaphysical support for the cluster's original claims of universal objective truth. The negative delta reflects the philosophical community's absorption of this critique, relegating the mechanical cosmos to the realm of phenomenal experience and opening the door for the radical subjectivity of Romanticism.",
         "key_manifestations": [
           "The publication of Thomas Reid's 'Essays on the Intellectual Powers of Man' (1785), attempting to counter Humean skepticism while accepting empiricism's premises",
@@ -654,7 +654,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 3.9,
+        "salience_share": 3.9,
         "description": "The variance declines to 3.9% (\u0394v = -0.4%). The ultimate and most dramatic displacing force is the **French Revolution**, which, in its violent, unpredictable course, provides a chaotic real-world refutation of the core premise of a benevolent, orderly, and mechanically predictable human future. The negative delta is a consequence of the cultural shift toward political conservatism (Burke) and Romanticism (Goethe, Schiller), both of which critique abstract, mechanical rationalism as politically naive or spiritually void. The mechanical model's explanatory power is now strictly limited to non-human, institutional, or purely scientific domains.",
         "key_manifestations": [
           "Edmund Burke's 'Reflections on the Revolution in France' (1790), a powerful critique of abstract, mechanical political planning",
@@ -664,7 +664,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 3.6,
+        "salience_share": 3.6,
         "description": "The variance drops to 3.6% (\u0394v = -0.3%), stabilizing at a low point. The sustained negative delta is driven by the dominance of **Proto-Romanticism (Cluster #12)** and the continuing cultural fatigue with the deterministic implications of the mechanical cosmos. While the scientific method remains, the cultural *awe* for the clockwork universe has been largely displaced by the Romantic fascination with *organism*, growth, and the unpredictable force of life. The cluster's explanatory power is now minimal, serving mainly as the target that the new cultural movements define themselves against, ensuring its final phase is one of slow, entrenched decay.",
         "key_manifestations": [
           "The publication of 'Lyrical Ballads' (1798), the formal beginning of English Romanticism, explicitly rejecting mechanistic poetry",
@@ -674,7 +674,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 3.4,
+        "salience_share": 3.4,
         "description": "The cluster ends the century at 3.4% (\u0394v = -0.2%), a final, gentle decay into the background of a culture now dominated by Romanticism and industrial dynamism. The slow decline is sustained by the complete displacement of its principles from high art and philosophy, which are now seeking transcendent and organic explanations. The legacy of this cluster is entrenched in the technological and industrial base, but its intellectual variance is low, as the focus shifts to how to manage the economic and social consequences of the mechanical revolution, rather than celebrating the mechanical system itself. Its historical importance is set, but its current dynamism is spent.",
         "key_manifestations": [
           "The invention of the Voltaic pile (1800) by Alessandro Volta, shifting the scientific focus to electromagnetism and energy, a non-mechanical force",
@@ -690,7 +690,7 @@ export const humeData = {
     "description": "This cluster represents the cultural crystallization of a new social and economic order, where commercial exchange and the pursuit of moderate self-interest are deemed beneficial, leading to greater social refinement, 'politeness,' and stability. Philosophically, it is the social expression of the empirical school (Hume/Smith) who saw society as evolving organically through the pursuit of passion-guided interests, rather than rationally designed (as per Universalism). Culturally, it manifests in the rise of the coffee house, the fashion for moderation, and the literature of manners. It shows a strong secular rise, reflecting the increasing economic centrality of the merchant class and the new emphasis on refined social interaction as the mechanism of civilization.",
     "trajectory": {
       "1700": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The cluster begins at 4.5%, having already been catalyzed by the late 17th-century emergence of financial and mercantile institutions, such as the Bank of England, establishing London as a dominant commercial center. The cultural landscape emphasizes the pragmatic virtues of punctuality, credit, and moderate self-interest as the foundation for social harmony, countering the instability of purely aristocratic or religious orders. This initial variance is a reflection of the entrenched status of the burgeoning Whig political order, which explicitly favored trade and commercial expansion. The catalyst for the initial establishment is the tacit acceptance that trade, often seen as morally dubious, is a necessary engine for national prosperity.",
         "key_manifestations": [
           "The Bank of England (established 1694) as a model of public credit",
@@ -700,7 +700,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 4.7,
+        "salience_share": 4.7,
         "description": "The variance rises to 4.7% (\u0394v = +0.2%), with the central catalyst being the cultural pushback against the philosophical pessimism of Hobbesian self-interest, seeking a more moderate and morally acceptable social ideal for the commercial class. This positive delta is fueled by the desire to civilize the raw economic drive, transforming 'private vices' into 'public benefits' (as satirized by Mandeville). The emerging polite culture argues that trade and social interaction refine the passions, leading to moral betterment. This growth reflects the social need to justify the new commercial class's power with a new system of refined etiquette and moral behavior.",
         "key_manifestations": [
           "Bernard Mandeville's 'The Fable of the Bees' (1705), the cynical thesis this cluster attempts to counter",
@@ -710,7 +710,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 4.9,
+        "salience_share": 4.9,
         "description": "The variance climbs to 4.9% (\u0394v = +0.2%), propelled by the **catalyst** of institutionalizing 'polite' conversation and manners as a form of social currency, independent of noble lineage. This positive delta is driven by the success of literary periodicals that codified urban manners for the aspiring middle class, making refinement a widely accessible cultural product. The focus shifts from the abstract mechanics of trade to the refined ethics of the urban merchant, allowing the commercial society to gain cultural validation in the public eye. The coffee house and the printed essay become key vehicles for this new cultural hegemony.",
         "key_manifestations": [
           "Joseph Addison and Richard Steele's 'The Spectator' (begun 1711), codifying urban manners and taste",
@@ -720,7 +720,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance accelerates to 5.2% (\u0394v = +0.3%). The primary catalyst is the philosophical synthesis that grounds this commercial politeness in human nature, most notably by the Moral Sense school, arguing that natural feelings (sympathy, benevolence) make commerce and society possible. This positive delta reflects the cultural acceptance of a non-rational, yet beneficial, basis for social cohesion, replacing the old Universalist need for rational control. Even the South Sea Bubble's crash (1720, anticipation of) paradoxically strengthens the cluster by forcing a deeper, more serious, and empirical examination of the mechanisms of credit and commerce, rather than their wholesale rejection.",
         "key_manifestations": [
           "The South Sea Bubble (1720), the largest financial crash, forcing a cultural reappraisal of speculative commerce",
@@ -730,7 +730,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance rises to 5.5% (\u0394v = +0.3%), despite the financial shock of the South Sea Bubble. The cluster's continued growth is catalyzed by the resultant Whig political stability, which explicitly champions commercial interests and uses the crash as a lesson in pragmatic regulation, not a rejection of trade. This positive delta is the cultural reassertion of the necessity and ultimate benevolence of a commercially-driven society, shifting the focus from speculative finance to reliable industry and trade. The emergence of a powerful, stable public debt system becomes a new symbol of commercial sophistication.",
         "key_manifestations": [
           "Robert Walpole's rise to power, establishing a long era of commercial-minded political stability",
@@ -740,7 +740,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 5.8,
+        "salience_share": 5.8,
         "description": "The variance reaches 5.8% (\u0394v = +0.3%). The main catalyst is the formal application of the empirical methodology to social organization and moral behavior by the Scottish Enlightenment, most notably by Francis Hutcheson. This positive delta reflects the intellectual legitimation of commercial society: its customs and moral rules are now treated not as aristocratic conventions but as observable, beneficial, and quasi-scientific *facts* of human nature. This intellectual endorsement from the academic elite significantly increases the cultural authority and explanatory power of the 'polite' commercial system.",
         "key_manifestations": [
           "Francis Hutcheson's 'Inquiry' (1725), grounding moral behavior in natural, social interaction",
@@ -750,7 +750,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 6.1,
+        "salience_share": 6.1,
         "description": "The variance climbs to 6.1% (\u0394v = +0.3%). The catalyst for this sustained growth is the cultural synthesis of the philosophical ideas into a pervasive social ideal: the 'citizen of the world' who is refined, sympathetic, and commercially successful. The positive delta is driven by the need of the expanding middle class for standardized, non-aristocratic forms of taste and social validation, supplied by literary and aesthetic works. This focus on taste and discernment becomes the new battlefield for social status, replacing inherited titles with purchased refinement, thereby increasing the cluster's broad cultural sway.",
         "key_manifestations": [
           "William Hogarth's 'A Harlot's Progress' (1732), a moral tale rooted in the observation of urban life and its excesses",
@@ -760,7 +760,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 6.4,
+        "salience_share": 6.4,
         "description": "The variance rises to 6.4% (\u0394v = +0.3%), with the philosophical catalyst being David Hume's analysis of property, convention, and justice as arising from custom, habit, and self-interest, rather than rational, Universalist design. This positive delta provides the most rigorous, empirical-skeptical foundation for the Commercial Society, arguing that social order is a complex, unintended *product* of individual actions. This intellectual vindication stabilizes the cluster's long-term explanatory power against critiques of superficiality, making 'commercial' synonymous with 'civilized' in the intellectual centers.",
         "key_manifestations": [
           "David Hume's 'A Treatise of Human Nature' (published 1739-40), providing the skeptical-empirical basis for commercial conventions",
@@ -770,7 +770,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 6.7,
+        "salience_share": 6.7,
         "description": "The variance increases to 6.7% (\u0394v = +0.3%). The primary catalyst is the rise of the novel as a literary form perfectly suited to dissecting the manners, morals, and economic realities of the commercial middle class. This positive delta is driven by the cultural appetite for detailed, psychologically realistic narratives of individuals navigating the new social landscape of class, credit, and shifting power structures. Works like *Pamela* use the tension between virtue and economic necessity to explore the core ethical questions of the commercial age, securing the cluster's literary dominance.",
         "key_manifestations": [
           "Samuel Richardson's 'Pamela; or, Virtue Rewarded' (1740), a novel of economic and sexual transaction in a commercial setting",
@@ -780,7 +780,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 6.9,
+        "salience_share": 6.9,
         "description": "The variance rises to 6.9% (\u0394v = +0.2%). The catalyst is the philosophical effort to integrate the new knowledge from colonial expansion and empirical science into the framework of a polite, universal society. This positive delta reflects the cultural need for an ethical and historical foundation for the commercial project, which is increasingly global and often brutal in its colonial dimensions (Cluster #13). The cluster's growth is therefore an effort to make the emerging global economic reality seem benign and civilized through the lens of polite conversation and moral reflection.",
         "key_manifestations": [
           "Condillac's 'Essai sur l'origine des connaissances humaines' (1746), applying sensationalist empiricism to human behavior",
@@ -790,7 +790,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 7.1,
+        "salience_share": 7.1,
         "description": "The variance increases to 7.1% (\u0394v = +0.2%). The intellectual catalyst is the formal articulation of the non-rational, but beneficial, effects of commercial society on governance, exemplified by Montesquieu's argument that commerce encourages peace and moderation. This positive delta is driven by the realization that economic self-interest can serve as a systemic check on political tyranny, offering a practical, empirical argument for the commercial order over purely virtuous republican ideals. The cultural conversation fully accepts that commerce and the cultivation of manners are intrinsically linked to political liberty and moderation.",
         "key_manifestations": [
           "Montesquieu's 'The Spirit of the Laws' (1748), arguing for the mollifying effect of commerce on political passions",
@@ -800,7 +800,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 7.4,
+        "salience_share": 7.4,
         "description": "The variance rises significantly to 7.4% (\u0394v = +0.3%). The ultimate catalyst for this spike is the definitive moral justification for the commercial order provided by **Adam Smith's 'The Theory of Moral Sentiments'** (published 1759, written here). Smith's model uses sympathy and the impartial spectator to show how commercial life naturally leads to moral behavior and social cohesion. This positive delta represents the peak intellectual triumph of the cluster, providing a robust, sentimental-empirical framework that validates the pursuit of wealth within a moral, polite society, thereby increasing its cultural explanatory power dramatically across the Atlantic.",
         "key_manifestations": [
           "Adam Smith's 'The Theory of Moral Sentiments' (1759), providing the moral psychology for commercial ethics",
@@ -810,7 +810,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 7.6,
+        "salience_share": 7.6,
         "description": "The variance continues its ascent to 7.6% (\u0394v = +0.2%). The catalyst for this sustained growth is the cultural need to defend the commercial system against the radical, anti-civilization critique mounted by Rousseau, who favored a more 'natural,' pre-commercial state. This positive delta is driven by the establishment's defense of commercial life as the necessary condition for intellectual and moral freedom. The cluster is growing by absorbing and neutralizing its internal and external critiques, asserting that politeness is the antidote to the 'natural' man's chaotic passions, thereby becoming the cultural definition of a stable, advanced society.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Julie, or the New Heloise' (1761), which glorifies rural, non-commercial emotional authenticity",
@@ -820,7 +820,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 7.8,
+        "salience_share": 7.8,
         "description": "The variance reaches its intellectual-cultural peak at 7.8% (\u0394v = +0.2%). The final catalyst for growth is the formal academic separation of the commercial project from pure politics into the new discipline of **Political Economy**. Adam Ferguson's empirical work, describing the unintentional creation of social order from individual commercial interests, elevates the cluster to the status of a mature, self-contained social science. This positive delta reflects the completion of the intellectual framework necessary to explain the modern world as a polite, self-regulating mechanism based on economic exchange and moral sympathy, achieving maximum explanatory power.",
         "key_manifestations": [
           "Adam Ferguson's 'An Essay on the History of Civil Society' (1767), a key work of empirical sociology and political economy",
@@ -830,7 +830,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance hits its maximum at 8.0% (\u0394v = +0.2%). The final cultural catalyst is the sheer, undeniable economic and political dominance of the commercial class, whose values are now the cultural norm. This final, slight positive delta represents the cluster's high-water mark, as its aesthetics and morals are now fully entrenched across Europe. However, this dominance also breeds a strong **displacing force**: sentimental critique, exemplified by Goldsmith, who laments the destructive social consequences of commercial enclosure and expansion, foreshadowing the cluster's imminent decline as internal contradictions become visible.",
         "key_manifestations": [
           "Oliver Goldsmith's 'The Deserted Village' (1770), a sentimental critique of the negative social effects of commercial land enclosure",
@@ -840,7 +840,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 8.2,
+        "salience_share": 8.2,
         "description": "The variance sees one final, marginal increase to 8.2% (\u0394v = +0.2%), driven almost entirely by the ultimate intellectual catalyst: **Adam Smith's 'The Wealth of Nations' (1776)**. This work provides the ultimate, empirical, and political justification for the commercial order, completing the cluster's theoretical structure. However, immediately following this peak, the political turbulence of the American Revolution begins to act as a significant **displacing force**. The Revolution, rooted in concerns over commercial liberty and taxation, demonstrates that the polite, self-regulating mechanism of commerce is inadequate to contain political passion, signaling the beginning of the cluster's decay in relative importance.",
         "key_manifestations": [
           "Adam Smith's 'The Wealth of Nations' (1776), the foundational text of modern political economy",
@@ -850,7 +850,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 8.1,
+        "salience_share": 8.1,
         "description": "The variance drops to 8.1% (\u0394v = -0.1%), marking the first reversal of the secular trend. The primary displacing force is the political upheaval and intellectual crisis caused by the American Revolution, which necessitates a cultural focus shift toward raw republican virtue and military struggle, which are non-commercial ideals. The negative delta reflects the cultural exhaustion with the perceived superficiality of 'polite' culture in the face of genuine political danger. The cluster is now being displaced by the more austere ideals of **Republicanism (Cluster #9)** and the radical passion of **Proto-Romanticism (Cluster #12)**.",
         "key_manifestations": [
           "Immanuel Kant's 'Critique of Pure Reason' (1781), shifting focus back to abstract, non-commercial reason's limits",
@@ -860,7 +860,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance continues its slight decline to 8.0% (\u0394v = -0.1%). The displacing force is the necessary pragmatism of post-Revolutionary governance, which forces a cultural focus on the *limits* of commercial self-interest and the need for a stable political framework (the Constitution). The negative delta reflects a widespread cultural consensus that commercial society, while beneficial, requires strong, non-market political checks to prevent self-destruction. The cluster's explanatory power is subtly diminished as political stability, rather than commercial growth, becomes the primary cultural problem.",
         "key_manifestations": [
           "The debate over the United States Constitution (1787), creating a pragmatic, non-sentimental check on individual economic passion",
@@ -870,7 +870,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 7.7,
+        "salience_share": 7.7,
         "description": "The variance sees a more pronounced drop to 7.7% (\u0394v = -0.3%). The primary and most significant **displacing force** is the **French Revolution**, which utterly destabilizes the ideal of gradual, self-regulating 'polite' European society. The Revolution\u2019s violence and political passion demonstrate the fragility of commercial peace and the inadequacy of mere 'politeness' to contain revolutionary fervor. The negative delta reflects a cultural crisis of faith in the benign nature of commercial progress, leading to a strong counter-movement\u2014conservatism (Burke) and Romanticism\u2014that favors historical order or passionate authenticity over commercial rationality.",
         "key_manifestations": [
           "Edmund Burke's 'Reflections on the Revolution in France' (1790), defending historical social order against rationalist/economic abstractions",
@@ -880,7 +880,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 7.4,
+        "salience_share": 7.4,
         "description": "The variance falls to 7.4% (\u0394v = -0.3%). The sustained negative delta is driven by the dominance of **The Sublime and Proto-Romantic Emotion (Cluster #12)**, which views the commercial world as mundane, spiritually void, and antithetical to artistic genius. The cultural landscape shifts away from the ordered, moderate, and social focus of 'politeness' toward the intense, solitary, and transcendent. The economic focus is now less on polite *trade* and more on the raw, ugly power of **Industrial Mechanization (Cluster #20)**, a phenomenon too crude for the 'polite' framework to fully encompass.",
         "key_manifestations": [
           "'Lyrical Ballads' (Wordsworth/Coleridge, 1798), explicitly rejecting the 'inane phraseology' of 18th-century polite poetry",
@@ -890,7 +890,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 7.2,
+        "salience_share": 7.2,
         "description": "The cluster ends the century at 7.2% (\u0394v = -0.2%), settling into a phase of slow decay as the cultural conversation moves on. The displacement is completed by the rise of formalized **Early Industrial Mechanization (Cluster #20)**, which transforms the refined 'Commercial Society' into the raw, steam-powered 'Industrial Society,' displacing the former's polite, pre-factory aesthetics. The legacy of politeness remains entrenched in social institutions (e.g., the etiquette of the middle class), but its intellectual explanatory power is greatly reduced, having been superseded by the more urgent and dramatic cultural phenomena of Romanticism and the Industrial Revolution.",
         "key_manifestations": [
           "The invention of the Voltaic pile (1800), symbolizing the new, intense scientific focus on energy and production, displacing the focus on trade",
@@ -906,7 +906,7 @@ export const humeData = {
     "description": "This cluster represents the intellectual movement, primarily derived from Locke, which holds that all knowledge originates in sensory experience (sensationalism) and reflection, rejecting innate ideas. It is the methodological core of the British and Scottish Enlightenments. Culturally, it manifests in the emphasis on observation, induction, natural history, and a skeptical approach to metaphysical systems, forming the direct philosophical foundation for Hume\u2019s critique. Its trajectory is one of sustained, high-level growth and entrenchment, becoming the central methodological tool of the century before being challenged by Kant and Romanticism.",
     "trajectory": {
       "1700": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The cluster begins at 4.0%, with the philosophical **catalyst** being the recent publication of John Locke's 'An Essay Concerning Human Understanding' (1690), which establishes the mind as a *tabula rasa* (blank slate), rejecting the notion of innate ideas central to Cartesian Rationalism. This initial variance reflects the intellectual challenge posed to the dominant Rationalist Universalism (Cluster #1). The cultural focus is shifting from deductive certainty to the detailed, empirical observation of the world and the self, laying the methodological groundwork for all subsequent scientific and social inquiries of the century.",
         "key_manifestations": [
           "John Locke's 'An Essay Concerning Human Understanding' (1690), the foundational text",
@@ -916,7 +916,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 4.4,
+        "salience_share": 4.4,
         "description": "The variance rises significantly to 4.4% (\u0394v = +0.4%). The primary catalyst is the methodological power of Newtonian physics, specifically the experimental spirit exemplified by **Newton's 'Opticks'** (1704). This positive delta is driven by the successful integration of sensory observation with mathematical analysis, providing a cultural model for all forms of inquiry. The Empirical Epistemology cluster is strengthened by becoming the de facto scientific method, gaining credence from the demonstrable success of inductive, experimental reasoning across natural philosophy.",
         "key_manifestations": [
           "Isaac Newton's 'Opticks' (1704), emphasizing experimental and sensory observation",
@@ -926,7 +926,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 4.8,
+        "salience_share": 4.8,
         "description": "The variance climbs to 4.8% (\u0394v = +0.4%). The catalyst for this sustained growth is the pedagogical shift in education toward practical observation and away from purely classical scholasticism and abstract deduction. This positive delta reflects the cultural acceptance of empiricism as the necessary tool for 'improvement' and pragmatic knowledge. The focus on what can be demonstrated, observed, and tested gives the cluster broad appeal across the emerging middle class, which values utility and practical results over metaphysical certainty, ensuring its rapid expansion into the core of the intellectual sphere.",
         "key_manifestations": [
           "The establishment of Newtonian professorships and labs emphasizing experiment",
@@ -936,7 +936,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance rises to 5.2% (\u0394v = +0.4%). The catalyst for this continued, rapid growth is the application of the sensationalist principle to new domains, specifically aesthetics and morality, by thinkers like Francis Hutcheson. This positive delta represents the cluster's successful colonization of non-scientific fields, treating moral and aesthetic perception as analogous to sensory perception\u2014a 'moral sense.' This allows empiricism to provide a foundation for ethics independent of both Rationalism and Divine Command, significantly broadening its explanatory power in the nascent human sciences.",
         "key_manifestations": [
           "Francis Hutcheson's work, treating moral perception as an analogous 'sense' to external perception",
@@ -946,7 +946,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 5.7,
+        "salience_share": 5.7,
         "description": "The variance sees an accelerated rise to 5.7% (\u0394v = +0.5%). The catalyst for this surge is the increasing cultural confidence in the power of inductive methods and data compilation across all fields, leading to ambitious, large-scale intellectual projects. This positive delta is driven by the realization that vast amounts of empirical data, systematically organized, can lead to unexpected, non-rationalist conclusions about the natural and social world. The cluster is growing by demonstrating its superior utility for accumulating practical knowledge over the deductive limits of pure Rationalism.",
         "key_manifestations": [
           "The systematic collection and cataloging of botanical and zoological specimens across Europe",
@@ -956,7 +956,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 6.2,
+        "salience_share": 6.2,
         "description": "The variance rises sharply to 6.2% (\u0394v = +0.5%). The major catalyst is the formalization of sensationalism in Continental philosophy (Condillac) and its application to social theory (Montesquieu), making empiricism a pan-European, trans-national force. This positive delta reflects the cluster's rapid institutionalization and acceptance across the Enlightenment world. Furthermore, the intellectual climate is now primed for the radical conclusions of a new generation of empirical thinkers who will take the core premise\u2014that all knowledge is derived from experience\u2014to its logical, and often skeptical, extremes.",
         "key_manifestations": [
           "The early research and writing of **David Hume** (Scottish Enlightenment), taking empiricism to its skeptical limit",
@@ -966,7 +966,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 6.7,
+        "salience_share": 6.7,
         "description": "The variance increases to 6.7% (\u0394v = +0.5%). The critical **catalyst** is the work of **David Hume**, who applies the empirical method *skeptically* to the mind itself, pushing the philosophy to its logical, radical extreme by questioning the certainty of concepts like causation, substance, and the self. This positive delta is counter-intuitive: the cluster is growing because its most radical philosophical consequences are now being articulated, forcing the intellectual world to grapple with the limits of human knowledge derived solely from sensory input. This skeptical turn solidifies Empiricism as the most dynamic and consequential intellectual framework of the period.",
         "key_manifestations": [
           "David Hume's 'A Treatise of Human Nature' (published 1739-40, written here), the zenith of skeptical empiricism",
@@ -976,7 +976,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 7.2,
+        "salience_share": 7.2,
         "description": "The variance climbs to 7.2% (\u0394v = +0.5%). The catalyst for this sustained growth is the cultural desire for concrete, observable human truths over abstract rationalist systems, making the empirical method the intellectual vanguard. The positive delta reflects the widespread cultural acceptance that observation, not deduction, is the path to progress, particularly in understanding human nature and society. The novel becomes the perfect vehicle for this cultural shift, offering a microscopic, empirical examination of an individual's psychological and social experience as the highest form of truth.",
         "key_manifestations": [
           "Samuel Richardson's 'Pamela' (1740), a novel of empirical, moment-by-moment psychological observation",
@@ -986,7 +986,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 7.6,
+        "salience_share": 7.6,
         "description": "The variance increases to 7.6% (\u0394v = +0.4%). The major catalyst is the institutionalization of the empirical project in France with the commencement of the French *Encyclop\u00e9die*. This positive delta is driven by the intellectual move to synthesize empiricism with political thought, seeking observable laws of governance and economy. The massive undertaking of compiling all human knowledge in an observational, empirical manner confirms the cluster's high explanatory power across the European continent, making it the defining methodology of the Enlightenment.",
         "key_manifestations": [
           "The commencement of the French *Encyclop\u00e9die* (1751, groundwork here), a massive empirical compilation of human knowledge",
@@ -996,7 +996,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 7.9,
+        "salience_share": 7.9,
         "description": "The variance rises to 7.9% (\u0394v = +0.3%). The primary catalyst is the publication of Hume's more accessible *Enquiries*, making the skeptical, observational method widely influential and popular in non-academic circles. This positive delta reflects the successful simplification and dissemination of the cluster's core, radical ideas, cementing its influence on the broader public sphere. The empirical methodology is now the default mode for intellectual discussion, challenging all forms of unexamined tradition and inherited dogma.",
         "key_manifestations": [
           "David Hume's 'An Enquiry concerning Human Understanding' (1748), making his skepticism widely accessible",
@@ -1006,7 +1006,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 8.2,
+        "salience_share": 8.2,
         "description": "The variance reaches 8.2% (\u0394v = +0.3%). The catalyst is the philosophical need to ground morality and social order in observable experience and sentiment in the face of rationalist critique, especially in the wake of Rousseau's challenge to rational progress. This positive delta is driven by the realization that empirical observation provides the necessary foundation for the **Sentimental Mode (Cluster #2)**, allowing the two clusters to rise in tandem by focusing on the 'facts' of human passion. The empirical method is now essential to understanding the newly prioritized domain of human feeling.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Discourse on the Arts and Sciences' (1750), a rhetorical use of empirical history to critique progress",
@@ -1016,7 +1016,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance rises to 8.5% (\u0394v = +0.3%). The primary catalyst is the **Lisbon Earthquake (1755)**, which empirically and dramatically refuted rationalist optimism and the idea of a perfectly ordered, mechanical cosmos (Cluster #3). This event drove thinkers, including Voltaire, to rely on observable contingency and the facts of human suffering rather than abstract rational Providence. This positive delta reflects the cultural triumph of the empirical, observation-dependent worldview over deductive optimism, making skepticism and fact-based contingency the only acceptable intellectual stance.",
         "key_manifestations": [
           "Voltaire's 'Po\u00e8me sur le d\u00e9sastre de Lisbonne' (1756), demanding an experiential, not rational, response to disaster",
@@ -1026,7 +1026,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 8.7,
+        "salience_share": 8.7,
         "description": "The variance continues its ascent to 8.7% (\u0394v = +0.2%). The catalyst for this growth is the application of the empirical method to grand history and political economy, providing new, powerful domains of application that Universalism had failed to capture. This positive delta is driven by the intellectual transfer of the empirical methodology to the social sphere, leading to secular, observation-based narratives of civilization's rise and fall. The cluster's explanatory power is now at its peak, as it is the undisputed methodological basis for all major new academic fields.",
         "key_manifestations": [
           "Edward Gibbon's research for 'The History of the Decline and Fall of the Roman Empire' (begun 1776), based on systematic, empirical historical methods",
@@ -1036,7 +1036,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 8.9,
+        "salience_share": 8.9,
         "description": "The variance reaches 8.9% (\u0394v = +0.2%). The catalyst for this final surge is the practical, political utility of empirical thought in the growing colonial and governance crises, which demand fact-based solutions over abstract theory. This positive delta is driven by the need for empirical sociological studies to understand the mechanisms of society, exemplified by Adam Ferguson. The empirical approach is now the defining methodology for political and social reform, focusing on observable cause-and-effect relationships rather than *a priori* rational ideals.",
         "key_manifestations": [
           "Adam Ferguson's 'An Essay on the History of Civil Society' (1767), a key work of empirical sociology",
@@ -1046,7 +1046,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 9.0,
+        "salience_share": 9.0,
         "description": "The variance hits its peak at 9.0% (\u0394v = +0.1%). This small final positive delta is driven by the cluster's final entrenchment as the undisputed methodological standard for science and social investigation, achieving peak saturation. However, the slowing rate of growth indicates a point of inflection: the methodology's very dominance now invites its ultimate philosophical critique. The primary **displacing force** is the internal tension between Empiricism and **Philosophical Skepticism (Cluster #6)**, which Hume's successors must now address, paving the way for Kant's restricting synthesis.",
         "key_manifestations": [
           "Baron d'Holbach's 'The System of Nature' (1770), an extreme, materialist empiricism that sparks backlash",
@@ -1056,7 +1056,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 9.1,
+        "salience_share": 9.1,
         "description": "The variance rises marginally to 9.1% (\u0394v = +0.1%), reaching its absolute, brief peak. The catalyst is the need for empirical justification for the American Revolution, grounding rights and government in observable facts of nature and experience (Locke's legacy). However, immediately following this peak, the political drama and the publication of **Adam Smith's 'The Wealth of Nations' (1776)**, which applies the empirical method so thoroughly to one domain (economics), subtly shifts the cultural focus away from the *methodology* itself to its *results*. This moment is the high-water mark before the most profound intellectual displacement of the century occurs.",
         "key_manifestations": [
           "Adam Smith's 'The Wealth of Nations' (1776), an exhaustive empirical study of economic behavior",
@@ -1066,7 +1066,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 8.9,
+        "salience_share": 8.9,
         "description": "The variance drops to 8.9% (\u0394v = -0.2%), marking the end of its high-dominance phase. The primary **displacing force** is the philosophical shockwave delivered by **Immanuel Kant's 'Critique of Pure Reason' (1781)**, which argued that empirical knowledge is structured by *a priori* categories of the mind, fundamentally limiting the objective reach of pure sensory experience. This negative delta is a consequence of the intellectual community recognizing the need to synthesize Empiricism's truth with Rationalism's structure, effectively subordinating pure sensory experience to the conditions of subjective thought, thereby reducing its total, independent cultural explanatory power.",
         "key_manifestations": [
           "Immanuel Kant's 'Critique of Pure Reason' (1781), synthesizing reason and experience but restricting the reach of experience",
@@ -1076,7 +1076,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 8.7,
+        "salience_share": 8.7,
         "description": "The variance falls to 8.7% (\u0394v = -0.2%). The primary displacing force is the counter-movement of **Common Sense Philosophy (Thomas Reid)**, which critiques the skeptical, destructive extremes of Humean empiricism, seeking a more intuitive, non-skeptical foundation that relies on innate, trustworthy human faculties. This negative delta reflects a cultural retreat from the self-destructiveness of radical empiricism and a desire for a methodological certainty that Hume\u2019s work had dissolved. The cultural conversation moves from what experience *tells* us to what our fundamental human nature *must* assume.",
         "key_manifestations": [
           "Thomas Reid's 'Essays on the Intellectual Powers of Man' (1785), attempting to ground certainty outside of skeptical empiricism",
@@ -1086,7 +1086,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 8.4,
+        "salience_share": 8.4,
         "description": "The variance drops to 8.4% (\u0394v = -0.3%). The primary **displacing force** is the rise of **Romanticism (Cluster #12)**, which rejects the reductionist, observational limits of empiricism in favor of *intuition*, *imagination*, and *transcendence* as superior modes of knowledge. The negative delta is a consequence of the cultural rejection of 'cold' observation as a sufficient guide for art and morality, fueled by the terrifying, unpredictable nature of the French Revolution, which defied empirical political prediction. The cultural focus shifts to the subjective, creative inner life, a domain that pure Empiricism cannot adequately explain.",
         "key_manifestations": [
           "Edmund Burke's critique of the empirical-rational basis of the French Revolution's political planning",
@@ -1096,7 +1096,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 8.1,
+        "salience_share": 8.1,
         "description": "The variance falls to 8.1% (\u0394v = -0.3%). The sustained negative delta is driven by the dominance of the Sublime and the Gothic, which explore the irrational and the subconscious, domains that pure sensory empiricism cannot adequately explain. The cultural energy has decisively moved toward the subjective and the emotional, diminishing the relative importance of objective observation. The method remains essential for nascent industrial technology and institutional science, but its position as the ultimate philosophical authority has been displaced by Kantian critique and Romantic imagination.",
         "key_manifestations": [
           "The publication of 'Lyrical Ballads' (1798) by Wordsworth and Coleridge, championing imagination over dry observation",
@@ -1106,7 +1106,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 7.8,
+        "salience_share": 7.8,
         "description": "The cluster ends the century at 7.8% (\u0394v = -0.3%). The final negative delta reflects its displacement by the philosophical move into German Idealism (Hegel/Schelling), a post-Kantian system that entirely subsumes and reframes empirical data within a grand *a priori* structure. While Empiricism remains the bedrock of science (e.g., Volta's pile, 1800), its cultural explanatory power for the *totality* of human experience is minimized, having been superseded by the Romantic emphasis on Geist (Spirit) and the sublime as a means of knowledge. The legacy of the cluster is now entrenched in all scientific methodology, but its dynamic philosophical influence has been spent.",
         "key_manifestations": [
           "The invention of the Voltaic pile (1800) by Alessandro Volta, a purely empirical discovery but one that immediately demands a new theoretical framework",
@@ -1122,7 +1122,7 @@ export const humeData = {
     "description": "This cluster represents the cultural movement toward critiquing and often outright rejecting the tenets of traditional, revealed religion (e.g., miracles, prophecy, scripture) in favor of a rational, natural theology known as Deism. Deism posits a distant 'clockmaker' God who established the universe's mechanical laws but does not intervene in human affairs. Culturally, the cluster manifests in secular historiography, the critique of priestly authority, and a focus on natural law over divine law. Its trajectory is one of significant ascent, primarily catalyzed by the empirical method's rigorous application to religious claims, followed by a decline as the intellectual focus shifts to subjective experience and the political realities of revolution make radical secularism less culturally palatable.",
     "trajectory": {
       "1700": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The cluster begins with a variance of 3.5%, already established by the philosophical critiques of the late 17th century. The **catalyst** for this initial positioning is the widespread acceptance of **Natural Philosophy and Newtonian Mechanics (Cluster #3)**, which implies a rational, orderly universe governed by fixed laws, making the idea of a constantly intervening God less philosophically necessary. The initial cultural focus is primarily on justifying a rational, non-dogmatic belief system that accommodates scientific findings, leading to the early popularity of Deism as an intellectual compromise.",
         "key_manifestations": [
           "John Toland's 'Christianity Not Mysterious' (1696), a key early Deist text",
@@ -1132,7 +1132,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 3.8,
+        "salience_share": 3.8,
         "description": "The variance rises to 3.8% (\u0394v = +0.3%). The primary catalyst for this growth is the intellectual pressure to provide a rational, moral system that stands independent of Church authority and sectarian conflict. This positive delta reflects the cultural appeal of Deism as a means of achieving religious tolerance and social peace, particularly in England, which had just experienced decades of religious war. Skepticism, in this phase, is a tool for secular moderation and cosmopolitanism, expanding its influence in non-clerical intellectual circles.",
         "key_manifestations": [
           "Anthony Ashley Cooper, 3rd Earl of Shaftesbury's 'A Letter Concerning Enthusiasm' (1708), advocating for rational, non-superstitious piety",
@@ -1142,7 +1142,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 4.2,
+        "salience_share": 4.2,
         "description": "The cluster climbs to 4.2% (\u0394v = +0.4%). The catalyst for this sustained growth is the increasing application of the empirical method to theological claims, treating the Bible and religious history as secular, historical documents subject to rational analysis. This positive delta reflects the increasing cultural confidence in human reason to solve all mysteries, even religious ones, leading to the widespread adoption of 'natural religion' as a subject of academic inquiry. Skepticism is gaining variance by providing an intellectual framework that is fully compatible with the Newtonian scientific worldview.",
         "key_manifestations": [
           "The emergence of 'rational theology' as a distinct field of philosophical inquiry",
@@ -1152,7 +1152,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 4.6,
+        "salience_share": 4.6,
         "description": "The variance rises to 4.6% (\u0394v = +0.4%). The primary catalyst for this accelerated growth is the philosophical synthesis of Deist ideas with **Empirical Epistemology (Cluster #5)**, using Locke's method to argue that knowledge of God must come from observable nature and reflection, not supernatural revelation. This positive delta is driven by the intellectual prestige of the empirical method, which gives the cluster a powerful, non-dogmatic foundation. Skepticism gains ground by applying the rigor of scientific induction to dismantle the rational basis of miracles and prophecy, confining God to the realm of initial design.",
         "key_manifestations": [
           "George Berkeley's 'Three Dialogues between Hylas and Philonous' (1713), which attempts to save God from materialist skepticism",
@@ -1162,7 +1162,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance reaches 5.0% (\u0394v = +0.4%). The catalyst for this continued rise is the French Enlightenment's full embrace of skepticism and anti-clericalism, driven by figures like Voltaire. This positive delta reflects the trans-nationalization of the cluster, as French thinkers use British empiricism and Deism as tools to critique the rigid authority of the Catholic Church and the French monarchy. Skepticism's explanatory power is expanding from mere theological argument to a full-fledged political critique, making it highly dynamic and consequential in the burgeoning European intellectual sphere.",
         "key_manifestations": [
           "Voltaire's extensive popularization of Newton and Locke, advocating for a rational Deist worldview",
@@ -1172,7 +1172,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance accelerates to 5.5% (\u0394v = +0.5%). The critical **catalyst** for this sharp increase is the application of the most rigorous empirical standards to the problem of religious belief by the new generation of thinkers, most notably a young David Hume. Hume\u2019s nascent philosophical work (written here) begins to dissolve the rational basis for even the Deist God, by radically questioning the concept of causation and inductive certainty. This positive delta is driven by the cluster's turn from mere Deism (rational theology) to full-blown **Philosophical Skepticism**, a powerful intellectual tool that challenges all metaphysical certainty and dramatically increases the cluster's explanatory force.",
         "key_manifestations": [
           "David Hume's 'A Treatise of Human Nature' (published 1739-40, written here), the radical attack on causation and induction",
@@ -1182,7 +1182,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance climbs to 6.0% (\u0394v = +0.5%). The continued high growth is a result of the intellectual absorption of Hume's skeptical challenge, which acts as the **catalyst** for a cultural crisis of confidence in all forms of metaphysical knowledge. This positive delta is driven by the fact that skepticism provides the intellectual vanguard for the entire Enlightenment, forcing all other philosophical and religious clusters to define themselves against its radical conclusions. The cluster's explanatory power expands from mere theology to epistemology, becoming the ultimate intellectual test for all belief systems, including Deism itself.",
         "key_manifestations": [
           "The intellectual dissemination of Hume's radical ideas through personal and academic networks",
@@ -1192,7 +1192,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance reaches 6.5% (\u0394v = +0.5%). The primary catalyst for this acceleration is the widespread publication and subsequent philosophical reaction to Hume's 'Treatise', which systematically dissolved the rational grounds for belief in the self and causality. This positive delta reflects the cluster's peak radicalism, as the intellectual conversation is forced to confront the idea that religious belief is based on 'custom and habit' (sentiment) rather than reason or revelation. This period marks the philosophical height of skepticism, which fundamentally reshapes the foundation of all subsequent moral and political thought in the Scottish Enlightenment.",
         "key_manifestations": [
           "David Hume's 'A Treatise of Human Nature' (published 1739-40), the apex of philosophical skepticism",
@@ -1202,7 +1202,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 6.9,
+        "salience_share": 6.9,
         "description": "The variance climbs to 6.9% (\u0394v = +0.4%). The catalyst for this continued high growth is the establishment of the *philosophes* in France, who use skepticism as the primary tool to prosecute their campaign against institutional religious authority and superstition. This positive delta reflects the successful political weaponization of skepticism, making it the rhetorical hallmark of the Continental Enlightenment. The intellectual movement focuses less on subtle philosophical critique and more on the pragmatic, political benefits of irreligion and the separation of church and state, which ensures its high public profile.",
         "key_manifestations": [
           "The commencement of the French *Encyclop\u00e9die* (1751, groundwork here), a monumental project explicitly designed to secularize knowledge",
@@ -1212,7 +1212,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 7.2,
+        "salience_share": 7.2,
         "description": "The variance rises to 7.2% (\u0394v = +0.3%). The primary catalyst is the successful, accessible re-articulation of Hume's radical skepticism in his *Enquiries*, making the core challenge to miracles and induction unavoidable for the broader intellectual public. This positive delta is driven by the dissemination of skepticism from the academic elite to the general educated classes, cementing its status as the most formidable intellectual challenge of the mid-century. The cultural conversation is now less about *if* revelation is true and more about *how* to construct a moral and social order without its certainty.",
         "key_manifestations": [
           "David Hume's 'An Enquiry concerning Human Understanding' (1748), containing the famous essay 'Of Miracles'",
@@ -1222,7 +1222,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance reaches 7.5% (\u0394v = +0.3%), reaching its functional peak. The catalyst for this surge is the explicit, high-profile critique of religious institutions and the fusion of skepticism with political reform, most visible in the *Encyclop\u00e9die* project. This positive delta is driven by the cluster's transition from a purely philosophical challenge to a cultural-political reform movement. Skepticism becomes a necessary tool for justifying political and social projects outside of traditional religious or monarchical authority, thereby achieving maximum cultural explanatory power in the European intellectual centers.",
         "key_manifestations": [
           "The beginning of publication of the *Encyclop\u00e9die* (1751), a systematic work of secular knowledge",
@@ -1232,7 +1232,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 7.6,
+        "salience_share": 7.6,
         "description": "The variance sees a marginal increase to 7.6% (\u0394v = +0.1%), reaching its absolute cultural peak before internal and external pressures begin to take hold. The ultimate catalyst is the **Lisbon Earthquake (1755)**, which provides a dramatic, real-world refutation of the concept of Divine Providence and a benign, rational world order, validating the skeptical and Deist view of a distant, non-intervening God. This marginal positive delta represents the cluster's high-water mark, where the sheer force of current events seems to prove its core tenets. However, the slowing growth rate signals the onset of **Romantic (Cluster #12)** and conservative critiques, which find the cluster's conclusions emotionally and spiritually inadequate.",
         "key_manifestations": [
           "Voltaire's 'Po\u00e8me sur le d\u00e9sastre de Lisbonne' (1756), a famous critique of rationalist theology (Theodicy)",
@@ -1242,7 +1242,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 7.4,
+        "salience_share": 7.4,
         "description": "The variance drops to 7.4% (\u0394v = -0.2%), marking the end of its high-dominance phase. The primary **displacing force** is the philosophical counter-reaction to the perceived moral and political sterility of radical skepticism, most powerfully articulated by **Jean-Jacques Rousseau**. Rousseau's emphasis on natural, pure faith and the 'religion of the heart' offers a potent sentimental alternative to both dogmatic religion and cold, skeptical reason. This negative delta reflects a cultural pivot toward emotional, non-rational spiritual authenticity, diminishing the explanatory power of purely rational, critical skepticism in the realm of personal belief and morality.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'The Social Contract' (1762), including the chapter on 'Civil Religion'",
@@ -1252,7 +1252,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 7.2,
+        "salience_share": 7.2,
         "description": "The variance falls to 7.2% (\u0394v = -0.2%). The primary displacing force is the growing conservative intellectual backlash, which sees the connection between radical skepticism and political disorder. The negative delta reflects a cultural anxiety that the cluster's logical conclusions (e.g., moral relativism, atheistic materialism) are socially dangerous and politically destabilizing. The conversation shifts from celebrating skepticism to finding philosophical ways to contain or refute it, as seen in the work of Thomas Reid, attempting to save a common-sense foundation for belief and morality.",
         "key_manifestations": [
           "Adam Ferguson's 'An Essay on the History of Civil Society' (1767), grounding social order in custom and sentiment, a non-skeptical foundation",
@@ -1262,7 +1262,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The variance drops to 7.0% (\u0394v = -0.2%). The catalyst for this decline is the explicit, extreme materialist determinism of Baron d'Holbach's 'The System of Nature,' which provides a final, uncompromising expression of atheistic materialism. This negative delta is driven by the cultural and intellectual rejection of this radical extreme by moderates across Europe (including Voltaire), who found the system to be 'cold' and morally terrifying. The cluster's explanatory power is diminished as its most radical expression alienates the mainstream Enlightenment, pushing moderate skepticism into a more cautious, pragmatic retreat.",
         "key_manifestations": [
           "Baron d'Holbach's 'The System of Nature' (1770), an extreme atheistic-materialist treatise that drew fierce backlash",
@@ -1272,7 +1272,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 6.8,
+        "salience_share": 6.8,
         "description": "The variance falls to 6.8% (\u0394v = -0.2%). The primary displacing force is the political upheaval of the American Revolution, which channels intellectual energy toward practical republican governance and away from abstract theological critique. The Revolution's rhetoric, while Enlightenment-inspired, consistently invokes the concept of a Creator and natural rights, implicitly rejecting radical skepticism as a foundation for the new republic. The negative delta reflects the cultural pragmatism of the age, which required a more stable and public-facing foundation for political action than philosophical doubt.",
         "key_manifestations": [
           "The American Declaration of Independence (1776), invoking the 'Creator' and 'Nature's God'",
@@ -1282,7 +1282,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 6.4,
+        "salience_share": 6.4,
         "description": "The variance sees a steep drop to 6.4% (\u0394v = -0.4%). The catalyst for this accelerated negative delta is the publication of **Immanuel Kant's 'Critique of Pure Reason' (1781)**, which formally limits the scope of reason to the phenomenal world, thereby dissolving the possibility of objective metaphysical knowledge and rendering the whole skeptical project a problem of epistemology, not theology. The primary displacing force is the rise of **The Sublime and Proto-Romantic Emotion (Cluster #12)**, which finds non-rational, spiritual truth in the feelings of awe and terror, an aesthetic counter-movement that rejects the 'cold' confines of rational skepticism.",
         "key_manifestations": [
           "Immanuel Kant's 'Critique of Pure Reason' (1781), a foundational philosophical response to Humean skepticism",
@@ -1292,7 +1292,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance falls to 6.0% (\u0394v = -0.4%). The sustained negative delta is driven by the post-Revolutionary desire for stability in the political sphere (America) and the fear of social disorder in Europe. The core displacing force is the growing cultural preference for a form of 'civil religion' or practical piety (Rousseau/Reid) that can bind society together, making radical skepticism seem politically irresponsible. The cultural energy is now directed towards establishing, rather than dissolving, moral and political foundations, fundamentally curtailing the cluster's appeal.",
         "key_manifestations": [
           "The Federalist Papers (1788, written here), arguing for a pragmatic, non-skeptical, stable government",
@@ -1302,7 +1302,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance sees a steep drop to 5.5% (\u0394v = -0.5%). The primary **displacing force** is the **French Revolution's Reign of Terror**, which is widely viewed across Europe (especially after Burke's critique) as the inevitable, catastrophic result of discarding all religious and historical constraints in favor of abstract, radical rationalism and skepticism. The negative delta is a consequence of the cluster's association with political chaos and atheistic excess, leading to a profound cultural retreat toward conservatism, tradition, and religious renewal (Romanticism/Evangelicalism). The cultural authority of skepticism is shattered by real-world events.",
         "key_manifestations": [
           "Edmund Burke's 'Reflections on the Revolution in France' (1790), a powerful defense of tradition and religious constraint against radical rationalism",
@@ -1312,7 +1312,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 5.1,
+        "salience_share": 5.1,
         "description": "The variance falls to 5.1% (\u0394v = -0.4%). The sustained negative delta is driven by the dominance of **Proto-Romantic Emotion and the Sublime (Cluster #12)**, which provides a spiritual outlet that skepticism had denied. The cultural focus is now on the mysterious, the transcendent, and the non-rational as the source of highest truth, making the cold, rational critique of Deism and skepticism culturally obsolete. The cluster's explanatory power is now limited to a minority of entrenched intellectuals, having been decisively superseded by the emotional counter-current.",
         "key_manifestations": [
           "The publication of 'Lyrical Ballads' (1798) by Wordsworth and Coleridge, championing an intuitive, spiritual connection to nature",
@@ -1322,7 +1322,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 4.8,
+        "salience_share": 4.8,
         "description": "The cluster ends the century at 4.8% (\u0394v = -0.3%), settling into a phase of slow, academic decay. The final negative delta reflects its displacement by the philosophical focus on **German Idealism (Hegel/Schelling)**, which attempts to move beyond the limitations of both skepticism and dogmatism through a grand, rational system that re-integrates spirit and history. While the cluster's legacy of secularization is irreversible, its dynamic explanatory power is spent. Skepticism remains a methodological tool for science and history, but its role as the central defining philosophical challenge has been fully superseded by the demands of Romantic spirituality and post-Revolutionary political order.",
         "key_manifestations": [
           "G.W.F. Hegel's early philosophical writings, moving beyond Kantian limits to embrace a philosophy of 'Spirit'",
@@ -1338,7 +1338,7 @@ export const humeData = {
     "description": "This cluster captures the emergence of a new social and intellectual space\u2014the Public Sphere\u2014where private individuals can engage in rational-critical debate, independent of state or church authority. Driven by the proliferation of cheap print (newspapers, pamphlets, novels, encyclopedias), and institutionalized in venues like coffee houses and salons, this sphere became the engine of the Enlightenment's circulation of ideas. It is the primary infrastructure for the dynamism of all other clusters. Its trajectory is one of high initial variance and sustained entrenchment, followed by a decline as the space becomes radicalized (French Revolution) and fragmented by commercial interests.",
     "trajectory": {
       "1700": {
-        "variance_explained": 5.8,
+        "salience_share": 5.8,
         "description": "The cluster begins with high variance at 5.8%, having been catalyzed by the lapse of the Licensing Act in England (1695), which enabled the rapid, uncontrolled proliferation of print media. This initial variance reflects the sudden availability of a space for non-authoritarian debate, exemplified by early periodicals. The cultural focus is on defining the rules of this new space: rational, polite discourse and the pursuit of public utility. The institutional inertia of established print channels (newspapers, pamphlets) ensures its high initial explanatory power as the primary vehicle for all cultural change.",
         "key_manifestations": [
           "The lapse of the Licensing Act in England (1695)",
@@ -1348,7 +1348,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 6.1,
+        "salience_share": 6.1,
         "description": "The variance rises to 6.1% (\u0394v = +0.3%). The primary catalyst for this growth is the refinement and standardization of 'polite' public discourse through literary periodicals, which teach the rising commercial class how to debate rationally and civilly. This positive delta is driven by the cultural need to manage the potential chaos of free expression, transforming the Public Sphere into an instrument of **Polite Culture (Cluster #4)**. The periodical becomes the dominant medium, disseminating Enlightenment ideals and new social rules to a mass audience, solidifying the cluster's high explanatory power.",
         "key_manifestations": [
           "The launch of Joseph Addison and Richard Steele's 'The Tatler' (1709)",
@@ -1358,7 +1358,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 6.4,
+        "salience_share": 6.4,
         "description": "The variance climbs to 6.4% (\u0394v = +0.3%). The catalyst is the massive success of 'The Spectator,' which firmly establishes the non-political, moralizing, and aesthetic periodical as the dominant form of print culture. This positive delta is driven by the cultural appetite for self-improvement and standardized taste among the burgeoning commercial class. The Public Sphere is now fully institutionalized as the regulator of manners and morality, ensuring its maximum reach across various social strata and cementing its position as the engine of cultural refinement.",
         "key_manifestations": [
           "Joseph Addison and Richard Steele's 'The Spectator' (begun 1711), the archetype of the polite periodical",
@@ -1368,7 +1368,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 6.7,
+        "salience_share": 6.7,
         "description": "The variance rises to 6.7% (\u0394v = +0.3%). The primary catalyst is the successful global export of the print-based Public Sphere model to the Continent, primarily France, through translations and intellectual exchange. This positive delta is driven by the perceived political utility of the English model\u2014a vibrant sphere seen as a check on political absolutism. The cluster's growth reflects its trans-nationalization, becoming the established mechanism for the transmission of all Enlightenment ideas, including Locke, Newton, and Hume's early influences, across intellectual centers.",
         "key_manifestations": [
           "Voltaire's early interest and promotion of the British print and political model",
@@ -1378,7 +1378,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 6.9,
+        "salience_share": 6.9,
         "description": "The variance climbs to 6.9% (\u0394v = +0.2%). The catalyst for this sustained growth is the increasing diversification of the Public Sphere's content, moving beyond general manners to include specialized scientific, economic, and philosophical journals. This positive delta is driven by the professionalization of knowledge, using the print sphere to communicate empirical findings and specialized discourse (e.g., early works of Montesquieu, written here). The cluster is growing by becoming the necessary medium for all specialized, non-institutionalized intellectual discourse.",
         "key_manifestations": [
           "The establishment of various specialized philosophical and scientific journals and societies",
@@ -1388,7 +1388,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 7.1,
+        "salience_share": 7.1,
         "description": "The variance rises to 7.1% (\u0394v = +0.2%). The catalyst is the formal adoption of the empirical method in the Public Sphere, demanding that debate be grounded in observable facts, statistics, and reported experience, rather than just abstract argument. This positive delta is driven by the cultural ascendancy of **Empirical Epistemology (Cluster #5)**, which uses print culture as its primary evidence repository. The sphere's explanatory power increases by becoming the essential tool for collecting, organizing, and debating the vast amounts of new knowledge generated by global trade and scientific advancement.",
         "key_manifestations": [
           "The widespread use of empirical travel writing (e.g., Montesquieu's 'Persian Letters', 1721) as a source for social critique",
@@ -1398,7 +1398,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 7.3,
+        "salience_share": 7.3,
         "description": "The variance climbs to 7.3% (\u0394v = +0.2%). The catalyst is the literary expansion of the sphere's scope through the sentimental novel, which uses print to explore the subjective, emotional interior life of the individual and generate collective public sympathy. This positive delta is driven by the Public Sphere's successful annexation of the **Sentimental Mode (Cluster #2)**, allowing it to become the engine for the collective emotional experience of the age. The shared reading of emotional narratives creates a new kind of 'imagined community' held together by shared feeling and moral sense.",
         "key_manifestations": [
           "The emergence of Samuel Richardson\u2019s work (e.g., 'Pamela,' 1740, but groundwork is laid here), prioritizing psychological print culture",
@@ -1408,7 +1408,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance rises to 7.5% (\u0394v = +0.2%), reaching a sustained high point. The catalyst is the philosophical and cultural validation of the Public Sphere as the necessary condition for 'civil society,' championed by Hume and others. This positive delta is driven by the intellectual consensus that the ability to exchange ideas freely and apply rational-critical judgment is the hallmark of a civilized, stable commercial nation. The Public Sphere is now culturally indispensable, seen as the guarantor of liberty, taste, and intellectual progress, securing its dominance as the central mechanism of the Enlightenment.",
         "key_manifestations": [
           "David Hume's essays on the relationship between print culture, politeness, and civilized society",
@@ -1418,7 +1418,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 7.7,
+        "salience_share": 7.7,
         "description": "The variance increases to 7.7% (\u0394v = +0.2%). The major **catalyst** for this surge is the commencement of the French *Encyclop\u00e9die*, which represents the ultimate, monumental expression of the Public Sphere's mission: to systematically secularize and compile all knowledge for public access, independent of monarchical or religious control. This positive delta is driven by the political and philosophical ambition of the *philosophes* to use print culture as a tool for political reform, making the Public Sphere the central battleground for all intellectual and ideological conflicts of the mid-century.",
         "key_manifestations": [
           "The commencement of the French *Encyclop\u00e9die* (1751, groundwork here), a monumental collective print project",
@@ -1428,7 +1428,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 7.9,
+        "salience_share": 7.9,
         "description": "The variance rises to 7.9% (\u0394v = +0.2%). The catalyst for this sustained growth is the cultural anxiety over the sphere's power, leading to political repression and censorship, which ironically only strengthens its cultural significance. This positive delta is driven by the realization that the Public Sphere is now the most formidable check on political authority. The controversy and legal challenges surrounding print culture (e.g., the *Encyclop\u00e9die*) confirm its high explanatory power, transforming it from a mere social space into a symbol of Enlightenment liberty and resistance.",
         "key_manifestations": [
           "The increasing threat of censorship and book bans against key *philosophes*",
@@ -1438,7 +1438,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance reaches 8.0% (\u0394v = +0.1%), plateauing at a high level of entrenchment. The **catalyst** for this final surge and subsequent stasis is the full, widespread dissemination of the Public Sphere across social strata, with its ideas now integrated into daily life through newspapers, almanacs, and political prints. The small positive delta reflects its total saturation of the educated and aspirational public. The cultural activity is now focused on defending and managing this established space against internal commercialization (superficiality) and external political control, making stasis a sign of high, functional entrenchment.",
         "key_manifestations": [
           "The full commencement of the *Encyclop\u00e9die* publication (1751)",
@@ -1448,7 +1448,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance holds steady at 8.0% (\u0394v = 0.0%). The stability reflects the cluster's entrenchment as a foundational institution, maintaining high variance even as its content changes. The Seven Years' War (begun 1756) acts as a force of stasis by increasing the demand for news, political tracts, and propaganda, which relies heavily on the established mechanisms of the Public Sphere for dissemination. The sphere\u2019s function as a critical tool is reinforced by the need for public debate and accountability during a major international conflict, ensuring its variance does not decline despite the political upheaval.",
         "key_manifestations": [
           "Voltaire's extensive correspondence and public interventions on the Lisbon Earthquake and the Seven Years' War",
@@ -1458,7 +1458,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 7.9,
+        "salience_share": 7.9,
         "description": "The variance sees a marginal dip to 7.9% (\u0394v = -0.1%). The catalyst for this slight negative delta is the internal challenge posed by **The Sublime and Proto-Romantic Emotion (Cluster #12)**, which rejects the Public Sphere's core value of rational-critical discourse in favor of individual, non-rational intuition. This decline is subtle but significant, reflecting the cultural fatigue with the 'polite' restrictions of the sphere and a growing desire for emotional authenticity over reasoned argument. The romantic movement begins its work of subtly fragmenting the sphere's shared intellectual assumptions.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Julie, or the New Heloise' (1761), an epistolary novel that weaponizes sentimentality to critique rational society",
@@ -1468,7 +1468,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 7.8,
+        "salience_share": 7.8,
         "description": "The variance falls to 7.8% (\u0394v = -0.1%). The displacing force is the growing political polarization in the colonies and Europe, which transforms the Public Sphere from a space of *rational consensus* to one of *ideological conflict*. The negative delta reflects the sphere's loss of its initial promise of unified, rational debate, as the volume of politically charged, partisan print increases dramatically. The sphere's focus shifts from abstract philosophical discussion to immediate political action, demonstrating the tension between its rational ideals and its real-world function as a tool for mobilization.",
         "key_manifestations": [
           "The radicalization of American colonial pamphlets (e.g., 'Letters from a Farmer in Pennsylvania' by John Dickinson, 1768)",
@@ -1478,7 +1478,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 7.6,
+        "salience_share": 7.6,
         "description": "The variance drops to 7.6% (\u0394v = -0.2%). The catalyst for this decline is the explicit, radical atheistic content (d'Holbach) that divides the intellectual class and the increasing political rhetoric that threatens state stability. The primary displacing force is the cultural need for social and political order, which causes moderates to retreat from the Public Sphere's most radical excesses, viewing its unchecked freedom as dangerous. The negative delta reflects the sphere's growing association with political sedition and moral anarchy, shrinking its consensus-building capacity.",
         "key_manifestations": [
           "Baron d'Holbach's 'The System of Nature' (1770), polarizing the European intellectual community",
@@ -1488,7 +1488,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 7.3,
+        "salience_share": 7.3,
         "description": "The variance falls to 7.3% (\u0394v = -0.3%). The primary **displacing force** is the **American Revolution**, which transforms the Public Sphere from a realm of *debate* into a platform for *war mobilization*. The cultural shift to immediate, pragmatic action and patriotic fervor curtails the explanatory power of rational-critical discourse. The negative delta reflects the sphere's loss of autonomy, as its function is now determined by the demands of political conflict, rather than independent intellectual critique. The print culture becomes a tool of the state and the military, diminishing its original liberal promise.",
         "key_manifestations": [
           "Thomas Paine's 'Common Sense' (1776), a pamphlet of unprecedented circulation and mobilizing power, demonstrating the sphere's radical potential",
@@ -1498,7 +1498,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 6.9,
+        "salience_share": 6.9,
         "description": "The variance drops to 6.9% (\u0394v = -0.4%). The primary displacing force is the intellectual shockwave of **Immanuel Kant's 'Critique of Pure Reason' (1781)**, which formally questioned the Universalist and Empirical (Cluster #1 and #5) assumptions underlying the sphere's faith in objective, accessible reason. This negative delta reflects a philosophical fragmentation of the Public Sphere's core methodological consensus. Concurrently, the rise of **The Sublime (Cluster #12)** rejects the sphere's neoclassical aesthetic of clarity and order in favor of emotional ambiguity and intuition, further shrinking its intellectual relevance.",
         "key_manifestations": [
           "Immanuel Kant's 'Critique of Pure Reason' (1781), fundamentally altering the terms of rational discourse",
@@ -1508,7 +1508,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance falls to 6.5% (\u0394v = -0.4%). The primary displacing force is the rise of a new political pragmatism (the US Constitution debates) and the growing appeal of **Common Sense Philosophy (Thomas Reid)**, which critiques the Public Sphere's tendency towards skeptical over-analysis and abstraction. The negative delta reflects a cultural desire for a return to intuitive, non-intellectual certainty and practical governance, diminishing the perceived utility of endless, critical print debate. The sphere is now viewed as necessary but increasingly prone to radicalism and abstract theoretical excess.",
         "key_manifestations": [
           "The US Constitution (1787), a document designed to check the passions and theoretical extremes unleashed by the Public Sphere",
@@ -1518,7 +1518,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance sees a steep drop to 6.0% (\u0394v = -0.5%). The ultimate **displacing force** is the **French Revolution's Reign of Terror**, which shatters the Public Sphere's core narrative of rational, peaceful progress through debate. The negative delta reflects the profound cultural crisis of confidence: the sphere, which was supposed to guarantee liberty, instead produced unprecedented violence. The ensuing backlash (Burkean conservatism and Romanticism) explicitly rejects the Public Sphere as a dangerous, utopian engine of abstract rationalism, causing its ideal variance to collapse dramatically across Europe.",
         "key_manifestations": [
           "Edmund Burke's 'Reflections on the Revolution in France' (1790), a powerful critique of abstract, print-based political theory",
@@ -1528,7 +1528,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance falls to 5.5% (\u0394v = -0.5%). The sustained negative delta is driven by the dominance of **The Sublime and Proto-Romantic Emotion (Cluster #12)**, which champions subjective experience and the transcendent imagination over objective, publicly accessible rational debate. The cultural focus shifts from the coffee house (rational debate) to the solitary walk in nature (emotional insight), diminishing the Public Sphere's aesthetic and spiritual relevance. The cluster is now structurally entrenched but intellectually exhausted and ideologically fragmented by the demands of the emerging Industrial Age and Romantic subjectivity.",
         "key_manifestations": [
           "'Lyrical Ballads' (Wordsworth/Coleridge, 1798), rejecting the 'artificial distinction' of 18th-century discourse",
@@ -1538,7 +1538,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The cluster ends the century at 5.2% (\u0394v = -0.3%), settling into a phase of slow decay, its explanatory power reduced to a mere transmission mechanism. The final negative delta reflects its displacement by the political control exerted by Napoleon and the philosophical move into **German Idealism**, which finds new, non-public spheres (like the *Geist*) to debate the ultimate questions. The Public Sphere remains a vital *medium* but loses its status as the supreme *generator* of cultural variance, having been superseded by the subjective, the sublime, and the new political imperatives of empire and industry.",
         "key_manifestations": [
           "The consolidation of state control over the press under Napoleon's Consulate",
@@ -1554,7 +1554,7 @@ export const humeData = {
     "description": "This cluster traces the evolving cultural obsession with the past as a model for the present. Initially dominated by the 'Augustan' ideal\u2014a reverence for Imperial Rome as the standard of stability and taste\u2014it fractures over the century. The archaeological rediscovery of Greece (Winckelmann) fuels a severe, rational Neoclassicism, while a counter-current of 'Gothic' medievalism emerges to satisfy the desire for mystery and national (non-Roman) origins. The overall secular decline reflects the gradual loss of Classical Antiquity's hegemonic power as the *sole* arbiter of taste, displaced by modern, commercial, and romantic sensibilities.",
     "trajectory": {
       "1700": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The cluster begins with a high variance of 6.5%, reflecting the absolute dominance of the 'Ancient' model in European high culture. The **catalyst** is the self-conscious identification of the post-1688 English regime and Louis XIV's France with Imperial Rome. The cultural logic is one of strict imitation: to be civilized is to mimic the Romans. This high variance is maintained by the educational monopoly of the Classics and the 'Battle of the Books,' where the authority of the Ancients is vigorously defended against the Moderns.",
         "key_manifestations": [
           "The 'Battle of the Books' (Swift, 1704), explicitly debating the authority of Ancients vs. Moderns",
@@ -1564,7 +1564,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 6.3,
+        "salience_share": 6.3,
         "description": "The variance dips slightly to 6.3% (\u0394v = -0.2%). The catalyst for this initial, slow decline is the creeping success of the 'Moderns' in science and commerce, domains where Antiquity offered little guidance. While the aesthetic authority of Rome remains high in poetry and architecture, the intellectual vitality is shifting elsewhere. The negative delta reflects a growing cultural bifurcation: the Ancients rule Art, but the Moderns rule Science. The 'Augustan' pose is becoming a stylistic convention rather than a totalizing worldview.",
         "key_manifestations": [
           "The continued construction of Blenheim Palace (begun 1705), a monument to Roman martial virtue but modern English power",
@@ -1574,7 +1574,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance falls to 6.0% (\u0394v = -0.3%). The catalyst is the codification of the 'Augustan' style by Pope, which, by perfecting the imitation of Rome, paradoxically signals its limits. The negative delta is driven by the rise of **Polite Culture (Cluster #4)**, which values modern urban sociability over austere Roman virtue. The 'Ancient' model is becoming a polished, static background for the dynamic, messy reality of London's commercial life. The cultural energy is moving from the library (Ancients) to the coffee house (Moderns).",
         "key_manifestations": [
           "Alexander Pope's 'An Essay on Criticism' (1711), the supreme codification of Neoclassical rules",
@@ -1584,7 +1584,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 5.8,
+        "salience_share": 5.8,
         "description": "The variance drops to 5.8% (\u0394v = -0.2%). The displacing force is the growing popularity of the **Sentimental Mode (Cluster #2)**, which prioritizes immediate feeling over the mediated, disciplined forms of Classical tradition. The negative delta reflects a shift in aesthetic valuation: if the goal of art is to move the heart (Modern), then the rigid rules of the Ancients are an impediment. However, the translation of Homer by Pope keeps the cluster relevant, transforming the ancient epics into best-selling, modern commercial commodities.",
         "key_manifestations": [
           "Alexander Pope's translation of 'The Iliad' (begun 1715), a commercial triumph that modernizes the text",
@@ -1594,7 +1594,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance falls to 5.5% (\u0394v = -0.3%). The catalyst is thePalladian revival in architecture, led by Lord Burlington. While this seems like a resurgence, it is a narrowing of the aesthetic to a rigid, dogmatic set of rules, which alienates the broader, more dynamic culture. The negative delta reflects the 'museumification' of the Ancient ideal: it is becoming a specialized taste for the aristocracy, while the middle class turns to the novel and the print sphere. The Gothic, meanwhile, begins to stir as a vague, 'antique' alternative.",
         "key_manifestations": [
           "Lord Burlington's Chiswick House (begun 1729, influences here), a manifesto of rigid Palladian taste",
@@ -1604,7 +1604,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance drops to 5.2% (\u0394v = -0.3%). The displacing force is the cultural saturation of the 'polite' commercial aesthetic, which finds the severity of the Ancients increasingly tiresome. The negative delta is a consequence of the 'Rococo' creeping in from France\u2014a style of asymmetry, pleasure, and ornamentation that explicitly rejects Classical gravity. The Ancient ideal is losing its grip on the interior design and fashion of the elite, becoming restricted to the exterior facades of their country houses.",
         "key_manifestations": [
           "The rise of Rococo argumentation in design (e.g., asymmetrical furniture)",
@@ -1614,7 +1614,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance continues to decline to 5.0% (\u0394v = -0.2%). The catalyst is the exhaustion of the 'Augustan' literary mode. With the aging of Pope and Swift, the direct identification with Rome loses its satirical bite and becomes mere convention. The negative delta reflects the search for new aesthetic sources, leading to a burgeoning interest in the 'Gothic' past\u2014not yet as a horror genre, but as a source of 'wild' and 'natural' liberty in contrast to Roman tyranny. The aesthetic coordinate space is beginning to fracture.",
         "key_manifestations": [
           "The design of the 'Gothic Temple' at Stowe (1741, conception here), explicitly linking Gothic architecture to political liberty",
@@ -1624,7 +1624,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 4.8,
+        "salience_share": 4.8,
         "description": "The variance falls to 4.8% (\u0394v = -0.2%). The displacing force is the rise of **Empirical Epistemology (Cluster #5)**, which questions the authority of tradition. Why should the Moderns bow to the Ancients if knowledge comes from experience? The negative delta reflects a shift from 'Authority' (The Classics) to 'Inquiry' (Science/History). However, a counter-catalyst appears: the Society of Dilettanti (1734) is formed, aiming to sponsor direct archaeological expeditions to Greece, foreshadowing a new, scientific Neoclassicism.",
         "key_manifestations": [
           "The formation of the Society of Dilettanti (1734), blending debauchery with serious archaeological interest",
@@ -1634,7 +1634,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 4.6,
+        "salience_share": 4.6,
         "description": "The variance drops to 4.6% (\u0394v = -0.2%). The primary displacing force is the novel's explosion (Richardson), which centers the cultural conversation on the private, domestic present. The 'Ancient' model has little to say about the psychology of a serving maid. The negative delta is driven by the irrelevance of Classical heroism to the new bourgeois consciousness. However, the Gothic begins to gain traction as an aesthetic of 'pleasing melancholy,' offering an emotional depth that the rigid Classical rules stifle.",
         "key_manifestations": [
           "Samuel Richardson's 'Pamela' (1740), the antithesis of Classical epic",
@@ -1644,7 +1644,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance stabilizes at 4.5% (\u0394v = -0.1%), reaching a local minimum before a resurgence. The catalyst for the stabilization is the **discovery of Pompeii (1748)** and the excavation of Herculaneum. These events electrify the aesthetic world, transforming the 'Ancient' from a literary text into a tangible, domestic reality. This creates a new 'catalyst' for growth: Archaeological Neoclassicism. The delta is small as the old Augustan mode dies and the new Archaeological mode is born.",
         "key_manifestations": [
           "The formal commencement of excavations at Pompeii (1748)",
@@ -1654,7 +1654,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 4.8,
+        "salience_share": 4.8,
         "description": "The variance rises to 4.8% (\u0394v = +0.3%). The catalyst is the publication of **Winckelmann's** early works and the broad dissemination of archaeological findings. This positive delta reflects a pivot from 'Roman Authority' to 'Greek Beauty'\u2014a shift towards ideal forms, noble simplicity, and calm grandeur. The 'Ancient' cluster is reinvigorated by this new, scientific aesthetic, which aligns with the Enlightenment's desire for purity and first principles. Simultaneously, the Gothic is formally theorized as a valid alternative style.",
         "key_manifestations": [
           "J.J. Winckelmann's 'Reflections on the Imitation of Greek Works in Painting and Sculpture' (1755)",
@@ -1664,7 +1664,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 5.1,
+        "salience_share": 5.1,
         "description": "The variance climbs to 5.1% (\u0394v = +0.3%). The catalyst is the intellectual fusion of Neoclassicism with political **Republicanism (Cluster #9)**. The 'Grecian' style is increasingly associated with liberty and democracy, contrasting with the 'Roman/Baroque' style of absolutism. This positive delta is driven by the adoption of Neoclassicism as the visual language of the Enlightenment reform movement. However, Edmund Burke's theory of the **Sublime (Cluster #12)** (1757) begins to provide a theoretical framework that will eventually undermine the Classical focus on 'Beauty' in favor of 'Terror'.",
         "key_manifestations": [
           "Edmund Burke's 'A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful' (1757)",
@@ -1674,7 +1674,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 5.3,
+        "salience_share": 5.3,
         "description": "The variance reaches 5.3% (\u0394v = +0.2%). The catalyst is the 'Ossian' controversy\u2014the publication of supposed ancient Gaelic epics that rivaled Homer. This positive delta (for the cluster broadly) reflects the explosion of the 'Primitive' or 'Gothic' side of the equation. The cultural desire is for an *indigenous* antiquity to match the Classical one. The cluster is now a binary star system: High Neoclassicism (Rational/Greek) vs. High Gothic/Ossianism (Emotional/Northern), creating a dynamic tension that defines the aesthetic era.",
         "key_manifestations": [
           "James Macpherson's 'Fragments of Ancient Poetry' (Ossian) (1760), a sensation across Europe",
@@ -1684,7 +1684,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 5.1,
+        "salience_share": 5.1,
         "description": "The variance dips to 5.1% (\u0394v = -0.2%). The displacing force is the increasing radicalization of the **Sentimental Mode (Cluster #2)**, which finds the archaeological precision of the Greek Revival too cold and the playfulness of the early Gothic too artificial. The negative delta reflects a desire for *contemporary* emotional realism. While the elite continue to build in the Neoclassical style, the cultural heat is moving towards a 'naturalism' that rejects all historical revivalism in favor of unadorned nature (Rousseau).",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Confessions' (readings began), focusing on the raw self, not historical models",
@@ -1694,7 +1694,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 4.8,
+        "salience_share": 4.8,
         "description": "The variance drops to 4.8% (\u0394v = -0.3%). The catalyst is the politicization of culture. As tension mounts in America and France, the aesthetic debate becomes a proxy for political allegiance. The 'Roman' style is increasingly associated with the austere, self-sacrificing virtue of the Republic (David), while the 'Rococo' is linked to corrupt aristocracy. The negative delta for the *cluster generally* reflects that aesthetics are becoming subservient to **Republicanism (Cluster #9)**; the style matters less than the political message it carries.",
         "key_manifestations": [
           "Benjamin West's 'The Death of General Wolfe' (1770), painting a modern hero in classical pose but modern dress",
@@ -1704,7 +1704,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance falls to 4.5% (\u0394v = -0.3%). The displacing force is the sheer urgency of the **American Revolution**. The 'Ancient' model is no longer an aesthetic playground but a deadly serious political script (Brutus, Cato). The negative delta reflects the collapse of 'Aesthetics' as an independent domain; art is now propaganda. The Gothic, meanwhile, retreats into the 'Sublime' (Cluster #12), becoming a psychological category rather than just a historical revival style.",
         "key_manifestations": [
           "Jacques-Louis David's early Prix de Rome works, moving toward the 'Oath of the Horatii'",
@@ -1714,7 +1714,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 4.2,
+        "salience_share": 4.2,
         "description": "The variance drops to 4.2% (\u0394v = -0.3%). The catalyst is the ascendancy of the **Romantic Sublime (Cluster #12)**. The orderly, rational Neoclassicism of the mid-century is being displaced by an aesthetic of Terror and Awe. While David's 'Oath of the Horatii' (1784) is a masterpiece, it is a *political* bomb, not just an aesthetic one. The negative delta reflects the fragmentation of the revivalist impulse: one branch goes to political radicalism (Neoclassical Jacobinism), the other to psychological horror (Gothic Novel). They no longer cohere as a single 'aesthetic' cluster.",
         "key_manifestations": [
           "Jacques-Louis David's 'The Oath of the Horatii' (1784), the ultimate fusion of Neoclassicism and Republican virtue",
@@ -1724,7 +1724,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 3.9,
+        "salience_share": 3.9,
         "description": "The variance falls to 3.9% (\u0394v = -0.3%). The displacing force is the increasing dominance of **Industrial Mechanization (Cluster #20)** and **Commercial Society**. The revivals are becoming commodified styles for wallpaper and pottery (Wedgwood), losing their high intellectual charge. The negative delta reflects the descent of the 'Ancient' and 'Gothic' from high philosophy to consumer fashion. The intellectual cutting edge has moved to Kantian philosophy and Romantic subjectivity.",
         "key_manifestations": [
           "Josiah Wedgwood's mass production of 'Etruscan' vases",
@@ -1734,7 +1734,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 3.6,
+        "salience_share": 3.6,
         "description": "The variance drops to 3.6% (\u0394v = -0.3%). The catalyst is the **French Revolution**. The 'Ancient' style becomes the official, enforced language of the State (The Republic of Virtue), which paradoxically kills its vitality as a cultural eigencluster. It becomes a rigid dogma of the Terror. The Gothic, conversely, becomes the language of the counter-revolutionary subconscious\u2014the fear of the dungeon and the tribunal. The negative delta reflects the polarization where these styles cease to be 'revivals' and become political uniforms.",
         "key_manifestations": [
           "The Festival of the Supreme Being (1794), a state pageant using Neoclassical imagery",
@@ -1744,7 +1744,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 3.3,
+        "salience_share": 3.3,
         "description": "The variance falls to 3.3% (\u0394v = -0.3%). The displacing force is the rise of **Napoleon** and the shift to the 'Empire' style\u2014a decorative, militaristic hardening of Neoclassicism. The negative delta reflects the loss of the *moral* dimension of the revival; it is now merely the style of Power. The Gothic is being absorbed into **Romanticism**, shedding its antiquarian roots to become a mode of psychological exploration. The cluster 'Revivals in Aesthetics' is dissolving into 'Romanticism' and 'State Propaganda'.",
         "key_manifestations": [
           "The Directoire style in fashion and furniture, a lighter, more self-conscious Greco-Roman pastiche",
@@ -1754,7 +1754,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The cluster ends the century at 3.0% (\u0394v = -0.3%). The final state is one of fragmentation. The 'Ancient' has become the rigid, official style of the Napoleonic state (Empire Style), while the 'Gothic' has been fully metabolized by the Romantic movement as the language of the past, the folk, and the irrational. The 'Revival' as a distinct intellectual quest is over; the styles are now available options in the modern commercial marketplace. The explanatory power has passed to the **Romantic** synthesis.",
         "key_manifestations": [
           "The official establishment of the Empire Style in France (post-1799)",
@@ -1770,7 +1770,7 @@ export const humeData = {
     "description": "This cluster tracks the political transformation from subjecthood to citizenship. It synthesizes the Classical Republican focus on civic virtue and checking corruption with the Modern Liberal (Lockean) focus on natural rights, property, and individual liberty. Trajectorially, it starts as a low-variance theoretical discourse among the elite (opposed to Absolutism), rises steadily through the Enlightenment, and explodes in the final quarter of the century with the American and French Revolutions, becoming the dominant, world-shaping force of the era.",
     "trajectory": {
       "1700": {
-        "variance_explained": 1.5,
+        "salience_share": 1.5,
         "description": "The cluster begins at a low 1.5%. The **catalyst** is the aftermath of the Glorious Revolution (1688) in England, which established a constitutional monarchy but not a democracy. The cultural variance is low because 'Republicanism' is largely a historical curiosity (Rome) or a radical fringe belief, while 'Liberalism' is limited to the justification of property rights for the gentry. The force of stasis is the overwhelming dominance of Monarchical Absolutism (Louis XIV) on the continent, which defines the political reality.",
         "key_manifestations": [
           "John Locke's 'Two Treatises of Government' (1689), the theoretical seed",
@@ -1780,7 +1780,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 1.7,
+        "salience_share": 1.7,
         "description": "The variance rises marginally to 1.7% (\u0394v = +0.2%). The catalyst is the War of Spanish Succession, which highlights the dangers of unchecked dynastic ambition. The positive delta reflects a growing elite discourse\u2014the 'Commonwealthmen' or 'Real Whigs'\u2014who keep the embers of republican thought alive in pamphlets. However, the success of the English commercial state under a mixed monarchy dampens radical republican fervor.",
         "key_manifestations": [
           "The circulation of 'Cato's Letters' (later, but precursors here)",
@@ -1790,7 +1790,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 1.9,
+        "salience_share": 1.9,
         "description": "The variance creeps up to 1.9% (\u0394v = +0.2%). The catalyst is the literary sphere. Addison's play 'Cato' (1713) becomes a sensation, presenting a Stoic, republican hero who chooses death over tyranny. This positive delta shows the *aestheticization* of republicanism: it becomes a noble pose for the elite, even if they are politically loyal to the Crown. The language of 'liberty' begins to permeate the **Public Sphere (Cluster #7)**.",
         "key_manifestations": [
           "Joseph Addison's 'Cato, a Tragedy' (1713), a massive cultural touchstone for republican virtue",
@@ -1800,7 +1800,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 2.1,
+        "salience_share": 2.1,
         "description": "The variance rises to 2.1% (\u0394v = +0.2%). The catalyst is the death of Louis XIV and the Regency in France, which opens a brief window for dissenting political thought. The positive delta is driven by the cross-pollination of English liberal ideas (Locke, Newton) into France (Voltaire). The concept of 'English Liberty' becomes a weapon for French intellectuals to critique their own lack of freedom.",
         "key_manifestations": [
           "Voltaire's exile to England (1726, but the intellectual drift starts here)",
@@ -1810,7 +1810,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 2.3,
+        "salience_share": 2.3,
         "description": "The variance rises to 2.3% (\u0394v = +0.2%). The catalyst is the corruption of the Walpole era in England. The 'Country Party' opposition revives classical republican rhetoric (corruption vs. virtue) to attack the financial oligarchy. This positive delta reflects the merging of 'Republican' moral critique with 'Liberal' economic concerns. The language of opposition is being forged.",
         "key_manifestations": [
           "The publication of 'Cato's Letters' (collected), the textbook for 18th-century republicanism",
@@ -1820,7 +1820,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance rises to 2.5% (\u0394v = +0.2%). The catalyst is the intellectual maturation of the Scottish Enlightenment. Hutcheson's focus on 'unalienable rights' and the right of resistance provides a moral philosophy that underpins political liberalism. The positive delta is driven by the shift from historical arguments (ancient rights) to natural law arguments (human rights).",
         "key_manifestations": [
           "Francis Hutcheson's 'Inquiry' (1725), articulating early concepts of natural rights",
@@ -1830,7 +1830,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 2.8,
+        "salience_share": 2.8,
         "description": "The variance climbs to 2.8% (\u0394v = +0.3%). The catalyst is the entrenchment of the 'opposition' culture in Britain and the rise of the *Philosophes* in France. The positive delta reflects the growing belief that the existing order is fundamentally corrupt (Walpole/Louis XV) and that a return to 'first principles' of liberty is necessary. Montesquieu is in England, synthesizing the observations that will become *The Spirit of the Laws*.",
         "key_manifestations": [
           "Viscount Bolingbroke's 'Dissertation upon Parties' (1733)",
@@ -1840,7 +1840,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 3.1,
+        "salience_share": 3.1,
         "description": "The variance rises to 3.1% (\u0394v = +0.3%). The catalyst is the growing articulation of 'Classical Liberalism'\u2014the idea that the government's role is to protect property and negative liberty. The positive delta is driven by the commercial class's increasing demand for political representation and protection from arbitrary state power. The tension between 'Virtue' (Republican) and 'Commerce' (Liberal) becomes a central debate.",
         "key_manifestations": [
           "David Hume's 'Treatise' (1739), dismantling the social contract but defending justice/property as useful conventions",
@@ -1850,7 +1850,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 3.4,
+        "salience_share": 3.4,
         "description": "The variance increases to 3.4% (\u0394v = +0.3%). The catalyst is the War of Austrian Succession, which strains state finances and highlights the incompetence of monarchies. The positive delta reflects the sharpening of the critique against 'Old Corruption'. In America, the Great Awakening begins to challenge hierarchical authority in the religious sphere, a habit of mind that will transfer to politics.",
         "key_manifestations": [
           "David Hume's 'Essays Moral and Political' (1741), analyzing the balance of power and liberty",
@@ -1860,7 +1860,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 3.8,
+        "salience_share": 3.8,
         "description": "The variance rises to 3.8% (\u0394v = +0.4%). The major catalyst is the publication of **Montesquieu's 'The Spirit of the Laws' (1748)**. This text becomes the bible of the cluster, analyzing the separation of powers and the nature of despotism. The positive delta is massive because Montesquieu provides the *structural* blueprint for a liberal government, moving beyond mere moral critique. It becomes the standard by which all governments are judged.",
         "key_manifestations": [
           "Montesquieu's 'The Spirit of the Laws' (1748)",
@@ -1870,7 +1870,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 4.2,
+        "salience_share": 4.2,
         "description": "The variance climbs to 4.2% (\u0394v = +0.4%). The catalyst is Rousseau's 'Discourse on Inequality' (1754), which introduces a radical, democratic republicanism that critiques property itself. The positive delta reflects the bifurcation of the cluster: the 'Liberal' branch (property, commerce, separation of powers) vs. the 'Radical Republican' branch (general will, equality, virtue). This tension energizes the entire political discourse.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Discourse on Inequality' (1754)",
@@ -1880,7 +1880,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 4.6,
+        "salience_share": 4.6,
         "description": "The variance rises to 4.6% (\u0394v = +0.4%). The catalyst is the Seven Years' War, a global conflict that mobilizes populations and creates massive state debts. The positive delta is driven by the realization that the old fiscal-military state is unsustainable without the consent of the taxed. The 'Republican' critique of standing armies and corruption gains new urgency.",
         "key_manifestations": [
           "The Seven Years' War (begun 1756), highlighting the cost of empire",
@@ -1890,7 +1890,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance jumps to 5.2% (\u0394v = +0.6%). The catalyst is the end of the war and the beginning of the **Imperial Crisis** (Stamp Act). The positive delta is driven by the American colonists explicitly activating the 'Real Whig' / Republican ideology to resist British taxation. What was theoretical in 1700 is now the operational language of a mass political movement. The cluster is moving from books to the streets.",
         "key_manifestations": [
           "The Stamp Act Congress (1765) and the 'Declaration of Rights and Grievances'",
@@ -1900,7 +1900,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance surges to 6.0% (\u0394v = +0.8%). The catalyst is the deepening crisis in America and the spread of Enlightenment radicalism in Europe. The positive delta reflects the realization that 'Parliamentary Sovereignty' and 'Colonial Liberty' are incompatible. The cluster is evolving from a critique of *monarchy* to a critique of *unrepresentative parliament*. The concept of 'Popular Sovereignty' begins to displace 'Constitutional Balance'.",
         "key_manifestations": [
           "John Dickinson's 'Letters from a Farmer in Pennsylvania' (1768)",
@@ -1910,7 +1910,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The variance rockets to 7.0% (\u0394v = +1.0%). The catalyst is the slide toward revolution. The Boston Massacre and the Tea Party turn the theoretical debate into physical conflict. The positive delta is driven by the total mobilization of the cluster: Republican virtue is now required for survival. In Europe, the Maupeou Coup (1771) in France destroys the Parlements, radicalizing French lawyers who see despotism triumphing.",
         "key_manifestations": [
           "The Boston Tea Party (1773)",
@@ -1920,7 +1920,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance peaks at 8.5% (\u0394v = +1.5%). The catalyst is **1776**. The publication of *Common Sense*, the *Declaration of Independence*, and *The Wealth of Nations* marks the *Annus Mirabilis* of this cluster. The positive delta reflects the successful synthesis of Republicanism (anti-monarchy) and Liberalism (natural rights/free trade) into a state-building project. It is the dominant cultural force of the moment, displacing all else.",
         "key_manifestations": [
           "The Declaration of Independence (1776)",
@@ -1930,7 +1930,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance dips slightly to 8.0% (\u0394v = -0.5%). The catalyst is the practical difficulty of winning the war and the failure of the Articles of Confederation. The positive idealism meets the hard reality of governance. The negative delta reflects a shift from 'Revolutionary fervor' to 'Constitutional design'. The cultural problem is no longer *how to rebel*, but *how to rule* without a king.",
         "key_manifestations": [
           "The Articles of Confederation (ratified 1781), showing the limits of decentralized republicanism",
@@ -1940,7 +1940,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 8.8,
+        "salience_share": 8.8,
         "description": "The variance rises again to 8.8% (\u0394v = +0.8%). The catalyst is the **US Constitution** and the approaching crisis in France. The positive delta is driven by the 'Madisonian Moment'\u2014the engineering of a large-scale commercial republic using the science of politics (checks and balances). This saves the cluster from the failure of ancient small-state republicanism. Simultaneously, the French pre-revolution begins.",
         "key_manifestations": [
           "The United States Constitution (1787)",
@@ -1950,7 +1950,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 9.5,
+        "salience_share": 9.5,
         "description": "The variance reaches its century peak at 9.5% (\u0394v = +0.7%). The catalyst is the **French Revolution**. The cluster explodes into a world-historical force. The positive delta reflects the radicalization of the concept: from 'Constitutional Monarchy' to 'Republic' to 'Terror'. The tension between Liberalism (individual rights) and Republicanism (collective virtue) tears the cluster apart from within, generating massive energy.",
         "key_manifestations": [
           "The Declaration of the Rights of Man and of the Citizen (1789)",
@@ -1960,7 +1960,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance drops to 7.5% (\u0394v = -2.0%). The displacing force is the Thermidorian Reaction and the rise of the Directory. The radical 'Republic of Virtue' collapsed into tyranny, discrediting the Jacobin brand of republicanism. The negative delta reflects a widespread fatigue with political idealism and a retreat to conservative pragmatism or military order. 'Liberalism' survives as economic freedom, but 'Republicanism' is tainted by blood.",
         "key_manifestations": [
           "The Constitution of the Year III (1795), a conservative pullback",
@@ -1970,7 +1970,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The cluster ends the century at 6.5% (\u0394v = -1.0%). The displacing force is **Napoleon**. The Coup of 18 Brumaire ends the French Republic in all but name. The negative delta reflects the failure of the radical Enlightenment project in Europe. However, the cluster remains entrenched in the United States (Jefferson's election in 1800) and in the economic sphere. The 19th century will be fought over the legacy of this cluster, but its initial explosive phase is over.",
         "key_manifestations": [
           "The election of Thomas Jefferson (1800), the 'Revolution of 1800' in the US",
@@ -1986,7 +1986,7 @@ export const humeData = {
     "description": "This cluster represents the intellectual shift from Mercantilism (wealth = gold/trade balance) to Political Economy (wealth = production/labor/land). It begins with the French Physiocrats ('Laissez-faire') who fetishized agriculture, and matures into the Classical Economics of Adam Smith. Culturally, it signifies the disenchantment of the social world: society is seen as a machine governed by natural laws of supply, demand, and population, not by moral or royal decree. It is the 'science' of the commercial age.",
     "trajectory": {
       "1700": {
-        "variance_explained": 1.0,
+        "salience_share": 1.0,
         "description": "The cluster begins at a marginal 1.0%. The catalyst is the dominance of **Mercantilism**. The state views the economy as a zero-sum game of trade surpluses managed by royal decree (Colbertism). There is no 'Political Economy' as a science, only 'Political Arithmetic' (petty statistics). The variance is low because economic life is considered a branch of statecraft, not an independent system of natural laws.",
         "key_manifestations": [
           "The dominance of Colbert's regulations in France",
@@ -1996,7 +1996,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 1.1,
+        "salience_share": 1.1,
         "description": "The variance is static (1.1%, \u0394v = +0.1%). The catalyst is the continued wars (Spanish Succession) which reinforce the need for state-controlled finance. However, Mandeville's 'Fable of the Bees' (1705) plants a seed: the idea that private vice (consumption) drives public benefit (economy). This proto-economic thought is scandal, not science.",
         "key_manifestations": [
           "Bernard Mandeville's 'The Fable of the Bees' (1705)",
@@ -2006,7 +2006,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 1.2,
+        "salience_share": 1.2,
         "description": "The variance creeps to 1.2% (\u0394v = +0.1%). The catalyst is the financial strain of the wars. Thinkers begin to wonder if the state's mismanagement is the problem. The concept of 'circulation' of wealth (like blood) begins to appear in specialized tracts, influenced by Harvey's biology.",
         "key_manifestations": [
           "The Spectator's essays on the merchant as a global benefactor",
@@ -2016,7 +2016,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 1.5,
+        "salience_share": 1.5,
         "description": "The variance rises to 1.5% (\u0394v = +0.3%). The catalyst is the **John Law Experiment** in France (Mississippi System). Law tries to replace gold with credit/paper money based on land and trade. It is the first massive experiment in managed macroeconomics. Though it fails, it forces the culture to think about 'value' as something abstract and systemic.",
         "key_manifestations": [
           "John Law's 'Money and Trade Considered' (reprinted/applied)",
@@ -2026,7 +2026,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 1.8,
+        "salience_share": 1.8,
         "description": "The variance rises to 1.8% (\u0394v = +0.3%). The catalyst is the **collapse** of the South Sea and Mississippi bubbles (1720). The crash is a trauma that demands explanation. It generates a wave of literature analyzing credit, trust, and market psychology. Economy is no longer just royal accounting; it is a dangerous, autonomous force.",
         "key_manifestations": [
           "The South Sea Bubble crash (1720)",
@@ -2036,7 +2036,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 2.0,
+        "salience_share": 2.0,
         "description": "The variance holds at 2.0% (\u0394v = +0.2%). The catalyst is the quiet period of Walpolean stability. The focus shifts to the practical management of trade. **Richard Cantillon** writes his 'Essai' (circulated in manuscript), arguably the first true treatise on economics, describing the entrepreneur and the spatial economy.",
         "key_manifestations": [
           "Richard Cantillon's 'Essai sur la nature du commerce en g\u00e9n\u00e9ral' (written c. 1730, circulated)",
@@ -2046,7 +2046,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 2.2,
+        "salience_share": 2.2,
         "description": "The variance rises to 2.2% (\u0394v = +0.2%). The catalyst is the agricultural revolution in England (Townshend, Tull). The increase in yield forces a rethink of the source of wealth: is it gold (trade) or is it the land (production)? This sets the stage for the Physiocrats.",
         "key_manifestations": [
           "Jethro Tull's 'Horse-Hoeing Husbandry' (1731)",
@@ -2056,7 +2056,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance rises to 2.5% (\u0394v = +0.3%). The catalyst is **David Hume**. His economic essays (published later, drafted here) dismantle the Mercantilist 'balance of trade' fallacy with the 'price-specie flow mechanism'. This is the injection of the **Empirical (Cluster #5)** method into economics. Money is a veil; real wealth is commodities and labor.",
         "key_manifestations": [
           "David Hume's manuscript work on economics",
@@ -2066,7 +2066,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 2.9,
+        "salience_share": 2.9,
         "description": "The variance increases to 2.9% (\u0394v = +0.4%). The catalyst is the publication of Hume's essays. They provide a sophisticated, non-mercantilist framework. Simultaneously, in France, the circle around **Vincent de Gournay** begins to translate English economic texts, coining the phrase 'Laissez-faire, laissez-passer'.",
         "key_manifestations": [
           "David Hume's 'Political Discourses' (1752, but influence builds)",
@@ -2076,7 +2076,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 3.2,
+        "salience_share": 3.2,
         "description": "The variance rises to 3.2% (\u0394v = +0.3%). The catalyst is the intellectual stagnation of the French monarchy's finance. The search for a solution leads to **Physiocracy** (Rule of Nature). **Fran\u00e7ois Quesnay**, the king's doctor, begins to conceptualize the economy as a biological organism with inputs and outputs.",
         "key_manifestations": [
           "Quesnay's first economic articles for the *Encyclop\u00e9die* (written)",
@@ -2086,7 +2086,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 3.8,
+        "salience_share": 3.8,
         "description": "The variance climbs to 3.8% (\u0394v = +0.6%). The catalyst is the **Tableau \u00c9conomique** (1758, prep here). The Physiocrats burst onto the scene. They argue that *only* agriculture produces net wealth ('produit net') and that all regulations on grain are violations of natural law. It is the first strict 'system' of economics. It becomes a fad in the salons.",
         "key_manifestations": [
           "Fran\u00e7ois Quesnay's 'Tableau \u00c9conomique' (1758)",
@@ -2096,7 +2096,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance jumps to 4.5% (\u0394v = +0.7%). The catalyst is the Seven Years' War. The financial exhaustion of the states makes 'Political Economy' the most urgent science. How to fund the war? The Physiocrats answer: tax the land, free the trade. In Scotland, Adam Smith begins lecturing on 'police, revenue, and arms'.",
         "key_manifestations": [
           "Victor de Riqueti, marquis de Mirabeau's 'L'Ami des Hommes' (1756), a bestseller",
@@ -2106,7 +2106,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance rises to 5.0% (\u0394v = +0.5%). The catalyst is the peak of Physiocratic influence. They have their own journal (*Ephemerides*). They are the first 'intellectuals' to act as policy advisors. However, a backlash begins (Galiani) arguing that their system is too rigid and abstract for the messy reality of hunger.",
         "key_manifestations": [
           "The Physiocratic journal 'Eph\u00e9m\u00e9rides du citoyen' (begun 1765)",
@@ -2116,7 +2116,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance rises to 5.5% (\u0394v = +0.5%). The catalyst is the famine and the failure of Physiocratic liberalization in France (1760s). The 'System' crashes against reality, but the *method* of analysis survives. The center of gravity shifts to Scotland. James Steuart publishes the last great Mercantilist text, which Smith is writing to refute.",
         "key_manifestations": [
           "James Steuart's 'Inquiry into the Principles of Political Oeconomy' (1767)",
@@ -2126,7 +2126,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance rises to 6.0% (\u0394v = +0.5%). The catalyst is the waiting for Smith. The intellectual world knows that a synthesis is coming. Turgot becomes Controller-General in France (1774) and attempts to implement radical economic liberalism from above, leading to riots. The 'Economist' is now a hated figure by the poor but a savior to the intellectual.",
         "key_manifestations": [
           "Turgot's Edicts (1774-76), abolishing guilds and freeing grain",
@@ -2136,7 +2136,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance explodes to 8.0% (\u0394v = +2.0%). The catalyst is **'The Wealth of Nations' (1776)**. Smith kills Mercantilism and supersedes Physiocracy. He provides a complete system: division of labor, invisible hand, free trade, limited state. It is the 'Newtonian' moment for social science. The cluster achieves hegemony.",
         "key_manifestations": [
           "Adam Smith's 'The Wealth of Nations' (1776)",
@@ -2146,7 +2146,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance dips to 7.5% (\u0394v = -0.5%). The catalyst is the war. Free trade is impossible during a global naval conflict. The state returns to managing the economy for war production. However, Smith's ideas begin to infiltrate the bureaucracy (Shelburne, Pitt the Younger).",
         "key_manifestations": [
           "William Pitt the Younger reads Smith",
@@ -2156,7 +2156,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 8.2,
+        "salience_share": 8.2,
         "description": "The variance rises to 8.2% (\u0394v = +0.7%). The catalyst is the **Eden Treaty (1786)** between Britain and France, a triumph of Smithian free trade principles. The cluster is now shaping policy. But the fiscal crisis in France (which Economy was supposed to solve) is spiraling out of control, leading to the Revolution.",
         "key_manifestations": [
           "The Eden-Rayneval Treaty (1786)",
@@ -2166,7 +2166,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 7.8,
+        "salience_share": 7.8,
         "description": "The variance drops to 7.8% (\u0394v = -0.4%). The catalyst is the Revolution's inflation. The *Assignats* (paper money based on church land) are a disastrous experiment in 'political' economy over 'natural' economy. The hyperinflation discredits the rational management of currency. The war economy returns.",
         "key_manifestations": [
           "The issuance of Assignats (1789)",
@@ -2176,7 +2176,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance rises to 8.5% (\u0394v = +0.7%). The catalyst is **Malthus**. 'An Essay on the Principle of Population' (1798) transforms Political Economy from the optimistic science of wealth (Smith) to the 'Dismal Science' of scarcity. It explains the poverty of the industrial worker not as bad laws, but as a law of nature. This is a massive shift in the cluster's coordinate space.",
         "key_manifestations": [
           "Thomas Malthus's 'Essay on the Principle of Population' (1798)",
@@ -2186,7 +2186,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 8.8,
+        "salience_share": 8.8,
         "description": "The cluster ends the century at 8.8% (\u0394v = +0.3%). The catalyst is the Industrial Revolution. Political Economy is now the only tool capable of analyzing the new world of factories, population explosion, and global markets. It has displaced Theology as the primary framework for understanding human suffering and prosperity. It is entrenched as the governing logic of the 19th century.",
         "key_manifestations": [
           "The Combination Acts (1799/1800), enforcing the free market against labor",
@@ -2202,7 +2202,7 @@ export const humeData = {
     "description": "This cluster represents the aesthetic shift from the heavy, masculine, and state-centric Baroque (Louis XIV) to the light, feminine, and intimate Rococo (Louis XV). It is characterized by asymmetry, serpentine lines, pastel colors, and a focus on private pleasure, seduction, and 'polite' nature rather than public glory. Culturally, it manifests in the salon, the boudoir, and the decorative arts. Its trajectory is a bell curve: rising with the French Regency, dominating the mid-century as the style of the European elite, and then crashing under the dual assault of Neoclassical severity (aesthetic republicanism) and the political fall of the Aristocracy.",
     "trajectory": {
       "1700": {
-        "variance_explained": 1.5,
+        "salience_share": 1.5,
         "description": "The cluster begins at a low 1.5%. The **catalyst** is the aging of Louis XIV and the cultural fatigue with the rigid, pompous symmetry of Versailles. The variance is low because the 'Grand Style' (Baroque) still holds institutional power. However, the 'moderns' in the French Academy are beginning to prioritize color (Rubens) over line (Poussin), foreshadowing the sensory turn. The energy is incubating in the private townhouses (h\u00f4tels) of Paris, away from the court.",
         "key_manifestations": [
           "The decoration of the Ch\u00e2teau de Marly (proto-Rococo elements)",
@@ -2212,7 +2212,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 1.8,
+        "salience_share": 1.8,
         "description": "The variance rises to 1.8% (\u0394v = +0.3%). The catalyst is the loosening of court etiquette as the King declines. The positive delta reflects a cultural shift toward 'intimit\u00e9' (intimacy). Artists like Watteau are developing the *f\u00eate galante*\u2014a genre of vague, dreamlike aristocratic leisure that has no mythological or historical pretext, purely creating a mood of erotic melancholy.",
         "key_manifestations": [
           "Antoine Watteau's early *f\u00eates galantes* sketches",
@@ -2222,7 +2222,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 2.2,
+        "salience_share": 2.2,
         "description": "The variance climbs to 2.2% (\u0394v = +0.4%). The catalyst is the anticipation of the Regency. The positive delta is driven by the aristocracy's return to Paris from Versailles, demanding a new style for their smaller, more comfortable urban dwellings. The aesthetic shifts from 'Heroic' to 'Pleasurable.' The curve, the shell (*rocaille*), and the mirror become the dominant motifs.",
         "key_manifestations": [
           "Antoine Watteau's 'The Embarkation for Cythera' (submitted 1717, style forming here)",
@@ -2232,7 +2232,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance surges to 3.0% (\u0394v = +0.8%). The catalyst is the death of Louis XIV and the **Regency of the Duke of Orl\u00e9ans**. This is the 'liberation' moment. The positive delta reflects the sudden collapse of Baroque severity. Pleasure, wit, and sexual license become the cultural currency. The Rococo becomes the official anti-style of the new, libertine regime.",
         "key_manifestations": [
           "The Regency period (1715-1723), characterized by libertinage and wit",
@@ -2242,7 +2242,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance rises to 3.5% (\u0394v = +0.5%). The catalyst is the financial liquidity (and subsequent crash) of the John Law system, which creates a class of *nouveaux riches* eager to display wealth through intricate ornamentation rather than lineage. The positive delta reflects the democratization of luxury: snuff boxes, fans, and porcelain become essential accessories of the 'polite' self.",
         "key_manifestations": [
           "The proliferation of luxury goods manufactories (e.g., Vincennes porcelain precursors)",
@@ -2252,7 +2252,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 3.8,
+        "salience_share": 3.8,
         "description": "The variance climbs to 3.8% (\u0394v = +0.3%). The catalyst is the maturing of the **Louis XV style**. The King's personal taste for privacy and comfort reinforces the trend. The positive delta is driven by the dominance of the 'asymmetrical' (*genre pittoresque*) in design, led by Meissonnier. Order and symmetry are discarded for organic, flowing movement.",
         "key_manifestations": [
           "Juste-Aur\u00e8le Meissonnier's pattern books for silver and furniture (radical asymmetry)",
@@ -2262,7 +2262,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 4.1,
+        "salience_share": 4.1,
         "description": "The variance reaches 4.1% (\u0394v = +0.3%). The catalyst is the ascendancy of **Fran\u00e7ois Boucher**. He transforms Rococo from a mood (Watteau) to a fleshly reality. The positive delta reflects the style's erotic confidence. The naked body, pink and pliable, becomes the central ornamental feature of the interior. The style spreads to Germany and Italy.",
         "key_manifestations": [
           "Fran\u00e7ois Boucher's 'Rinaldo and Armida' (1734), admission piece to the Academy",
@@ -2272,7 +2272,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 4.3,
+        "salience_share": 4.3,
         "description": "The variance rises to 4.3% (\u0394v = +0.2%). The catalyst is the standardization of 'Taste'. The Rococo is no longer rebellious; it is the Establishment. The positive delta reflects its spread to the middle class via prints and cheaper imitations (e.g., Sheffield plate). It is the visual language of the **Commercial Society (Cluster #4)**\u2014polite, agreeable, and superficial.",
         "key_manifestations": [
           "The widespread production of Meissen porcelain figures",
@@ -2282,7 +2282,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance peaks at 4.5% (\u0394v = +0.2%). The catalyst is **Madame de Pompadour** (mistress to Louis XV from 1745, but rising here). She becomes the supreme patron of the style, linking it inextricably to the feminine power of the boudoir. The positive delta reflects the style's absolute hegemony in Europe; even Frederick the Great builds Rococo palaces (Sanssouci).",
         "key_manifestations": [
           "Germain Boffrand's interiors at the H\u00f4tel de Soubise (completed 1740), the manifesto of the style",
@@ -2292,7 +2292,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance is static (4.5%, \u0394v = 0.0%). The force of stasis is the institutional power of the Pompadour circle. However, a displacing force appears: the 'Grand Tour' travelers (Cluster #8) begin to see the ruins of Rome and contrast them with the 'frivolity' of modern Paris. The term 'go\u00fbt grec' (Greek taste) begins to be whispered as an antidote to curves.",
         "key_manifestations": [
           "Madame de Pompadour's patronage of Boucher and the S\u00e8vres factory",
@@ -2302,7 +2302,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 4.2,
+        "salience_share": 4.2,
         "description": "The variance drops to 4.2% (\u0394v = -0.3%). The catalyst is the **Anti-Rococo Reaction**. Critics like La Font de Saint-Yenne and later Diderot attack the style as morally corrupt, unnatural, and decadent. The negative delta is driven by the Enlightenment's demand for 'Truth' and 'Nature' (Rousseau). Rouge and powder are lies; the Rococo is the art of the lie.",
         "key_manifestations": [
           "Rousseau's 'Discourse on the Arts and Sciences' (1750), implicitly attacking luxury arts",
@@ -2312,7 +2312,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 3.8,
+        "salience_share": 3.8,
         "description": "The variance falls to 3.8% (\u0394v = -0.4%). The catalyst is **Winckelmann** and the rediscovery of Pompeii. The 'Noble Simplicity' of the Greeks makes the Rococo look frantic and petty. The negative delta reflects a rapid shift in elite fashion; the avant-garde is now Neoclassical. Rococo retreats to the provinces and the conservative aristocracy.",
         "key_manifestations": [
           "Winckelmann's 'Reflections on the Imitation of Greek Works' (1755)",
@@ -2322,7 +2322,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 3.2,
+        "salience_share": 3.2,
         "description": "The variance drops to 3.2% (\u0394v = -0.6%). The catalyst is Diderot's Salons. He savagely critiques Boucher ('he paints the makeup, not the skin'). The negative delta is driven by the politicization of aesthetics: Rococo = Tyranny/Corruption; Neoclassical = Liberty/Virtue. Fragonard attempts to keep the style alive by infusing it with Rembrandtesque lighting, but the tide has turned.",
         "key_manifestations": [
           "Diderot's 'Salons' (begun 1759), the critical dismantling of the Rococo",
@@ -2332,7 +2332,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 2.8,
+        "salience_share": 2.8,
         "description": "The variance falls to 2.8% (\u0394v = -0.4%). The displacing force is the **Sentimental Mode (Cluster #2)**. While Rococo dealt with 'pleasure,' Sentiment deals with 'feeling.' The artificiality of the Rococo shepherdess is rejected for the 'real' peasant. The negative delta reflects the style's inability to handle the new demand for emotional authenticity.",
         "key_manifestations": [
           "Greuze's 'The Son Punished' (1778, sketches earlier), melodramatic realism",
@@ -2342,7 +2342,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 2.2,
+        "salience_share": 2.2,
         "description": "The variance drops to 2.2% (\u0394v = -0.6%). The catalyst is the **Louis XVI Style**. It is a state-sponsored purge of the curve. Architecture becomes geometric (Ledoux, Boull\u00e9e). The Rococo is now viewed as 'Grandmother's taste.' The negative delta reflects the complete capture of the 'Modern' by Neoclassicism.",
         "key_manifestations": [
           "The construction of the H\u00f4tel de la Monnaie (1771-75), severe Neoclassicism",
@@ -2352,7 +2352,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 1.8,
+        "salience_share": 1.8,
         "description": "The variance falls to 1.8% (\u0394v = -0.4%). The displacing force is the American Revolution and the ideal of **Republican Virtue (Cluster #9)**. The Rococo is politically toxic; it looks like the waste of tax money. The negative delta is driven by the 'masculinization' of culture\u2014art must be stoic, hard, and public.",
         "key_manifestations": [
           "David's 'Funeral of Patroclus' (1778), anticipating the martial style",
@@ -2362,7 +2362,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 1.2,
+        "salience_share": 1.2,
         "description": "The variance drops to 1.2% (\u0394v = -0.6%). The catalyst is the pre-revolutionary crisis. The frivolity of the court (The Diamond Necklace Affair) is weaponized against the monarchy. Rococo aesthetics are used as evidence in the trial against the Old Regime. The negative delta reflects the style's identification with the enemy of the people.",
         "key_manifestations": [
           "The Affair of the Diamond Necklace (1785), the ultimate Rococo scandal",
@@ -2372,7 +2372,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 0.8,
+        "salience_share": 0.8,
         "description": "The variance falls to 0.8% (\u0394v = -0.4%). The style is effectively dead in high culture, surviving only as a 'feminine' domestic code or in provincial backwaters. The displacing force is **Industrial Mechanization (Cluster #20)**\u2014the machine cannot easily replicate the erratic, hand-carved asymmetry of the Rococo; it prefers the straight lines of the Classical.",
         "key_manifestations": [
           "The popularity of plain creamware pottery",
@@ -2382,7 +2382,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 0.5,
+        "salience_share": 0.5,
         "description": "The variance drops to 0.5% (\u0394v = -0.3%). The catalyst is the **Revolution**. Rococo objects are physically destroyed as symbols of feudalism. The negative delta is absolute: to produce Rococo art is to mark oneself as a counter-revolutionary suspect. The 'Style' is now a 'Crime'.",
         "key_manifestations": [
           "The auctioning and destruction of Versailles furniture",
@@ -2392,7 +2392,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 0.3,
+        "salience_share": 0.3,
         "description": "The variance falls to 0.3% (\u0394v = -0.2%). The Directoire style emerges\u2014a thinning out of Neoclassicism, elegant but severe. Rococo is a memory of a lost world (*douceur de vivre*). The negative delta reflects the complete cultural rupture. It has no explanatory power for the new reality of war and republic.",
         "key_manifestations": [
           "The 'Merveilleuses' fashion, mimicking Greek statues, not Rococo dolls",
@@ -2402,7 +2402,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 0.2,
+        "salience_share": 0.2,
         "description": "The cluster ends the century at 0.2% (\u0394v = -0.1%). It is a 'phantom' cluster, existing only as a negative definition for the new century's seriousness. It will not be revived until the mid-19th century historicism. For now, it is the despised symbol of the Ancien R\u00e9gime.",
         "key_manifestations": [
           "The prevalence of the Empire Style",
@@ -2418,7 +2418,7 @@ export const humeData = {
     "description": "This cluster captures the aesthetic and philosophical turn from 'Beauty' (order, proportion, social pleasure) to 'The Sublime' (awe, terror, infinity, solitude). It is the dark matter of the Enlightenment, growing in the shadow of Reason. Beginning with the 'Graveyard Poets' and theorized by Burke and Kant, it explodes in the late century through the Gothic novel and the *Sturm und Drang*. It represents the re-enchantment of the world through fear and the validation of irrational, overwhelming emotion as a path to truth.",
     "trajectory": {
       "1700": {
-        "variance_explained": 0.5,
+        "salience_share": 0.5,
         "description": "The cluster begins at a negligible 0.5%. The **catalyst** is the dominance of the Neoclassical/Rationalist aesthetic (Cluster #1 & #8), which actively suppresses the irrational. 'Enthusiasm' is a pejorative term associated with religious wars. The cultural focus is on daylight, clarity, and sociability. The Sublime exists only in the margins\u2014in translations of the Biblical Psalms or Longinus\u2014but has no cultural velocity.",
         "key_manifestations": [
           "John Dennis's 'The Grounds and Criticism of Poetry' (1704), an early, lonely voice for 'passion'",
@@ -2428,7 +2428,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 0.6,
+        "salience_share": 0.6,
         "description": "The variance is static (0.6%, \u0394v = +0.1%). The catalyst is the persistence of religious melancholy. While the elite celebrate reason, the Puritan/Calvinist undercurrent remains. The positive delta is barely perceptible, found in the continued popularity of Milton's *Paradise Lost*, whose Satanic grandeur sits uneasily with the polite age.",
         "key_manifestations": [
           "Addison's essays on Milton in 'The Spectator' (1712, roots here)",
@@ -2438,7 +2438,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 0.8,
+        "salience_share": 0.8,
         "description": "The variance creeps to 0.8% (\u0394v = +0.2%). The catalyst is **Shaftesbury's** aestheticizing of nature. He argues that the wild majesty of the world reflects God better than a manicured garden. This positive delta marks the first crack in the Neoclassical wall: the admission that 'rude' nature might have value. It sets the stage for the 'Graveyard School.'",
         "key_manifestations": [
           "Shaftesbury's 'Characteristics' (1711), praising the 'wildness' of nature",
@@ -2448,7 +2448,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 1.0,
+        "salience_share": 1.0,
         "description": "The variance rises to 1.0% (\u0394v = +0.2%). The catalyst is the death of Louis XIV and the exhaustion of formal grandeur. The positive delta is driven by a niche interest in 'Melancholy' as a refined emotional state. It is a counter-point to the Rococo's forced cheerfulness.",
         "key_manifestations": [
           "Thomas Parnell's 'A Night-Piece on Death' (1721, written here)",
@@ -2458,7 +2458,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 1.3,
+        "salience_share": 1.3,
         "description": "The variance rises to 1.3% (\u0394v = +0.3%). The catalyst is the **Graveyard School**. Thomas Parnell and later Edward Young begin to publish poetry focused on death, tombs, and night. This positive delta reflects a hunger for 'seriousness' amidst the commercial bustle. The 'pleasing horror' becomes a recognized aesthetic category.",
         "key_manifestations": [
           "Thomas Parnell's 'A Night-Piece on Death' (published posthumously 1721)",
@@ -2468,7 +2468,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 1.6,
+        "salience_share": 1.6,
         "description": "The variance climbs to 1.6% (\u0394v = +0.3%). The catalyst is **James Thomson's 'The Seasons'**. His depiction of Newtonian nature includes violent storms and overwhelming scale. The positive delta is driven by the integration of Science (Newton's infinite space) with Poetry. The universe is now too big for the Neoclassical couplet; it requires blank verse and awe.",
         "key_manifestations": [
           "James Thomson's 'The Seasons' (1726-30)",
@@ -2478,7 +2478,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 2.0,
+        "salience_share": 2.0,
         "description": "The variance rises to 2.0% (\u0394v = +0.4%). The catalyst is the cultural reaction against the 'Polite'. The positive delta reflects the desire for 'Enthusiasm'\u2014the direct emotional connection to the divine or the infinite. This connects with the religious **Great Awakening (Cluster #18)**; the religious sublime and the aesthetic sublime feed each other.",
         "key_manifestations": [
           "The rise of Methodism and the emotional field preaching (Whitefield)",
@@ -2488,7 +2488,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 2.4,
+        "salience_share": 2.4,
         "description": "The variance rises to 2.4% (\u0394v = +0.4%). The catalyst is the increasing popularity of **Shakespeare** as the 'Poet of Nature'. His disregard for rules is reinterpreted not as ignorance, but as Sublime genius. The positive delta is driven by the nationalist need for an English aesthetic to rival French Neoclassicism.",
         "key_manifestations": [
           "The Shakespeare Ladies Club (1736), promoting the revival of his plays",
@@ -2498,7 +2498,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance jumps to 3.0% (\u0394v = +0.6%). The catalyst is **Edward Young's 'Night Thoughts'** (1742). It becomes a European bestseller. Its stream-of-consciousness meditation on death, time, and the stars breaks the mold of polite literature. The positive delta is massive: the 'Sublime' is now a mass-market commodity.",
         "key_manifestations": [
           "Edward Young's 'Night Thoughts' (1742-45)",
@@ -2508,7 +2508,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance rises to 3.5% (\u0394v = +0.5%). The catalyst is **William Collins** and the 'Ode to Fear'. The poets are now consciously invoking the irrational. The positive delta reflects the formal separation of the 'Sublime' from the 'Beautiful'. The Enlightenment is bifurcating: Reason for the mind, Terror for the soul.",
         "key_manifestations": [
           "William Collins's 'Odes on Several Descriptive and Allegoric Subjects' (1746)",
@@ -2518,7 +2518,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 4.2,
+        "salience_share": 4.2,
         "description": "The variance climbs to 4.2% (\u0394v = +0.7%). The catalyst is **Piranesi**. His 'Prisons' (*Carceri d'Invenzione*) etchings depict impossible, nightmarish architecture. This visualizes the Sublime: infinite, crushing, and irrational. The positive delta is driven by the realization that the 'Rational' can be a prison.",
         "key_manifestations": [
           "Giovanni Battista Piranesi's 'Carceri d'Invenzione' (c. 1745-1750)",
@@ -2528,7 +2528,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance rises to 5.0% (\u0394v = +0.8%). The catalyst is **Edmund Burke's 'A Philosophical Enquiry...' (1757)**. He provides the physiological and psychological theory for the cluster. The Sublime is caused by 'Terror' and the threat of pain (at a distance). This positive delta legitimizes the dark side of the imagination as a serious philosophical subject.",
         "key_manifestations": [
           "Edmund Burke's 'A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful' (1757)",
@@ -2538,7 +2538,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance surges to 6.0% (\u0394v = +1.0%). The catalyst is **Ossian** (1760). James Macpherson's 'translations' of ancient Gaelic poetry provide Europe with a 'Northern Homer'\u2014wild, misty, and emotional. The positive delta is global: Napoleon and Goethe will carry Ossian in their pockets. It proves that the 'Primitive' is more Sublime than the 'Civilized'.",
         "key_manifestations": [
           "James Macpherson's 'Fragments of Ancient Poetry' (1760) and 'Fingal' (1762)",
@@ -2548,7 +2548,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance rises to 6.5% (\u0394v = +0.5%). The catalyst is the **Sturm und Drang** (Storm and Stress) in Germany. Young writers (Herder, Goethe) reject French Neoclassicism for 'Genius' and 'Nature'. The positive delta reflects the rebellion of the youth culture against Enlightenment rationalism.",
         "key_manifestations": [
           "Herder's 'Fragments on the New German Literature' (1767)",
@@ -2558,7 +2558,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 7.2,
+        "salience_share": 7.2,
         "description": "The variance climbs to 7.2% (\u0394v = +0.7%). The catalyst is **Goethe's 'Werther' (1774)**. It turns the Sublime inward\u2014the 'inner abyss' of the soul. The wave of suicides and 'Werther fever' demonstrates the dangerous power of the cluster. The positive delta reflects the conquest of the European imagination by the Emotional Subject.",
         "key_manifestations": [
           "Goethe's 'The Sorrows of Young Werther' (1774)",
@@ -2568,7 +2568,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 7.8,
+        "salience_share": 7.8,
         "description": "The variance rises to 7.8% (\u0394v = +0.6%). The catalyst is the American Revolution as a Sublime Event\u2014the overthrow of kings, the vastness of the Atlantic arena. The positive delta is driven by the merging of Political Liberty with Aesthetic Wildness. The 'Tyger' is stirring.",
         "key_manifestations": [
           "The Declaration of Independence (seen by Romantics as a sublime act of will)",
@@ -2578,7 +2578,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance surges to 8.5% (\u0394v = +0.7%). The catalyst is **Kant's Critical Philosophy**. In the *Critique of Judgement*, Kant elevates the Sublime to the highest mental faculty\u2014the mind's ability to transcend nature through reason/moral will. The positive delta reflects the philosophical coronation of the Sublime. Simultaneously, William Beckford writes *Vathek*, pushing the Gothic into orientalist excess.",
         "key_manifestations": [
           "Immanuel Kant's 'Critique of Pure Reason' (1781) and 'Critique of Judgement' (1790, ideas forming)",
@@ -2588,7 +2588,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 9.0,
+        "salience_share": 9.0,
         "description": "The variance rises to 9.0% (\u0394v = +0.5%). The catalyst is the **French Revolution** looming. The cultural mood is apocalyptic. The Sublime is no longer about mountains; it's about the mob and the guillotine. The positive delta reflects the anticipation of a violent cleansing.",
         "key_manifestations": [
           "Etienne-Louis Boull\u00e9e's 'Cenotaph for Newton' (1784), architecture of the infinite",
@@ -2598,7 +2598,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 9.5,
+        "salience_share": 9.5,
         "description": "The variance reaches 9.5% (\u0394v = +0.5%). The catalyst is the **Terror**. The French Revolution becomes the 'Historical Sublime'\u2014terrible, bloody, and unstoppable. Wordsworth travels to France. The positive delta reflects the realization that the Sublime is the defining experience of the modern age.",
         "key_manifestations": [
           "William Blake's 'The Marriage of Heaven and Hell' (1790), the bible of the Romantic energy",
@@ -2608,7 +2608,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 9.8,
+        "salience_share": 9.8,
         "description": "The variance peaks at 9.8% (\u0394v = +0.3%). The catalyst is **Lyrical Ballads** (1798). The 'Proto' is dropped; **Romanticism** is born. The Sublime is domesticated into the 'Egotistical Sublime' of the poet's mind (Wordsworth). The positive delta marks the complete displacement of Neoclassical objectivity by Romantic subjectivity.",
         "key_manifestations": [
           "Wordsworth and Coleridge's 'Lyrical Ballads' (1798)",
@@ -2618,7 +2618,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 10.0,
+        "salience_share": 10.0,
         "description": "The cluster ends the century at 10.0% (\u0394v = +0.2%). It is now the dominant cultural force of the 19th century. The 'Sublime' has swallowed 'Reason'. The Enlightenment is over; the Age of Romanticism has begun. The variance is maximized as it becomes the new baseline for Art, Music (Beethoven), and Literature.",
         "key_manifestations": [
           "Beethoven's Symphony No. 1 (1800), hinting at the heroic style",
@@ -2634,7 +2634,7 @@ export const humeData = {
     "description": "This cluster maps the cultural digestion of the non-European world. It begins with 'Consumer Exoticism' (coffee, tea, porcelain) and the 'Noble Savage' as a philosophical prop. It evolves into a critique of empire (Anti-Slavery, Raynal) and a source of national wealth/power. Trajectorially, it rises steadily with trade volumes, then spikes in political variance as the moral cost of empire (slavery) clashes with Enlightenment values (Liberty), creating a 'cognitive dissonance' cluster.",
     "trajectory": {
       "1700": {
-        "variance_explained": 2.0,
+        "salience_share": 2.0,
         "description": "The cluster begins at 2.0%. The catalyst is the establishment of the East India Companies and the Triangle Trade. The variance is low because the colonies are seen as distant resource extraction zones, not cultural centers. Exoticism is a luxury novelty (the lacquer cabinet).",
         "key_manifestations": [
           "The founding of the New East India Company (1698)",
@@ -2644,7 +2644,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 2.2,
+        "salience_share": 2.2,
         "description": "The variance rises to 2.2% (\u0394v = +0.2%). The catalyst is the popularization of coffee houses (Cluster #7). The 'exotic' drug (caffeine) becomes the fuel of the rational Public Sphere. The positive delta reflects the integration of the colonial product into the daily ritual of the European male.",
         "key_manifestations": [
           "The proliferation of London Coffee Houses",
@@ -2654,7 +2654,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance climbs to 2.5% (\u0394v = +0.3%). The catalyst is the 'Spectator' essays celebrating the Merchant as a global citizen. The positive delta is driven by the moral rehabilitation of trade. The world is a warehouse for the European consumer. The 'Chinese' garden folly begins to appear.",
         "key_manifestations": [
           "Joseph Addison's essay on the Royal Exchange (1711)",
@@ -2664,7 +2664,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 2.8,
+        "salience_share": 2.8,
         "description": "The variance rises to 2.8% (\u0394v = +0.3%). The catalyst is the **Mississippi Scheme** and the colonization of Louisiana. The positive delta reflects the speculative mania focused on the 'wealth of the Indies'. The 'Company' becomes a major political actor.",
         "key_manifestations": [
           "The founding of New Orleans (1718)",
@@ -2674,7 +2674,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.2%). The catalyst is the normalization of tea and porcelain. The 'Exotic' enters the domestic sphere of women. The positive delta reflects the feminization of colonial consumption (the Tea Table). Chinoiserie becomes a dominant decorative style.",
         "key_manifestations": [
           "The widespread use of tea services in the home",
@@ -2684,7 +2684,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 3.3,
+        "salience_share": 3.3,
         "description": "The variance climbs to 3.3% (\u0394v = +0.3%). The catalyst is the expansion of the slave-sugar complex in the Caribbean. The positive delta is driven by the sheer wealth generated. The 'West Indian' planter becomes a stock character in literature (wealthy but vulgar).",
         "key_manifestations": [
           "The growth of Liverpool and Bristol as slave ports",
@@ -2694,7 +2694,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 3.6,
+        "salience_share": 3.6,
         "description": "The variance rises to 3.6% (\u0394v = +0.3%). The catalyst is **Voltaire's 'Alzire'** and the 'Good Brahmin' trope. The 'Other' is used to critique European religious intolerance. The positive delta reflects the philosophical weaponization of Exoticism. The 'Chinese' are cited as a model of secular virtue.",
         "key_manifestations": [
           "Voltaire's 'Za\u00efre' (1732), an oriental tragedy",
@@ -2704,7 +2704,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The variance rises to 4.0% (\u0394v = +0.4%). The catalyst is the **War of Jenkins' Ear** (1739). A war fought explicitly for trade rights (the Asiento). The positive delta is driven by the jingoistic celebration of Empire. 'Rule, Britannia!' is written (1740). The colony is now a national cause.",
         "key_manifestations": [
           "The song 'Rule, Britannia!' (1740)",
@@ -2714,7 +2714,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance jumps to 4.5% (\u0394v = +0.5%). The catalyst is Anson's Circumnavigation (1740-44). The return of the *Centurion* with Spanish gold captures the public imagination. The positive delta reflects the global scale of the conflict. The 'Pacific' enters the cultural map.",
         "key_manifestations": [
           "Anson's Voyage around the World (reports)",
@@ -2724,7 +2724,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance rises to 5.0% (\u0394v = +0.5%). The catalyst is the **French-British rivalry** in India (Dupleix vs Clive). The positive delta reflects the shift from 'Trade' to 'Conquest'. The Nabob figure appears\u2014the Englishman corrupted by oriental despotism. Economic gain begins to be shadowed by moral anxiety.",
         "key_manifestations": [
           "The Battle of Madras (1746)",
@@ -2734,7 +2734,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance climbs to 5.5% (\u0394v = +0.5%). The catalyst is **Rousseau's 'Discourse on Inequality'** (1754). The 'Noble Savage' is no longer just a critique of religion; it is a critique of *Civilization*. The positive delta is driven by the anthropological turn. Who is happier? The Carib or the Parisian? The colony becomes a mirror for European decadence.",
         "key_manifestations": [
           "Rousseau's 'Discourse on Inequality' (1754)",
@@ -2744,7 +2744,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 6.2,
+        "salience_share": 6.2,
         "description": "The variance surges to 6.2% (\u0394v = +0.7%). The catalyst is the **Seven Years' War**. The first true World War. The fate of Europe is decided in Quebec and Bengal. The positive delta reflects the total mobilization of the colonial cluster. It is the peak of 'Imperial Optimism' before the crisis.",
         "key_manifestations": [
           "The Battle of Plassey (1757), the start of the British Raj",
@@ -2754,7 +2754,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 6.8,
+        "salience_share": 6.8,
         "description": "The variance rises to 6.8% (\u0394v = +0.6%). The catalyst is the Peace of Paris (1763). Britain gains a massive empire. But the catalyst for *change* is the **Pontiac Rebellion** and the Proclamation Line. The 'Savage' fights back. The positive delta is driven by the administrative crisis: how to govern the globe? The 'Imperial Crisis' begins.",
         "key_manifestations": [
           "The Proclamation of 1763",
@@ -2764,7 +2764,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 7.2,
+        "salience_share": 7.2,
         "description": "The variance rises to 7.2% (\u0394v = +0.4%). The catalyst is **Cook's First Voyage** (1768). The scientific exploration of the Pacific. The 'Tahitian' becomes the new erotic/utopian ideal. The positive delta reflects the merger of Science (Cluster #3) and Exoticism. The empire is now a project of taxonomy.",
         "key_manifestations": [
           "Cook's First Voyage (begun 1768)",
@@ -2774,7 +2774,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 7.8,
+        "salience_share": 7.8,
         "description": "The variance climbs to 7.8% (\u0394v = +0.6%). The catalyst is **Raynal's 'History of the Two Indies'** (1770). It is the 'Book that shook the world'. A radical, encyclopedic critique of colonialism and slavery. The positive delta is driven by the Moral Turn. Enlightenment universalism finally confronts the crime of slavery. The 'Abolitionist' cluster begins to split from the 'Imperial' cluster.",
         "key_manifestations": [
           "Abb\u00e9 Raynal's 'History of the Two Indies' (1770)",
@@ -2784,7 +2784,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance peaks at 8.0% (\u0394v = +0.2%). The catalyst is the **American Revolution**. The 'Colonial' cluster implodes. The 'Sons of Liberty' are colonists fighting the Empire. The positive delta reflects the global nature of the war (India, Caribbean, America). However, the contradiction of 'Liberty' and 'Slavery' becomes undeniable.",
         "key_manifestations": [
           "The Declaration of Independence (1776), silent on slavery (the deleted clause)",
@@ -2794,7 +2794,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance dips to 7.5% (\u0394v = -0.5%). The catalyst is the loss of America. The 'First British Empire' ends. The focus shifts to India and the 'Second Empire'. The negative delta reflects a crisis of confidence. Is Empire worth it? Hastings' trial begins.",
         "key_manifestations": [
           "The impeachment of Warren Hastings (begun 1787, roots here)",
@@ -2804,7 +2804,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 7.8,
+        "salience_share": 7.8,
         "description": "The variance rises to 7.8% (\u0394v = +0.3%). The catalyst is the **Abolitionist Movement**. Wedgwood's 'Am I Not a Man and a Brother?' medallion. The positive delta is driven by the massive public mobilization against the slave trade. It is the first 'human rights' campaign. The 'Exotic' is now a subject of pity and rights, not just curiosity.",
         "key_manifestations": [
           "Wedgwood's Anti-Slavery Medallion (1787)",
@@ -2814,7 +2814,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance rises to 8.5% (\u0394v = +0.7%). The catalyst is the **Haitian Revolution** (1791). The 'Black Jacobins'. The nightmare of the planter class comes true. The positive delta reflects the terrifying agency of the colonized. It is no longer a European debate; the slaves are speaking for themselves with fire.",
         "key_manifestations": [
           "The Haitian Revolution (begun 1791)",
@@ -2824,7 +2824,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance dips to 8.0% (\u0394v = -0.5%). The catalyst is Napoleon's invasion of Egypt (1798). Colonialism morphs into 'Orientalism'\u2014scientific conquest and appropriation (The Rosetta Stone). The negative delta reflects the crushing of the Haitian/Abolitionist ideal by the restoration of slavery under Napoleon (later). The empire strikes back.",
         "key_manifestations": [
           "Napoleon's Campaign in Egypt (1798)",
@@ -2834,7 +2834,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 8.2,
+        "salience_share": 8.2,
         "description": "The cluster ends the century at 8.2% (\u0394v = +0.2%). It is fully entrenched. The 19th-century Imperial model is set: Scientific, Bureaucratic, and Industrial, governed by the racial hierarchy that replaced the 'Noble Savage'. The Exotic is now 'The Subject'.",
         "key_manifestations": [
           "The Act of Union with Ireland (internal colonialism)",
@@ -2850,7 +2850,7 @@ export const humeData = {
     "description": "This cluster captures the emergence and dominance of the novel as the primary literary vehicle for exploring the individual's inner life. Moving away from the 'Romance' (idealized, magical adventures) and the 'Epic' (public, heroic action), this form focuses on domestic reality, minute psychological detail, and the individual's struggle with social constraints. Fueled by the rise of the epistolary format and the female reading public, it validates subjective experience as a site of supreme cultural importance. Its trajectory is one of exponential growth, starting as a disreputable genre and ending as the dominant modern art form.",
     "trajectory": {
       "1700": {
-        "variance_explained": 1.2,
+        "salience_share": 1.2,
         "description": "The cluster begins at a low 1.2%. The **catalyst** is the exhaustion of the French 'Heroic Romance' (Scud\u00e9ry). The variance is low because the 'Novel' is not yet a respected category; it is seen as trashy entertainment or disguised scandal (chronique scandaleuse). The cultural focus is on Drama and Poetry. However, Aphra Behn and the early female playwrights are beginning to experiment with prose narratives of 'real' passion.",
         "key_manifestations": [
           "Aphra Behn's 'Oroonoko' (1688, continuing influence), blending travelogue with tragedy",
@@ -2860,7 +2860,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 1.4,
+        "salience_share": 1.4,
         "description": "The variance rises to 1.4% (\u0394v = +0.2%). The catalyst is the translation of **The Arabian Nights** (1704), which creates a hunger for prose narrative, even if fantastic. Simultaneously, the rise of the periodical (Cluster #7) begins to train readers in short, observational character sketches (The Spectator), which are the building blocks of the realistic novel. The 'character' is being defined before the 'plot'.",
         "key_manifestations": [
           "The continued popularity of 'The Pilgrim's Progress' (1678), the spiritual ancestor of the novel",
@@ -2870,7 +2870,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 1.6,
+        "salience_share": 1.6,
         "description": "The variance creeps to 1.6% (\u0394v = +0.2%). The catalyst is the commercial expansion of print. The 'reading public' is expanding beyond the classically educated elite. Women, excluded from Latin, demand literature in the vernacular that reflects their social reality. The 'Amatory Novel' begins to standardize the tropes of seduction and betrayal.",
         "key_manifestations": [
           "Eliza Haywood's early career (Love in Excess, 1719, precursors here)",
@@ -2880,7 +2880,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 2.0,
+        "salience_share": 2.0,
         "description": "The variance rises to 2.0% (\u0394v = +0.4%). The catalyst is **Daniel Defoe's 'Robinson Crusoe' (1719)**. It is the 'Big Bang' of realistic fiction. It strips away the romance and focuses on material survival, economic calculation, and the solitary self. The positive delta reflects the shock of 'Formal Realism'\u2014the lie that looks exactly like the truth (memoir).",
         "key_manifestations": [
           "Daniel Defoe's 'Robinson Crusoe' (1719)",
@@ -2890,7 +2890,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 2.4,
+        "salience_share": 2.4,
         "description": "The variance climbs to 2.4% (\u0394v = +0.4%). The catalyst is **Defoe's 'Moll Flanders' (1722)**. It applies realism to the urban criminal underclass and the female experience. The positive delta is driven by the realization that the 'Novel' can explore social mobility and economic desperation better than any other form. It is the literature of the **Commercial Society (Cluster #4)**.",
         "key_manifestations": [
           "Daniel Defoe's 'Moll Flanders' (1722)",
@@ -2900,7 +2900,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 2.6,
+        "salience_share": 2.6,
         "description": "The variance rises to 2.6% (\u0394v = +0.2%). The catalyst is **Swift's 'Gulliver's Travels' (1726)**. While a satire, its detailed, pseudo-scientific realism reinforces the novel's formal conventions (the traveler's report). The positive delta is tempered by elite disdain; the 'Novel' is still seen as a low genre compared to Pope's poetry.",
         "key_manifestations": [
           "Jonathan Swift's 'Gulliver's Travels' (1726)",
@@ -2910,7 +2910,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.4%). The catalyst is the influence of French psychological fiction (**Marivaux** and **Pr\u00e9vost**). 'Manon Lescaut' (1731) introduces the 'tragic realism' of passion. The positive delta reflects the shift from 'Adventure' (Defoe) to 'Sentiment' (Pr\u00e9vost). The interior life is becoming the plot.",
         "key_manifestations": [
           "Abb\u00e9 Pr\u00e9vost's 'Manon Lescaut' (1731)",
@@ -2920,7 +2920,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 3.3,
+        "salience_share": 3.3,
         "description": "The variance rises to 3.3% (\u0394v = +0.3%). The catalyst is the 'moral panic' over reading. As circulating libraries spread, the novel is attacked as a corrupter of youth. This controversy *increases* its variance. The form is searching for a moral justification, which Richardson will soon provide.",
         "key_manifestations": [
           "The rise of the Circulating Library (first in Bath/London)",
@@ -2930,7 +2930,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance explodes to 4.5% (\u0394v = +1.2%). The catalyst is **Samuel Richardson's 'Pamela' (1740)**. This is the decisive moment. Richardson uses the epistolary form to provide 'writing to the moment'\u2014unmediated access to the character's mind. The 'Pamela controversy' (anti-Pamela, Shamela) proves the novel is now the center of cultural debate. Realism becomes a moral crusade.",
         "key_manifestations": [
           "Samuel Richardson's 'Pamela; or, Virtue Rewarded' (1740)",
@@ -2940,7 +2940,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance rises to 5.2% (\u0394v = +0.7%). The catalyst is **'Clarissa' (1748)** and **'Tom Jones' (1749)**. The two giants, Richardson and Fielding, define the poles of the novel: Richardson's tragic, psychological intensity vs. Fielding's panoramic, social comedy. The novel is no longer a 'lesser' genre; it is the modern Epic. The positive delta reflects the formal perfection of the genre.",
         "key_manifestations": [
           "Samuel Richardson's 'Clarissa' (1748), the longest and most psychologically complex novel yet",
@@ -2950,7 +2950,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 5.8,
+        "salience_share": 5.8,
         "description": "The variance climbs to 5.8% (\u0394v = +0.6%). The catalyst is the **Pan-European Novel**. Richardson's influence sweeps France (Diderot, Rousseau) and Germany. The novel becomes the primary vehicle for the **Sentimental Mode (Cluster #2)**. The 'Man of Feeling' is born in prose. The positive delta reflects the novel's conquest of the Continent.",
         "key_manifestations": [
           "Charlotte Lennox's 'The Female Quixote' (1752), literary criticism within a novel",
@@ -2960,7 +2960,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 6.2,
+        "salience_share": 6.2,
         "description": "The variance rises to 6.2% (\u0394v = +0.4%). The catalyst is the philosophical legitimization of the novel. **Johnson's 'Rambler' essays** treat the novel as a serious moral instrument. The form becomes self-conscious. Sterne begins to deconstruct it before it's even fully finished. The positive delta shows the genre's confidence.",
         "key_manifestations": [
           "Samuel Johnson's 'Rasselas' (1759), a novel as philosophical treatise",
@@ -2970,7 +2970,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 6.8,
+        "salience_share": 6.8,
         "description": "The variance rises to 6.8% (\u0394v = +0.6%). The catalyst is **Rousseau's 'Julie' (1761)** and **Sterne's 'Tristram Shandy' (1759-67)**. 'Julie' becomes the best-selling book of the century, turning the novel into a secular scripture of emotion. 'Shandy' explodes the form's linearity, exposing the mechanics of realism. The novel is now experimental art.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Julie, or the New Heloise' (1761)",
@@ -2980,7 +2980,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 7.2,
+        "salience_share": 7.2,
         "description": "The variance rises to 7.2% (\u0394v = +0.4%). The catalyst is the **Gothic Turn**. Horace Walpole's 'The Castle of Otranto' (1764) invents the Gothic novel. Realism is momentarily suspended for the **Sublime (Cluster #12)**. The novel proves it can handle not just daily life, but nightmares. The positive delta reflects the expansion of the novel's territory into the irrational.",
         "key_manifestations": [
           "Horace Walpole's 'The Castle of Otranto' (1764)",
@@ -2990,7 +2990,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 7.6,
+        "salience_share": 7.6,
         "description": "The variance climbs to 7.6% (\u0394v = +0.4%). The catalyst is **Goethe's 'Werther' (1774)**. The novel becomes dangerous. It prompts suicides and dress codes. The 'Epistolary' form reaches its zenith as a tool for describing the disintegration of the self. The positive delta reflects the novel's power to shape reality (The Werther Effect).",
         "key_manifestations": [
           "Goethe's 'The Sorrows of Young Werther' (1774)",
@@ -3000,7 +3000,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance rises to 8.0% (\u0394v = +0.4%). The catalyst is the **Female Burney School**. Fanny Burney's 'Evelina' (1778) creates the 'novel of manners'\u2014social realism focusing on a young woman's entry into the world. It cleans up the genre, making it respectable for the middle class. The positive delta is driven by the mass market standardization of the '3-volume novel'.",
         "key_manifestations": [
           "Fanny Burney's 'Evelina' (1778)",
@@ -3010,7 +3010,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance rises to 8.5% (\u0394v = +0.5%). The catalyst is **Laclos's 'Dangerous Liaisons' (1782)**. The epistolary novel is weaponized to show the cold, rational destruction of virtue. It is the dark mirror of 'Clarissa'. The positive delta reflects the novel's sophistication as a tool for social autopsy. Simultaneously, the Gothic explodes.",
         "key_manifestations": [
           "Choderlos de Laclos's 'Dangerous Liaisons' (1782)",
@@ -3020,7 +3020,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 8.8,
+        "salience_share": 8.8,
         "description": "The variance rises to 8.8% (\u0394v = +0.3%). The catalyst is the **Political Novel**. In the pre-revolutionary ferment, the novel becomes a vehicle for radical philosophy (Godwin, Holcroft). The positive delta is driven by the idea that fiction can change the world (The Jacobin Novel).",
         "key_manifestations": [
           "Thomas Day's 'Sandford and Merton' (1783-89), Rousseauian education novel",
@@ -3030,7 +3030,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 9.2,
+        "salience_share": 9.2,
         "description": "The variance reaches 9.2% (\u0394v = +0.4%). The catalyst is the **Radcliffean Gothic**. Ann Radcliffe perfects the 'explained supernatural' and the landscape description. The novel is now the dominant form of entertainment in Europe, eclipsing drama. The 'Terror' of the revolution finds its echo in the 'Terror' of the novel.",
         "key_manifestations": [
           "Ann Radcliffe's 'The Mysteries of Udolpho' (1794)",
@@ -3040,7 +3040,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 9.5,
+        "salience_share": 9.5,
         "description": "The variance rises to 9.5% (\u0394v = +0.3%). The catalyst is **Jane Austen's early drafts**. She begins to synthesize the psychological depth of Richardson with the social wit of Burney, rejecting the excesses of Sentiment and Gothic. The novel is settling into its modern form. The positive delta reflects the ubiquity of the genre.",
         "key_manifestations": [
           "Jane Austen's 'First Impressions' (Pride and Prejudice draft, 1796)",
@@ -3050,7 +3050,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 9.8,
+        "salience_share": 9.8,
         "description": "The cluster ends the century at 9.8% (\u0394v = +0.3%). It is the undisputed king of literature. It has absorbed History, Philosophy, and Poetry. The 19th century will be the 'Century of the Novel'. The trajectory is complete: from a despised 'lie' to the supreme truth of the individual.",
         "key_manifestations": [
           "Maria Edgeworth's 'Castle Rackrent' (1800)",
@@ -3066,7 +3066,7 @@ export const humeData = {
     "description": "This cluster represents the radical shift in political ontology: the belief that the individual is the primary unit of reality, and society is an artificial construct (Contract) created by individuals to protect their interests (Rights). It opposes the Aristotelian/Divine Right view of society as a natural, organic hierarchy. Trajectorially, it begins with the Lockean justification of 1688, radicalizes through Rousseau (General Will), and becomes the operational logic of the American and French Revolutions, eventually facing a conservative backlash (Burke/Hegel).",
     "trajectory": {
       "1700": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The cluster starts at 2.5%. The **catalyst** is Locke's 'Two Treatises' (1689). The concept is fresh and revolutionary but limited to the Whig elite. The idea that a King holds power only by the consent of the people is a dangerous heresy in most of Europe (Absolutism). The variance is maintained by the need to justify the Glorious Revolution.",
         "key_manifestations": [
           "John Locke's 'Two Treatises of Government' (1689)",
@@ -3076,7 +3076,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 2.7,
+        "salience_share": 2.7,
         "description": "The variance rises to 2.7% (\u0394v = +0.2%). The catalyst is the **Huguenot Diaspora**. Exiled French Protestants (Pierre Bayle, Jurieu) use contract theory to argue against Louis XIV's religious persecution. If the King violates the contract (Edict of Nantes), resistance is justified. The positive delta reflects the spread of the idea into international law.",
         "key_manifestations": [
           "Pierre Bayle's dictionary (influence on skepticism and tolerance)",
@@ -3086,7 +3086,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 2.9,
+        "salience_share": 2.9,
         "description": "The variance creeps to 2.9% (\u0394v = +0.2%). The catalyst is the **Whig Hegemony**. In England, Contract theory becomes the establishment ideology. It loses its radical edge but gains institutional power. The focus shifts to 'Property' as the central right protected by the contract.",
         "key_manifestations": [
           "The Sacheverell Trial (1710), debating non-resistance vs. contract",
@@ -3096,7 +3096,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 3.2,
+        "salience_share": 3.2,
         "description": "The variance rises to 3.2% (\u0394v = +0.3%). The catalyst is the death of Louis XIV. The Regency allows a brief influx of English ideas into France. **Voltaire** (later) and Montesquieu begin to engage with Locke. The positive delta reflects the cross-channel migration of the 'Individual' as a political concept.",
         "key_manifestations": [
           "The Club de l'Entresol (early political debating society in Paris)",
@@ -3106,7 +3106,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance rises to 3.5% (\u0394v = +0.3%). The catalyst is **Hutcheson** in Scotland. He refines the 'State of Nature' thought experiment. Unlike Hobbes (war), Hutcheson argues nature is social (benevolence). This makes the Contract a mechanism for happiness, not just survival. The positive delta is driven by the 'optimistic' turn in individualism.",
         "key_manifestations": [
           "Francis Hutcheson's 'Inquiry' (1725), establishing 'unalienable rights'",
@@ -3116,7 +3116,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 3.7,
+        "salience_share": 3.7,
         "description": "The variance rises to 3.7% (\u0394v = +0.2%). The catalyst is the rising **Commercial Class**. They need a theory that validates their worth against the Aristocracy. Methodological Individualism suits them: status should be achieved by the individual, not inherited. The 'Self-Made Man' archetype strengthens the cluster.",
         "key_manifestations": [
           "Defoe's 'Complete English Tradesman' (1726)",
@@ -3126,7 +3126,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The variance rises to 4.0% (\u0394v = +0.3%). The catalyst is **Pope's 'Essay on Man'**. It popularizes the idea that individual self-love is part of a divine system. However, the cluster faces a threat: **Hume's skepticism**. Hume questions the historical reality of the 'Contract'. This critique actually forces the theory to become more normative (it *should* be a contract) rather than historical.",
         "key_manifestations": [
           "Alexander Pope's 'Essay on Man' (1733-34)",
@@ -3136,7 +3136,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 4.3,
+        "salience_share": 4.3,
         "description": "The variance rises to 4.3% (\u0394v = +0.3%). The catalyst is the **Great Awakening**. Though religious, it emphasizes *individual* salvation and the right to choose one's preacher (breaking parish hierarchy). This 'Spiritual Individualism' feeds directly into political individualism in America.",
         "key_manifestations": [
           "Whitefield's preaching tours, creating a mass individualist movement",
@@ -3146,7 +3146,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 4.8,
+        "salience_share": 4.8,
         "description": "The variance jumps to 4.8% (\u0394v = +0.5%). The catalyst is **Burlamaqui**. His synthesis of natural law becomes the textbook for the American Founders. He defines the pursuit of happiness as a natural right. The positive delta reflects the standardization of the 'Rights' discourse.",
         "key_manifestations": [
           "J.J. Burlamaqui's 'Principles of Natural Law' (1747)",
@@ -3156,7 +3156,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance rises to 5.2% (\u0394v = +0.4%). The catalyst is the **Encyclop\u00e9die**. Diderot and d'Alembert embed Lockean political theory into the definitions of 'Authority' and 'Citizen'. The positive delta is driven by the covert radicalization of the French intellectual class. The 'Subject' is being redefined as a 'Citizen' in theory.",
         "key_manifestations": [
           "The Encyclopedia Article 'Autorit\u00e9 politique' (1751), denying divine right",
@@ -3166,7 +3166,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance surges to 6.0% (\u0394v = +0.8%). The catalyst is **Rousseau's 'Second Discourse' (1754)**. He radicalizes the State of Nature. Private property is not a natural right (Locke) but the *fall* of man. However, the individual remains the center. The positive delta reflects the explosion of the 'Social Contract' debate. Is it a protection of property (Locke) or a fraud by the rich (Rousseau)?",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Discourse on Inequality' (1754)",
@@ -3176,7 +3176,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance rises to 6.5% (\u0394v = +0.5%). The catalyst is the **Seven Years' War**. The mobilization of the colonies creates a sense of distinct identity. The 'Provincial' individual claims the same rights as the 'Metropolitan' individual. The positive delta is driven by the 'Rights of Englishmen' argument becoming a universal 'Natural Rights' argument.",
         "key_manifestations": [
           "Rousseau's 'The Social Contract' (1762), the 'General Will' vs Individual",
@@ -3186,7 +3186,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The variance rises to 7.0% (\u0394v = +0.5%). The catalyst is **Rousseau's 'Social Contract' (1762)**. It provides the formula: Man is born free, and everywhere he is in chains. It attempts to reconcile absolute individualism with absolute state power (General Will). This paradox fuels the coming revolutions.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'The Social Contract' (1762)",
@@ -3196,7 +3196,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance rises to 7.5% (\u0394v = +0.5%). The catalyst is the **American Crisis**. The 'Contract' moves from a philosophical abstraction to a legal defense. If the King breaks the contract, the people are absolved. The positive delta reflects the weaponization of Locke.",
         "key_manifestations": [
           "John Dickinson's 'Letters from a Farmer' (1768)",
@@ -3206,7 +3206,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance climbs to 8.0% (\u0394v = +0.5%). The catalyst is the **Tea Party**. The rejection of Parliamentary authority leaves only the King, and the 'Contract' is the only link left. In France, the Maupeou Coup destroys the traditional constitution, forcing lawyers to appeal to 'Natural Rights' and 'The Nation'.",
         "key_manifestations": [
           "The Boston Tea Party (1773)",
@@ -3216,7 +3216,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 9.0,
+        "salience_share": 9.0,
         "description": "The variance peaks at 9.0% (\u0394v = +1.0%). The catalyst is **1776**. The Declaration of Independence *is* a Social Contract document. 'We hold these truths to be self-evident'. It is the apotheosis of Methodological Individualism: the state exists *only* to secure rights. The positive delta reflects the founding of a nation on this cluster.",
         "key_manifestations": [
           "The Declaration of Independence (1776)",
@@ -3226,7 +3226,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance dips to 8.5% (\u0394v = -0.5%). The catalyst is the **Governance Problem**. Individualism is great for revolution, bad for stability (Shays' Rebellion). The negative delta reflects the search for a 'Unitary' power to check the individual. The 'General Will' aspect of Rousseau begins to rise over the Lockean rights.",
         "key_manifestations": [
           "The Articles of Confederation failure",
@@ -3236,7 +3236,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 9.2,
+        "salience_share": 9.2,
         "description": "The variance rises to 9.2% (\u0394v = +0.7%). The catalyst is the **US Constitution** and the **French Revolution**. The US Constitution tries to balance individual rights with state power. The French 'Declaration of the Rights of Man' (1789) universalizes the concept. The positive delta is driven by the 'Rights of Man' becoming the new religion of Europe.",
         "key_manifestations": [
           "The US Constitution (1787) and Bill of Rights (1789)",
@@ -3246,7 +3246,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 8.8,
+        "salience_share": 8.8,
         "description": "The variance drops to 8.8% (\u0394v = -0.4%). The displacing force is **Burke's Critique**. He attacks the 'Social Contract' as a metaphysical lie. Society is an organic partnership between the dead, the living, and the unborn, not a deal between shopkeepers. The negative delta reflects the conservative realization that abstract individualism leads to the guillotine.",
         "key_manifestations": [
           "Edmund Burke's 'Reflections on the Revolution in France' (1790)",
@@ -3256,7 +3256,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance falls to 8.0% (\u0394v = -0.8%). The displacing force is the **Terror**. The 'General Will' crushed the 'Individual'. The Jacobins claimed to represent the People, but killed the persons. The negative delta reflects the retreat from radical contract theory. The focus shifts to 'Duty' (Kant) or 'History' (Conservatism).",
         "key_manifestations": [
           "Thermidorian Reaction (1794)",
@@ -3266,7 +3266,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The cluster ends the century at 7.5% (\u0394v = -0.5%). The displacing force is **Napoleon** and the **Organic State**. Napoleon preserves the *civil* rights of the individual (Code Napoleon) but destroys the *political* contract. The 'State' becomes a historical force (Hegel), superior to the individual. The atomistic view is in retreat, waiting for Mill.",
         "key_manifestations": [
           "The Code Napoleon (drafting), cementing property/civil rights",
@@ -3282,7 +3282,7 @@ export const humeData = {
     "description": "This cluster traces the evolution of Western art music from the complex, polyphonic texture of the late Baroque (Bach/Handel) to the clear, homophonic, and structurally balanced 'Classical' style (Haydn/Mozart/Early Beethoven). It represents the Enlightenment ideals of clarity, universalism, and pleasing proportion applied to sound. The 'Sonata Form'\u2014a dialectical structure of conflict and resolution\u2014becomes the dominant intellectual paradigm of music, mirroring the rationalist desire for order and the dramatic tension of the novel.",
     "trajectory": {
       "1700": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The cluster begins at 3.0%. The **catalyst** is the dominance of the **Italian Baroque**. Corelli establishes the tonal system. The texture is contrapuntal and continuous (Fortspinnung). The variance is moderate; music is a craft (Guild) rather than an autonomous Art. The 'Galant' style is just a whisper in opera buffa.",
         "key_manifestations": [
           "Arcangelo Corelli's Op. 5 Sonatas (1700), the model of tonal harmony",
@@ -3292,7 +3292,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 3.2,
+        "salience_share": 3.2,
         "description": "The variance rises to 3.2% (\u0394v = +0.2%). The catalyst is **Vivaldi**. The publication of *L'estro armonico* (1711, circulated earlier) standardizes the Concerto form (Fast-Slow-Fast). This clarity of structure is the first step away from Baroque density. The positive delta reflects the spread of the Italian 'concertante' style to Germany (Bach).",
         "key_manifestations": [
           "Antonio Vivaldi's early concertos",
@@ -3302,7 +3302,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 3.4,
+        "salience_share": 3.4,
         "description": "The variance rises to 3.4% (\u0394v = +0.2%). The catalyst is **Handel in London**. Rinaldo (1711) conquers the English public. Music becomes a commercial spectacle (Cluster #4). However, the style remains High Baroque. The 'modern' impulse is found in the lightness of French *clavecinistes* and the simplifying trend in Italian opera.",
         "key_manifestations": [
           "G.F. Handel's 'Rinaldo' (1711)",
@@ -3312,7 +3312,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance rises to 3.5% (\u0394v = +0.1%). The catalyst is the **Galant Style**. In France (Regency), the heavy pomp of Lully is replaced by the lighter, elegant 'Galant'. Melody becomes supreme; accompaniment becomes subservient. This is the seed of the Classical style. The positive delta reflects the cultural shift to 'pleasing' the listener.",
         "key_manifestations": [
           "Fran\u00e7ois Couperin's 'L'Art de toucher le clavecin' (1716)",
@@ -3322,7 +3322,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 3.7,
+        "salience_share": 3.7,
         "description": "The variance rises to 3.7% (\u0394v = +0.2%). The catalyst is **Rameau's 'Treatise on Harmony' (1722)**. It rationalizes music as a science of chords (Newtonian music). It provides the theoretical basis for tonal direction. Simultaneously, Bach moves to Leipzig (1723), creating the monumental, 'Gothic' masterpieces that the Galant era will reject as 'turgid'.",
         "key_manifestations": [
           "Jean-Philippe Rameau's 'Treatise on Harmony' (1722)",
@@ -3332,7 +3332,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The variance rises to 4.0% (\u0394v = +0.3%). The catalyst is **The Beggar's Opera (1728)**. It mocks Italian Opera and uses simple folk tunes. It destroys the pretension of the Baroque in London. The positive delta reflects the demand for 'Naturalness' (Cluster #2). The 'Intermezzo' (comic opera) in Naples begins to introduce short phrases and comic timing.",
         "key_manifestations": [
           "John Gay's 'The Beggar's Opera' (1728)",
@@ -3342,7 +3342,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance rises to 4.5% (\u0394v = +0.5%). The catalyst is **Pergolesi's 'La serva padrona' (1733)**. This short comic opera conquers Europe. Its style is 'Natural', simple, and emotionally direct. It triggers the 'War of the Buffoons'. It is the death knell of the Fugue as a popular form. The 'Pre-Classical' symphony emerges in Milan (Sammartini).",
         "key_manifestations": [
           "Giovanni Battista Pergolesi's 'La serva padrona' (1733)",
@@ -3352,7 +3352,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 4.8,
+        "salience_share": 4.8,
         "description": "The variance rises to 4.8% (\u0394v = +0.3%). The catalyst is the **Mannheim School**. Johann Stamitz begins to organize the orchestra into a disciplined machine (The Army of Generals). They develop the 'Crescendo'\u2014an emotional effect not possible in terraced Baroque dynamics. The positive delta reflects the technological upgrade of the orchestra.",
         "key_manifestations": [
           "Domenico Scarlatti's 'Essercizi' (1738), virtuosic binary sonatas",
@@ -3362,7 +3362,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance rises to 5.2% (\u0394v = +0.4%). The catalyst is **C.P.E. Bach** and the *Empfindsamer Stil* (Sensitive Style). Music must change emotion rapidly, like the mind. This is the musical equivalent of the Sentimental Novel. It breaks the Baroque 'Unity of Affect'. The Sonata Form begins to coalesce as a dramatic narrative.",
         "key_manifestations": [
           "C.P.E. Bach's 'Prussian Sonatas' (1742)",
@@ -3372,7 +3372,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance rises to 5.5% (\u0394v = +0.3%). The catalyst is the death of the Baroque giants. **Bach dies (1750)**. The 'Old Wig' style is buried. The musical world is now dominated by the Galant and the nascent Symphony. The positive delta reflects the clearing of the field for the new style.",
         "key_manifestations": [
           "The Death of J.S. Bach (1750); 'The Art of Fugue' published",
@@ -3382,7 +3382,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance jumps to 6.0% (\u0394v = +0.5%). The catalyst is **Haydn**. He begins to transform the Symphony from an overture into a serious genre. The 'String Quartet' is born (roughly). The positive delta is driven by the structural integration of Melody and Harmony into 'Thematic Work'.",
         "key_manifestations": [
           "Joseph Haydn's first symphonies (Morzin period, late 1750s)",
@@ -3392,7 +3392,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance rises to 6.5% (\u0394v = +0.5%). The catalyst is the **Piano**. It begins to replace the Harpsichord. The Piano allows for graduated dynamics (loud/soft), essential for the expressive Classical style. J.C. Bach ('The London Bach') popularizes the singing allegro style that will influence Mozart.",
         "key_manifestations": [
           "The rise of the square piano for domestic use",
@@ -3402,7 +3402,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The variance rises to 7.0% (\u0394v = +0.5%). The catalyst is **Gluck's 'Orfeo ed Euridice' (1762)**. The Operatic Reform. It strips away vocal acrobatics for 'Noble Simplicity' (Winckelmann's ideal). Simultaneously, the child **Mozart** tours Europe, absorbing every style. The positive delta reflects the maturation of the Classical language.",
         "key_manifestations": [
           "Gluck's 'Orfeo ed Euridice' (1762)",
@@ -3412,7 +3412,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance rises to 7.5% (\u0394v = +0.5%). The catalyst is **Sturm und Drang** in Music. Haydn writes his minor-key symphonies (No. 44, 45, 49). They are passionate, violent, and structurally tight. This rejects the 'pretty' Galant for the 'Sublime'. The cluster achieves emotional depth.",
         "key_manifestations": [
           "Haydn's Symphony No. 49 'La Passione' (1768)",
@@ -3422,7 +3422,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance climbs to 8.0% (\u0394v = +0.5%). The catalyst is the **Viennese Style**. Haydn's Op. 20 Quartets (1772) establish the quartet as a conversation between equals. Mozart is in Salzburg, chafing against restriction. The style becomes 'Cosmopolitan'\u2014a blend of Italian melody, German counterpoint, and French rhythm.",
         "key_manifestations": [
           "Haydn's Op. 20 'Sun' Quartets (1772), the birth of the modern quartet",
@@ -3432,7 +3432,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance rises to 8.5% (\u0394v = +0.5%). The catalyst is **Mozart's Maturity**. He moves to Vienna (1781, prep here). The Piano Concerto becomes the vehicle for the individual vs. the group. The positive delta reflects the perfection of the 'Sonata Form' as a vehicle for infinite variety.",
         "key_manifestations": [
           "Mozart's 'Jeunehomme' Concerto K. 271 (1777)",
@@ -3442,7 +3442,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 9.2,
+        "salience_share": 9.2,
         "description": "The variance peaks at 9.2% (\u0394v = +0.7%). The catalyst is the **Golden Decade of Vienna**. Mozart's Da Ponte Operas (Figaro, Don Giovanni) and Haydn's Paris Symphonies. The structural formalism is hidden by effortless grace. Music becomes the supreme art of the Enlightenment\u2014complex yet accessible.",
         "key_manifestations": [
           "Mozart's 'The Marriage of Figaro' (1786)",
@@ -3452,7 +3452,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 9.5,
+        "salience_share": 9.5,
         "description": "The variance rises to 9.5% (\u0394v = +0.3%). The catalyst is the **Synthesis**. Mozart incorporates Bachian counterpoint (discovered at Van Swieten's) into the Classical style (Jupiter Symphony finale). This heals the rift between the 'Learned' and the 'Galant'. It is the peak of the cluster's intellectual power.",
         "key_manifestations": [
           "Mozart's 'Jupiter' Symphony (1788), the fugal finale",
@@ -3462,7 +3462,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 9.8,
+        "salience_share": 9.8,
         "description": "The variance reaches 9.8% (\u0394v = +0.3%). The catalyst is **Haydn's London Symphonies**. They are the first 'mass market' symphonic masterpieces. The 'Sublime' enters the symphony (The Drumroll, The London). Mozart dies (1791), becoming the first musical Romantic myth. Beethoven begins to assert his 'rough' voice.",
         "key_manifestations": [
           "Haydn's 'London Symphonies' (No. 93-104) (1791-1795)",
@@ -3472,7 +3472,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 10.0,
+        "salience_share": 10.0,
         "description": "The variance peaks at 10.0% (\u0394v = +0.2%). The catalyst is **Haydn's 'Creation'** and **Beethoven's Early Period**. 'The Creation' (1798) is the final monument of Enlightenment optimism\u2014Order out of Chaos. Beethoven's 'Pathetique' Sonata (1798) signals the end of 'Polite' Classicism and the start of the Heroic/Romantic. The cluster is full.",
         "key_manifestations": [
           "Haydn's 'The Creation' (1798)",
@@ -3482,7 +3482,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 9.8,
+        "salience_share": 9.8,
         "description": "The cluster ends the century at 9.8% (\u0394v = -0.2%). The displacing force is **Beethoven's 'Eroica' (looming)**. The 'Classical' balance is about to be shattered by the 'Romantic' will. The First Symphony (1800) is a farewell to the 18th century. The form will survive, but the spirit changes from 'Conversation' to 'Oration'.",
         "key_manifestations": [
           "Beethoven's Symphony No. 1 (1800)",
@@ -3498,7 +3498,7 @@ export const humeData = {
     "description": "This cluster represents the shift from History as 'Chronicle' or 'Theology' (Bossuet) to History as 'Philosophical Inquiry' (Voltaire/Gibbon). It treats the past as a laboratory of human nature, governed by natural causes (climate, commerce, religion-as-sociology) rather than Providence. It is critical, ironic, and cosmopolitan. Its trajectory rises with the Enlightenment's confidence, peaking with Gibbon's *Decline and Fall*, before being challenged by the Romantic turn to national/organic history.",
     "trajectory": {
       "1700": {
-        "variance_explained": 2.0,
+        "salience_share": 2.0,
         "description": "The cluster begins at 2.0%. The catalyst is the **Antiquarian Movement**. Monks (Mabillon) and jurists are refining the tools of document verification (Diplomatics). History is still largely a servant of the Church (Hagiography) or the Crown (Dynastic Annals). The variance is low because the 'Philosophical' element is missing.",
         "key_manifestations": [
           "Mabillon's 'De re diplomatica' (1681, standard text)",
@@ -3508,7 +3508,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 2.2,
+        "salience_share": 2.2,
         "description": "The variance rises to 2.2% (\u0394v = +0.2%). The catalyst is the **Pyrrhonist Crisis**. Skeptics question if history can be known at all. This forces a sharpening of method. The positive delta reflects the accumulation of raw data (numismatics, inscriptions) that will later be synthesized.",
         "key_manifestations": [
           "The Acad\u00e9mie des Inscriptions founded (1701)",
@@ -3518,7 +3518,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance rises to 2.5% (\u0394v = +0.3%). The catalyst is **Rapin de Thoyras**. His 'History of England' (1724, written here) is the first to systematically cite sources and attempt impartiality (from a Whig perspective). It breaks the 'Chronicler' mold. The positive delta reflects the demand for a readable, coherent national story.",
         "key_manifestations": [
           "Rapin de Thoyras working on 'History of England'",
@@ -3528,7 +3528,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 2.8,
+        "salience_share": 2.8,
         "description": "The variance rises to 2.8% (\u0394v = +0.3%). The catalyst is **Voltaire's 'Oedipe'** and his early historical interests. He begins to conceive of history as the history of the 'Human Mind', not just kings. The positive delta is driven by the desire to judge the past by the standards of Reason.",
         "key_manifestations": [
           "Voltaire's early epic 'The Henriade' (1723), treating history poetically",
@@ -3538,7 +3538,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.2%). The catalyst is **Vico's 'New Science' (1725)**. Though obscure, it proposes a cyclical, structural theory of history (Age of Gods, Heroes, Men). It is the first 'Philosophy of History'. The positive delta reflects the search for *laws* of history akin to Newton's laws.",
         "key_manifestations": [
           "Giambattista Vico's 'Scienza Nuova' (1725)",
@@ -3548,7 +3548,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance rises to 3.5% (\u0394v = +0.5%). The catalyst is **Voltaire in England**. He absorbs the English political history and begins 'Charles XII' (1731). He turns history into a fast-paced, ironic narrative. The positive delta is driven by the 'Secularization' of the timeline.",
         "key_manifestations": [
           "Voltaire's 'History of Charles XII' (1731, prep here), the first modern history book",
@@ -3558,7 +3558,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The variance rises to 4.0% (\u0394v = +0.5%). The catalyst is **Montesquieu's 'Considerations' (1734)**. He analyzes the rise and fall of Rome not via fortune, but via 'general causes' (institutions, morale, size). It is the manifesto of sociological history. The positive delta reflects the shift from 'Who?' to 'Why?'.",
         "key_manifestations": [
           "Montesquieu's 'Considerations on the Causes of the Greatness of the Romans and their Decline' (1734)",
@@ -3568,7 +3568,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance rises to 4.5% (\u0394v = +0.5%). The catalyst is **Voltaire's 'Age of Louis XIV' (begun)**. He defines history as the progress of the arts and civilization, relegating war to the background. The positive delta is driven by the 'Cultural History' turn. History is about *us* (civilization), not *them* (barbarians).",
         "key_manifestations": [
           "Voltaire working on 'The Century of Louis XIV'",
@@ -3578,7 +3578,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance rises to 5.0% (\u0394v = +0.5%). The catalyst is **Hume**. He applies his empirical psychology to history. History is the data set for the science of man. The positive delta reflects the integration of Cluster #5 (Empiricism) with History. The 'Scottish School' of history begins to form.",
         "key_manifestations": [
           "Hume's Essays (1741-42)",
@@ -3588,7 +3588,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance rises to 5.5% (\u0394v = +0.5%). The catalyst is **Voltaire's 'Essai sur les m\u0153urs'** (parts published). It attacks the Judeo-Christian centrism of Bossuet, praising China and India. It is the first 'Global' secular history. The positive delta is driven by the need to relativize European religion.",
         "key_manifestations": [
           "Voltaire's 'Essai sur les m\u0153urs' (1756, drafts circulating)",
@@ -3598,7 +3598,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 6.2,
+        "salience_share": 6.2,
         "description": "The variance jumps to 6.2% (\u0394v = +0.7%). The catalyst is **Voltaire's 'Age of Louis XIV' (1751)** and **Hume's 'History of England' (1754)**. These are the twin pillars of Enlightenment historiography. Voltaire celebrates culture; Hume analyzes the constitution with irony. The positive delta reflects the peak of the genre's popularity. History replaces Theology as the serious reading of the gentleman.",
         "key_manifestations": [
           "Voltaire's 'The Century of Louis XIV' (1751)",
@@ -3608,7 +3608,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 6.8,
+        "salience_share": 6.8,
         "description": "The variance rises to 6.8% (\u0394v = +0.6%). The catalyst is **Robertson's 'History of Scotland' (1759)**. The Scottish school (Hume, Robertson, Smith) formalizes 'Conjectural History' (Stage Theory). Society evolves from Hunting to Commerce. The positive delta is driven by the sociological method.",
         "key_manifestations": [
           "William Robertson's 'History of Scotland' (1759)",
@@ -3618,7 +3618,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 7.2,
+        "salience_share": 7.2,
         "description": "The variance rises to 7.2% (\u0394v = +0.4%). The catalyst is **Gibbon in Rome (1764)**. The conception of the 'Decline and Fall'. The positive delta reflects the anticipation of the synthesis. The 'Philosophical Historian' is now a recognized sage. The focus is on the *causes* of decay (Cluster #8 linkage).",
         "key_manifestations": [
           "Gibbon's moment of inspiration in the Capitol (1764)",
@@ -3628,7 +3628,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance rises to 7.5% (\u0394v = +0.3%). The catalyst is **Robertson's 'Charles V' (1769)**. It maps the progress of European statehood. The focus is on the 'State System' and the balance of power. The positive delta reflects history serving the self-image of the European powers.",
         "key_manifestations": [
           "William Robertson's 'History of the Reign of Charles V' (1769)",
@@ -3638,7 +3638,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance rises to 8.0% (\u0394v = +0.5%). The catalyst is **Raynal's 'History of the Two Indies' (1770)**. History becomes a weapon against Empire and Slavery. It is 'Philosophical History' with a bayonet. The positive delta reflects the politicization of the narrative.",
         "key_manifestations": [
           "Abb\u00e9 Raynal's 'History of the Two Indies' (1770)",
@@ -3648,7 +3648,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 9.0,
+        "salience_share": 9.0,
         "description": "The variance peaks at 9.0% (\u0394v = +1.0%). The catalyst is **Gibbon's 'Decline and Fall' (Vol 1, 1776)**. It is the masterpiece of the cluster. It combines the erudition of the antiquarian with the irony of the philosophe. It explains the fall of Rome via 'Barbarism and Religion'. The positive delta reflects the absolute dominance of the ironic, secular mode.",
         "key_manifestations": [
           "Edward Gibbon's 'The History of the Decline and Fall of the Roman Empire' (1776)",
@@ -3658,7 +3658,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 8.8,
+        "salience_share": 8.8,
         "description": "The variance dips to 8.8% (\u0394v = -0.2%). The catalyst is the **German Counter-Current (Herder)**. Herder argues that each age has its own 'center of gravity' and shouldn't be judged by 18th-century standards (Historicism). This threatens the 'Universalist' Secular narrative. The negative delta reflects the start of the 'Romantic' turn in history.",
         "key_manifestations": [
           "Herder's 'Ideas for the Philosophy of History of Humanity' (1784)",
@@ -3668,7 +3668,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance falls to 8.5% (\u0394v = -0.3%). The displacing force is the **French Revolution**. The 'Philosophical History' (Voltaire/Gibbon) was elitist and ironic. The new history must be 'National' and 'Democratic'. The negative delta reflects the inadequacy of irony in the face of revolution.",
         "key_manifestations": [
           "Mably's 'Observations on the History of France' (1765, influential now)",
@@ -3678,7 +3678,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance drops to 8.0% (\u0394v = -0.5%). The catalyst is **Burke**. His 'Reflections' treat history as a slow, organic accumulation of wisdom, not a catalogue of errors to be corrected by Reason. The negative delta reflects the conservative rejection of 'Secular/Rational' history. The past is now a sacred ancestor, not a subject for dissection.",
         "key_manifestations": [
           "Edmund Burke's 'Reflections' (1790), organic history",
@@ -3688,7 +3688,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance falls to 7.5% (\u0394v = -0.5%). The displacing force is **Romantic Nationalism**. History becomes the search for the *Volk* (People) and their myths (Cluster #12). The detached, cosmopolitan irony of Gibbon feels cold. The new history is passionate and partial.",
         "key_manifestations": [
           "Chateaubriand's 'Essay on Revolutions' (1797)",
@@ -3698,7 +3698,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The cluster ends the century at 7.0% (\u0394v = -0.5%). It has been transformed. 'Secular Narrative' (Voltaire) has split into 'Scientific History' (Niebuhr/German School) and 'Nationalist Myth' (Romanticism). The Enlightenment project of a single, universal history of the human mind is over. The 19th century will be the age of National Histories.",
         "key_manifestations": [
           "Schelling's 'System of Transcendental Idealism' (1800), history as the Odyssey of Spirit",
@@ -3714,7 +3714,7 @@ export const humeData = {
     "description": "This cluster represents the major religious counter-current to the Enlightenment: a transnational revival movement emphasizing 'heart religion' (felt conviction) over 'head religion' (doctrinal orthodoxy or rational theology). Rooted in German Pietism and exploding through British Methodism and the American Great Awakening, it democratized spiritual experience, asserting that the individual\u2014regardless of education or class\u2014could directly experience the 'New Birth.' Trajectorially, it acts as a powerful displacing force against Rationalism (Cluster #1), rising sharply in the mid-century and entrenching itself as a mass movement by the end, prefiguring Romantic subjectivity.",
     "trajectory": {
       "1700": {
-        "variance_explained": 1.5,
+        "salience_share": 1.5,
         "description": "The cluster begins at 1.5%. The **catalyst** is the stagnation of established Protestantism (Lutheran Scholasticism/Anglican Latitudinarianism), which is perceived as dry and overly intellectual. The variance is low but the seeds are planted by **Philipp Jakob Spener** and the Halle Pietists in Germany, who advocate for small group devotion (*collegia pietatis*) and a 'living faith.' This initial phase is local and quiet, focusing on internal spiritual renewal rather than public revival.",
         "key_manifestations": [
           "August Hermann Francke's foundations at Halle (orphanage/schools), institutionalizing Pietism",
@@ -3724,7 +3724,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 1.7,
+        "salience_share": 1.7,
         "description": "The variance rises to 1.7% (\u0394v = +0.2%). The catalyst is the **Halle Mission**. The German Pietists begin to export their model globally (Tranquebar Mission, 1706). The positive delta reflects the shift from static orthodoxy to dynamic, missionary activism. In England, the 'Religious Societies' provide the infrastructure that Wesley will later exploit.",
         "key_manifestations": [
           "The Tranquebar Mission (1706), the first Protestant foreign mission",
@@ -3734,7 +3734,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 1.9,
+        "salience_share": 1.9,
         "description": "The variance rises to 1.9% (\u0394v = +0.2%). The catalyst is the arrival of **Palatines** and other German refugees in America and England, carrying Pietist intensity with them. The positive delta is driven by the migration of the 'heart religion' across the Atlantic. However, the dominant cultural mode remains the cool, rational theology of the Boyle Lectures.",
         "key_manifestations": [
           "The Palatine Migration (1709-10)",
@@ -3744,7 +3744,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 2.1,
+        "salience_share": 2.1,
         "description": "The variance creeps to 2.1% (\u0394v = +0.2%). The catalyst is the reaction against the perceived 'Atheism' of the emerging Enlightenment. As Deism rises, so does the demand for a religion of *experience* to prove God's existence. The positive delta reflects the hardening of the battle lines: Evidence vs. Experience.",
         "key_manifestations": [
           "Solomon Stoddard's 'The Defects of Preachers Reproved' (1723, roots here), demanding revival",
@@ -3754,7 +3754,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance rises to 2.5% (\u0394v = +0.4%). The catalyst is **Theodore Frelinghuysen** in New Jersey. His preaching demands 'conviction of sin' and rejects outward morality as insufficient. This is the spark of the First Great Awakening. The positive delta is driven by the 'terror' of the law applied to the conscience.",
         "key_manifestations": [
           "Theodore Frelinghuysen's revival sermons in the Raritan Valley (begun 1720)",
@@ -3764,7 +3764,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.5%). The catalyst is the **Log College** (1726). William Tennent trains a generation of 'New Light' preachers who prioritize zeal over academic polish. The positive delta reflects the democratization of the pulpit. God speaks through the 'converted', not just the 'ordained'.",
         "key_manifestations": [
           "The founding of the Log College (1726)",
@@ -3774,7 +3774,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The variance jumps to 4.0% (\u0394v = +1.0%). The catalyst is **Jonathan Edwards** and the Northampton Revival (1734). Edwards combines Lockean empiricism (Cluster #5) with Calvinist theology: grace is a 'new simple idea' perceived by the soul. The positive delta is driven by the intellectual heft Edwards gives to emotional experience.",
         "key_manifestations": [
           "Jonathan Edwards's 'A Divine and Supernatural Light' (1734)",
@@ -3784,7 +3784,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance explodes to 5.5% (\u0394v = +1.5%). The catalyst is **George Whitefield** and **John Wesley**. Whitefield introduces 'Field Preaching' (1739), bypassing the churches to speak to tens of thousands of miners and workers. Wesley experiences his 'heart strangely warmed' (1738). The positive delta reflects the birth of a mass movement.",
         "key_manifestations": [
           "John Wesley's Aldersgate Experience (1738)",
@@ -3794,7 +3794,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The variance peaks at 7.0% (\u0394v = +1.5%). The catalyst is **Whitefield's Tour of America (1740)**. It is the first trans-colonial event. The 'Great Awakening' unifies the colonies in a shared emotional experience. The positive delta is massive: it challenges all established authority (Old Lights) and asserts the primacy of the individual conscience.",
         "key_manifestations": [
           "George Whitefield's tour (1739-41)",
@@ -3804,7 +3804,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance dips to 6.5% (\u0394v = -0.5%). The catalyst is **Excess and Backlash**. Radical itinerants (James Davenport) burn books and pants, discrediting the movement. The 'Old Lights' (Chauncy) counter-attack with 'Seasonable Thoughts on the State of Religion' (1743). The negative delta reflects the institutional checking of 'Enthusiasm'.",
         "key_manifestations": [
           "Charles Chauncy's 'Seasonable Thoughts' (1743), the rationalist critique",
@@ -3814,7 +3814,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 6.8,
+        "salience_share": 6.8,
         "description": "The variance rises to 6.8% (\u0394v = +0.3%). The catalyst is **Institutionalization**. The revivalists found colleges (Princeton/Dartmouth) to train 'New Light' ministers. Wesley organizes the Methodist 'Connexion' with military precision. The positive delta reflects the transition from a 'movement' to an 'establishment'.",
         "key_manifestations": [
           "The founding of the College of New Jersey (Princeton) (1746/1750s)",
@@ -3824,7 +3824,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The variance rises to 7.0% (\u0394v = +0.2%). The catalyst is the **Seven Years' War**. The revivalists frame the war as a cosmic battle against 'Popish Tyranny' (France). The 'Protestant Interest' unifies the evangelical and rationalist wings. The positive delta is driven by patriotic piety.",
         "key_manifestations": [
           "Samuel Davies's 'Religion and Patriotism' (1755)",
@@ -3834,7 +3834,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance dips to 6.5% (\u0394v = -0.5%). The displacing force is **Political Radicalism**. The energy of the American colonists shifts from 'Spiritual Liberty' to 'Civil Liberty' (Stamp Act). The negative delta reflects the secularization of the 'New Light' energy into 'Republican' energy.",
         "key_manifestations": [
           "The death of George Whitefield (1770), ending an era",
@@ -3844,7 +3844,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 6.2,
+        "salience_share": 6.2,
         "description": "The variance drops to 6.2% (\u0394v = -0.3%). The catalyst is the **Enlightenment peak**. The 'Philosophes' dominate the high culture. Evangelicals are mocked as 'Enthusiasts'. However, the movement spreads quietly in the Anglican Church (The Clapham Sect roots).",
         "key_manifestations": [
           "The Venn family's evangelical ministry",
@@ -3854,7 +3854,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance falls to 6.0% (\u0394v = -0.2%). The catalyst is the **Revolutionary War**. War disrupts the itinerant networks. Wesley's 'Calm Address to Our American Colonies' (1775) brands Methodists as Loyalists, damaging the brand in America. The positive delta is the rise of the Baptists in the South, who support the revolution.",
         "key_manifestations": [
           "John Wesley's 'Calm Address' (1775)",
@@ -3864,7 +3864,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance rises to 6.5% (\u0394v = +0.5%). The catalyst is the **Abolitionist Fusion**. Evangelicals (Newton, Wilberforce) begin to turn their moral intensity against the Slave Trade. This aligns them with the 'Rights of Man' (Cluster #13 & #15). The positive delta is driven by the 'Moral Empire'.",
         "key_manifestations": [
           "John Newton's 'Thoughts Upon the Slave Trade' (later, seeds here)",
@@ -3874,7 +3874,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The variance rises to 7.0% (\u0394v = +0.5%). The catalyst is the **Post-War Vacuum**. The collapse of the Anglican establishment in America leaves the field open for Methodists and Baptists. The 'Second Great Awakening' is incubating. In England, the reaction against the French Revolution makes 'serious religion' attractive as a stabilizer.",
         "key_manifestations": [
           "Formation of the Methodist Episcopal Church (1784)",
@@ -3884,7 +3884,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance rises to 7.5% (\u0394v = +0.5%). The catalyst is the **Moral Reform Movement**. Wilberforce creates the 'Proclamation Society'. The goal is the 'Reformation of Manners'. The positive delta reflects the Victorian ethos forming: earnestness, discipline, and charity.",
         "key_manifestations": [
           "William Wilberforce's first speech on Abolition (1789)",
@@ -3894,7 +3894,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance rises to 8.0% (\u0394v = +0.5%). The catalyst is the **Counter-Revolution**. Against the 'Atheism' of the French Jacobins, the British establishment turns to Evangelicalism. Burke praises religion as the 'cement of society'. The positive delta is driven by the alliance of Pietism and Conservatism.",
         "key_manifestations": [
           "Burke's 'Reflections' (1790), praising the 'religious consecration' of the state",
@@ -3904,7 +3904,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance rises to 8.5% (\u0394v = +0.5%). The catalyst is the **Second Great Awakening** (Cane Ridge looming). The frontier explodes with religious fervor. In England, the 'Evangelical Party' in the Church of England becomes dominant. The 'Age of Reason' (Paine) is met by the 'Age of Revival'.",
         "key_manifestations": [
           "Wilberforce's 'A Practical View of Christianity' (1797), bestseller",
@@ -3914,7 +3914,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 9.0,
+        "salience_share": 9.0,
         "description": "The cluster ends the century at 9.0% (\u0394v = +0.5%). It is fully revitalized. It successfully competed with the Enlightenment and won the hearts of the masses. It provides the moral energy for the 19th-century reforms (Abolition, Temperance, Factory Acts). The trajectory is a 'U' shape: strong start, dip in the rationalist mid-century, and massive resurgence at the end.",
         "key_manifestations": [
           "The Cane Ridge Revival (1801), the peak of the Second Awakening",
@@ -3930,7 +3930,7 @@ export const humeData = {
     "description": "This cluster traces the philosophical dismantling of the 'Spirit of Systems' (Descartes/Spinoza/Leibniz) which claimed to know the universe through pure reason. It moves from the empirical skepticism of Locke and Voltaire, through the radical destruction of Hume, to the critical synthesis of Kant. It represents the Enlightenment's turn against its own rationalist origins, asserting that human reason is limited to experience (phenomena) and cannot know the thing-in-itself (noumena). It is the intellectual suicide of Dogmatism.",
     "trajectory": {
       "1700": {
-        "variance_explained": 1.0,
+        "salience_share": 1.0,
         "description": "The cluster begins at 1.0%. The **catalyst** is the dominance of **System Building**. Malebranche, Spinoza, and Leibniz are constructing vast metaphysical castles. The variance is low because the critique is still underground (Bayle). The cultural assumption is that Reason can know God and the Soul.",
         "key_manifestations": [
           "Leibniz's correspondence (defending the system)",
@@ -3940,7 +3940,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 1.2,
+        "salience_share": 1.2,
         "description": "The variance rises to 1.2% (\u0394v = +0.2%). The catalyst is **Locke's legacy**. His rejection of 'Innate Ideas' begins to erode the foundation of rationalist metaphysics. If the mind is a blank slate, how can we know the Infinite? The positive delta reflects the slow seepage of Empiricism into the Continent.",
         "key_manifestations": [
           "Locke's 'Essay' (French translation by Coste, 1700)",
@@ -3950,7 +3950,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 1.5,
+        "salience_share": 1.5,
         "description": "The variance rises to 1.5% (\u0394v = +0.3%). The catalyst is **Berkeley**. His 'Principles' (1710) attack the concept of 'Matter'. While an Idealist, his method is radically empirical: if you can't perceive it, it doesn't exist. This undermines the 'Substance' of the schoolmen.",
         "key_manifestations": [
           "George Berkeley's 'Principles of Human Knowledge' (1710)",
@@ -3960,7 +3960,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 1.8,
+        "salience_share": 1.8,
         "description": "The variance rises to 1.8% (\u0394v = +0.3%). The catalyst is the **French Regency**. The relaxed censorship allows a critique of the 'System' of the Church and State, which spills over into philosophy. The 'Moderns' begin to mock the 'geometry' of the 'Ancients'.",
         "key_manifestations": [
           "Montesquieu's 'Persian Letters' (1721), mocking theological disputes",
@@ -3970,7 +3970,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 2.2,
+        "salience_share": 2.2,
         "description": "The variance rises to 2.2% (\u0394v = +0.4%). The catalyst is **Newtonianism**. Newton's 'Hypotheses non fingo' (I frame no hypotheses) becomes the slogan. Science describes *how* (gravity) but refuses to explain *why* (metaphysics). The positive delta is driven by the prestige of the anti-metaphysical scientist.",
         "key_manifestations": [
           "The spread of Newtonianism in France (Maupertuis)",
@@ -3980,7 +3980,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance rises to 2.5% (\u0394v = +0.3%). The catalyst is **Voltaire in England**. He sees a land where Locke and Newton rule, and metaphysics is laughed at. He prepares to import this 'anti-system' virus to France. The positive delta reflects the weaponization of British empiricism.",
         "key_manifestations": [
           "Voltaire's 'Letters on the English' (1733, prep here)",
@@ -3990,7 +3990,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.5%). The catalyst is **Pope's 'Essay on Man'**. 'Presume not God to scan'. The proper study of mankind is Man. This popularizes the limit of reason. Metaphysics is arrogance; empiricism is humility.",
         "key_manifestations": [
           "Alexander Pope's 'Essay on Man' (1733)",
@@ -4000,7 +4000,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The variance jumps to 4.0% (\u0394v = +1.0%). The catalyst is **Hume's 'Treatise' (1739)**. He destroys the 'Self', 'Causation', and 'Induction'. It is the nuclear option. He shows that metaphysics is just 'sophistry and illusion'. The positive delta is the shock of total skepticism.",
         "key_manifestations": [
           "David Hume's 'A Treatise of Human Nature' (1739)",
@@ -4010,7 +4010,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance rises to 4.5% (\u0394v = +0.5%). The catalyst is the **Condillac**. His 'Essay on the Origin of Human Knowledge' (1746) reduces all mental activity to transformed sensation. Metaphysics is just language confusion. The positive delta reflects the French adoption of radical empiricism.",
         "key_manifestations": [
           "Condillac's 'Essai' (1746)",
@@ -4020,7 +4020,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance rises to 5.0% (\u0394v = +0.5%). The catalyst is the **Encyclop\u00e9die**. D'Alembert's 'Preliminary Discourse' (1751) creates a genealogy of knowledge that excludes metaphysics, placing it in the attic of 'superstition'. The System-Builders are now viewed as dinosaurs.",
         "key_manifestations": [
           "D'Alembert's 'Preliminary Discourse' (1751)",
@@ -4030,7 +4030,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance rises to 5.5% (\u0394v = +0.5%). The catalyst is **Voltaire's 'Microm\u00e9gas' (1752)**. He mocks the philosophers who think they know the soul. The critique moves from the seminar room to the salon. Metaphysics is a joke. The positive delta is driven by satire.",
         "key_manifestations": [
           "Voltaire's 'Microm\u00e9gas' (1752)",
@@ -4040,7 +4040,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance rises to 6.0% (\u0394v = +0.5%). The catalyst is **Candide (1759)**. 'Optimism' (Leibniz) is destroyed not by argument, but by the Lisbon Earthquake and a syphilis-ridden tutor. 'Let us cultivate our garden'\u2014abandon metaphysics for practice. This is the peak of the destructive phase.",
         "key_manifestations": [
           "Voltaire's 'Candide' (1759)",
@@ -4050,7 +4050,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance rises to 6.5% (\u0394v = +0.5%). The catalyst is **Kant's Pre-Critical Period**. He reads Hume. He wakes from his 'dogmatic slumber'. He realizes the old Wolffian metaphysics is a 'dream of a spirit-seer'. The focus shifts to the *conditions* of knowledge.",
         "key_manifestations": [
           "Kant's 'Dreams of a Spirit-Seer' (1766)",
@@ -4060,7 +4060,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 7.0,
+        "salience_share": 7.0,
         "description": "The variance rises to 7.0% (\u0394v = +0.5%). The catalyst is the **System of Nature (1770)**. Holbach constructs a *new* system\u2014Materialism. But this triggers a backlash. The 'Critique' must now attack Materialism as well as Idealism. The positive delta reflects the exhaustion of simple skepticism.",
         "key_manifestations": [
           "Baron d'Holbach's 'System of Nature' (1770)",
@@ -4070,7 +4070,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance rises to 7.5% (\u0394v = +0.5%). The catalyst is the **Silent Decade**. Kant is silent for 10 years, building the Critical philosophy. The intellectual world waits. The Skepticism of Hume has left a vacuum: if we can't know cause/effect, science is impossible. The crisis is total.",
         "key_manifestations": [
           "The 'Pantheism Controversy' (Jacobi vs Lessing), prep here",
@@ -4080,7 +4080,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance rises to 8.0% (\u0394v = +0.5%). The catalyst is the **Dialogues**. Hume's posthumous work destroys the Argument from Design. There is no rational bridge to God. The positive delta reflects the need for a new foundation. The 'Common Sense' school tries to fill it, but lacks rigor.",
         "key_manifestations": [
           "Hume's 'Dialogues Concerning Natural Religion' (1779)",
@@ -4090,7 +4090,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 9.5,
+        "salience_share": 9.5,
         "description": "The variance peaks at 9.5% (\u0394v = +1.5%). The catalyst is the **Critique of Pure Reason (1781)**. Kant's 'Copernican Revolution'. The mind does not conform to objects; objects conform to the mind. Space/Time are forms of intuition, not things. Metaphysics is impossible as a science of the transcendent, but possible as a critique of reason. This dominates the next 50 years.",
         "key_manifestations": [
           "Immanuel Kant's 'Critique of Pure Reason' (1781)",
@@ -4100,7 +4100,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 9.0,
+        "salience_share": 9.0,
         "description": "The variance dips to 9.0% (\u0394v = -0.5%). The catalyst is **Practical Reason**. Kant's Second Critique (1788) restores God, Freedom, and Immortality as 'Postulates' of morality. He rebuilds what he destroyed, but on a moral, not metaphysical, basis. The negative delta reflects the shift from pure critique to moral construction.",
         "key_manifestations": [
           "Kant's 'Critique of Practical Reason' (1788)",
@@ -4110,7 +4110,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance falls to 8.5% (\u0394v = -0.5%). The catalyst is **Fichte**. He radicalizes Kant. If the 'Thing-in-Itself' is unknowable, get rid of it. The 'I' posits the 'Not-I'. The 'System' returns! German Idealism begins to rebuild the metaphysical castles Kant destroyed, but now based on the Ego. The critique phase is ending.",
         "key_manifestations": [
           "Kant's 'Critique of Judgement' (1790), the bridge between nature and freedom",
@@ -4120,7 +4120,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance falls to 8.0% (\u0394v = -0.5%). The displacing force is **Romanticism**. The Romantics (Novalis, Schlegel) embrace the 'Intellectual Intuition' that Kant denied. They seek the Absolute through Art, not Critique. The 'System' is replaced by the 'Fragment'.",
         "key_manifestations": [
           "Schelling's 'Ideas for a Philosophy of Nature' (1797)",
@@ -4130,7 +4130,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The cluster ends the century at 7.5% (\u0394v = -0.5%). The critique has done its work. Dogmatism is dead. But the hunger for the Absolute remains. The 19th century will see the rise of the **Hegelian System**\u2014a new metaphysics of History and Spirit that claims to have absorbed the critique. The cycle begins again.",
         "key_manifestations": [
           "Schelling's 'System of Transcendental Idealism' (1800)",
@@ -4146,7 +4146,7 @@ export const humeData = {
     "description": "This cluster captures the nascent but accelerating shift from organic/animal power to mineral/mechanical power. It tracks the development of the steam engine, the mechanization of textiles, and the factory system. Initially a niche concern of engineers and tinkerers (Cluster #3 application), it explodes in the last quarter of the century to become the defining material fact of the modern world. It changes the coordinate space of culture from 'Nature' to 'Production'.",
     "trajectory": {
       "1700": {
-        "variance_explained": 0.5,
+        "salience_share": 0.5,
         "description": "The cluster begins at a negligible 0.5%. The **catalyst** is the **mining crisis**. Mines are flooding. Savery invents the 'Miner's Friend' (1698), a steam pump. It is dangerous and inefficient. Industry is still 'Manufacture' (hand-made). The variance is low because it affects only a few coal pits.",
         "key_manifestations": [
           "Thomas Savery's steam pump patent (1698)",
@@ -4156,7 +4156,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 0.6,
+        "salience_share": 0.6,
         "description": "The variance rises to 0.6% (\u0394v = +0.1%). The catalyst is **Newcomen's Atmospheric Engine** (1712, dev here). It is the first practical steam engine. It uses a piston. It is the Adam of the machine age. But it is huge, stationary, and fuel-hungry. It is a 'mining tool', not a 'cultural force' yet.",
         "key_manifestations": [
           "Thomas Newcomen's experiments with steam",
@@ -4166,7 +4166,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 0.8,
+        "salience_share": 0.8,
         "description": "The variance creeps to 0.8% (\u0394v = +0.2%). The catalyst is the **Silk Mill**. Lombe's Mill at Derby (1719, stolen from Italy). It is the first factory: 5 floors, water power, 300 workers. It proves that machines can replace skilled labor. The positive delta is the proof of concept.",
         "key_manifestations": [
           "The Newcomen Engine erected at Dudley Castle (1712)",
@@ -4176,7 +4176,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 1.0,
+        "salience_share": 1.0,
         "description": "The variance rises to 1.0% (\u0394v = +0.2%). The catalyst is the **Iron Industry**. Darby's cast iron pots are cheaper than brass. The 'Consumer Revolution' (Cluster #4) demands cheap goods. The machine begins to serve the market. But wood shortages still constrain growth.",
         "key_manifestations": [
           "Abraham Darby I's death (1717), the secret of coke iron spreads slowly",
@@ -4186,7 +4186,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 1.2,
+        "salience_share": 1.2,
         "description": "The variance rises to 1.2% (\u0394v = +0.2%). The catalyst is **Kay's Flying Shuttle** (1733, prep here). The 'Weaving' speeds up, creating a 'Spinning' bottleneck. This imbalance drives innovation. The positive delta is the realization that one invention necessitates another.",
         "key_manifestations": [
           "The Calico Acts (1721), protecting wool but incentivizing cotton innovation",
@@ -4196,7 +4196,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 1.4,
+        "salience_share": 1.4,
         "description": "The variance rises to 1.4% (\u0394v = +0.2%). The catalyst is the **Road Turnpike Acts**. Goods must move. The infrastructure of the industrial age is being laid. The canal age is foreshadowed. The positive delta is the integration of the national market.",
         "key_manifestations": [
           "The creation of Turnpike Trusts",
@@ -4206,7 +4206,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 1.6,
+        "salience_share": 1.6,
         "description": "The variance rises to 1.6% (\u0394v = +0.2%). The catalyst is **John Kay's Flying Shuttle (1733)**. It doubles the weaver's speed. It provokes the first machine-breaking riots. The 'Luddite' instinct is born with the machine. The positive delta is the social friction of progress.",
         "key_manifestations": [
           "John Kay's Flying Shuttle (1733)",
@@ -4216,7 +4216,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 1.8,
+        "salience_share": 1.8,
         "description": "The variance rises to 1.8% (\u0394v = +0.2%). The catalyst is **Paul and Wyatt's Spinning Machine (1738)**. It fails commercially but proves that rollers can spin. The intellectual capital of mechanization is accumulating. The positive delta is the shift from 'craft mystery' to 'mechanical principle'.",
         "key_manifestations": [
           "Lewis Paul and John Wyatt's patent (1738)",
@@ -4226,7 +4226,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 2.2,
+        "salience_share": 2.2,
         "description": "The variance rises to 2.2% (\u0394v = +0.4%). The catalyst is **Huntsman's Crucible Steel (1740)**. High-quality steel for tools and springs. The machine needs hard parts. The clockmaker's precision moves to the factory. The positive delta is the material upgrade.",
         "key_manifestations": [
           "Benjamin Huntsman's crucible steel process (1740)",
@@ -4236,7 +4236,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance rises to 2.5% (\u0394v = +0.3%). The catalyst is **Roebuck's Lead Chamber Process (1746)**. Sulfuric acid is mass-produced. Bleaching speeds up. Chemistry joins mechanics. The positive delta is the industrialization of time\u2014nature's bleaching time (months) is reduced to days.",
         "key_manifestations": [
           "John Roebuck's lead chamber process (1746)",
@@ -4246,7 +4246,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.5%). The catalyst is the **Canal Age**. The Sankey Canal (1757). Coal meets Iron. The transport bottleneck is broken. The positive delta reflects the physical reshaping of the landscape. The 'Navvy' workforce appears.",
         "key_manifestations": [
           "The Sankey Canal (authorized 1755)",
@@ -4256,7 +4256,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance rises to 3.5% (\u0394v = +0.5%). The catalyst is **The Seven Years' War**. The demand for cannon, uniform, and ship drives mass production. The state is the first great consumer of industrial output. The positive delta is the military-industrial linkage.",
         "key_manifestations": [
           "The Carron Ironworks founded (1759)",
@@ -4266,7 +4266,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance jumps to 4.5% (\u0394v = +1.0%). The catalyst is **The Spinning Jenny (1764)** and **Watt's Condenser (1765)**. Hargreaves mechanizes the human hand. Watt perfects the engine. The positive delta is the tipping point. The 'Industrial Revolution' proper begins. The machine is no longer a curiosity.",
         "key_manifestations": [
           "James Hargreaves's Spinning Jenny (1764)",
@@ -4276,7 +4276,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance rises to 5.5% (\u0394v = +1.0%). The catalyst is **Arkwright's Water Frame (1769)**. The 'Factory System' is patented. Unlike the Jenny (cottage), the Frame needs a mill and water power. It creates the 'Working Class'. The positive delta is social: the separation of home and work.",
         "key_manifestations": [
           "Richard Arkwright's Water Frame patent (1769)",
@@ -4286,7 +4286,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance climbs to 6.5% (\u0394v = +1.0%). The catalyst is **Cromford Mill (1771)**. Arkwright builds the first water-powered cotton mill. It runs day and night. The clock rules the worker. The positive delta is the birth of 'Modern Times'. Smith visits factories and sees the Division of Labor.",
         "key_manifestations": [
           "Cromford Mill operational (1771)",
@@ -4296,7 +4296,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 7.5,
+        "salience_share": 7.5,
         "description": "The variance rises to 7.5% (\u0394v = +1.0%). The catalyst is **The Boulton & Watt Engine (1776)**. The first commercial engines are sold. They are 4x more efficient than Newcomen. The positive delta is the liberation of power from geography. You don't need a river; you need coal.",
         "key_manifestations": [
           "The first Boulton & Watt engine installed (1776)",
@@ -4306,7 +4306,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance rises to 8.5% (\u0394v = +1.0%). The catalyst is **Cort's Puddling Process (1784)**. Wrought iron becomes cheap and abundant. The 'Age of Iron' begins. Also, Watt's 'Rotative' engine (1782) allows steam to drive mills. The mill moves to the city. The positive delta is the urbanization of industry.",
         "key_manifestations": [
           "Henry Cort's puddling patent (1784)",
@@ -4316,7 +4316,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 9.2,
+        "salience_share": 9.2,
         "description": "The variance peaks at 9.2% (\u0394v = +0.7%). The catalyst is **Cartwright's Power Loom (1785)**. The last stage of cloth making is mechanized. The 'Textile Revolution' is technically complete. The positive delta reflects the exponential growth of cotton imports. The 'Dark Satanic Mills' begin to appear.",
         "key_manifestations": [
           "Edmund Cartwright's Power Loom (1785)",
@@ -4326,7 +4326,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 9.5,
+        "salience_share": 9.5,
         "description": "The variance rises to 9.5% (\u0394v = +0.3%). The catalyst is the **Cotton Gin (1793)**. Eli Whitney mechanizes the raw material in America. This revives slavery to feed the British mills. The industrial chain is global. The positive delta is the grim linkage between Manchester steam and Mississippi slavery.",
         "key_manifestations": [
           "Eli Whitney's Cotton Gin (1793)",
@@ -4336,7 +4336,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 9.8,
+        "salience_share": 9.8,
         "description": "The variance rises to 9.8% (\u0394v = +0.3%). The catalyst is **War Production**. The Napoleonic Wars demand mass industrial output. Standardization begins (Marc Brunel's blocks). The positive delta is the state's total reliance on the machine to survive.",
         "key_manifestations": [
           "Jenner's Smallpox Vaccine (1796), industrializing health",
@@ -4346,7 +4346,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 10.0,
+        "salience_share": 10.0,
         "description": "The cluster ends the century at 10.0% (\u0394v = +0.2%). It is the **New Reality**. The 19th century will be defined by the smoke, the speed, and the class conflict generated here. The organic rhythm of the 1700s is dead; the mechanical rhythm of the 1800s has begun. This is the Great Divergence.",
         "key_manifestations": [
           "Volta's Battery (1800), the next revolution (electricity)",
@@ -4362,7 +4362,7 @@ export const humeData = {
     "description": "This cluster tracks the shift in the life sciences from a mechanistic view (animals as machines) to a 'Vitalist' view (life as a unique, active force). It centers on the obsession with classifying the natural world (Linnaeus) and describing its organic history (Buffon). It represents the moment when 'Natural History' becomes a dominant cultural passion, distinct from Physics, laying the groundwork for evolutionary thought.",
     "trajectory": {
       "1700": {
-        "variance_explained": 0.8,
+        "salience_share": 0.8,
         "description": "The cluster begins at 0.8%. The catalyst is the prestige of **Natural Theology**. Observing nature is a way to admire God's design. The variance is low because biology is still subordinate to the mechanical philosophy of Descartes (beast-machines).",
         "key_manifestations": [
           "John Ray's 'The Wisdom of God Manifested in the Works of the Creation' (1691, active influence)",
@@ -4372,7 +4372,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 1.0,
+        "salience_share": 1.0,
         "description": "The variance rises to 1.0% (\u0394v = +0.2%). The catalyst is the **collection craze**. Aristocrats begin to amass 'Cabinets of Curiosities'. The positive delta is driven by the influx of colonial specimens (Cluster #13). The chaos of new species demands a system.",
         "key_manifestations": [
           "Hans Sloane's massive collection (later British Museum)",
@@ -4382,7 +4382,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 1.2,
+        "salience_share": 1.2,
         "description": "The variance rises to 1.2% (\u0394v = +0.2%). The catalyst is the failure of pure mechanism to explain regeneration (polyps/hydra). Scientists begin to suspect a 'vital' force. The positive delta reflects the limitations of Newtonian physics applied to life.",
         "key_manifestations": [
           "Bradley's studies on plant sexuality",
@@ -4392,7 +4392,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 1.5,
+        "salience_share": 1.5,
         "description": "The variance rises to 1.5% (\u0394v = +0.3%). The catalyst is **Linnaeus's 'Systema Naturae' (1735)**. He organizes the chaos of life into Kingdom, Class, Order, Genus, Species based on sexual organs. The positive delta is the 'Imperial' conquest of nature by naming it. It provides a universal language for science.",
         "key_manifestations": [
           "Carl Linnaeus's 'Systema Naturae' (1st ed. 1735)",
@@ -4402,7 +4402,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 2.0,
+        "salience_share": 2.0,
         "description": "The variance rises to 2.0% (\u0394v = +0.5%). The catalyst is **Trembley's Polyp (1744)**. The discovery that a hydra can regenerate its head shocks the mechanical worldview. It suggests matter has an intrinsic power. This fuels 'Materialist Vitalism' (Diderot/La Mettrie).",
         "key_manifestations": [
           "Abraham Trembley's experiments on the Hydra (1744)",
@@ -4412,7 +4412,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance climbs to 2.5% (\u0394v = +0.5%). The catalyst is **Buffon's 'Natural History' (1749-88)**. Buffon rejects Linnaeus's rigid categories for a fluid, historical description of nature. He suggests species can change (degenerate) over time. The positive delta is the birth of 'Deep Time' and organic history.",
         "key_manifestations": [
           "Buffon's 'Histoire Naturelle' (begun 1749)",
@@ -4422,7 +4422,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 2.8,
+        "salience_share": 2.8,
         "description": "The variance rises to 2.8% (\u0394v = +0.3%). The catalyst is **Rousseau's Botany**. Rousseau popularizes botany as a sentimental communion with nature, distinct from dry science. The positive delta reflects the gender shift: botany becomes the accepted science for women.",
         "key_manifestations": [
           "Rousseau's 'Letters on Botany' (later, interest starts here)",
@@ -4432,7 +4432,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.2%). The catalyst is the **Cook Voyages**. The discovery of Australian flora/fauna (Kangaroos) explodes the European categories. Nature is weirder than Linnaeus thought. The positive delta is the influx of 'exotic' biology.",
         "key_manifestations": [
           "Banks and Solander's collections from the Endeavour voyage",
@@ -4442,7 +4442,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance rises to 3.5% (\u0394v = +0.5%). The catalyst is **Goethe** and **Herder**. They propose an 'Ur-pflanze' (archetypal plant) and see nature as a dynamic, unifying force. Vitalism merges with Romanticism (Naturphilosophie).",
         "key_manifestations": [
           "Goethe's 'Metamorphosis of Plants' (1790, studies here)",
@@ -4452,7 +4452,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The variance peaks at 4.0% (\u0394v = +0.5%). The catalyst is **Lamarck** and **Cuvier**. Lamarck proposes early evolution (1800). Cuvier establishes extinction (1796) via the Mammoth. The mechanical view of life is dead; the historical/evolutionary view begins.",
         "key_manifestations": [
           "Cuvier's paper on the Megalonyx and Mammoth (1796)",
@@ -4468,7 +4468,7 @@ export const humeData = {
     "description": "This cluster tracks the emergence of a distinct, articulate female intellectual culture. It moves from the 'Salonni\u00e8re' (facilitator of male genius) to the 'Bluestocking' (independent scholar) to the 'Radical Feminist' (Wollstonecraft). It fights the Lockean exclusion of women from the social contract and uses the Novel and the Letter as weapons of cultural authority.",
     "trajectory": {
       "1700": {
-        "variance_explained": 0.5,
+        "salience_share": 0.5,
         "description": "The cluster begins at 0.5%. The catalyst is **Mary Astell**. Her 'Serious Proposal' (1694) advocates for a female secular monastery (college). The variance is low because female publication is stigmatized. The 'Learned Lady' is a figure of satire.",
         "key_manifestations": [
           "Mary Astell's 'Some Reflections upon Marriage' (1700)",
@@ -4478,7 +4478,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 1.0,
+        "salience_share": 1.0,
         "description": "The variance rises to 1.0% (\u0394v = +0.5%). The catalyst is **Lady Mary Wortley Montagu**. Her inoculation campaign and letters establish a female empirical authority. The positive delta is driven by the rise of the novel\u2014a genre women can dominate because it requires no Latin.",
         "key_manifestations": [
           "Lady Mary Wortley Montagu's smallpox inoculation advocacy (1721)",
@@ -4488,7 +4488,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 1.5,
+        "salience_share": 1.5,
         "description": "The variance rises to 1.5% (\u0394v = +0.5%). The catalyst is the **Bluestocking Circle**. Elizabeth Montagu and others begin to organize intellectual evenings in London that ban gambling and prioritize conversation. This institutionalizes female intellect outside the court.",
         "key_manifestations": [
           "Elizabeth Montagu's early correspondence",
@@ -4498,7 +4498,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 2.2,
+        "salience_share": 2.2,
         "description": "The variance rises to 2.2% (\u0394v = +0.7%). The catalyst is **Macaulay and Du Ch\u00e2telet**. Catherine Macaulay writes a major history of England (1763), invading a male genre. Du Ch\u00e2telet's Newton translation is published (1759). The 'Female Genius' is recognized.",
         "key_manifestations": [
           "Catherine Macaulay's 'History of England' (1763)",
@@ -4508,7 +4508,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.8%). The catalyst is the **Revolutionary Debate**. Women participate in the political ferment. The 'Rights of Man' begs the question of the 'Rights of Woman'. The positive delta is the politicization of the domestic sphere.",
         "key_manifestations": [
           "Olympe de Gouges's plays and pamphlets",
@@ -4518,7 +4518,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance peaks at 4.5% (\u0394v = +1.5%). The catalyst is **Mary Wollstonecraft**. 'Vindication of the Rights of Woman' (1792) applies liberal logic to gender. It is the manifesto of the cluster. However, the backlash (Polwhele's 'Unsex'd Females') is immediate and severe.",
         "key_manifestations": [
           "Mary Wollstonecraft's 'A Vindication of the Rights of Woman' (1792)",
@@ -4534,7 +4534,7 @@ export const humeData = {
     "description": "This cluster represents the 'Shadow' of the Enlightenment. It uses irony, parody, and the mock-heroic to deflate the pretensions of Rationalism, Commercialism, and Optimism. It is the mode of Swift, Pope, and Hogarth. It functions as a cultural regulator, attacking 'Dullness' and 'Pride'. Its trajectory is high in the first half of the century (The Augustan Age) and declines as 'Sentiment' and 'Sincerity' (Cluster #2) make irony seem cruel.",
     "trajectory": {
       "1700": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The cluster starts high at 4.0%. The catalyst is **Swift's 'Tale of a Tub' (1704)**. It tears apart religious and learned corruption. The variance is high because the 'Moderns' provide ample targets for the 'Ancients'.",
         "key_manifestations": [
           "Jonathan Swift's 'A Tale of a Tub' (1704)",
@@ -4544,7 +4544,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance peaks at 4.5% (\u0394v = +0.5%). The catalyst is the **South Sea Bubble** and **Walpole**. The corruption of the age demands a scourge. 'Gulliver's Travels' (1726) and 'The Dunciad' (1728) are the masterpieces of the cluster. They map the geography of human folly.",
         "key_manifestations": [
           "Jonathan Swift's 'Gulliver's Travels' (1726)",
@@ -4554,7 +4554,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance drops to 3.5% (\u0394v = -1.0%). The catalyst is the **Rise of Sentiment**. Richardson's sincerity makes Pope's malice look outdated. Fielding tries to blend satire with the novel ('Joseph Andrews'), saving the mode by transforming it into 'Comic Epic'.",
         "key_manifestations": [
           "Henry Fielding's 'Joseph Andrews' (1742)",
@@ -4564,7 +4564,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance falls to 2.5% (\u0394v = -1.0%). The displacing force is **Rousseau**. Irony is seen as a symptom of a corrupt, artificial society. The 'Man of Feeling' is earnest, never ironic. Satire retreats to political caricature (Gillray).",
         "key_manifestations": [
           "Charles Churchill's political satires (Wilkes era)",
@@ -4574,7 +4574,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 1.5,
+        "salience_share": 1.5,
         "description": "The variance drops to 1.5% (\u0394v = -1.0%). The catalyst is **Revolutionary Earnestness**. There is no room for jokes in the Terror. The Mock-Heroic seems frivolous when real heroes are dying. Satire becomes purely partisan propaganda (The Anti-Jacobin).",
         "key_manifestations": [
           "Gillray's cartoons, savage but not philosophical",
@@ -4590,7 +4590,7 @@ export const humeData = {
     "description": "This cluster represents the 'Underground Enlightenment'. It is the network of secret societies (Masons, Rosicrucians, Illuminati) that provided a ritualized, egalitarian space for the elite and middle class to mix. It creates a 'Cosmopolitan Brotherhood' that bypasses Church and State. Trajectorially, it rises steadily to become a massive pan-European infrastructure, then collapses/mutates under the paranoia of the French Revolution (Conspiracy Theories).",
     "trajectory": {
       "1710": {
-        "variance_explained": 1.0,
+        "salience_share": 1.0,
         "description": "The cluster begins at 1.0%. The catalyst is the **Grand Lodge of London (1717)**. Operative masonry (stonecutters) becomes Speculative masonry (gentlemen). It provides a ritual container for Deist and Newtonian ideas (God as Architect).",
         "key_manifestations": [
           "Founding of the Premier Grand Lodge of England (1717)",
@@ -4600,7 +4600,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance rises to 2.5% (\u0394v = +1.5%). The catalyst is **Continental Expansion**. The movement explodes in France and Germany. It becomes a venue for the 'Republic of Letters'. The Pope bans it (1738), which only increases its allure as a forbidden, liberal space.",
         "key_manifestations": [
           "Papal Bull 'In eminenti' (1738)",
@@ -4610,7 +4610,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance rises to 3.5% (\u0394v = +1.0%). The catalyst is the **Occult Turn**. High degrees, Alchemy, and Mesmerism infiltrate the lodges (Cagliostro, Willermoz). It becomes a laboratory for the irrational side of the Enlightenment (Illuminism).",
         "key_manifestations": [
           "The founding of the Grand Orient de France (1773)",
@@ -4620,7 +4620,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 2.0,
+        "salience_share": 2.0,
         "description": "The variance drops to 2.0% (\u0394v = -1.5%). The catalyst is the **Conspiracy Panic**. Abb\u00e9 Barruel (1797) accuses Masons of causing the Revolution. The secret society is reimagined as a terrorist cell. The network is driven underground or suppressed.",
         "key_manifestations": [
           "Abb\u00e9 Barruel's 'Memoirs Illustrating the History of Jacobinism' (1797)",
@@ -4636,7 +4636,7 @@ export const humeData = {
     "description": "This cluster tracks the profound shift in the manipulation of physical space and the visual appreciation of nature: from the 'Formal Garden' (Versailles/Dutch) characterized by geometry, control, and imposition of will, to the 'Landscape Garden' (English) characterized by serpentine lines, hidden boundaries (Ha-Ha), and the imitation of idealized 'wild' nature. It is the spatial expression of Liberalism and Anti-Absolutism: nature must be 'free' from the tyranny of the straight line. It becomes a major aesthetic export from England to the Continent, influencing philosophy, painting, and urban planning.",
     "trajectory": {
       "1700": {
-        "variance_explained": 0.5,
+        "salience_share": 0.5,
         "description": "The cluster begins at a low 0.5%. The **catalyst** is the absolute dominance of the **Formal Garden** (Le N\u00f4tre/Dutch style). The cultural ideal is the domination of nature by reason: straight avenues, clipped hedges, and symmetrical parterres. The variance is low because the 'Natural' aesthetic has almost no physical expression yet, existing only as a literary idea in the classics (Virgil's Arcadia) or a theological concept. The landscape is an extension of the house's architecture, rigid and enclosed.",
         "key_manifestations": [
           "Timothy Nourse's 'Campania Foelix' (1700), advocating for some 'natural' planting but within formal bounds",
@@ -4646,7 +4646,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 0.7,
+        "salience_share": 0.7,
         "description": "The variance rises marginally to 0.7% (\u0394v = +0.2%). The catalyst is the **Whig critique of Absolutism**. Writers began to associate the rigid, straight lines of the French garden with the tyranny of Louis XIV. The positive delta reflects a growing intellectual desire for a 'British' style that reflects liberty, though the physical gardens remain largely formal. The shift is theoretical: nature should not be tortured.",
         "key_manifestations": [
           "John Vanbrugh's initial designs for Castle Howard (begun 1699, garden planning 1705), hinting at a grander, less rigid scale",
@@ -4656,7 +4656,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 1.0,
+        "salience_share": 1.0,
         "description": "The variance rises to 1.0% (\u0394v = +0.3%). The catalyst is the literary intervention of **Addison and Pope**. In the *Spectator*, Addison famously attacks the 'pincushion' style of topiary. 'Nature abhors a straight line'. The positive delta is driven by the 'Augustan' attempt to recreate the gardens of Rome, which were imagined as pastoral and free. The Ha-Ha (sunken fence) makes its first tentative appearances, removing the visible wall.",
         "key_manifestations": [
           "Addison's Spectator No. 414 (1712), 'On the Pleasures of the Imagination', arguing for the wilder garden",
@@ -4666,7 +4666,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 1.3,
+        "salience_share": 1.3,
         "description": "The variance rises to 1.3% (\u0394v = +0.3%). The catalyst is **Stephen Switzer**. He promotes 'Ferme Orn\u00e9e' (Ornamental Farm)\u2014integrating the garden with the working landscape. This breaks the barrier between the 'Pleasure Garden' and the 'Country'. The positive delta reflects the expansion of the aesthetic gaze to the horizon. The landscape is no longer a room; it is a view.",
         "key_manifestations": [
           "Stephen Switzer's 'The Nobleman, Gentleman, and Gardener's Recreation' (1715)",
@@ -4676,7 +4676,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 1.6,
+        "salience_share": 1.6,
         "description": "The variance rises to 1.6% (\u0394v = +0.3%). The catalyst is the **Palladian Revival**. Lord Burlington and William Kent begin to design gardens that complement their Roman villas. Kent 'leaped the fence, and saw that all nature was a garden'. The positive delta is driven by the painterly eye; the garden is designed as a series of 3D landscape paintings (Claude glass).",
         "key_manifestations": [
           "William Kent's early work at Chiswick House (gardens begun c. 1725)",
@@ -4686,7 +4686,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 2.0,
+        "salience_share": 2.0,
         "description": "The variance climbs to 2.0% (\u0394v = +0.4%). The catalyst is **The Grotto and the Ruin**. The 'Natural' garden includes artificial 'accidents' to evoke emotion. Pope's Grotto at Twickenham becomes a pilgrimage site. The positive delta reflects the integration of **Sensibility (Cluster #2)** into the landscape\u2014the garden is meant to provoke feelings (melancholy, solitude), not just admiration of order.",
         "key_manifestations": [
           "Completion of Pope's Grotto (ongoing project)",
@@ -4696,7 +4696,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance rises to 2.5% (\u0394v = +0.5%). The catalyst is **Stowe**. Under Lord Cobham, Stowe becomes the ultimate political text in grass and stone. The 'Temple of British Worthies' (Whig heroes) establishes the garden as a site of **Republican Virtue (Cluster #9)**. The positive delta is the politicization of the style: The 'English Garden' is Liberty; the 'French Garden' is Tyranny.",
         "key_manifestations": [
           "The Temple of Ancient Virtue at Stowe (1730s)",
@@ -4706,7 +4706,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.5%). The catalyst is the **Death of the Topiary**. By now, the elite fashion has decisively turned. Old formal gardens are being ripped up. The 'Serpentine Line' (Line of Beauty) becomes the governing geometric principle. The positive delta reflects the widespread adoption of the style beyond the avant-garde.",
         "key_manifestations": [
           "William Kent's designs for Merlin's Cave (1735) at Richmond",
@@ -4716,7 +4716,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance rises to 3.5% (\u0394v = +0.5%). The catalyst is **William Shenstone**. His garden, 'The Leasowes', becomes famous not for temples, but for its manipulation of views and water. It is the 'Poetic' garden. The positive delta is driven by the middle-class emulation of the aristocratic style on a smaller scale.",
         "key_manifestations": [
           "William Shenstone's development of The Leasowes (1743 onwards)",
@@ -4726,7 +4726,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The variance rises to 4.0% (\u0394v = +0.5%). The catalyst is the **Rococo Influence** (Cluster #11). The winding paths and playful follies (Chinese Houses) mirror the asymmetry of Rococo furniture. The garden is a place of 'Variety' and 'Surprise'. The positive delta reflects the peak of the 'emblematic' garden\u2014full of statues and inscriptions to be read like a book.",
         "key_manifestations": [
           "The Chinese House at Stowe (1738, widely copied by 1745)",
@@ -4736,7 +4736,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance rises to 4.5% (\u0394v = +0.5%). The catalyst is **Lancelot 'Capability' Brown**. He arrives at Croome Court (1751). He revolutionizes the style by *removing* the clutter. No more temples, no more inscriptions. Just water, wood, and lawn. He industrializes the 'Natural'. The positive delta is the emergence of the 'Brownian' hegemony.",
         "key_manifestations": [
           "Capability Brown's commission at Croome Court (1751)",
@@ -4746,7 +4746,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance rises to 5.0% (\u0394v = +0.5%). The catalyst is **Brown's Success**. He moves to Blenheim (1764, but fame solidifies here). He creates vast artificial lakes that look entirely natural. The positive delta reflects the total transformation of the British landscape. The 'Park' replaces the 'Garden'. Nature is 'improved' to look more like Nature than Nature itself.",
         "key_manifestations": [
           "Capability Brown's work at Chatsworth and Burghley",
@@ -4756,7 +4756,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance rises to 5.5% (\u0394v = +0.5%). The catalyst is the **Continental Export**. The *Jardin Anglais* becomes the rage in France (Rousseau) and Germany (Goethe). It is the symbol of 'Enlightened Sensibility'. The positive delta is driven by the cultural prestige of the English model. Even Marie Antoinette wants a 'natural' village.",
         "key_manifestations": [
           "Rousseau's 'Julie' (1761), describing the 'Elys\u00e9e' garden (anti-formal)",
@@ -4766,7 +4766,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance dips slightly to 5.2% (\u0394v = -0.3%). The displacing force is **The Critique of Brown**. The 'Brownian' style is becoming a formula: 'belt, clump, and water'. It is criticized for being bald and monotonous. The negative delta reflects the loss of 'Variety' and 'Poetry' in the pursuit of pure smoothness. The 'Picturesque' counter-movement begins to stir.",
         "key_manifestations": [
           "Shenstone's 'Unconnected Thoughts on Gardening' (1764), defending the poetic style",
@@ -4776,7 +4776,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance rises to 5.5% (\u0394v = +0.3%). The catalyst is the **Picturesque Tour**. William Gilpin defines the 'Picturesque' as a distinct category: rough, irregular, and fit for painting. This challenges Brown's smooth perfection. The positive delta is the infusion of the 'Sublime' (Cluster #12) into the garden.",
         "key_manifestations": [
           "William Gilpin's 'Observations on the River Wye' (1770, pub. 1782)",
@@ -4786,7 +4786,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 5.8,
+        "salience_share": 5.8,
         "description": "The variance rises to 5.8% (\u0394v = +0.3%). The catalyst is the **Ermenonville**. The Marquis de Girardin creates a Rousseauian garden in France. It is the resting place of Rousseau (1778). The garden becomes a site of secular pilgrimage and melancholic reflection. The positive delta reflects the total triumph of the *Jardin Anglais* over the French formal style in France itself.",
         "key_manifestations": [
           "The Tomb of Rousseau on the Isle of Poplars at Ermenonville (1778)",
@@ -4796,7 +4796,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance dips to 5.5% (\u0394v = -0.3%). The catalyst is the **death of Brown (1783)**. The 'Smooth' style is exhausted. The displacing force is the intellectual attack by **Knight and Price**. They mock Brown's 'shaven lawns' and demand a return to the intricate, the rough, and the Gothic. The negative delta reflects the fragmentation of the consensus.",
         "key_manifestations": [
           "Richard Payne Knight's 'The Landscape' (1794, ideas forming)",
@@ -4806,7 +4806,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 5.2,
+        "salience_share": 5.2,
         "description": "The variance falls to 5.2% (\u0394v = -0.3%). The displacing force is the **Social Critique**. The 'Landscape Garden' is increasingly seen as a symbol of aristocratic selfishness (enclosure). Cowper and others attack the 'improvement' that displaces the poor. The aesthetic is tainted by politics.",
         "key_manifestations": [
           "William Cowper's 'The Task' (1785), criticizing the improver's 'omnipotence'",
@@ -4816,7 +4816,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance drops to 5.0% (\u0394v = -0.2%). The catalyst is the **Picturesque Controversy**. Uvedale Price and Richard Payne Knight publish their manifestos (1794). They demand a landscape that looks like a Ruysdael painting\u2014rotten logs, gypsies, and weeds. Brown is demonized. The positive delta of the *new* style is offset by the collapse of the *old*.",
         "key_manifestations": [
           "Uvedale Price's 'Essay on the Picturesque' (1794)",
@@ -4826,7 +4826,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 4.8,
+        "salience_share": 4.8,
         "description": "The variance falls to 4.8% (\u0394v = -0.2%). The displacing force is **Humphry Repton**. He compromises. He brings back the terrace near the house (Formal) and keeps the park (Natural) at a distance. The 'Natural Aesthetic' is being domesticated. It is no longer a radical philosophical statement, but a bourgeois comfort.",
         "key_manifestations": [
           "Humphry Repton's mature style (Sheringham Bower)",
@@ -4836,7 +4836,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The cluster ends the century at 4.5% (\u0394v = -0.3%). The 'Natural Garden' is now the standard western model, but it has lost its revolutionary variance. It is the background setting for the **Romantic** poets (Cluster #12) who prefer *actual* wild nature (The Lake District) to the constructed 'Garden'. The aesthetic energy moves from 'Improvement' to 'Preservation'.",
         "key_manifestations": [
           "Wordsworth's 'Lyrical Ballads' (1800 preface), finding nature in the wild, not the park",
@@ -4852,7 +4852,7 @@ export const humeData = {
     "description": "This cluster tracks the dramatic transformation of matter theory: from the qualitative, semi-alchemical framework of 'Phlogiston' (Stahl) to the quantitative, mass-conserving 'New Chemistry' of Lavoisier (Oxygen). It represents the second great phase of the Scientific Revolution, applying the rigor of Newtonian measurement to the invisible world of gases ('airs'). Culturally, it signifies the final disenchantment of matter\u2014stripping it of occult essences and reducing it to weighable elements\u2014and acts as a direct driver of industrial application (bleaching, ballooning) and philosophical materialism.",
     "trajectory": {
       "1700": {
-        "variance_explained": 1.0,
+        "salience_share": 1.0,
         "description": "The cluster begins at 1.0%. The **catalyst** is the dominance of **Georg Stahl's Phlogiston Theory**. Chemistry is still distinct from 'Natural Philosophy' (Physics); it is a messy art of apothecaries and metallurgists. The variance is low because the field lacks a unifying mathematical framework. 'Phlogiston' (the element of fire released during combustion) provides a qualitative explanation that satisfies the intuition but resists quantification.",
         "key_manifestations": [
           "Georg Ernst Stahl's 'Zymotechnia fundamentalis' (1697, influence dominant), defining Phlogiston",
@@ -4862,7 +4862,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 1.2,
+        "salience_share": 1.2,
         "description": "The variance rises to 1.2% (\u0394v = +0.2%). The catalyst is the **application of Newcomen's Engine** (Cluster #20). While mechanical, it focuses attention on the properties of 'vapor' and heat. The positive delta reflects the growing interest in the physical behavior of gases, though they are still generically termed 'Air'. The intellectual barrier is the belief that 'Air' is a single elemental substance.",
         "key_manifestations": [
           "Hauksbee's experiments on physio-mechanical properties of air",
@@ -4872,7 +4872,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 1.3,
+        "salience_share": 1.3,
         "description": "The variance creeps to 1.3% (\u0394v = +0.1%). The force of stasis is the success of the Phlogiston theory in explaining metallurgy (smelting). It works pragmatically for the mining industry. The cultural focus is on the 'visible' mechanics of Newton, leaving the 'invisible' transformations of chemistry in the background.",
         "key_manifestations": [
           "The popularity of 'Chemical' medicine (Iatrochemistry) vs 'Mechanical' medicine",
@@ -4882,7 +4882,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 1.5,
+        "salience_share": 1.5,
         "description": "The variance rises to 1.5% (\u0394v = +0.2%). The catalyst is the **Geoffroy's Table of Affinities (1718)**. It introduces a quasi-Newtonian logic to chemical reactions: substances bond based on fixed laws of attraction. This positive delta reflects the first major attempt to make chemistry predictive rather than just descriptive. It professionalizes the field within the French Academy.",
         "key_manifestations": [
           "\u00c9tienne Fran\u00e7ois Geoffroy's 'Table des diff\u00e9rents rapports' (1718)",
@@ -4892,7 +4892,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 1.8,
+        "salience_share": 1.8,
         "description": "The variance rises to 1.8% (\u0394v = +0.3%). The catalyst is **Stephen Hales**. His 'Vegetable Staticks' (1727, experiments begun) revolutionizes the study of 'Airs'. He invents the pneumatic trough, allowing gases to be collected over water. The positive delta is technological: the ability to capture and measure gases opens a new domain of reality.",
         "key_manifestations": [
           "Stephen Hales's development of the pneumatic trough",
@@ -4902,7 +4902,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 2.0,
+        "salience_share": 2.0,
         "description": "The variance rises to 2.0% (\u0394v = +0.2%). The catalyst is the **institutionalization of Chemistry**. University chairs (Leiden, Edinburgh) begin to teach chemistry as a distinct science, not just a branch of medicine. The positive delta reflects the separation of Chemistry from Alchemy. However, the conceptual framework remains qualitative (Earth, Air, Fire, Water + Phlogiston).",
         "key_manifestations": [
           "Herman Boerhaave's dominance as the 'Teacher of Europe'",
@@ -4912,7 +4912,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 2.2,
+        "salience_share": 2.2,
         "description": "The variance rises to 2.2% (\u0394v = +0.2%). The catalyst is the **spread of Hales's methods**. Scientists across Europe begin to replicate pneumatic experiments. The positive delta is driven by the accumulation of anomalies: why do some 'airs' kill animals? Why do some burn? The single-element theory of Air is under strain.",
         "key_manifestations": [
           "Voltaire's interest in chemistry (studying with Boerhaave)",
@@ -4922,7 +4922,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance rises to 2.5% (\u0394v = +0.3%). The catalyst is **Rouelle's Lectures**. He revitalizes French chemistry, teaching a generation to look for general laws of salts and acids. The positive delta reflects the shift from collecting recipes to organizing principles. Chemistry begins to rival Physics in prestige.",
         "key_manifestations": [
           "G.F. Rouelle appointed demonstrator at the Jardin du Roi",
@@ -4932,7 +4932,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 2.8,
+        "salience_share": 2.8,
         "description": "The variance rises to 2.8% (\u0394v = +0.3%). The catalyst is the **Encyclop\u00e9die Project**. The *philosophes* embrace chemistry, particularly metallurgy and dyeing, as the key to industrial progress. The positive delta is driven by the 'Utility' of chemistry (Cluster #10 linkage). It is the science of the workshop.",
         "key_manifestations": [
           "Gabriel-Fran\u00e7ois Venel's article on 'Chymie' for the Encyclop\u00e9die (asserting chemistry's independence from physics)",
@@ -4942,7 +4942,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.2%). The catalyst is **industrial demand**. Roebuck's Lead Chamber Process (1746) mass-produces sulfuric acid. The positive delta is the proof that chemical scale-up is possible. This feeds the textile industry's need for bleaching. Chemistry moves from the lab bench to the factory floor.",
         "key_manifestations": [
           "John Roebuck's Lead Chamber Process (1746)",
@@ -4952,7 +4952,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 4.0,
+        "salience_share": 4.0,
         "description": "The variance jumps to 4.0% (\u0394v = +1.0%). The catalyst is **Joseph Black's 'Fixed Air' (1754)**. This is the breakthrough. Black proves that 'Air' is not a single element; there is a distinct gas (Carbon Dioxide) that can be fixed in solids (magnesia) and released. The positive delta is the birth of **Pneumatic Chemistry**. The invisible world is now plural.",
         "key_manifestations": [
           "Joseph Black's experiments on 'Magnesia Alba' (1754)",
@@ -4962,7 +4962,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance rises to 4.5% (\u0394v = +0.5%). The catalyst is the diffusion of Black's discovery. It triggers a gold rush for new 'Airs'. The positive delta reflects the excitement of discovering new forms of matter. However, the Phlogiston theory persists as the explanation for *why* these airs behave differently.",
         "key_manifestations": [
           "The translation of Black's work into French",
@@ -4972,7 +4972,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance rises to 5.0% (\u0394v = +0.5%). The catalyst is **Cavendish's 'Inflammable Air' (Hydrogen)** (1766, work begun). He isolates a gas that burns. He thinks it is pure Phlogiston. The positive delta is the accumulation of distinct gases. The Phlogiston theory is stretched to accommodate them (Phlogistonated Air, Dephlogistonated Air).",
         "key_manifestations": [
           "Henry Cavendish's 'On Factitious Airs' (1766)",
@@ -4982,7 +4982,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance rises to 5.5% (\u0394v = +0.5%). The catalyst is **Lavoisier's Gypsum Experiments**. He begins to apply strict quantitative balance-sheet methods. Matter cannot be created or destroyed. The positive delta is the introduction of the 'Conservation of Mass' as a methodological rule, challenging the vagueness of Phlogiston.",
         "key_manifestations": [
           "Lavoisier's early papers on gypsum and hydrometry (1765-68)",
@@ -4992,7 +4992,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 6.5,
+        "salience_share": 6.5,
         "description": "The variance climbs to 6.5% (\u0394v = +1.0%). The catalyst is **Priestley's Isolation of 'Dephlogisticated Air' (Oxygen)** (1774). Priestley isolates the gas that supports combustion but interprets it backwards (air *lacking* phlogiston). Simultaneously, Scheele discovers it independently. The positive delta is the discovery of the 'Fuel of Life', even if misnamed.",
         "key_manifestations": [
           "Joseph Priestley's isolation of Oxygen (1774)",
@@ -5002,7 +5002,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance explodes to 8.0% (\u0394v = +1.5%). The catalyst is **Lavoisier's Attack on Phlogiston**. In 'Reflections on Phlogiston' (1783, ideas forming 1775-78), he realizes Priestley's gas is the active agent of combustion. He names it 'Oxygen' (Acid-maker). The positive delta is the **Paradigm Shift**. Combustion is not the loss of Phlogiston; it is the combination with Oxygen.",
         "key_manifestations": [
           "Lavoisier's 'Opuscules physiques et chymiques' (1774)",
@@ -5012,7 +5012,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 9.0,
+        "salience_share": 9.0,
         "description": "The variance rises to 9.0% (\u0394v = +1.0%). The catalyst is the **Water Controversy**. Cavendish burns Hydrogen and Oxygen and gets... Water. This shocks the world. Water is not an element; it is a compound ($H_2O$). Lavoisier interprets this correctly (1783). The negative delta for Phlogiston is terminal; its last defenders (Priestley) look increasingly isolated.",
         "key_manifestations": [
           "Cavendish's synthesis of water (1781)",
@@ -5022,7 +5022,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 9.5,
+        "salience_share": 9.5,
         "description": "The variance peaks at 9.5% (\u0394v = +0.5%). The catalyst is the **New Nomenclature (1787)**. Lavoisier, Guyton, and Berthollet rename the universe. 'Dephlogisticated Air' becomes 'Oxygen'. 'Vitriol' becomes 'Sulfate'. The positive delta is the linguistic conquest. To speak of chemistry is now to speak Lavoisier's language. The revolution is codified.",
         "key_manifestations": [
           "The 'M\u00e9thode de nomenclature chimique' (1787)",
@@ -5032,7 +5032,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 9.8,
+        "salience_share": 9.8,
         "description": "The variance rises to 9.8% (\u0394v = +0.3%). The catalyst is **Lavoisier's 'Elementary Treatise' (1789)**. The first modern textbook. It lists the 'Elements' (simple substances), eliminating Earth/Air/Fire/Water. It includes Light and Caloric (heat) as elements, the last vestiges of the old physics. The positive delta is the finality of the system.",
         "key_manifestations": [
           "Lavoisier's 'Trait\u00e9 \u00c9l\u00e9mentaire de Chimie' (1789)",
@@ -5042,7 +5042,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 9.5,
+        "salience_share": 9.5,
         "description": "The variance dips to 9.5% (\u0394v = -0.3%). The displacing force is **Galvanism**. Volta and Galvani discover 'Animal Electricity'. Chemistry begins to look towards electricity for the *cause* of affinity. The focus shifts from weighing gases to the electric pile. Lavoisier's system is static; electricity is dynamic.",
         "key_manifestations": [
           "Galvani's experiments on frog legs (1791, popularized)",
@@ -5052,7 +5052,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 9.2,
+        "salience_share": 9.2,
         "description": "The cluster ends the century at 9.2% (\u0394v = -0.3%). The catalyst is **The Voltaic Pile (1800)**. Electrolysis becomes possible. Davy will soon use it to isolate new elements (Sodium/Potassium). The 'Chemical Revolution' of mass is over; the 'Electrochemical Revolution' begins. Dalton is preparing Atomic Theory. The field is fully mature.",
         "key_manifestations": [
           "Alessandro Volta's Battery (1800)",
@@ -5068,7 +5068,7 @@ export const humeData = {
     "description": "This cluster tracks the cultural redefinition of 'Childhood' from a state of original sin (miniature adult/imp) to a state of privileged innocence and natural goodness (Rousseau). It encompasses the boom in children's literature, toys, and pedagogical theory (Locke to Edgeworth). It represents the 'softening' of the domestic sphere and the application of Enlightenment empiricism to the developing mind.",
     "trajectory": {
       "1700": {
-        "variance_explained": 1.5,
+        "salience_share": 1.5,
         "description": "The cluster begins at 1.5%. The **catalyst** is **Locke's 'Some Thoughts Concerning Education' (1693)**. It rejects the rod for the carrot. However, the dominant view (Puritan/Augustinian) still sees the child as a vessel of sin to be broken. The variance is low because the child is not yet a major consumer category.",
         "key_manifestations": [
           "John Locke's 'Some Thoughts Concerning Education' (1693, dominant text)",
@@ -5078,7 +5078,7 @@ export const humeData = {
         ]
       },
       "1705": {
-        "variance_explained": 1.7,
+        "salience_share": 1.7,
         "description": "The variance rises to 1.7% (\u0394v = +0.2%). The catalyst is the **decline of Infant Mortality** (slight) among the elite and the rise of the nuclear family ideal (Cluster #28). Parents begin to invest more emotional capital in children. The positive delta reflects the slow seepage of Lockean kindness into the nursery.",
         "key_manifestations": [
           "Addison's essays criticizing harsh discipline",
@@ -5088,7 +5088,7 @@ export const humeData = {
         ]
       },
       "1710": {
-        "variance_explained": 1.9,
+        "salience_share": 1.9,
         "description": "The variance creeps to 1.9% (\u0394v = +0.2%). The catalyst is **Isaac Watts**. His 'Divine Songs' (1715, prep here) are written specifically for the child's mind\u2014gentle, rhyming, and memorable. The positive delta is the recognition that the child's mind requires a specific *genre* of literature.",
         "key_manifestations": [
           "Isaac Watts's 'Divine Songs Attempted in Easy Language for the Use of Children' (1715)",
@@ -5098,7 +5098,7 @@ export const humeData = {
         ]
       },
       "1715": {
-        "variance_explained": 2.2,
+        "salience_share": 2.2,
         "description": "The variance rises to 2.2% (\u0394v = +0.3%). The catalyst is the **Fairy Tale**. Perrault's 'Tales of Mother Goose' (trans. 1729) begins to circulate. Though originally for court ladies, they drift down to the nursery. The positive delta reflects the tension between 'Instruction' (Locke) and 'Delight' (Fantasy).",
         "key_manifestations": [
           "The English translation of Perrault's Fairy Tales (1729)",
@@ -5108,7 +5108,7 @@ export const humeData = {
         ]
       },
       "1720": {
-        "variance_explained": 2.5,
+        "salience_share": 2.5,
         "description": "The variance rises to 2.5% (\u0394v = +0.3%). The catalyst is **Commercial Publishing**. Publishers realize children are a market. The 'Chapbook' trade explodes\u2014cheap, crude stories of Guy of Warwick and Tom Thumb. The elite try to suppress them, but the child consumes them. The positive delta is the birth of the child consumer.",
         "key_manifestations": [
           "The proliferation of Chapbooks (penny histories)",
@@ -5118,7 +5118,7 @@ export const humeData = {
         ]
       },
       "1725": {
-        "variance_explained": 2.8,
+        "salience_share": 2.8,
         "description": "The variance rises to 2.8% (\u0394v = +0.3%). The catalyst is the **Enlightenment Mother**. The ideal of the mother as the primary educator (rather than the servant) gains traction. The positive delta reflects the 'domesticizing' of education. The home is the school of virtue.",
         "key_manifestations": [
           "The growing critique of boarding schools for girls",
@@ -5128,7 +5128,7 @@ export const humeData = {
         ]
       },
       "1730": {
-        "variance_explained": 3.0,
+        "salience_share": 3.0,
         "description": "The variance rises to 3.0% (\u0394v = +0.2%). The catalyst is the **Philosophical Toy**. The microscope and the magic lantern become tools for 'Rational Recreation'. Play is justified if it teaches science. The positive delta is the merger of Cluster #3 (Newton) with the Nursery.",
         "key_manifestations": [
           "The 'Magic Lantern' shows for education",
@@ -5138,7 +5138,7 @@ export const humeData = {
         ]
       },
       "1735": {
-        "variance_explained": 3.5,
+        "salience_share": 3.5,
         "description": "The variance rises to 3.5% (\u0394v = +0.5%). The catalyst is **The Foundling Hospital (1739)**. Captain Coram campaigns for the rights of the abandoned child. The positive delta is the recognition of the child's right to *life* by the state/philanthropy. The child is a national asset.",
         "key_manifestations": [
           "Thomas Coram's charter for the Foundling Hospital (1739)",
@@ -5148,7 +5148,7 @@ export const humeData = {
         ]
       },
       "1740": {
-        "variance_explained": 4.5,
+        "salience_share": 4.5,
         "description": "The variance jumps to 4.5% (\u0394v = +1.0%). The catalyst is **John Newbery**. He opens the first 'Juvenile Library' in London (1744). 'A Little Pretty Pocket-Book' (1744) is the first book explicitly for 'Instruction and Amusement'. He includes a ball or pincushion. The positive delta is the commercial institutionalization of Childhood.",
         "key_manifestations": [
           "John Newbery's 'A Little Pretty Pocket-Book' (1744)",
@@ -5158,7 +5158,7 @@ export const humeData = {
         ]
       },
       "1745": {
-        "variance_explained": 5.0,
+        "salience_share": 5.0,
         "description": "The variance rises to 5.0% (\u0394v = +0.5%). The catalyst is **Sarah Fielding**. 'The Governess' (1749) establishes the school story. It validates the moral struggles of the child. The positive delta is the psychological depth granted to the child. They are moral agents.",
         "key_manifestations": [
           "Sarah Fielding's 'The Governess, or The Little Female Academy' (1749)",
@@ -5168,7 +5168,7 @@ export const humeData = {
         ]
       },
       "1750": {
-        "variance_explained": 5.5,
+        "salience_share": 5.5,
         "description": "The variance rises to 5.5% (\u0394v = +0.5%). The catalyst is the **Campaign against Swaddling**. Medical men (Cadogan) and Philosophers argue for 'Freedom of Limbs'. The positive delta is the physical liberation of the infant. The child must be able to crawl and explore (Empiricism).",
         "key_manifestations": [
           "The widespread abandonment of swaddling in England",
@@ -5178,7 +5178,7 @@ export const humeData = {
         ]
       },
       "1755": {
-        "variance_explained": 6.0,
+        "salience_share": 6.0,
         "description": "The variance rises to 6.0% (\u0394v = +0.5%). The catalyst is the **Moral Tale**. Authors begin to write secular parables. 'Goody Two-Shoes' (1765, Newbery) is the archetype: virtue is rewarded with wealth. The positive delta is the bourgeois ethic instilled in the child.",
         "key_manifestations": [
           "The History of Little Goody Two-Shoes (1765)",
@@ -5188,7 +5188,7 @@ export const humeData = {
         ]
       },
       "1760": {
-        "variance_explained": 8.0,
+        "salience_share": 8.0,
         "description": "The variance explodes to 8.0% (\u0394v = +2.0%). The catalyst is **Rousseau's 'Emile' (1762)**. This is the revolution. The child is not a blank slate (Locke) but a seed of natural goodness corrupted by society. Education must be 'Negative' (protecting from error) and 'Natural'. The positive delta is the **Romantic Conception of the Child**.",
         "key_manifestations": [
           "Jean-Jacques Rousseau's 'Emile, or On Education' (1762)",
@@ -5198,7 +5198,7 @@ export const humeData = {
         ]
       },
       "1765": {
-        "variance_explained": 8.5,
+        "salience_share": 8.5,
         "description": "The variance rises to 8.5% (\u0394v = +0.5%). The catalyst is the **Rousseauian Aftershock**. Parents begin keeping 'Baby Journals'. The child is observed like a botanical specimen. The positive delta is the scientific reverence for childhood development.",
         "key_manifestations": [
           "The Edgeworth family's educational experiments",
@@ -5208,7 +5208,7 @@ export const humeData = {
         ]
       },
       "1770": {
-        "variance_explained": 8.8,
+        "salience_share": 8.8,
         "description": "The variance rises to 8.8% (\u0394v = +0.3%). The catalyst is **Barbauld's 'Lessons for Children' (1778)**. She introduces large type, simple language, and conversational style. It is the invention of the 'Reader'. The positive delta is the pedagogical adaptation to the child's cognitive level.",
         "key_manifestations": [
           "Anna Laetitia Barbauld's 'Lessons for Children' (1778)",
@@ -5218,7 +5218,7 @@ export const humeData = {
         ]
       },
       "1775": {
-        "variance_explained": 9.0,
+        "salience_share": 9.0,
         "description": "The variance rises to 9.0% (\u0394v = +0.2%). The catalyst is **The Sunday School Movement (1780)**. Raikes brings literacy to the working-class child. The positive delta is the democratization of the 'Childhood' ideal, though for the poor it is about discipline, not freedom.",
         "key_manifestations": [
           "Robert Raikes founds the Sunday School movement (1780)",
@@ -5228,7 +5228,7 @@ export const humeData = {
         ]
       },
       "1780": {
-        "variance_explained": 9.2,
+        "salience_share": 9.2,
         "description": "The variance rises to 9.2% (\u0394v = +0.2%). The catalyst is **The Battle of the Books**. Trimmer attacks Fairy Tales (Cinderella) as dangerous lies. The 'Moralists' declare war on the 'Fantasts'. The positive delta is the intensity of the debate: what shapes the soul?",
         "key_manifestations": [
           "Sarah Trimmer's 'Guardian of Education' (later, roots here)",
@@ -5238,7 +5238,7 @@ export const humeData = {
         ]
       },
       "1785": {
-        "variance_explained": 9.5,
+        "salience_share": 9.5,
         "description": "The variance rises to 9.5% (\u0394v = +0.3%). The catalyst is **The Edgeworths**. 'Practical Education' (1798, ideas active). They combine Rousseau's naturalism with Lockean reason. No fairy tales, but lots of chemistry and mechanics. The positive delta is the 'Scientific' childhood.",
         "key_manifestations": [
           "Maria Edgeworth's 'Parent's Assistant' (1796)",
@@ -5248,7 +5248,7 @@ export const humeData = {
         ]
       },
       "1790": {
-        "variance_explained": 9.8,
+        "salience_share": 9.8,
         "description": "The variance rises to 9.8% (\u0394v = +0.3%). The catalyst is **Romanticism**. Blake and Wordsworth elevate the child to a spiritual prophet ('The child is father of the man'). The Rationalist (Edgeworth) vs Romantic (Blake) split opens. The positive delta is the Child as Messiah.",
         "key_manifestations": [
           "William Blake's 'Songs of Innocence and of Experience' (1794)",
@@ -5258,7 +5258,7 @@ export const humeData = {
         ]
       },
       "1795": {
-        "variance_explained": 9.5,
+        "salience_share": 9.5,
         "description": "The variance dips to 9.5% (\u0394v = -0.3%). The displacing force is **The Industrial Revolution** (Cluster #20). While the elite child is romanced, the poor child is enslaved in the factory. The 'Chimney Sweep' becomes the symbol of the lost innocence. The negative delta is the reality check.",
         "key_manifestations": [
           "Blake's 'The Chimney Sweeper' (1794)",
@@ -5268,7 +5268,7 @@ export const humeData = {
         ]
       },
       "1800": {
-        "variance_explained": 9.2,
+        "salience_share": 9.2,
         "description": "The cluster ends the century at 9.2% (\u0394v = -0.3%). The 'Invention' is complete. The child is a distinct category with its own clothes, books, and laws. But the split is permanent: The Romantic Child (Soul) vs The Rational Child (Mind) vs The Factory Child (Hand).",
         "key_manifestations": [
           "Wordsworth's 'Ode: Intimations of Immortality' (1804, ideas here)",

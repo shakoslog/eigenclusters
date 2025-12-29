@@ -62,7 +62,7 @@ A top eigencluster represents a fundamental mode of cultural variation that expl
 Key Principles
 1. Time-Integrated Importance
 - A cluster's rank is determined by its time-integrated variance explained over the entire period
-- For a cluster C over period T: Rank = ∫[t=0 to T](variance_explained(t)dt)
+- For a cluster C over period T: Rank = ∫[t=0 to T](salience_share(t)dt)
 - This means a cluster could be #1 overall while never being the highest at any specific point
 
 2. Temporal Distribution Properties
@@ -164,7 +164,7 @@ The LLM must output valid JSON with the structure:
       "description": "<STRING: paragraph of cluster description discussing its importance and what it represents>",
       "trajectory": {
         "<YEAR_1>": {
-          "variance_explained": <NUMBER: 0–100>,
+          "salience_share": <NUMBER: 0–100>,
           "description": "<STRING: 3-5 sentence long summary for that year>",
           "key_manifestations": [
             "<STRING: specific book reference 1>",
@@ -174,7 +174,7 @@ The LLM must output valid JSON with the structure:
           ]
         },
         "<YEAR_2>": {
-          "variance_explained": <NUMBER: 0–100>,
+          "salience_share": <NUMBER: 0–100>,
           "description": "<STRING>",
           "key_manifestations": [
             "<STRING>",
@@ -233,7 +233,7 @@ Important Constraints
 4. trajectory Object
    * Years from start_year to end_year in increments of the user-specified periodicity.
    * Each year has:
-      * variance_explained (0–100)
+      * salience_share (0–100)
          * cluster #1 > cluster #2 > #3, etc.
          * For partial coverage, the sum for all requested clusters < 100.
          * For complete coverage, sum for all included clusters = 100.
@@ -269,14 +269,14 @@ Final Instruction to the LLM
    * Use your cultural analysis knowledge and additional_context if applicable.
 5. Yearly Data
    * For each year in [start_year..end_year] (inclusive), at intervals of periodicity, assign:
-      * variance_explained (0–100)
+      * salience_share (0–100)
       * description (concise)
       * key_manifestations (4 specific references of books, films, art, or other specific media that can be looked up and read, watched, or listened to)
 6. Clusters Label
    * Format each cluster key as: "<CLUSTER_ID>_<short_snake_case_label>".
 7. Output Only Valid JSON
    * No bullet points, code fences, or additional commentary.
-8. Think carefully about the variance_explained for each year. Do not just make it up or blindly make all clusters the same.
+8. Think carefully about the salience_share for each year. Do not just make it up or blindly make all clusters the same.
 10. Generate complete data for all requested clusters. Do not use placeholders or comments as substitutes for actual data.
 11. Never add notes like `// Note: Additional clusters 2-5 would follow the same format`. Always generate the full request. Do not add placeholders for the user to fill-in.
 12. Important note about dates:

@@ -12,6 +12,9 @@ import rationalityPreset from './presets/rationality';
 import postwarJapanPreset from './presets/postwar-japan';
 import tylerCowenPreset from './presets/tyler-cowen';
 import literaturePreset from './presets/literature';
+import godPreset from './presets/god';
+import biologyPreset from './presets/biology';
+import americanCulturalEvolutionPreset from './presets/american_cultural_evolution_2019_2023';
 
 // Export all presets
 export const presets: PresetConfig[] = [
@@ -21,7 +24,10 @@ export const presets: PresetConfig[] = [
   rationalityPreset,
   postwarJapanPreset,
   tylerCowenPreset,
-  literaturePreset
+  literaturePreset,
+  godPreset,
+  biologyPreset,
+  americanCulturalEvolutionPreset
 ];
 
 // Function to get all presets (for compatibility with the dynamic import approach)

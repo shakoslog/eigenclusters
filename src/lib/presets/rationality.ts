@@ -33,7 +33,7 @@ export const rationalityData = {
         "description": "This cluster encompasses the profound shift towards empirical evidence and rational thought that fundamentally transformed the understanding of the natural world. It marks the transition from medieval scholasticism to scientific inquiry, emphasizing observation, experimentation, and the use of the scientific method.",
         "trajectory": {
           "1000": {
-            "variance_explained": 2,
+            "salience_share": 2,
             "description": "Early medieval period dominated by religious and feudal structures, limited empirical scientific exploration.",
             "key_manifestations": [
               "Alhazen's 'Book of Optics'",
@@ -43,7 +43,7 @@ export const rationalityData = {
             ]
           },
           "1100": {
-            "variance_explained": 2.5,
+            "salience_share": 2.5,
             "description": "Continued medieval period with gradual incorporation of empirical methods in scientific discourse.",
             "key_manifestations": [
               "Works of Gerard of Cremona",
@@ -53,7 +53,7 @@ export const rationalityData = {
             ]
           },
           "1200": {
-            "variance_explained": 3,
+            "salience_share": 3,
             "description": "Growth of empirical approaches in natural philosophy, setting the stage for future scientific breakthroughs.",
             "key_manifestations": [
               "Roger Bacon's advocacy for experimental science",
@@ -63,7 +63,7 @@ export const rationalityData = {
             ]
           },
           "1300": {
-            "variance_explained": 3.5,
+            "salience_share": 3.5,
             "description": "Prelude to the Renaissance with increased emphasis on observation and critical thinking.",
             "key_manifestations": [
               "Marin Mersenne's scientific collaborations",
@@ -73,7 +73,7 @@ export const rationalityData = {
             ]
           },
           "1400": {
-            "variance_explained": 4,
+            "salience_share": 4,
             "description": "Renaissance period brings a notable rise in scientific inquiry and empirical research.",
             "key_manifestations": [
               "Nicolaus Copernicus's heliocentric theory",
@@ -83,7 +83,7 @@ export const rationalityData = {
             ]
           },
           "1500": {
-            "variance_explained": 5,
+            "salience_share": 5,
             "description": "Heightened scientific exploration and empirical methods during the early Scientific Revolution.",
             "key_manifestations": [
               "Galileo Galilei's telescopic observations",
@@ -93,7 +93,7 @@ export const rationalityData = {
             ]
           },
           "1600": {
-            "variance_explained": 6,
+            "salience_share": 6,
             "description": "Scientific revolution accelerates with key figures establishing empirical science.",
             "key_manifestations": [
               "Isaac Newton's 'Principia Mathematica'",
@@ -103,7 +103,7 @@ export const rationalityData = {
             ]
           },
           "1700": {
-            "variance_explained": 6.2,
+            "salience_share": 6.2,
             "description": "Empiricism solidifies as a cornerstone of Enlightenment thought.",
             "key_manifestations": [
               "David Hume's empiricist philosophy",
@@ -113,7 +113,7 @@ export const rationalityData = {
             ]
           },
           "1800": {
-            "variance_explained": 6,
+            "salience_share": 6,
             "description": "Industrial Revolution intertwines with scientific progress, emphasizing applied empirical knowledge.",
             "key_manifestations": [
               "Charles Darwin's 'On the Origin of Species'",
@@ -123,7 +123,7 @@ export const rationalityData = {
             ]
           },
           "1900": {
-            "variance_explained": 5.5,
+            "salience_share": 5.5,
             "description": "Modern science integrates empirical methods with technological advancements, influencing global culture.",
             "key_manifestations": [
               "Quantum mechanics development",
@@ -133,7 +133,7 @@ export const rationalityData = {
             ]
           },
           "2000": {
-            "variance_explained": 5,
+            "salience_share": 5,
             "description": "Contemporary science continues to prioritize empiricism within a digital and interconnected world.",
             "key_manifestations": [
               "Human Genome Project's completion",
@@ -149,7 +149,7 @@ export const rationalityData = {
         "description": "This cluster captures the profound societal transformations driven by industrialization and technological advancement. It tracks the shift from agrarian economies to industrial powerhouses, the rise of mechanization, and the subsequent impact on daily life, urbanization, and economic structures.",
         "trajectory": {
           "1000": {
-            "variance_explained": 1,
+            "salience_share": 1,
             "description": "Predominantly agrarian societies with limited technological development.",
             "key_manifestations": [
               "Feudal agricultural practices",
@@ -159,7 +159,7 @@ export const rationalityData = {
             ]
           },
           "1100": {
-            "variance_explained": 1.5,
+            "salience_share": 1.5,
             "description": "Gradual increase in technological innovations within agrarian frameworks.",
             "key_manifestations": [
               "Watermill advancements",
@@ -169,7 +169,7 @@ export const rationalityData = {
             ]
           },
           "1200": {
-            "variance_explained": 2,
+            "salience_share": 2,
             "description": "Early stirrings of mechanization begin to alter production methods.",
             "key_manifestations": [
               "Windmills gaining prominence",
@@ -179,7 +179,7 @@ export const rationalityData = {
             ]
           },
           "1300": {
-            "variance_explained": 2.5,
+            "salience_share": 2.5,
             "description": "Transition towards more sophisticated industrial practices in select regions.",
             "key_manifestations": [
               "Advancements in metallurgy",
@@ -189,7 +189,7 @@ export const rationalityData = {
             ]
           },
           "1400": {
-            "variance_explained": 3,
+            "salience_share": 3,
             "description": "Renaissance-era innovations set the groundwork for future industrialization.",
             "key_manifestations": [
               "Leonardo da Vinci's mechanical designs",
@@ -199,7 +199,7 @@ export const rationalityData = {
             ]
           },
           "1500": {
-            "variance_explained": 3.5,
+            "salience_share": 3.5,
             "description": "Pre-industrial technological advancements fuel economic and social changes.",
             "key_manifestations": [
               "Introduction of gunpowder in warfare",
@@ -209,7 +209,7 @@ export const rationalityData = {
             ]
           },
           "1600": {
-            "variance_explained": 4,
+            "salience_share": 4,
             "description": "Scientific and industrial foundations begin to converge, paving the way for modern industrialization.",
             "key_manifestations": [
               "Invention of the mechanical clock",
@@ -219,7 +219,7 @@ export const rationalityData = {
             ]
           },
           "1700": {
-            "variance_explained": 4.5,
+            "salience_share": 4.5,
             "description": "The onset of the Industrial Revolution marks significant technological and economic shifts.",
             "key_manifestations": [
               "James Watt's improved steam engine",
@@ -229,7 +229,7 @@ export const rationalityData = {
             ]
           },
           "1800": {
-            "variance_explained": 5,
+            "salience_share": 5,
             "description": "Industrialization accelerates, reshaping economies, societies, and global dynamics.",
             "key_manifestations": [
               "The expansion of railways",
@@ -239,7 +239,7 @@ export const rationalityData = {
             ]
           },
           "1900": {
-            "variance_explained": 5,
+            "salience_share": 5,
             "description": "Technological innovations of the 20th century further revolutionize production and everyday life.",
             "key_manifestations": [
               "Automobile mass production pioneered by Ford",
@@ -249,7 +249,7 @@ export const rationalityData = {
             ]
           },
           "2000": {
-            "variance_explained": 4.5,
+            "salience_share": 4.5,
             "description": "The digital revolution and information technology define the modern era's industrial and technological landscape.",
             "key_manifestations": [
               "The rise of the internet and digital communication",
@@ -265,7 +265,7 @@ export const rationalityData = {
         "description": "This cluster addresses the dynamic shifts in religious belief systems, institutions, and their decreasing dominance in public life. It encompasses the Reformation, the Enlightenment's critique of religion, the rise of secular governance, and the diversification of spiritual expressions.",
         "trajectory": {
           "1000": {
-            "variance_explained": 7,
+            "salience_share": 7,
             "description": "Strong dominance of established religious institutions shaping societal norms and governance.",
             "key_manifestations": [
               "The power of the Catholic Church in Europe",
@@ -275,7 +275,7 @@ export const rationalityData = {
             ]
           },
           "1100": {
-            "variance_explained": 7,
+            "salience_share": 7,
             "description": "Religious institutions continue to hold significant influence over social and political life.",
             "key_manifestations": [
               "Crusades fueling religious fervor",
@@ -285,7 +285,7 @@ export const rationalityData = {
             ]
           },
           "1200": {
-            "variance_explained": 6.5,
+            "salience_share": 6.5,
             "description": "Emergence of religious orders and internal reforms begin to challenge existing structures.",
             "key_manifestations": [
               "Foundation of the Dominican and Franciscan orders",
@@ -295,7 +295,7 @@ export const rationalityData = {
             ]
           },
           "1300": {
-            "variance_explained": 6.5,
+            "salience_share": 6.5,
             "description": "Religious tensions and calls for reforms point towards future transformations.",
             "key_manifestations": [
               "The Avignon Papacy and its controversies",
@@ -305,7 +305,7 @@ export const rationalityData = {
             ]
           },
           "1400": {
-            "variance_explained": 6,
+            "salience_share": 6,
             "description": "Renaissance humanism begins to introduce secular ideas, challenging religious dominance.",
             "key_manifestations": [
               "Humanist scholars like Petrarch promoting secular learning",
@@ -315,7 +315,7 @@ export const rationalityData = {
             ]
           },
           "1500": {
-            "variance_explained": 6,
+            "salience_share": 6,
             "description": "The Protestant Reformation fundamentally changes the religious landscape of Europe.",
             "key_manifestations": [
               "Martin Luther's 95 Theses",
@@ -325,7 +325,7 @@ export const rationalityData = {
             ]
           },
           "1600": {
-            "variance_explained": 5.5,
+            "salience_share": 5.5,
             "description": "Religious diversity increases with the spread of various Protestant denominations and other faiths.",
             "key_manifestations": [
               "The Thirty Years' War driven by religious conflict",
@@ -335,7 +335,7 @@ export const rationalityData = {
             ]
           },
           "1700": {
-            "variance_explained": 5,
+            "salience_share": 5,
             "description": "The Enlightenment introduces secular philosophies that question traditional religious authority.",
             "key_manifestations": [
               "Voltaire's critiques of the Church",
@@ -345,7 +345,7 @@ export const rationalityData = {
             ]
           },
           "1800": {
-            "variance_explained": 4.5,
+            "salience_share": 4.5,
             "description": "Secular governance becomes more pronounced, and religious institutions begin to lose political power.",
             "key_manifestations": [
               "The rise of secular states and separation of church and state",
@@ -355,7 +355,7 @@ export const rationalityData = {
             ]
           },
           "1900": {
-            "variance_explained": 4,
+            "salience_share": 4,
             "description": "Secularization deepens as scientific advancements provide alternative explanations to religious narratives.",
             "key_manifestations": [
               "The rise of secular humanism",
@@ -365,7 +365,7 @@ export const rationalityData = {
             ]
           },
           "2000": {
-            "variance_explained": 3.5,
+            "salience_share": 3.5,
             "description": "Continued secularization alongside religious pluralism and new spiritual movements.",
             "key_manifestations": [
               "Increased religious diversity in globalization",
@@ -381,7 +381,7 @@ export const rationalityData = {
         "description": "This cluster explores the revival of classical learning and the emphasis on human potential and individualism that characterized the Renaissance. It examines the cultural, artistic, and intellectual flourishing that paved the way for modernity.",
         "trajectory": {
           "1000": {
-            "variance_explained": 1.5,
+            "salience_share": 1.5,
             "description": "Early medieval period with limited classical influence and predominantly religious focus.",
             "key_manifestations": [
               "Carolingian Renaissance's preservation of classical texts",
@@ -391,7 +391,7 @@ export const rationalityData = {
             ]
           },
           "1100": {
-            "variance_explained": 1.8,
+            "salience_share": 1.8,
             "description": "Continued medieval period with small-scale cultural and intellectual growth.",
             "key_manifestations": [
               "Development of Gothic architectural styles",
@@ -401,7 +401,7 @@ export const rationalityData = {
             ]
           },
           "1200": {
-            "variance_explained": 2,
+            "salience_share": 2,
             "description": "Intellectual currents slowly integrating humanist ideas with traditional religious frameworks.",
             "key_manifestations": [
               "Thomas Aquinas's synthesis of faith and reason",
@@ -411,7 +411,7 @@ export const rationalityData = {
             ]
           },
           "1300": {
-            "variance_explained": 2.3,
+            "salience_share": 2.3,
             "description": "Preparation for Renaissance with increased interest in classical antiquity and individual expression.",
             "key_manifestations": [
               "Dante Alighieri's 'Divine Comedy'",
@@ -421,7 +421,7 @@ export const rationalityData = {
             ]
           },
           "1400": {
-            "variance_explained": 3,
+            "salience_share": 3,
             "description": "Renaissance period begins, marked by a resurgence of classical learning and artistic innovation.",
             "key_manifestations": [
               "Leonardo da Vinci's multifaceted contributions",
@@ -431,7 +431,7 @@ export const rationalityData = {
             ]
           },
           "1500": {
-            "variance_explained": 3.5,
+            "salience_share": 3.5,
             "description": "Heightened Renaissance influence, with humanism deeply embedded in art, literature, and philosophy.",
             "key_manifestations": [
               "Niccolò Machiavelli's 'The Prince'",
@@ -441,7 +441,7 @@ export const rationalityData = {
             ]
           },
           "1600": {
-            "variance_explained": 3.5,
+            "salience_share": 3.5,
             "description": "Transition from Renaissance to Baroque, with lasting humanist influences in emerging artistic styles.",
             "key_manifestations": [
               "Baroque art's embrace of human emotion",
@@ -451,7 +451,7 @@ export const rationalityData = {
             ]
           },
           "1700": {
-            "variance_explained": 3,
+            "salience_share": 3,
             "description": "Enlightenment era continues humanist traditions while introducing new philosophical concepts.",
             "key_manifestations": [
               "Voltaire's writings promoting reason",
@@ -461,7 +461,7 @@ export const rationalityData = {
             ]
           },
           "1800": {
-            "variance_explained": 2.5,
+            "salience_share": 2.5,
             "description": "Humanist ideals influence burgeoning democratic and social movements during the Industrial Revolution.",
             "key_manifestations": [
               "The spread of liberal education",
@@ -471,7 +471,7 @@ export const rationalityData = {
             ]
           },
           "1900": {
-            "variance_explained": 2.2,
+            "salience_share": 2.2,
             "description": "Modernist movements blend humanist ideas with new artistic paradigms.",
             "key_manifestations": [
               "James Joyce's 'Ulysses' exploring human consciousness",
@@ -481,7 +481,7 @@ export const rationalityData = {
             ]
           },
           "2000": {
-            "variance_explained": 2,
+            "salience_share": 2,
             "description": "Humanist principles adapt to contemporary contexts, influenced by globalization and digitalization.",
             "key_manifestations": [
               "Global human rights initiatives",
@@ -497,7 +497,7 @@ export const rationalityData = {
         "description": "This cluster represents the Enlightenment's emphasis on reason, science, and individualism as guiding principles for societal progress and governance. It encompasses efforts to apply rational thought to politics, economics, and social institutions, fostering intellectual movements that prioritize logic and empirical evidence.",
         "trajectory": {
           "1000": {
-            "variance_explained": 0.5,
+            "salience_share": 0.5,
             "description": "Medieval Europe with limited emphasis on individual rationality within societal structures.",
             "key_manifestations": [
               "Feudal hierarchies based on tradition",
@@ -507,7 +507,7 @@ export const rationalityData = {
             ]
           },
           "1100": {
-            "variance_explained": 0.5,
+            "salience_share": 0.5,
             "description": "Continued medieval period with incremental intellectual developments.",
             "key_manifestations": [
               "Increased cathedral and university constructions",
@@ -517,7 +517,7 @@ export const rationalityData = {
             ]
           },
           "1200": {
-            "variance_explained": 0.6,
+            "salience_share": 0.6,
             "description": "Gradual infusion of more critical and rational thinking within intellectual circles.",
             "key_manifestations": [
               "Al-Ghazali's critiques of philosophy",
@@ -527,7 +527,7 @@ export const rationalityData = {
             ]
           },
           "1300": {
-            "variance_explained": 0.6,
+            "salience_share": 0.6,
             "description": "Intellectual currents begin to question traditional authority through more critical thinking.",
             "key_manifestations": [
               "William of Ockham's nominalism",
@@ -537,7 +537,7 @@ export const rationalityData = {
             ]
           },
           "1400": {
-            "variance_explained": 0.7,
+            "salience_share": 0.7,
             "description": "Humanist ideas broaden the scope for rational discourse, setting the foundation for Enlightenment.",
             "key_manifestations": [
               "Petrarch's humanist writings emphasizing individual thought",
@@ -547,7 +547,7 @@ export const rationalityData = {
             ]
           },
           "1500": {
-            "variance_explained": 0.7,
+            "salience_share": 0.7,
             "description": "Reformation challenges religious authority, promoting individual rational engagement.",
             "key_manifestations": [
               "Martin Luther's writings advocating personal faith",
@@ -557,7 +557,7 @@ export const rationalityData = {
             ]
           },
           "1600": {
-            "variance_explained": 1,
+            "salience_share": 1,
             "description": "Foundation of foundational Enlightenment ideas emphasizing reason and empirical evidence.",
             "key_manifestations": [
               "Publication of Bacon's 'Novum Organum'",
@@ -567,7 +567,7 @@ export const rationalityData = {
             ]
           },
           "1700": {
-            "variance_explained": 2,
+            "salience_share": 2,
             "description": "Enlightenment period peaking with widespread emphasis on rationality across disciplines.",
             "key_manifestations": [
               "Kant's 'Critique of Pure Reason'",
@@ -577,7 +577,7 @@ export const rationalityData = {
             ]
           },
           "1800": {
-            "variance_explained": 1.8,
+            "salience_share": 1.8,
             "description": "Post-Enlightenment era integrates rationality into emerging political and social structures.",
             "key_manifestations": [
               "Development of utilitarian thought by Jeremy Bentham",
@@ -587,7 +587,7 @@ export const rationalityData = {
             ]
           },
           "1900": {
-            "variance_explained": 1.3,
+            "salience_share": 1.3,
             "description": "Modern era continues to value rationality amidst technological and scientific advancements.",
             "key_manifestations": [
               "The rise of logical positivism in philosophy",
@@ -597,7 +597,7 @@ export const rationalityData = {
             ]
           },
           "2000": {
-            "variance_explained": 1.2,
+            "salience_share": 1.2,
             "description": "Contemporary society grapples with rationality in the context of digital information and global issues.",
             "key_manifestations": [
               "The role of algorithmic decision-making and AI",

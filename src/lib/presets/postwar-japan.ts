@@ -33,7 +33,7 @@ export const postwarJapanData = {
       "description": "This cluster encompasses Japan's efforts to rebuild its economy and infrastructure following World War II, heavily influenced by American presence and policies. The Americanization process affected various aspects of Japanese life, including education, culture, and industry, leading to significant societal changes centered in Tokyo.",
       "trajectory": {
         "1945": {
-          "variance_explained": 16,
+          "salience_share": 16,
           "description": "Immediate post-war period marked by devastation and the beginning of reconstruction efforts under Allied occupation, with Tokyo as the focal point.",
           "key_manifestations": [
             "1945: U.S. Occupation forces establish headquarters in Tokyo",
@@ -43,7 +43,7 @@ export const postwarJapanData = {
           ]
         },
         "1948": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Reconstruction gains momentum with American aid and policies reshaping Tokyo's urban landscape and societal norms.",
           "key_manifestations": [
             "1948: Education Reform Law implementing American-style 6-3-3-4 system",
@@ -53,7 +53,7 @@ export const postwarJapanData = {
           ]
         },
         "1951": {
-          "variance_explained": 13,
+          "salience_share": 13,
           "description": "With the Treaty of San Francisco, Japan regains sovereignty while maintaining strong American influences in governance and culture.",
           "key_manifestations": [
             "1951: San Francisco Peace Treaty signed, ending occupation",
@@ -63,7 +63,7 @@ export const postwarJapanData = {
           ]
         },
         "1954": {
-          "variance_explained": 11,
+          "salience_share": 11,
           "description": "Reconstruction phase transitions to economic development as American influence becomes more cultural than administrative.",
           "key_manifestations": [
             "1954: Self-Defense Forces established with American equipment",
@@ -73,7 +73,7 @@ export const postwarJapanData = {
           ]
         },
         "1957": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Reconstruction largely complete with American cultural presence normalized in everyday Japanese life.",
           "key_manifestations": [
             "1957: First American fast food chains open in Tokyo",
@@ -83,7 +83,7 @@ export const postwarJapanData = {
           ]
         },
         "1960": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Japan moves beyond reconstruction to economic independence while maintaining American cultural and military ties.",
           "key_manifestations": [
             "1960: Revision of U.S.-Japan Security Treaty sparks protests",
@@ -93,7 +93,7 @@ export const postwarJapanData = {
           ]
         },
         "1963": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Japan emerges as an economic partner to America rather than a dependent, marking the end of the reconstruction era.",
           "key_manifestations": [
             "1963: Kennedy-Ikeda communiqué establishing equal partnership",
@@ -109,7 +109,7 @@ export const postwarJapanData = {
       "description": "This cluster captures Japan's rapid economic expansion and industrialization post-World War II. Tokyo served as the epicenter, fostering sectors like manufacturing, electronics, and automotive industries, driving Japan to become a global economic powerhouse.",
       "trajectory": {
         "1945": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Industrial infrastructure devastated by war with production at 10% of pre-war levels; initial focus on basic needs.",
           "key_manifestations": [
             "1945: Industrial production at only 10% of pre-war levels",
@@ -119,7 +119,7 @@ export const postwarJapanData = {
           ]
         },
         "1948": {
-          "variance_explained": 11,
+          "salience_share": 11,
           "description": "Early industrial recovery begins with stabilization policies and emerging manufacturing sectors.",
           "key_manifestations": [
             "1949: Dodge Line monetary reforms curbing inflation",
@@ -129,7 +129,7 @@ export const postwarJapanData = {
           ]
         },
         "1951": {
-          "variance_explained": 14,
+          "salience_share": 14,
           "description": "Korean War creates 'special procurement boom' dramatically accelerating industrial growth and exports.",
           "key_manifestations": [
             "1951: Korean War special procurements total $600 million",
@@ -139,7 +139,7 @@ export const postwarJapanData = {
           ]
         },
         "1954": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Industrial expansion reaches sustained growth with heavy industries and manufacturing leading development.",
           "key_manifestations": [
             "1954: End of Korean War shifts focus to civilian production",
@@ -149,7 +149,7 @@ export const postwarJapanData = {
           ]
         },
         "1957": {
-          "variance_explained": 15.5,
+          "salience_share": 15.5,
           "description": "Economic miracle in full swing with 'Iwato Boom' driving unprecedented growth in manufacturing and exports.",
           "key_manifestations": [
             "1957: 'Iwato Boom' begins with industrial production rising 30%",
@@ -159,7 +159,7 @@ export const postwarJapanData = {
           ]
         },
         "1960": {
-          "variance_explained": 16,
+          "salience_share": 16,
           "description": "Pinnacle of high-growth era with Prime Minister Ikeda's Income Doubling Plan accelerating industrial expansion.",
           "key_manifestations": [
             "1960: Income Doubling Plan announced by Prime Minister Ikeda",
@@ -169,7 +169,7 @@ export const postwarJapanData = {
           ]
         },
         "1963": {
-          "variance_explained": 14,
+          "salience_share": 14,
           "description": "Sustained industrial growth transitioning toward higher technology sectors and international competition.",
           "key_manifestations": [
             "1963: Japan joins OECD as industrialized nation",
@@ -185,7 +185,7 @@ export const postwarJapanData = {
       "description": "This cluster highlights the flourishing of Japanese cinema post-WWII, with Tokyo serving as the central hub. The period saw the rise of influential directors, genres, and international recognition, reflecting societal changes and cultural shifts.",
       "trajectory": {
         "1945": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Post-war cinema industry severely restricted by occupation policies, with initial productions focused on democratization themes.",
           "key_manifestations": [
             "1945: Allied Occupation restricts film production to democratic themes",
@@ -195,7 +195,7 @@ export const postwarJapanData = {
           ]
         },
         "1948": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Film industry begins recovery with first international recognition for post-war Japanese cinema.",
           "key_manifestations": [
             "1948: Occupation censorship relaxed for Japanese productions",
@@ -205,7 +205,7 @@ export const postwarJapanData = {
           ]
         },
         "1951": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Golden Age of Japanese cinema begins with international acclaim and artistic innovation.",
           "key_manifestations": [
             "1951: 'Rashomon' wins Academy Award for Best Foreign Film",
@@ -215,7 +215,7 @@ export const postwarJapanData = {
           ]
         },
         "1954": {
-          "variance_explained": 13.5,
+          "salience_share": 13.5,
           "description": "Peak of Japanese cinema's Golden Age with masterworks achieving both artistic excellence and commercial success.",
           "key_manifestations": [
             "1954: 'Seven Samurai' by Akira Kurosawa revolutionizes action cinema",
@@ -225,7 +225,7 @@ export const postwarJapanData = {
           ]
         },
         "1957": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Cinema maintains prominence but faces first challenges from television as audience habits begin changing.",
           "key_manifestations": [
             "1957: 'Throne of Blood' adaptation of Macbeth gains critical acclaim",
@@ -235,7 +235,7 @@ export const postwarJapanData = {
           ]
         },
         "1960": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Japanese cinema adapts to television competition with experimental approaches and new directors emerging.",
           "key_manifestations": [
             "1960: Japanese New Wave cinema challenges traditional forms",
@@ -245,7 +245,7 @@ export const postwarJapanData = {
           ]
         },
         "1963": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "Cinema transitions toward new markets and forms as television becomes dominant entertainment medium.",
           "key_manifestations": [
             "1963: 'High and Low' by Kurosawa explores class divisions",
@@ -261,7 +261,7 @@ export const postwarJapanData = {
       "description": "This cluster focuses on the genesis and early development of manga and anime, with Tokyo at the heart. The period saw the emergence of influential artists and pioneering works that laid the foundation for Japan's globally recognized comics and animated media industries.",
       "trajectory": {
         "1945": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Manga exists primarily as newspaper strips and children's publications recovering from wartime paper shortages.",
           "key_manifestations": [
             "1945: Occupation authorities permit manga publication with restrictions",
@@ -271,7 +271,7 @@ export const postwarJapanData = {
           ]
         },
         "1948": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Foundations of modern manga established with innovative narrative techniques and expanding readership.",
           "key_manifestations": [
             "1949: Tezuka's cinematic storytelling techniques revolutionize manga",
@@ -281,7 +281,7 @@ export const postwarJapanData = {
           ]
         },
         "1951": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Manga industry growth accelerates with diversification of genres and establishment of weekly magazines.",
           "key_manifestations": [
             "1952: Tezuka's 'Astro Boy' manga serialization begins",
@@ -291,7 +291,7 @@ export const postwarJapanData = {
           ]
         },
         "1954": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Animation begins alongside expanding manga industry, with first television animation experiments.",
           "key_manifestations": [
             "1954: 'Mogura no Aventure' becomes first original Japanese animated film",
@@ -301,7 +301,7 @@ export const postwarJapanData = {
           ]
         },
         "1957": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Animation industry develops alongside flourishing manga, preparing for television medium.",
           "key_manifestations": [
             "1958: 'Hakujaden' (White Snake) becomes first color anime feature film",
@@ -311,7 +311,7 @@ export const postwarJapanData = {
           ]
         },
         "1960": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Manga industry flourishes as television animation begins, establishing foundation for anime industry.",
           "key_manifestations": [
             "1961: Tezuka's experimental animation 'Tales of the Street Corner'",
@@ -321,7 +321,7 @@ export const postwarJapanData = {
           ]
         },
         "1963": {
-          "variance_explained": 11,
+          "salience_share": 11,
           "description": "Television anime begins regular broadcasting, launching the modern anime industry alongside established manga culture.",
           "key_manifestations": [
             "1963: 'Astro Boy' becomes first weekly television anime series",
@@ -337,7 +337,7 @@ export const postwarJapanData = {
       "description": "This cluster examines the surge in consumer electronics innovation in Japan, particularly Tokyo. The period saw the birth of iconic products and brands that revolutionized everyday life and established Japan as a leader in technology and manufacturing.",
       "trajectory": {
         "1945": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Electronics industry virtually non-existent post-war, with limited radio repair operations and basic component manufacturing.",
           "key_manifestations": [
             "1945: Most electronics factories destroyed in bombing",
@@ -347,7 +347,7 @@ export const postwarJapanData = {
           ]
         },
         "1948": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Early electronics manufacturing begins with basic radio production and component manufacturing for domestic market.",
           "key_manifestations": [
             "1949: Tokyo Telecommunications Engineering (Sony) creates first tape recorder",
@@ -357,7 +357,7 @@ export const postwarJapanData = {
           ]
         },
         "1951": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Electronics industry grows with transistor technology licensing and first innovative domestic designs.",
           "key_manifestations": [
             "1952: Sony licenses transistor technology from Western Electric",
@@ -367,7 +367,7 @@ export const postwarJapanData = {
           ]
         },
         "1954": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Japanese electronics industry achieves first breakthrough innovations in transistor miniaturization.",
           "key_manifestations": [
             "1955: Sony introduces first successful Japanese transistor radio (TR-55)",
@@ -377,7 +377,7 @@ export const postwarJapanData = {
           ]
         },
         "1957": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Consumer electronics industry expands with growing television market and innovative transistor products.",
           "key_manifestations": [
             "1958: Sony creates world's smallest transistor radio (TR-63)",
@@ -387,7 +387,7 @@ export const postwarJapanData = {
           ]
         },
         "1960": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Japanese electronics achieve international reputation for quality and innovation, beginning export-oriented growth phase.",
           "key_manifestations": [
             "1960: Sony introduces first transistor television",
@@ -397,7 +397,7 @@ export const postwarJapanData = {
           ]
         },
         "1963": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Electronics industry reaches global leadership position with innovation-driven products establishing Japan's technology reputation.",
           "key_manifestations": [
             "1963: Sony develops first practical home video recorder",
@@ -413,7 +413,7 @@ export const postwarJapanData = {
       "description": "This cluster focuses on the rapid urbanization and expansion of Tokyo, transforming it into a megacity. The period features significant infrastructure development, population growth, and the modernization of urban living, reflecting broader societal shifts.",
       "trajectory": {
         "1945": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Tokyo severely damaged by war with over 50% of built area destroyed and population reduced to half of pre-war levels.",
           "key_manifestations": [
             "1945: Over 50% of Tokyo's buildings destroyed by bombing",
@@ -423,7 +423,7 @@ export const postwarJapanData = {
           ]
         },
         "1948": {
-          "variance_explained": 7.5,
+          "salience_share": 7.5,
           "description": "Initial rebuilding focused on basic infrastructure and housing in central Tokyo areas.",
           "key_manifestations": [
             "1949: Critical infrastructure restoration in central Tokyo",
@@ -433,7 +433,7 @@ export const postwarJapanData = {
           ]
         },
         "1951": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Urban growth accelerates with major reconstruction projects and population influx from rural areas.",
           "key_manifestations": [
             "1952: Tokyo population growth exceeds 300,000 annually",
@@ -443,7 +443,7 @@ export const postwarJapanData = {
           ]
         },
         "1954": {
-          "variance_explained": 8.5,
+          "salience_share": 8.5,
           "description": "Tokyo expands outward with suburban development and transportation infrastructure growth.",
           "key_manifestations": [
             "1954: Tokyo Metropolitan Government establishes satellite city plan",
@@ -453,7 +453,7 @@ export const postwarJapanData = {
           ]
         },
         "1957": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Urban development expands with high-rise construction and major infrastructure projects transforming the cityscape.",
           "key_manifestations": [
             "1958: Tokyo Tower completed as symbol of urban rebirth",
@@ -463,7 +463,7 @@ export const postwarJapanData = {
           ]
         },
         "1960": {
-          "variance_explained": 9.5,
+          "salience_share": 9.5,
           "description": "Tokyo modernization accelerates with Olympic preparation driving infrastructure development and urban renewal.",
           "key_manifestations": [
             "1961: Tokyo Olympics preparation launches major urban projects",
@@ -473,7 +473,7 @@ export const postwarJapanData = {
           ]
         },
         "1963": {
-          "variance_explained": 13,
+          "salience_share": 13,
           "description": "Tokyo transformation culminates with Olympic infrastructure creating modern urban landscape and transportation systems.",
           "key_manifestations": [
             "1963: Tokaido Shinkansen (bullet train) construction nears completion",

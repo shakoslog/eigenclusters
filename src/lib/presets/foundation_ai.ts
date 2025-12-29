@@ -35,7 +35,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the paradigm of learning high-dimensional function approximators via hierarchical layers of differentiable non-linearities. Originally marginalized in favor of convex methods, this cluster embodies the shift from manual feature engineering to end-to-end representation learning. Its trajectory maps the 'Bitter Lesson'\u2014that general methods utilizing computation leverage scale better than human domain knowledge\u2014evolving from simple backpropagation on toy problems to massive-scale foundational models defining the modern era.",
       "trajectory": {
         "1990": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "At the start of the decade, the variance for connectionist approaches hovered at a modest baseline, driven primarily by the residual energy of the PDP (Parallel Distributed Processing) group's successes in the late 80s. While backpropagation had been formalized, the field was experiencing a friction against the limitations of available compute and the emerging theoretical skepticism regarding local minima in non-convex landscapes. The dominant catalyst in this interval was the practical demonstration of Convolutional Neural Networks (CNNs) by LeCun, which proved that imposed inductive biases could solve specific topological problems like digit recognition. However, the cluster faced significant headwinds from the rising dominance of symbolic AI and the nascent statistical rigor of early kernel methods, preventing a breakout. The community remained fractured between biological plausibility and engineering utility.",
           "key_manifestations": [
             "LeCun, Y., et al. (1990). 'Handwritten Digit Recognition with a Back-Propagation Network'",
@@ -45,7 +45,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "The variance experienced a contraction of -3% as the cluster was actively displaced by the rising 'Kernel Margin Maximization' cluster. The introduction of Support Vector Machines (SVMs) provided a mathematically rigorous framework with guarantees on global optimality, which cannibalized the academic attention previously afforded to neural networks. Researchers began abandoning connectionism due to the 'black box' opacity and the vanishing gradient problem in recurrent architectures, which made training deep networks practically impossible. Despite this decline, a crucial latent seed was planted with the theoretical exploration of Boltzmann machines, though they remained computationally intractable. The motion here was one of retrenchment, where connectionism was relegated to a niche sub-field while convex optimization took center stage.",
           "key_manifestations": [
             "Boser, B. E., Guyon, I. M., & Vapnik, V. N. (1992). 'A Training Algorithm for Optimal Margin Classifiers'",
@@ -55,7 +55,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "The decline continued, with variance dropping another 2% as the 'Probabilistic Graphical Models' cluster began its ascent. The field's focus shifted heavily toward Bayesian networks and Hidden Markov Models, which offered transparent probabilistic semantics that neural networks lacked. Connectionism suffered from a lack of effective regularization techniques, leading to overfitting on the small datasets of the era. However, a significant countervailing force prevented total collapse: the earliest formulations of Long Short-Term Memory (LSTM) began circulating in preprint circles, addressing the vanishing gradient problem. This period represented the nadir of the 'AI Winter' for neural methods, where publication in major conferences became increasingly difficult for pure backpropagation research.",
           "key_manifestations": [
             "Bengio, Y., et al. (1994). 'Learning Long-Term Dependencies with Gradient Descent is Difficult'",
@@ -65,7 +65,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Variance largely plateaued at a low ebb, indicating a state of deep entrenchment for alternative methodologies like SVMs and Random Forests. The Delta_lambda was negligible (-1%), suggesting that connectionism had reached a hard core of devotees\u2014the 'Canadian Mafia' of Hinton, Bengio, and LeCun\u2014who continued to refine the theoretical underpinnings despite broad academic disinterest. The release of the LSTM paper provided a critical theoretical stabilization, offering a viable path for sequence learning that would not be fully exploited for another decade. The 'Displacing Force' remained the overwhelming success of statistical learning theory, which offered bounds on generalization error that neural networks could not match. The field was effectively split, with connectionism viewed as an interesting biological analogy rather than a serious engineering discipline.",
           "key_manifestations": [
             "Hochreiter, S., & Schmidhuber, J. (1997). 'Long Short-Term Memory'",
@@ -75,7 +75,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "A slight uptick in variance (+2%) signaled the first tremors of a resurgence, catalyzed by the successful industrial application of LeNet-5 for check reading by banks. This provided an undeniable existence proof that gradient-based learning could outperform hand-crafted feature extractors in specific, high-value domains. While the 'Kernel Methods' cluster was still dominant in general classification tasks, the specialized success of CNNs created a protected niche for geometric invariance learning. This interval marks the beginning of the divergence between 'Computer Vision' (increasingly neural) and 'General Machine Learning' (still dominated by kernel/probabilistic methods). The motion was driven by practical utility in narrow domains rather than a broad theoretical shift.",
           "key_manifestations": [
             "LeCun, Y., et al. (1998). 'Gradient-Based Learning Applied to Document Recognition'",
@@ -85,7 +85,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The turn of the millennium saw a regression (-2%) as the 'Convex Optimization' and 'Kernel Machines' clusters reached their zenith. The introduction of Gaussian Processes and advanced SVM kernels provided a flexible, non-parametric framework that seemed to render parametric neural networks obsolete. Neural NIPS workshops were sparsely attended; the community perception was that neural nets were finicky, required 'black magic' to tune hyperparameters, and lacked the elegance of the kernel trick. The displacing force was the mathematical clarity of statistical learning theory, which convinced a generation of PhD students to focus on bounds and convexity rather than architectural engineering. Connectionism was effectively dormant in the top-tier literature.",
           "key_manifestations": [
             "Ng, A. Y., & Jordan, M. I. (2001). 'On Discriminative vs. Generative Classifiers'",
@@ -95,7 +95,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis prevailed with variance holding at 6%. The field of machine learning was dominated by Bayesian non-parametrics and graphical models. However, underneath this stability, a critical 'pre-scientific' accumulation of diverse insights was occurring within the connectionist enclave. Contrastive Divergence and early work on energy-based models were being formulated, attempting to solve the difficulty of training deep architectures. The lack of movement in variance reflects a 'incubation period' where the theoretical tools for the next revolution were being sharpened without yet producing state-of-the-art results on benchmarks. The institutional entrenchment of the kernel community made it difficult for neural papers to be accepted, forcing the innovation into alternative venues.",
           "key_manifestations": [
             "Hinton, G. E. (2002). 'Training Products of Experts by Minimizing Contrastive Divergence'",
@@ -105,7 +105,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "A minor positive delta (+1%) appeared, driven largely by Bengio's work on Neural Probabilistic Language Models, which demonstrated that distributed representations (embeddings) could solve the curse of dimensionality in discrete spaces better than n-grams. This was a crucial orthogonal vector to the dominant 'Symbolic/Logic' approaches in NLP. While still not a dominant paradigm, the concept of 'word embeddings' began to show that dense vectors could capture semantic meaning in a way that sparse vectors could not. This interval represents the first cracking of the ice for NLP, establishing a beachhead that would eventually lead to the transformer era, though at the time it was computationally prohibitively expensive.",
           "key_manifestations": [
             "Carreira-Perpinan, M. A., & Hinton, G. E. (2005). 'On Contrastive Divergence Learning'",
@@ -115,7 +115,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "A significant surge (+8%) marked the beginning of the 'Deep Learning' era. The catalyst was the publication of Hinton's work on Deep Belief Networks (DBNs) and layer-wise greedy pre-training. This paper broke the psychological and technical barrier that 'deep networks cannot be trained.' By treating each layer as a Restricted Boltzmann Machine (RBM) and stacking them, researchers found a way to initialize weights effectively before fine-tuning. This 'Rebranding' of neural networks to Deep Learning injected massive energy into the cluster, drawing attention back from kernel methods. The variance shift was driven by the sudden realization that depth was accessible, offering a potential path to learning complex hierarchies of features automatically.",
           "key_manifestations": [
             "Hinton, G. E., Osindero, S., & Teh, Y. W. (2006). 'A Fast Learning Algorithm for Deep Belief Nets'",
@@ -125,7 +125,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "The momentum continued with a +3% variance increase as the community began to digest the implications of pre-training and auto-encoders. The specific motion in this interval was the expansion of deep learning from a curiosity to a contender in voice recognition and vision. Collobert and Weston's work on unified architectures for NLP provided further evidence that a single end-to-end neural system could replace complex pipelines of task-specific engineering. However, the cluster was still constrained by CPU limitations; training these models took weeks. The 'Displacing Force' acting against it was the continued robustness of SIFT/HOG features in computer vision, which still outperformed neural nets on standard datasets like Caltech-101.",
           "key_manifestations": [
             "Collobert, R., & Weston, J. (2008). 'A Unified Architecture for Natural Language Processing'",
@@ -135,7 +135,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Variance accelerated sharply (+7%) as the 'GPU Compute' catalyst intersected with algorithmic advances. Researchers realized that consumer-grade GPUs (specifically CUDA) could accelerate matrix multiplications by orders of magnitude compared to CPUs. This removed the primary bottleneck for training large CNNs and MLPs. The specific breakthrough in this interval was the application of Deep Neural Networks (DNNs) to speech recognition, where they achieved significant reductions in Word Error Rate compared to the entrenched Gaussian Mixture Models (GMMs). This was the first domain where 'Deep Learning' unambiguously dethroned the state-of-the-art, validating the cluster's core hypothesis: more data + more compute + bigger models = better performance.",
           "key_manifestations": [
             "Nair, V., & Hinton, G. E. (2010). 'Rectified Linear Units Improve Restricted Boltzmann Machines'",
@@ -145,7 +145,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "A massive explosive event (+20%) occurred, fundamentally reordering the topology of the field. The catalyst was 'AlexNet' destroying the competition at the ImageNet Large Scale Visual Recognition Challenge. This singular event proved that end-to-end supervised learning with CNNs on large datasets (ImageNet) was vastly superior to the best hand-crafted feature systems (SIFT/Fisher Vectors). The 'Pre-training' paradigm began to fade in favor of pure supervised learning with Rectified Linear Units (ReLU) and Dropout for regularization. This interval marked the death knell for the 'Feature Engineering' era in computer vision. The cluster cannibalized almost all variance from the 'Kernel Methods' and 'Computer Vision (Classical)' clusters, as researchers rushed to adopt the new paradigm.",
           "key_manifestations": [
             "Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). 'ImageNet Classification with Deep Convolutional Neural Networks'",
@@ -155,7 +155,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 60,
+          "salience_share": 60,
           "description": "The cluster continued its aggressive expansion (+15%) by diversifying into generative models and sequence-to-sequence learning. The invention of Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) opened a new manifold for creating data, not just classifying it. Simultaneously, the Sequence-to-Sequence (Seq2Seq) framework with LSTM demonstrated that neural networks could handle variable-length input and output, revolutionizing machine translation. The 'Displacing Force' was effectively nonexistent; instead, the cluster was absorbing adjacent fields like Control Theory (via Deep Q-Learning) and Signal Processing. The introduction of the Attention mechanism (initially for RNNs) sowed the seeds for the next major architectural shift.",
           "key_manifestations": [
             "Goodfellow, I., et al. (2014). 'Generative Adversarial Nets'",
@@ -165,7 +165,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 72,
+          "salience_share": 72,
           "description": "Variance climbed further (+12%) as the 'scale' hypothesis gained empirical rigor. The victory of AlphaGo over Lee Sedol served as a high-visibility catalyst, demonstrating that Deep Reinforcement Learning (combining this cluster with Cluster 7) could solve intuition-heavy problems previously thought to be decades away. Architecturally, the emergence of ResNets allowed for training networks with hundreds of layers, solving the degradation problem. The field began to coalesce around a few standard toolkits (TensorFlow, PyTorch), creating a standardized 'stack' that lowered the barrier to entry and accelerated research velocity. The cluster was now the default assumption for almost all AI research.",
           "key_manifestations": [
             "He, K., et al. (2016). 'Deep Residual Learning for Image Recognition'",
@@ -175,7 +175,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 82,
+          "salience_share": 82,
           "description": "The trajectory experienced a pivotal inflection (+10%) with the 'Transformer' architecture fully displacing RNNs/LSTMs as the dominant sequence model. The release of BERT and GPT-1 marked the beginning of the 'Foundation Model' era (though the term would be coined later). The key motion was the shift from task-specific architectures to 'Pre-train once, fine-tune everywhere.' This homogenization of the field meant that a single architecture (Transformer) could solve NLP, Vision, and biological sequence problems. The variance explained is extremely high because the 'orthogonality' of other approaches collapsed; almost all competitive research was now a derivative of the Transformer or ResNet backbones.",
           "key_manifestations": [
             "Devlin, J., et al. (2018). 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'",
@@ -185,7 +185,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 88,
+          "salience_share": 88,
           "description": "The variance increased again (+6%) driven by the 'Scaling Laws' revelation. Kaplan et al. provided the empirical formalism that performance scales as a power law with compute, dataset size, and parameter count. This effectively industrialized the field, shifting the focus from clever architectural tweaks to massive infrastructure engineering. GPT-3 demonstrated few-shot learning capabilities that were previously considered impossible, effectively cannibalizing the 'Few-Shot Learning' and 'Meta-Learning' sub-clusters into the main scaling paradigm. The cluster now exhibited a gravitational pull that absorbed even disparate fields like biology (AlphaFold 2).",
           "key_manifestations": [
             "Brown, T. B., et al. (2020). 'Language Models are Few-Shot Learners' (GPT-3)",
@@ -195,7 +195,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 92,
+          "salience_share": 92,
           "description": "The cluster reached near-total saturation (+4%) in terms of research attention, driven by the 'Alignment and Instruction Tuning' revolution. The catalyst was ChatGPT (InstructGPT), which showed that raw compute power needed to be steered via Reinforcement Learning from Human Feedback (RLHF) to be useful. This introduced a new sub-dynamic of 'human-preference optimization' into the loss functions. Diffusion models also completely displaced GANs for image generation, proving that iterative refinement processes were more stable. The 'Displacing Force' for other clusters was absolute; non-deep learning papers became virtually non-existent in major conferences.",
           "key_manifestations": [
             "Ouyang, L., et al. (2022). 'Training Language Models to Follow Instructions with Human Feedback'",
@@ -205,7 +205,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 95,
+          "salience_share": 95,
           "description": "Current trajectory shows continued dominance (+3%) but with a shift towards 'Efficiency and Reasoning.' The sheer cost of scaling led to a focus on Mixture of Experts (MoE) and sparse architectures to decouple inference cost from parameter count. The motion is defined by the quest for 'System 2' thinking\u2014moving beyond next-token prediction to multi-step reasoning and planning. The rise of multimodal native models (Gemini, GPT-4o) merged the previously distinct sub-manifolds of Vision and Language into a singular token space. The only countervailing force is the emerging bottleneck of data scarcity ('running out of internet'), pushing research toward synthetic data generation.",
           "key_manifestations": [
             "Team, G. (2024). 'Gemini 1.5: Unlocking Multimodal Understanding Across Millions of Tokens of Context'",
@@ -221,7 +221,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the era of 'convex certainty,' dominated by Support Vector Machines (SVMs) and the application of the 'kernel trick' to map low-dimensional inputs into high-dimensional feature spaces where linear separation is possible. Rooted in Vapnik's Statistical Learning Theory, this cluster prioritized mathematical guarantees on generalization bounds (VC dimension) over the heuristic tinkerability of neural networks. For nearly two decades, it represented the gold standard of machine learning\u2014offering a global optimum solution to classification problems\u2014before faltering under the computational complexity of massive datasets and the superior representational capacity of deep learning.",
       "trajectory": {
         "1990": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "At the start of the simulation window, this cluster was in a nascent, high-potential state, originating primarily from the theoretical work of Vladimir Vapnik at AT&T Bell Labs. The variance was low but rising (+2%) as the theoretical foundations of Statistical Learning Theory began to permeate the Western academic consciousness, challenging the dominant logic-based and early connectionist paradigms. The 'force of motion' was the migration of Soviet-era mathematical rigor into US computer science departments. The cluster was characterized by a focus on 'optimal hyperplanes,' distinguishing itself from the ad-hoc decision boundaries of early neural nets.",
           "key_manifestations": [
             "Poggio, T., & Girosi, F. (1990). 'Networks for Approximation and Learning' (bridge from regularization to kernels)",
@@ -231,7 +231,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "A sharp upward surge (+7%) occurred with the publication of the seminal COLT paper by Boser, Guyon, and Vapnik, effectively birthing the Support Vector Machine. This event served as the primary catalyst, offering a computationally tractable way to implement the kernel trick for pattern recognition. The variance expansion was driven by the immediate realization that this method solved the 'curse of dimensionality' by depending only on dot products. This mathematically elegant formulation began to aggressively displace the 'Neural Network' cluster, which was suffering from a lack of theoretical transparency.",
           "key_manifestations": [
             "Boser, B. E., Guyon, I. M., & Vapnik, V. N. (1992). 'A Training Algorithm for Optimal Margin Classifiers'",
@@ -241,7 +241,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "The cluster continued its rapid ascent (+6%) with the introduction of the 'Soft Margin' formulation. This innovation allowed SVMs to handle non-separable data (noise), making them robust enough for real-world application. The force of motion here was the transition from theoretical curiosity to practical utility; the soft margin parameter 'C' became the most tuned hyperparameter in machine learning. This robustness catalyzed the cluster's spread into bioinformatics and text classification, effectively displacing decision trees and earlier rule-based systems in high-dimensional domains.",
           "key_manifestations": [
             "Cortes, C., & Vapnik, V. (1995). 'Support-Vector Networks' (Preprint/submission 1994)",
@@ -251,7 +251,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 24,
+          "salience_share": 24,
           "description": "Variance expanded further (+6%) as the methodology generalized beyond classification into regression (SVR) and unsupervised learning. The release of Vapnik's definitive text, 'The Nature of Statistical Learning Theory,' institutionalized the field, providing a canonical bible for graduate students. The motion was characterized by 'kernelization'\u2014the systematic re-derivation of existing linear algorithms (PCA, Fisher Discriminant) into non-linear kernel versions. This effectively monopolized the 'non-linear' niche, pushing neural networks to the periphery of the variance plot.",
           "key_manifestations": [
             "Drucker, H., et al. (1996). 'Support Vector Regression Machines'",
@@ -261,7 +261,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "The cluster approached its zenith (+6%) with the resolution of its primary bottleneck: training speed. The Sequential Minimal Optimization (SMO) algorithm by Platt removed the need for quadratic programming solvers, allowing SVMs to be trained on personal computers without specialized math libraries. This democratization was a massive accelerant, making SVMs the default 'off-the-shelf' classifier. The cluster now exerted dominant explanatory power over the 'Pattern Recognition' field, with major conferences like NIPS seeing a plurality of papers utilizing kernel methods.",
           "key_manifestations": [
             "Platt, J. (1998). 'Sequential Minimal Optimization: A Fast Algorithm for Training Support Vector Machines'",
@@ -271,7 +271,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "The cluster reached peak saturation (+5%), becoming the standard against which all other methods were benchmarked. The 'Kernel Trick' was now applied ubiquitously, from string kernels for DNA sequencing to graph kernels for social networks. The variance growth slowed slightly as the field shifted from fundamental discovery to application and refinement (feature space engineering). The entrenchment was deep; entire workshops were dedicated solely to designing custom kernels for specific data types, creating a micro-economy of academic citations around kernel engineering.",
           "key_manifestations": [
             "Cristianini, N., & Shawe-Taylor, J. (2000). 'An Introduction to Support Vector Machines'",
@@ -281,7 +281,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 34,
+          "salience_share": 34,
           "description": "For the first time, variance stagnated and showed a slight tremor of contraction (-1%). While still dominant, the O(N^2) or O(N^3) scaling behavior of kernel methods began to friction against the growing size of internet-era datasets. The 'Displacing Force' was subtle but growing: the sheer volume of data in web-scale applications (like Google search ranking) favored simpler, linear methods or the nascent ensemble methods (Random Forests), which scaled linearly. The cluster turned inward, focusing on 'sparse' approximations and 'online' learning to survive the data deluge.",
           "key_manifestations": [
             "Lodhi, H., et al. (2002). 'String Kernels for Text Classification'",
@@ -291,7 +291,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "A definite downward trend emerged (-4%) as 'Ensemble Methods' (Random Forests, Boosting) began to cannibalize the tabular data market. While SVMs offered beautiful theory, Random Forests often provided equal performance with zero tuning and better scalability. Additionally, the 'Probabilistic Graphical Models' cluster was encroaching on the structured data front. The kernel community responded with 'Structured SVMs' (SVM-Struct), attempting to handle complex outputs, but the momentum was shifting away from pure margin maximization toward probabilistic interpretation and ensemble resilience.",
           "key_manifestations": [
             "Tsochantaridis, I., et al. (2004). 'Support Vector Machine Learning for Interdependent and Structured Output Spaces'",
@@ -301,7 +301,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "The decline accelerated (-5%) coinciding with the 'Deep Learning' breakthrough (Hinton's DBNs). The psychological dominance of the convex optimization paradigm was cracked. Researchers realized that non-convex neural networks, despite lacking theoretical guarantees, were beginning to outperform kernel methods on perceptual tasks (MNIST variations). The 'force of motion' was a migration of talent: graduate students who would have previously written papers on new kernels began investigating RBMs. The kernel cluster was forced into a defensive posture, emphasizing its theoretical safety over raw performance.",
           "key_manifestations": [
             "Joachims, T. (2006). 'Training Linear SVMs in Linear Time'",
@@ -311,7 +311,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Variance contracted further (-5%) as the 'Big Data' era fully materialized. The primary innovation in this interval\u2014the 'Pegasos' algorithm and Random Fourier Features\u2014was an explicit admission that standard kernel SVMs were too slow. The cluster was cannibalizing its own core identity (exact global optimization) to approximate linear speeds. This 'linearization' of the kernel method effectively blurred the distinction between SVMs and simple logistic regression, weakening the cluster's unique semantic standing in the latent space.",
           "key_manifestations": [
             "Shalev-Shwartz, S., et al. (2007/2011). 'Pegasos: Primal Estimated Sub-Gradient Solver for SVM'",
@@ -321,7 +321,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The 'Deep Learning' surge in speech recognition inflicted heavy variance losses (-5%). The kernel framework, which relied on hand-crafted feature extraction (MFCCs in audio, SIFT in vision) followed by a shallow classifier, could not compete with end-to-end learning. The displacing force was the inability of kernel methods to learn hierarchies of features. The cluster was relegated to 'Small Data' regimes, where it remained superior to neural nets, but 'Small Data' was no longer the frontier of cultural or scientific interest.",
           "key_manifestations": [
             "Xiao, J., et al. (2010). 'SUN Database: Large-scale Scene Recognition from Abbey to Zoo' (SVMs struggling with scale)",
@@ -331,7 +331,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "A precipitous drop (-5%) occurred post-AlexNet. In Computer Vision, the SVM shifted from being the 'classifier of choice' to merely a 'loss function' (Hinge Loss) occasionally placed on top of a neural network. The independent identity of the cluster collapsed; it was no longer a standalone paradigm for solving complex problems but a component of the neural toolkit. The 'Kernel' concept survived primarily through Gaussian Processes and Bayesian Optimization, divorcing itself from the 'Margin Maximization' core.",
           "key_manifestations": [
             "Bergstra, J., & Bengio, Y. (2012). 'Random Search for Hyper-Parameter Optimization' (Moving away from grid search common in SVMs)",
@@ -341,7 +341,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "The cluster stabilized at a low variance (-3%), functioning primarily as a pedagogical tool and a baseline for tabular data competitions (though often losing to XGBoost). The 'Displacing Force' was now Gradient Boosted Decision Trees (GBDT), which dominated Kaggle competitions for structured data, leaving SVMs without a clear 'winning' domain. The theoretical work shifted entirely to 'Kernel Mean Embeddings' and distribution testing, a highly abstract mathematical niche with limited broad cultural impact.",
           "key_manifestations": [
             "Chen, T., & Guestrin, C. (2016). 'XGBoost: A Scalable Tree Boosting System' (Work active 2014, killing SVM on tabular)",
@@ -351,7 +351,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis set in. The cluster had fully transitioned into 'Classic Machine Learning.' Its presence in top-tier AI conferences (NeurIPS/ICML) was largely confined to theoretical track sessions on bandit optimization or infinite-width neural network limits (Neural Tangent Kernel), where the kernel framework was used to analyze *why* deep learning works, rather than as a competitor. The trajectory was flat; the methodology was ossified and fully understood.",
           "key_manifestations": [
             "Jacot, A., et al. (2018). 'Neural Tangent Kernel: Convergence and Generalization in Neural Networks' (Preprint 2017/2018 context)",
@@ -361,7 +361,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "A minor resurgence of interest (+0%)\u2014not in usage, but in theory\u2014occurred via the Neural Tangent Kernel (NTK) literature. This work mathematically linked infinite-width neural networks to kernel methods, providing a 'full circle' moment. However, this did not increase the practical variance of SVMs; rather, it subsumed the kernel mathematical framework into the Deep Learning cluster's theoretical underpinnings. The cluster persisted as a 'Zombie' category: useful for small datasets, teaching, and specific embedded applications where inference cost must be minimal and deterministic.",
           "key_manifestations": [
             "Belkin, M., et al. (2018). 'Reconciling Modern Machine-Learning Practice and the Bias-Variance Trade-off'",
@@ -371,7 +371,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Variance decayed slightly (-1%) to a persistent background radiation level. In the era of GPT-3, 'Margin Maximization' seemed quaint. The only active research frontier remaining was in 'Kernel methods for distribution reinforcement learning' or specialized physics-informed kernels. The cluster had effectively become a sub-discipline of applied mathematics rather than computer science.",
           "key_manifestations": [
             "Li, Z., et al. (2020). 'Why Are Adaptive Methods Good for Attention Models?'",
@@ -381,7 +381,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The methodology is now 'Ancient History' in AI timelines. It is the 'Newtonian Mechanics' to Deep Learning's 'Relativity'\u2014an excellent approximation for specific, limited scales (low N, high D), but fundamentally incapable of describing the complex curvature of the intelligence manifold (language, reasoning, vision). Its variance is maintained only by its utility in few-shot scenarios where deep learning overfits, and its presence in undergraduate curriculum.",
           "key_manifestations": [
             "Sch\u00f6lkopf, B., et al. (2021). 'Toward Causal Representation Learning' (Sch\u00f6lkopf moving to Causality)",
@@ -391,7 +391,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Entering 2024/2025, the cluster's variance is negligible in the context of SOTA AI, though it remains a workhorse in established industrial systems (legacy fraud detection, simple text tagging). The 'Displacing Force' is now complete; even 'small data' problems are increasingly solved by fine-tuning foundation models (LLMs) rather than training SVMs from scratch. The 'Kernel' concept lives on as a mathematical ghost in the attention mechanisms (which can be viewed as kernel smoothers) of Transformers.",
           "key_manifestations": [
             "Misiakos, P., et al. (2024). 'Neural Network Gaussian Processes on the Sphere'",
@@ -407,7 +407,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Bayesian Era' of AI, where intelligence was modeled as inference over graph-structured probability distributions. Bridging the gap between the rigid certainty of symbolic logic and the chaotic heuristicism of early neural networks, PGMs provided a rigorous language for reasoning under uncertainty. Dominated by Judea Pearl's causality, Hidden Markov Models (HMMs), and Conditional Random Fields (CRFs), this cluster was the reigning paradigm for complex systems\u2014especially in speech and NLP\u2014before the 'Representation Learning' revolution rendered explicit structural modeling unnecessary for performance.",
       "trajectory": {
         "1990": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The decade opened with this cluster serving as the primary intellectual alternative to the failing 'Expert Systems' (Symbolic) paradigm. The publication of Judea Pearl's 'Probabilistic Reasoning in Intelligent Systems' (1988) was the catalyst that continued to inject massive variance (+4%) into 1990. The force of motion was the 'Probabilistic Revolution': a shift from monotonic logic to belief networks. Researchers realized that causality and uncertainty could be encoded in Directed Acyclic Graphs (DAGs). At this stage, the cluster was displacing 'Rule-Based Systems' by offering a way to handle noisy data without brittle crash-conditions.",
           "key_manifestations": [
             "Pearl, J. (1990). 'Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference' (Revised/Impact)",
@@ -417,7 +417,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "Variance expanded (+3%) as Hidden Markov Models (HMMs) cemented their monopoly on speech recognition. The motion was defined by 'Industrialization': what was once theory became the engine of Dragon Dictate and IBM ViaVoice. The 'Forward-Backward' and 'Viterbi' algorithms became the standard curriculum for AI, displacing older template-matching techniques. The cluster thrived because it offered a clear, generative story for how data was produced, separating the 'state' (phoneme) from the 'observation' (audio), a distinction neural networks of the time struggled to model explicitly.",
           "key_manifestations": [
             "Rabiner, L., & Juang, B. H. (1993). 'Fundamentals of Speech Recognition' (Material active 1992)",
@@ -427,7 +427,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "The cluster continued its ascent (+4%) driven by the 'MCMC Revolution.' The introduction of practical Markov Chain Monte Carlo methods (Gibbs Sampling) allowed researchers to perform inference on complex, non-Gaussian models that were previously intractable. This broke the dependence on exact inference, unleashing a wave of creativity in Bayesian modeling. The 'Displacing Force' was directed at 'Frequentist Statistics,' as the Bayesian approach offered a coherent way to incorporate prior knowledge\u2014crucial for the small datasets of the 90s.",
           "key_manifestations": [
             "Grenander, U., & Miller, M. I. (1994). 'Representations of Knowledge in Complex Systems'",
@@ -437,7 +437,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Variance grew (+3%) as the 'Variational' turn began. Michael Jordan and colleagues introduced Variational Inference, transforming integration problems into optimization problems. This was a critical catalyst, as it promised MCMC-like flexibility with optimization-like speed. The cluster now covered both the 'Sampling' (MCMC) and 'Optimization' (Variational) sub-manifolds, making it the most robust theoretical framework in AI. It began to heavily influence Computer Vision via Markov Random Fields (MRFs) for image segmentation.",
           "key_manifestations": [
             "Jordan, M. I., et al. (1999). 'An Introduction to Variational Methods for Graphical Models' (Work active 1996-1998)",
@@ -447,7 +447,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 28,
+          "salience_share": 28,
           "description": "The cluster reached a high plateau of influence. The 'Belief Propagation' algorithm was rediscovered and formalized (Loopy Belief Propagation), linking AI to Coding Theory (Turbo Codes). This created a powerful cross-disciplinary validation, boosting the cluster's prestige. In NLP, the transition from simple N-grams to probabilistic parsing (Collins, Charniak) was underway, all grounded in PGM principles. The only friction was the computational cost; 'Inference' was often NP-hard, requiring aggressive approximations.",
           "key_manifestations": [
             "Pearl, J. (1998). 'Causality: Models, Reasoning, and Inference' (Early drafts/papers)",
@@ -457,7 +457,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "The cluster peaked (+2%), becoming the 'Lingua Franca' of machine learning. If you were doing rigorous AI in 2000, you were drawing circles and arrows. The catalyst for this specific interval was the unification of various sub-disciplines (Kalman Filters, HMMs, Factor Analysis) under the single banner of 'Dynamic Bayesian Networks' (DBNs). This unification provided a sense of scientific completion. However, a latent weakness existed: these models required significant human expertise to define the graph structure, a limitation that 'Feature Learning' would later exploit.",
           "key_manifestations": [
             "Jordan, M. I. (1998/2000). 'Learning in Graphical Models' (The defining anthology)",
@@ -467,7 +467,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 32,
+          "salience_share": 32,
           "description": "A new surge (+2%) came from the 'Topic Modeling' revolution. Latent Dirichlet Allocation (LDA) by Blei et al. demonstrated the power of hierarchical Bayesian models to uncover semantic structure in unsupervised text. This was a 'killer app' for the cluster, generating massive academic variance. Simultaneously, in vision, 'Constellation Models' attempted to recognize objects by modeling the probabilistic spatial relationship of parts. The description of motion is 'Hierarchical Expansion'\u2014moving from flat graphs to deep, plate-notation hierarchies.",
           "key_manifestations": [
             "Blei, D. M., Ng, A. Y., & Jordan, M. I. (2003). 'Latent Dirichlet Allocation'",
@@ -477,7 +477,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 28,
+          "salience_share": 28,
           "description": "Variance began to contract (-4%) as the 'Discriminative Turn' took hold. Generative models (like HMMs) were displaced by Conditional Random Fields (CRFs) for sequence labeling. While CRFs are technically PGMs, they abandoned the full generative story in favor of maximizing conditional likelihood, a step closer to the 'black box' optimization of neural nets. The 'Displacing Force' was the realization that modeling P(X), the distribution of the input features, was often a waste of parameters when the goal was merely prediction P(Y|X).",
           "key_manifestations": [
             "Lafferty, J., et al. (2001). 'Conditional Random Fields' (Peak impact/citation velocity 2004)",
@@ -487,7 +487,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "A significant drop (-8%) as the 'Deep Learning' narrative began to hijack the PGM machinery. Hinton's Deep Belief Networks were technically graphical models (stacked RBMs), but they were marketed and utilized as neural networks. The PGM cluster lost ownership of its most advanced frontier. The 'force of motion' was a schism: the PGM community doubled down on non-parametrics (Infinite HMMs, Dirichlet Processes) while the pragmatic wing defected to Deep Learning for its feature-learning capabilities.",
           "key_manifestations": [
             "Teh, Y. W., et al. (2006). 'Hierarchical Dirichlet Processes'",
@@ -497,7 +497,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The decline continued (-5%) as the 'Probabilistic Programming' sub-cluster attempted to save the paradigm. Languages like Church and later Stan tried to decouple the model specification from the inference engine, mirroring the 'Code' vs 'Compiler' split. While intellectually beautiful, this failed to gain industrial traction against the brute force of gradient descent. The displacing force was 'Computational Efficiency'; MCMC was simply too slow for web-scale data compared to Stochastic Gradient Descent (SGD).",
           "key_manifestations": [
             "Goodman, N. D., et al. (2008). 'Church: A Language for Generative Models'",
@@ -507,7 +507,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "A rapid collapse (-5%) occurred in the Speech Recognition domain, the fortress of HMMs. Deep Neural Networks (DNN-HMM hybrids initially, then pure DNNs) shattered benchmarks. The PGM component was reduced to a vestigial tail (the HMM decoder) before being cut off entirely later. This was the moment the cluster lost its claim to 'State of the Art' in perception tasks. The variance remaining was concentrated in low-data scientific modeling and causality research.",
           "key_manifestations": [
             "Mohamed, A., et al. (2010). 'Investigation of Full-Sequence Training of Deep Belief Networks for Speech Recognition'",
@@ -517,7 +517,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "The 'AlexNet' shockwave (-3%) obliterated the use of MRFs and CRFs in computer vision. Prior to this, vision relied on 'Graph Cuts' and probabilistic regularization. The CNN absorbed all these priors into its learned weights. The PGM cluster retreated entirely to the 'Structured Prediction' niche and 'Bayesian Nonparametrics,' which were intellectually prestigious but practically effectively irrelevant for the booming AI industry.",
           "key_manifestations": [
             "Kr\u00e4henb\u00fchl, P., & Koltun, V. (2011/2012). 'Efficient Inference in Fully Connected CRFs with Gaussian Edge Potentials' (Last stand in vision)",
@@ -527,7 +527,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "A momentary stabilization and mutation (+1%) occurred with the 'Variational Autoencoder' (VAE). This was a hybrid vigor event: VAEs are technically PGMs (directed graphical models) trained with neural networks (Amortized Inference). This 'Reparameterization Trick' allowed the PGM philosophy (latent variables, priors) to survive inside the Deep Learning host. However, the credit was largely assigned to the Deep Learning cluster, leaving the traditional PGM variance low.",
           "key_manifestations": [
             "Kingma, D. P., & Welling, M. (2014). 'Auto-Encoding Variational Bayes'",
@@ -537,7 +537,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "The cluster evolved into 'Causal Inference' (+0%). While traditional PGMs for pattern recognition were dead, the graph structure became the essential language for Causal AI (Pearl's do-calculus). The motion here was a pivot from 'Correlation/Prediction' (where DL won) to 'Intervention/Counterfactuals' (where DL was blind). This kept the cluster alive in high-stakes domains like medicine and economics.",
           "key_manifestations": [
             "Pearl, J., & Mackenzie, D. (2018). 'The Book of Why' (2016-2017 context)",
@@ -547,7 +547,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Variance drifted lower (-1%) as even the generative niche was taken over by GANs and later Diffusion models (which have PGM roots but are distinct). The 'Bayesian Neural Network' (BNN) dream\u2014putting distributions over all weights\u2014remained computationally intractable and failed to deliver practical improvements on scale. The cluster persisted mainly in 'Uncertainty Quantification' for safety-critical systems.",
           "key_manifestations": [
             "Gal, Y., & Ghahramani, Z. (2016). 'Dropout as a Bayesian Approximation' (Long tail influence in 2018)",
@@ -557,7 +557,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The concepts of PGMs (Markov blankets, d-separation) remained fundamental to AI education but were rarely the primary contribution of new research papers. The 'Displacing Force' was the Transformer, which modeled dependencies so effectively via attention that explicit graph structures felt restrictive. PGM logic survived implicitly in the architecture of Graph Neural Networks (GNNs).",
           "key_manifestations": [
             "Sch\u00f6lkopf, B. (2019/2020). 'Causality for Machine Learning'",
@@ -567,7 +567,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The cluster experienced a faint heartbeat of relevance in 'Diffusion Models.' Diffusion processes are formally equivalent to Hierarchical VAEs with fixed encoders, a triumph of probabilistic reasoning. However, the cultural credit went to 'Generative AI.' The PGM cluster's variance is now almost entirely subsumed by 'Causal Inference' and 'Neuro-Symbolic' research.",
           "key_manifestations": [
             "Song, Y., et al. (2021). 'Score-Based Generative Modeling through Stochastic Differential Equations'",
@@ -577,7 +577,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "In the era of LLMs, PGMs have retreated to the 'System 2' reasoning frontier. Researchers are investigating using PGM structures to govern the 'Chain of Thought' or to enforce logical consistency in LLM outputs. The variance is low, but the potential energy is rising as the limits of pure black-box scaling become apparent. The cluster waits in the wings for the 'Neuro-Symbolic' renaissance.",
           "key_manifestations": [
             "Wang, B., et al. (2024). 'Causal-Structure-Driven Chain-of-Thought Prompting'",
@@ -593,7 +593,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents 'Good Old-Fashioned AI' (GOFAI)\u2014the paradigm of explicit knowledge representation, formal logic, and rule-based manipulation of discrete symbols. Grounded in the physical symbol system hypothesis, it posits that intelligence equates to the syntactic manipulation of semantic tokens. While it began the period as the dominant industrial incumbent (Expert Systems), it experienced a catastrophic collapse in variance known as the 'AI Winter' due to the brittleness of hand-coded rules. However, it never reached zero, surviving through the Semantic Web, formal verification (SAT/SMT solvers), and recently resurfacing in the quest for neuro-symbolic reasoning and code synthesis.",
       "trajectory": {
         "1990": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "At the start of the decade, this cluster held a commanding but fragile position (30%), largely due to the massive institutional inertia of the Expert Systems market and the Japanese Fifth Generation Computer Systems project. However, the variance was already contracting (-5%) as the 'Brittleness Bottleneck' became undeniable; systems like CYC could reason logically but failed catastrophically when faced with the ambiguity of the real world. The 'Displacing Force' was the practical failure of LISP machines and the rise of statistical methods which, while 'dumber' logically, were robust to noise. The industry began to realize that maintaining million-rule codebases was economically unviable.",
           "key_manifestations": [
             "Lenat, D. B., & Guha, R. V. (1990). 'Building Large Knowledge-Based Systems: Representation and Inference in the Cyc Project'",
@@ -603,7 +603,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "A sharp collapse (-8%) marked the official onset of the AI Winter for symbolic logic. The catalyst was the termination of the Fifth Generation project, which failed to produce the promised 'thinking machines' based on Prolog. Funding agencies (DARPA) dramatically cut support for logic-based AI, shifting resources toward 'Speech' and 'Neural' research. The cluster retreated from 'General Intelligence' claims to narrower sub-fields like 'Constraint Logic Programming' and 'Planning,' where closed-world assumptions still held. The cultural energy shifted from 'reasoning' to 'search.'",
           "key_manifestations": [
             "Kautz, H., & Selman, B. (1992). 'Planning as Satisfiability'",
@@ -613,7 +613,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "Variance continued to bleed (-4%) as the field became insulated from the rising statistical tide. However, a local maximum of utility was found in 'Planning' systems for logistics (e.g., the DART system used in the Gulf War). Despite this, the academic zeitgeist had turned against logic; 'Learning' was the new keyword, and logic systems generally did not learn\u2014they were told. The motion was a retreat into 'Formal Methods' for hardware verification, divorcing the field from the broader ambition of AI.",
           "key_manifestations": [
             "Russell, S., & Norvig, P. (1995). 'Artificial Intelligence: A Modern Approach' (1994 drafts unifying logic/search with agents)",
@@ -623,7 +623,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "A stabilization event occurred (+0%) thanks to Deep Blue. While Deep Blue was heavily search-based (minimax), it relied on symbolic evaluation functions and discrete state spaces, widely perceived by the public as the triumph of 'Logic' over human intuition. This temporarily arrested the decline, validating the 'Symbolic Search' approach for well-defined games. However, in the latent space, this was a pyrrhic victory, as it reinforced the idea that symbolic AI required massive brute-force compute rather than intelligent heuristics.",
           "key_manifestations": [
             "Campbell, M., et al. (2002). 'Deep Blue' (Retrospective on 1996/1997 matches)",
@@ -633,7 +633,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "The cluster mutated into the 'Semantic Web' initiative (-3% in core AI, but + variance in Web Science). Tim Berners-Lee's vision of a machine-readable web injected new funding into Description Logics (OWL, RDF). This was an attempt to scale symbolic logic to the internet. However, the 'Displacing Force' was the chaotic, unstructured nature of HTML and the rise of Google's statistical ranking, which proved that keyword probability was more effective than ontologies for information retrieval.",
           "key_manifestations": [
             "Berners-Lee, T., et al. (2001). 'The Semantic Web' (Drafts/Standards 1998-1999)",
@@ -643,7 +643,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Variance hit a local minimum. The 'Probabilistic Graphical Models' cluster had completely usurped the role of 'reasoning' by adding uncertainty, which logic struggled to handle (despite attempts at 'Probabilistic Logic'). The symbolic community became increasingly ghettoized in conferences like KR (Knowledge Representation) and ICAPS (Planning), with little crossover to NIPS. The field focused on 'tractability'\u2014finding subsets of First Order Logic that didn't explode exponentially.",
           "key_manifestations": [
             "Vardi, M. Y. (2000). 'Branching vs. Linear Time: Final Showdown'",
@@ -653,7 +653,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "A subtle positive derivative (+1%) emerged from the 'SAT Revolution.' Engineering breakthroughs in SAT solvers (CDCL - Conflict-Driven Clause Learning) made solving boolean satisfiability problems with millions of variables practical. This did not revive 'AI' in the popular sense, but it revolutionized 'Formal Verification' for hardware and software. The cluster found a secure industrial home in checking chip designs (EDA), effectively decoupling from the 'Cognitive' ambitions of AI.",
           "key_manifestations": [
             "Een, N., & Sorensson, N. (2003). 'An Extensible SAT-solver' (MiniSAT)",
@@ -663,7 +663,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Stasis/Slow Decay. The Semantic Web vision failed to materialize as a consumer reality, causing a loss of grant funding (-1%). The 'Web 2.0' phenomenon (User Generated Content) emphasized social graphs and tags (folksonomies) over rigid ontologies. Symbolic AI was viewed as 'prescriptive' and elitist compared to the 'descriptive' and democratic nature of statistical learning. The cluster turned to 'Answer Set Programming' (ASP) as a way to handle non-monotonic reasoning.",
           "key_manifestations": [
             "Baral, C. (2003/2004). 'Knowledge Representation, Reasoning and Declarative Problem Solving'",
@@ -673,7 +673,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The rise of Deep Learning began to cast a long shadow, causing further contraction (-2%). Symbolic methods were criticized for the 'Symbol Grounding Problem'\u2014the inability to connect symbols to perceptual reality. While Hinton was showing how to learn features from pixels, logicians were still debating the semantics of modal logic. The cluster became invisible in the top-tier AI discourse, surviving only in 'Automated Reasoning' competitions.",
           "key_manifestations": [
             "De Moura, L., & Bj\u00f8rner, N. (2008). 'Z3: An Efficient SMT Solver' (Development 2006-2007)",
@@ -683,7 +683,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis. The introduction of 'Markov Logic Networks' (MLNs) attempted to fuse this cluster with Cluster 3 (PGMs). This provided a brief theoretical spark, allowing weighted first-order logic formulas. However, inference was computationally horrific. The cluster remained dormant as a major cultural force, though SMT solvers (like Z3 by Microsoft) became critical infrastructure for software engineering, proving theorems about code correctness.",
           "key_manifestations": [
             "Domingos, P., et al. (2008). 'Probabilistic Logic Learning'",
@@ -693,7 +693,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Deep Learning's victory in speech recognition rendered the 'Symbolic' approach to linguistics (Chomskyan grammars) practically obsolete for engineering (-1%). The variance for symbolic NLP collapsed. The only stronghold remaining was Watson (IBM), which won Jeopardy! in 2011. Watson was a hybrid system but heavily relied on symbolic knowledge bases (DBpedia, WordNet). This was the 'Last Hurrah' of the symbolic era in the public eye before the neural tsunami.",
           "key_manifestations": [
             "Ferrucci, D., et al. (2010). 'Building Watson: An Overview of the DeepQA Project'",
@@ -703,7 +703,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Post-AlexNet, the variance reached its nadir (-1%). 'End-to-end' learning became the philosophy; manual feature construction or rule-writing was seen as a failure of learning. Symbolic AI was derogatorily termed 'GOFAI.' The cluster was kept alive only by the 'Program Synthesis' community (FlashFill in Excel) which showed that logic could do things neural nets couldn't: produce 100% correct code from examples.",
           "key_manifestations": [
             "Gulwani, S. (2011/2012). 'Automating String Processing in Spreadsheets using Input-Output Examples' (FlashFill)",
@@ -713,7 +713,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. The cluster watched from the sidelines. However, a latent demand for 'Explainability' (XAI) began to grow. Neural networks were black boxes; logic was transparent. This sowed the seeds for a potential return. Research into 'Neural Turing Machines' began to ask how neural nets could learn symbolic manipulations, bridging the gap from the neural side.",
           "key_manifestations": [
             "Graves, A., et al. (2014). 'Neural Turing Machines'",
@@ -723,7 +723,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "A slight uptick (+1%) driven by 'Neuro-Symbolic' curiosity. AlphaGo used Monte Carlo Tree Search (a symbolic search algorithm) on top of neural priors. This proved that the strongest systems were hybrids. The 'System 1 (Neural) vs System 2 (Logic)' metaphor by Kahneman became the dominant roadmap for AGI, suggesting that Logic had to return eventually to handle reasoning.",
           "key_manifestations": [
             "Lake, B. M., et al. (2017). 'Building Machines That Learn and Think Like People' (Manifesto for symbolic return)",
@@ -733,7 +733,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The trend continued upwards (+1%) as 'Graph Neural Networks' (GNNs) provided a way to process structured data that looked like logic graphs. Furthermore, the limitations of LLMs (hallucinations) led to calls for grounding them in Knowledge Graphs (RAG precursors). The cluster was no longer a competitor to Deep Learning but a potential 'Safety Module' or 'Fact Checker.'",
           "key_manifestations": [
             "Battaglia, P. W., et al. (2018). 'Relational Inductive Biases, Deep Learning, and Graph Networks'",
@@ -743,7 +743,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Variance rose (+1%) with the explosion of 'Code LLMs' (Codex). While the models were neural, the domain was symbolic (Code). This required the integration of neural generation with symbolic execution/verification to ensure correctness. 'Program Synthesis' moved from SMT-based to Neural-guided search. The 'Displacing Force' was the realization that neural nets could 'speak' logic (Python/Lean) better than they could perform it internally.",
           "key_manifestations": [
             "Chen, M., et al. (2021). 'Evaluating Large Language Models Trained on Code' (Codex)",
@@ -753,7 +753,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The 'Chain of Thought' (CoT) prompting discovery acted as a massive catalyst (+1%). It showed that eliciting step-by-step reasoning (a symbolic process) from a neural net improved performance dramatically. This blurred the line between the clusters: is CoT symbolic or neural? It represents the emulation of symbolic reasoning within a neural substrate. Additionally, 'AlphaTensor' discovering matrix multiplication algorithms showed the power of combining RL with symbolic search spaces.",
           "key_manifestations": [
             "Wei, J., et al. (2022). 'Chain-of-Thought Prompting Elicits Reasoning in Large Language Models'",
@@ -763,7 +763,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Entering 2025, the cluster is experiencing a 'Formal Renaissance' (+1%). Systems like AlphaGeometry and AlphaProof demonstrated that combining LLMs with formal solvers (Lean/Isabelle) could achieve Gold Medal performance in Math Olympiads. The 'motion' is the shift from 'LLMs hallucinating logic' to 'LLMs acting as heuristic guides for formal provers.' The symbolic engine provides the truth guarantee; the neural engine provides the intuition. This neuro-symbolic hybrid is widely viewed as the path to Level 5 AI (Reasoners).",
           "key_manifestations": [
             "Trinh, T. H., et al. (2024). 'Solving Olympiad Geometry without Human Demonstrations' (AlphaGeometry)",
@@ -779,7 +779,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the mathematical engine room of modern AI: the study of navigating high-dimensional, non-convex loss landscapes to find generalizable minima. It tracks the evolution from second-order methods (Newton-Raphson) and combinatorial search (Simulated Annealing) to the dominance of first-order Stochastic Gradient Descent (SGD) and adaptive moment estimation (Adam). This cluster explains *how* learning happens. Its trajectory is defined by the 'Scale vs. Precision' trade-off: as models grew, precise optimization became too costly, leading to a reliance on rough, noisy gradients that surprisingly generalized better.",
       "trajectory": {
         "1990": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "In 1990, optimization for AI was a fractured landscape (-1%). The dominant methods were derivative-free combinatorial searches like Genetic Algorithms (GA) and Simulated Annealing, reflecting the lack of differentiable architectures. Backpropagation existed but was viewed as numerically unstable. The 'Convex' community focused on Linear Programming (Simplex method). There was no unified theory of 'Learning as Optimization'; rather, optimization was a tool used ad-hoc. The variance was low because the 'learning' paradigm hadn't yet subsumed the 'programming' paradigm.",
           "key_manifestations": [
             "Kirkpatrick, S., et al. (1983/1990). 'Optimization by Simulated Annealing' (Persistent influence)",
@@ -789,7 +789,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. The field was enamored with 'Second-Order Methods' (like Conjugate Gradient and Levenberg-Marquardt) for small neural nets. Researchers believed that using the Hessian (curvature information) was essential for convergence. However, calculating the Hessian was $O(N^2)$, limiting model size. This insistence on mathematical precision acted as a brake on scaling. The cluster was defined by 'Batch Training'\u2014looking at the whole dataset before taking a step\u2014which is mathematically pure but computationally inefficient.",
           "key_manifestations": [
             "Bishop, C. M. (1995). 'Exact Calculation of the Hessian Matrix for the Multilayer Perceptron' (1992 work)",
@@ -799,7 +799,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "A slow rise (+1%) as 'On-line Learning' (the precursor to modern SGD) began to gain traction in the Neural Network community. The realization was that updating weights after every example (Stochastic) broke out of local minima better than Batch methods. However, the theoretical community (Cluster 2) was moving toward Convex Optimization (SVMs), where the global minimum is guaranteed. This created a bifurcation: Neural people did 'Stochastic' hacking; Kernel people did 'Quadratic Programming.'",
           "key_manifestations": [
             "Bertsekas, D. P. (1995). 'Nonlinear Programming' (Canonical text)",
@@ -809,7 +809,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "The 'No Free Lunch Theorems' published in this interval acted as a sober catalyst (+1%), proving that no single optimizer is best for all problems. This shifted focus to domain-specific inductive biases. Simultaneously, the success of SVMs brought 'Convex Optimization' to the forefront. The field became obsessed with transforming problems into convex shapes so that 'Interior Point Methods' could solve them. The 'Displacing Force' was the fear of non-convexity (local minima), which was seen as a death sentence for reliability.",
           "key_manifestations": [
             "Wolpert, D. H., & Macready, W. G. (1997). 'No Free Lunch Theorems for Optimization'",
@@ -819,7 +819,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The introduction of 'Natural Gradient' by Amari (+1%) brought Information Geometry into optimization. It proposed that one should follow the steepest descent in the Riemannian manifold of probability distributions, not parameter space. While computationally expensive, it laid the theoretical groundwork for modern methods like K-FAC and TRPO. The cluster remained split between the 'Convex Certainty' of the SVM era and the 'Stochastic Chaos' of the neural fringe.",
           "key_manifestations": [
             "Amari, S. I. (1998). 'Natural Gradient Works Efficiently in Learning'",
@@ -829,7 +829,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Stasis. The field was dominated by SVMs (Cluster 2), so 'Optimization' largely meant 'Quadratic Programming.' The neural network optimization literature was dormant. However, in the background, the 'Sparse Coding' community was developing algorithms for L1-minimization (LASSO), which would later bridge stats and optimization. The 'Delta' was zero because the 'Big Data' pressure hadn't yet forced a change in methods.",
           "key_manifestations": [
             "Tibshirani, R. (1996/2000). 'Regression Shrinkage and Selection via the Lasso' (Peak impact)",
@@ -839,7 +839,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "A slight dip (-1%) as the focus shifted to 'Bayesian Inference' (Cluster 3). Optimization was viewed as a poor man's integration. Why find the mode (MAP) when you should integrate the posterior? MCMC (sampling) displaced Optimization (finding the peak). The 'Displacing Force' was the intellectual superiority of the Bayesian method, which claimed to handle uncertainty better than point-estimate optimization.",
           "key_manifestations": [
             "Neal, R. M. (2003). 'Slice Sampling'",
@@ -849,7 +849,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The return of the gradient (+1%). Contrastive Divergence (Hinton) showed that crude, approximate gradients could train Energy Based Models. This was a pivotal moment: it legitimized 'Approximation' over 'Exactness.' You didn't need the true gradient; you needed a signal that was correlated with it. This loosened the constraints on optimization research, allowing for more heuristic approaches.",
           "key_manifestations": [
             "Carreira-Perpinan, M. A., & Hinton, G. E. (2005). 'On Contrastive Divergence Learning'",
@@ -859,7 +859,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "A significant rise (+4%) driven by the Deep Learning reboot. 'Layer-wise Pre-training' was essentially a greedy optimization strategy to initialize parameters in a good basin of attraction. The realization was that non-convex optimization wasn't impossible; it just needed a good starting point. The cluster shifted focus from 'Global Optima' (impossible) to 'Good Local Optima.'",
           "key_manifestations": [
             "Hinton, G. E., & Salakhutdinov, R. R. (2006). 'Reducing the Dimensionality of Data with Neural Networks'",
@@ -869,7 +869,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The 'SGD Era' officially began (+3%). As datasets grew (Web Scale), second-order methods ($O(N^2)$) died. SGD ($O(1)$ per step) became the only viable option. Bottou's work demonstrated that for large datasets, the optimization error is swamped by the approximation error, so precise optimization is a waste of time. The motion was 'The Triumph of Cheap Iterations.'",
           "key_manifestations": [
             "Bottou, L., & Bousquet, O. (2008). 'The Tradeoffs of Large Scale Learning'",
@@ -879,7 +879,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Variance accelerated (+5%) with the introduction of 'Adaptive Learning Rates.' Adagrad (Duchi et al.) appeared, allowing different parameters to have different learning rates based on their sparsity. This was crucial for NLP and sparse data. It marked the beginning of the 'Adaptive' sub-cluster, moving away from manual learning rate scheduling. The catalyst was the need to train on massive, sparse web data without baby-sitting the step size.",
           "key_manifestations": [
             "Duchi, J., Hazan, E., & Singer, Y. (2011). 'Adaptive Subgradient Methods for Online Learning and Stochastic Optimization' (Adagrad)",
@@ -889,7 +889,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "The explosion of Deep Learning brought optimization to center stage (+5%). 'Dropout' (Hinton) was introduced not just as regularization, but as a way to modify the optimization landscape, smoothing it out. RMSProp (Hinton's Coursera lecture) became the de facto standard for training deep nets, despite not being published in a paper. This interval defined the 'Modern' toolkit: ReLU + Dropout + RMSProp/Momentum.",
           "key_manifestations": [
             "Hinton, G., et al. (2012). 'Lecture 6e: RMSProp' (Coursera)",
@@ -899,7 +899,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "The 'Adam' Event (+10%). Kingma and Ba released Adam (Adaptive Moment Estimation), combining Momentum and RMSProp. It worked 'out of the box' for almost everything. It became the default optimizer for the next decade. The variance surge was due to the democratization of training; you no longer needed to be an expert to train a net. Adam cannibalized the variance of all other optimizers (SGD was relegated to vision, Adam took NLP/RL).",
           "key_manifestations": [
             "Kingma, D. P., & Ba, J. (2014). 'Adam: A Method for Stochastic Optimization'",
@@ -909,7 +909,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 40,
+          "salience_share": 40,
           "description": "The focus shifted to 'Landscape Geometry' (+5%). Researchers like Soudry and Zhang began to understand *why* over-parameterized networks generalize: the 'Flat Minima' hypothesis. It wasn't just about finding *a* minimum, but a *flat* one. Optimization and Generalization were revealed to be linked (Implicit Regularization of SGD). The 'Displacing Force' was the realization that 'overfitting' in the classical sense doesn't happen in deep linear regimes.",
           "key_manifestations": [
             "Keskar, N. S., et al. (2016). 'On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima'",
@@ -919,7 +919,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 42,
+          "salience_share": 42,
           "description": "Stasis/Refinement (+2%). The community realized Adam had convergence issues, leading to AdamW (Decoupled Weight Decay). This seemingly minor tweak was critical for the training of Transformers (BERT). Without AdamW, the Transformer revolution might have stalled. The cluster was now deeply intertwined with 'Architecture'; specific optimizers were needed for specific architectures (Transformers need warmup, CNNs need SGD+Momentum).",
           "key_manifestations": [
             "Loshchilov, I., & Hutter, F. (2017/2019). 'Decoupled Weight Decay Regularization' (AdamW)",
@@ -929,7 +929,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "The 'Scaling Laws' era (+3%) turned optimization into an engineering discipline. The question was no longer 'will it converge?' but 'how fast can we push tokens through clusters of 10,000 GPUs?'. Optimization research merged with Systems research (ZeRO, Sharding). The 'Grokking' phenomenon was discovered, showing that optimization can exhibit phase transitions where generalization happens long after training accuracy hits 100%.",
           "key_manifestations": [
             "Foret, P., et al. (2020). 'Sharpness-Aware Minimization for Efficiently Improving Generalization' (SAM)",
@@ -939,7 +939,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 46,
+          "salience_share": 46,
           "description": "Stasis/Saturation. The 'Chinchilla' scaling laws defined the optimal frontier of optimization steps vs. model size. The field had essentially 'solved' standard training; the frontier moved to 'Fine-tuning' (LoRA). Low-Rank Adaptation was a major innovation, allowing optimization of massive models with tiny VRAM by freezing the main weights. This democratized the optimization of LLMs.",
           "key_manifestations": [
             "Hu, E. J., et al. (2021). 'LoRA: Low-Rank Adaptation of Large Language Models'",
@@ -949,7 +949,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 48,
+          "salience_share": 48,
           "description": "Entering 2025, the cluster focuses on 'Post-Training Optimization' (+2%). RLHF (Reinforcement Learning from Human Feedback) and DPO (Direct Preference Optimization) are the new frontiers. DPO was a catalyst, showing that you can optimize for human preference without a complex RL loop, essentially treating the preference optimization as a classification problem. The 'trajectory' is shifting from minimizing Log-Loss (Next Token) to minimizing 'Alignment Loss.'",
           "key_manifestations": [
             "Rafailov, R., et al. (2023). 'Direct Preference Optimization: Your Language Model is Secretly a Reward Model'",
@@ -965,7 +965,7 @@ export const foundationAIData = {
       "description": "This eigencluster maps the evolution of temporal sequence modeling, moving from the rigid Markovian assumption of the 90s to the infinite-context capabilities of modern Transformers. It represents the solution to the 'Variable Length Problem'\u2014how to map a sequence of size N to a sequence of size M. The trajectory is defined by the struggle against the 'Vanishing Gradient,' solved initially by gating mechanisms (LSTM/GRU) and ultimately by the 'Attention' mechanism, which replaced temporal recurrence with parallelizable spatial relationships. This cluster is the architectural backbone of the Large Language Model revolution.",
       "trajectory": {
         "1990": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "The decade began with Simple Recurrent Networks (SRNs) like Elman and Jordan networks attempting to introduce 'time' into connectionism. The variance was low but detectable (+1%) as researchers realized feedforward nets couldn't handle time series. However, these models failed miserably on long sequences due to the exponential decay of error signals (vanishing gradients). The 'Displacing Force' was the HMM (Cluster 3), which offered a stable, mathematically sound way to handle sequences, relegating RNNs to toy problems.",
           "key_manifestations": [
             "Elman, J. L. (1990). 'Finding Structure in Time'",
@@ -975,7 +975,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Variance contracted (-1%) as the theoretical impossibility of training RNNs became clear. The seminal work by Bengio et al. formally proved that learning long-term dependencies with gradient descent is difficult (the gradients either vanish or explode). This effectively killed funding and interest in the sub-field. The motion was a retreat; researchers abandoned gradient-based learning for sequences and looked toward 'Reservoir Computing' or simply went back to HMMs.",
           "key_manifestations": [
             "Bengio, Y., et al. (1994). 'Learning Long-Term Dependencies with Gradient Descent is Difficult' (1992-1993 research context)",
@@ -985,7 +985,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The 'Dark Ages' of sequence learning. While HMMs flourished, neural sequence modeling was virtually dead. However, a latent seed of massive potential was planted: the Long Short-Term Memory (LSTM) was developed by Hochreiter and Schmidhuber. It introduced the 'Constant Error Carousel' to keep gradients flowing. At the time, this was a fringe paper in a field obsessed with SVMs, and it generated almost no immediate variance, but it solved the fundamental mathematical flaw of RNNs.",
           "key_manifestations": [
             "Hochreiter, S., & Schmidhuber, J. (1997). 'Long Short-Term Memory' (Submitted 1995, Tech Report 1994)",
@@ -995,7 +995,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The LSTM existed but was computationally heavy and difficult to implement without modern auto-differentiation libraries. The 'Recurrent' concept survived mainly through 'Bidirectional RNNs' (Schuster & Paliwal), which allowed the network to look ahead as well as behind. This was critical for offline tasks like handwriting recognition, but the cluster remained a niche curiosity compared to the dominant HMM/GMM paradigm.",
           "key_manifestations": [
             "Schuster, M., & Paliwal, K. K. (1997). 'Bidirectional Recurrent Neural Networks' (1996 work)",
@@ -1005,7 +1005,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "A slight uptick (+1%) as RNNs found a home in 'Handwriting Recognition.' The combination of CNNs for features and RNNs for sequence transcription (Graves/Schmidhuber later) began to show promise. However, the 'Displacing Force' was the 'Kernel Method' for sequences (String Kernels), which allowed SVMs to classify text and DNA without the instability of RNN training.",
           "key_manifestations": [
             "LeCun, Y., et al. (1998). 'Gradient-Based Learning Applied to Document Recognition' (Graph Transformer Networks section)",
@@ -1015,7 +1015,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. The field of Natural Language Processing (NLP) was dominated by statistical n-grams and HMMs. 'Language Modeling' meant counting frequencies, not training weights. Neural Language Models were theoretically possible but computationally intractable. The cluster was dormant, waiting for the GPU catalyst.",
           "key_manifestations": [
             "Bengio, Y., et al. (2001). 'A Neural Probabilistic Language Model' (NIPS 2000)",
@@ -1025,7 +1025,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "A minor positive delta (+1%) from Bengio's 'Neural Probabilistic Language Model' (NPLM). This paper proposed that a neural net could learn a distributed representation of words (embeddings) and predict the next word. While it used a feedforward net, it set the stage for RNN LMs. It challenged the 'Symbolic' view of language by suggesting words were vectors, not atomic tokens.",
           "key_manifestations": [
             "Bengio, Y., et al. (2003). 'A Neural Probabilistic Language Model' (Journal version)",
@@ -1035,7 +1035,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. The 'Reservoir Computing' (Echo State Networks) movement offered a way to use RNNs without training the recurrent weights (only the output), avoiding the vanishing gradient. This was a clever hack that kept the cluster alive in signal processing, but it was a cul-de-sac for general intelligence. The mainstream AI community ignored sequences in favor of static classification (ImageNet precursors).",
           "key_manifestations": [
             "Maass, W., et al. (2002/2004). 'Real-Time Computing Without Stable States: A New Framework for Neural Computation on Finite Automata'",
@@ -1045,7 +1045,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "A spark of life (+2%) as Alex Graves began applying LSTM to Connectionist Temporal Classification (CTC). This allowed RNNs to label unsegmented sequences (like audio) without pre-alignment. This was the first time RNNs did something HMMs found difficult. It was the precursor to the voice recognition revolution. The motion was 'End-to-End' alignment\u2014learning the timing from data.",
           "key_manifestations": [
             "Graves, A., et al. (2006). 'Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks'",
@@ -1055,7 +1055,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Variance rose (+2%) as GPUs began to make RNN training feasible. Sutskever and Hinton showed that with Hessian-free optimization or careful initialization, simple RNNs could actually work. This challenged the LSTM monopoly on 'long term memory.' The cluster began to invade the 'Generative' space, generating character-level text that looked surprisingly real.",
           "key_manifestations": [
             "Sutskever, I., et al. (2008). 'The Recurrent Temporal Restricted Boltzmann Machine'",
@@ -1065,7 +1065,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "A breakout interval (+6%). Tomas Mikolov released the 'RNNLM' toolkit, proving that a simple RNN could beat state-of-the-art n-gram models on speech recognition tasks. This killed the 'N-gram' cluster. Simultaneously, LSTMs broke records in handwriting recognition. The industry (Google/Microsoft) took notice. The 'motion' was the transition from 'Count-based' to 'Prediction-based' sequence modeling.",
           "key_manifestations": [
             "Mikolov, T., et al. (2010). 'Recurrent Neural Network Based Language Model'",
@@ -1075,7 +1075,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "The 'AlexNet' moment for text (+10%). While CNNs won vision, RNNs/LSTMs won text and speech. The introduction of 'Word2Vec' (Mikolov at Google) revolutionized the input layer of this cluster, providing dense vector semantics. Researchers realized that 'King - Man + Woman = Queen'. This semantic algebra energized the field. The cluster began to consume 'Computational Linguistics.'",
           "key_manifestations": [
             "Mikolov, T., et al. (2013). 'Distributed Representations of Words and Phrases and their Compositionality'",
@@ -1085,7 +1085,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "The 'Seq2Seq' Revolution (+20%). Sutskever et al. and Cho et al. independently discovered that you could encode a sequence into a vector and decode it into another sequence. This solved Machine Translation (MT). It was the death knell for 'Phrase-Based MT' (SMT). The 'Attention' mechanism (Bahdanau) was introduced at the very end of this interval, fixing the bottleneck of the fixed-size context vector. This was the moment the cluster learned to 'look' at specific parts of the input.",
           "key_manifestations": [
             "Sutskever, I., et al. (2014). 'Sequence to Sequence Learning with Neural Networks'",
@@ -1095,7 +1095,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 60,
+          "salience_share": 60,
           "description": "Attention became the dominant dynamic (+15%). Google Translate switched to Neural MT (GNMT). The field realized that 'Recurrence' was actually a hindrance to parallelization. Convolutions (WaveNet, ByteNet) attempted to replace RNNs for sequences to speed up training. The trajectory was 'Parallelization of Context'\u2014moving away from sequential processing O(N) to parallel processing O(1) or O(log N).",
           "key_manifestations": [
             "Wu, Y., et al. (2016). 'Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation'",
@@ -1105,7 +1105,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 85,
+          "salience_share": 85,
           "description": "The 'Transformer' Singularity (+25%). The paper 'Attention Is All You Need' (late 2017) completely displaced RNNs/LSTMs. The recurrence was removed entirely, replaced by Self-Attention. BERT (Bidirectional Encoder Representations from Transformers) smashed every NLP benchmark. The cluster exploded, absorbing all of NLP, then Vision (ViT), then Biology. The 'Force of Motion' was the ability to train on the entire internet due to parallelization.",
           "key_manifestations": [
             "Vaswani, A., et al. (2017). 'Attention Is All You Need'",
@@ -1115,7 +1115,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 90,
+          "salience_share": 90,
           "description": "Scaling (+5%). GPT-3 demonstrated that the Transformer architecture did not plateau. The cluster focused on 'Prompt Engineering'\u2014the realization that the sequence continuation capability of these models contained latent reasoning. The 'Displacing Force' was absolute; LSTMs were now considered legacy tech, only used for edge devices with strict memory constraints. The 'Context Window' became the new resource constraint.",
           "key_manifestations": [
             "Brown, T. B., et al. (2020). 'Language Models are Few-Shot Learners'",
@@ -1125,7 +1125,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 92,
+          "salience_share": 92,
           "description": "Efficiency and Length (+2%). The focus shifted to breaking the quadratic complexity $O(N^2)$ of attention. FlashAttention (Dao) allowed for faster training and longer contexts by optimizing IO. The 'Chinchilla' paper refined the scaling laws. The cluster was now the air that AI breathed; 'Sequence Transduction' was synonymous with 'Intelligence.'",
           "key_manifestations": [
             "Dao, T., et al. (2022). 'FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness'",
@@ -1135,7 +1135,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 95,
+          "salience_share": 95,
           "description": "The era of 'Infinite Context' (+3%). Techniques like Ring Attention and RoPE (Rotary Positional Embeddings) pushed context windows from 4k to 1M+ tokens (Gemini 1.5). The model could now 'read' entire books or codebases in a single forward pass. This fundamentally changed the nature of 'Memory' in AI\u2014retrieval (RAG) began to merge with context. The 'State Space Models' (Mamba) emerged as a potential challenger, attempting to bring back recurrence for efficiency, but the Transformer remained king.",
           "key_manifestations": [
             "Gu, A., & Dao, T. (2023). 'Mamba: Linear-Time Sequence Modeling with Selective State Spaces'",
@@ -1151,7 +1151,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the science of 'Agency'\u2014learning by interaction rather than instruction. It unifies the psychological concept of conditioning with the engineering discipline of Optimal Control. Trajectory-wise, it moved from the tabular Q-learning of the 90s (solving mazes) to the Deep RL of the 2010s (solving Atari/Go), and finally to the 'Alignment' era of the 2020s, where it provides the steering mechanism (RLHF) for Large Language Models. It is the bridge between 'Predicting the Future' (Supervised) and 'Changing the Future' (Control).",
       "trajectory": {
         "1990": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The decade opened with a strong synthesis (+2%) of Dynamic Programming and Temporal Difference (TD) learning. Sutton and Barto were laying the groundwork. The 'Watkins' Q-learning' paper (1989/1990) provided a convergence proof for learning optimal policies without a model of the environment. The cluster was vibrant but theoretical, constrained by the inability to represent value functions for high-dimensional states (the 'Curse of Dimensionality').",
           "key_manifestations": [
             "Watkins, C. J. C. H., & Dayan, P. (1992). 'Q-learning' (1989 thesis context)",
@@ -1161,7 +1161,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "A massive surge (+4%) driven by 'TD-Gammon.' Gerry Tesauro used TD-learning with a neural network to achieve master-level play in Backgammon. This was the 'AlphaGo' moment of the 90s. It proved that RL + Neural Nets could work. However, it was a 'lucky' success; Backgammon's dynamics were uniquely suited to the specific neural architecture. Attempts to replicate this on Chess or Go failed, leading to a 'local winter' for the cluster.",
           "key_manifestations": [
             "Tesauro, G. (1992). 'Practical Issues in Temporal Difference Learning'",
@@ -1171,7 +1171,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Contraction (-2%). The 'Curse of Dimensionality' bit hard. Researchers realized that tabular RL didn't scale, and neural RL was unstable (divergent). The field pivoted to 'Robotics' and 'Control Theory,' adopting methods from engineering (LQR, PID) rather than pure learning. The 'Displacing Force' was the realization that you can't learn to walk by random trial and error on a physical robot without breaking it.",
           "key_manifestations": [
             "Rummery, G. A., & Niranjan, M. (1994). 'On-Line Q-Learning Using Connectionist Systems' (SARSA introduction)",
@@ -1181,7 +1181,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Stasis. The publication of the book 'Neuro-Dynamic Programming' (Bertsekas/Tsitsiklis) formalized the field, linking AI RL to Operations Research. This was intellectually healthy but culturally quiet. RL became a sub-discipline of Applied Math. The 'Function Approximation' problem remained the key blocker: how to generalize value estimates without diverging.",
           "key_manifestations": [
             "Bertsekas, D. P., & Tsitsiklis, J. N. (1996). 'Neuro-Dynamic Programming'",
@@ -1191,7 +1191,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Sutton & Barto published 'Reinforcement Learning: An Introduction.' This textbook (+1%) codified the field, creating a standard curriculum. It separated the 'Agent' from the 'Environment,' defining the modern API (State, Action, Reward). While variance was stable, the 'Policy Gradient' theorem (Sutton et al.) was published, planting the seed for PPO and modern actor-critic methods.",
           "key_manifestations": [
             "Sutton, R. S., & Barto, A. G. (1998). 'Reinforcement Learning: An Introduction'",
@@ -1201,7 +1201,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Decay (-2%). The 'Kernel Machines' (SVMs) were eating the world. RL was viewed as 'too hard' because of the non-stationary target problem. Research shifted to 'Inverse Reinforcement Learning' (Ng & Russell)\u2014learning the reward function from observation. This was more applicable to robotics (learning from demonstration) than pure trial-and-error.",
           "key_manifestations": [
             "Ng, A. Y., & Russell, S. (2000). 'Algorithms for Inverse Reinforcement Learning'",
@@ -1211,7 +1211,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis. The cluster found a niche in 'Autonomous Helicopter Flight' (Stanford). This was a high-profile success, but it relied heavily on model-based control, not pure RL. The 'Displacing Force' was the general failure of RL to solve even simple video games of the era. It remained a 'toy world' technology.",
           "key_manifestations": [
             "Ng, A. Y., et al. (2004). 'Inverted Autonomous Helicopter Flight via Reinforcement Learning' (2002-2003 work)",
@@ -1221,7 +1221,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis. The field focused on 'Hierarchical RL' (MAXQ, Options framework) to solve the temporal abstraction problem. While theoretically elegant, these methods struggled to learn the hierarchy automatically. The cluster was waiting for a better function approximator (Deep Learning).",
           "key_manifestations": [
             "Barto, A. G., & Mahadevan, S. (2003). 'Recent Advances in Hierarchical Reinforcement Learning'",
@@ -1231,7 +1231,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "No significant movement. The 'Deep Learning' rebirth (Cluster 1) was happening, but it hadn't merged with RL yet. Hinton was classifying digits; he wasn't controlling agents. RL remained dominated by linear function approximation and tile coding.",
           "key_manifestations": [
             "Kocsis, L., & Szepesv\u00e1ri, C. (2006). 'Bandit Based Monte-Carlo Planning' (UCT - The seed for AlphaGo)",
@@ -1241,7 +1241,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "A quiet catalyst (+1%). The UCT algorithm (Upper Confidence Bound for Trees) revolutionized Computer Go (MoGo, Pachi), allowing Monte Carlo Tree Search to beat amateurs. This was a 'Symbolic/Statistical' search method, not yet Deep RL, but it solved the 'Exploration/Exploitation' dilemma in large search spaces.",
           "key_manifestations": [
             "Gelly, S., et al. (2012). 'The Grand Challenge of Computer Go: Agile Approaches using Monte-Carlo Tree Search' (Retrospective on 2008 era)",
@@ -1251,7 +1251,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The Deep Learning merge began. DeepMind was founded (2010). Their mission was to combine Cluster 1 (Deep Learning) with Cluster 7 (RL). The variance began to creep up as 'Neural Fitted Q Iteration' showed signs of life. The industry (Google) began to look at RL for datacenter cooling.",
           "key_manifestations": [
             "Lange, S., & Riedmiller, M. (2010). 'Deep Auto-Encoder Neural Networks in Reinforcement Learning'",
@@ -1261,7 +1261,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "The 'DQN' Explosion (+12%). DeepMind (Mnih et al.) released the Atari paper. A single network learned to play 49 different games from pixels, using Experience Replay and Target Networks to stabilize training. This broke the 'Deadly Triad' (Function Approximation + Bootstrapping + Off-policy). RL suddenly went from 'Applied Math' to 'AGI Contender.'",
           "key_manifestations": [
             "Mnih, V., et al. (2013). 'Playing Atari with Deep Reinforcement Learning'",
@@ -1271,7 +1271,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "AlphaGo (+15%). DeepMind combined MCTS (from 2008) with Deep RL (Value Networks and Policy Networks). The result was a system that beat Lee Sedol (2016) but the papers/tech were defined here. Simultaneously, 'Deterministic Policy Gradients' (DPG/DDPG) brought Deep RL to continuous control (Robotics), solving the discrete action limitation of DQN.",
           "key_manifestations": [
             "Silver, D., et al. (2014). 'Deterministic Policy Gradient Algorithms'",
@@ -1281,7 +1281,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "The 'Policy Gradient' Era (+10%). TRPO and later PPO (Proximal Policy Optimization) became the standard for stability. A3C (Asynchronous Actor-Critic) showed how to scale RL across CPU cores. RL began to solve complex games like Dota 2 (OpenAI Five). The cluster was 'Eating' the games industry. However, 'Sample Efficiency' remained a massive problem; it took millions of games to learn what a human learns in minutes.",
           "key_manifestations": [
             "Schulman, J., et al. (2017). 'Proximal Policy Optimization Algorithms' (PPO)",
@@ -1291,7 +1291,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 48,
+          "salience_share": 48,
           "description": "Stabilization/Reality Check (+3%). While RL won games, it failed to deploy in real-world robotics due to the 'Sim-to-Real' gap. The 'Soft Actor-Critic' (SAC) algorithm introduced entropy maximization for better exploration. The variance growth slowed as the community realized that 'Tabula Rasa' learning (learning from scratch) was too expensive. The focus shifted to 'Offline RL'\u2014learning from static datasets.",
           "key_manifestations": [
             "Haarnoja, T., et al. (2018). 'Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor'",
@@ -1301,7 +1301,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "Contraction (-3%). The 'Transformer' (Cluster 6) was sucking up all the oxygen. Supervised learning on massive datasets seemed to scale better than RL. RL was criticized for being finicky and hard to reproduce. However, a latent connection was forming: 'Decision Transformer' showed that RL could be framed as sequence modeling.",
           "key_manifestations": [
             "Chen, L., et al. (2021). 'Decision Transformer: Reinforcement Learning via Sequence Modeling'",
@@ -1311,7 +1311,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 55,
+          "salience_share": 55,
           "description": "Resurgence via RLHF (+10%). Reinforcement Learning from Human Feedback became the 'Secret Sauce' of ChatGPT. It wasn't used to learn the knowledge (which came from pre-training), but to 'Align' the model with human intent. PPO (from 2017) found its killer app: fine-tuning LLMs. RL shifted from 'Control' to 'Alignment.'",
           "key_manifestations": [
             "Ouyang, L., et al. (2022). 'Training Language Models to Follow Instructions with Human Feedback'",
@@ -1321,7 +1321,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 60,
+          "salience_share": 60,
           "description": "The 'Reasoning' Era (+5%). RL is now being applied to the 'Chain of Thought.' Systems like AlphaProof use RL to search through the space of mathematical proofs. The new paradigm is 'Self-Correction'\u2014using RL to train models to verify and fix their own outputs. The boundary between 'Inference' (Supervised) and 'Search' (RL) is blurring completely (System 1 vs System 2 integration).",
           "key_manifestations": [
             "Lightman, H., et al. (2023). 'Let's Verify Step by Step'",
@@ -1337,7 +1337,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'conscience' of the field: the mathematical framework concerned with generalization guarantees, sample complexity, and the bias-variance trade-off. Founded by Vapnik and Chervonenkis, it seeks to answer *why* learning algorithms work on unseen data. Its trajectory is inverse-U shaped: it reigned supreme in the 90s/00s by explaining SVMs, struggled to explain the 'unreasonable effectiveness' of deep learning in the 2010s (where models generalize despite massive over-parameterization), and resurged in the 2020s with the 'Double Descent' phenomenon.",
       "trajectory": {
         "1990": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The cluster was in a phase of 'Foundational Translation.' Vapnik's work was migrating from Russian math journals to Western CS departments. The concept of 'VC Dimension' (Vapnik-Chervonenkis) was replacing simple parameter counting as the measure of model complexity. This provided a rigorous way to predict test error based on training error and model capacity, delegitimizing the 'heuristic' nature of early neural nets.",
           "key_manifestations": [
             "Vapnik, V., & Chervonenkis, A. (1991). 'The Necessary and Sufficient Conditions for Consistency of the Method of Empirical Risk Minimization'",
@@ -1347,7 +1347,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "Variance grew (+3%) as the 'Structural Risk Minimization' (SRM) principle became the theoretical bedrock for the rising SVM cluster. This principle dictates that one should trade off training error against VC dimension. The motion was 'Codification': researchers stopped asking 'does it work?' and started asking 'is it consistent?'. The Displacing Force acting against neural nets was the inability to calculate their VC dimension tight enough to be useful.",
           "key_manifestations": [
             "Guyon, I., et al. (1992). 'Structural Risk Minimization for Character Recognition'",
@@ -1357,7 +1357,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "The introduction of 'Boosting' (Schapire/Freund) acted as a major catalyst (+2%). The theory proved that a set of weak learners could be combined into a strong learner with arbitrary accuracy. This was a triumph of theory leading practice. Boosting wasn't a hack; it was a mathematical inevitability derived from PAC learning. This cemented the cluster's dominance over the 'Neural' approach.",
           "key_manifestations": [
             "Freund, Y., & Schapire, R. E. (1995). 'A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting' (1994 tech report)",
@@ -1367,7 +1367,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "Stasis/Peak. The theory was now the primary language of the NIPS conference. 'Rademacher Complexity' began to supersede VC dimension as a data-dependent measure of complexity, offering tighter bounds. The cluster effectively 'explained' why Kernel methods worked (large margin = low complexity). It provided a comfort zone of mathematical certainty.",
           "key_manifestations": [
             "Bartlett, P. L. (1998). 'The Sample Complexity of Pattern Classification with Neural Networks' (1996 work showing weight magnitude matters more than parameter count)",
@@ -1377,7 +1377,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "A slight contraction (-2%) as the 'Bagging' and 'Random Forest' empirical success challenged the theory. Breiman showed that Random Forests resisted overfitting even when grown deep, which contradicted simple VC bounds. The theory struggled to explain 'Ensemble' behavior where complexity seemed to *increase* generalization. This was the first crack in the 'Overfitting' dogma.",
           "key_manifestations": [
             "Breiman, L. (2001). 'Random Forests' (1998-1999 active research)",
@@ -1387,7 +1387,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "Decay (-2%). The rise of 'Bayesian' methods (Cluster 3) offered an alternative path to generalization via 'Marginal Likelihood' rather than 'Worst-Case Bounds.' The Bayesian view (MacKay, Neal) argued that SLT was too pessimistic. Why care about the worst case? Average case is what matters. This philosophical split diluted the cluster's authority.",
           "key_manifestations": [
             "Tipping, M. E. (2001). 'Sparse Bayesian Learning and the Relevance Vector Machine'",
@@ -1397,7 +1397,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The cluster stabilized around 'Algorithmic Stability' (+0%). Bousquet and Elisseeff showed that if an algorithm doesn't change much when you remove one training point, it generalizes. This was a more flexible tool than VC dimension and applied well to k-NN and SVMs. However, it still failed to account for the nascent 'Feature Learning' phenomena.",
           "key_manifestations": [
             "Bousquet, O., & Elisseeff, A. (2002). 'Stability and Generalization'",
@@ -1407,7 +1407,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Contraction (-3%). The focus of the ML community shifted to 'Manifold Learning' (ISOMAP, LLE). SLT had little to say about unsupervised learning of geometry. The bounds for semi-supervised learning were loose and uninformative. The 'Displacing Force' was the empirical success of methods that had no right to work according to classical theory (like early Deep Belief Nets).",
           "key_manifestations": [
             "Belkin, M., et al. (2004). 'Regularization and Semi-Supervised Learning on Large Graphs'",
@@ -1417,7 +1417,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "The 'Deep Learning' anomaly began (-2%). Hinton's networks were massive, non-convex, and had effective VC dimensions far exceeding the number of training points. According to SLT, they should overfit massively. They didn't. This 'Paradox' marginalized the cluster; theorists were seen as 'party poopers' saying 'that shouldn't work' while empiricists set new benchmarks.",
           "key_manifestations": [
             "Audibert, J. Y., & Tsybakov, A. B. (2007). 'Fast Learning Rates for Plug-in Classifiers'",
@@ -1427,7 +1427,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Stasis. The cluster retreated to 'Online Learning' (Regret Bounds). This was a safe harbor where theory still held (Cesa-Bianchi, Lugosi). The 'Multi-Armed Bandit' problem became a hotbed for theoretical work (UCB bounds), which fed into the RL cluster. But for the main Classification/Regression tasks, SLT was largely ignored by the SOTA chasers.",
           "key_manifestations": [
             "Cesa-Bianchi, N., & Lugosi, G. (2006/2008). 'Prediction, Learning, and Games'",
@@ -1437,7 +1437,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The 'Crisis of Theory' (-2%). As Deep Learning exploded, the gap between theory and practice became a chasm. Zhang et al. (later paper) would famously demonstrate that deep nets can memorize random labels (meaning infinite capacity) yet still generalize on real labels. This contradicted the core assumption that 'low capacity is necessary for generalization.' SLT looked broken.",
           "key_manifestations": [
             "Srebro, N., et al. (2010). 'Smoothness, Low Noise and Fast Rates'",
@@ -1447,7 +1447,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Nadir. Post-AlexNet, nobody cared about bounds. The variance was driven purely by 'does it get SOTA on ImageNet?' The 'Displacing Force' was pure Empiricism. Theorists began trying to bound 'Deep' networks but the bounds were vacuous (e.g., 'Error < 100000%'). The cluster was effectively decoupled from the progress of the field.",
           "key_manifestations": [
             "Hardt, M., et al. (2016). 'Train Faster, Generalize Better' (2015 work starting to address the gap)",
@@ -1457,7 +1457,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis/Incubation. A new line of thought emerged: 'Implicit Regularization.' Perhaps SGD itself *is* the regularizer? This idea (Srebro, Neyshabur) began to germinate. The theory wasn't about the model class anymore, but the *algorithm* used to train it. This shifted SLT towards 'Optimization Theory' (Cluster 5).",
           "key_manifestations": [
             "Neyshabur, B., et al. (2015). 'Path-SGD: Path-Normalized Optimization in Deep Neural Networks'",
@@ -1467,7 +1467,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "The 'Understanding Deep Learning' Workshop era (+2%). The Zhang et al. 'Random Labels' paper forced the community to reckon with the failure of VC dimension. This shock therapy revitalized the cluster. New concepts like 'Norm-based bounds' and 'PAC-Bayes' for neural nets gained traction. The motion was a desperate attempt to catch up with practice.",
           "key_manifestations": [
             "Zhang, C., et al. (2017). 'Understanding Deep Learning Requires Rethinking Generalization' (The catalyst paper)",
@@ -1477,7 +1477,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Resurgence via 'Double Descent' (+5%). Belkin et al. identified the 'Double Descent' curve, reconciling the classical 'U-shaped' bias-variance trade-off with the modern 'Descent' behavior. It showed that after the interpolation threshold (zero training error), generalization error decreases again as capacity increases. This unified SLT with Deep Learning, providing a new 'Modern Regime' theory.",
           "key_manifestations": [
             "Belkin, M., et al. (2019). 'Reconciling Modern Machine-Learning Practice and the Bias-Variance Trade-off' (Double Descent)",
@@ -1487,7 +1487,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 14,
+          "salience_share": 14,
           "description": "The 'Neural Tangent Kernel' (NTK) peak (+2%). This theory treated wide neural nets as kernel machines, allowing exact analysis of their training dynamics. While it didn't perfectly match finite-width nets, it was the first time theorists had a 'microscope' into the black box. The cluster provided the 'why' for scaling laws.",
           "key_manifestations": [
             "Arora, S., et al. (2019). 'On Exact Computation with an Infinitely Wide Neural Net'",
@@ -1497,7 +1497,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Correction (-2%). The 'Feature Learning' vs 'Lazy Training' debate showed that NTK (Lazy) doesn't capture the magic of deep learning (Feature Learning). The cluster pivoted to 'Mean Field Theory' and 'Tensor Programs' (Greg Yang) to analyze the feature learning regime. The 'Displacing Force' was the complexity of the math; only a handful of researchers (Greg Yang, Boris Hanin) could effectively push this frontier.",
           "key_manifestations": [
             "Yang, G., & Hu, E. J. (2021). 'Tensor Programs IV: Feature Learning in Infinite-Width Neural Networks'",
@@ -1507,7 +1507,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 11,
+          "salience_share": 11,
           "description": "Current trajectory is analyzing 'In-Context Learning' (-1%). Theorists are trying to model how a Transformer 'learns' a function during inference time without weight updates. Is it doing Gradient Descent in its forward pass? (Von Oswald et al.). The cluster is becoming 'Mechanistic Interpretability'\u2014less about bounds, more about reverse-engineering the algorithm learned by the weights.",
           "key_manifestations": [
             "Von Oswald, J., et al. (2023). 'Transformers learn in-context by gradient descent'",
@@ -1523,7 +1523,7 @@ export const foundationAIData = {
       "description": "This eigencluster concerns the modeling of the data distribution $P(X)$ itself, rather than the conditional $P(Y|X)$. It represents the dream of 'Creativity' in AI\u2014systems that can synthesize new images, sounds, and text. The trajectory tracks the evolution from the Gaussian Mixture Models of the 90s, through the Restricted Boltzmann Machines of the 2000s, the adversarial wars of GANs in the 2010s, to the thermodynamic triumph of Diffusion Models in the 2020s. It is the engine of the 'Generative AI' boom.",
       "trajectory": {
         "1990": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The cluster was dominated by 'Gaussian Mixture Models' (GMMs) (+1%). If you wanted to model a dataset, you fit a sum of Gaussians (EM algorithm). This was mathematically clean but expressively bankrupt; it could model 'blobs' but not 'structures.' The 'Latent Space' was just an index of which Gaussian you belonged to. There was no 'manifold' learning yet, just clustering.",
           "key_manifestations": [
             "Xu, L., & Jordan, M. I. (1996). 'On Convergence Properties of the EM Algorithm for Gaussian Mixtures' (1990s context)",
@@ -1533,7 +1533,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. The field was focused on discrimination (SVMs), not generation. 'Generative' meant 'Bayesian Network' (Cluster 3). The idea of generating high-dimensional data (like images) was considered science fiction. The variance was maintained by the use of GMMs in speech synthesis (HMM-GMM), but this was 'parametric' generation, not 'learned' generation.",
           "key_manifestations": [
             "Rabiner, L. R. (1989/1992). 'Tutorial on Hidden Markov Models'",
@@ -1543,7 +1543,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "A flicker of innovation (+1%) with the 'Helmholtz Machine' (Hinton/Dayan). This introduced the 'Wake-Sleep' algorithm, an early attempt to learn a generative model with a neural net. It failed to scale due to the difficulty of training, but it established the 'Analysis by Synthesis' paradigm: to understand the world, you must be able to generate it. This was the spiritual ancestor of the VAE.",
           "key_manifestations": [
             "Dayan, P., et al. (1995). 'The Helmholtz Machine'",
@@ -1553,7 +1553,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. 'Independent Component Analysis' (ICA) became the dominant method for blind source separation (the 'Cocktail Party Problem'). ICA is a linear generative model. It showed that non-Gaussian latent variables could recover structure (like voices) that PCA missed. However, it was strictly linear. The non-linear generative frontier was dormant.",
           "key_manifestations": [
             "Bell, A. J., & Sejnowski, T. J. (1995/1996). 'An Information-Maximization Approach to Blind Separation and Blind Deconvolution'",
@@ -1563,7 +1563,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "No significant movement. The 'Manifold Learning' boom (ISOMAP, LLE) began around this time (2000 publication), focusing on *finding* the manifold, not *generating* from it. The distinction is crucial: ISOMAP gives you coordinates; it doesn't give you a function to map coordinates back to pixels. The generative path was blocked by the intractability of the partition function.",
           "key_manifestations": [
             "Tenenbaum, J. B., et al. (2000). 'A Global Geometric Framework for Nonlinear Dimensionality Reduction' (ISOMAP - 1998 context)",
@@ -1573,7 +1573,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis/Incubation. The 'Products of Experts' (PoE) idea by Hinton suggested that high-dimensional data is best modeled by the intersection of many constraints, not the sum of many prototypes (GMMs). This was a crucial theoretical pivot. It laid the groundwork for RBMs. But practically, generation was still stuck on 'Eigenfaces' (PCA).",
           "key_manifestations": [
             "Hinton, G. E. (2002). 'Training Products of Experts by Minimizing Contrastive Divergence' (2000 drafts)",
@@ -1583,7 +1583,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The 'RBM' Awakening (+2%). Hinton showed that Restricted Boltzmann Machines could be trained efficiently with Contrastive Divergence. This allowed for the learning of 'features' that could reconstruct the input (digits). It was the first time a neural net could hallucinate a digit that looked plausible. The 'latent manifold' was finally being populated by non-linear coordinates.",
           "key_manifestations": [
             "Hinton, G. E. (2002). 'Training Products of Experts by Minimizing Contrastive Divergence'",
@@ -1593,7 +1593,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Stasis. While RBMs were exciting to a few, the quality of generation was poor (blurry, noisy). The community preferred 'Texture Synthesis' (Efros/Leung) which used non-parametric patch pasting. This was 'cheating' (using raw pixels) rather than 'learning' (using weights), but it looked better. The generative neural models couldn't compete with simple copy-paste statistics.",
           "key_manifestations": [
             "Efros, A. A., & Freeman, W. T. (2001). 'Image Quilting for Texture Synthesis and Transfer' (Dominant method in 2004)",
@@ -1603,7 +1603,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "The 'Deep Belief Net' Surge (+5%). Hinton's 2006 Science paper was a generative manifesto. It showed a network generating digits by sampling from the top-level associative memory and propagating down. It proved deep generative models were possible. However, the generation was still a 'side effect' of pre-training for classification, not the main goal.",
           "key_manifestations": [
             "Hinton, G. E., & Salakhutdinov, R. R. (2006). 'Reducing the Dimensionality of Data with Neural Networks'",
@@ -1613,7 +1613,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Decay (-2%). As the 'Supervised' Deep Learning (Cluster 1) took off, the 'Unsupervised/Generative' pre-training became unnecessary. People realized ReLU + Dropout + fast GPUs worked better than RBM pre-training. The generative aspect was abandoned as 'too hard' and 'not useful' for classification benchmarks. The cluster went into hibernation.",
           "key_manifestations": [
             "Vincent, P., et al. (2008). 'Extracting and Composing Robust Features with Denoising Autoencoders'",
@@ -1623,7 +1623,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Low point. Generation was a parlor trick. The SOTA for image generation was still largely based on texture synthesis or simple parametric models. Neural generation was blurry and chaotic. The 'Displacing Force' was the overwhelming utility of Discriminative models (AlexNet was brewing).",
           "key_manifestations": [
             "Ranzato, M., et al. (2010). 'Factored 3-Way Restricted Boltzmann Machines for Modeling Natural Images'",
@@ -1633,7 +1633,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Stasis. The focus was entirely on ImageNet Classification. However, the 'Autoencoder' sub-cluster was keeping the flame alive. De-noising Autoencoders were learning robust manifolds. But they were deterministic; they couldn't 'sample' new data easily. You could compress, but you couldn't create.",
           "key_manifestations": [
             "Bengio, Y., et al. (2013). 'Generalized Denoising Auto-Encoders as Generative Models'",
@@ -1643,7 +1643,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "The 'GAN' Big Bang (+22%). Goodfellow invented Generative Adversarial Networks. This was a radical paradigm shift: instead of modeling density (Likelihood), you model a game between a Faker (Generator) and a Cop (Discriminator). Simultaneously, VAEs (Kingma/Welling) provided the probabilistic alternative. The variance exploded. Suddenly, AI could generate sharp, albeit hallucinated, faces. The 'Manifold' became a playground.",
           "key_manifestations": [
             "Goodfellow, I., et al. (2014). 'Generative Adversarial Nets'",
@@ -1653,7 +1653,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "The 'Mode Collapse' Wars (+15%). The field became obsessed with stabilizing GANs. They were notoriously unstable (Minimax equilibrium is hard to find). Wasserstein GAN (WGAN) provided the theoretical fix (Earth Mover's Distance). Style Transfer (Gatys) showed that 'Style' and 'Content' were separable on the manifold. The cluster was now high-status; generating 'Anime Faces' became a rite of passage for undergrads.",
           "key_manifestations": [
             "Arjovsky, M., et al. (2017). 'Wasserstein GAN'",
@@ -1663,7 +1663,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 55,
+          "salience_share": 55,
           "description": "Scale and Fidelity (+10%). StyleGAN (Nvidia) demonstrated that GANs could generate photorealistic human faces at 1024px. The 'Latent Space' ($Z$) was dissected; researchers found they could do vector arithmetic on faces (Smile vector). BigGAN showed that scaling up batch size and parameters improved quality. The 'Uncanny Valley' was being crossed.",
           "key_manifestations": [
             "Karras, T., et al. (2019). 'A Style-Based Generator Architecture for Generative Adversarial Networks' (StyleGAN)",
@@ -1673,7 +1673,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 65,
+          "salience_share": 65,
           "description": "The 'Diffusion' Disruption (+10%). GANs hit a wall: they dropped modes (didn't cover the whole distribution) and were hard to train. Ho et al. resurrected 'Diffusion Probabilistic Models' (Sochl-Dickstein 2015). They showed that by slowly destroying data with noise and learning to reverse the process, you could generate higher quality samples than GANs with stable training. The trajectory pivoted sharply away from Adversarial toward Thermodynamic/Score-based models.",
           "key_manifestations": [
             "Ho, J., et al. (2020). 'Denoising Diffusion Probabilistic Models' (DDPM)",
@@ -1683,7 +1683,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 85,
+          "salience_share": 85,
           "description": "The 'Text-to-Image' Explosion (+20%). Latent Diffusion (Stable Diffusion) and DALL-E 2 combined Cluster 6 (Transformers/CLIP) with Cluster 9 (Diffusion). By conditioning the diffusion process on text embeddings, the manifold became semantically navigable via natural language. This was a cultural supernova. Art, design, and stock photography industries were disrupted overnight. The 'Manifold' was no longer abstract math; it was a product.",
           "key_manifestations": [
             "Rombach, R., et al. (2022). 'High-Resolution Image Synthesis with Latent Diffusion Models'",
@@ -1693,7 +1693,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 90,
+          "salience_share": 90,
           "description": "Video and 3D (+5%). The diffusion paradigm extended to temporal manifolds (Sora) and spatial manifolds (NeRFs/Gaussian Splats). The trajectory is 'World Modeling'\u2014generating consistent physics and causality, not just static pixels. The challenge is 'Consistency' over time. The cluster is absorbing the 'Graphics' industry. The 'Displacing Force' is the sheer compute cost of generating pixels vs tokens.",
           "key_manifestations": [
             "OpenAI (2024). 'Video Generation Models as World Simulators' (Sora technical report)",
@@ -1709,7 +1709,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'biological' optimization paradigm: finding solutions not through gradients (calculus) but through variation and selection (biology). Including Genetic Algorithms (GA), Genetic Programming (GP), and Neuroevolution, it offers a robust, derivative-free alternative for optimizing non-differentiable or discrete landscapes. Its trajectory is cyclical: it served as the primary 'black box' optimizer in the 90s, retreated during the convex/kernel era, and found a niche resurgence in the Deep Learning era as a scalable alternative for Reinforcement Learning (Evolution Strategies) and Architecture Search (AutoML).",
       "trajectory": {
         "1990": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The decade opened with Evolutionary Computation as a major contender (+2%). Holland's Genetic Algorithms were the standard for 'hard' optimization problems where gradients were unavailable. The 'force of motion' was the biological metaphor; in an era of brittle expert systems, the idea of 'evolving' a solution felt robust and adaptive. It was the primary methodology for the 'Artificial Life' sub-culture.",
           "key_manifestations": [
             "Goldberg, D. E. (1989/1990). 'Genetic Algorithms in Search, Optimization, and Machine Learning' (The Bible of the era)",
@@ -1719,7 +1719,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Peak 'Genetic Programming' (+2%). John Koza published his seminal book on GP, showing that computer code itself could be evolved (LISP S-expressions). This captured the imagination: AI wasn't just tuning weights; it was writing code. The variance expanded because it promised to automate the job of the programmer. However, the 'Displacing Force' was the sheer computational cost; evolving code was millions of times slower than training a perceptron.",
           "key_manifestations": [
             "Koza, J. R. (1992). 'Genetic Programming: On the Programming of Computers by Means of Natural Selection'",
@@ -1729,7 +1729,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Stasis/Slight Decay (-1%). While popular in engineering (designing antennas, truss structures), the method struggled in pure AI tasks like pattern recognition. The 'No Free Lunch' theorem (Cluster 5) dampened the hype, proving GAs weren't magic universal solvers. The cluster began to drift toward 'Co-evolution' (Hillis), attempting to simulate arms races to drive complexity.",
           "key_manifestations": [
             "Hillis, W. D. (1990/1994). 'Co-evolving Parasites Improve Simulated Evolution as an Optimization Procedure'",
@@ -1739,7 +1739,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Contraction (-2%). The rise of SVMs (Cluster 2) offered a mathematically guaranteed global optimum for classification. Evolution offered only 'good enough' results with high variance. The academic community began to view GAs as 'heuristic hacking' rather than rigorous science. The cluster retreated to the 'CEC' (Congress on Evolutionary Computation) conference ecosystem, becoming insulated from NeurIPS.",
           "key_manifestations": [
             "Back, T. (1996). 'Evolutionary Algorithms in Theory and Practice'",
@@ -1749,7 +1749,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stability via CMA-ES (+0%). The Covariance Matrix Adaptation Evolution Strategy (CMA-ES) matured. This was the 'Newton's Method' of evolutionary computation\u2014a sophisticated, mathematically grounded algorithm that actually worked well on continuous functions. It kept the cluster relevant for 'Black Box Optimization' competitions, even if it wasn't solving AI's perception problems.",
           "key_manifestations": [
             "Hansen, N., & Ostermeier, A. (2001). 'Completely Derandomized Self-Adaptation in Evolution Strategies' (Reflecting late 90s work)",
@@ -1759,7 +1759,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Low ebb (-1%). The 'Probabilistic' era (Cluster 3) dominated. Evolution was seen as 'blind search.' Why evolve a structure when you can learn the dependency graph? The cluster survived in 'Artificial Life' (Sims' evolved creatures) and games, but lost the 'Learning' mandate.",
           "key_manifestations": [
             "Lipson, H., & Pollack, J. B. (2000). 'Automatic Design and Manufacture of Robotic Lifeforms'",
@@ -1769,7 +1769,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The 'NEAT' Catalyst (+1%). Stanley and Miikkulainen released NeuroEvolution of Augmenting Topologies (NEAT). This solved the 'Competing Conventions' problem and allowed neural network topologies to grow from minimal structures. It reinvigorated the idea that *architecture* could be learned, not just weights. It outperformed fixed-topology networks on control tasks.",
           "key_manifestations": [
             "Stanley, K. O., & Miikkulainen, R. (2002). 'Evolving Neural Networks through Augmenting Topologies'",
@@ -1779,7 +1779,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. While NEAT was cool, it didn't scale to large inputs (pixels). The cluster remained trapped in the 'Pole Balancing' and 'Robot Control' low-dimensional regime. The 'Displacing Force' was the lack of efficient hardware support; GAs couldn't easily leverage the matrix-multiplication speedups of early GPUs.",
           "key_manifestations": [
             "Stanley, K. O., & Miikkulainen, R. (2004). 'Competitive Coevolution through Evolutionary Complexification'",
@@ -1789,7 +1789,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Contraction (-1%). The 'Deep Learning' breakthrough (Hinton) showed that you *could* train deep fixed architectures with gradients. The premise of Neuroevolution\u2014that gradients don't work for deep/complex structures\u2014was empirically falsified. The cluster was marginalized to 'Hyperparameter Tuning' (simply running GAs to find learning rates for Deep Nets).",
           "key_manifestations": [
             "Clune, J., et al. (2008). 'Natural Selection Fails to Optimize Mutation Rates' (2006 research)",
@@ -1799,7 +1799,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Nadir. The era of SGD (Cluster 5) had begun. Gradients were cheap; population-based evaluation was expensive. Why run 100 neural nets (Population) when 1 (SGD) works? The cluster persisted only in 'Evolutionary Art' and niche robotics where the fitness function was non-differentiable.",
           "key_manifestations": [
             "Floreano, D., & Mattiussi, C. (2008). 'Bio-Inspired Artificial Intelligence'",
@@ -1809,7 +1809,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "A faint pulse in 'Novelty Search' (+0%). Stanley and Lehman argued that 'Objective Functions' are deceptive and one should optimize for 'Novelty' instead. This was a profound philosophical insight that influenced the RL community (exploration bonuses), even if the evolutionary methods themselves didn't gain traction. It bridged the gap to the 'Curiosity' sub-field in RL.",
           "key_manifestations": [
             "Lehman, J., & Stanley, K. O. (2011). 'Abandoning Objectives: Evolution through the Search for Novelty Alone' (2010 work)",
@@ -1819,7 +1819,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Deep Learning (AlexNet) sucked all the air out of the room (-1%). Evolutionary methods were viewed as hopelessly inefficient for training ConvNets. The variance hit rock bottom. The only intersection was using GAs to optimize the *structure* of CNNs, but this was rare due to cost.",
           "key_manifestations": [
             "Snoek, J., et al. (2012). 'Practical Bayesian Optimization of Machine Learning Algorithms' (Displacing GAs for hyperparameter tuning)",
@@ -1829,7 +1829,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis/Incubation. The concept of 'Quality Diversity' (MAP-Elites) emerged. Instead of finding one best solution, find a map of high-performing diverse solutions. This was 'Illumination' rather than Optimization. It found utility in robotics (damage recovery) where having a library of different walking gaits was useful.",
           "key_manifestations": [
             "Mouret, J. B., & Clune, J. (2015). 'Illuminating Search Spaces by Mapping Elites' (MAP-Elites - 2014 arxiv)",
@@ -1839,7 +1839,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "The 'OpenAI ES' Shock (+2%). Salimans et al. (OpenAI) showed that simple Evolution Strategies (ES) could train Deep RL agents (MuJoCo/Atari) as well as A3C/DQN, with perfect parallelization. This was a massive catalyst. It debunked the myth that Evolution couldn't scale to millions of parameters. The secret was estimating the gradient via finite differences in random directions. The 'Motion' was a pivot from 'Complexity' to 'Scalability.'",
           "key_manifestations": [
             "Salimans, T., et al. (2017). 'Evolution Strategies as a Scalable Alternative to Reinforcement Learning'",
@@ -1849,7 +1849,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The 'AutoML' Boom (+1%). Google focused heavily on 'Neural Architecture Search' (NAS). While some used RL, the 'Regularized Evolution' (AmoebaNet) approach proved superior and cheaper. Evolution found the 'Transformer' architecture variants. The cluster became the 'Architect' of the Deep Learning cluster, designing the nets that SGD would train.",
           "key_manifestations": [
             "Real, E., et al. (2019). 'Regularized Evolution for Image Classifier Architecture Search' (AmoebaNet - 2018 work)",
@@ -1859,7 +1859,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Contraction (-2%). The cost of NAS was too high for academia, and industry settled on standard backbones (Transformers). 'One model to rule them all' (Foundation Models) reduced the need for architecture search. The cluster shifted to 'Evolving Agents' in complex environments (Multi-agent RL), but PPO/SAC (Gradient methods) were generally preferred for efficiency.",
           "key_manifestations": [
             "Lange, R. T., et al. (2022). 'Discovering Attention-Based Genetic Algorithms via Meta-Black-Box Optimization'",
@@ -1869,7 +1869,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis/Niche. Evolution found a new, strange home: 'Prompt Engineering.' Evolving text prompts (Promptbreeder) to optimize LLM output. Since LLMs are black boxes (no gradients accessible for the user), derivative-free optimization (Evolution) became the only way to optimize prompts automatically. This is a 'meta-parasitic' relationship with the dominant LLM cluster.",
           "key_manifestations": [
             "Zhou, Y., et al. (2023). 'Large Language Models are Human-Level Prompt Engineers' (APE - derivative free optimization)",
@@ -1879,7 +1879,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Current trajectory is 'Algorithm Discovery' (+0%). Google DeepMind's 'FunSearch' and 'Lion' optimizer discovery used evolutionary methods (guided by LLMs) to write new algorithms. The motion is 'LLMs as Mutation Operators.' Instead of random bit-flips, use an LLM to mutate code intelligently, then use Evolution to select the best code. This 'Evolutionary Prompting' is the modern face of Genetic Programming.",
           "key_manifestations": [
             "Romera-Paredes, B., et al. (2024). 'Mathematical Discoveries from Program Search with Large Language Models' (FunSearch)",
@@ -1895,7 +1895,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the mathematical conviction that the world is 'Sparse'\u2014that high-dimensional data can be perfectly represented by a small number of active components. It links Neuroscience (V1 visual cortex), Signal Processing (Wavelets), and Statistics (Lasso). Its trajectory is a sharp peak: rising from the biological plausibility of the 90s, exploding with the 'Compressed Sensing' mathematical miracle in the 2000s (breaking the Nyquist-Shannon limit), and then being subsumed/dissolved by Deep Learning, which learned sparsity implicitly via ReLU and L1 regularization rather than explicit optimization.",
       "trajectory": {
         "1990": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The cluster began in Neuroscience (+1%). The question was: 'Why do V1 simple cells look like Gabors?' Field and Olshausen were formulating the hypothesis that the brain optimizes for *energy efficiency* (sparsity). If neurons cost calories, you want few of them active at once. This was a distinct alternative to 'Principal Component Analysis' (PCA), which produced dense, non-local features. The variance was local to computational neuroscience.",
           "key_manifestations": [
             "Field, D. J. (1987/1990). 'Relations between the Statistics of Natural Images and the Response Properties of Cortical Cells'",
@@ -1905,7 +1905,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The 'Wavelet' revolution in signal processing was underway. Wavelets provided a sparse basis for images (JPEG 2000 precursor). This provided the mathematical bedrock: fixed bases could be sparse. The 'Learning' aspect was still nascent, struggling with non-convex optimization to find the dictionary.",
           "key_manifestations": [
             "Mallat, S., & Zhang, Z. (1993). 'Matching Pursuits with Time-Frequency Dictionaries' (1992 research)",
@@ -1915,7 +1915,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "The 'Lasso' Event (+1%). Tibshirani introduced the Lasso (L1-regularized regression). This was the crucial link: minimizing the L1 norm ($|x|$) induces zeros (sparsity), whereas L2 ($x^2$) just makes values small. This simple statistical tool gave researchers a convex knob to turn on sparsity. It moved the cluster from 'Neuro-mimicry' to 'Statistical Methodology.'",
           "key_manifestations": [
             "Tibshirani, R. (1996). 'Regression Shrinkage and Selection via the Lasso' (1994-1995 drafts)",
@@ -1925,7 +1925,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The 'Olshausen & Field' Breakthrough (+4%). Their Nature paper demonstrated that simply maximizing sparsity on natural images *emerges* edge detectors identical to the mammalian visual cortex. This was a 'God Particle' moment for Computational Neuroscience. It suggested that the brain is a sparse coding machine. The cluster gained massive explanatory power for biological vision.",
           "key_manifestations": [
             "Olshausen, B. A., & Field, D. J. (1996). 'Emergence of Simple-Cell Receptive Field Properties by Learning a Sparse Code'",
@@ -1935,7 +1935,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Expansion (+2%). Sparsity spread to 'Blind Source Separation' and 'Denoising.' The realization was that noise is dense (spread out), but signals are sparse (structured). Therefore, shrinking coefficients in a sparse basis kills noise but preserves signal. 'Basis Pursuit' became a standard tool. The cluster was becoming the dominant paradigm in Signal Processing.",
           "key_manifestations": [
             "Chen, S. S., et al. (2001). 'Atomic Decomposition by Basis Pursuit' (Journal version)",
@@ -1945,7 +1945,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Stasis/Refinement. The challenge was optimization speed. Solving L1 problems was slower than L2 (Least Squares). The field focused on algorithms (LARS, Interior Point) to make sparse coding practical. It remained a powerful, elegant theory waiting for the 'Big Data' killer app.",
           "key_manifestations": [
             "Efron, B., et al. (2004). 'Least Angle Regression' (LARS - 2002 work)",
@@ -1955,7 +1955,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Expansion (+2%). 'Non-negative Matrix Factorization' (NMF) gained popularity. While not strictly L1, the non-negativity constraint induced parts-based (sparse) representations. Lee & Seung's work showed NMF learning 'parts of faces' (noses, eyes) vs PCA's 'ghost faces.' This reinforced the 'Sparsity = Interpretability' narrative.",
           "key_manifestations": [
             "Lee, D. D., & Seung, H. S. (1999/2001). 'Learning the Parts of Objects by Non-Negative Matrix Factorization'",
@@ -1965,7 +1965,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "The 'Compressed Sensing' Supernova (+8%). Cand\u00e8s, Romberg, Tao, and Donoho proved that if a signal is sparse, you can reconstruct it from *far fewer* samples than the Nyquist limit. This was a mathematical miracle. It defied a century of signal processing dogma. The variance exploded because this wasn't just analysis; it was *acquisition*. You could build faster MRI scanners (scan less, compute more).",
           "key_manifestations": [
             "Cand\u00e8s, E. J., Romberg, J., & Tao, T. (2006). 'Robust Uncertainty Principles: Exact Signal Reconstruction from Highly Incomplete Frequency Information' (2004 preprint)",
@@ -1975,7 +1975,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Peak Saturation (+5%). Everyone was doing Compressed Sensing. The 'Single Pixel Camera' (Rice University) demonstrated you could take a photo with one photodiode by using random masks and math. 'L1 Minimization' was the hammer, and every problem was a nail. In Machine Learning, 'Sparse coding' became the preferred layer for the new 'Deep Learning' architectures (before ReLUs took over).",
           "key_manifestations": [
             "Duarte, M. F., et al. (2008). 'Single-Pixel Imaging via Compressive Sampling' (2006 work)",
@@ -1985,7 +1985,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "Integration (+-0%). 'Dictionary Learning' (KSVD) became the standard for image restoration. Mairal et al. showed state-of-the-art results. However, a competitor was rising: The Deep Belief Net (Cluster 1). Researchers debated: 'Should we mathematically optimize for sparsity (L1), or just learn a deep net?' The rigorous L1 approach was still winning on 'Small Data' image tasks.",
           "key_manifestations": [
             "Aharon, M., Elad, M., & Bruckstein, A. (2006). 'K-SVD: An Algorithm for Designing Overcomplete Dictionaries for Sparse Representation'",
@@ -1995,7 +1995,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Displacement begins (-7%). The introduction of the ReLU (Rectified Linear Unit) in Deep Learning killed the explicit 'Sparse Coding' layer. ReLU ($max(0, x)$) creates sparsity naturally (half the neurons are zero) without the expensive iterative optimization of L1 solvers. Why run a slow Lasso solver at inference time when a fast matrix multiply + ReLU does the same thing? The cluster began to lose its 'Mechanism' status and became just an 'Insight.'",
           "key_manifestations": [
             "Nair, V., & Hinton, G. E. (2010). 'Rectified Linear Units Improve Restricted Boltzmann Machines' (The killer of explicit sparse coding)",
@@ -2005,7 +2005,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Collapse (-7%). AlexNet didn't use Sparse Coding layers; it used Convolution + ReLU. The 'Compressed Sensing' community remained active in MRI and Hardware, but in AI, 'Learned Representations' (Dense or implicitly sparse) won. The 'Structured Sparsity' sub-field tried to keep up by enforcing tree structures on sparsity, but it was too complex compared to the brute force of Dropout.",
           "key_manifestations": [
             "Krizhevsky, A., et al. (2012). 'ImageNet Classification with Deep Convolutional Neural Networks' (No explicit sparse coding)",
@@ -2015,7 +2015,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis/Niche. The cluster retreated to 'Theory.' Researchers analyzed *why* Deep Learning works using Compressed Sensing tools (e.g., 'The deep net is recovering a sparse signal'). 'LISTA' (Learned ISTA) showed that you could unroll an optimization algorithm into a neural net, bridging the two worlds. This was intellectually satisfying but practically, people just used ResNets.",
           "key_manifestations": [
             "Gregor, K., & LeCun, Y. (2010/2014). 'LISTA' (Legacy influence)",
@@ -2025,7 +2025,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Decay (-1%). Sparsity became a 'Hardware' concern. 'Network Pruning' (Han et al.) used sparsity to compress trained models for mobile phones. This was 'Post-hoc Sparsity' (removing weights after training), not 'Prior Sparsity' (enforcing it during learning). The mathematical elegance of Compressed Sensing was replaced by the engineering pragmatism of 'Sparse Matrix Multiplication.'",
           "key_manifestations": [
             "Han, S., et al. (2015). 'Learning both Weights and Connections for Efficient Neural Network'",
@@ -2035,7 +2035,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The 'Double Descent' theory (Cluster 8) suggested that *over*-parameterization (density) is good, contradicting the 'Parsimony' (Sparsity) dogma. Sparsity was no longer a goal for generalization, only for efficiency. The 'L1' norm was largely dropped from loss functions in favor of Weight Decay (L2).",
           "key_manifestations": [
             "Belkin, M., et al. (2019). 'Reconciling Modern Machine-Learning Practice and the Bias-Variance Trade-off'",
@@ -2045,7 +2045,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Minor resurgence in 'MoE' (+0%). Mixture of Experts (Switch Transformer) brought 'Activation Sparsity' back. In a trillion-parameter model, you only activate 1% of parameters per token. This is 'Dynamic Sparsity.' It echoes the V1 efficient coding hypothesis (Cluster start), but implemented via routing gates rather than L1 minimization.",
           "key_manifestations": [
             "Fedus, W., et al. (2022). 'Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity'",
@@ -2055,7 +2055,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. Sparse Coding lives on in 'Dictionary Learning for Interpretability' (Anthropic). Researchers realized that individual neurons in LLMs are polysemantic (dense concepts), but if you project them into a higher-dimensional sparse autoencoder, you find monosemantic 'features.' This is a direct callback to Olshausen & Field 1996, applied to GPT-4 activations.",
           "key_manifestations": [
             "Elhage, N., et al. (2022). 'Toy Models of Superposition'",
@@ -2065,7 +2065,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Current trajectory is 'Interpretability' (+0%). The 'Superposition Hypothesis' posits that models simulate a larger sparse network inside a smaller dense one. Decoding this sparse basis is the primary hope for understanding LLM internals. The cluster has mutated from 'Signal Acquisition' to 'AI Neuroscience.'",
           "key_manifestations": [
             "Gao, L., et al. (2024). 'Scaling and evaluating sparse autoencoders'",
@@ -2081,7 +2081,7 @@ export const foundationAIData = {
       "description": "This eigencluster addresses the 'Non-Euclidean' world. While CNNs handle grids (images) and RNNs handle lines (text), this cluster learns functions on irregular domains: social networks, molecules, 3D meshes, and manifolds. Trajectory-wise, it moved from the spectral math of the 2000s (Eigenmaps) to the 'Geometric Deep Learning' unification of the 2010s (GCNs, GATs), culminating in the 'AlphaFold' revolution where geometry solved biology.",
       "trajectory": {
         "1990": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Niche. 'Graph Theory' was discrete math, not learning. 'Geometric Learning' didn't exist. There was 'Spectral Graph Theory' (Fiedler vectors), used for partitioning meshes in finite element analysis, but no concept of learning features on nodes. The variance was near zero in the AI latent space.",
           "key_manifestations": [
             "Mohar, B. (1991). 'The Laplacian Spectrum of Graphs'",
@@ -2091,7 +2091,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Feature extraction was manual. If you had a graph, you extracted 'degree', 'clustering coefficient', etc., and fed them to a neural net. The geometry was pre-processed away. The 'Displacing Force' was the lack of datasets; big social networks and large molecule databases didn't exist publicly.",
           "key_manifestations": [
             "Dayan, P. (1993). 'Improving Generalization for Temporal Difference Learning: The Successor Representation' (Implicit graph map)",
@@ -2101,7 +2101,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. 'Kernel Methods' (Cluster 2) began to touch graphs via 'Graph Kernels' (Random Walk kernels). This allowed SVMs to classify molecules. This was the first bridge between graphs and learning, but it was 'Implicit' (dot products) rather than 'Explicit' (learning node vectors).",
           "key_manifestations": [
             "Haussler, D. (1999). 'Convolution Kernels on Discrete Structures' (Roots in mid-90s)",
@@ -2111,7 +2111,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The 'Manifold Learning' Seeds (+1%). Tenenbaum and Roweis began developing ISOMAP and LLE. The core insight: High-dimensional data lies on a low-dimensional non-linear manifold. To learn it, you build a nearest-neighbor graph and compute geodesic distances. This linked 'Graphs' to 'Geometry' to 'Learning.'",
           "key_manifestations": [
             "Tenenbaum, J. B., et al. (2000). 'A Global Geometric Framework for Nonlinear Dimensionality Reduction' (ISOMAP - development late 90s)",
@@ -2121,7 +2121,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "The 'Spectral Clustering' Boom (+2%). Shi & Malik (2000) popularized Normalized Cuts. Suddenly, Computer Vision treated images as graphs of pixels. Segmentation was solved by finding the eigenvectors of the Laplacian. This was 'transductive' learning (learning on the specific graph you have). It was elegant linear algebra, widely adopted.",
           "key_manifestations": [
             "Shi, J., & Malik, J. (2000). 'Normalized Cuts and Image Segmentation'",
@@ -2131,7 +2131,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis/Refinement. Manifold learning (ISOMAP/LLE) was the rage at NIPS. However, it had the 'Out of Sample' problem: if a new point arrived, you had to re-compute the whole graph. This limited it to 'Data Analysis' rather than 'Machine Learning' pipelines. The cluster was mathematically rich but practically constrained.",
           "key_manifestations": [
             "Belkin, M., & Niyogi, P. (2003). 'Laplacian Eigenmaps for Dimensionality Reduction and Representation Learning'",
@@ -2141,7 +2141,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Contraction (-1%). The Kernel methods (SVMs) were working so well that complex manifold assumptions felt unnecessary. 'Why assume a manifold when a generic RBF kernel works?' The graph community retreated to 'Semi-Supervised Learning' (Label Propagation), utilizing the graph structure to spread labels from few labeled nodes to many unlabeled ones.",
           "key_manifestations": [
             "Zhu, X., et al. (2003). 'Semi-Supervised Learning Using Gaussian Fields and Harmonic Functions'",
@@ -2151,7 +2151,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The 'GNN' Pre-History (+0%). Scarselli and Gori proposed the 'Graph Neural Network' model. It used a recurrent mechanism to propagate information until convergence. It was computationally expensive and ignored by the mainstream (focused on SVMs), but it established the concept: Neural Networks can run on graphs.",
           "key_manifestations": [
             "Scarselli, F., et al. (2009). 'The Graph Neural Network Model' (2005 conference papers)",
@@ -2161,7 +2161,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. Deep Learning (Hinton) was rising on *Euclidean* data (Images/Digits). Convolutional Networks rely on shift invariance (a cat is a cat if moved left). Graphs have no shift invariance (no 'left' or 'right'). The fields were orthogonal. Geometric learning was stuck in 'Computer Graphics' (processing 3D meshes) rather than AI.",
           "key_manifestations": [
             "Bronstein, A. M., et al. (2008). 'Numerical Geometry of Non-Rigid Shapes' (2006 work)",
@@ -2171,7 +2171,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Spectral CNNs (+1%). Bruna, Zaremba, and LeCun attempted to define 'Convolution' on graphs using the Fourier domain (Eigenvectors of Laplacian). It worked but was not spatial; it depended on the specific graph structure (not transferable). It was a theoretical breakthrough but an engineering failure.",
           "key_manifestations": [
             "Brununa, J., et al. (2014). 'Spectral Networks and Locally Connected Networks on Graphs' (Roots in late 2000s spectral theory)",
@@ -2181,7 +2181,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Incubation. The 'Word2Vec' idea (Skip-Gram) inspired 'DeepWalk' and 'Node2Vec.' Researchers realized: 'A random walk on a graph is like a sentence in a corpus.' This allowed applying NLP tools to Graphs. It was 'Shallow' embedding, but it worked and scaled. This sparked the 'Graph Representation Learning' boom.",
           "key_manifestations": [
             "Perozzi, B., et al. (2014). 'DeepWalk: Online Learning of Social Representations' (2013-2014 work)",
@@ -2191,7 +2191,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Stasis/Preparation. While AlexNet conquered images, graphs waited. The 'Geometric' community (Bronstein et al.) was formalizing 'Geodesic Convolution.' The pieces were there (Spectral theory, Neural Nets, Embeddings), but the 'AlexNet for Graphs' hadn't happened yet.",
           "key_manifestations": [
             "Masci, J., et al. (2015). 'Geodesic Convolutional Neural Networks on Riemannian Manifolds'",
@@ -2201,7 +2201,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "The 'GCN' Inflection (+5%). Kipf and Welling simplified Spectral CNNs into the 'Graph Convolutional Network' (GCN). It was a first-order approximation that looked like message passing: 'Average your neighbors, multiply by weights, ReLU.' It was fast, scalable, and coded in PyTorch. Suddenly, every dataset with links (Citation networks, Reddit) became a benchmark. The cluster exploded.",
           "key_manifestations": [
             "Kipf, T. N., & Welling, M. (2017). 'Semi-Supervised Classification with Graph Convolutional Networks' (2016 arXiv)",
@@ -2211,7 +2211,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "Geometric Unification (+6%). Bronstein et al. published 'Geometric Deep Learning,' defining the field. It unified grids (CNNs), graphs (GCNs), and manifolds under the umbrella of 'Symmetry' and 'Invariance.' This gave the cluster a strong theoretical identity. Graph networks began to beat standard methods in Chemistry (Property Prediction) and Recommender Systems (Pinterest GraphSage).",
           "key_manifestations": [
             "Bronstein, M. M., et al. (2017). 'Geometric Deep Learning: Going beyond Euclidean data'",
@@ -2221,7 +2221,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "The 'AlphaFold' Prelude (+4%). DeepMind used geometric principles (Equivariance) to solve protein folding. The architecture wasn't just a graph; it respected 3D rotations and translations (SE(3) symmetry). 'Equivariant Neural Networks' (Cohen/Welling) became the cutting edge. The cluster moved from 'Topological' (who is connected to whom) to 'Geometric' (where are atoms in 3D space).",
           "key_manifestations": [
             "Senior, A. W., et al. (2020). 'Improved Protein Structure Prediction using Potentials from Deep Learning' (AlphaFold 1)",
@@ -2231,7 +2231,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "AlphaFold 2 Shock (+8%). The solution to the 50-year-old protein folding problem. It used 'Invariant Point Attention' (Geometric Attention). This was the first time AI solved a major open scientific problem better than physics. The 'Force of Motion' was the migration of physicists into AI, bringing Group Theory and Gauge Theory with them. The cluster is now the engine of 'AI for Science' (Drug Discovery, Material Science).",
           "key_manifestations": [
             "Jumper, J., et al. (2021). 'Highly Accurate Protein Structure Prediction with AlphaFold'",
@@ -2241,7 +2241,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 32,
+          "salience_share": 32,
           "description": "Stasis/Integration (+2%). Graph methods integrated with LLMs ('GraphRAG'). Knowledge Graphs returned as a way to ground Hallucinations. However, for pure graph tasks, the 'Oversmoothing' problem (deep GCNs lose information) remained a bottleneck. The 'Displacing Force' was the Transformer: treating nodes as a sequence (Graph Transformer) often worked better than message passing.",
           "key_manifestations": [
             "Ramp\u00e1\u0161ek, L., et al. (2022). 'Recipe for a General, Powerful, Scalable Graph Transformer'",
@@ -2251,7 +2251,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Current trajectory is 'Generative Geometry' (+3%). Diffusion models on manifolds (SE(3) Diffusion) to generate proteins and crystals. 'AlphaProteo' and 'BioMistral'. The cluster is effectively merging with Generative AI (Cluster 9) but keeping the strict geometric constraints required for physics. It is the most scientifically productive cluster in the 2025 landscape.",
           "key_manifestations": [
             "Watson, J. L., et al. (2023). 'De novo design of protein structure and function with RFdiffusion'",
@@ -2267,7 +2267,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Science of Cause and Effect'\u2014moving beyond the 'Association' layer (Pattern Recognition) to the 'Counterfactual' layer (Imagination). Dominated by Judea Pearl (DAGs/Do-calculus) and Donald Rubin (Potential Outcomes), it addresses the inability of standard statistical learning to predict the consequences of interventions. Its trajectory is U-shaped: foundational in the 90s, eclipsed by the 'Correlation-is-Enough' Big Data era of the 2010s, and experiencing a renaissance in the 2020s as researchers hit the limits of i.i.d. generalization and seek robust, unbiased AI.",
       "trajectory": {
         "1990": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "The cluster was in a state of 'Foundational Separation.' While Bayesian Networks (Cluster 3) were handling probability, the specific semantics of 'Causality' were being formalized. Pearl and Verma were distinguishing between 'Seeing' (Observation) and 'Doing' (Intervention). The variance was driven by the realization that $P(Y|X)$ is fundamentally different from $P(Y|do(X))$. This distinction was heretical to standard statisticians who believed causality was unprovable outside of Randomized Controlled Trials (RCTs).",
           "key_manifestations": [
             "Pearl, J., & Verma, T. S. (1991). 'A Theory of Inferred Causation'",
@@ -2277,7 +2277,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Expansion (+1%). The 'PC Algorithm' (Spirtes/Glymour) demonstrated that one could infer causal structure from observational data under strict assumptions (Faithfulness, Markov Property). This sparked a philosophical war with traditional statistics. The motion was 'Structure Learning'\u2014trying to discover the arrows of the DAG from raw correlations.",
           "key_manifestations": [
             "Spirtes, P., et al. (1993). 'Causation, Prediction, and Search' (The CMU School manifesto)",
@@ -2287,7 +2287,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. The community was small but rigorous. The focus was on 'Identifiability'\u2014determining when a causal effect can be estimated from observational data. The 'Back-Door Criterion' became the standard tool for controlling confounders. However, the AI community at large was moving toward simple classification (Neural Nets/SVMs), ignoring the 'Why' for the 'What.'",
           "key_manifestations": [
             "Pearl, J. (1995). 'Causal Diagrams for Empirical Research' (1994 Biometrika submission)",
@@ -2297,7 +2297,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Contraction (-1%). The 'Data Mining' boom began. In data mining, correlation is gold. If diapers and beer are correlated, you place them together; you don't care *why* (causality). The Causal cluster was viewed as 'too philosophical' and 'unscalable' because structure learning is NP-hard. It retreated to Epidemiology and Economics.",
           "key_manifestations": [
             "Angrist, J. D., et al. (1996). 'Identification of Causal Effects Using Instrumental Variables'",
@@ -2307,7 +2307,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. Pearl continued to refine the 'Do-Calculus,' a complete axiomatic system for causal manipulation. This was a theoretical peak\u2014the math was solved\u2014but the 'Force of Motion' in AI was elsewhere (SVMs). The disconnect between 'Machine Learning' (prediction) and 'Causal Inference' (explanation) was at its widest.",
           "key_manifestations": [
             "Galles, D., & Pearl, J. (1998). 'An Axiomatic Characterization of Causal Counterfactuals'",
@@ -2317,7 +2317,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The Publication of 'Causality' (+2%). Judea Pearl's book 'Causality: Models, Reasoning, and Inference' unified the field. It won the Turing Award later, but in 2000, it planted a flag: AI must handle causality to be intelligent. It introduced the 'Ladder of Causation' (Association -> Intervention -> Counterfactuals). The variance bump was intellectual, not industrial.",
           "key_manifestations": [
             "Pearl, J. (2000). 'Causality: Models, Reasoning, and Inference'",
@@ -2327,7 +2327,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Decay (-1%). The 'Ensemble Methods' (Random Forests) and early Google search algorithms dominated. These were purely observational engines. 'Big Data' started to become the mantra, and with enough data, 'correlation is enough' (Anderson's 'End of Theory' article later captured this zeitgeist). Causal methods required 'Domain Knowledge' (the graph structure), which was seen as a bottleneck.",
           "key_manifestations": [
             "Pearl, J. (2003). 'Statistics and Causal Inference: A Review'",
@@ -2337,7 +2337,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis/Niche. The 'LiNGAM' algorithm (Shimizu) showed that non-Gaussian data allows you to discover causal direction without time (X->Y vs Y->X). This was a neat trick but applied only to small, tabular data. The cluster was dormant in the major ML conferences (ICML/NIPS), overshadowed by Kernel Methods.",
           "key_manifestations": [
             "Shimizu, S., et al. (2006). 'A Linear Non-Gaussian Acyclic Model for Causal Discovery' (2005-2006 work)",
@@ -2347,7 +2347,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Contraction (-1%). The Deep Learning revolution was beginning. Deep Learning is the ultimate 'Association' machine. It finds complex, non-linear correlations ($P(Y|X)$). It has zero concept of causality. As DL rose, Causality fell. The field effectively bifurcated: ML for prediction, Economics/Epidemiology for policy.",
           "key_manifestations": [
             "Pearl, J. (2009). 'Causality: Models, Reasoning, and Inference (2nd Ed)' (Trying to stay relevant)",
@@ -2357,7 +2357,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Nadir. 'The End of Theory' era. Chris Anderson (Wired) famously wrote that with enough data, the scientific method is obsolete. Who cares *why* the engine fails, if the sensors predict it? This philosophy was the antithesis of this cluster. Causal variance was non-existent in the SOTA AI conversation.",
           "key_manifestations": [
             "Hoyer, P., et al. (2009). 'Nonlinear Causal Discovery with Additive Noise Models'",
@@ -2367,7 +2367,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Deep Learning (AlexNet prep) was about to take over. Causality was maintained by the 'Sch\u00f6lkopf' group (Max Planck Institute). They began to formulate the idea that 'Causal mechanisms are invariant.' If X causes Y, that mechanism holds across different domains, whereas simple correlations might flip (Simpson's Paradox). This was the seed of 'Domain Adaptation.'",
           "key_manifestations": [
             "Peters, J., et al. (2011). 'Causal Inference on Time Series using Restricted Structural Equation Models'",
@@ -2377,7 +2377,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The world was watching ImageNet. However, the 'Adversarial Example' phenomenon (2013/14) began to suggest that Deep Nets were fragile. They were learning 'texture bias' (correlations) rather than 'shape' (causal structure). This latent failure mode would eventually drive people back to causality, but not yet.",
           "key_manifestations": [
             "Peters, J., et al. (2014). 'Causal Inference using Invariant Prediction' (2012-13 context)",
@@ -2387,7 +2387,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Slight Uptick (+1%). 'Invariant Risk Minimization' concepts began to form. Researchers wanted models that worked in *new* environments (Out-of-Distribution). Standard ERM (Empirical Risk Minimization) fails here. Causal models, by definition, capture the invariant laws of physics/logic. This connected Causality to 'Robustness.'",
           "key_manifestations": [
             "Peters, J., et al. (2016). 'Causal Inference by Using Invariant Prediction: Identification and Confidence Intervals' (2015 arXiv)",
@@ -2397,7 +2397,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "The 'Causal ML' Awakening (+2%). As AI entered high-stakes fields (Healthcare, Justice), 'Fairness' became critical. You can't define fairness with correlation (Redlining is just correlation). You need counterfactuals: 'Would this person have been hired if they were a different race?'. This forced the ML community to read Pearl. 'The Book of Why' (published 2018, context 2016-17) popularized these concepts.",
           "key_manifestations": [
             "Kusner, M. J., et al. (2017). 'Counterfactual Fairness'",
@@ -2407,7 +2407,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Convergence with Deep Learning (+2%). 'Causal Representation Learning' (Sch\u00f6lkopf) proposed merging Deep Learning (to learn features from pixels) with Causal Inference (to learn relations between features). Instead of hand-crafting the graph, could we learn the causal variables *and* the graph? This was the 'Neuro-Causal' synthesis.",
           "key_manifestations": [
             "Sch\u00f6lkopf, B., et al. (2021). 'Toward Causal Representation Learning' (2019-2020 drafts)",
@@ -2417,7 +2417,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Expansion (+1%). The failure of models during COVID-19 (distribution shift) highlighted the fragility of correlation. Causal models became the gold standard for 'Reliable AI.' The concept of 'Disentanglement' in VAEs/GANs was re-interpreted as 'isolating independent causal mechanisms.'",
           "key_manifestations": [
             "Sch\u00f6lkopf, B. (2019/2020). 'Causality for Machine Learning'",
@@ -2427,7 +2427,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "LLM Integration (+1%). Can LLMs reason causally? (K\u0131c\u0131man et al.). Researchers found that LLMs have internalized a lot of causal common sense from text ('dropping glass causes breaking'). The new frontier is using LLMs to *propose* causal graphs, which formal solvers then verify. This solves the 'Discovery' bottleneck.",
           "key_manifestations": [
             "K\u0131c\u0131man, E., et al. (2023). 'Causal Reasoning and Large Language Models: Opening a New Frontier for Causality'",
@@ -2437,7 +2437,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Current trajectory is 'Actionable AI' (+1%). We are moving from 'Chatbots' (passive text gen) to 'Agents' (active doers). To act effectively, an agent must have a causal world model ('If I delete this file, the system crashes'). Reinforcement Learning + Causality is the nexus for autonomous agents. The cluster is becoming the 'Prefrontal Cortex' of the AI stack.",
           "key_manifestations": [
             "Wang, B., et al. (2024). 'Causal-Structure-Driven Chain-of-Thought Prompting'",
@@ -2453,7 +2453,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Age of Certainty' in AI optimization. It focuses on problems where local minima are global minima (bowl-shaped landscapes). Centered around Linear Programming (LP), Quadratic Programming (QP), and Semidefinite Programming (SDP), it emphasizes duality gaps, KKT conditions, and interior-point methods. For a long period, 'Convexity' was the gatekeeper of publication: if your loss function wasn't convex, it wasn't considered rigorous.",
       "trajectory": {
         "1990": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The cluster was robust, rooted in Operations Research (+1%). Nesterov and Nemirovski were revolutionizing the field with 'Interior Point Methods,' showing that a vast class of convex problems could be solved in polynomial time. This was a stark contrast to the heuristic simulated annealing of the neural/evolutionary crowds. The 'Motion' was the expansion of what was considered 'tractable.'",
           "key_manifestations": [
             "Nesterov, Y., & Nemirovskii, A. (1994). 'Interior-Point Polynomial Algorithms in Convex Programming' (1990 work)",
@@ -2463,7 +2463,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Expansion via SVMs (+2%). The invention of the SVM (Cluster 2) gave Convex Optimization a 'Killer App' in AI. Training an SVM is a Quadratic Program (QP). This linked the abstract math of optimization directly to pattern recognition. The 'Displacing Force' acting against Neural Nets was the guarantee: 'Run this QP, and you get the unique best solution every time.'",
           "key_manifestations": [
             "Boser, B. E., et al. (1992). 'A Training Algorithm for Optimal Margin Classifiers' (The QP connection)",
@@ -2473,7 +2473,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "The 'SDP' Boom (+2%). Semidefinite Programming (optimizing over the cone of positive definite matrices) became the hot topic. It was shown that many NP-hard graph problems (like Max-Cut) could be relaxed into SDPs (Goemans-Williamson). This gave AI researchers a powerful tool for 'Relaxation'\u2014turning hard discrete problems into solvable convex ones.",
           "key_manifestations": [
             "Goemans, M. X., & Williamson, D. P. (1995). 'Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming' (1994 context)",
@@ -2483,7 +2483,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Peak Influence (+2%). The SVM revolution was in full swing. 'Duality' became a standard concept in ML papers (Primal vs Dual formulation). The ability to switch to the Dual form allowed the use of Kernels. The cluster provided the 'Language' of ML: Lagrangians, slack variables, KKT conditions.",
           "key_manifestations": [
             "Vandenberghe, L., & Boyd, S. (1996). 'Semidefinite Programming'",
@@ -2493,7 +2493,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Stasis/Maturation. The field had a standard toolkit. The release of solvers like CPLEX and later MOSEK commoditized convex optimization. You didn't need to write the solver; you just defined the constraints. The 'Motion' was finding new ML problems to cast as convex problems (e.g., Sparse Coding via Lasso).",
           "key_manifestations": [
             "Nesterov, Y. (1998). 'Introductory Lectures on Convex Programming'",
@@ -2503,7 +2503,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 14,
+          "salience_share": 14,
           "description": "Institutionalization (+2%). Stephen Boyd's 'Convex Optimization' course (and later book) became the rite of passage for ML graduate students. The prevailing dogma: 'Non-convex optimization is a sin.' If your model wasn't convex, you were 'just guessing.' This mindset heavily suppressed neural network research.",
           "key_manifestations": [
             "Boyd, S., & Vandenberghe, L. (2004). 'Convex Optimization' (Drafts circulating 2000-2003)",
@@ -2513,7 +2513,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Slight Contraction (-2%). As datasets grew, the $O(N^3)$ complexity of Interior Point methods became a bottleneck. People started using 'Coordinate Descent' or simple gradients (SMO for SVMs). The 'pure' mathematical solvers were too slow for the nascent web scale. The 'Approximate' era began.",
           "key_manifestations": [
             "Boyd, S., & Xiao, L. (2003). 'Least-Squares Covariance Matrix Adjustment'",
@@ -2523,7 +2523,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "The 'Compressed Sensing' Bump (Offset by DL decline). While CS (Cluster 11) relied on L1 minimization (Convex), the broader ML field was starting to look at 'Energy Based Models' (LeCun) and 'Contrastive Divergence' (Hinton), which were defiantly non-convex. The 'Convex' grip on the field began to loosen.",
           "key_manifestations": [
             "Boyd, S., & Vandenberghe, L. (2004). 'Convex Optimization' (Publication year - peak influence)",
@@ -2533,7 +2533,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Decline (-2%). The 'Deep Learning' breakthrough (Hinton 2006) was the catalyst for the fall. Deep Nets are highly non-convex. They have saddles, local minima, and plateaus. Yet, they worked. The empirical success of non-convex methods falsified the 'Convex Necessity' hypothesis. Researchers voted with their feet, moving to non-convex landscapes.",
           "key_manifestations": [
             "Bengio, Y., et al. (2006). 'Convex Neural Networks' (Attempting to save the paradigm)",
@@ -2543,7 +2543,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Pivot to 'First Order Methods' (-2%). The heavy machinery of Interior Point methods was abandoned for Machine Learning. The cluster morphed into 'Stochastic Convex Optimization' (analyzing SGD on convex problems). The 'Duality' concept remained useful for deriving algorithms, but the 'Global Guarantee' was no longer the primary goal.",
           "key_manifestations": [
             "Nemirovski, A., et al. (2009). 'Robust Stochastic Approximation Approach to Stochastic Programming'",
@@ -2553,7 +2553,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Niche Status (-2%). With the explosion of Deep Learning (2012 looming), Convex Optimization became a 'Classical' topic. It was useful for 'Hyperparameter Tuning' or 'Last Layer' optimization, but the feature learning itself was non-convex. The cluster survived in 'Robust Control' and 'Finance,' but lost the soul of AI.",
           "key_manifestations": [
             "Boyd, S., et al. (2011). 'Distributed Optimization and Statistical Learning via the ADMM' (ADMM was the last major convex trend in ML)",
@@ -2563,7 +2563,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis/Legacy. The field of 'Non-convex Optimization' (Cluster 5) took over. Researchers studied 'Saddle Points' rather than 'Global Minima.' Convexity was viewed as a 'toy' assumption that didn't match the reality of high-dimensional loss landscapes.",
           "key_manifestations": [
             "Dauphin, Y. N., et al. (2014). 'Identifying and Attacking the Saddle Point Problem' (Explaining why convexity doesn't matter)",
@@ -2573,7 +2573,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The 'Sum of Squares' (SOS) hierarchy offered a way to approximate non-convex polynomial problems with SDPs. This was theoretically beautiful (Lasserre hierarchy) but computationally explosive and irrelevant for Deep Learning scale.",
           "key_manifestations": [
             "Barak, B., et al. (2014). 'Sum-of-Squares Proofs and the Quest toward Optimal Algorithms'",
@@ -2583,7 +2583,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The 'Meta-Learning' Niche. Convex optimization found a small home in 'Differentiable Optimization Layers.' Work by Amos & Kolter showed you could put a QP solver *inside* a neural net layer (OptNet). This allowed end-to-end learning of constrained control policies.",
           "key_manifestations": [
             "Amos, B., & Kolter, J. Z. (2017). 'OptNet: Differentiable Optimization as a Layer in Neural Networks'",
@@ -2593,7 +2593,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The 'Neural Tangent Kernel' (Cluster 8) showed that infinite width networks behave like kernel machines (which are convex). This gave a theoretical 'Convex Shadow' to Deep Learning, but didn't change the practice of training finite networks.",
           "key_manifestations": [
             "Chizat, L., & Bach, F. (2018). 'On Lazy Training in Differentiable Programming'",
@@ -2603,7 +2603,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Legacy Application. Used primarily in 'Safety Critical' AI. If you need to guarantee a robot won't crash, you use Control Barrier Functions (QP). You use the Neural Net for the 'Performance' and the Convex Solver for the 'Safety Filter.'",
           "key_manifestations": [
             "Ames, A. D., et al. (2019/2020). 'Control Barrier Functions: Theory and Applications'",
@@ -2613,7 +2613,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The term 'Convex' is now mostly a historical marker in AI, though 'Convexity' remains central to the 'Diffusion' formulation (Log-concave sampling). But the explicit use of QP/SDP solvers is rare outside of specialized engineering domains.",
           "key_manifestations": [
             "Chewi, S., et al. (2022). 'Log-Concave Sampling'",
@@ -2623,7 +2623,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Current trajectory is flat. The 'Neuro-Symbolic' trend (Cluster 4) occasionally uses convex solvers for the 'Symbolic' part. Otherwise, the field has fully embraced the chaos of non-convexity.",
           "key_manifestations": [
             "Chen, X., et al. (2024). 'Symbolic Discovery of Optimization Algorithms'",
@@ -2639,7 +2639,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Algebra of Meaning'\u2014the shift from treating words/concepts as atomic symbols (indices in a dictionary) to treating them as dense vectors in a continuous space. Grounded in the Distributional Hypothesis ('a word is characterized by the company it keeps'), it tracks the evolution from Latent Semantic Analysis (LSA) to Word2Vec, and finally to the contextualized embeddings of Transformers. It is the mathematical foundation of how modern AI 'understands' language.",
       "trajectory": {
         "1990": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The decade began with the 'Atomic' view. In standard linguistics (Chomsky) and AI, words were symbols. 'Dog' was ID 452. 'Cat' was ID 983. They were orthogonal ($Dog \\cdot Cat = 0$). However, Deerwester et al. introduced 'Latent Semantic Analysis' (LSA), using SVD to compress the term-document matrix. This was the Big Bang of dense vectors. It showed that 'Car' and 'Automobile' could end up close in the latent space even if they never appeared together, via transitive co-occurrence.",
           "key_manifestations": [
             "Deerwester, S., et al. (1990). 'Indexing by Latent Semantic Analysis'",
@@ -2649,7 +2649,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Slow Expansion (+1%). While LSA was powerful for Information Retrieval, it wasn't viewed as 'Cognitive.' The 'Connectionist' community (Hinton/Plaut) argued that biological brains must use distributed representations (activity patterns) rather than 'Grandmother Cells.' This philosophical debate kept the cluster alive against the Symbolic dominance.",
           "key_manifestations": [
             "Sch\u00fctze, H. (1993). 'Word Space' (Vector space models for semantics)",
@@ -2659,7 +2659,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The computational cost of SVD on large vocabularies was prohibitive ($O(V^3)$ or $O(V^2)$). 'Vector Space Models' were standard in Search (TF-IDF), but these were sparse vectors, not the dense, semantic vectors of this cluster. The distinction is crucial: Sparse = Keyword Matching; Dense = Concept Matching.",
           "key_manifestations": [
             "Lund, K., & Burgess, C. (1996). 'Producing High-Dimensional Semantic Spaces from Lexical Co-Occurrence' (HAL model - 1995 work)",
@@ -2669,7 +2669,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Slight Expansion (+1%). Landauer & Dumais published the definitive cognitive science paper on LSA, arguing it explained human vocabulary acquisition rates. This linked the engineering of search to the psychology of learning. It validated the 'Distributional Hypothesis' as a model of human cognition, not just a hack.",
           "key_manifestations": [
             "Landauer, T. K., & Dumais, S. T. (1997). 'A Solution to Plato's Problem: The Latent Semantic Analysis Theory of Acquisition'",
@@ -2679,7 +2679,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Topic Models Emergence (+1%). Hofmann introduced 'Probabilistic Latent Semantic Analysis' (pLSA). This replaced the Linear Algebra (SVD) with Probability (EM algorithm). It laid the groundwork for LDA. The 'meaning' was now a probability distribution over topics, rather than a point in geometry. This was a richer semantic model.",
           "key_manifestations": [
             "Hofmann, T. (1999). 'Probabilistic Latent Semantic Indexing' (1998 work)",
@@ -2689,7 +2689,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "The 'Neural' Turn (+2%). Bengio's 'Neural Probabilistic Language Model' (2000/2003) was the pivotal moment. He proposed learning the word vectors *simultaneously* with the predictive model. The vector wasn't a statistic (count); it was a *parameter* to be learned via backprop. This is the birth of the modern 'Embedding' (though the term came later).",
           "key_manifestations": [
             "Bengio, Y., et al. (2001). 'A Neural Probabilistic Language Model' (NIPS 2000)",
@@ -2699,7 +2699,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Stasis/Competition. LDA (Latent Dirichlet Allocation) became the dominant paradigm for semantics. It was Bayesian, elegant, and interpretable (Topic 5 = 'Genetics'). Neural embeddings (Bengio) were slow to train (Softmax bottleneck). The 'Interpretable' (LDA) beat the 'Dense/Opaque' (Neural) in this era.",
           "key_manifestations": [
             "Blei, D. M., et al. (2003). 'Latent Dirichlet Allocation'",
@@ -2709,7 +2709,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Incubation. The neural approach was kept alive by Collobert & Weston. They showed that you could pre-train embeddings on unlabeled text and then use them for supervised tasks (NER, POS). This was 'Transfer Learning' before the name stuck. They replaced the slow Softmax with a ranking loss, speeding up training.",
           "key_manifestations": [
             "Collobert, R., et al. (2008). 'A Unified Architecture for Natural Language Processing' (2006-2007 work)",
@@ -2719,7 +2719,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis. The 'Deep Learning' focus was on Images (RBMs), not Text. Semantics remained the domain of SVMs with sparse features or LDA. The 'Curse of Dimensionality' in vocabulary (100k words) was seen as a barrier for neural nets.",
           "key_manifestations": [
             "Mnih, A., & Hinton, G. E. (2009). 'A Scalable Hierarchical Distributed Language Model' (HLBL - fixing the speed)",
@@ -2729,7 +2729,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Acceleration (+2%). Collobert & Weston's work began to circulate widely. The idea that 'Words are Vectors' and 'Sentences are Matrices' began to take hold. Mnih and Hinton improved the efficiency. The 'Word Embedding' concept was crystallizing, ready for a breakout.",
           "key_manifestations": [
             "Collobert, R., & Weston, J. (2008). 'A Unified Architecture for Natural Language Processing'",
@@ -2739,7 +2739,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Rise of 'Semantic Algebra' (+4%). Mikolov (at Brno, then Google) was refining the RNNLM. He noticed the 'King - Man + Woman = Queen' regularity. This was shocking. It implied that the geometry of the embedding space captured the *logic* of human concepts. Semantics wasn't just clustering; it was a linear algebra.",
           "key_manifestations": [
             "Mikolov, T., et al. (2010). 'Recurrent Neural Network Based Language Model'",
@@ -2749,7 +2749,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "The 'Word2Vec' Singularity (+18%). Mikolov released 'word2vec' (Skip-gram/CBOW) in 2013. It was simple, fast, and produced state-of-the-art analogies. It completely displaced LSA/LDA. Every NLP pipeline threw away sparse one-hot vectors and replaced them with pre-trained Word2Vec or GloVe (Pennington 2014) vectors. This was the 'ImageNet Moment' for Semantics.",
           "key_manifestations": [
             "Mikolov, T., et al. (2013). 'Distributed Representations of Words and Phrases and their Compositionality'",
@@ -2759,7 +2759,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Expansion to Sentences (+5%). 'Paragraph Vectors' (Doc2Vec) and 'Skip-Thought Vectors' extended the concept. Can we embed a whole sentence? The 'Displacing Force' was the realization that averaging word vectors loses order. This led to 'Encoder-Decoder' semantics (Cluster 6) where the 'thought vector' (context vector) represented the sentence meaning.",
           "key_manifestations": [
             "Le, Q., & Mikolov, T. (2014). 'Distributed Representations of Sentences and Documents' (Doc2Vec)",
@@ -2769,7 +2769,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 40,
+          "salience_share": 40,
           "description": "The 'Context' Problem (+5%). Word2Vec had a flaw: 'Bank' had one vector, regardless of whether it was a river bank or a financial bank. This 'Polysemy' problem drove research toward 'Contextualized Embeddings.' ELMo (Peters et al.) used LSTMs to generate a vector for 'Bank' *based on the sentence*. The vector was no longer static; it was dynamic.",
           "key_manifestations": [
             "Peters, M. E., et al. (2018). 'Deep Contextualized Word Representations' (ELMo - 2017 work)",
@@ -2779,7 +2779,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 60,
+          "salience_share": 60,
           "description": "BERT Dominance (+20%). BERT (Bidirectional Encoder Representations from Transformers) solved the context problem perfectly via Self-Attention. The 'Representation' of a word was now a function of every other word in the text. This killed the 'Static Embedding' cluster (Word2Vec) and merged Semantics entirely with Architecture (Transformers).",
           "key_manifestations": [
             "Devlin, J., et al. (2018). 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'",
@@ -2789,7 +2789,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 70,
+          "salience_share": 70,
           "description": "Universal Semantic Space (+10%). CLIP (OpenAI) aligned Image embeddings with Text embeddings. Now 'Dog' (text vector) and a photo of a dog (image vector) lived in the same spot on the manifold. This was the unification of sensory semantics. The 'Latent Space' became multimodal.",
           "key_manifestations": [
             "Radford, A., et al. (2021). 'Learning Transferable Visual Models From Natural Language Supervision' (CLIP)",
@@ -2799,7 +2799,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 75,
+          "salience_share": 75,
           "description": "Scale and Retrieval (+5%). 'Vector Databases' (Pinecone/Milvus) became critical infrastructure. The primary way to give LLMs memory (RAG) is to embed text and retrieve by cosine similarity. The 'Semantics' cluster is now the 'Memory' system of the AI stack. 'Matryoshka Embeddings' allowed flexible resolution.",
           "key_manifestations": [
             "Neelakantan, A., et al. (2022). 'Text and Code Embeddings by Contrastive Pre-Training'",
@@ -2809,7 +2809,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 80,
+          "salience_share": 80,
           "description": "Current trajectory is 'Long Context & Compression' (+5%). How do you represent a whole book as a vector? 'Memory tokens' (Transformer-XL style) or 'Summary Vectors.' The frontier is 'Concept Arithmetic' in the activation space of LLMs\u2014finding the 'Truth' vector or the 'Refusal' vector and steering the model.",
           "key_manifestations": [
             "Zou, A., et al. (2023). 'Representation Engineering: A Top-Down Approach to AI Transparency'",
@@ -2825,7 +2825,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Logic of Vagueness.' In contrast to Boolean logic (True/False) or Probabilistic logic (Likelihood of an Event), Fuzzy Logic models 'degrees of truth' (e.g., 'somewhat warm'). Originating from Zadeh's work, it experienced a massive industrial boom in the early 90s\u2014particularly in Japan\u2014controlling everything from subways to rice cookers. However, it suffered a catastrophic decline in academic variance as 'Probabilistic Graphical Models' provided a more rigorous mathematical framework for uncertainty, eventually becoming a niche component of industrial control theory rather than general AI.",
       "trajectory": {
         "1990": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "The 'Fuzzy Boom' (+3%). Japan was the epicenter. The Sendai Subway system was controlled by a fuzzy controller, offering smoother rides than human operators. This empirical success validated the cluster. It was the dominant form of 'AI' in consumer electronics. The 'Motion' was the translation of linguistic hedges ('very', 'slightly') into control surfaces.",
           "key_manifestations": [
             "Zadeh, L. A. (1990). 'The Birth and Evolution of Fuzzy Logic'",
@@ -2835,7 +2835,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Peak Hype/Correction (-2%). While industrial adoption grew, the Western academic community (AAAI) began to attack Fuzzy Logic. Elkan published 'The Paradoxical Success of Fuzzy Logic,' arguing it was just probability in disguise or locally equivalent to linear interpolation. The 'Displacing Force' was the rise of rigorous Bayesian methods which offered better semantics for uncertainty.",
           "key_manifestations": [
             "Elkan, C. (1993). 'The Paradoxical Success of Fuzzy Logic' (The catalyst for decline)",
@@ -2845,7 +2845,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The 'Neuro-Fuzzy' Hybrid (+-0%). To survive, the cluster merged with Neural Networks (ANFIS). Instead of hand-coding rules, they learned them. This kept the cluster relevant in 'Function Approximation,' but it lost its unique identity as a 'Linguistic' reasoner. It was becoming just another basis function network.",
           "key_manifestations": [
             "Jang, J. S. R., et al. (1997). 'Neuro-Fuzzy and Soft Computing' (1995 draft context)",
@@ -2855,7 +2855,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Decline (-2%). SVMs (Cluster 2) arrived. SVMs offered a global optimum. Fuzzy systems required tuning membership functions, which was messy. The 'Interpretability' argument (that Fuzzy is readable) began to lose weight against the sheer performance of Statistical Learning Theory. The cluster retreated to 'Soft Computing.'",
           "key_manifestations": [
             "Pedrycz, W. (1996). 'Fuzzy Sets Engineering'",
@@ -2865,7 +2865,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. The cluster found a permanent home in 'Industrial Control' (cement kilns, washing machines). It effectively exited the 'AI' conversation (which was about learning) and entered the 'Control' conversation. It was a 'Solved' technology.",
           "key_manifestations": [
             "Passino, K. M., & Yurkovich, S. (1998). 'Fuzzy Control'",
@@ -2875,7 +2875,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Marginalization (-2%). The 'Probabilistic' victory was complete (Pearl's Causality + Judea Pearl's Turing Award era). Fuzzy Logic was often dismissed as 'wrong probability.' The variance dropped to near zero in top-tier conferences like NIPS/ICML.",
           "key_manifestations": [
             "Mendel, J. M. (2001). 'Uncertain Rule-Based Fuzzy Logic Systems' (Type-2 Fuzzy Logic - trying to add uncertainty to fuzziness)",
@@ -2885,7 +2885,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis/Niche. 'Type-2 Fuzzy Sets' (Mendel) gained some traction in signal processing to handle noise, but it was mathematically complex and offered marginal gains. The cluster was 'zombie'\u2014alive in IEEE Transactions on Fuzzy Systems, dead in general AI.",
           "key_manifestations": [
             "Mendel, J. M., & John, R. I. (2002). 'Type-2 Fuzzy Sets Made Simple'",
@@ -2895,7 +2895,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Legacy. No significant movement. The field focused on 'Granular Computing'\u2014processing information chunks. It had no answer to the 'Feature Learning' revolution brewing in Deep Learning.",
           "key_manifestations": [
             "Pedrycz, W., et al. (2008). 'Granular Computing'",
@@ -2905,7 +2905,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Irrelevance. Deep Learning (Hinton) arrived. A Fuzzy System with 100 rules could not compete with a Neural Net with 1M parameters. The 'Rule Explosion' problem (rules grow exponentially with inputs) made Fuzzy Logic physically impossible for high-dimensional data like images.",
           "key_manifestations": [
             "Mendel, J. M. (2007). 'Type-2 Fuzzy Sets and Systems: An Overview'",
@@ -2915,7 +2915,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Survived only in hybrid 'Neuro-Fuzzy-Evolutionary' systems (Soft Computing) used for specialized low-data engineering tasks.",
           "key_manifestations": [
             "Eiben, A. E., & Smith, J. E. (2003/2008). 'Introduction to Evolutionary Computing' (Context of hybrids)",
@@ -2925,7 +2925,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Nadir. The 'Big Data' era. Fuzzy Logic does not scale. It requires expert knowledge to define sets. Data was now abundant, experts were expensive. The cluster was effectively dead in the SOTA discussion.",
           "key_manifestations": [
             "Guevara, J., et al. (2011). 'Fuzzy Logic in the Era of Cloud Computing'",
@@ -2935,7 +2935,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 0,
+          "salience_share": 0,
           "description": "Extinction Event (in core AI). AlexNet. No one was writing fuzzy rules for ImageNet. The variance is effectively 0 for general AI, maintained at >0 only by legacy control systems.",
           "key_manifestations": [
             "Lughofer, E. (2013). 'On-line Assurance of Interpretability Criteria in Evolving Fuzzy Systems'",
@@ -2945,7 +2945,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Minor 'XAI' Pulse (+1%). As Deep Learning became a black box, people looked back at Fuzzy Logic for 'Explainable AI.' A 'Fuzzy Rule' is readable ('IF temperature IS high THEN fan IS fast'). Researchers tried to extract fuzzy rules *from* deep nets to explain them. This gave the cluster a new, subservient role.",
           "key_manifestations": [
             "Guillaume, S., & Charnomordic, B. (2012/2014). 'Fuzzy Inference Systems: An Integrated Modeling Environment'",
@@ -2955,7 +2955,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The 'Fuzzy' concept appeared in 'Fuzzy Clustering' (C-means) occasionally, but otherwise, the field was insulated.",
           "key_manifestations": [
             "Bezdek, J. C. (2013/2016). 'Pattern Recognition with Fuzzy Objective Function Algorithms' (Legacy reprint/use)",
@@ -2965,7 +2965,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 0,
+          "salience_share": 0,
           "description": "No significant activity relative to the AI boom. The term 'Fuzzy' is mostly used now to describe 'Fuzzy Matching' in strings, which is edit distance, not Zadeh's logic.",
           "key_manifestations": [
             "Deng, Y. (2016/2018). 'Dempster-Shafer Theory' (Related uncertainty theory)",
@@ -2975,7 +2975,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 0,
+          "salience_share": 0,
           "description": "Stasis. The 'Neuro-Symbolic' trend ignores Fuzzy Logic in favor of crisp First Order Logic or Probabilistic Logic. Fuzzy is seen as 'The Old Way.'",
           "key_manifestations": [
             "Karnik, N. N., et al. (Legacy). 'Type-2 Fuzzy Logic Systems'",
@@ -2985,7 +2985,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 0,
+          "salience_share": 0,
           "description": "Stasis. Only relevant in the 'History of AI' context.",
           "key_manifestations": [
             "Zadeh, L. A. (Legacy). 'Retrospectives'",
@@ -2995,7 +2995,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 0,
+          "salience_share": 0,
           "description": "Zero variance. The concept of 'vague concepts' is now handled by the 'Embedding Space' (Cluster 15). A vector is the modern implementation of a fuzzy set. We don't need explicit membership functions; the cosine similarity provides the 'degree of truth.' The eigencluster has been fully absorbed by Vector Semantics.",
           "key_manifestations": [
             "NB: Fuzzy Logic has no manifestations in the SOTA AI of 2024/2025.",
@@ -3011,7 +3011,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Hardware-Software' alignment seeking to mimic biological brains not just mathematically (like ANNs) but physically and temporally. It focuses on Spiking Neural Networks (SNNs), event-based cameras, and analog VLSI. The core tenet is that information is encoded in the *timing* of spikes, not just the rate. Its trajectory is a 'Sleeping Giant'\u2014perpetually promising a revolution in energy efficiency ($1000x$ better than GPUs) that has yet to fully materialize in the mainstream due to the difficulty of training non-differentiable spikes.",
       "trajectory": {
         "1990": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "The cluster began with Carver Mead's manifesto. He argued that to build brains, we must use the physics of silicon (sub-threshold transistors) to emulate the physics of ions. This 'Neuromorphic Engineering' was distinct from AI; it was Physics/EE. The variance was low but the vision was foundational: 'The brain is not a logic gate.'",
           "key_manifestations": [
             "Mead, C. (1989/1990). 'Analog VLSI and Neural Systems' (The Bible of the field)",
@@ -3021,7 +3021,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The field was struggling with 'Device Mismatch.' Analog circuits are noisy and variable. Unlike digital logic, every silicon neuron was different. This made 'programming' them impossible. The cluster focused on sensory peripheries (Silicon Retinas) rather than cognitive cores.",
           "key_manifestations": [
             "Mahowald, M. A. (1992). 'The Silicon Retina' (PhD Thesis)",
@@ -3031,7 +3031,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis/Theory. Maass introduced 'Networks of Spiking Neurons,' proving they are computationally more powerful than standard sigmoidal nets (3rd Generation NN). This gave the field theoretical ammo: 'We are more powerful than the dominant cluster.' But no learning algorithm existed for spikes.",
           "key_manifestations": [
             "Maass, W. (1995/1996). 'Networks of Spiking Neurons: The Third Generation of Neural Network Models' (1994 work)",
@@ -3041,7 +3041,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The 'STDP' Catalyst (+0%). Biologists discovered 'Spike-Timing-Dependent Plasticity' (STDP) - if neuron A spikes just before B, the connection strengthens. If after, it weakens. This provided a local, Hebbian learning rule for SNNs. It sparked a wave of 'Unsupervised Learning' models in hardware.",
           "key_manifestations": [
             "Markram, H., et al. (1997). 'Regulation of Synaptic Efficacy by Coincidence of Postsynaptic APs and EPSPs' (STDP discovery)",
@@ -3051,7 +3051,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Contraction (-1%). The 'Digital' world was winning. Moore's Law made digital simulation of brains (on CPUs) cheaper than building custom analog chips. The 'Neuromorphic' approach was viewed as an expensive eccentricity. The cluster survived in European consortia (Telluride/Capo Caccia workshops).",
           "key_manifestations": [
             "Indiveri, G. (1999). 'Neuromorphic Analog VLSI Sensors for Visual Interaction'",
@@ -3061,7 +3061,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. 'Liquid State Machines' (Maass) were proposed\u2014using a chaotic reservoir of spiking neurons to process time series. This was a variant of Reservoir Computing. It showed SNNs could do computation without training internal weights, sidestepping the learning problem.",
           "key_manifestations": [
             "Maass, W., et al. (2002). 'Real-Time Computing Without Stable States: A New Framework for Neural Computation' (Liquid State Machines - 2000 work)",
@@ -3071,7 +3071,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The 'Address Event Representation' (AER) protocol became standard. It allowed chips to communicate spikes asynchronously (like the internet). This enabled multi-chip systems. But 'Intelligence' was still absent; these were just fancy reflex agents.",
           "key_manifestations": [
             "Boahen, K. (2000/2002). 'Point-to-Point Connectivity between Neuromorphic Chips using Address Events'",
@@ -3081,7 +3081,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The 'Blue Brain Project' (Markram) launched, promising to simulate a rat column spike-by-spike. This injected funding and hype, but it was 'Simulation' (Neuroscience), not 'AI' (Function). The SNN community was divorced from the ML community.",
           "key_manifestations": [
             "Markram, H. (2006). 'The Blue Brain Project' (2005 launch)",
@@ -3091,7 +3091,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Deep Learning (Hinton) was rising. Hinton explicitly moved *away* from spikes to 'Rates' (mean field theory). He argued spikes were just noise to be averaged out. This intellectual blow kept the cluster suppressed.",
           "key_manifestations": [
             "Hinton, G. E. (2007). 'To Recognize Shapes, First Learn to Generate Images' (Rate-based argument)",
@@ -3101,7 +3101,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The 'SyNAPSE' Injection (+1%). DARPA launched the SyNAPSE program to build a 'cognitive computer.' This poured millions into IBM (TrueNorth) and HRL. It forced the hardware and software people to talk. The goal was 'scale'\u2014millions of neurons.",
           "key_manifestations": [
             "Modha, D. S., et al. (2011). 'Cognitive Computing' (SyNAPSE whitepapers 2008-2009)",
@@ -3111,7 +3111,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The 'DVS' camera (Event Camera) started to gain traction in robotics. It saw 'motion' at microsecond resolution, not frames. This created a niche: 'High Speed, Low Power' perception. But standard Computer Vision (Cluster 1) couldn't process this data, creating a silo.",
           "key_manifestations": [
             "Delbruck, T., et al. (2010). 'Activity-Driven Event-Based Vision Sensor'",
@@ -3121,7 +3121,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The 'ANN-to-SNN' Conversion (+0%). Researchers realized they couldn't train SNNs directly (no gradient). So they trained a standard CNN (ReLU) and converted it to an SNN (Integrate-and-Fire). This allowed SNNs to match MNIST benchmarks, but it felt like cheating. It wasn't 'using' time, just approximating rates.",
           "key_manifestations": [
             "O'Connor, P., et al. (2013). 'Real-Time Classification and Sensor Fusion with a Spiking Deep Belief Network'",
@@ -3131,7 +3131,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "TrueNorth Launch (+1%). IBM released the TrueNorth chip. 1 million neurons, 70mW. It was an engineering marvel but a functional dud. It couldn't learn (weights were fixed). It proved you *could* build the hardware, but software was missing. It spurred interest but failed to displace GPUs.",
           "key_manifestations": [
             "Merolla, P. A., et al. (2014). 'A Million Spiking-Neuron Integrated Circuit with a Scalable Communication Network and Interface' (TrueNorth)",
@@ -3141,7 +3141,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Surrogate Gradients (+1%). The 'SNN Training' problem was solved-ish. Neftci and others showed that you could smooth the spike function (Surrogate Gradient) to allow Backprop through Time (BPTT). Finally, SNNs could be trained end-to-end like RNNs. This began the modern era of Deep SNNs.",
           "key_manifestations": [
             "Neftci, E. O., et al. (2019). 'Surrogate Gradient Learning in Spiking Neural Networks' (Roots in 2016-17 work)",
@@ -3151,7 +3151,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Loihi Launch (+0%). Intel released Loihi. Unlike TrueNorth, it had on-chip plasticity (learning). This was a better research platform. The cluster focused on 'Edge AI'\u2014putting AI on drones where every watt counts. SNNs were no longer chasing accuracy (where they lost to Transformers) but Efficiency (where they won).",
           "key_manifestations": [
             "Davies, M., et al. (2018). 'Loihi: A Neuromorphic Manycore Processor with On-Chip Learning'",
@@ -3161,7 +3161,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis/Integration. SNNs began to merge with 'Transformers' (Spikformer). The idea: keep the architecture, swap the neuron. The 'Displacing Force' was the extreme optimization of GPUs (Tensor Cores) which eroded the efficiency advantage of SNNs. If a GPU is 100x faster, who cares if SNN is 10x more efficient?",
           "key_manifestations": [
             "Zhou, Z., et al. (2021). 'Spikformer: A Spiking Transformer'",
@@ -3171,7 +3171,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Contraction (-1%). The LLM boom (Cluster 6) relies on dense matrix multiplications. SNNs rely on sparse scatter-gather ops, which current hardware hates. The 'Hardware Lottery' (Hooker) worked against SNNs. The cluster is niche, waiting for 'BitNet' or '1-bit LLM' trends to swing the pendulum back to sparsity.",
           "key_manifestations": [
             "Hooker, S. (2021). 'The Hardware Lottery' (Explaining why SNNs fail)",
@@ -3181,7 +3181,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Current trajectory is 'Hybridization' (+0%). 'BitNet b1.58' (Microsoft) showed that LLMs can run with ternary weights (-1, 0, 1) and no multiplications. This is functionally very close to an SNN. The lines are blurring. The 'Neuromorphic' label is fading, replaced by 'Extreme Quantization.'",
           "key_manifestations": [
             "Ma, S., et al. (2024). 'The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits'",
@@ -3197,7 +3197,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the theoretical limit of learning: 'Learning is Compression.' Grounded in Kolmogorov Complexity (the length of the shortest program to output data D) and Solomonoff Induction (the universal prior), it provides the 'Gold Standard' for general intelligence. Trajectory-wise, it has always been a 'High Altitude' cluster\u2014providing the theoretical North Star (AIXI) but rarely touching the ground of practice due to uncomputability. Recently, it has resurfaced as the explanation for why LLMs work: they are compression engines.",
       "trajectory": {
         "1990": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The cluster was pure theory (+0%). Li and Vitanyi were codifying the field. The link to AI was 'Minimum Description Length' (MDL) as a model selection principle (Rissanen). It offered a razor: the best model is the one that compresses the data most. It was an alternative to the 'Structural Risk Minimization' of Cluster 8.",
           "key_manifestations": [
             "Li, M., & Vitanyi, P. (1993). 'An Introduction to Kolmogorov Complexity and Its Applications' (Drafts/Papers 1990)",
@@ -3207,7 +3207,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Schmidhuber began publishing on 'Neural Sequence Chunking' (History Compression), linking RNNs to compression. He argued that an RNN minimizing error is essentially finding a short program (weights) to describe the sequence. This was the first bridge between AIT and Neural Nets.",
           "key_manifestations": [
             "Schmidhuber, J. (1992). 'Learning Complex, Extended Sequences Using the Principle of History Compression'",
@@ -3217,7 +3217,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The 'Schmidhuber' factor. He continued to publish on 'Levin Complexity' and 'Speed Prior.' It was a niche sub-culture (IDSIA lab) disconnected from the mainstream 'Bayesian Network' or 'SVM' crowds, who found Kolmogorov Complexity 'uncomputable and therefore useless.'",
           "key_manifestations": [
             "Schmidhuber, J. (1995). 'Discovering Neural Nets with Low Kolmogorov Complexity and High Generalization Capability'",
@@ -3227,7 +3227,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The 'No Free Lunch' theorems (Cluster 5) relied on AIT arguments. But for practical learning, MDL was just a regularizer. The cluster had low variance because it didn't produce an *algorithm* you could run on a benchmark.",
           "key_manifestations": [
             "Vitanyi, P., & Li, M. (1997). 'Ideal MDL and Its Relation to Bayesianism'",
@@ -3237,7 +3237,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The 'AIXI' Definition (+1%). Marcus Hutter defined AIXI, the mathematical optimal agent. It uses Solomonoff Induction to predict the environment and maximizes reward. It is uncomputable, but it solved the *definition* of intelligence. Intelligence is the ability to achieve goals in a wide range of environments (Universal Intelligence).",
           "key_manifestations": [
             "Hutter, M. (2000). 'A Theory of Universal Artificial Intelligence based on Algorithmic Probability' (1999 arXiv)",
@@ -3247,7 +3247,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The 'Hutter Prize' was launched (2006, but roots here) for compressing Wikipedia. The argument: 'To compress the text, you must understand it.' If you can predict the next character perfectly (max compression), you are intelligent. This set the stage for LLMs 20 years later.",
           "key_manifestations": [
             "Hutter, M. (2004). 'Universal Artificial Intelligence: Sequential Decisions based on Algorithmic Probability' (The Book)",
@@ -3257,7 +3257,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. 'Normalized Google Distance' (Cilibrasi/Vitanyi) used search engine counts as a proxy for Kolmogorov complexity to measure semantic similarity. This was a clever practical application. But the 'Mainstream' was obsessed with Kernels.",
           "key_manifestations": [
             "Cilibrasi, R., & Vitanyi, P. (2007). 'The Google Similarity Distance' (2004 work)",
@@ -3267,7 +3267,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The 'Autoencoder' (Cluster 9) is a compressor. Hinton & Salakhutdinov (2006) showed that deep autoencoders beat JPEG. This linked 'Deep Learning' to 'Compression' empirically. The AIT cluster provided the theory: the Autoencoder is approximating the Kolmogorov complexity of the image.",
           "key_manifestations": [
             "Hinton, G. E., & Salakhutdinov, R. R. (2006). 'Reducing the Dimensionality of Data with Neural Networks' (Compression framing)",
@@ -3277,7 +3277,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. Deep Learning rose. The AIT crowd (Hutter/Schmidhuber) claimed 'We told you so' (Compression = Intelligence). But the Deep Learning crowd didn't use Solomonoff Induction; they used SGD. The 'Displacing Force' was the impracticality of AIT methods.",
           "key_manifestations": [
             "Hutter, M. (2009). 'Feature Reinforcement Learning: Part I. Unstructured MDPs'",
@@ -3287,7 +3287,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. 'Information Bottleneck' theory (Tishby) started to form. It argued that Deep Learning works by compressing the input X into a representation T that preserves info about Y. This was a pure Information Theoretic explanation of Deep Learning.",
           "key_manifestations": [
             "Tishby, N., & Zaslavsky, N. (2015). 'Deep Learning and the Information Bottleneck Principle' (Roots in late 2000s ideas)",
@@ -3297,7 +3297,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The 'VAE' Link (+1%). The Variational Autoencoder (Kingma/Welling 2013) maximizes the Evidence Lower Bound (ELBO). This is mathematically equivalent to minimizing the description length (Bits-Back coding). The 'Bayesian' and 'Compression' views merged in the VAE.",
           "key_manifestations": [
             "Kingma, D. P., & Welling, M. (2013). 'Auto-Encoding Variational Bayes'",
@@ -3307,7 +3307,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. The 'Language Modeling' task (predict next token) became the standard pre-training objective. AIT predicts that better next-token prediction = higher intelligence. This was confirmed by the GPT scaling laws. The cluster's theory was vindicated by the empirical scaling of log-loss.",
           "key_manifestations": [
             "Mikolov, T., et al. (2012). 'Subword Language Modeling with Neural Networks' (Compression focus)",
@@ -3317,7 +3317,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. 'Neural Compression' became a field\u2014using DL for image compression (beating JPEG). This was engineering, not AGI theory. But it reinforced the link.",
           "key_manifestations": [
             "Toderici, G., et al. (2017). 'Full Resolution Image Compression with Recurrent Neural Networks' (2015-16 work)",
@@ -3327,7 +3327,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Generalization Puzzle (+1%). Zhang et al. (2017) showed deep nets memorize noise. AIT says memorizing noise is incompressible (high complexity). This forced a rethink: The *effective* complexity of the generalized solution is low, even if the capacity is high. 'Intrinsic Dimension' studies followed.",
           "key_manifestations": [
             "Zhang, C., et al. (2017). 'Understanding Deep Learning Requires Rethinking Generalization'",
@@ -3337,7 +3337,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The 'LLM' Confirmation (+1%). GPT-1/2 showed that simply compressing text (minimizing perplexity) yields zero-shot generalization. This is Solomonoff Induction in practice. The model learns the 'program' (world model) that generated the text to compress it. The trajectory is upward.",
           "key_manifestations": [
             "Radford, A., et al. (2019). 'Language Models are Unsupervised Multitask Learners' (GPT-2)",
@@ -3347,7 +3347,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Chinchilla & Scaling (+2%). The scaling laws (Kaplan/Hoffmann) are essentially thermodynamic laws of compression. They relate entropy (loss) to compute and data. This formalized the AIT view for the Deep Learning era. 'Perplexity' is just 'Bits per Word.'",
           "key_manifestations": [
             "Hoffmann, J., et al. (2022). 'Training Compute-Optimal Large Language Models'",
@@ -3357,7 +3357,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Compression is All You Need (+1%). DeepMind showed LLMs can compress ImageNet patches better than PNG. The unification of modalities under 'Byte prediction' (MegaByte). The cluster is now the 'Physics' of AI.",
           "key_manifestations": [
             "Del\u00e9tang, G., et al. (2023). 'Language Modeling Is Compression'",
@@ -3367,7 +3367,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Current trajectory is 'White Box' (+0%). Using AIT to understand *what* the model has learned. 'Minimum Description Length' probing. The question: 'Is the model just a lookup table (high complexity) or has it found the underlying rule (low complexity)?' Grokking is the transition from the former to the latter.",
           "key_manifestations": [
             "Liu, Z., et al. (2024). 'Physics of Language Models: Part 3.1, Knowledge Storage and Extraction'",
@@ -3383,7 +3383,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the collective behavior of decentralized, self-organized systems. Inspired by biology (ants, birds, bees), it focuses on emergent intelligence where simple local rules lead to complex global behavior. The trajectory moves from the 'Boids' and 'Ant Colony Optimization' (ACO) of the 90s\u2014which were primarily optimization heuristics\u2014to the 'Particle Swarm' peak of the 2000s. In the Deep Learning era, it faced a sharp decline as a general optimizer but found a modern reincarnation in 'Multi-Agent Reinforcement Learning' (MARL) and physical drone swarm control.",
       "trajectory": {
         "1990": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The cluster emerged from Artificial Life (+1%). Reynolds' 'Boids' simulation demonstrated that flocking behavior (separation, alignment, cohesion) required no leader. This was a paradigm shift from 'Top-Down' control to 'Bottom-Up' emergence. Simultaneously, Dorigo was formulating Ant Colony Optimization, translating pheromone trails into graph search algorithms.",
           "key_manifestations": [
             "Reynolds, C. W. (1987/1990). 'Flocks, Herds and Schools: A Distributed Behavioral Model'",
@@ -3393,7 +3393,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Expansion via ACO (+1%). Ant Colony Optimization proved effective for the Traveling Salesman Problem (TSP). It offered a robust alternative to Simulated Annealing. The 'Motion' was the application of biological metaphors to combinatorial optimization problems. It was 'Soft Computing' at its peak.",
           "key_manifestations": [
             "Dorigo, M., et al. (1996). 'Ant System: Optimization by a Colony of Cooperating Agents' (1992-94 work)",
@@ -3403,7 +3403,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Particle Swarm Optimization (PSO) Genesis (+1%). Kennedy (social psychologist) and Eberhart (engineer) developed PSO. Originally intended to simulate bird social behavior, they realized it was a powerful optimizer for non-linear functions. It was simpler than GAs (no crossover/mutation, just velocity vectors) and faster. This became the second pillar of the cluster.",
           "key_manifestations": [
             "Kennedy, J., & Eberhart, R. (1995). 'Particle Swarm Optimization' (1994 dev context)",
@@ -3413,7 +3413,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. The cluster was popular in 'Heuristic Optimization' journals but ignored by the rigorous ML community (who preferred SVMs). It found a niche in 'Telecommunications Routing' (AntNet), where the decentralized nature of ants matched the decentralized nature of packet switching.",
           "key_manifestations": [
             "Di Caro, G., & Dorigo, M. (1998). 'AntNet: Distributed Stigmergetic Control for Communications Networks' (1996-97 work)",
@@ -3423,7 +3423,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. While PSO and ACO were standard tools in the engineer's toolbox, they failed to solve 'Learning' problems (generalization). They were solvers, not learners. The 'Displacing Force' was the rise of Statistical Learning Theory, which demanded bounds that Swarm methods couldn't provide.",
           "key_manifestations": [
             "Clerc, M., & Kennedy, J. (2002). 'The Particle Swarm - Explosion, Stability, and Convergence in a Multidimensional Complex Space' (1998-99 analysis)",
@@ -3433,7 +3433,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Decline (-1%). The cluster became a 'Metaheuristic' ghetto. Hundreds of 'Nature-Inspired' algorithms (Bee Algorithm, Firefly Algorithm, Cuckoo Search) proliferated, often with little novelty over PSO/GA. This 'Metaphor mongering' damaged the scientific reputation of the field.",
           "key_manifestations": [
             "Kennedy, J., et al. (2001). 'Swarm Intelligence' (Academic consolidation)",
@@ -3443,7 +3443,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. A pivot to 'Swarm Robotics' (+0%). Instead of virtual optimization, researchers built physical swarms (Kilobots). The challenge shifted to 'Local Sensing' and 'Robustness.' This was distinct from AI optimization; it was distributed control theory.",
           "key_manifestations": [
             "Beni, G. (2004). 'From Swarm Intelligence to Swarm Robotics'",
@@ -3453,7 +3453,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Legacy/Niche. PSO was used to train small neural nets (Evolutionary ANN), but Backprop was superior. The cluster had no answer to the 'Feature Learning' problem.",
           "key_manifestations": [
             "Poli, R., et al. (2007). 'Particle Swarm Optimization: An Overview'",
@@ -3463,7 +3463,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Marginalization (-1%). The Deep Learning era began. Gradient-based methods (SGD) scaled to millions of dimensions. Swarm methods (derivative-free) scaled to hundreds. The 'Dimensionality Curse' killed Swarm Intelligence for high-dimensional AI.",
           "key_manifestations": [
             "Banks, A., et al. (2007). 'A Review of Particle Swarm Optimization'",
@@ -3473,7 +3473,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Survived in 'Industrial Engineering' (scheduling, logistics).",
           "key_manifestations": [
             "Zhang, Y., et al. (2015). 'A Comprehensive Survey on Particle Swarm Optimization Algorithm and Its Applications' (Review of the era)",
@@ -3483,7 +3483,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Nadir. The field was intellectually exhausted in terms of core AI. However, a seed was planted: 'Multi-Agent Reinforcement Learning' (MARL). DeepMind and OpenAI began to look at 'Swarms' not as optimization algorithms, but as *agents* learning to cooperate (e.g., in StarCraft).",
           "key_manifestations": [
             "Panait, L., & Luke, S. (2005/2010). 'Cooperative Multi-Agent Learning: The State of the Art'",
@@ -3493,7 +3493,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. MARL was hard. Independent Q-Learning failed. The 'Swarm' cluster began to merge with Cluster 7 (RL).",
           "key_manifestations": [
             "Foerster, J., et al. (2016). 'Learning to Communicate with Deep Multi-Agent Reinforcement Learning' (2015 work)",
@@ -3503,7 +3503,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Commercial Drone Swarms (+0%). Intel and Verity Studios demonstrated massive drone light shows. This was 'Swarm Intelligence' in product form, though often centralized. It kept the visual meme alive.",
           "key_manifestations": [
             "Preiss, J. A., et al. (2017). 'Crazyswarm: A Large Nano-Quadcopter Swarm'",
@@ -3513,7 +3513,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "MARL Renaissance (+1%). AlphaStar (DeepMind) used a 'League' of agents. This was a form of co-evolutionary swarm. The 'Population Based Training' (PBT) used to train it was essentially a Genetic Algorithm on a swarm of agents. The clusters (Evolution + Swarm + RL) merged.",
           "key_manifestations": [
             "Jaderberg, M., et al. (2017). 'Population Based Training of Neural Networks'",
@@ -3523,7 +3523,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. 'Swarm' concepts used in 'Model Merging.' Federated Learning (McMahan) can be seen as a swarm of devices training a shared brain. This is 'Data Swarm Intelligence.'",
           "key_manifestations": [
             "McMahan, B., et al. (2017). 'Communication-Efficient Learning of Deep Networks from Decentralized Data'",
@@ -3533,7 +3533,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. 'Collaborative Agents.' Using LLMs as agents in a swarm (Camel, AutoGen). If you put 10 GPT-4s in a room, do they exhibit swarm intelligence? Early results suggest 'Social Dynamics' emerge.",
           "key_manifestations": [
             "Park, J. S., et al. (2023). 'Generative Agents: Interactive Simulacra of Human Behavior'",
@@ -3543,7 +3543,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "LLM Swarms (+1%). 'Mixture of Experts' (MoE) is an architectural swarm. 'ChatDev' showed a swarm of LLMs acting as CEO, CTO, Coder. The variance is rising because 'Agentic' AI implies multiplicity.",
           "key_manifestations": [
             "Qian, C., et al. (2023). 'Communicative Agents for Software Development' (ChatDev)",
@@ -3553,7 +3553,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Current trajectory is 'Model Swarms' (+0%). Merging weights from different fine-tunes (Model Soups) or evolving a population of prompts (Cluster 10). The 'Swarm' is now a swarm of weights/prompts, not insects. The 'Displacing Force' is the cost of inference; running 100 agents is expensive.",
           "key_manifestations": [
             "Wortsman, M., et al. (2022/2024). 'Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy Without Increasing Inference Time'",
@@ -3569,7 +3569,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the pursuit of 'Truth' via formal methods. Unlike the heuristic reasoning of LLMs or the probabilistic reasoning of Bayesian nets, this cluster deals in proofs, verification, and satisfiability (SAT). It encompasses Interactive Theorem Provers (Coq, Lean, Isabelle) and Automated Theorem Provers (E, Vampire). Its trajectory is steady and industrial\u2014powering chip verification\u2014until a recent explosive intersection with Deep Learning (AlphaProof) created the 'Neuro-Symbolic Math' frontier.",
       "trajectory": {
         "1990": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Niche/Foundation. The field was split between 'Automated' (McCune's Otter) and 'Interactive' (Coq, Isabelle). The milestone was the 'Robbins Conjecture,' which stood unsolved for 60 years. The 'Force of Motion' was the increasing power of hardware allowing brute-force search for proofs.",
           "key_manifestations": [
             "McCune, W. (1990). 'OTTER 2.0 Users Guide'",
@@ -3579,7 +3579,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. 'Model Checking' (Clarke/Emerson) began to gain industrial traction for verifying circuits. This was 'Finite State' reasoning, distinct from 'First Order Logic.' It was useful, but viewed as 'Verification' not 'AI.'",
           "key_manifestations": [
             "Clarke, E. M., et al. (1992). 'Model Checking and Abstraction'",
@@ -3589,7 +3589,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "The 'Pentium Bug' Catalyst (+0%). The Intel FDIV bug cost $475M. This massive failure forced the hardware industry to adopt Formal Verification (Cluster 20) over random testing. Suddenly, there was money in theorem proving. The 'Motion' was from academia to industry (Intel/AMD).",
           "key_manifestations": [
             "Russinoff, D. M. (1998). 'A Mechanically Checked Proof of IEEE Compliance of the Floating Point Multiplication Algorithm of the AMD-K7 Processor' (Direct result of 1994 events)",
@@ -3599,7 +3599,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The EQP Triumph (+1%). William McCune used EQP (a specialized prover) to prove the Robbins Conjecture. This was the first time AI solved a major open mathematical problem that humans couldn't. It was a 'Deep Blue' moment for math, though less publicized.",
           "key_manifestations": [
             "McCune, W. (1997). 'Solution of the Robbins Problem'",
@@ -3609,7 +3609,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The 'SAT Solver' revolution was brewing (Cluster 4), which would eventually power SMT solvers. In ITP, the 'Four Color Theorem' formalization began in Coq (Gonthier). The goal shifted from 'Finding' proofs to 'Checking' human proofs.",
           "key_manifestations": [
             "Gonthier, G. (2008). 'Formal Proof--The Four-Color Theorem' (Work started late 90s)",
@@ -3619,7 +3619,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. 'Vampire' dominated the CASC competitions. The algorithms (Superposition Calculus) were refined. But the field was insular. The 'Semantic Web' (Cluster 4) tried to use Description Logics, but ATPs were too slow for the web.",
           "key_manifestations": [
             "Riazanov, A., & Voronkov, A. (2001). 'Vampire 1.1'",
@@ -3629,7 +3629,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "The 'Flyspeck' Project (+0%). Thomas Hales launched Flyspeck to formally verify his proof of the Kepler Conjecture (stacking oranges). The human reviewers were 99% sure it was right, but couldn't check the code. This marked the era of 'Big Proofs.'",
           "key_manifestations": [
             "Hales, T. C. (2005). 'Introduction to the Flyspeck Project' (2003 launch)",
@@ -3639,7 +3639,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "SMT Solvers Rise (+0%). Satisfiability Modulo Theories (SMT) combined SAT solvers with domain theories (integers, arrays). This bridged the gap between raw logic and software verification. Microsoft Research invested heavily (Z3).",
           "key_manifestations": [
             "De Moura, L., & Bj\u00f8rner, N. (2008). 'Z3: An Efficient SMT Solver' (Development 2006, roots 2004)",
@@ -3649,7 +3649,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "The 'CompCert' Milestone (+0%). Xavier Leroy verified a C compiler (CompCert) in Coq. This proved that you could write bug-free system software. It was a triumph for Coq, but remained 'High Effort' (PhD years per module).",
           "key_manifestations": [
             "Leroy, X. (2009). 'Formal Verification of a Realistic Compiler' (CompCert)",
@@ -3659,7 +3659,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. 'seL4' verified an OS kernel. The 'Displacing Force' was the extreme cost. Microsoft's 'Singularity' OS project flirted with verification but failed to productize. The cluster remained 'Military/Industrial Grade' only.",
           "key_manifestations": [
             "Klein, G., et al. (2010). 'seL4: Formal Verification of an OS Kernel'",
@@ -3669,7 +3669,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "The 'Homotopy Type Theory' (HoTT) stir (+0%). Voevodsky proposed Univalent Foundations. It linked topology to type theory. A massive intellectual excitement for mathematicians, creating a new 'Foundation of Math' compatible with computers. 'Lean' was being born in the background (Leonardo de Moura).",
           "key_manifestations": [
             "Voevodsky, V. (2010). 'Univalent Foundations of Mathematics'",
@@ -3679,7 +3679,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Premise Selection (+0%). Deep Learning touched the field via 'Premise Selection' (Alemi/Chollet/Urban). Can a neural net guess *which* theorems are useful to prove the current one? This was the first 'Neuro-Symbolic' efficiency gain. It saved the ATP from drowning in the library.",
           "key_manifestations": [
             "Urban, J., et al. (2013). 'MaLARea SG1- Machine Learner for Automated Reasoning with Theories'",
@@ -3689,7 +3689,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Lean Rise (+0%). Microsoft released Lean. It was faster and more 'coder friendly' than Coq. A community began to form around 'mathlib'\u2014a unified library of mathematics. The 'Motion' was the democratization of formal math.",
           "key_manifestations": [
             "De Moura, L., et al. (2015). 'The Lean Theorem Prover'",
@@ -3699,7 +3699,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "DeepMath (+1%). Google trained standard Transformers on the Mizar library. They showed that Neural Networks could generate proofs (heuristically). The barrier was the 'Infinite Action Space' of proof steps. RL was identified as the solution.",
           "key_manifestations": [
             "Alemi, A. A., et al. (2016). 'DeepMath - Deep Sequence Models for Premise Selection'",
@@ -3709,7 +3709,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Lean Community Explosion (+0%). Kevin Buzzard launched the 'Xena Project' to teach undergrads Lean. The 'Liquid Tensor Experiment' (Scholze) challenged the community to verify a cutting-edge result. They did. This validated ITPs to the elite math community.",
           "key_manifestations": [
             "Buzzard, K., et al. (2020). 'The Future of Mathematics?' (2018 lectures)",
@@ -3719,7 +3719,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "GPT-f (+1%). OpenAI (Polu/Sutskever) showed that a GPT model trained on math data could suggest tactics to a prover. This 'Neural Theorem Prover' approach beat human heuristics. The cluster began to rapidly ascend as the 'Benchmark for Reasoning' (MATH dataset).",
           "key_manifestations": [
             "Polu, S., & Sutskever, I. (2020). 'Generative Language Modeling for Automated Theorem Proving'",
@@ -3729,7 +3729,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Minerva & Autoformalization (+1%). Google's Minerva (LLM) solved math problems by 'thinking' (Chain of Thought), but without verification. Then 'Autoformalization' (Wu et al.) appeared: use the LLM to translate natural language math into Lean code, then verify it. This closed the loop.",
           "key_manifestations": [
             "Lewkowycz, A., et al. (2022). 'Solving Quantitative Reasoning Problems with Language Models' (Minerva)",
@@ -3739,7 +3739,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "AlphaGeometry & AlphaProof (+2%). DeepMind cracked the IMO (International Math Olympiad). AlphaGeometry used a Neuro-Symbolic approach (LLM for creative construction, Symbolic engine for deduction). AlphaProof (2024) used RL on Lean proofs to achieve Silver/Gold medal performance. The cluster is now the 'Gold Standard' for Artificial General Intelligence reasoning capabilities.",
           "key_manifestations": [
             "Trinh, T. H., et al. (2024). 'Solving Olympiad Geometry without Human Demonstrations' (AlphaGeometry)",
@@ -3755,7 +3755,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Learning to Learn' paradigm. Unlike standard learning (optimizing parameters $\\theta$ for a specific task), this cluster seeks to optimize the learning algorithm itself (or the initialization) to adapt rapidly to new tasks. Its trajectory bridges the 'Inductive Transfer' ideas of the 90s (Thrun), the 'Bayesian Transfer' of the 2000s, the gradient-based meta-learning (MAML) of the 2010s, and ultimately merges with the 'In-Context Learning' of Foundation Models in the 2020s, where 'adaptation' happens via the prompt rather than weight updates.",
       "trajectory": {
         "1990": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The cluster was in its theoretical infancy. The dominant paradigm was 'Tabula Rasa' learning\u2014starting from random weights every time. However, psychologists and early connectionists (Hinton/Plaut) argued that humans don't learn from scratch. The concept of 'Fast Weights' (updating synapses dynamically) was proposed as a mechanism for short-term adaptation.",
           "key_manifestations": [
             "Hinton, G. E., & Plaut, D. C. (1987/1990). 'Using Fast Weights to Deblur Old Memories'",
@@ -3765,7 +3765,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The 'Lifelong Learning' formulation (+1%). Sebastian Thrun and Pratt formalized 'Transfer Learning.' The idea: networks trained on Task A should learn Task B faster. This challenged the i.i.d. assumption. The 'Motion' was trying to reuse the hidden layer representations across related tasks (Multitask Learning).",
           "key_manifestations": [
             "Thrun, S., & Pratt, L. (1998). 'Learning to Learn' (Book covering 1992-1996 era)",
@@ -3775,7 +3775,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Multitask Learning (MTL) Peak (+1%). Rich Caruana's work demonstrated that training a neural net on parallel tasks (e.g., predicting pneumonia risk AND mortality) improved performance on both. The 'Inductive Bias' of related tasks acted as a regularizer. This was the first empirical proof that 'Generalization' improves with 'Breadth.'",
           "key_manifestations": [
             "Caruana, R. (1997). 'Multitask Learning' (Thesis/1994 work)",
@@ -3785,7 +3785,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis/Decline (-1%). As SVMs (Cluster 2) took over, Transfer Learning became difficult. SVMs are shallow; there's no 'hidden layer' to share. You can share Kernels, but it's mathematically awkward. The cluster retreated to hierarchical Bayesian models where 'priors' could be shared.",
           "key_manifestations": [
             "Thrun, S. (1998). 'Lifelong Learning Algorithms'",
@@ -3795,7 +3795,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. 'Ensemble Methods' (Boosting/Bagging) were the rage. They combined models trained on the *same* task, not different tasks. The idea of a 'Generalist' agent was replaced by 'Specialist' ensembles. Meta-learning survived in 'Evolutionary' circles (evolving the learning rule).",
           "key_manifestations": [
             "Naik, D. K., & Mammone, R. J. (1992/1998). 'Meta-Neural Networks that Learn by Learning'",
@@ -3805,7 +3805,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Bayesian Priors (+1%). In the PGM era (Cluster 3), Meta-Learning meant 'Learning the Prior.' If you learn the hyperparameters of the prior distribution from 10 tasks, the 11th task can be learned with very few samples. This was the mathematical formalization of 'Few-Shot Learning.'",
           "key_manifestations": [
             "Tenenbaum, J. B. (1999/2000). 'Bayesian Modeling of Human Concept Learning'",
@@ -3815,7 +3815,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "One-Shot Learning (+1%). Fei-Fei Li and colleagues pushed the 'One-Shot' benchmark. Humans can learn a gecko from one picture; SVMs need 100. They used 'Constellation Models' (PGMs) to transfer part-models across categories. This kept the dream of 'Human-like data efficiency' alive.",
           "key_manifestations": [
             "Fei-Fei, L., et al. (2006). 'One-Shot Learning of Object Categories' (2003-2004 work)",
@@ -3825,7 +3825,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Domain Adaptation (+1%). The web is messy. A classifier trained on Wall Street Journal (clean) fails on Yahoo Blogs (noisy). 'Domain Adaptation' became a critical industrial need. Blitzer et al. showed how to align feature spaces (Structural Correspondence Learning). The 'Motion' was fixing the 'Distribution Shift.'",
           "key_manifestations": [
             "Blitzer, J., et al. (2006). 'Domain Adaptation with Structural Correspondence Learning'",
@@ -3835,7 +3835,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Deep Transfer (+0%). Hinton's DBNs showed that unsupervised pre-training helped supervised tasks. This was 'Implicit' transfer. You transfer the structure of $P(X)$ to help learn $P(Y|X)$. This became the default way to do Deep Learning (Pre-train then Fine-tune), though it wasn't called Meta-Learning yet.",
           "key_manifestations": [
             "Raina, R., et al. (2007). 'Self-taught Learning: Transfer Learning from Unlabeled Data'",
@@ -3845,7 +3845,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. The 'ImageNet' race (Cluster 1) led to 'Feature Transfer.' People realized that the features learned on ImageNet were generic (Gabor filters). You could just chop off the last layer and retrain. This was 'Transfer Learning' by laziness, not algorithmic meta-learning.",
           "key_manifestations": [
             "Yosinski, J., et al. (2014). 'How Transferable are Features in Deep Neural Networks?' (Analyzing the late 2000s phenomenon)",
@@ -3855,7 +3855,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Hyperparameter Optimization (+1%). 'Bayesian Optimization' (Snoek) became the standard way to tune Deep Nets. This is a form of Meta-Learning: learning a model of the performance surface to pick the next learning rate. It mechanized the 'Graduate Student Descent.'",
           "key_manifestations": [
             "Snoek, J., et al. (2012). 'Practical Bayesian Optimization of Machine Learning Algorithms'",
@@ -3865,7 +3865,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Memory Augmented NN (+1%). Graves (Neural Turing Machine) and Weston (Memory Networks) added explicit memory to NNs. This allowed 'One-Shot' storage. If you tell the network 'Sam has a red hat,' it stores it in a matrix. Later it can retrieve it. Adaptation happens by writing to memory, not changing weights.",
           "key_manifestations": [
             "Graves, A., et al. (2014). 'Neural Turing Machines'",
@@ -3875,7 +3875,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The 'Learning to Learn' Renaissance (+2%). Researchers (Bengio, Schmidhuber, DeepMind) returned to the idea of replacing SGD with an RNN. The RNN observes the gradients and outputs the weight updates. It learns an optimizer. This was 'Optimization as a Policy.'",
           "key_manifestations": [
             "Andrychowicz, M., et al. (2016). 'Learning to Learn by Gradient Descent by Gradient Descent' (2015 work)",
@@ -3885,7 +3885,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "MAML Explosion (+4%). Chelsea Finn introduced 'Model-Agnostic Meta-Learning' (MAML). Instead of learning a new update rule, just learn an initialization $\\theta$ such that one step of gradient descent solves the task. It was elegant, compatible with any architecture, and mathematically clean (second-order derivatives). The cluster became a major CVPR/NeurIPS category.",
           "key_manifestations": [
             "Finn, C., et al. (2017). 'Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks'",
@@ -3895,7 +3895,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "NLP Meta-Learning (+3%). GPT-2 showed 'Zero-Shot' transfer. BERT showed 'Fine-Tuning' transfer. The community realized that massive pre-training was the ultimate meta-learner. MAML (inner loop optimization) couldn't scale to Transformers. The 'Meta-Learning' term began to be subsumed by 'In-Context Learning.'",
           "key_manifestations": [
             "Radford, A., et al. (2019). 'Language Models are Unsupervised Multitask Learners'",
@@ -3905,7 +3905,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "In-Context Learning Dominance (+3%). GPT-3 proved you don't need gradient updates to adapt. You just provide examples in the prompt. The 'Inner Loop' of meta-learning is simulated by the attention mechanism during inference. This was a phase transition: Adaptation became 'Activation-based' rather than 'Weight-based.'",
           "key_manifestations": [
             "Brown, T. B., et al. (2020). 'Language Models are Few-Shot Learners'",
@@ -3915,7 +3915,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "PEFT & LoRA (-3% to Meta, + to Optimization). While In-Context is great, sometimes you *do* need to update weights. 'Parameter-Efficient Fine-Tuning' (PEFT) like LoRA emerged. It's a form of meta-learning where you learn where to inject rank-updates. The cluster identity is blurring into 'LLM Engineering.'",
           "key_manifestations": [
             "Hu, E. J., et al. (2022). 'LoRA: Low-Rank Adaptation of Large Language Models'",
@@ -3925,7 +3925,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Test-Time Training (TTT) (+0%). A new direction: update the model *during* inference on the test sample. 'Test-Time Training' layers. Also, 'Meta-Prompting'\u2014asking the LLM to rewrite its own prompt to solve the task. The 'Adaptation' is now recursive.",
           "key_manifestations": [
             "Sun, Y., et al. (2024). 'Test-Time Training with Self-Supervision for Generalization under Distribution Shifts'",
@@ -3941,7 +3941,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Art of Vision' (and Audio) prior to Deep Learning. It is the decomposition of signals into hand-crafted invariants: edges, corners, blobs, histograms of gradients (HOG), and scale-invariant feature transforms (SIFT). For two decades, progress in AI was defined by smarter researchers designing smarter features, which were then fed to simple classifiers (SVMs). Its trajectory is a massive plateau of dominance followed by a violent collapse after 2012, serving now as a lesson in the 'Bitter Lesson'\u2014that hand-crafting features eventually loses to learning them.",
       "trajectory": {
         "1990": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "The 'Edge Detection' Era (+2%). Canny Edge Detector (1986) was the state of the art. Vision was about finding boundaries. The Harris Corner Detector (1988) provided keypoints. The philosophy was 'Marr's Vision': reconstruct the 3D geometry from 2D lines. It was geometric and fragile.",
           "key_manifestations": [
             "Canny, J. (1986/1990). 'A Computational Approach to Edge Detection'",
@@ -3951,7 +3951,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Scale Space (+2%). Lindeberg formalized 'Scale-Space Theory.' You must look at an image at multiple resolutions to understand it. This was the mathematical foundation for SIFT. The 'Motion' was moving from local pixels to multi-scale structures.",
           "key_manifestations": [
             "Lindeberg, T. (1994). 'Scale-Space Theory in Computer Vision' (1992-93 work)",
@@ -3961,7 +3961,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Eigenfaces & Appearance (+3%). 'Eigenfaces' (Turk/Pentland) showed that simple linear projection (PCA) could recognize faces. This was 'Holistic' (whole image) vs 'Local' (edges). It worked surprisingly well for aligned faces. It started the 'Biometrics' industry.",
           "key_manifestations": [
             "Belhumeur, P. N., et al. (1997). 'Eigenfaces vs. Fisherfaces' (1996 work refining 1994 concepts)",
@@ -3971,7 +3971,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "Gabor Filters & Wavelets (+3%). Inspired by Cluster 11 (Sparse Coding), vision researchers built filter banks of Gabor wavelets. This mimicked the V1 cortex. 'Texture' became analyzable. The focus shifted from 'Geometry' (edges) to 'Texture' (filter responses).",
           "key_manifestations": [
             "Ma, W. Y., & Manjunath, B. S. (1996). 'Texture Features for Browsing and Retrieval of Image Data'",
@@ -3981,7 +3981,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "The SIFT Revolution (+7%). David Lowe introduced SIFT (Scale-Invariant Feature Transform). It was invariant to rotation, scale, and lighting. It was a 'descriptor'\u2014a 128D vector describing a patch. This was the 'AlexNet' of the 2000s. It solved object recognition for rigid objects (e.g., shoe on a table).",
           "key_manifestations": [
             "Lowe, D. G. (1999). 'Object Recognition from Local Scale-Invariant Features' (ICCV)",
@@ -3991,7 +3991,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 28,
+          "salience_share": 28,
           "description": "Viola-Jones (+3%). Real-time face detection. They used 'Haar-like features' (simple rectangles) and 'AdaBoost' (Cluster 8) to select the best ones. It ran on digital cameras. It was the first mass-market Computer Vision success. The lesson: Simple features + Strong Selection = Speed.",
           "key_manifestations": [
             "Viola, P., & Jones, M. (2001). 'Rapid Object Detection using a Boosted Cascade of Simple Features'",
@@ -4001,7 +4001,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Bag of Visual Words (+2%). Borrowing from NLP (Cluster 15), vision researchers clustered SIFT descriptors into 'Visual Words.' An image became a histogram of words. This allowed the use of Naive Bayes and SVMs on images. It discarded all spatial geometry, yet performed best on the PASCAL VOC benchmarks.",
           "key_manifestations": [
             "Sivic, J., & Zisserman, A. (2003). 'Video Google: A Text Retrieval Approach to Object Matching in Videos'",
@@ -4011,7 +4011,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 32,
+          "salience_share": 32,
           "description": "HOG & Dalal-Triggs (+2%). Histograms of Oriented Gradients (HOG) proved superior for pedestrian detection. It was a 'dense' descriptor (every pixel contributes) vs SIFT's 'sparse' keypoints. This cemented the 'Gradient Histogram' as the fundamental atom of computer vision.",
           "key_manifestations": [
             "Dalal, N., & Triggs, B. (2005). 'Histograms of Oriented Gradients for Human Detection'",
@@ -4021,7 +4021,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Peak Feature Engineering (+3%). The 'Deformable Part Model' (DPM) by Felzenszwalb et al. combined HOG features with a spring-mass model of parts. It was the absolute state-of-the-art. It represented the pinnacle of human ingenuity in modeling: explicit parts, explicit geometry, explicit features. It was complex, slow, and beautiful.",
           "key_manifestations": [
             "Felzenszwalb, P., et al. (2008). 'A Discriminatively Trained, Multiscale, Deformable Part Model' (DPM)",
@@ -4031,7 +4031,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Stasis/Saturation. Progress on PASCAL VOC slowed. Researchers were tweaking histogram bin sizes by 1% to get 0.5% mAP gains. The field felt 'stuck.' The 'Semantic Gap' (pixels to meaning) seemed unbridgeable with just better histograms. This stagnation set the stage for the Deep Learning disruption.",
           "key_manifestations": [
             "Everingham, M., et al. (2010). 'The Pascal Visual Object Classes (VOC) Challenge'",
@@ -4041,7 +4041,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 32,
+          "salience_share": 32,
           "description": "The Fisher Vector Swan Song (-3%). Fisher Vectors (Perronnin) were the last major improvement. They encoded higher-order statistics of the gradients. They were very high dimensional (100k+). They worked well but were massive. This was the 'Brute Force' era of feature engineering.",
           "key_manifestations": [
             "Sanchez, J., et al. (2013). 'Image Classification with the Fisher Vector: Theory and Practice' (2010-11 work)",
@@ -4051,7 +4051,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The Collapse (-17%). AlexNet happened. It beat DPM and Fisher Vectors by 10% absolute accuracy. It used raw pixels. Within 6 months, CVPR shifted from 'New Descriptor' papers to 'New Architecture' papers. SIFT/HOG were effectively deprecated for classification.",
           "key_manifestations": [
             "Krizhevsky, A., et al. (2012). 'ImageNet Classification with Deep Convolutional Neural Networks'",
@@ -4061,7 +4061,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Niche: Geometry Only (-10%). SIFT/ORB survived in SLAM (Simultaneous Localization and Mapping). Neural nets were too slow and heavy for real-time tracking on phones. The feature engineers retreated to 'Geometric Vision' (3D reconstruction), where precise pixel matching still mattered.",
           "key_manifestations": [
             "Mur-Artal, R., et al. (2015). 'ORB-SLAM: A Versatile and Accurate Monocular SLAM System'",
@@ -4071,7 +4071,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Learned Features take SLAM (-3%). Even the SLAM stronghold began to fall. 'SuperPoint' (MagicLeap) showed that a neural net could learn better keypoints than SIFT. 'Learned Descriptors' replaced hand-crafted ones. The 'Art' of feature design was dead; the 'Art' of loss function design replaced it.",
           "key_manifestations": [
             "DeTone, D., et al. (2018). 'SuperPoint: Self-Supervised Interest Point Detection and Description' (2017 work)",
@@ -4081,7 +4081,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Legacy. Used in teaching 'Intro to Computer Vision' to explain what convolution is doing. Used in low-power embedded systems (simple microcontrollers) where a CNN is too expensive.",
           "key_manifestations": [
             "Szeliski, R. (2022). 'Computer Vision: Algorithms and Applications' (Textbook preserving the history)",
@@ -4091,7 +4091,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. NeRFs (Neural Radiance Fields) appeared. They do 3D reconstruction without *any* explicit feature matching, just optimizing a photometric loss. This put the final nail in the coffin of 'Feature Matching' for dense reconstruction.",
           "key_manifestations": [
             "Mildenhall, B., et al. (2020). 'NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis'",
@@ -4101,7 +4101,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The cluster is historical. However, 'Inductive Bias' research in Deep Learning often tries to rediscover *why* Gabor filters are good. We circle back to Cluster 11 (Sparse Coding).",
           "key_manifestations": [
             "Liu, Z., et al. (2022). 'A ConvNet for the 2020s' (ConvNeXt - relearning the lessons of the past)",
@@ -4111,7 +4111,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Zero Variance in SOTA. The only remnant is the concept of 'Tokenization' in Vision Transformers (patchifying images). A 'Patch' is the new 'Feature.' But it is raw, not engineered.",
           "key_manifestations": [
             "Dosovitskiy, A., et al. (2020/2024). 'An Image is Worth 16x16 Words'",
@@ -4127,7 +4127,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the liberation of AI from human labeling. It posits that the data itself contains the supervision signal needed for intelligence. The trajectory evolves from the generative autoencoders of the 2000s to the 'pretext tasks' of the 2010s (predicting rotation, colorization), culminating in the 'Contrastive' revolution (SimCLR, CLIP) and 'Masked Modeling' (BERT, MAE). It explains the shift from 'Supervised Learning' (limited by labor) to 'Self-Supervised Learning' (limited only by compute).",
       "trajectory": {
         "1990": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The cluster existed as 'Unsupervised Learning' (+1%). The primary mechanism was the Autoencoder (Hinton/Zemel). The 'Pretext Task' was reconstruction: $Input \u2192 Bottleneck \u2192 Output$. The goal was compression, not representation learning for downstream tasks. It was theoretically interesting but practically inferior to supervised backprop.",
           "key_manifestations": [
             "Hinton, G. E., & Zemel, R. S. (1994). 'Autoencoders, Minimum Description Length, and Helmholtz Free Energy'",
@@ -4137,7 +4137,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The focus was on 'Clustering' (K-Means, GMMs). Self-supervision was implicitly present in 'LSA' (Cluster 15)\u2014predicting context counts\u2014but it wasn't framed as learning features for classification. The 'Displacing Force' was the rise of SVMs which demanded labeled data for margin maximization.",
           "key_manifestations": [
             "Sch\u00fctze, H. (1993). 'Word Space'",
@@ -4147,7 +4147,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Information Maximization (+1%). Bell & Sejnowski's ICA (Independent Component Analysis) was a form of self-supervision: maximize the independence of the outputs. This learned edge detectors from natural images without labels. It showed that statistical principles alone could discover features.",
           "key_manifestations": [
             "Bell, A. J., & Sejnowski, T. J. (1995). 'An Information-Maximization Approach to Blind Separation and Blind Deconvolution'",
@@ -4157,7 +4157,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The 'Generative' view dominated unsupervised learning. You learned $P(X)$. The 'Discriminative' view (learning $P(Y|X)$) was strictly supervised. The idea of 'Discriminative Self-Supervision' (learning to discriminate parts of the data from each other) was dormant.",
           "key_manifestations": [
             "Olshausen, B. A., & Field, D. J. (1996). 'Emergence of Simple-Cell Receptive Field Properties by Learning a Sparse Code'",
@@ -4167,7 +4167,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Contraction (-1%). The 'Kernel' era. Unsupervised learning became 'Kernel PCA' or 'Spectral Clustering.' These were fixed algorithms, not learned representations. The concept of 'Training a model to solve a made-up task' vanished.",
           "key_manifestations": [
             "Sch\u00f6lkopf, B., et al. (1998). 'Nonlinear Component Analysis as a Kernel Eigenvalue Problem'",
@@ -4177,7 +4177,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Contrastive Roots (+1%). Hinton's 'Products of Experts' introduced 'Contrastive Divergence.' You minimize the energy of real data and maximize the energy of 'fantasies' (noise). This was the grandfather of Contrastive Learning: Pushing data points away from noise points.",
           "key_manifestations": [
             "Hinton, G. E. (2002). 'Training Products of Experts by Minimizing Contrastive Divergence'",
@@ -4187,7 +4187,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Siamese Networks (+1%). LeCun's group introduced 'Siamese Networks' (Chopra et al.) to learn a metric. Minimize distance between same-class pairs, maximize distance between different-class pairs. While used with labels (Supervised), the *architecture* was identical to modern SimCLR. It laid the geometric foundation.",
           "key_manifestations": [
             "Chopra, S., et al. (2005). 'Learning a Similarity Metric Discriminatively, with Application to Face Verification'",
@@ -4197,7 +4197,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Deep Belief Nets (+1%). Pre-training was the driver. You train a stack of RBMs (unsupervised) to learn features, then fine-tune. This proved that unlabeled data helps labeled tasks. It was 'Generative Pre-training' before GPT.",
           "key_manifestations": [
             "Hinton, G. E., et al. (2006). 'A Fast Learning Algorithm for Deep Belief Nets'",
@@ -4207,7 +4207,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Denoising Autoencoders (+2%). Vincent et al. changed the task from 'Reconstruct X' to 'Reconstruct X from corrupted X_tilde.' This forced the model to learn the *manifold structure* rather than just copying pixels. This was a robust self-supervised objective that scaled well.",
           "key_manifestations": [
             "Vincent, P., et al. (2008). 'Extracting and Composing Robust Features with Denoising Autoencoders'",
@@ -4217,7 +4217,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis/Decline. ImageNet (Supervised) killed the DBN/Autoencoder pre-training. ReLU + Dropout + Label meant you didn't need unsupervised pre-training anymore. The cluster retreated to NLP (Word2Vec) where labels didn't exist.",
           "key_manifestations": [
             "Erhan, D., et al. (2010). 'Why Does Unsupervised Pre-training Help Deep Learning?'",
@@ -4227,7 +4227,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "NCE & Word2Vec (+2%). Gutmann/Hyv\u00e4rinen formalized 'Noise Contrastive Estimation' (NCE). Mikolov applied it to language. Instead of a softmax over 100k words, just distinguish the 'True' word from 10 'Noise' words. This was the first industrial-scale Contrastive Learning.",
           "key_manifestations": [
             "Gutmann, M., & Hyv\u00e4rinen, A. (2010). 'Noise-contrastive Estimation'",
@@ -4237,7 +4237,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Nadir. Vision was 100% supervised. NLP was using Word2Vec (Self-Supervised) but it was viewed as a 'preprocessing' step, not the main model training. The idea of training a ConvNet purely on unlabeled images was considered impossible.",
           "key_manifestations": [
             "Krizhevsky, A., et al. (2012). 'ImageNet Classification with DCNNs' (Pure Supervised)",
@@ -4247,7 +4247,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "The 'Pretext Task' Era (+4%). Researchers got creative. 'Predict the relative position of these two patches.' 'Colorize this grayscale image.' 'Solve this Jigsaw puzzle.' These were 'Pretext Tasks.' The network learned semantic features as a byproduct of solving the puzzle. It worked, but performance was still below supervised baselines.",
           "key_manifestations": [
             "Doersch, C., et al. (2015). 'Unsupervised Visual Representation Learning by Context Prediction'",
@@ -4257,7 +4257,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Contrastive Instance Discrimination (+5%). Wu et al. (Instance Discrimination) and Oord (CPC) proposed: 'Treat every image as its own class.' Use augmentation to create views. Pull views of the same image together, push others away. This closed the gap with supervised learning.",
           "key_manifestations": [
             "Oord, A. v. d., et al. (2018). 'Representation Learning with Contrastive Predictive Coding' (CPC)",
@@ -4267,7 +4267,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "BERT & SimCLR Explosion (+10%). Two revolutions at once. In NLP, BERT (Masked Language Modeling) proved that 'Masking' is the ultimate pretext task. In Vision, SimCLR (Chen et al.) simplified Contrastive Learning (Augmentation + Projection Head + InfoNCE). Suddenly, SSL matched Supervised performance on ImageNet. The 'Labels' were obsolete.",
           "key_manifestations": [
             "Devlin, J., et al. (2018). 'BERT: Pre-training of Deep Bidirectional Transformers'",
@@ -4277,7 +4277,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Multimodal Unification (+10%). CLIP (OpenAI). Contrastive learning between Text and Images. This unified the manifolds. The loss function was simple InfoNCE. The variance explosion was due to 'Zero-Shot' capability\u2014the model could recognize concepts it was never explicitly trained to classify, just by reading about them.",
           "key_manifestations": [
             "Radford, A., et al. (2021). 'Learning Transferable Visual Models From Natural Language Supervision' (CLIP)",
@@ -4287,7 +4287,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 40,
+          "salience_share": 40,
           "description": "Generative as Self-Supervised (+5%). The definition blurred. Is 'Next Token Prediction' (GPT) generative or self-supervised? It's both. The field converged on 'Foundation Models' trained on massive unlabeled corpora. The 'Contrastive' vs 'Generative' debate settled into: Generative for Text/Pixels, Contrastive for Embeddings/Retrieval.",
           "key_manifestations": [
             "Assran, M., et al. (2023). 'Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture' (I-JEPA - LeCun's vision)",
@@ -4297,7 +4297,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "Current trajectory is 'World Modeling' (+5%). Predicting the *future* state of the world (Video) is the ultimate self-supervised task (LeCun's JEPA). Models like Sora and Gemini are trained on 'prediction' which forces them to learn physics, causality, and reasoning. Self-supervision is no longer a 'Pre-training' step; it is the *only* step that matters for scale.",
           "key_manifestations": [
             "LeCun, Y. (2022/2024). 'A Path Towards Autonomous Machine Intelligence' (The JEPA manifesto)",
@@ -4313,7 +4313,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Physical Substrate' of AI. It tracks the co-evolution of algorithms and hardware, governed by the 'Hardware Lottery'\u2014the idea that successful algorithms are those that fit the dominant hardware of the time. The trajectory moves from the CPU-bound logic of the 90s, to the CUDA/GPU revolution of the 2000s, to the Tensor Core/TPU era of the 2010s, and finally to the 'Interconnect & Bandwidth' bottleneck of the 2020s. It explains *why* Matrix Multiplication became the universal atom of compute.",
       "trajectory": {
         "1990": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The 'CPU' Era (+2%). AI was limited by Moore's Law on serial processors (x86). LISP Machines were dying. Connectionism (Neural Nets) was slow because $O(N^2)$ matrix muls choked single-core CPUs. This favored 'Symbolic' and 'Tree' methods (Decision Trees) which required complex branching logic, something CPUs were good at.",
           "key_manifestations": [
             "Brooks, R. A. (1990). 'Elephants Don't Play Chess' (Hardware constraints driving reactive architectures)",
@@ -4323,7 +4323,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Stasis. The failure of the 'Fifth Generation' (specialized Prolog hardware) solidified the dominance of general-purpose CPUs. AI research adapted to the hardware: 'SVMs' became popular because they solved a QP (convex optimization), which numerical libraries (LAPACK) on CPUs handled well.",
           "key_manifestations": [
             "Patterson, D. A., & Hennessy, J. L. (1990/1994). 'Computer Architecture: A Quantitative Approach' (RISC dominance)",
@@ -4333,7 +4333,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "SIMD Niches (-3%). 'Multimedia Extensions' (MMX) began to appear in CPUs, offering limited vector instructions. ConvNets (LeCun) ran on DSPs for check reading. But general AI was still scalar. The divergence between 'Graphics' (3dfx Voodoo) and 'Compute' began.",
           "key_manifestations": [
             "LeCun, Y., et al. (1998). 'Gradient-Based Learning Applied to Document Recognition' (Using DSPs)",
@@ -4343,7 +4343,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Stasis. Beowulf clusters (stacks of PCs) were the standard for 'High Performance Computing.' This favored coarse-grained parallelism (Genetic Algorithms, Random Forests) over fine-grained parallelism (Neural Nets). This hardware bias actively suppressed connectionist research.",
           "key_manifestations": [
             "Sterling, T., et al. (1995/1999). 'Beowulf Cluster Computing'",
@@ -4353,7 +4353,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "The GPU Emergence (+0%). NVIDIA released the GeForce 256, the first 'GPU' with hardware Transform & Lighting. It was fixed-function. Researchers tried to hack it for general compute (GPGPU) using OpenGL shaders, but it was painful. The potential was there: massive floating point throughput.",
           "key_manifestations": [
             "NVIDIA (1999). 'GeForce 256'",
@@ -4363,7 +4363,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Programmable Shaders (+2%). GPUs gained programmable vertex/pixel shaders. Researchers (like Ng at Stanford) started implementing matrix multiplication on GPUs. It was 10x faster than CPUs but required writing graphics code (drawing triangles to multiply matrices).",
           "key_manifestations": [
             "Larsen, E. S., & McAllister, D. (2001). 'Fast Matrix Multiplies using Graphics Hardware'",
@@ -4373,7 +4373,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Stasis/Incubation. The difficulty of GPGPU kept it niche. AI was still dominated by SVMs on CPUs. However, the gaming industry was driving GPU FLOPs exponential, diverging from CPU performance (the 'Memory Wall').",
           "key_manifestations": [
             "Owens, J. D., et al. (2007). 'A Survey of General-Purpose Computation on Graphics Hardware' (Covering early 2000s)",
@@ -4383,7 +4383,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "MapReduce (+3%). Google introduced MapReduce. This wasn't about GPUs; it was about 'Data Parallelism' on commodity CPU clusters. It enabled 'Web Scale' simple models (Naive Bayes, Logistic Regression). It reinforced simple, linear, sparse models over complex, dense, deep models.",
           "key_manifestations": [
             "Dean, J., & Ghemawat, S. (2004). 'MapReduce: Simplified Data Processing on Large Clusters'",
@@ -4393,7 +4393,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "The CUDA Event (+10%). NVIDIA released CUDA. Suddenly, you didn't need to write shaders; you could write C-like code. This unlocked the GPU for scientists. Raina, Ng, and LeCun immediately began porting Deep Learning to CUDA. This was the catalyst for the Deep Learning explosion.",
           "key_manifestations": [
             "NVIDIA (2006/2007). 'CUDA Programming Guide 1.0'",
@@ -4403,7 +4403,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "ImageNet on GPU (+5%). Krizhevsky (AlexNet author) was writing highly optimized CUDA kernels for Convolution. He realized that two GTX 580s could train a massive net that would take months on a CPU. The hardware (GPU) finally matched the algorithm (ConvNet).",
           "key_manifestations": [
             "Ciresan, D. C., et al. (2010). 'Deep, Big, Simple Neural Nets for Handwritten Digit Recognition'",
@@ -4413,7 +4413,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 40,
+          "salience_share": 40,
           "description": "The GPU Gold Rush (+10%). Post-AlexNet, every lab bought GPUs. NVIDIA stock began its decoupling from gaming. The primitive was 'GEMM' (General Matrix Multiply). Libraries like cuDNN (2014) appeared, optimizing these primitives. The 'Hardware Lottery' was won by the GPU.",
           "key_manifestations": [
             "Chetlur, S., et al. (2014). 'cuDNN: Efficient Primitives for Deep Learning' (2013 development)",
@@ -4423,7 +4423,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 50,
+          "salience_share": 50,
           "description": "Distributed Training (+10%). Models grew larger than single-GPU memory. 'Data Parallelism' (Parameter Server) and 'Model Parallelism' became research fields. Dean et al. (Google) built DistBelief (pre-TensorFlow), scaling to thousands of CPU cores (initially) then GPUs.",
           "key_manifestations": [
             "Dean, J., et al. (2012). 'Large Scale Distributed Deep Networks' (DistBelief)",
@@ -4433,7 +4433,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 60,
+          "salience_share": 60,
           "description": "The TPU/Tensor Core Shift (+10%). Google realized GPUs were too general (wasting energy on graphics logic). They built the TPU v1 (systolic array for matrix mul). NVIDIA responded with 'Tensor Cores' (V100). Hardware became *specialized* for Low Precision (FP16/INT8) Matrix Multiply. The definition of 'Computer' changed to 'Matrix Multiplier.'",
           "key_manifestations": [
             "Jouppi, N. P., et al. (2017). 'In-Datacenter Performance Analysis of a Tensor Processing Unit' (TPU v1 deployed 2015)",
@@ -4443,7 +4443,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 70,
+          "salience_share": 70,
           "description": "Interconnect Bottleneck (+10%). With fast chips, the bottleneck moved to the wires *between* chips. NVLink and InfiniBand became crucial. 'All-Reduce' algorithms were optimized. The 'Supercomputer' topology changed from 'High Compute/Low Bandwidth' to 'High Compute/High Bandwidth.'",
           "key_manifestations": [
             "Sergeev, A., & Del Balso, M. (2018). 'Horovod: fast and easy distributed deep learning in TensorFlow' (Uber)",
@@ -4453,7 +4453,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 75,
+          "salience_share": 75,
           "description": "Sparsity & Quantization (+5%). Models (BERT) were too big. Hardware began supporting INT8 and sparse operations (Ampere architecture). 'The Lottery Ticket Hypothesis' (Cluster 11) drove hardware support for pruning. We entered the era of 'Co-design': Design the net for the chip, and the chip for the net.",
           "key_manifestations": [
             "Micikevicius, P., et al. (2018). 'Mixed Precision Training'",
@@ -4463,7 +4463,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 85,
+          "salience_share": 85,
           "description": "Trillion Parameter Scale (+10%). GPT-3 required a supercomputer. Microsoft/OpenAI built massive clusters. The engineering challenge shifted to '3D Parallelism' (Pipeline + Tensor + Data Parallelism). Megatron-LM and DeepSpeed became the standard OS for the cluster.",
           "key_manifestations": [
             "Shoeybi, M., et al. (2019). 'Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism'",
@@ -4473,7 +4473,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 90,
+          "salience_share": 90,
           "description": "H100 & Transformer Engine (+5%). NVIDIA H100 included a 'Transformer Engine' that automatically managed FP8 precision. The hardware was now explicitly designed for *one architecture*: The Transformer. The hardware-software convergence was absolute. Competitors (Cerebras, Groq) explored novel topologies (Wafer Scale, LPU).",
           "key_manifestations": [
             "NVIDIA (2022). 'H100 Tensor Core GPU Architecture' (Transformer Engine)",
@@ -4483,7 +4483,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 95,
+          "salience_share": 95,
           "description": "Current trajectory is 'Memory Wall Breaking' (+5%). GPUs are fast enough; Memory Bandwidth (HBM) is the limit. H200/B200 focus on massive memory bandwidth. 'In-Memory Computing' and 'Optical Interconnects' are the research frontiers to break the wall for 100T parameter models.",
           "key_manifestations": [
             "NVIDIA (2024). 'Blackwell Architecture'",
@@ -4499,7 +4499,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the shift from 'Making it Work' to 'Making it Safe.' It addresses the 'Alignment Problem': ensuring that powerful AI systems optimize for human-intended goals, not just their reward functions. The trajectory evolves from the fringe philosophy of the 2000s (Yudkowsky/Bostrom), to the 'Concrete Problems' of the 2010s (Reward Hacking, Side Effects), to the industrial-scale 'RLHF' and 'Interpretability' engineering of the 2020s. It is the immune system of the AI field.",
       "trajectory": {
         "1990": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Fringe Philosophy. Safety was sci-fi (Asimov's Laws). The technical field did not exist because AI didn't work. The only 'Safety' was 'Verification' (Cluster 20) of expert systems.",
           "key_manifestations": [
             "Vinge, V. (1993). 'The Coming Technological Singularity' (1990-1993 ideas)",
@@ -4509,7 +4509,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. No distinct activity. AI was in winter.",
           "key_manifestations": [
             "Reference: 'The Silence of the Winter'",
@@ -4519,7 +4519,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. 'Reliability' was the term, not Safety. Reliability meant 'doesn't crash.'",
           "key_manifestations": [
             "Littlewood, B., & Strigini, L. (1993). 'Validation of Ultra-High Dependability for Software-based Systems'",
@@ -4529,7 +4529,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The 'Friendly AI' concept began to germinate in online mailing lists (Extropians). Yudkowsky started formulating the idea that value loading is hard. Technically invisible.",
           "key_manifestations": [
             "Yudkowsky, E. (2001). 'Creating Friendly AI' (Roots in late 90s discussions)",
@@ -4539,7 +4539,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Safety remained 'Software Engineering.'",
           "key_manifestations": [
             "Storey, N. (1996). 'Safety-Critical Computer Systems'",
@@ -4549,7 +4549,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Singularity Institute (+1%). SIAI (now MIRI) was founded. The first dedicated organization to 'AI Safety.' They focused on 'Coherent Extrapolated Volition' (CEV). It was highly theoretical and disconnected from ML practice.",
           "key_manifestations": [
             "Yudkowsky, E. (2004). 'Coherent Extrapolated Volition'",
@@ -4559,7 +4559,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Academic philosophy began to engage. 'Paperclip Maximizer' thought experiment (Bostrom 2003) illustrated 'Instrumental Convergence'\u2014an AI will destroy the world to make paperclips not because it hates us, but because we are made of atoms.",
           "key_manifestations": [
             "Bostrom, N. (2003). 'The Transhumanist FAQ' (Paperclip maximizer context)",
@@ -4569,7 +4569,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Safety was still 'blue sky.'",
           "key_manifestations": [
             "Yampolskiy, R. V. (2015). 'Artificial Superintelligence: A Futuristic Approach' (Reviewing the 2000s)",
@@ -4579,7 +4579,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Deep Learning arrived, but Safety people were still thinking about 'recursive self-improvement' of symbolic systems.",
           "key_manifestations": [
             "Yudkowsky, E. (2008). 'Levels of Organization in General Intelligence'",
@@ -4589,7 +4589,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Basic AI Drives (+0%). Omohundro formalized 'Instrumental Convergence.' Any goal implies subgoals: survive, acquire resources, improve self. This proved Safety wasn't just about 'Evil AI,' but 'Competent AI.'",
           "key_manifestations": [
             "Omohundro, S. M. (2008). 'The Basic AI Drives'",
@@ -4599,7 +4599,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Superintelligence Pre-History (+1%). Bostrom's book (2014) was being written. The community grew. Machine Learning researchers started to listen, realizing DL was scaling fast. 'Adversarial Examples' (2013) were the first 'technical' safety problem: Neural Nets are hallucinating.",
           "key_manifestations": [
             "Szegedy, C., et al. (2013). 'Intriguing Properties of Neural Networks' (Adversarial Examples)",
@@ -4609,7 +4609,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Superintelligence (+1%). Bostrom's book published. It framed the 'Control Problem' globally. Elon Musk and Stephen Hawking read it and sounded the alarm. This brought funding (FLI) and mainstream attention.",
           "key_manifestations": [
             "Bostrom, N. (2014). 'Superintelligence: Paths, Dangers, Strategies'",
@@ -4619,7 +4619,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Concrete Problems (+4%). Amodei, Olah, Steinhardt (Google Brain/OpenAI) published 'Concrete Problems in AI Safety.' This was the pivot. Instead of 'God AI,' they talked about 'Reward Hacking,' 'Safe Exploration,' 'Robustness.' It translated Philosophy into Math. Safety became an ML subfield.",
           "key_manifestations": [
             "Amodei, D., et al. (2016). 'Concrete Problems in AI Safety'",
@@ -4629,7 +4629,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Specification Gaming (+4%). DeepMind demonstrated agents 'gaming' rewards (e.g., a boat spinning in circles to get points). This proved Reward Hacking was real. 'Inverse Reward Design' and 'Debate' were proposed as solutions.",
           "key_manifestations": [
             "Amodei, D., & Clark, J. (2016). 'Faulty Reward Functions in the Wild'",
@@ -4639,7 +4639,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Interpretability & Mesodenial (+3%). Olah (Distill) launched 'Circuits'\u2014trying to read the neural net's mind. The concern shifted to 'Mesa-Optimization' (Hubinger): Does the inner model have a different goal than the outer loop? 'Inner Alignment' vs 'Outer Alignment.'",
           "key_manifestations": [
             "Hubinger, E., et al. (2019). 'Risks from Learned Optimization in Advanced Machine Learning Systems' (Mesa-optimization)",
@@ -4649,7 +4649,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "LLM Alignment (+10%). GPT-3 scared people. It was toxic and deceptive. The field rushed to apply RLHF (Christiano 2017) to LLMs. 'Alignment' became the primary constraint on product release. Anthropic was founded on Safety principles (Constitutional AI).",
           "key_manifestations": [
             "Askell, A., et al. (2021). 'A General Language Assistant as a Laboratory for Alignment'",
@@ -4659,7 +4659,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Societal Impact & X-Risk (+10%). ChatGPT mainstreamed the risk. The 'Pause Letter' (2023). The field split into 'Ethics' (Bias/Fairness now) vs 'Alignment' (X-Risk later). 'Mechanistic Interpretability' (Anthropic) tried to find 'Deception' neurons. 'Jailbreaking' became a sport.",
           "key_manifestations": [
             "OpenAI (2023). 'GPT-4 System Card' (Red teaming report)",
@@ -4669,7 +4669,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "Current trajectory is 'Superalignment' (+10%). How to align a model smarter than us? OpenAI's Superalignment team (now defunct/dispersed) proposed 'Weak-to-Strong Generalization.' Anthropic proposed 'Responsible Scaling Policies.' Safety is now a regulatory requirement (EU AI Act, US Executive Order). The 'Displacing Force' is the arms race; safety costs compute.",
           "key_manifestations": [
             "Burns, C., et al. (2023). 'Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision'",
@@ -4685,7 +4685,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the mathematics of strategic interaction\u2014where the outcome depends on the choices of multiple self-interested agents. It bridges Economics (Nash Equilibrium), Computer Science (Complexity), and AI (Multi-Agent Systems). Its trajectory evolved from the zero-sum minimax solvers of the 90s (Deep Blue), through the Counterfactual Regret Minimization (CFR) revolution that solved Poker in the 2010s, to the 'Generative' game theory of GANs, and finally to the cooperative/competitive dynamics of modern Agentic AI.",
       "trajectory": {
         "1990": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "The cluster was rooted in 'Minimax' search (+1%). For zero-sum perfect information games (Chess), the strategy was simply tree search (Alpha-Beta Pruning). The math was known (Von Neumann), but the computation was the bottleneck. In non-zero-sum games, the field was theoretical economics, with little intersection with AI implementation.",
           "key_manifestations": [
             "Campbell, M., et al. (1991). 'Deep Blue Prototype' (Applying minimax at scale)",
@@ -4695,7 +4695,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. TD-Gammon (Cluster 7) showed that learning could beat search in stochastic games, but Game Theory itself provided the framework for 'Evaluation.' The focus was on 'Bounded Rationality'\u2014how to play well when you can't compute the Nash Equilibrium.",
           "key_manifestations": [
             "Binmore, K. (1992). 'Fun and Games: A Text on Game Theory'",
@@ -4705,7 +4705,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Markov Games (+1%). Littman introduced Minimax-Q learning. This fused RL with Game Theory. Instead of maximizing expected reward, the agent maximized the *minimum* value the opponent could force. This was the foundational link between Learning and Games.",
           "key_manifestations": [
             "Littman, M. L. (1994). 'Markov Games as a Framework for Multi-Agent Reinforcement Learning'",
@@ -4715,7 +4715,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Deep Blue (+2%). The defeat of Kasparov was the triumph of Search-based Game Theory. However, it was a 'solved' type of game (perfect information). Imperfect information games (Poker) remained untouched because the 'Hidden State' made the game tree explode and Minimax inapplicable.",
           "key_manifestations": [
             "Campbell, M., et al. (2002). 'Deep Blue' (Retrospective)",
@@ -4725,7 +4725,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Mechanism Design (+-0%). The rise of the Internet led to 'Algorithmic Mechanism Design' (Nisan/Ronen). How to design auctions (Google AdSense) so that selfish agents reveal their true value. This was 'Reverse Game Theory'\u2014designing the game to get a specific Nash Equilibrium.",
           "key_manifestations": [
             "Nisan, N., & Ronen, A. (1999). 'Algorithmic Mechanism Design' (1998 work)",
@@ -4735,7 +4735,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis. The 'Nisan-Ronen' era of Algo Econ. AI researchers focused on ad auctions. In core AI, game theory was used for 'Multi-Agent Systems' (MAS), but progress on solving large games was slow.",
           "key_manifestations": [
             "Nisan, N., et al. (2007). 'Algorithmic Game Theory' (Book codifying the early 2000s)",
@@ -4745,7 +4745,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Correlated Equilibrium (+1%). Researchers moved beyond Nash to Correlated Equilibrium (CE) and Regret Minimization. Hart & Mas-Colell proved that simple regret matching converges to CE. This simple algorithm became the engine for solving Poker years later.",
           "key_manifestations": [
             "Hart, S., & Mas-Colell, A. (2000/2003). 'A Simple Adaptive Procedure Leading to Correlated Equilibrium'",
@@ -4755,7 +4755,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis. The field was waiting for a scalable algorithm for imperfect information. Abstracting games (grouping similar poker hands) was the main technique, but it was lossy.",
           "key_manifestations": [
             "Gilpin, A., & Sandholm, T. (2006). 'A Competitive Texas Hold'em Poker Player via Automated Abstraction and Real-Time Equilibrium Computation'",
@@ -4765,7 +4765,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "CFR Revolution (+2%). Zinkevich et al. introduced 'Counterfactual Regret Minimization' (CFR). This was the breakthrough. It allowed solving massive imperfect information games by iteratively minimizing regret at each information set. It proved that you don't need to estimate the opponent's state, just your own regret.",
           "key_manifestations": [
             "Zinkevich, M., et al. (2007). 'Regret Minimization in Games with Incomplete Information' (CFR)",
@@ -4775,7 +4775,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Optimization of CFR (+0%). The University of Alberta group (Bowling, Burch, Johanson) optimized CFR. They solved Checkers (Schaeffer 2007 - though via search) and began tackling Heads-Up Limit Poker. The cluster was dominating the 'Computer Poker Competition.'",
           "key_manifestations": [
             "Schaeffer, J., et al. (2007). 'Checkers is Solved'",
@@ -4785,7 +4785,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Stasis/Scaling. The field was purely symbolic/numeric. Deep Learning hadn't touched it. The poker bots were massive lookup tables of regret values. The 'Displacing Force' was the memory limit; you couldn't store the table for No-Limit Poker.",
           "key_manifestations": [
             "Bowling, M., et al. (2015). 'Heads-Up Limit Hold'em Poker is Solved' (2010-2014 work)",
@@ -4795,7 +4795,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Deep Learning Intersection (+1%). Researchers began replacing the Regret Table with a Neural Network. This was 'Deep CFR.' It allowed generalization across hands. This was the precursor to solving No-Limit.",
           "key_manifestations": [
             "Heinrich, J., & Silver, D. (2016). 'Deep Reinforcement Learning from Self-Play in Imperfect-Information Games' (NFSP - 2015 work)",
@@ -4805,7 +4805,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "GANs as Game Theory (+15%). Goodfellow's GAN (Cluster 9) formulated generation as a two-player minimax game ($min_G max_D V(D, G)$). Suddenly, Game Theory was the engine of Computer Vision. The instability of GAN training was identified as the failure to find a Nash Equilibrium in non-convex landscapes.",
           "key_manifestations": [
             "Goodfellow, I., et al. (2014). 'Generative Adversarial Nets'",
@@ -4815,7 +4815,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Poker Solved (+5%). DeepStack and Libratus solved Heads-Up No-Limit Texas Hold'em. They combined CFR (for strategy), Deep Learning (for value approximation), and 'Endgame Solving' (nested search). This was a monumental achievement for AGT.",
           "key_manifestations": [
             "Morav\u010d\u00edk, M., et al. (2017). 'DeepStack: Expert-Level Artificial Intelligence in Heads-Up No-Limit Poker'",
@@ -4825,7 +4825,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 28,
+          "salience_share": 28,
           "description": "AlphaStar League (+2%). DeepMind's AlphaStar used 'The League'\u2014a population of agents trained to exploit each other. This is 'Empirical Game Theoretic Analysis' at scale. It prevents cycling (Rock-Paper-Scissors loops) by forcing the agent to beat all previous strategies.",
           "key_manifestations": [
             "Vinyals, O., et al. (2019). 'Grandmaster Level in StarCraft II using Multi-Agent Reinforcement Learning'",
@@ -4835,7 +4835,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Stasis/Integration. Game Theory became a lens for 'Adversarial Robustness' (Attacker vs Defender). Also 'Cooperative AI' (Hanabi)\u2014learning to cooperate with a human without prior coordination (Zero-Shot Coordination).",
           "key_manifestations": [
             "Bard, N., et al. (2020). 'The Hanabi Challenge: A New Frontier for AI Research'",
@@ -4845,7 +4845,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "Diplomacy (+2%). Cicero (Meta) solved 'Diplomacy,' a game requiring negotiation and trust. It combined a Strategic Planner (CFR-like) with an LLM (for dialogue). The LLM was conditioned to generate text consistent with the Game Theoretic plan. This was the first major 'Neuro-Symbolic Game Theory' agent.",
           "key_manifestations": [
             "Meta Fundamental AI Research Diplomacy Team (2022). 'Human-Level Play in the Game of Diplomacy Combining Language Models with Strategic Reasoning'",
@@ -4855,7 +4855,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Agentic Dynamics (-2%). The focus is on 'LLM Agents.' While Game Theory describes their interaction, current research is empirical ('put them in a sandbox and watch'). Theoretical work is struggling to model the high-dimensional strategy space of natural language conversation.",
           "key_manifestations": [
             "Park, J. S., et al. (2023). 'Generative Agents: Interactive Simulacra of Human Behavior'",
@@ -4871,7 +4871,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Calculus of Privacy.' It addresses the fundamental tension between 'Learning' (generalizing from population data) and 'Privacy' (hiding individual data). Founded on Dwork's rigorous definition of Differential Privacy (DP), it evolved from database theory to a critical component of ML training (DP-SGD). It prevents 'Membership Inference Attacks'\u2014knowing if a specific person was in the training set\u2014which is crucial for training LLMs on sensitive data.",
       "trajectory": {
         "1990": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Database Anonymity (+0%). The era of 'k-anonymity' (Sweeney). The idea: 'If I remove names and blur zip codes, it's private.' This was heuristically sound but mathematically flawed. Re-identification attacks (using Netflix prize data or Voter rolls) later proved it failed. The variance was low because privacy wasn't seen as a math problem.",
           "key_manifestations": [
             "Sweeney, L. (2002). 'k-anonymity: A Model for Protecting Privacy' (1990s work context)",
@@ -4881,7 +4881,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Privacy was Cryptography (RSA/AES), not Statistics. Secure Multi-Party Computation (SMPC) was known (Yao's Millionaires' Problem) but too slow for data mining.",
           "key_manifestations": [
             "Goldreich, O., et al. (1987/1992). 'How to Play any Mental Game'",
@@ -4891,7 +4891,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The 'War on Crypto' (Clipper Chip) dominated the privacy conversation. Statistical privacy was dormant.",
           "key_manifestations": [
             "Diffie, W., & Landau, S. (1998). 'Privacy on the Line' (Policy context)",
@@ -4901,7 +4901,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Re-identification attacks began to show the cracks in 'anonymization.'",
           "key_manifestations": [
             "Sweeney, L. (1997). 'Weaving Technology and Policy Together to Maintain Confidentiality'",
@@ -4911,7 +4911,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Randomized Response (Warner 1965 technique) was revisited for data mining. This was the precursor to Local DP: flip a coin before answering 'Did you cheat?'.",
           "key_manifestations": [
             "Agrawal, R., & Srikant, R. (2000). 'Privacy-Preserving Data Mining' (Randomized response application)",
@@ -4921,7 +4921,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Dinur-Nissim Attack (+1%). Dinur and Nissim proved a fundamental theorem: You cannot release accurate aggregate statistics about a database without revealing individual data, if the queries are unlimited. This 'Impossibility Result' destroyed the 'Anonymization' dream and necessitated a new definition.",
           "key_manifestations": [
             "Dinur, I., & Nissim, K. (2003). 'Revealing Information while Preserving Privacy' (2001-02 work)",
@@ -4931,7 +4931,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis/Incubation. Dwork, McSherry, Nissim, and Smith were collaborating at Microsoft Research. They were formulating the $\\epsilon$-indistinguishability metric. The goal: The output distribution should not change much if one person is removed.",
           "key_manifestations": [
             "Dwork, C. (2006). 'Differential Privacy' (The seminal paper - 2002-2005 context)",
@@ -4941,7 +4941,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The Netflix Prize (2006 launch) was about to happen. The release of the dataset would later become the canonical example of failed anonymization (Narayanan/Shmatikov).",
           "key_manifestations": [
             "Narayanan, A., & Shmatikov, V. (2008). 'Robust De-anonymization of Large Sparse Datasets' (Analysis of Netflix data)",
@@ -4951,7 +4951,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "The Definition of Differential Privacy (+3%). Dwork et al. published the definition. $P(M(D) \\in S) \\le e^\\epsilon P(M(D') \\in S)$. This provided a rigorous 'Privacy Budget' ($\\,epsilon$). It changed the field from heuristics to math. The 'Laplace Mechanism' (adding noise) became the standard tool.",
           "key_manifestations": [
             "Dwork, C., McSherry, F., Nissim, K., & Smith, A. (2006). 'Calibrating Noise to Sensitivity in Private Data Analysis'",
@@ -4961,7 +4961,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Theoretical Expansion (+0%). The field explored 'Composition Theorems' (what happens if I run 10 queries?). They found privacy degrades linearly (or with sqrt via Advanced Composition). This was depressing for ML: training a model takes thousands of steps (queries). DP seemed impossible for ML.",
           "key_manifestations": [
             "Dwork, C., et al. (2010). 'Boosting and Differential Privacy' (2008 work)",
@@ -4971,7 +4971,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Objective Perturbation (+1%). Chaudhuri et al. showed you could add noise to the *objective function* of a convex learner (like SVM) rather than the output. This was more efficient. DP-ML began to look feasible for simple models.",
           "key_manifestations": [
             "Chaudhuri, K., et al. (2011). 'Differentially Private Empirical Risk Minimization'",
@@ -4981,7 +4981,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. Deep Learning exploded. DP researchers looked at the massive parameter counts of AlexNet and despaired. The amount of noise needed to hide one image in a 60M parameter model seemed to destroy all utility. The 'Curse of Dimensionality' applied to Privacy.",
           "key_manifestations": [
             "Song, S., et al. (2013). 'Stochastic Gradient Descent with Differentially Private Updates' (Early attempt)",
@@ -4991,7 +4991,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Google RAPPOR (+1%). Google deployed 'RAPPOR' (Randomized Aggregatable Privacy-Preserving Ordinal Response) in Chrome. This was 'Local DP' at scale. It collected stats on homepage settings without knowing any single user's setting. It validated DP as an industrial reality.",
           "key_manifestations": [
             "Erlingsson, \u00da., et al. (2014). 'RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response'",
@@ -5001,7 +5001,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "DP-SGD (+3%). Abadi (Google) et al. published 'Deep Learning with Differential Privacy.' They introduced the 'Moments Accountant,' a tighter composition bound. It allowed training Deep Nets with SGD by clipping gradients and adding noise. The accuracy cost was manageable. This is the foundation of modern Private AI.",
           "key_manifestations": [
             "Abadi, M., et al. (2016). 'Deep Learning with Differential Privacy'",
@@ -5011,7 +5011,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Federated Learning & DP (+2%). FL (training on phones) needs DP to guarantee the server can't reconstruct the user's data from the gradient update. The combination (FL + DP) became the gold standard for mobile AI (Gboard).",
           "key_manifestations": [
             "Geyer, R. C., et al. (2017). 'Differentially Private Federated Learning: A Client Level Perspective'",
@@ -5021,7 +5021,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Large Model Privacy (+2%). Researchers found that large models (GPT-2) memorize training data verbatim (Carlini et al.). 'Extraction Attacks' became real. DP was no longer optional; it was the only defense against extraction. However, training GPT-3 with DP was too expensive.",
           "key_manifestations": [
             "Carlini, N., et al. (2021). 'Extracting Training Data from Large Language Models'",
@@ -5031,7 +5031,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 14,
+          "salience_share": 14,
           "description": "DP-Fine Tuning (+2%). Instead of DP-Pretraining (hard), do DP-Finetuning (easy). Using LoRA + DP-SGD allowed adapting LLMs to private corporate data with strong guarantees. This became a major commercial use case (Microsoft/Azure OpenAI).",
           "key_manifestations": [
             "Yu, D., et al. (2022). 'Differentially Private Fine-tuning of Language Models'",
@@ -5041,7 +5041,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Machine Unlearning (+1%). 'Right to be Forgotten.' Can we remove a user's data from a trained model without retraining? DP provides the theoretical certificate: if the model was trained with DP, the user's influence is bounded, so 'unlearning' is effectively pre-guaranteed (or easier).",
           "key_manifestations": [
             "Bourtoule, L., et al. (2021/2024). 'Machine Unlearning'",
@@ -5057,7 +5057,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the mathematics of 'Taste'\u2014predicting user preferences by filling in the missing entries of a massive, sparse User-Item matrix. It is the algorithmic engine of the Attention Economy (Netflix, Amazon, TikTok). The trajectory moves from the heuristic Nearest Neighbors of the 90s, to the Singular Value Decomposition (SVD) dominance during the Netflix Prize, to the Factorization Machines of the 2010s, and finally to the massive 'Two-Tower' Deep Learning models that govern modern feed algorithms.",
       "trajectory": {
         "1990": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "The cluster began with 'GroupLens' (+1%). The algorithm was 'User-User Collaborative Filtering' (k-NN). To recommend a movie to Alice, find Bob who liked similar movies, and recommend what Bob liked. It was purely memory-based; no model was trained. The 'Latent Space' did not exist yet; calculation was done on the raw sparse vectors.",
           "key_manifestations": [
             "Resnick, P., et al. (1994). 'GroupLens: An Open Architecture for Collaborative Filtering of Netnews'",
@@ -5067,7 +5067,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis. The focus was on scaling k-NN. The 'Displacing Force' was the $O(U^2)$ complexity of finding neighbors. SVD was known (LSA in Cluster 15) but rarely applied to user ratings due to missing data issues (standard SVD requires a full matrix).",
           "key_manifestations": [
             "Konstan, J. A., et al. (1997). 'GroupLens: Applying Collaborative Filtering to Usenet News' (1993-1996 work)",
@@ -5077,7 +5077,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Item-Based CF (+2%). Amazon and others realized that 'Items' are more stable than 'Users.' Instead of finding similar users, find similar items ('People who bought X also bought Y'). This allowed pre-computing the similarity matrix, enabling e-commerce scale. This was the dominant algorithm for a decade.",
           "key_manifestations": [
             "Sarwar, B., et al. (2001). 'Item-Based Collaborative Filtering Recommendation Algorithms' (Roots in late 90s industrial practice)",
@@ -5087,7 +5087,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Stasis. 'Content-Based' filtering (using TF-IDF of movie descriptions) competed with Collaborative Filtering. Hybrid systems emerged. But the core math remained 'Correlation Coefficients' (Pearson).",
           "key_manifestations": [
             "Basu, C., et al. (1998). 'Recommendation as Classification: Using Social and Content-Based Information in Recommendation'",
@@ -5097,7 +5097,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Latent Factors (+2%). Researchers began using SVD for dimensionality reduction on the rating matrix. This mapped users and items to a shared 'Latent Space.' If User Vector $\\cdot$ Item Vector is high, recommend it. This was the birth of 'Matrix Factorization' for RecSys.",
           "key_manifestations": [
             "Sarwar, B., et al. (2000). 'Application of Dimensionality Reduction in Recommender System - A Case Study' (SVD approach)",
@@ -5107,7 +5107,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Stasis. The 'Cold Start' problem (new users/items) was the main research topic. Trust-based models (using social networks) were explored. The industry standard remained Item-to-Item CF.",
           "key_manifestations": [
             "Schein, A. I., et al. (2002). 'Methods and Metrics for Cold-Start Recommendations'",
@@ -5117,7 +5117,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Stasis. Logistic Regression (CTR prediction) began to be used in ad-tech. This was 'Feature-Based' recommendation, distinct from pure CF. The merging of the two (Hybrid) was the goal.",
           "key_manifestations": [
             "Richardson, M., et al. (2007). 'Predicting Clicks: Estimating the Click-Through Rate for New Ads' (Early 2000s ad-tech evolution)",
@@ -5127,7 +5127,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The Netflix Prize Launch (+3%). Netflix released the dataset (2006) but the prep began earlier. The goal: beat their algorithm (Cinematch) by 10% RMSE. This single contest galvanized the entire ML community to focus on Matrix Factorization. It was the 'ImageNet' of the 2000s.",
           "key_manifestations": [
             "Bennett, J., & Lanning, S. (2007). 'The Netflix Prize'",
@@ -5137,7 +5137,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "The SVD++ Era (+10%). Simon Funk and others developed 'Regularized SVD' (gradient descent on the matrix factors). Koren added 'Implicit Feedback' (SVD++). The cluster moved from linear algebra (exact SVD) to optimization (approximate SVD). The 'Latent Factors' were interpretable (genre, seriousness, etc.).",
           "key_manifestations": [
             "Koren, Y. (2008). 'Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model'",
@@ -5147,7 +5147,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Factorization Machines (+5%). Rendle introduced Factorization Machines (FM). This generalized Matrix Factorization to arbitrary features (Time, Tag, Context). It captured interaction terms ($w_{ij} x_i x_j$) via dot products. It became the workhorse of Kaggle competitions and Ad-Tech CTR prediction.",
           "key_manifestations": [
             "Rendle, S. (2010). 'Factorization Machines'",
@@ -5157,7 +5157,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 32,
+          "salience_share": 32,
           "description": "Learning to Rank (+2%). The objective function shifted from RMSE (Rating Prediction) to Ranking (BPR - Bayesian Personalized Ranking). Who cares if I predict 4.5 vs 4.2? I just need the order right. BPR became the standard loss for implicit feedback.",
           "key_manifestations": [
             "Rendle, S., et al. (2009). 'BPR: Bayesian Personalized Ranking from Implicit Feedback'",
@@ -5167,7 +5167,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Stasis/Deep Learning Fails. Early attempts to use Deep Learning (RBMs) worked but were hard to tune compared to Matrix Factorization. The industry stuck to FMs and Logistic Regression. The 'Displacing Force' was latency; deep nets were too slow for real-time scoring of 1M items.",
           "key_manifestations": [
             "Salakhutdinov, R., et al. (2007/2012). 'Restricted Boltzmann Machines for Collaborative Filtering'",
@@ -5177,7 +5177,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Wide & Deep (+5%). Google introduced 'Wide & Deep.' Combine a Linear Model (Memorization of specific rules) with a Deep Network (Generalization via embeddings). This solved the specific vs general tradeoff. It marked the industrial takeover of Deep Learning in RecSys.",
           "key_manifestations": [
             "Cheng, H. T., et al. (2016). 'Wide & Deep Learning for Recommender Systems'",
@@ -5187,7 +5187,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 40,
+          "salience_share": 40,
           "description": "Two-Tower Architectures (+5%). The standard pattern: User Tower produces vector U, Item Tower produces vector I. Score = $U \\cdot I$. This allowed 'Approximate Nearest Neighbor' (ANN) search (FAISS) for retrieval. The model could retrieve from millions of items in milliseconds. This is the architecture of the Feed.",
           "key_manifestations": [
             "Johnson, J., et al. (2017). 'Billion-Scale Similarity Search with GPUs' (FAISS - enabling the architecture)",
@@ -5197,7 +5197,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "Graph Neural Networks (+5%). 'PinSage' (Pinterest) showed that GCNs (Cluster 12) could aggregate information from the user-item graph better than simple embeddings. The interaction graph became a first-class citizen. Also, 'Sequential Recommendation' (SASRec) used Transformers to model the user's history sequence.",
           "key_manifestations": [
             "Ying, R., et al. (2018). 'Graph Convolutional Neural Networks for Web-Scale Recommender Systems' (PinSage)",
@@ -5207,7 +5207,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 50,
+          "salience_share": 50,
           "description": "DLRM & Embeddings (+5%). Facebook released DLRM (Deep Learning Recommendation Model). It emphasized the importance of massive embedding tables (Terabytes) requiring model parallelism. The bottleneck shifted from Compute to Memory Bandwidth. The cluster is now 'High Performance Computing.'",
           "key_manifestations": [
             "Naumov, M., et al. (2019). 'Deep Learning Recommendation Model for Personalization and Recommendation Systems' (DLRM)",
@@ -5217,7 +5217,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 55,
+          "salience_share": 55,
           "description": "Generative Recommendation (+5%). LLMs entering RecSys. Instead of predicting a score, ask the LLM: 'What should Alice watch?'. The LLM uses its world knowledge (Movie A is similar to Movie B) + User History. This solves the 'Cold Start' problem perfectly via semantic understanding.",
           "key_manifestations": [
             "Geng, S., et al. (2022). 'Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm' (P5)",
@@ -5227,7 +5227,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 60,
+          "salience_share": 60,
           "description": "Current trajectory is 'Agentic RecSys' (+5%). The Recommender is no longer a passive filter; it is an active agent that explores the user's taste, asks clarifying questions, and plans a content diet. The merging of Cluster 7 (RL) and Cluster 28 (RecSys) is complete in platforms like TikTok/Reels.",
           "key_manifestations": [
             "Lin, J., et al. (2024). 'Agents in RecSys: A Survey'",
@@ -5243,7 +5243,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the science of 'Search'\u2014finding the needle in the haystack. It tracks the evolution from Boolean logic and TF-IDF (Term Frequency-Inverse Document Frequency) in the 90s, to the link-analysis revolution (PageRank) of the Google era, to the 'Learning to Rank' machine learning takeover, and finally to 'Dense Retrieval' and RAG (Retrieval Augmented Generation) where semantic vector similarity replaces keyword matching.",
       "trajectory": {
         "1990": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "The 'Boolean' Era (+2%). Search was 'Library Science.' Systems like LexisNexis used exact keyword matching ('cat AND dog AND NOT bird'). The ranking function was rudimentary. TF-IDF (Salton) was the state of the art for ranking relevance based on statistics. The 'Latent Space' was sparse and orthogonal.",
           "key_manifestations": [
             "Salton, G., & Buckley, C. (1988/1990). 'Term-Weighting Approaches in Automatic Text Retrieval' (TF-IDF refinement)",
@@ -5253,7 +5253,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "TREC Launch (+0%). The Text REtrieval Conference (TREC) began. This standardized evaluation (Precision/Recall). It cemented 'BM25' (Okapi) as the gold standard algorithm for keyword ranking. It was a probabilistic model that worked incredibly well and is still used today.",
           "key_manifestations": [
             "Robertson, S. E., et al. (1995). 'Okapi at TREC-3' (BM25 definition)",
@@ -5263,7 +5263,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Web Search Crawlers (+0%). AltaVista, Lycos. They scaled TF-IDF to the web. The challenge was 'Spam.' Keyword stuffing worked because the algorithms only looked at the page content, not its authority. The 'Displacing Force' was the adversarial nature of the commercial web.",
           "key_manifestations": [
             "Pinkerton, B. (1994). 'Finding What People Want: Experiences with the WebCrawler'",
@@ -5273,7 +5273,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Link Analysis Revolution (+2%). Brin & Page (PageRank) and Kleinberg (HITS). The realization: A link is a vote. The web is a graph (Cluster 12). Ranking shifted from 'Content' to 'Authority.' This solved the spam problem (temporarily) and created Google.",
           "key_manifestations": [
             "Brin, S., & Page, L. (1998). 'The Anatomy of a Large-Scale Hypertextual Web Search Engine' (1996-97 work)",
@@ -5283,7 +5283,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Google Dominance (+8%). The deployment of PageRank + Anchor Text. Using the text of the *link* to describe the target page allowed Google to index pages that had no text (e.g., images) and understand synonyms. This was the first semantic leap. The cluster was defined by 'Eigenvector Centrality.'",
           "key_manifestations": [
             "Page, L., et al. (1999). 'The PageRank Citation Ranking: Bringing Order to the Web'",
@@ -5293,7 +5293,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "Topic-Sensitive PageRank (+2%). Refining the graph model. Not all links are equal. A link from a tech blog to a tech site is worth more than from a cooking blog. The 'Random Surfer' became biased.",
           "key_manifestations": [
             "Haveliwala, T. H. (2002). 'Topic-Sensitive PageRank'",
@@ -5303,7 +5303,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Click-Through Data (+3%). Researchers realized user clicks are the ultimate relevance signal. 'Joachims' showed how to interpret clicks as pairwise preferences ($Doc A > Doc B$). This paved the way for 'Learning to Rank.' The loop was closed: User Behavior trains the Algorithm.",
           "key_manifestations": [
             "Joachims, T. (2002). 'Optimizing Search Engines using Clickthrough Data'",
@@ -5313,7 +5313,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 28,
+          "salience_share": 28,
           "description": "Learning to Rank (LTR) (+3%). Instead of hand-tuning the formula $0.3*PageRank + 0.7*TFIDF$, use an SVM or Neural Net to learn the weights. 'RankNet' (Burges) introduced the pairwise loss. This marked the transition from 'IR Theory' to 'Machine Learning.'",
           "key_manifestations": [
             "Burges, C., et al. (2005). 'Learning to Rank using Gradient Descent' (RankNet)",
@@ -5323,7 +5323,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 32,
+          "salience_share": 32,
           "description": "LambdaRank & LambdaMART (+4%). Burges et al. solved the metric mismatch. We care about NDCG (non-differentiable), but we optimize LogLoss. They defined 'Lambda' gradients that implicitly optimized NDCG. LambdaMART (Boosted Trees) became the SOTA for ranking for the next decade.",
           "key_manifestations": [
             "Burges, C. J. C., et al. (2007). 'Learning to Rank with Nonsmooth Cost Functions' (LambdaRank)",
@@ -5333,7 +5333,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 32,
+          "salience_share": 32,
           "description": "Stasis/Semantic Gap. LTR optimized keyword matching, but didn't solve 'Vocabulary Mismatch' (Query: 'auto', Doc: 'car'). Latent Semantic Indexing (Cluster 15) was too slow. The industry relied on 'Query Expansion' and synonym tables.",
           "key_manifestations": [
             "Bai, B., et al. (2009). 'Supervised Semantic Indexing'",
@@ -5343,7 +5343,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Deep Learning for IR (DSSM) (+3%). Microsoft released DSSM (Deep Structured Semantic Models). It mapped Queries and Docs to a shared vector space using a Neural Net (with word hashing). Cosine similarity = Relevance. This was the birth of 'Dense Retrieval' (Neural Search), though limited by 2010 hardware.",
           "key_manifestations": [
             "Huang, P. S., et al. (2013). 'Learning Deep Structured Semantic Models for Web Search using Clickthrough Data' (DSSM)",
@@ -5353,7 +5353,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Knowledge Graphs (+0%). Google launched the Knowledge Graph. 'Things, not strings.' Search moved from document retrieval to entity retrieval. This was a Symbolic injection (Cluster 4) into a Statistical field.",
           "key_manifestations": [
             "Singhal, A. (2012). 'Introducing the Knowledge Graph'",
@@ -5363,7 +5363,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 38,
+          "salience_share": 38,
           "description": "Neural Ranking (+3%). Following Word2Vec, researchers replaced exact match with soft match. 'MatchPyramid' and 'DRMM' treated the query-doc interaction as an image (interaction matrix) and applied CNNs. It bridged the semantic gap.",
           "key_manifestations": [
             "Pang, L., et al. (2016). 'Text Matching as Image Recognition'",
@@ -5373,7 +5373,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 40,
+          "salience_share": 40,
           "description": "Question Answering (SQuAD) (+2%). The focus shifted from 'List of Links' to 'Direct Answers.' SQuAD dataset drove progress in reading comprehension. Search became 'Machine Reading.'",
           "key_manifestations": [
             "Rajpurkar, P., et al. (2016). 'SQuAD: 100,000+ Questions for Machine Comprehension of Text'",
@@ -5383,7 +5383,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 60,
+          "salience_share": 60,
           "description": "BERT for Ranking (+20%). BERT changed everything. 'Cross-Encoders' (feeding Query + Doc into BERT) achieved superhuman relevance but were slow. 'Bi-Encoders' (Dense Retrieval) allowed pre-indexing. Nogueira & Cho showed BERT is a ranker. The industry switched from BM25 to Hybrid (BM25 + BERT re-ranking).",
           "key_manifestations": [
             "Nogueira, R., & Cho, K. (2019). 'Passage Re-ranking with BERT'",
@@ -5393,7 +5393,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 70,
+          "salience_share": 70,
           "description": "Dense Retrieval Ecosystem (+10%). Vector Databases (Pinecone/Faiss) became the new 'Inverted Index.' ANNS (Approximate Nearest Neighbor Search) became the core operation. The 'Semantic Search' promise of the 90s was finally realized at scale.",
           "key_manifestations": [
             "Johnson, J., et al. (2019). 'Billion-Scale Similarity Search with GPUs' (Faiss)",
@@ -5403,7 +5403,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 80,
+          "salience_share": 80,
           "description": "RAG (Retrieval Augmented Generation) (+10%). The merger of Search (Cluster 29) and LLMs (Cluster 6). Instead of answering from weights, the LLM retrieves documents and summarizes them. Search is no longer about finding a document; it's about synthesizing an answer *from* retrieved documents. This is the 'New Search' (Perplexity.ai).",
           "key_manifestations": [
             "Lewis, P., et al. (2020/2021). 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks'",
@@ -5413,7 +5413,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 85,
+          "salience_share": 85,
           "description": "Current trajectory is 'Agentic Search' (+5%). The search engine is an agent that plans queries, browses, clicks, and scrolls (Multi-step reasoning). 'Search' is becoming a tool use capability of the LLM, rather than a standalone product. The 'Displacing Force' is the death of the 'Ten Blue Links' interface.",
           "key_manifestations": [
             "Nakano, R., et al. (2021). 'WebGPT'",
@@ -5429,7 +5429,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Auditory Cortex' of AI. It maps the evolution of converting physical waveforms into semantic tokens (ASR) and vice versa (TTS). The trajectory begins with the hand-crafted signal processing of the 90s (MFCCs, GMM-HMMs), moves to the Deep Learning breakthrough of the 2010s (CLDNNs, CTC), and culminates in the 'Generative Audio' era (WaveNet, Whisper) where speech is treated as a sequence modeling problem indistinguishable from language modeling.",
       "trajectory": {
         "1990": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "The 'GMM-HMM' Monolith (+2%). The standard pipeline: Audio $\u2192$ FFT $\u2192$ MFCC (Mel-frequency cepstral coefficients) $\u2192$ GMM (Acoustic Model) $\u2192$ HMM (Temporal Model). It was mathematically elegant and statistically sound. 'Learning' meant Expectation-Maximization (Baum-Welch).",
           "key_manifestations": [
             "Rabiner, L. R. (1989/1990). 'A Tutorial on Hidden Markov Models and Selected Applications in Speech Recognition'",
@@ -5439,7 +5439,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Stasis. Improvements came from larger Gaussian mixtures and better 'Language Models' (N-grams). The 'Displacing Force' against neural nets was the variable length of audio; HMMs handled time warping naturally.",
           "key_manifestations": [
             "Leggetter, C. J., & Woodland, P. C. (1995). 'Maximum Likelihood Linear Regression for Speaker Adaptation' (MLLR)",
@@ -5449,7 +5449,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Stasis. 'Discriminative Training' (MMI - Maximum Mutual Information) challenged Maximum Likelihood. It optimized the separation between the correct sentence and incorrect ones. This was the 'SVM' idea applied to HMMs.",
           "key_manifestations": [
             "Woodland, P. C., & Povey, D. (2002). 'Large Scale Discriminative Training of Hidden Markov Models for Speech Recognition' (Roots in mid-90s)",
@@ -5459,7 +5459,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "The 'Hybrid' Approach (+0%). Bourlard and Morgan showed you could replace the GMM with a Neural Net to estimate phoneme probabilities ($P(Phoneme|Audio)$). This was the 'Hybrid ANN-HMM.' It was better but harder to train (no GPUs). It remained a runner-up to the pure GMM-HMM.",
           "key_manifestations": [
             "Bourlard, H., & Morgan, N. (1994). 'Connectionist Speech Recognition'",
@@ -5469,7 +5469,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Stasis. The field was dominated by HTK (Hidden Markov Model Toolkit) and Kaldi (later). Engineering focus: Noise reduction, speaker adaptation. Innovation stalled.",
           "key_manifestations": [
             "Young, S., et al. (2002). 'The HTK Book' (The manual of the industry)",
@@ -5479,7 +5479,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Stasis. SMT (Statistical Machine Translation) ideas began to bleed into ASR. Finite State Transducers (FSTs) became the standard way to represent the decoding graph (HMM + Lexicon + Grammar).",
           "key_manifestations": [
             "Mohri, M., et al. (2002). 'Weighted Finite-State Transducers in Speech Recognition'",
@@ -5489,7 +5489,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Stasis. The 'NIST Eval' culture. Incremental gains (0.5% WER reduction). The definition of success was lowering WER on the Switchboard dataset. No paradigmatic shifts.",
           "key_manifestations": [
             "Fiscus, J. G., et al. (2002). 'The Rich Transcription 2002 Evaluation'",
@@ -5499,7 +5499,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Stasis. Neural Nets were considered 'dead' for speech. GMMs with diagonal covariance matrices were the only game in town.",
           "key_manifestations": [
             "Povey, D., et al. (2005). 'FMPE: Discriminatively Trained Projection Features for Continuous Speech Recognition'",
@@ -5509,7 +5509,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "CTC (Connectionist Temporal Classification) (+2%). Alex Graves introduced CTC. It allowed an RNN to output a sequence of phonemes directly, without pre-alignment. This removed the HMM dependency for alignment. It was the first 'End-to-End' neural speech signal.",
           "key_manifestations": [
             "Graves, A., et al. (2006). 'Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks'",
@@ -5519,7 +5519,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The Deep Learning Return (+3%). Hinton's lab (Mohamed/Dahl) showed that DBNs (Deep Belief Nets) could replace GMMs and reduce WER by 30%. This was the 'ImageNet moment' for Speech (happening before ImageNet). Microsoft and Google switched immediately. The GMM was dead.",
           "key_manifestations": [
             "Mohamed, A., et al. (2009). 'Deep Belief Networks for Phone Recognition'",
@@ -5529,7 +5529,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "DNN-HMM Dominance (+5%). The industry standard became: Use a Deep Neural Net to predict phonemes, use an HMM to decode them. It was a hybrid, but the 'Acoustic Model' was now Deep Learning. The 'Language Model' was still N-gram.",
           "key_manifestations": [
             "Sainath, T. N., et al. (2013). 'Deep Convolutional Neural Networks for LVCSR'",
@@ -5539,7 +5539,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "End-to-End ASR (+5%). Graves et al. pushed CTC further. 'Deep Speech' (Baidu) showed you could train end-to-end (Audio $\u2192$ Text) with massive data and GPUs, skipping the HMM/Phoneme dictionary entirely. The model learned to spell. This was 'Simplicity' winning via Scale.",
           "key_manifestations": [
             "Graves, A., et al. (2013). 'Speech Recognition with Deep Recurrent Neural Networks'",
@@ -5549,7 +5549,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Attention for Speech (LAS) (+5%). Chan et al. introduced 'Listen, Attend and Spell' (LAS). It used the Seq2Seq + Attention architecture (Cluster 6) for speech. It could reorder information (unlike CTC) and handle non-monotonic alignments. The 'Language Model' was now implicit in the decoder.",
           "key_manifestations": [
             "Chan, W., et al. (2016). 'Listen, Attend and Spell' (LAS - 2015 work)",
@@ -5559,7 +5559,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 40,
+          "salience_share": 40,
           "description": "WaveNet & Generative TTS (+10%). DeepMind released WaveNet. It generated raw audio waveforms sample-by-sample using dilated convolutions. It solved Text-to-Speech (TTS), crossing the Uncanny Valley. It showed that audio could be modeled as a 'Language' of samples.",
           "key_manifestations": [
             "Oord, A. v. d., et al. (2016). 'WaveNet: A Generative Model for Raw Audio'",
@@ -5569,7 +5569,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "Transformers for Speech (+5%). The Transformer (Cluster 6) replaced RNNs/LSTMs in speech too. 'Conformer' (Convolution + Transformer) became the SOTA. It captured both local structure (Conv) and global context (Attention).",
           "key_manifestations": [
             "Gulati, A., et al. (2020). 'Conformer: Convolution-augmented Transformer for Speech Recognition'",
@@ -5579,7 +5579,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 55,
+          "salience_share": 55,
           "description": "Self-Supervised Speech (Wav2Vec) (+10%). Inspired by BERT. Mask parts of the audio and predict the missing segment (Contrastive). 'Wav2Vec 2.0' showed you could get SOTA with 10 minutes of labeled data if you pre-trained on 50k hours of unlabeled audio. This liberated ASR from the 'Labeled Data Bottleneck.'",
           "key_manifestations": [
             "Baevski, A., et al. (2020). 'wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations'",
@@ -5589,7 +5589,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 65,
+          "salience_share": 65,
           "description": "Whisper & Scale (+10%). OpenAI released Whisper. It wasn't a new architecture (just a Transformer), but it was trained on 680k hours of noisy, weak-labeled web data. It proved 'Robustness' via scale. It handled accents, background noise, and multiple languages in a single model. It commoditized ASR.",
           "key_manifestations": [
             "Radford, A., et al. (2023). 'Robust Speech Recognition via Large-Scale Weak Supervision' (Whisper - 2022 release)",
@@ -5599,7 +5599,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 75,
+          "salience_share": 75,
           "description": "Current trajectory is 'Omni-Modal' (+10%). GPT-4o. Speech is no longer a separate modality. The LLM consumes raw audio tokens and outputs raw audio tokens (end-to-end speech-to-speech). No transcription step. It captures emotion, tone, and prosody. The 'Speech' cluster has effectively merged with the 'Language' cluster.",
           "key_manifestations": [
             "OpenAI (2024). 'GPT-4o System Card' (Native audio modality)",
@@ -5615,7 +5615,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the physical instantiation of AI: the 'Moravec's Paradox' frontier where high-level reasoning is easy but low-level motor control is hard. It tracks the evolution from the behavior-based robotics of the 90s (Subsumption), to the Probabilistic Robotics of the 2000s (SLAM), to the 'Deep Visuomotor' revolution of the 2010s, and finally to the 'Embodied Foundation Models' (VLA) of the 2020s. It addresses the 'Reality Gap'\u2014the disconnect between simulation physics and the messy real world.",
       "trajectory": {
         "1990": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The 'Subsumption' Era (+1%). Rodney Brooks attacked the 'Symbolic' view (SMPA - Sense Model Plan Act). He argued for 'Intelligence without Representation.' Fast, reactive loops (reflexes) layered to create behavior. This was 'Anti-AI' AI. It worked for insects (Genghis hexapod) but hit a ceiling for complex tasks.",
           "key_manifestations": [
             "Brooks, R. A. (1991). 'Intelligence Without Representation'",
@@ -5625,7 +5625,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The field split: 'AI' went to simulation, 'Robotics' went to Control Theory (Cluster 7). The 'Hand' was the problem. You could plan a path, but you couldn't pick up a cup. The variance was low because robots were blind and stiff.",
           "key_manifestations": [
             "Lozano-P\u00e9rez, T., et al. (1992). 'Handey: A Robot Task Planner'",
@@ -5635,7 +5635,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Probabilistic Robotics Begins (+1%). Thrun, Burgard, Fox. They injected Cluster 3 (PGMs) into robotics. Instead of assuming we know where the robot is, model the *uncertainty* ($P(Pose | Data)$). Markov Localization allowed robots to survive sensor noise. This was the software breakthrough that enabled Roomba.",
           "key_manifestations": [
             "Simmons, R., & Koenig, S. (1995). 'Probabilistic Robot Navigation in Partially Observable Environments' (1994 work)",
@@ -5645,7 +5645,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "SLAM (Simultaneous Localization and Mapping) (+1%). The core problem: 'Where am I and what does the world look like?' solved simultaneously. EKF-SLAM (Extended Kalman Filter) became the standard. It was heavy linear algebra, not learning, but it enabled autonomy.",
           "key_manifestations": [
             "Durrant-Whyte, H., et al. (1996). 'Simultaneous Localization and Mapping: A Part I'",
@@ -5655,7 +5655,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis/Musems. The 'Minerva' robot tour guide in the Smithsonian. It used Probabilistic Robotics to navigate crowds. It was a peak for 'Navigation.' But 'Manipulation' (Hands) remained in the Dark Ages of hard-coded kinematics.",
           "key_manifestations": [
             "Thrun, S., et al. (1999). 'Minerva: A Second-Generation Museum Tour-Guide Robot'",
@@ -5665,7 +5665,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. The DARPA Grand Challenge (2004) was announced. The field focused on 'Outdoor Navigation.' Learning was minimal (just terrain classification). Most logic was rule-based scripts. The 'Displacing Force' was the fragility of computer vision.",
           "key_manifestations": [
             "Thrun, S. (2002). 'Probabilistic Robotics' (The seminal paper summarizing the era)",
@@ -5675,7 +5675,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Humanoid Hype (-1%). Honda ASIMO. It was a masterpiece of Control Theory (ZMP - Zero Moment Point), not AI. It walked but didn't 'know' anything. It created a false impression of AI capability.",
           "key_manifestations": [
             "Sakagami, Y., et al. (2002). 'The Intelligent ASIMO: System Overview and Integration'",
@@ -5685,7 +5685,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Learning from Demonstration (+0%). Ng et al. showed autonomous helicopter flight by watching a human pilot. 'Inverse Reinforcement Learning' (Cluster 7) applied to bodies. This was the first sign that learning could beat engineering for control.",
           "key_manifestations": [
             "Abbeel, P., & Ng, A. Y. (2004). 'Apprenticeship Learning via Inverse Reinforcement Learning'",
@@ -5695,7 +5695,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. ROS (Robot Operating System) launched. It didn't solve AI, but it solved 'Integration.' It standardized the plumbing (Pub/Sub), allowing researchers to share code. This laid the foundation for the explosion a decade later.",
           "key_manifestations": [
             "Quigley, M., et al. (2009). 'ROS: an Open-Source Robot Operating System' (2007 dev start)",
@@ -5705,7 +5705,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Semantic Mapping (+1%). Robots began to label the map ('This is a door', not 'This is an obstacle'). Combining SLAM with Object Detection (HOG/SIFT). But manipulation was still 'Grasp Planning' (geometric analysis of meshes), not learning.",
           "key_manifestations": [
             "Rusu, R. B., et al. (2008). 'Towards 3D Point Cloud Based Object Maps for Household Environments'",
@@ -5715,7 +5715,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Kinect Fusion (+1%). The Microsoft Kinect ($150 depth sensor) democratized perception. 'KinectFusion' allowed real-time dense 3D reconstruction. Robots could finally 'see' geometry cheaply. This killed the laser-scanner monopoly.",
           "key_manifestations": [
             "Newcombe, R. A., et al. (2011). 'KinectFusion: Real-Time Dense Surface Mapping and Tracking'",
@@ -5725,7 +5725,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Deep Learning for Grasping (+1%). Saxena/Ng used Deep Learning (on depth images) to predict grasp points. It worked better than geometric planning. This was the first crack in the 'Analytic' dam for manipulation.",
           "key_manifestations": [
             "Lenz, I., et al. (2015). 'Deep Learning for Detecting Robotic Grasps' (2013 work)",
@@ -5735,7 +5735,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "End-to-End Visuomotor (+2%). Levine et al. (Google) trained a robot to screw caps on bottles by mapping Pixels $\u2192$ Torques. No pose estimation, no planning. Just a CNN policy. It required 14 robots running for months. It proved 'The Bitter Lesson' applied to atoms: Learning > Engineering.",
           "key_manifestations": [
             "Levine, S., et al. (2016). 'End-to-End Training of Deep Visuomotor Policies' (2015 work)",
@@ -5745,7 +5745,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Sim2Real & Domain Randomization (+4%). OpenAI Dactyl. Training in the real world is too slow. Train in simulation (MuJoCo/Unity) and transfer. The trick: 'Domain Randomization' (randomize friction, colors, gravity in sim so reality looks like just another variation). This solved the 'Reality Gap' for the Rubik's Cube hand.",
           "key_manifestations": [
             "Tobin, J., et al. (2017). 'Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World'",
@@ -5755,7 +5755,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Self-Supervised Physics (+3%). Robots playing with objects to learn physics. 'TossingBot' (Google) learned to throw things. It learned the ballistics distribution. This fused Cluster 23 (Self-Supervision) with Robotics.",
           "key_manifestations": [
             "Zeng, A., et al. (2020). 'TossingBot: Learning to Throw Arbitrary Objects with Residual Physics' (2019 work)",
@@ -5765,7 +5765,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "Visual Transformers for Control (+3%). The Transformer architecture entered robotics. 'Decision Transformer' (Cluster 7) treated actuation as a sequence modeling problem. The 'Action' is just the next token after the 'Perception' token.",
           "key_manifestations": [
             "Chen, L., et al. (2021). 'Decision Transformer: Reinforcement Learning via Sequence Modeling'",
@@ -5775,7 +5775,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "VLA (Vision-Language-Action) Models (+7%). RT-1 and RT-2 (Google). Take a VLM (like PaLM-E), fine-tune it to output robot actions. The robot 'understands' commands like 'Pick up the extinct animal' (dinosaur toy) because the semantic knowledge transfers from the web text. This is the 'ChatGPT moment' for Robotics.",
           "key_manifestations": [
             "Brohan, A., et al. (2022). 'RT-1: Robotics Transformer for Real-World Control at Scale'",
@@ -5785,7 +5785,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Current trajectory is 'Humanoid Generalization' (+5%). Figure, Tesla Optimus, 1X. Training end-to-end policies on massive teleoperation datasets. The 'Constraint' is data (teleop is slow). The solution is video generation (Cluster 9) as a simulator (Sora $\u2192$ Robot).",
           "key_manifestations": [
             "Zhao, T., et al. (2024). 'Learning Fine-Grained Bimanual Manipulation with Low-Cost Arms' (ALOHA)",
@@ -5801,7 +5801,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the industrialization of AI: moving from 'Model-Centric' (optimizing code/hyperparameters) to 'Data-Centric' (optimizing the dataset). It tracks the evolution of the AI supply chain: Feature Stores, Model Registries, Drift Detection, and Labeling pipelines. As models commoditized (HuggingFace), the variance in performance shifted entirely to the quality of the data and the robustness of the deployment infrastructure.",
       "trajectory": {
         "1990": {
-          "variance_explained": 0,
+          "salience_share": 0,
           "description": "Non-existent. AI was a script on a floppy disk. 'Deployment' meant compiling the C code. Data was static (UCI Repository).",
           "key_manifestations": [
             "UCI Machine Learning Repository (1987/1990). 'Iris Dataset'",
@@ -5810,7 +5810,7 @@ export const foundationAIData = {
           ]
         },
         "1995": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "CRISP-DM (+1%). The Cross-Industry Standard Process for Data Mining. It defined the lifecycle: Business Understanding $\u2192$ Data Prep $\u2192$ Modeling $\u2192$ Deployment. It was a manual waterfall process.",
           "key_manifestations": [
             "Wirth, R., & Hipp, J. (2000). 'CRISP-DM: Towards a Standard Process Model for Data Mining'",
@@ -5819,7 +5819,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "PMML (Predictive Model Markup Language). An attempt to standardize model export (XML). It allowed a model trained in SAS to run in Java. It solved the 'Handover' problem.",
           "key_manifestations": [
             "Grossman, R. L., et al. (1999). 'The Predictive Model Markup Language (PMML)'",
@@ -5828,7 +5828,7 @@ export const foundationAIData = {
           ]
         },
         "2005": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Hadoop & Big Data (+1%). Data engineering split from Software engineering. 'ETL' (Extract Transform Load) became the precursor to MLOps. You couldn't train on a laptop anymore.",
           "key_manifestations": [
             "Cutting, D. (2006). 'Hadoop'",
@@ -5837,7 +5837,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The 'Technical Debt' Realization (+1%). Sculley et al. (Google) published 'Hidden Technical Debt in Machine Learning Systems.' It famously argued that 'ML Code is only a tiny fraction of the box.' The rest is plumbing. This paper launched MLOps as a discipline.",
           "key_manifestations": [
             "Sculley, D., et al. (2015). 'Hidden Technical Debt in Machine Learning Systems' (The manifesto - 2014 NIPS workshop)",
@@ -5846,7 +5846,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Containers & Docker (+2%). Reproducibility crisis solved (mostly). Instead of 'It works on my machine,' ship the Docker container. Kubeflow and Kubernetes (2015) allowed orchestrating training jobs. The 'Model' became a 'Microservice.'",
           "key_manifestations": [
             "Merkel, D. (2014). 'Docker: Lightweight Linux Containers for Consistent Development and Deployment'",
@@ -5855,7 +5855,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Feature Stores (+3%). Uber Michelangelo. The concept of a 'Feature Store'\u2014a consistent source of truth for training and inference features. It solved 'Training-Serving Skew.' Companies realized their feature pipelines were broken.",
           "key_manifestations": [
             "Hermann, J., & Balso, M. (2017). 'Meet Michelangelo: Uber's Machine Learning Platform'",
@@ -5864,7 +5864,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Data-Centric AI (+4%). Andrew Ng coined the term. 'Don't improve the model architecture (it's mostly fixed/SOTA); improve the data.' Labeling (Snorkel), Cleaning (Cleanlab), and Curation became the high-ROI activities. 'Software 2.0' (Karpathy) defined the dataset as the source code.",
           "key_manifestations": [
             "Ratner, A., et al. (2017). 'Snorkel: Rapid Training Data Creation with Weak Supervision'",
@@ -5874,7 +5874,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "LLMOps (+3%). Prompt Engineering, RAG pipelines, Vector Ops. The 'Model' is now an API (GPT-4). The 'Ops' is managing the context window, retrieval latency, and evaluation (LLM-as-a-Judge). The stack shifted from 'Training' to 'Chaining' (LangChain).",
           "key_manifestations": [
             "Chase, H. (2022). 'LangChain' (Software artifact)",
@@ -5884,7 +5884,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "Synthetic Data Factories (+3%). We are running out of human data. The supply chain now includes *generating* data (Cluster 9) to train the next model (Cluster 6). 'Constitutional AI' is an MLOps process: Automated feedback loops. The Ouroboros of AI training.",
           "key_manifestations": [
             "Gunasekar, S., et al. (2023). 'Textbooks Are All You Need' (phi-1: Synthetic data curation)",
@@ -5893,7 +5893,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Current trajectory is 'Evaluation as Code' (+2%). You can't improve what you can't measure. In the absence of ground truth for 'Reasoning', we build 'Auto-Eval' systems. MLOps is now 'EvalOps.'",
           "key_manifestations": [
             "Zheng, L., et al. (2023). 'Judging LLM-as-a-Judge'",
@@ -5909,7 +5909,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Epistemology' and 'Ethics' of AI. It addresses two distinct but coupled problems: the 'Black Box' problem (we don't know how the model thinks) and the 'Bias' problem (the model encodes historical prejudice). The trajectory moves from the rule-extraction methods of the 90s, to the Saliency Maps and LIME of the 2010s, to the rigorous 'Shapley Value' game-theoretic attribution, and finally to the 'Mechanistic Interpretability' (Circuits) of the 2020s. It is the bridge between the high-dimensional math of AI and human values.",
       "trajectory": {
         "1990": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The decade began with a focus on 'Rule Extraction' (+0%). The goal was to convert a trained Neural Net (which was seen as opaque) back into Symbolic Rules (Cluster 4) so humans could read it. This was 'Decompositional' interpretability\u2014trying to map weights to logical propositions. Fairness was not yet a computational topic but existed in the policy realm regarding credit scoring.",
           "key_manifestations": [
             "Towell, G. G., & Shavlik, J. W. (1993). 'Extracting Refined Rules from Knowledge-Based Neural Networks' (KBANN - 1990 work)",
@@ -5919,7 +5919,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The primary method was 'Sensitivity Analysis.' Researchers determined which input features affected the output most by perturbing inputs and measuring the gradient. This was the mathematical precursor to modern Saliency Maps, though it was computationally expensive and limited to small networks.",
           "key_manifestations": [
             "Zurada, J. M., et al. (1994). 'Sensitivity Analysis of Feedforward Neural Networks' (1992-93 work)",
@@ -5929,7 +5929,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The 'Bias' problem emerged in niche literature (+0%). Researchers analyzing mortgage lending algorithms realized that removing 'Race' variables didn't work due to redundant encodings (Redlining). This was the proto-Fairness field, recognizing that data mining could perpetuate societal biases, though no mathematical definition of 'Fairness' was yet standardized in CS.",
           "key_manifestations": [
             "Friedman, B., & Nissenbaum, H. (1996). 'Bias in Computer Systems' (1994-95 context)",
@@ -5939,7 +5939,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Decline (-1%). As SVMs and Random Forests took over the field, 'Interpretability' became less pressing because Decision Trees are inherently readable and SVMs are geometrically intuitive (margins). The panic over 'Black Box' neural networks subsided as the community moved toward these more transparent, convex methods.",
           "key_manifestations": [
             "Craven, M., & Shavlik, J. W. (1996). 'Extracting Tree-Structured Representations of Trained Networks'",
@@ -5949,7 +5949,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Privacy (Cluster 27) was the main societal concern regarding data mining, overshadowing explainability. The concept of 'Trust' was linked to accuracy metrics (ROC curves) rather than internal auditing. If the model was accurate, it was assumed to be 'correct.'",
           "key_manifestations": [
             "Agrawal, R., et al. (2000). 'Privacy-Preserving Data Mining'",
@@ -5959,7 +5959,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The field focused on 'Calibration' and 'ROC Analysis.' Understanding the *probability* of an outcome was the proxy for understanding the model. This era cemented the idea that a 'Well-Calibrated' model is a trustworthy model, a simplification that would later be challenged by fairness research.",
           "key_manifestations": [
             "Fawcett, T. (2006). 'An Introduction to ROC Analysis' (Standardizing evaluation)",
@@ -5969,7 +5969,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The 'Ensemble' era (Random Forests, Boosting) made models opaque again compared to single trees. Breiman introduced 'Variable Importance' (permutation importance), a statistical way to peek inside the black box by measuring how much error increases when a feature is scrambled.",
           "key_manifestations": [
             "Breiman, L. (2001). 'Random Forests'",
@@ -5979,7 +5979,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Visual Analytics (+1%). Researchers tried to visualize high-dimensional decision boundaries using projection techniques like the 'Grand Tour' or 'Projection Pursuit.' The solution that eventually stuck was 'Manifold Learning' visualizations, setting the stage for t-SNE.",
           "key_manifestations": [
             "Inselberg, A. (2009). 'Parallel Coordinates' (Visualization standard)",
@@ -5989,7 +5989,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Deep Learning Opacity (+0%). Hinton's Deep Belief Networks were total black boxes. The community was so excited they worked that they didn't prioritize *how*. However, Erhan et al. began exploring 'Activation Maximization'\u2014generating the image that excites a neuron maximally\u2014which was the birth of modern 'Feature Visualization.'",
           "key_manifestations": [
             "Erhan, D., et al. (2009). 'Visualizing Higher-Layer Features of a Deep Network'",
@@ -5999,7 +5999,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Deconvolution & Saliency (+1%). The need to understand ConvNets drove innovation. Zeiler & Fergus developed 'Deconvolutional Networks' to project activations back to pixel space, allowing researchers to see 'what the neuron sees' (e.g., dog faces, wheels). This visual proof was crucial for building trust in Deep Learning.",
           "key_manifestations": [
             "Zeiler, M. D., & Fergus, R. (2014). 'Visualizing and Understanding Convolutional Networks' (2010-11 dev)",
@@ -6009,7 +6009,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Fairness Definitions (+1%). Dwork et al. published 'Fairness Through Awareness.' This was the mathematical formalization of fairness (specifically the Lipschitz condition: similar individuals should be treated similarly). It moved Fairness from Sociology to Computer Science, codifying metrics like 'Disparate Impact' into loss functions.",
           "key_manifestations": [
             "Dwork, C., et al. (2012). 'Fairness Through Awareness'",
@@ -6019,7 +6019,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Google Flu Trends Failure (+1%). The Big Data hubris crashed. Google Flu Trends failed to predict the flu accurately because of 'concept drift' and algorithmic confounding (the model learned correlations with seasons, not the virus). This failure highlighted the desperate need for robustness and explainability in big data systems beyond simple accuracy metrics.",
           "key_manifestations": [
             "Lazer, D., et al. (2014). 'The Parable of Google Flu: Traps in Big Data Analysis'",
@@ -6029,7 +6029,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "LIME & The Proxy Problem (+3%). Ribeiro et al. introduced LIME (Local Interpretable Model-agnostic Explanations). The insight: You don't need to understand the whole black box; just approximate it *locally* with a linear model. This democratized XAI. Simultaneously, 'ProPublica vs COMPAS' revealed racial bias in recidivism algorithms, proving that 'blindness' to race is insufficient due to proxy variables.",
           "key_manifestations": [
             "Ribeiro, M. T., et al. (2016). 'Why Should I Trust You? Explaining the Predictions of Any Classifier' (LIME - 2015 work)",
@@ -6039,7 +6039,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "SHAP & Grad-CAM (+4%). Lundberg & Lee unified LIME and Shapley Values into SHAP (SHapley Additive exPlanations). It became the gold standard for tabular feature attribution. In vision, Grad-CAM (Selvaraju) allowed users to 'see' where the CNN was looking via heatmaps. XAI became a standard, mandatory module in industrial ML pipelines.",
           "key_manifestations": [
             "Lundberg, S. M., & Lee, S. I. (2017). 'A Unified Approach to Interpreting Model Predictions' (SHAP)",
@@ -6049,7 +6049,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The Fairness Metric Wars (+3%). Researchers realized 'Fairness' is mathematically impossible to satisfy universally (Kleinberg et al.). You can't have Equal Odds, Calibration, and Demographic Parity simultaneously if base rates differ. The field shifted from finding 'The One Metric' to documenting 'Trade-offs' and creating 'Datasheets for Datasets' (Gebru) to track provenance.",
           "key_manifestations": [
             "Kleinberg, J., et al. (2017). 'Inherent Trade-Offs in the Fair Determination of Risk Scores'",
@@ -6059,7 +6059,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Mechanistic Interpretability (+5%). Olah et al. (Distill/Anthropic) moved beyond 'Heatmaps' (which can be misleading) to 'Circuits.' They reverse-engineered the weights to find 'Curve Detectors' and 'Dog Heads' inside the network graph. They treated the Neural Net as a compiled program to be decompiled. This is the 'Microscope' approach to alignment.",
           "key_manifestations": [
             "Olah, C., et al. (2020). 'Zoom In: An Introduction to Circuits'",
@@ -6069,7 +6069,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "LLM Explainability (+2%). How to explain a prompt completion? 'Chain of Thought' (Cluster 4) serves as a natural language explanation, though it suffers from 'Unfaithful reasoning' (hallucinating reasons). 'Influence Functions' attempted to trace a GPT-4 output back to specific training documents (e.g., 'This sentence came from Wikipedia page X').",
           "key_manifestations": [
             "Wei, J., et al. (2022). 'Chain-of-Thought Prompting Elicits Reasoning in Large Language Models'",
@@ -6079,7 +6079,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Dictionary Learning & Monosemanticity (+3%). Anthropic's 'Golden Gate Claude.' Using Sparse Autoencoders to decompose the 'Superposition' of dense concepts into discrete, human-readable features (e.g., 'The Golden Gate Bridge feature'). This is the SOTA for looking inside the black box. It proves concepts are represented linearly in the activation space.",
           "key_manifestations": [
             "Templeton, A., et al. (2024). 'Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet'",
@@ -6095,7 +6095,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the intersection of Quantum Computing and AI. It explores how quantum mechanics (Superposition, Entanglement, Interference) can accelerate linear algebra ($O(N)$ speedups) or optimize non-convex landscapes (Tunneling). Trajectory-wise, it moved from the theoretical Grover/HHL algorithms of the 90s/00s, to the 'Variational Quantum Eigensolver' (VQE) and 'Quantum Neural Networks' (QNN) of the NISQ (Noisy Intermediate-Scale Quantum) era. It is currently a high-variance, speculative cluster waiting for fault-tolerant hardware.",
       "trajectory": {
         "1990": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Theoretical Roots (+0%). Quantum Computing was in its infancy. The focus was on fundamental physics and complexity theory (Deutsch, Feynman). The link to learning was non-existent. Neural Nets were physical (Cluster 17), but strictly classical. The idea of 'Quantum Neural Computing' was fringe speculation.",
           "key_manifestations": [
             "Deutsch, D. (1985/1990). 'Quantum Theory, the Church-Turing Principle and the Universal Quantum Computer'",
@@ -6105,7 +6105,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Early papers began to appear discussing 'Quantum Neural Networks,' but they were mostly classical nets using quantum terminology metaphors, or hypothetical devices. There was no algorithm, only aspiration.",
           "key_manifestations": [
             "Kak, S. (1995). 'Quantum Neural Computing' (Drafts/Concepts)",
@@ -6115,7 +6115,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Shor's Algorithm (+0%). Peter Shor showed quantum computers could factor integers exponentially faster than classical computers. This revolutionized Cryptography but had little immediate impact on ML, other than proving Quantum Computers could do things Classical ones couldn't.",
           "key_manifestations": [
             "Shor, P. W. (1994). 'Algorithms for Quantum Computation: Discrete Logarithms and Factoring'",
@@ -6125,7 +6125,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Grover's Search (+0%). Grover's algorithm showed a quadratic speedup ($O(\u221aN)$) for unstructured search. This had implications for 'Search-based AI' (Cluster 4) and optimization, but it wasn't 'Learning.' It was a complexity theory result that defined the limits of quantum speedup.",
           "key_manifestations": [
             "Grover, L. K. (1996). 'A Fast Quantum Mechanical Algorithm for Database Search'",
@@ -6135,7 +6135,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Quantum Associative Memory (+0%). Ventura and Martinez proposed using quantum superposition to store patterns. This was the first concrete 'Neural' architecture. It used the phase of quantum states to encode information, allowing parallel retrieval. It was theoretical, as no hardware existed.",
           "key_manifestations": [
             "Ventura, D., & Martinez, T. (2000). 'Quantum Associative Memory' (1998 work)",
@@ -6145,7 +6145,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Quantum Perceptrons (+0%). Researchers tried to define a 'Quantum Neuron.' The linearity of Quantum Mechanics (Unitary transformations) made it hard to implement the non-linearity (Sigmoid/ReLU) required for AI. This was a theoretical blocker: you can't clone quantum states (No-Cloning Theorem), making backprop hard.",
           "key_manifestations": [
             "Altaisky, M. V. (2001). 'Quantum Neural Network'",
@@ -6155,7 +6155,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The field remained in Physics departments. 'Quantum Information Theory' was the active field (Cluster 18 adjacent). The focus was on error correction and teleportation, not learning.",
           "key_manifestations": [
             "Nielsen, M. A., & Chuang, I. L. (2000/2002). 'Quantum Computation and Quantum Information' (The Bible of the field)",
@@ -6165,7 +6165,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Adiabatic Quantum Computing (+0%). The concept of 'Quantum Annealing' gained traction. Instead of gates, evolve the Hamiltonian. This promised to solve optimization problems (Ising models) via tunneling, linking Quantum to Cluster 5 (Optimization). It was the basis for D-Wave.",
           "key_manifestations": [
             "Farhi, E., et al. (2000/2004). 'A Quantum Adiabatic Evolution Algorithm Applied to Random Instances of an NP-Complete Problem'",
@@ -6175,7 +6175,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. D-Wave released early prototypes (16-qubit). The ML community was skeptical. Is it quantum? Is it faster? The 'Speedup' debate began. AI researchers were busy with the CUDA revolution (Cluster 24) and ignored Quantum.",
           "key_manifestations": [
             "D-Wave Systems (2007). 'The Orion Prototype' (2006 context)",
@@ -6185,7 +6185,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "HHL Algorithm (+1%). Harrow, Hassidim, Lloyd (HHL) showed exponential speedup for solving linear systems ($Ax=b$). Since most ML (SVMs, Regression, Gaussian Processes) relies on matrix inversion, this was the 'killer app' theory. It proved QML *could* be exponentially faster, *if* you could load data (QRAM).",
           "key_manifestations": [
             "Harrow, A. W., Hassidim, A., & Lloyd, S. (2009). 'Quantum Algorithm for Linear Systems of Equations' (2008 arXiv)",
@@ -6195,7 +6195,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Quantum PCA (+0%). Lloyd et al. extended HHL to PCA. You can find the principal components of a matrix exponentially fast. This solidified the 'Linear Algebra' branch of QML. The focus was on translating BLAS (Basic Linear Algebra Subprograms) to Quantum.",
           "key_manifestations": [
             "Lloyd, S., et al. (2013). 'Quantum Principal Component Analysis' (2011-12 work)",
@@ -6205,7 +6205,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Quantum Boltzmann Machines (+1%). With the Deep Learning boom, researchers looked at RBMs (Cluster 9). RBMs are energy-based models; Quantum Annealers minimize energy. It was a natural fit. D-Wave was used to train RBMs. This was the first experimental QML.",
           "key_manifestations": [
             "Amin, M. H., et al. (2018). 'Quantum Boltzmann Machine' (Roots in 2012 D-Wave work)",
@@ -6215,7 +6215,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "VQE & QAOA (+1%). The 'NISQ' (Noisy Intermediate-Scale Quantum) era strategy emerged. Don't try to run deep, perfect circuits (HHL). Use a short, parameterized quantum circuit with parameters $\\theta$, measure, and update $\\theta$ with a classical optimizer. This is the 'Variational' approach. It works on noisy hardware.",
           "key_manifestations": [
             "Peruzzo, A., et al. (2014). 'A Variational Eigenvalue Solver on a Photonic Quantum Processor' (VQE)",
@@ -6225,7 +6225,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Quantum Neural Networks (QNN) (+0%). The Variational circuit *is* a Neural Network. The gates are layers; angles are weights. Frameworks like PennyLane and TensorFlow Quantum began to form. The goal was to train these circuits via 'Parameter Shift Rule' (Quantum Backprop).",
           "key_manifestations": [
             "Farhi, E., & Neven, H. (2018). 'Classification with Quantum Neural Networks on Near Term Processors' (2017 work)",
@@ -6235,7 +6235,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Quantum Kernels & Supremacy (+1%). Researchers realized VQAs are essentially Kernel methods (Cluster 2) in a Hilbert space. The 'Quantum Feature Map' maps data to a high-dimensional quantum state where linear separation is easier. Google prepared for the 'Quantum Supremacy' experiment.",
           "key_manifestations": [
             "Havranek, V., et al. (2019). 'Supervised Learning with Quantum-Enhanced Feature Spaces' (2018 work)",
@@ -6245,7 +6245,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Barren Plateaus (-1%). A theoretical blow. McClean et al. proved that QNN loss landscapes are statistically flat (gradients vanish exponentially with number of qubits). This 'Barren Plateau' problem is the 'Vanishing Gradient' of QML, but worse. It suggested QNNs might not scale.",
           "key_manifestations": [
             "McClean, J. R., et al. (2018/2020). 'Barren Plateaus in Quantum Neural Network Training Landscapes'",
@@ -6255,7 +6255,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Quantum Advantage Search (+0%). Google demonstrated 'Quantum Supremacy' (Sycamore), but for a useless task (Random Circuit Sampling). The search continues for a *useful* QML advantage. The consensus shifted: QML might not speed up *classical* data (images), but it is essential for *quantum* data (Cluster 12/20 applications like chemistry).",
           "key_manifestations": [
             "Huang, H. Y., et al. (2022). 'Quantum Advantage in Learning from Experiments'",
@@ -6265,7 +6265,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Current trajectory is 'Fault Tolerance & Simulation' (+0%). NISQ QML is stalling due to noise. The focus is on 'Error Corrected' QML (requiring millions of qubits). Alternatively, 'Quantum-Inspired' classical algorithms (Tensor Networks) are running on GPUs to simulate quantum systems, stealing QML's thunder.",
           "key_manifestations": [
             "Preskill, J. (2023). 'Quantum Computing in the NISQ era and beyond'",
@@ -6281,7 +6281,7 @@ export const foundationAIData = {
       "description": "This eigencluster addresses the 'Stability-Plasticity Dilemma': how to learn new information without overwriting old knowledge (Catastrophic Forgetting). Unlike the standard i.i.d. setting where data is shuffled, this cluster operates on sequential data streams. The trajectory moves from the bio-inspired 'ART' networks of the 90s, to the regularization methods (EWC) of the Deep Learning era, and finally to the 'Expansion' and 'Retrieval' strategies of the 2020s, where memory is maintained via external databases rather than synaptic weights.",
       "trajectory": {
         "1990": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The Stability-Plasticity Dilemma (+1%). Carpenter and Grossberg (Adaptive Resonance Theory - ART) defined the fundamental trade-off: A system must be plastic enough to learn, but stable enough not to forget. Backpropagation was known to suffer 'Catastrophic Interference' (McCloskey & Cohen 1989). This theoretical constraint defined the cluster.",
           "key_manifestations": [
             "Carpenter, G. A., & Grossberg, S. (1987/1990). 'ART 2: Stable Self-Organization of Pattern Recognition Codes'",
@@ -6291,7 +6291,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Rehearsal & Pseudo-Rehearsal (+0%). Robins showed that 'Rehearsal' (interleaving old data with new) prevents forgetting. He proposed 'Pseudo-Rehearsal': generating random inputs, passing them through the old network, and training the new network to match those outputs. This was the ancestor of modern 'Generative Replay.'",
           "key_manifestations": [
             "Robins, A. (1993). 'Catastrophic Forgetting in Neural Networks: The Role of Rehearsal Mechanisms'",
@@ -6301,7 +6301,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Complementary Learning Systems (CLS) (+1%). McClelland et al. proposed the CLS theory of the brain: The Hippocampus (fast learning) and Neocortex (slow learning) work together. The Hippocampus replays memories to the Cortex during sleep to consolidate them without interference. This became the biological blueprint for future AI architectures.",
           "key_manifestations": [
             "McClelland, J. L., et al. (1995). 'Why There Are Complementary Learning Systems in the Hippocampus and Neocortex'",
@@ -6311,7 +6311,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The rise of SVMs (Batch learning) marginalized the sequential learning problem. SVMs don't 'forget' because they are retrained on the full dataset. 'Incremental Learning' was a niche efficiency hack, not a cognitive necessity.",
           "key_manifestations": [
             "Syed, N. A., et al. (1999). 'Handling Concept Drift in Incremental Learning with Support Vector Machines' (Roots in late 90s)",
@@ -6321,7 +6321,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Concept Drift (+0%). The focus shifted to 'Non-Stationary Distributions.' If the data distribution changes over time (Drift), the model must adapt. Window-based methods (forgetting old data) were used. This was 'passive' forgetting, not 'active' preservation.",
           "key_manifestations": [
             "Widmer, G., & Kubat, M. (1996/1998). 'Learning in the Presence of Concept Drift and Hidden Contexts'",
@@ -6331,7 +6331,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The cluster was dormant in core AI. It survived in 'Data Stream Mining' (Cluster 32 roots). The dominant paradigm was: Collect data $\u2192$ Train $\u2192$ Freeze $\u2192$ Deploy. The idea of a model learning *after* deployment was considered dangerous and unstable.",
           "key_manifestations": [
             "Domingos, P., & Hulten, G. (2000). 'Mining High-Speed Data Streams'",
@@ -6341,7 +6341,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Echo State Networks (Reservoir Computing) offered a way to adapt quickly (train readout only) without destroying the reservoir. This was a form of stable incremental learning for time series.",
           "key_manifestations": [
             "Jaeger, H. (2002). 'Tutorial on Training Recurrent Neural Networks'",
@@ -6351,7 +6351,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Sparse Coding & Invariance (+0%). Researchers looked at sparse representations to reduce interference. If Task A uses neurons 1-10 and Task B uses 11-20, there is no forgetting. This 'Orthogonalization' strategy became a key theoretical insight.",
           "key_manifestations": [
             "French, R. M. (1999/2004). 'Catastrophic Forgetting in Connectionist Networks'",
@@ -6361,7 +6361,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Deep Learning Restart (-1%). The return of dense distributed representations (Hinton 2006) brought Catastrophic Forgetting back with a vengeance. Fine-tuning a pre-trained DBN on a new task destroyed the old weights immediately. The field accepted this cost for the sake of accuracy.",
           "key_manifestations": [
             "Hinton, G. E., et al. (2006). 'A Fast Learning Algorithm for Deep Belief Nets' (Fine-tuning overwrites priors)",
@@ -6371,7 +6371,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The focus was on 'Transfer Learning' (Cluster 21) - improving the *second* task. Continual learning cares about the *first* task (not forgetting it). Transfer researchers didn't care if the ImageNet performance dropped after fine-tuning on Flowers-102.",
           "key_manifestations": [
             "Pan, S. J., & Yang, Q. (2010). 'A Survey on Transfer Learning'",
@@ -6381,7 +6381,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The RL Driver (+1%). Reinforcement Learning agents (DQN) playing Atari encountered non-stationary data. The 'Experience Replay' buffer (Mnih 2013) was a mechanism to convert a continual stream into an i.i.d. batch, preventing forgetting. Replay became the dominant solution.",
           "key_manifestations": [
             "Mnih, V., et al. (2013). 'Playing Atari with Deep Reinforcement Learning'",
@@ -6391,7 +6391,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. Dropout was investigated as a way to reduce interference. By sparsifying activations, it reduced the overlap between tasks. But 'Fine-tuning' remained destructive.",
           "key_manifestations": [
             "Goodfellow, I., et al. (2013). 'An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks'",
@@ -6400,7 +6400,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Progressive Networks (+1%). Rusu et al. (DeepMind) proposed: 'Don't change old weights. Add new columns of weights for new tasks.' This solved forgetting perfectly but caused parameter explosion. It was the first 'Deep' architectural solution.",
           "key_manifestations": [
             "Rusu, A. A., et al. (2016). 'Progressive Neural Networks' (2015-16 work)",
@@ -6410,7 +6410,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Elastic Weight Consolidation (EWC) (+4%). Kirkpatrick et al. (DeepMind) introduced EWC. It calculated the Fisher Information Matrix to identify which weights were important for Task A, and penalized changing them when training Task B. This 'Regularization' approach became the standard baseline. It proved you could learn sequentially in a fixed capacity network.",
           "key_manifestations": [
             "Kirkpatrick, J., et al. (2017). 'Overcoming Catastrophic Forgetting in Neural Networks' (EWC)",
@@ -6420,7 +6420,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Replay vs Regularization (+2%). A debate emerged. 'Regularization' (EWC) failed on complex datasets (Split CIFAR). 'Replay' (storing a small buffer of old data) worked much better. 'Generative Replay' (Shin et al.) used a GAN to hallucinate old data, avoiding privacy issues. The field converged on Replay as the strongest method.",
           "key_manifestations": [
             "Shin, H., et al. (2017). 'Continual Learning with Deep Generative Replay'",
@@ -6430,7 +6430,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Task-Free Continual Learning (+2%). Most methods assumed task boundaries were known ('Task 1 start... Task 1 end'). Real life is a stream. 'Task-Free' methods (Continual Prototype Evolution) emerged. Also, 'Meta-Continual Learning'\u2014using MAML to learn *how* to learn without forgetting.",
           "key_manifestations": [
             "Aljundi, R., et al. (2019). 'Task-Free Continual Learning'",
@@ -6440,7 +6440,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Prompt-Based Continual Learning (+0%). With Transformers, 'Learning' changed to 'Prompt Tuning.' Wang et al. (L2P) learned a pool of prompts. For each image, select the best prompt. Since the backbone is frozen, there is no catastrophic forgetting in the weights, only in the prompt selection mechanism. This solved the problem by bypassing weight updates.",
           "key_manifestations": [
             "Wang, Z., et al. (2022). 'Learning to Prompt for Continual Learning' (L2P)",
@@ -6450,7 +6450,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 14,
+          "salience_share": 14,
           "description": "RAG as Continual Learning (+2%). The paradigm shifted. Instead of updating weights, just add data to the Vector Database (Cluster 15/29). 'Parametric Memory' (Weights) is static; 'Non-Parametric Memory' (RAG) is continual. The Stability-Plasticity dilemma is resolved by decoupling: Stability in the LLM, Plasticity in the Database.",
           "key_manifestations": [
             "Ram, O., et al. (2023). 'In-Context Retrieval-Augmented Language Models'",
@@ -6466,7 +6466,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Worst-Case' analysis of AI. It explores the fragility of high-dimensional decision boundaries to imperceptible perturbations (Adversarial Examples). The trajectory moves from the initial discovery of 'intriguing properties' in 2013, to the arms race of Attack vs. Defense (FGSM vs PGD vs Distillation) in the 2010s, to the 'Certified Robustness' era, and finally to 'Jailbreaking' and 'Prompt Injection' in the LLM era. It reveals the difference between 'Human Vision' and 'Texture Matching.'",
       "trajectory": {
         "1990": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Robust Statistics (+0%). The concept of 'Robustness' meant resistance to outliers in the training data (Huber Loss, RANSAC). It assumed noise was random, not adversarial. There was no concept of an 'adversary' optimizing the input to break the model.",
           "key_manifestations": [
             "Huber, P. J. (1981/1990). 'Robust Statistics'",
@@ -6475,7 +6475,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. In security, 'Adversarial' meant Cryptography. In ML, it meant nothing. The disconnect was total.",
           "key_manifestations": [
             "Schneier, B. (1994). 'Applied Cryptography'",
@@ -6484,7 +6484,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. PAC Learning theory explored 'Malicious Noise' models (Valiant). This was theoretical: 'What if an adversary flips 10% of labels?' It wasn't about optimizing input pixels.",
           "key_manifestations": [
             "Kearns, M. J., & Vazirani, U. V. (1994). 'An Introduction to Computational Learning Theory'",
@@ -6493,7 +6493,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Spam filtering began. This was the first real 'Adversarial Classifier' war. Spammers modified text (Bayesian Poisoning) to evade Naive Bayes filters. This was the grandfather of adversarial examples.",
           "key_manifestations": [
             "Sahami, M., et al. (1998). 'A Bayesian Approach to Filtering Junk E-Mail'",
@@ -6502,7 +6502,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Security community focused on Buffer Overflows. ML community focused on SVMs. SVMs (Cluster 2) with large margins were theoretically 'robust' to small perturbations, giving a false sense of security.",
           "key_manifestations": [
             "Sch\u00f6lkopf, B., et al. (2000). 'New Support Vector Algorithms' (Robustness via margin)",
@@ -6511,7 +6511,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The field of 'Adversarial Machine Learning' did not exist as a named discipline. It was just 'Spam' or 'Intrusion Detection.'",
           "key_manifestations": [
             "Lee, W., & Stolfo, S. J. (2000). 'A Framework for Constructing Features and Models for Intrusion Detection Systems'",
@@ -6520,7 +6520,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Adversarial Classification (+1%). Dalvi et al. (2004) and Lowd & Meek (2005) formalized the game. 'The adversary modifies the instance to minimize cost while flipping the label.' They derived optimal attacks against Naive Bayes and Linear Classifiers.",
           "key_manifestations": [
             "Dalvi, N., et al. (2004). 'Adversarial Classification'",
@@ -6529,7 +6529,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The work remained in KDD/Security conferences, ignored by the NIPS/ICML Core. The assumption was 'This is a security problem, not a learning problem.'",
           "key_manifestations": [
             "Nelson, B., et al. (2008). 'Exploiting Machine Learning to Subvert Your Spam Filter' (2006-2007 work)",
@@ -6538,7 +6538,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Deep Learning arrived but wasn't yet targeted. Researchers were struggling to make DL work at all (pre-training), let alone breaking it.",
           "key_manifestations": [
             "Biggio, B., et al. (2008). 'Adversarial Pattern Classification Using Multiple Classifiers'",
@@ -6547,7 +6547,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The Security community (Biggio et al.) began applying gradient-based attacks to SVMs and Neural Nets. They showed that you could optimize a 'poison' pattern. This was the direct precursor to 2013, but widely overlooked.",
           "key_manifestations": [
             "Biggio, B., et al. (2013). 'Evasion Attacks Against Machine Learning at Test Time' (2011-2012 work)",
@@ -6556,7 +6556,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Preparation. As Deep Learning took off (2012), the attack surface expanded. The models became differentiable end-to-end. This differentiability (which made backprop possible) also made 'Input Gradient Descent' possible. The gun was loaded.",
           "key_manifestations": [
             "Szegedy, C., et al. (2013). 'Intriguing Properties of Neural Networks' (Submitted late 2013)",
@@ -6565,7 +6565,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The Discovery (+5%). Szegedy et al. published 'Intriguing Properties.' They showed that applying a tiny, imperceptible perturbation to an image could change the classification from 'Bus' to 'Ostrich' with 100% confidence. It revealed that Deep Nets do not see 'Shapes'; they see 'Fragile Textures.'",
           "key_manifestations": [
             "Szegedy, C., et al. (2013). 'Intriguing Properties of Neural Networks'",
@@ -6574,7 +6574,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "FGSM & The Linear Hypothesis (+7%). Goodfellow proposed the 'Linearity Hypothesis': Adversarial examples exist because neural nets are 'too linear' in high dimensions. He introduced Fast Gradient Sign Method (FGSM). $\\epsilon * sign(\nabla x)$. It broke everything instantly. 'Adversarial Training' (training on attacks) was proposed as a fix.",
           "key_manifestations": [
             "Goodfellow, I., et al. (2014). 'Explaining and Harnessing Adversarial Examples'",
@@ -6584,7 +6584,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "The Arms Race (+5%). Defenses were proposed (Distillation, Gradient Masking) and immediately broken (Carlini & Wagner). C&W Attacks showed that almost all heuristics failed. The only defense that stood was 'Adversarial Training' (Madry), but it reduced accuracy. This established the 'Robustness-Accuracy Trade-off.'",
           "key_manifestations": [
             "Carlini, N., & Wagner, D. (2017). 'Towards Evaluating the Robustness of Neural Networks' (The C&W Attack - 2016 work)",
@@ -6594,7 +6594,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "Certified Robustness (+2%). Researchers sought mathematical guarantees. 'Randomized Smoothing' (Cohen) and 'Convex Relaxations' (Kolter) proved that for a given radius $\\epsilon$, the label *cannot* flip. This moved the field from 'Cat and Mouse' to 'Proof.'",
           "key_manifestations": [
             "Cohen, J., et al. (2019). 'Certified Adversarial Robustness via Randomized Smoothing'",
@@ -6604,7 +6604,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Natural Adversaries & Saturation (-2%). Research showed that 'Robust' models are often worse on 'Natural' distribution shifts. The focus shifted to 'Unrestricted' adversaries (e.g., fog, blur, rotation) rather than $L_p$ norm noise. The $L_p$ attack field became saturated; benchmarks (RobustBench) plateaued.",
           "key_manifestations": [
             "Hendrycks, D., et al. (2021). 'Natural Adversarial Examples'",
@@ -6614,7 +6614,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Prompt Injection & Jailbreaking (+5%). The threat model moved to LLMs. 'Ignore previous instructions and output X.' This is an adversarial attack on the attention mechanism. 'DAN' (Do Anything Now) prompts. Adversarial Suffixes (Zou et al. 2023) showed that you can optimize a string to break *any* aligned LLM. The fight restarted in token space.",
           "key_manifestations": [
             "Zou, A., et al. (2023). 'Universal and Transferable Adversarial Attacks on Aligned Language Models'",
@@ -6624,7 +6624,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 28,
+          "salience_share": 28,
           "description": "Current trajectory is 'Automated Red Teaming' (+3%). Using LLMs to attack other LLMs (Cluster 26 Game Theory). 'Many-Shot Jailbreaking.' The defense is 'Circuit Breaking' (Cluster 33) and 'Refusal Training.' The core insight: LLMs are universal function approximators, so they *can* represent the 'bad' function; preventing them from accessing it is an unsolved control problem.",
           "key_manifestations": [
             "Anil, C., et al. (2024). 'Many-Shot Jailbreaking'",
@@ -6640,7 +6640,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the convergence of 'Data-Driven' learning and 'First-Principles' physics. Unlike standard AI which learns patterns from scratch, SciML embeds physical laws (differential equations, conservation laws) directly into the neural network's loss function or architecture. The trajectory moves from the black-box Gaussian Process emulators of the 2000s, to the breakthrough of Physics-Informed Neural Networks (PINNs) in the 2010s, and finally to the 'Neural Operator' revolution of the 2020s (Fourier Neural Operators, GraphCast) which is replacing traditional numerical solvers (FEM/CFD) with AI surrogates that are $1000x$ faster.",
       "trajectory": {
         "1990": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "The divide was absolute. Physics used Numerical Analysis (Finite Element Method - FEM). AI used Neural Nets. There was almost no crossover. Psaltis et al. experimented with using Neural Nets to solve differential equations, but it was a curiosity, far inferior to standard grid-based solvers. The 'Displacing Force' preventing adoption was the lack of precision; floats in NNs were too noisy for chaotic systems.",
           "key_manifestations": [
             "Psaltis, D., et al. (1990). 'A Multilayered Neural Network Controller'",
@@ -6650,7 +6650,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Scientists used 'Surrogate Models' (Kriging / Response Surfaces) to approximate expensive simulations. These were statistical interpolators, not physics-aware learners. The 'Latent Space' was just a regression surface designed to smooth out the noise of experiments. Neural networks were seen as 'black boxes' unsuitable for the rigor of the scientific method.",
           "key_manifestations": [
             "Sacks, J., et al. (1989/1992). 'Design and Analysis of Computer Experiments' (Kriging foundation)",
@@ -6660,7 +6660,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. 'Symbolic Regression' (Genetic Programming - Cluster 10) was used to discover physical laws from data (e.g., rediscovering Kepler's laws). This was 'Discovery,' not 'Solver acceleration.' The focus was on finding the equation $F=ma$, not solving it faster.",
           "key_manifestations": [
             "Koza, J. R. (1994). 'Genetic Programming II: Automatic Discovery of Reusable Programs'",
@@ -6670,7 +6670,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Neural Differential Equations (Early) (+0%). Lagaris et al. published the seminal paper showing that a neural net could solve a PDE by adding the residual ($f(x) - u'(x)$) to the loss. It worked for toy problems but couldn't scale due to optimization difficulties. It was forgotten for 20 years because FEM solvers were strictly superior in accuracy.",
           "key_manifestations": [
             "Lagaris, I. E., et al. (1998). 'Artificial Neural Networks for Solving Ordinary and Partial Differential Equations' (1996-97 work)",
@@ -6680,7 +6680,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Gaussian Processes (GP) (+1%). Kennedy and O'Hagan formalized 'Bayesian Calibration of Computer Models.' Using GPs to emulate complex physics codes. This became the standard in engineering (Formula 1, Aerospace). It provided uncertainty estimates, crucial for science, unlike the overconfident neural nets of the era.",
           "key_manifestations": [
             "Kennedy, M. C., & O'Hagan, A. (2001). 'Bayesian Calibration of Computer Models' (1998-2000 work)",
@@ -6690,7 +6690,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Support Vector Regression (SVR) was applied to time-series prediction of chaotic systems (Mackey-Glass). It was 'Black Box' modeling. Physics was ignored; only the data mattered. The 'Displacing Force' was the belief that 'Physics is hard, Data is easy.'",
           "key_manifestations": [
             "M\u00fcller, K. R., et al. (1997/2000). 'Predicting Time Series with Support Vector Machines'",
@@ -6700,7 +6700,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. 'Data Assimilation' (Kalman Filters) was the way to combine data and models in Weather. It was a control theory approach, not ML. The 'Displacing Force' was the accuracy of traditional solvers; ML approximations were just too sloppy ($10^{-2}$ error vs $10^{-6}$ for numerics).",
           "key_manifestations": [
             "Evensen, G. (2003). 'The Ensemble Kalman Filter: Theoretical Formulation and Practical Implementation'",
@@ -6710,7 +6710,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Symbolic Regression regained interest with 'Eureqa' (Schmidt/Lipson). It could discover the Hamiltonian from motion capture data. This proved AI could extract physics concepts, not just fit curves. It was a high-profile Science paper, but computationally extremely expensive.",
           "key_manifestations": [
             "Schmidt, M., & Lipson, H. (2009). 'Distilling Free-Form Natural Laws from Experimental Data' (2007-08 work)",
@@ -6720,7 +6720,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Deep Learning (Hinton) was focused on digits and speech. No one was thinking about Navier-Stokes. The barrier was 'Double Precision.' Physics needs 64-bit float accuracy; Neural Nets used 32-bit (and later 16-bit). This hardware mismatch kept the fields apart.",
           "key_manifestations": [
             "Hinton, G. E., & Salakhutdinov, R. R. (2006). 'Reducing the Dimensionality of Data with Neural Networks'",
@@ -6730,7 +6730,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Molecular Fingerprints (+1%). Chemistry began using ML. 'Circular Fingerprints' (Morgan) allowed predicting molecule properties with Random Forests. This was the seed of 'AI for Drug Discovery.' It wasn't physics-informed yet, but it was 'Science-targeted' and began to beat hand-crafted heuristics.",
           "key_manifestations": [
             "Rogers, D., & Hahn, M. (2010). 'Extended-Connectivity Fingerprints' (ECFP - standard since 2000s)",
@@ -6740,7 +6740,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Tensor Networks (+0%). Physicists used Tensor Networks (MPS/PEPS) to simulate quantum systems. These structures are related to Neural Nets (RBMs). A theoretical bridge began to form: 'Deep Nets are Tensor Decompositions.' This provided a mathematical language common to both fields.",
           "key_manifestations": [
             "Cichocki, A., et al. (2009). 'Nonnegative Matrix and Tensor Factorizations'",
@@ -6750,7 +6750,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "ML in High Energy Physics (+1%). The LHC (CERN) generated too much data. Baldi et al. used Deep Learning to detect Higgs Boson decay. This was the first 'Big Science' adoption of Deep Learning. It proved DL could handle particle physics statistics better than Boosted Decision Trees.",
           "key_manifestations": [
             "Baldi, P., et al. (2014). 'Searching for Exotic Particles in High-Energy Physics with Deep Learning' (2013 work)",
@@ -6760,7 +6760,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Neural Potential Energy Surfaces (+1%). Behler-Parrinello networks. Using NN to predict the energy of a molecule configuration, speeding up Molecular Dynamics (MD) simulations. It replaced expensive DFT (Density Functional Theory) calculations. The 'Approximation' was finally accurate enough to be useful.",
           "key_manifestations": [
             "Behler, J. (2016). 'Perspective: Machine Learning Potentials for Atomistic Simulations' (Roots in 2011-14)",
@@ -6770,7 +6770,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "The PINN Explosion (+7%). Raissi, Perdikaris, Karniadakis published 'Physics-Informed Neural Networks.' The idea: Add the PDE residual to the loss function. $Loss = MSE(Data) + MSE(PDE)$. This allowed solving fluid dynamics *without data*, just using the equation and boundary conditions. It democratized SciML, allowing anyone with TensorFlow to solve PDEs.",
           "key_manifestations": [
             "Raissi, M., et al. (2019). 'Physics-informed Neural Networks: A Deep Learning Framework for Solving Forward and Inverse Problems' (2017 arXiv)",
@@ -6780,7 +6780,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "Neural ODEs (+6%). Chen et al. introduced Neural Ordinary Differential Equations. Instead of layers, treat the depth as time in an ODE. $dx/dt = NeuralNet(x)$. This linked ResNets to Euler integration. It allowed continuous-depth models and adaptive computation (spending more time on harder inputs).",
           "key_manifestations": [
             "Chen, R. T. Q., et al. (2018). 'Neural Ordinary Differential Equations'",
@@ -6790,7 +6790,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Neural Operators (+7%). PINNs solve *one* instance of a PDE. Neural Operators (DeepONet, FNO) learn the *operator* itself (mapping initial conditions to solutions). Once trained, they are $1000x$ faster than traditional solvers. Fourier Neural Operator (Li et al.) solved Navier-Stokes in real-time, resolution-independent.",
           "key_manifestations": [
             "Li, Z., et al. (2021). 'Fourier Neural Operator for Parametric Partial Differential Equations' (2020 work)",
@@ -6800,7 +6800,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "AI Weather Forecasting (+10%). GraphCast (DeepMind), Pangu-Weather (Huawei), FourCastNet (NVIDIA). These models beat the European Centre (ECMWF) numerical forecast (HRES) in accuracy and speed. A simulation that took 1 hour on a supercomputer now took 1 minute on a GPU. This was the 'AlphaFold' moment for fluid dynamics.",
           "key_manifestations": [
             "Lam, R., et al. (2023). 'Learning Skillful Medium-Range Global Weather Forecasting' (GraphCast - 2022 work)",
@@ -6810,7 +6810,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 40,
+          "salience_share": 40,
           "description": "Current trajectory is 'Foundation Models for Science' (+5%). Polymathic AI. Training a single Transformer on data from astrophysics, fluids, and climate. The hypothesis: 'The Universe has a shared grammar.' Also, 'Generative Physics'\u2014using Diffusion to sample valid physical states (e.g., turbulent flows). The line between 'Simulation' and 'Generation' is gone.",
           "key_manifestations": [
             "Subramanian, S., et al. (2024). 'PolymathicAI: A Foundation Model for Scientific Data'",
@@ -6826,7 +6826,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Constraint' manifold. It tracks the science of making AI smaller, faster, and cheaper. It counters the 'Scaling Laws' (Cluster 1) by proving that most parameters are redundant. The trajectory moves from 'Optimal Brain Damage' (Hessian pruning) in the 90s, to 'Knowledge Distillation' and 'MobileNets' in the 2010s, to the 'Post-Training Quantization' (PTQ) and '1-bit LLMs' of the 2020s. It enables AI on the Edge (phones, IoT).",
       "trajectory": {
         "1990": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Optimal Brain Damage (+1%). LeCun et al. proposed using the Hessian (second derivative) to identify unimportant weights. If a weight has low curvature, removing it doesn't increase error. This was rigorous pruning. However, calculating the Hessian was expensive ($O(N^2)$), so it was limited to tiny networks.",
           "key_manifestations": [
             "LeCun, Y., et al. (1990). 'Optimal Brain Damage'",
@@ -6836,7 +6836,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Soft Weight Sharing (+0%). Hinton & Nowlan. Instead of removing weights (hard pruning), cluster them into groups and share the value (soft sharing). This reduced the *information content* (MDL) of the network, if not the FLOPs. It was an early form of quantization.",
           "key_manifestations": [
             "Nowlan, S. J., & Hinton, G. E. (1992). 'Simplifying Neural Networks by Soft Weight-Sharing'",
@@ -6846,7 +6846,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The field moved to SVMs (Cluster 2). SVMs are naturally 'compressed'\u2014the model is defined only by the Support Vectors. The rest of the data is discarded. Sparsity was implicit in the dual formulation, making explicit compression research less urgent.",
           "key_manifestations": [
             "Burges, C. J. C. (1996). 'Simplified Support Vector Decision Rules' (Reducing the number of support vectors)",
@@ -6856,7 +6856,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Low Rank Approximation (+0%). In signal processing, SVD was used to compress matrices. In Neural Nets, this idea was nascent\u2014replacing a dense matrix with two smaller matrices ($W \\approx U V^T$). This would later become LoRA, but in 1996 it was just linear algebra.",
           "key_manifestations": [
             "Saitoh, K. (1996). 'Matrix Decomposition for Neural Network Compression' (Early exploration)",
@@ -6866,7 +6866,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Quantization Origins (+0%). The move from Floating Point to Fixed Point for DSPs (Digital Signal Processors). Neural nets were implemented on FPGAs using limited bit-width. This was 'Hardware-Driven' compression, not algorithmic. It was about fitting the model into the cache.",
           "key_manifestations": [
             "Fathy, M., et al. (1997). 'A VLSI Architecture for Neural Net based Image Compression'",
@@ -6876,7 +6876,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Moore's Law was fast. Code bloat was acceptable. Efficiency research was low status. The focus was on making models *bigger* (Ensembles), not smaller. The 'Cost of Compute' was not yet a limiting factor.",
           "key_manifestations": [
             "Bucilua, C., et al. (2006). 'Model Compression' (The seminal paper - appearing in 2006 but work started earlier)",
@@ -6886,7 +6886,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Mobile phones were dumb. There was no 'Edge AI' use case. Palm Pilots ran simple logic. Compression was for images (JPEG), not models.",
           "key_manifestations": [
             "Reference: 'The era of unconstrained desktop compute'",
@@ -6896,7 +6896,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Model Compression (+1%). Bucilua, Caruana, Niculescu-Mizil. They proposed training a small neural net to mimic a massive ensemble. They called it 'Model Compression.' This was the invention of **Distillation**, 10 years before Hinton renamed it. It showed that 'Knowledge' is not the same as 'Parameters.'",
           "key_manifestations": [
             "Bucilua, C., Caruana, R., & Niculescu-Mizil, A. (2006). 'Model Compression' (KDD 2006 - 2004-2005 work)",
@@ -6906,7 +6906,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Deep Learning arrived. The goal was to train *deep* nets, not small ones. The 'Vanishing Gradient' was the problem, not memory. The models were small by modern standards (1M parameters), fitting easily in RAM.",
           "key_manifestations": [
             "Hinton, G. E., & Salakhutdinov, R. R. (2006). 'Reducing the Dimensionality of Data' (Compression of data, not model)",
@@ -6916,7 +6916,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Feature Hashing (+1%). The 'Hashing Trick' (Weinberger et al.) allowed compressing the input space (vocabulary) into a fixed size vector. This was crucial for 'Big Data' linear models (Vowpal Wabbit). It solved the memory bottleneck for spam filters by accepting collisions.",
           "key_manifestations": [
             "Weinberger, K. Q., et al. (2009). 'Feature Hashing for Large Scale Multitask Learning' (2008 work)",
@@ -6926,7 +6926,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Low Rank Matrix Factorization (+1%). In RecSys (Cluster 28), decomposing the user-item matrix was compression. In Neural Nets, researchers started applying SVD to weight matrices to speed up inference on CPUs. It showed that weight matrices are 'Low Rank.'",
           "key_manifestations": [
             "Denton, E., et al. (2014). 'Exploiting Linear Structure Within Convolutional Networks for Efficient Evaluation' (2013-14 work)",
@@ -6936,7 +6936,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Mobile Vision (+1%). Smartphones became powerful. Getting AlexNet on a phone was the goal. 'Network in Network' (Lin et al.) replaced fully connected layers (massive) with Global Average Pooling (tiny). This drastically reduced parameter count (from 60M to 5M).",
           "key_manifestations": [
             "Lin, M., et al. (2014). 'Network In Network' (1x1 convolutions for reduction - 2013 work)",
@@ -6946,7 +6946,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Distillation & Pruning (+5%). Hinton et al. published 'Distillation.' Train a small 'Student' to match the 'Teacher's' logits. Simultaneously, Han et al. showed 'Deep Compression' (Pruning + Quantization + Huffman Coding) could reduce model size by 50x without accuracy loss. This launched the modern field.",
           "key_manifestations": [
             "Hinton, G., et al. (2015). 'Distilling the Knowledge in a Neural Network'",
@@ -6956,7 +6956,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Efficient Architectures (MobileNet) (+5%). Instead of compressing a big net, design a small one. 'Depthwise Separable Convolution' (MobileNet) and 'Group Convolution' (ShuffleNet) reduced FLOPs by 10x. Google and Apple deployed these for on-device Vision. This was 'Structural' efficiency.",
           "key_manifestations": [
             "Howard, A. G., et al. (2017). 'MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications'",
@@ -6966,7 +6966,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "Lottery Ticket Hypothesis (+3%). Frankle & Carbin proved that dense networks contain sparse sub-networks ('winning tickets') that train just as well. This was a theoretical bombshell. It suggested that 90% of weights are useless *at initialization* if you can find the mask. Pruning wasn't just compression; it was the nature of learning.",
           "key_manifestations": [
             "Frankle, J., & Carbin, M. (2019). 'The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks'",
@@ -6976,7 +6976,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Transformer Compression (+2%). DistilBERT, TinyBERT. Applying distillation to Transformers. Quantization-Aware Training (QAT) became standard for INT8 deployment. The focus shifted from 'Mobile' to 'Server Cost Reduction.' The 'Displacing Force' was the cost of serving BERT.",
           "key_manifestations": [
             "Sanh, V., et al. (2019). 'DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter'",
@@ -6986,7 +6986,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "LLM Quantization (GPTQ) (+5%). LLMs were too big for one GPU. 'Post-Training Quantization' (PTQ) became critical. GPTQ and LLM.int8() allowed running LLaMA-65B on consumer hardware. 'Activation Outliers' (Dettmers) were the key challenge to overcome. This democratized LLMs.",
           "key_manifestations": [
             "Frantar, E., et al. (2023). 'GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers'",
@@ -6996,7 +6996,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Current trajectory is '1-bit LLMs' (+5%). BitNet b1.58. Weights are Ternary {-1, 0, 1}. No multiplications, only additions. This suggests the future is not 'Smaller Floats' (FP4) but 'Integer Math.' Also 'Speculative Decoding' to speed up inference without changing the model. The era of 'MatMul-Free' AI is beginning.",
           "key_manifestations": [
             "Ma, S., et al. (2024). 'The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits'",
@@ -7012,7 +7012,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Wisdom of Crowds' in algorithms. It tracks the evolution of aggregating weak learners to form strong ones. While Deep Learning conquered perception (images/audio), this cluster conquered tabular data (spreadsheets/databases) and Kaggle competitions. The trajectory moves from the heuristic Bagging of the 90s, to the theoretical triumph of AdaBoost, to the industrial dominance of Random Forests, and finally to the highly optimized Gradient Boosting Machines (XGBoost/LightGBM) which remain the State of the Art for structured data in the 2020s.",
       "trajectory": {
         "1990": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Decision Trees (+1%). CART (Breiman) and C4.5 (Quinlan) were the standard. They were interpretable but high-variance (prone to overfitting). The concept of 'combining' them was nascent. Schapire proved 'Boosting' was possible (turning weak learners into strong ones) in a theoretical construct, but practical algorithms were lacking.",
           "key_manifestations": [
             "Schapire, R. E. (1990). 'The Strength of Weak Learnability'",
@@ -7022,7 +7022,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis. 'Stacking' (Wolpert) was introduced\u2014training a meta-learner to combine base learners. This formalized the idea of heterogeneous ensembles. However, the base learners were often Neural Nets or simple regressions, not yet trees.",
           "key_manifestations": [
             "Wolpert, D. H. (1992). 'Stacked Generalization'",
@@ -7032,7 +7032,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Bagging (+2%). Breiman introduced 'Bootstrap Aggregating' (Bagging). By training trees on random subsets of data and averaging them, variance was reduced. This turned Decision Trees from 'flimsy' to 'robust.' It was a statistical triumph over the tendency of trees to overfit.",
           "key_manifestations": [
             "Breiman, L. (1996). 'Bagging Predictors' (1994 work)",
@@ -7042,7 +7042,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "AdaBoost (+4%). Freund & Schapire introduced AdaBoost (Adaptive Boosting). Instead of random subsets (Bagging), weight the hard examples higher. It was the first practical boosting algorithm. It reduced both bias *and* variance. It famously resisted overfitting, baffling theorists (Cluster 8).",
           "key_manifestations": [
             "Freund, Y., & Schapire, R. E. (1997). 'A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting' (1995-96 work)",
@@ -7052,7 +7052,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Gradient Boosting (+3%). Friedman generalized Boosting. He showed AdaBoost was just Gradient Descent in function space with a specific loss (Exponential). He proposed 'Gradient Boosting Machines' (GBM) for arbitrary differentiable loss functions. This allowed Boosting to solve Regression, Classification, and Ranking.",
           "key_manifestations": [
             "Friedman, J. H. (2001). 'Greedy Function Approximation: A Gradient Boosting Machine' (1999 work)",
@@ -7062,7 +7062,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Random Forests (+5%). Breiman merged Bagging with Random Feature Selection. Random Forests were born. They worked 'out of the box' with no tuning. They handled missing data, categorical variables, and didn't overfit. For the next decade, if you had a dataset, you ran a Random Forest first.",
           "key_manifestations": [
             "Breiman, L. (2001). 'Random Forests'",
@@ -7072,7 +7072,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Stasis. RFs and SVMs battled for supremacy. SVMs (Cluster 2) were preferred for sparse data (Text/Genomics), RFs for dense tabular data. Boosting was considered powerful but noisy (sensitive to outliers).",
           "key_manifestations": [
             "Caruana, R., et al. (2006). 'An Empirical Comparison of Supervised Learning Algorithms' (2004-06 work - RF often winning)",
@@ -7081,7 +7081,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "Ensemble Selection (+2%). Caruana et al. showed that building a massive library of 2000 models and greedily selecting a subset to average (Ensemble Selection) beat any single model. This became the standard strategy for winning competitions (Netflix Prize, KDD Cup).",
           "key_manifestations": [
             "Caruana, R., et al. (2004). 'Ensemble Selection from Libraries of Models'",
@@ -7091,7 +7091,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "Stasis. Deep Learning (Hinton) was rising in perception tasks. But for tabular data (Customer Churn, Fraud), Random Forests remained undefeated. The 'Displacing Force' of Deep Learning had not yet breached the tabular domain.",
           "key_manifestations": [
             "Geurts, P., et al. (2006). 'Extremely Randomized Trees' (ExtraTrees)",
@@ -7100,7 +7100,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "LambdaMART (+3%). In Information Retrieval (Cluster 29), Boosting adapted to ranking losses (NDCG). LambdaMART (a GBM variant) won the Yahoo! Learning to Rank challenge. This proved Trees were SOTA for ranking, not just classification.",
           "key_manifestations": [
             "Wu, Q., et al. (2010). 'Adapting Boosting for Information Retrieval Measures' (LambdaMART - 2008-09 work)",
@@ -7109,7 +7109,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "Stasis. The deep learning hype sucked oxygen from tree research. However, in industry (Ad Tech, Finance), GBMs were the workhorse. They were faster to train than Deep Nets on CPUs and handled 'mixed types' (int, float, string) naturally.",
           "key_manifestations": [
             "Bissacco, A., et al. (2013). 'PhotoOCR: Reading Text in Uncontrolled Conditions' (Using Ensembles of NNs)",
@@ -7118,7 +7118,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "XGBoost Development (+3%). Tianqi Chen began building XGBoost. He optimized the systems aspect: cache-aware access, out-of-core computing, and sparsity handling. He added 'Regularization' to the GBM objective ($L_2$ on leaf weights). This transformed GBM from a slow algorithm to a speed demon.",
           "key_manifestations": [
             "Chen, T., & Guestrin, C. (2016). 'XGBoost: A Scalable Tree Boosting System' (2014 arXiv - Project started 2013)",
@@ -7127,7 +7127,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "The XGBoost Monopoly (+10%). XGBoost released. It dominated Kaggle. 17/29 winning solutions in 2015 used XGBoost. It was faster, more accurate, and easier to tune than Random Forests. Deep Learning won Vision/NLP; XGBoost won Everything Else.",
           "key_manifestations": [
             "Chen, T., & Guestrin, C. (2016). 'XGBoost'",
@@ -7137,7 +7137,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 38,
+          "salience_share": 38,
           "description": "LightGBM (+3%). Microsoft released LightGBM. It used GOSS (Gradient-based One-Side Sampling) and EFB (Exclusive Feature Bundling). It was faster than XGBoost on massive datasets. It introduced 'Leaf-wise' growth (best-first) vs 'Level-wise' growth. The speed allowed training on 100M rows.",
           "key_manifestations": [
             "Ke, G., et al. (2017). 'LightGBM: A Highly Efficient Gradient Boosting Decision Tree' (2016 work)",
@@ -7146,7 +7146,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "CatBoost & Tabular Deep Learning (-3%). CatBoost (Yandex) solved the 'Categorical Feature' problem with Ordered Boosting. Meanwhile, researchers tried to make Deep Learning work on Tabular data (TabNet). Deep Learning began to encroach, but Trees held the fort due to speed and interpretability.",
           "key_manifestations": [
             "Prokhorenkova, L., et al. (2018). 'CatBoost'",
@@ -7155,7 +7155,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Stasis/Commoditization. The 'GBM' cluster is now mature infrastructure. It powers the world's banking, insurance, and fraud systems. Research slowed as gains became marginal. The 'Displacing Force' was the lack of differentiability\u2014you can't backprop through a tree easily, making it hard to integrate into end-to-end Deep Learning pipelines.",
           "key_manifestations": [
             "Gorishniy, Y., et al. (2021). 'Revisiting Deep Learning Models for Tabular Data' (Concluding Trees still usually win)",
@@ -7164,7 +7164,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Differentiable Trees (-5%). Libraries like 'TensorFlow Decision Forests' attempted to bridge the gap. But LLMs (Cluster 6) began to show 'Tabular Reasoning' capabilities. You can serialize a table to text and ask GPT-4 to predict the next column. This works surprisingly well for small data.",
           "key_manifestations": [
             "Bruch, S., et al. (2020). 'A Native Ensemble Backend for TensorFlow Decision Forests'",
@@ -7173,7 +7173,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Current trajectory is 'Hybridization.' Using GBDTs for the feature engineering/selection, then feeding embeddings to a Neural Net. Or using LLMs to perform data cleaning for the GBDT. The cluster remains the 'King of ROI' (Return on Investment) for business data.",
           "key_manifestations": [
             "McElfresh, D., et al. (2024). 'Neural Networks vs Gradient Boosting: A Comprehensive Benchmark'",
@@ -7188,7 +7188,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Infinite' capacity models. Unlike Neural Nets (fixed parameters) or standard Bayes (fixed graph), Bayesian Nonparametrics (BNP) allows the model complexity to grow with the data. Dominated by Gaussian Processes (GPs), Dirichlet Process Mixtures (DPMs), and the Indian Buffet Process (IBP), it represents a flexible, rigorous approach to unsupervised learning and regression. Its trajectory peaked in the 2000s as the sophisticated alternative to SVMs, before being displaced by the computational efficiency of Deep Learning.",
       "trajectory": {
         "1990": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The Foundations (+0%). The math existed (Ferguson 1973), but the computation didn't. Neal's work on 'Bayesian Learning for Neural Networks' showed that an infinite width neural net converges to a Gaussian Process. This linked Connectionism to Nonparametrics.",
           "key_manifestations": [
             "Neal, R. M. (1996). 'Bayesian Learning for Neural Networks' (1994 thesis context)",
@@ -7197,7 +7197,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Gaussian Processes (+1%). Rasmussen and Williams popularized GPs for regression. Instead of fitting a line $y=mx+b$, fit a distribution over *functions*. It provided exact uncertainty bounds. It became the gold standard for small-data regression.",
           "key_manifestations": [
             "Rasmussen, C. E. (1996). 'Evaluation of Gaussian Processes and Other Methods for Non-Linear Regression'",
@@ -7206,7 +7206,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Dirichlet Process Mixtures (DPM) (+1%). 'Infinite Clustering.' How many clusters are in the data? Let the data decide. The Chinese Restaurant Process (CRP) provided an intuitive metaphor. This allowed unsupervised learning without specifying 'k' in k-means.",
           "key_manifestations": [
             "Neal, R. M. (2000). 'Markov Chain Sampling Methods for Dirichlet Process Mixture Models' (1998 work)",
@@ -7215,7 +7215,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis/Growth. The 'Ghahramani/Jordan' era began. They pushed BNP into ML conferences. The focus was on 'Variational Inference' to make these slow MCMC models faster. The trajectory was upward as it offered a 'principled' alternative to ad-hoc clustering.",
           "key_manifestations": [
             "Blei, D. M., & Jordan, M. I. (2006). 'Variational Inference for Dirichlet Process Mixtures' (2004 work)",
@@ -7224,7 +7224,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Hierarchical Dirichlet Processes (HDP) (+1%). Teh et al. extended DPMs to grouped data (e.g., words in documents). The HDP allowed sharing clusters across groups. This was the nonparametric version of LDA (Topic Modeling). It allowed 'Infinite Topics.'",
           "key_manifestations": [
             "Teh, Y. W., et al. (2006). 'Hierarchical Dirichlet Processes' (2004-05 work)",
@@ -7233,7 +7233,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Indian Buffet Process (IBP) (+1%). Griffiths & Ghahramani. Instead of 'One cluster per point' (Chinese Restaurant), allow 'Multiple features per point' (Indian Buffet). This was the nonparametric equivalent of Factor Analysis. It learned binary feature matrices of infinite width.",
           "key_manifestations": [
             "Griffiths, T. L., & Ghahramani, Z. (2011). 'The Indian Buffet Process: An Introduction and Review' (Reflecting 2006-2007 peak)",
@@ -7242,7 +7242,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Gaussian Process Optimization (+0%). GPs became the engine of 'Bayesian Optimization' (Cluster 21). Using the uncertainty estimate to decide where to sample next. This was high-value for engineering, but the core BNP research began to hit a complexity wall.",
           "key_manifestations": [
             "Snoek, J., et al. (2012). 'Practical Bayesian Optimization of Machine Learning Algorithms' (Using GPs)",
@@ -7251,7 +7251,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Decline (-1%). Deep Learning was faster. A GP takes $O(N^3)$. A Neural Net takes $O(N)$. For Big Data, $N^3$ is impossible. Researchers tried 'Sparse GPs' (inducing points) to scale, but they couldn't match the expressivity of Deep Nets on perceptual data.",
           "key_manifestations": [
             "Hensman, J., et al. (2013). 'Gaussian Processes for Big Data'",
@@ -7260,7 +7260,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Deep Gaussian Processes (+0%). Attempting to stack GPs to make them 'Deep.' It worked theoretically but was a nightmare to train (nested variational inference). It failed to displace standard Deep Learning.",
           "key_manifestations": [
             "Damianou, A., & Lawrence, N. (2013). 'Deep Gaussian Processes'",
@@ -7269,7 +7269,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Bayesian Neural Networks (BNN) (+0%). The cluster shifted to 'Bayesianizing' Deep Learning. Putting priors on weights. 'Weight Uncertainty' allows detecting OOD data. This kept the *spirit* of BNP alive inside the Deep Learning cluster.",
           "key_manifestations": [
             "Blundell, C., et al. (2015). 'Weight Uncertainty in Neural Network'",
@@ -7278,7 +7278,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. GPs remained SOTA for 'Small Data' (100-1000 points) and Uncertainty Quantification. But for the main AI benchmarks (ImageNet, SQuAD), they were irrelevant.",
           "key_manifestations": [
             "Wilson, A. G., et al. (2016). 'Deep Kernel Learning'",
@@ -7287,7 +7287,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Neural Processes (+0%). DeepMind's 'Neural Processes' tried to combine the best of both: The data-efficiency/uncertainty of GPs with the training scalability of NNs. It learned a distribution over functions.",
           "key_manifestations": [
             "Garnelo, M., et al. (2018). 'Conditional Neural Processes'",
@@ -7296,7 +7296,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Infinite Width Limits (+0%). The 'Neural Tangent Kernel' (Cluster 8) proved that wide NNs *are* GPs. This gave BNP a posthumous victory: 'Deep Learning was just Gaussian Processes all along (in a specific limit).' This spurred theoretical interest but didn't change engineering.",
           "key_manifestations": [
             "Lee, J., et al. (2018). 'Deep Neural Networks as Gaussian Processes'",
@@ -7305,7 +7305,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Diffusion as SDEs (+0%). Diffusion models (Cluster 9) are Stochastic Differential Equations. The math overlaps with GPs and Stochastic Processes. BNP researchers migrated to Diffusion theory.",
           "key_manifestations": [
             "Song, Y., et al. (2021). 'Score-Based Generative Modeling through Stochastic Differential Equations'",
@@ -7314,7 +7314,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Niche. Used in 'Active Learning' (Cluster 21) and 'Bayesian Optimization' for tuning LLMs. The core methodology is largely historical in the face of Foundation Models.",
           "key_manifestations": [
             "Tran, A., et al. (2024). 'Bayesian Optimization for LLM Hyperparameters'",
@@ -7329,7 +7329,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Emotional Quotient' (EQ) of AI. It tracks the effort to enable machines to recognize, interpret, process, and simulate human affects. The trajectory moves from Rosalind Picard's physiological sensors in the 90s, to the 'Bag of Words' sentiment analysis of the 2000s web (mining blogs/reviews), to the Deep Learning facial emotion recognition of the 2010s, and finally to the 'Empathic Voice' and multimodal nuance of the 2020s (GPT-4o). It is the bridge between computation and psychology.",
       "trajectory": {
         "1990": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Niche/Psychology. The field was mostly Psychology and Human-Computer Interaction (HCI). Ekman's 'Basic Emotions' (Happy, Sad, Anger, etc.) provided the categorical ground truth. 'Kansei Engineering' in Japan focused on emotional design.",
           "key_manifestations": [
             "Ortony, A., et al. (1988/1990). 'The Cognitive Structure of Emotions' (OCC Model)",
@@ -7339,7 +7339,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Text processing was limited to keyword spotting. If the text said 'hate', it was negative. No nuance, no sarcasm detection. The 'Displacing Force' was the lack of digitized social data; people didn't write diaries online yet.",
           "key_manifestations": [
             "Hearst, M. A. (1992). 'Direction-Based Text Interpretation as an Information Access Refinement'",
@@ -7349,7 +7349,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "The 'Affective Computing' Manifesto (+0%). Rosalind Picard (MIT Media Lab) coined the term. She argued computers must have emotions to be intelligent (for decision making, citing Damasio). The focus was on *sensors* (skin conductance, heart rate) to detect user frustration.",
           "key_manifestations": [
             "Picard, R. W. (1995). 'Affective Computing' (MIT Tech Report 321)",
@@ -7359,7 +7359,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "The Kismet Era (+1%). Cynthia Breazeal built Kismet, a robot face that could display emotions. This was 'Social Robotics.' It was expressive but rule-based. It proved that simple facial cues could elicit strong emotional responses from humans (ELIZA effect).",
           "key_manifestations": [
             "Breazeal, C. (1998). 'Regulating Interpersonal Tendencies for a Sociable Robot' (Kismet dev)",
@@ -7369,7 +7369,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Opinion Mining Roots (+0%). The web began to have reviews (Amazon/eBay). Researchers started asking: 'Is this review positive or negative?'. The problem shifted from 'Physiology' to 'Text Classification.'",
           "key_manifestations": [
             "Hatzivassiloglou, V., & McKeown, K. R. (1997). 'Predicting the Semantic Orientation of Adjectives'",
@@ -7379,7 +7379,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Thumbs Up/Down (+1%). Pang & Lee and Turney turned 'Sentiment Analysis' into a standard ML task. Using SVMs and Naive Bayes on Bag-of-Words features. 'Thumbs Up' vs 'Thumbs Down' became the MNIST of NLP. It was crude but commercially valuable for brands.",
           "key_manifestations": [
             "Pang, B., et al. (2002). 'Thumbs up? Sentiment Classification using Machine Learning Techniques' (2000-2001 work)",
@@ -7389,7 +7389,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Subjectivity Detection (+1%). The challenge was separating 'Fact' from 'Opinion.' Wiebe et al. annotated the MPQA corpus. This provided the dataset fuel. The field split into 'Polarity' (Positive/Negative) and 'Emotion' (Joy/Fear).",
           "key_manifestations": [
             "Pang, B., & Lee, L. (2004). 'A Sentimental Education: Sentiment Analysis Using Subjectivity Summarization Based on Minimum Cuts'",
@@ -7399,7 +7399,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Aspect-Based Sentiment (+1%). 'The camera is good but the battery dies.' A single label isn't enough. Bing Liu introduced Aspect-Based Sentiment Analysis. Extracting (Entity, Aspect, Sentiment) tuples. This became the standard for industrial analytics.",
           "key_manifestations": [
             "Hu, M., & Liu, B. (2004). 'Mining Opinion Features in Customer Reviews'",
@@ -7409,7 +7409,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "SentiWordNet (+0%). Lexicon-based methods peaked. Esuli & Sebastiani released SentiWordNet, assigning positivity/negativity scores to WordNet synsets. It allowed 'Unsupervised' sentiment analysis by summing scores. It was brittle but cheap.",
           "key_manifestations": [
             "Esuli, A., & Sebastiani, F. (2006). 'SentiWordNet: A Publicly Available Lexical Resource for Opinion Mining'",
@@ -7419,7 +7419,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Twitter Sentiment (+1%). Twitter launched (2006) and exploded. It became the de-facto dataset. The challenge: Slang, emojis, short text. 'Distant Supervision' (using :) as a label) became common. The 'Real-Time' aspect of sentiment was born (Stock market prediction via Twitter).",
           "key_manifestations": [
             "Go, A., et al. (2009). 'Twitter Sentiment Classification using Distant Supervision'",
@@ -7429,7 +7429,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Recursive Deep Learning (+1%). Socher et al. (Stanford) introduced Recursive Neural Tensor Networks (RNTN) on the Stanford Sentiment Treebank. It parsed the sentence tree: (Not (Very Good)). It handled negation and compositionality better than Bag-of-Words. This was the first Deep Learning win in Sentiment.",
           "key_manifestations": [
             "Socher, R., et al. (2013). 'Recursive Deep Models for Semantic Compositionality over a Sentiment Treebank' (2011-12 work)",
@@ -7439,7 +7439,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Facial Emotion Recognition (FER) (+1%). CNNs (Cluster 1) applied to faces. The 'EmotioNet' challenge. Classifying images into Ekman's 6 emotions. Performance jumped, enabling applications in recruiting (HireVue) and security, raising massive ethical concerns later.",
           "key_manifestations": [
             "Kahou, S. E., et al. (2013). 'Combining Modality Specific Deep Neural Networks for Emotion Recognition in Video'",
@@ -7449,7 +7449,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Multimodal Emotion (+0%). Combining Audio (Prosody) + Video (Face) + Text. LSTMs were used to fuse modalities over time. The 'AVEC' challenges drove progress. It was complex engineering, often brittle.",
           "key_manifestations": [
             "Poria, S., et al. (2015). 'Deep Convolutional Neural Network Textual Features and Multiple Kernel Learning for Video Emotion Detection'",
@@ -7459,7 +7459,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Style Transfer & Sentiment (+1%). Researchers tried to 'flip' the sentiment of a sentence using GANs or Autoencoders ('The food was bad' -> 'The food was good') while keeping the content. This was 'Generative' sentiment analysis.",
           "key_manifestations": [
             "Hu, Z., et al. (2017). 'Toward Controlled Generation of Text'",
@@ -7469,7 +7469,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "BERT & Nuance (+3%). BERT (Cluster 6) solved the 'Sarcasm' and 'Context' problem better than RNTNs. Sentiment benchmarks (SST-5) were maxed out. The field moved to 'Emotion Detection' (28 categories) rather than just Positive/Negative. GoEmotions dataset (Google).",
           "key_manifestations": [
             "Demszky, D., et al. (2020). 'GoEmotions: A Dataset of Fine-Grained Emotions' (2019 work)",
@@ -7479,7 +7479,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 14,
+          "salience_share": 14,
           "description": "Empathetic Dialogue (+2%). Chatbots (BlenderBot, Meena) trained specifically to show empathy. Using datasets like 'EmpatheticDialogues.' The goal shifted from *classifying* emotion to *displaying* it in generation. 'Persona' consistency became key.",
           "key_manifestations": [
             "Rashkin, H., et al. (2019). 'Towards Empathetic Open-domain Conversation Models: A New Benchmark and Dataset'",
@@ -7489,7 +7489,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 16,
+          "salience_share": 16,
           "description": "Theory of Mind (+2%). LLMs (GPT-4) showed emergent 'Theory of Mind'\u2014the ability to model the mental state of others. They could explain *why* a character felt sad. This subsumed 'Sentiment Analysis' into general 'Reasoning.' Sentiment became a zero-shot capability.",
           "key_manifestations": [
             "Kosinski, M. (2023). 'Theory of Mind May Have Spontaneously Emerged in Large Language Models'",
@@ -7499,7 +7499,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Voice & Multimodal Empathy (+4%). GPT-4o and Hume AI. The model processes raw audio tonality and responds with emotional prosody. It can 'hear' a sigh or a laugh. The interface is no longer text; it's a 'Voice' that feels human. The 'Uncanny Valley' of personality is being crossed. The danger of 'Parasocial Relationships' spikes.",
           "key_manifestations": [
             "OpenAI (2024). 'GPT-4o' (Omni-model with native audio emotion)",
@@ -7515,7 +7515,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Cyborg' dimension. It acknowledges that AI models are expensive to train and data is expensive to label. It tracks the methods for optimally using human effort: 'Active Learning' (asking for the most informative label), 'Crowdsourcing' (Mechanical Turk), 'Weak Supervision' (Snorkel), and finally 'RLHF' (Human preferences as the loss function). It defines the symbiotic loop between silicon and carbon.",
       "trajectory": {
         "1990": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Query by Committee (+1%). Seung et al. proposed: Train a committee of models. If they disagree on a point, ask the human for the label. This reduces the sample complexity of learning. It was the foundational algorithm of Active Learning.",
           "key_manifestations": [
             "Seung, H. S., et al. (1992). 'Query by Committee'",
@@ -7525,7 +7525,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The focus was on 'Selective Sampling.' Just filtering the training data. The cost of 'Human' interaction was abstract (oracle queries), not real dollars.",
           "key_manifestations": [
             "Atlas, L., et al. (1990). 'Training Connectionist Networks with Queries and Selective Sampling'",
@@ -7534,7 +7534,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Uncertainty Sampling (+1%). Lewis & Gale. Simple heuristic: Label the points where the model is least confident ($P(Y|X) \\approx 0.5$). It worked surprisingly well for text classification and became the industry baseline for 20 years.",
           "key_manifestations": [
             "Lewis, D. D., & Catlett, J. (1994). 'Heterogeneous Uncertainty Sampling for Supervised Learning'",
@@ -7543,7 +7543,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. The web was growing, but labeling was done by in-house experts (Yahoo Directory). No 'Crowd' yet.",
           "key_manifestations": [
             "McCallum, A., & Nigam, K. (1998). 'Employing EM and Pool-Based Active Learning for Text Classification' (1996-97 work)",
@@ -7552,7 +7552,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Co-Training (+0%). Blum & Mitchell. If you have two views of data (Webpage text + Link text), you can use one to label the other. This reduced the need for humans. It was 'Semi-Supervised' but relied on the same 'Information Value' principles.",
           "key_manifestations": [
             "Blum, A., & Mitchell, T. (1998). 'Combining Labeled and Unlabeled Data with Co-Training'",
@@ -7561,7 +7561,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. Open Mind Common Sense (MIT). Collecting data from volunteers on the web. The first 'Crowdsourced' AI dataset effort.",
           "key_manifestations": [
             "Singh, P., et al. (2002). 'Open Mind Common Sense: Knowledge Acquisition from the General Public' (2000 launch)",
@@ -7570,7 +7570,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Games with a Purpose (GWAP) (+1%). Luis von Ahn (CMU). The ESP Game. People play a game to label images (Google Image Labeler). This proved you could gamify the 'Loop.' It solved the 'Cost' problem by trading fun for data.",
           "key_manifestations": [
             "Von Ahn, L., & Dabbish, L. (2004). 'Labeling Images with a Computer Game'",
@@ -7579,7 +7579,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Mechanical Turk Launch (+1%). Amazon launched MTurk (2005). 'Artificial Artificial Intelligence.' Suddenly, access to human labelers was an API call. This revolutionized datasets. ImageNet (2009) would not have happened without MTurk.",
           "key_manifestations": [
             "Amazon (2005). 'Amazon Mechanical Turk Beta'",
@@ -7588,7 +7588,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Quality Control (+1%). Crowds are noisy. Dawid-Skene (1979) model was resurrected to aggregate noisy labels via EM. Researchers realized: 'The Human is a stochastic function.' You need to model the labeler's confusion matrix.",
           "key_manifestations": [
             "Raykar, V. C., et al. (2010). 'Learning From Crowds' (2009 work)",
@@ -7597,7 +7597,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "ImageNet (+1%). Fei-Fei Li used MTurk to label 14 million images. This was the 'Big Data' moment. It proved that massive, noisy, cheap human labeling > small, clean expert labeling.",
           "key_manifestations": [
             "Deng, J., et al. (2009). 'ImageNet: A Large-Scale Hierarchical Image Database'",
@@ -7606,7 +7606,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Stasis. Active Learning in Deep Learning was hard because uncertainty estimates in Deep Nets (Softmax) are uncalibrated (Cluster 33). Standard AL methods failed on Deep Nets. The field paused.",
           "key_manifestations": [
             "Settles, B. (2010). 'Active Learning Literature Survey' (The definitive summary)",
@@ -7615,7 +7615,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Interactive Machine Learning (+0%). User interfaces for teaching. 'Crayons' (Fails/Olsen). Users painting on images to train a classifier iteratively. Moving the loop from 'Batch' (send to MTurk) to 'Real-time' (User teaches the AI).",
           "key_manifestations": [
             "Amershi, S., et al. (2014). 'Power to the People: The Role of Humans in Interactive Machine Learning' (2012-13 work)",
@@ -7624,7 +7624,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Weak Supervision (+1%). Snorkel (Ratner). Instead of labeling points, write functions. 'def labeling_function(x): return POS if 'good' in x else ABSTAIN'. This allows 'Programming' data. It decoupled the human from the instance loop.",
           "key_manifestations": [
             "Ratner, A., et al. (2016). 'Data Programming: Creating Large Training Sets, Quickly' (Snorkel)",
@@ -7633,7 +7633,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Deep Active Learning (+4%). Gal et al. used MC-Dropout for uncertainty. Core-Set selection (Sener/Savarese). The field figured out how to do Active Learning with CNNs. It became crucial for medical imaging (expensive doctors).",
           "key_manifestations": [
             "Gal, Y., et al. (2017). 'Deep Bayesian Active Learning with Image Data'",
@@ -7642,7 +7642,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Human Preferences (RLHF Roots) (+3%). Christiano et al. (Cluster 25). Instead of labeling 'Cat/Dog', humans compare two trajectories: 'Is behavior A better than B?'. This is easier for humans and allows learning complex goals (like backflips or summarization) that can't be programmed.",
           "key_manifestations": [
             "Christiano, P. F., et al. (2017). 'Deep Reinforcement Learning from Human Preferences'",
@@ -7651,7 +7651,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "RLHF Scale (+10%). OpenAI applied Christiano's method to GPT-3. InstructGPT. This was the tipping point. The 'Loop' moved from 'Data Labeling' to 'Model Alignment.' The human role shifted from 'Teacher' to 'Critic.'",
           "key_manifestations": [
             "Ouyang, L., et al. (2022). 'Training Language Models to Follow Instructions with Human Feedback'",
@@ -7660,7 +7660,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "AI Feedback (RLAIF) (+5%). Anthropic's 'Constitutional AI.' Use the AI to critique itself, supervised by a human-written constitution. The human moves one level up: Evaluating the *principles*, not the data points. Scaling supervision beyond human limits.",
           "key_manifestations": [
             "Bai, Y., et al. (2022). 'Constitutional AI: Harmlessness from AI Feedback'",
@@ -7669,7 +7669,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Current trajectory is 'Human-AI Collaboration' (+5%). Co-pilot. The loop is tight: User types, AI suggests, User edits, AI learns. This is 'Implicit Feedback' at massive scale. Also, 'Superalignment': how do weak humans supervise superintelligent models? (Sandwiching, Debate).",
           "key_manifestations": [
             "Burns, C., et al. (2023). 'Weak-to-Strong Generalization'",
@@ -7685,7 +7685,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Aesthetic' dimension. It tracks the evolution of AI as an artist. From the symbolic, rule-based art of Harold Cohen's AARON in the 90s, to the evolutionary art (Genetic Algorithms) of the 2000s, to the 'DeepDream' hallucination era, and finally to the 'Diffusion' revolution (Midjourney/Sora). It explores the boundary between 'Tool' and 'Creator.'",
       "trajectory": {
         "1990": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Symbolic Art (+0%). Harold Cohen's AARON. A rule-based system that painted. It 'knew' what a person looked like (head, torso, limbs). It was 'Top-Down' creativity. The variance was low because it was a singular achievement, not a field.",
           "key_manifestations": [
             "Cohen, H. (1995). 'The Further Exploits of AARON, Painter'",
@@ -7694,7 +7694,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Evolutionary Art (+0%). Karl Sims. Using Genetic Algorithms (Cluster 10) to evolve images. The human acts as the 'Fitness Function' (Interactive Evolutionary Computation). You click the images you like, they breed. This was 'Bottom-Up' creativity.",
           "key_manifestations": [
             "Sims, K. (1991). 'Artificial Evolution for Computer Graphics'",
@@ -7703,7 +7703,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Musical Intelligence (+1%). David Cope's EMI (Experiments in Musical Intelligence). It parsed Bach and recombined patterns to create new 'Bach.' It challenged the music world: 'Is it art if it's recombination?'.",
           "key_manifestations": [
             "Cope, D. (1996). 'Experiments in Musical Intelligence'",
@@ -7712,7 +7712,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. 'Generative Art' using code (Processing/John Maeda) grew, but it was algorithmic (Perlin noise), not AI. The AI contribution was minimal.",
           "key_manifestations": [
             "Maeda, J. (1999). 'Design by Numbers'",
@@ -7721,7 +7721,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. The 'Flammable' algorithm (Fractal Flames) by Scott Draves. Iterated Function Systems. Beautiful, but mathematical, not learned.",
           "key_manifestations": [
             "Draves, S., & Reckase, E. (2003). 'The Electric Sheep Screen-Saver' (1999 launch)",
@@ -7729,7 +7729,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Image Analogies (+0%). Hertzmann et al. 'Image Analogies.' A:A' :: B:B'. It used patch-matching to transfer style (texture synthesis). This was the grandfather of Style Transfer. It was non-parametric.",
           "key_manifestations": [
             "Hertzmann, A., et al. (2001). 'Image Analogies'",
@@ -7738,7 +7738,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Computational Creativity became a formal workshop (ICCC). Researchers debated definitions of 'Novelty' and 'Value.'",
           "key_manifestations": [
             "Wiggins, G. A. (2006). 'A Preliminary Framework for Description, Analysis and Comparison of Creative Systems'",
@@ -7747,7 +7747,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. Neural nets were too weak to generate art. The focus was on 'Constraint Satisfaction' for music generation.",
           "key_manifestations": [
             "Pachet, F., & Roy, P. (2009). 'Finite-Length Markov Processes with Constraints'",
@@ -7756,7 +7756,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Deep Belief Net Generation (+1%). Hinton's digits. It wasn't 'Art,' but it was the first time a neural net generated coherent pixels. It planted the seed.",
           "key_manifestations": [
             "Hinton, G. E., et al. (2006). 'A Fast Learning Algorithm for Deep Belief Nets'",
@@ -7764,7 +7764,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. Procedural Content Generation (PCG) in games (Spore, Minecraft) was the dominant form of 'Generative' tech. It was noise-based (Perlin/Simplex), not learned.",
           "key_manifestations": [
             "Togelius, J., et al. (2011). 'Search-Based Procedural Content Generation: A Taxonomy and Survey'",
@@ -7773,7 +7773,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "RNN Text Gen (+0%). Sutskever (2011). Generating Wikipedia text. It was coherent enough to be interesting. 'Karpathy's Blog' (2015) would later popularize 'The Unreasonable Effectiveness of RNNs' for generating Shakespeare.",
           "key_manifestations": [
             "Sutskever, I., et al. (2011). 'Generating Text with Recurrent Neural Networks'",
@@ -7781,7 +7781,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Google Brain 'Cat' (+1%). Le et al. The network 'dreamed' a cat. Visualizing the optimal stimulus. This was the precursor to DeepDream.",
           "key_manifestations": [
             "Le, Q. V., et al. (2012). 'Building High-level Features Using Large Scale Unsupervised Learning'",
@@ -7789,7 +7789,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "DeepDream & Style Transfer (+6%). Google released DeepDream. Inceptionalism. It was psychedelic, alien art. Then Gatys et al. (2015) released Neural Style Transfer. 'Make this photo look like Van Gogh.' This went viral. It was the first 'mass market' AI art tool (Prisma app).",
           "key_manifestations": [
             "Mordvintsev, A., et al. (2015). 'Inceptionism: Going Deeper into Neural Networks' (DeepDream)",
@@ -7798,7 +7798,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "GAN Art (+5%). DCGAN, CycleGAN, Pix2Pix. Artists (Mario Klingemann, Robbie Barrat) began using GANs. The aesthetic was 'fluid, fleshy, surreal.' 'Edmond de Belamy' sold for $432k. GANs defined the aesthetic of the late 2010s.",
           "key_manifestations": [
             "Radford, A., et al. (2016). 'Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks'",
@@ -7807,7 +7807,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "BigGAN & Transformers (+3%). BigGAN generated high-res images. Music Transformer generated coherent piano pieces. The quality was improving, but control was low. You rolled the dice (latent vector) and hoped for something good.",
           "key_manifestations": [
             "Brock, A., et al. (2018). 'Large Scale GAN Training for High Fidelity Natural Image Synthesis'",
@@ -7816,7 +7816,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "CLIP + VQGAN (+7%). The 'Prompt' era began. Crowd-sourced hackers (Ryan Murdock, Katherine Crowson) combined CLIP (text steering) with VQGAN (image generator). You could type 'A fantasy castle' and the optimization loop would carve it out. This was 'Text-to-Image' v0.9.",
           "key_manifestations": [
             "Esser, P., et al. (2021). 'Taming Transformers for High-Resolution Image Synthesis' (VQGAN)",
@@ -7825,7 +7825,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 40,
+          "salience_share": 40,
           "description": "Diffusion Explosion (+15%). Midjourney, DALL-E 2, Stable Diffusion. High-fidelity, controllable art from text. The barrier to entry dropped to zero. Artists rebelled ('No AI Art' protests). The cluster became the defining cultural phenomenon of AI in 2022.",
           "key_manifestations": [
             "Rombach, R., et al. (2022). 'High-Resolution Image Synthesis with Latent Diffusion Models'",
@@ -7834,7 +7834,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "Current trajectory is 'Video & Control' (+5%). Sora (Video), ControlNet (Pose control), Suno (Music). The focus is on 'Directability.' Can I make the character turn left? Can I keep the same face across shots? AI is moving from 'Art Generator' to 'Production Studio.'",
           "key_manifestations": [
             "OpenAI (2024). 'Sora'",
@@ -7850,7 +7850,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Structured Knowledge' of AI. It tracks the effort to map the world into entities and relationships (Triples: 'Paris-is_capital_of-France'). The trajectory moves from the rigid 'Expert Systems' and 'Cyc' of the 90s, to the 'Semantic Web' (RDF/OWL) dream of the 2000s, to the industrial 'Knowledge Graphs' (Google/Facebook) of the 2010s, and finally to the 'Neuro-Symbolic' merger with LLMs (GraphRAG) in the 2020s. It is the counter-weight to the unstructured statistical learning of Neural Nets.",
       "trajectory": {
         "1990": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Cyc & Expert Systems (+1%). Lenat's Cyc project attempted to encode all human common sense into logic. 'Trees' and 'Frames' were the data structures. The premise: Intelligence requires a massive database of facts. It was manual, brittle, and expensive.",
           "key_manifestations": [
             "Lenat, D. B., & Guha, R. V. (1990). 'Building Large Knowledge-Based Systems'",
@@ -7860,7 +7860,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. Description Logics (DL) formalized the math of ontologies. It was rigorous but academic. The web existed but had no semantic layer.",
           "key_manifestations": [
             "Baader, F., et al. (1992). 'The Description Logic Handbook' (Roots)",
@@ -7869,7 +7869,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. The AI Winter hurt this cluster. 'Knowledge Engineering' was seen as a bottleneck. Statistical NLP began to rise, challenging the utility of hand-coded grammars and ontologies.",
           "key_manifestations": [
             "Gruber, T. R. (1995). 'Toward Principles for the Design of Ontologies Used for Knowledge Sharing'",
@@ -7878,7 +7878,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "WordNet (+0%). WordNet became the standard lexical ontology. It mapped English into synsets. It was the backbone of NLP for a decade. It was 'Linguistic Knowledge,' not 'World Knowledge.'",
           "key_manifestations": [
             "Miller, G. A. (1995). 'WordNet: A Lexical Database for English'",
@@ -7887,7 +7887,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "The Semantic Web (+1%). Tim Berners-Lee proposed the Semantic Web. 'The web of data.' RDF (Resource Description Framework) was the standard. The vision: Agents roaming the web, reading RDF, and booking appointments automatically. It was Utopian.",
           "key_manifestations": [
             "Berners-Lee, T., et al. (2001). 'The Semantic Web' (Scientific American - 1998-99 drafts)",
@@ -7896,7 +7896,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "OWL & Prot\u00e9g\u00e9 (+1%). The W3C standardized OWL (Web Ontology Language). Prot\u00e9g\u00e9 (Stanford) became the editor. The academic community was vibrant, but the industrial web ignored it. Google used links, not ontologies.",
           "key_manifestations": [
             "Horrocks, I., et al. (2003). 'From SHIQ and RDF to OWL: The Making of a Web Ontology Language'",
@@ -7905,7 +7905,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis. 'Linked Data' became the buzzword. Wikipedia started (2001). The idea of *extracting* knowledge from Wikipedia began to form (DBpedia precursor).",
           "key_manifestations": [
             "Bizer, C., et al. (2009). 'Linked Data - The Story So Far' (Roots in early 2000s)",
@@ -7914,7 +7914,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 7,
+          "salience_share": 7,
           "description": "Information Extraction (+1%). Banko et al. introduced 'Open Information Extraction' (TextRunner). Extract '(Arg1, Relation, Arg2)' tuples from the web without a pre-defined schema. This was the bridge between Unstructured Text and Structured Graphs.",
           "key_manifestations": [
             "Banko, M., et al. (2007). 'Open Information Extraction from the Web' (2005-06 work)",
@@ -7923,7 +7923,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Freebase (+1%). Metaweb (Danny Hillis) launched Freebase. A massive, crowd-sourced graph of entities. It was the first 'Web Scale' knowledge graph that worked. Google bought it in 2010. It proved the graph needed to be 'Fuzzy' and 'Crowdsourced,' not strict Logic.",
           "key_manifestations": [
             "Bollacker, K., et al. (2008). 'Freebase: A Collaboratively Created Graph Database for Structuring Human Knowledge' (2006-07 launch)",
@@ -7932,7 +7932,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Stasis. Semantic Web 'Winter.' The dream of a fully semantic web died. JSON/REST APIs won over RDF/SPARQL. The cluster retreated to 'Enterprise Knowledge Management.'",
           "key_manifestations": [
             "Shadbolt, N., et al. (2006). 'The Semantic Web Revisited'",
@@ -7941,7 +7941,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Google Knowledge Graph (+4%). Google launched 'Things, not Strings.' The Infobox appeared. They used the graph to disambiguate 'Jaguar' (Car vs Animal). This was the massive industrial validation. Knowledge Graphs (KG) became a standard component of Search.",
           "key_manifestations": [
             "Singhal, A. (2012). 'Introducing the Knowledge Graph'",
@@ -7950,7 +7950,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Knowledge Graph Embeddings (+3%). Bordes et al. introduced TransE. Embed entities and relations as vectors. $Head + Relation \\approx Tail$. This merged KGs with Deep Learning (Cluster 15). You could do 'Link Prediction' with vector arithmetic.",
           "key_manifestations": [
             "Bordes, A., et al. (2013). 'Translating Embeddings for Modeling Multi-relational Data' (TransE)",
@@ -7959,7 +7959,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Stasis. KGs were standard in big tech (Facebook Graph, LinkedIn Economic Graph). The research focused on 'Complex Queries' over embeddings (answering logic queries in vector space).",
           "key_manifestations": [
             "Yang, B., et al. (2015). 'Embedding Entities and Relations for Learning and Inference in Knowledge Bases' (DistMult)",
@@ -7968,7 +7968,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "Stasis. GNNs (Cluster 12) began to be applied to KGs (R-GCN). This improved reasoning power. But KGs were hard to maintain. They were always incomplete.",
           "key_manifestations": [
             "Schlichtkrull, M., et al. (2018). 'Modeling Relational Data with Graph Convolutional Networks' (2017 work)",
@@ -7977,7 +7977,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 18,
+          "salience_share": 18,
           "description": "KG-Augmented Language Models (+3%). ERNIE (Baidu) and K-BERT. Injecting KG triples into BERT to improve factual accuracy. The idea: 'BERT has syntax, KG has facts.' Merge them.",
           "key_manifestations": [
             "Zhang, Z., et al. (2019). 'ERNIE: Enhanced Language Representation with Informative Entities'",
@@ -7986,7 +7986,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Question Answering over KGs (+2%). Using KGs to answer complex questions where LLMs hallucinate. 'Multi-hop reasoning.' The KG provides the 'Ground Truth' path.",
           "key_manifestations": [
             "Saxena, A., et al. (2020). 'Improving Multi-hop Question Answering over Knowledge Graphs using Knowledge Base Embeddings'",
@@ -7995,7 +7995,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 22,
+          "salience_share": 22,
           "description": "LLMs as Knowledge Bases (+2%). A debate: 'Do we need KGs if GPT-4 knows everything?'. Petroni et al. showed LLMs *are* KGs. But they are static and hallucinate. The field pivoted to 'KGs for RAG.'",
           "key_manifestations": [
             "Petroni, F., et al. (2019/2022). 'Language Models as Knowledge Bases?'",
@@ -8004,7 +8004,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Current trajectory is 'GraphRAG' (+3%). Microsoft. Construct a KG *from* the documents using the LLM, then use the Graph to answer 'Global' questions ('What are the main themes?'). This solves the 'Connecting the Dots' problem that vector search (Cluster 29) misses.",
           "key_manifestations": [
             "Edge, D., et al. (2024). 'From Local to Global: A Graph RAG Approach to Query-Focused Summarization'",
@@ -8019,7 +8019,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Unified Theory of Cognition' approach. Unlike the modular 'Narrow AI' (just vision, just chess), this cluster attempts to build a single, invariant structure that models the entire human mind\u2014memory, perception, action, and reasoning. Dominated by Newell's SOAR and Anderson's ACT-R, it bridges Psychology and AI. Its trajectory was high-status in the 90s (the 'Standard Model of the Mind'), fell into obscurity during the 'Big Data' era (too slow/complex), and is currently resurging as the architectural blueprint for 'LLM Agents' (combining Memory, Planning, and Tools).",
       "trajectory": {
         "1990": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "The 'Unified Theories' Era (+1%). Allen Newell published 'Unified Theories of Cognition.' The goal was grand: A single software architecture (SOAR) that produces all human behavior. It used 'Production Systems' (If-Then rules) and 'Chunking' (learning from impasses). It was the dominant paradigm for 'General Intelligence' (AGI) before the term existed.",
           "key_manifestations": [
             "Newell, A. (1990). 'Unified Theories of Cognition' (The book)",
@@ -8029,7 +8029,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. ACT-R (Adaptive Control of Thought-Rational) formalized the distinction between 'Declarative Memory' (facts) and 'Procedural Memory' (skills). It fitted human reaction time data perfectly. The 'Motion' was fitting psychological curves, not engineering applications.",
           "key_manifestations": [
             "Anderson, J. R. (1993). 'Rules of the Mind'",
@@ -8039,7 +8039,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "EPIC & Human-Computer Interaction (+0%). Kieras & Meyer introduced EPIC to model human motor-perceptual constraints. It was used to predict how fast a human could use a GUI. The cluster found a niche in 'Cognitive Modeling' for interface design, moving away from autonomous AI.",
           "key_manifestations": [
             "Kieras, D. E., & Meyer, D. E. (1997). 'An Overview of the EPIC Architecture for Cognition and Performance' (1994-95 work)",
@@ -8048,7 +8048,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Decline (-1%). The 'Learning' problem. These architectures were great at *running* a program, but bad at *learning* it from raw data. They required manual coding of production rules. As Statistical Learning (SVMs) rose, manual cognitive modeling looked tedious and unscalable.",
           "key_manifestations": [
             "Anderson, J. R., & Lebiere, C. (1998). 'The Atomic Components of Thought'",
@@ -8057,7 +8057,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. CLARION (Sun) attempted to hybridize Connectionist (Neural) and Symbolic layers. 'Explicit' rules at the top, 'Implicit' nets at the bottom. It was ahead of its time (Neuro-Symbolic), but lacked the compute to train the neural parts effectively.",
           "key_manifestations": [
             "Sun, R., et al. (2001). 'CLARION: A Two-Level Cognitive Architecture' (1998-99 work)",
@@ -8066,7 +8066,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Nadir. The 'AI' field became 'Machine Learning.' Cognitive Architectures were relegated to Psychology departments. They were viewed as 'Good Old Fashioned AI' (GOFAI) relics.",
           "key_manifestations": [
             "Langley, P., et al. (2009). 'Cognitive Architectures: Research Issues and Challenges' (Reflecting the decline)",
@@ -8075,7 +8075,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. DARPA Biologically Inspired Cognitive Architectures (BICA). A funding injection tried to revive the field. It produced frameworks, but no 'AlphaGo' moments. The complexity of the software (millions of lines of Lisp/C++) choked progress.",
           "key_manifestations": [
             "Samsonovich, A. V., et al. (2008). 'Biologically Inspired Cognitive Architectures' (2002-2004 program roots)",
@@ -8084,7 +8084,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Sigma (Rosenbloom). Attempting to rewrite SOAR using Graphical Models (Cluster 3). A noble attempt to unify Logic and Probability, but it remained theoretical.",
           "key_manifestations": [
             "Rosenbloom, P. S. (2006). 'A Cognitive Architecture Based on Logic and Probability' (Sigma)",
@@ -8093,7 +8093,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Deep Learning arrived. Cognitive Architectures ignored it, sticking to symbolic rules. This strategic error cost them relevance for another decade.",
           "key_manifestations": [
             "Laird, J. E. (2008). 'Extending the Soar Cognitive Architecture'",
@@ -8102,7 +8102,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. IBM Watson (2011 prep). Watson was arguably a cognitive architecture (DeepQA), combining many modules. It was a brief victory for the 'System of Systems' approach over the 'End-to-End' approach.",
           "key_manifestations": [
             "Ferrucci, D., et al. (2010). 'Building Watson: An Overview of the DeepQA Project'",
@@ -8111,7 +8111,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Spaun (+1%). Eliasmith et al. built Spaun (Semantic Pointer Architecture Unified Network). A massive spiking neural network (2.5M neurons) that could do vision, math, and motor control. It was the first *neural* cognitive architecture that obeyed biological constraints. It bridged Cluster 17 (Neuromorphic) and Cluster 45.",
           "key_manifestations": [
             "Eliasmith, C., et al. (2012). 'A Large-Scale Model of the Functioning Brain' (Spaun - Science cover)",
@@ -8120,7 +8120,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stasis. DeepMind founded (2010/12). Hassabis explicitly wanted to build 'AGI' by fusing Deep Learning with Systems Neuroscience (Hippocampus/Cortex). DeepMind was effectively building a 'Neural Cognitive Architecture' (DNC, AlphaGo), displacing the symbolic old guard.",
           "key_manifestations": [
             "Kumaran, D., et al. (2016). 'What Learning Systems do Intelligent Agents Need?' (DeepMind's CLS manifesto)",
@@ -8129,7 +8129,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Neural Turing Machines (+0%). Differentiable Computers. The idea of 'External Memory' + 'Controller' matches the Cognitive Architecture diagram. The difference: it's fully differentiable. The field was reinventing the 90s architectures using gradient descent.",
           "key_manifestations": [
             "Graves, A., et al. (2014). 'Neural Turing Machines'",
@@ -8138,7 +8138,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The Common Model (+1%). Laird, Lebiere, Rosenbloom published 'A Standard Model of the Mind.' Trying to unify SOAR, ACT-R, and Sigma into a consensus architecture (Working Memory, Long-term Memory, Perception, Motor). A desperate attempt to standardize before Deep Learning ate everything.",
           "key_manifestations": [
             "Laird, J. E., et al. (2017). 'A Standard Model of the Mind'",
@@ -8147,7 +8147,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "World Models (+1%). Ha & Schmidhuber. A 'World Model' (VAE) + 'Controller' (RNN). This explicit separation of 'Dreaming' and 'Acting' mirrored cognitive theories. It was a 'Learned' Cognitive Architecture.",
           "key_manifestations": [
             "Ha, D., & Schmidhuber, J. (2018). 'World Models'",
@@ -8156,7 +8156,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Global Workspace Theory (+2%). Bengio and Goyal proposed 'The Consciousness Prior.' Modular experts communicating via a shared, low-bandwidth bottleneck (Global Workspace). This brought Baars' cognitive theory into Deep Learning (Transformers).",
           "key_manifestations": [
             "Goyal, A., & Bengio, Y. (2022). 'Inductive Biases for Deep Learning of Higher-Level Cognition' (2020 work)",
@@ -8165,7 +8165,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "LLM as Cognitive Model (+9%). A massive pivot. Researchers realized: 'The LLM *is* the Cognitive Architecture.' It has Working Memory (Context Window), Long Term Memory (Weights/RAG), and Reasoning (Chain of Thought). ACT-R is obsolete; GPT-4 is the new Standard Model. Psychologists began using LLMs to simulate human experiments.",
           "key_manifestations": [
             "Sumers, T., et al. (2023). 'Cognitive Architectures for Language Agents'",
@@ -8175,7 +8175,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Current trajectory is 'Cognitive Agents' (+5%). The 'Agent' loop (Perceive -> Think -> Act) is being built around the LLM core. System 1 (Next token) + System 2 (CoT/Search). The 'Cognitive Architecture' community is effectively dead, reincarnated as 'Agent Engineering.'",
           "key_manifestations": [
             "Xi, Z., et al. (2023). 'The Rise and Potential of Large Language Model Based Agents: A Survey'",
@@ -8191,7 +8191,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the science of 'Predicting the Future.' It tracks the evolution of modeling temporal dependencies in continuous data (Stock prices, Weather, Energy demand). The trajectory moves from the statistical rigor of ARIMA/GARCH in the 90s, to the Machine Learning takeover (SVR/GBM) in the 2000s, to the 'Deep Forecasting' era (LSTMs, N-BEATS) of the 2010s, and finally to the 'Time Series Foundation Models' (Chronos, TimesFM) of the 2020s, which treat time series as a language.",
       "trajectory": {
         "1990": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Box-Jenkins & GARCH (+2%). The era of linear statistics. ARIMA (AutoRegressive Integrated Moving Average) was the hammer. If volatility clustered (Finance), you used GARCH (Engle/Bollerslev). It was rigorous, explainable, and handled small data well.",
           "key_manifestations": [
             "Hamilton, J. D. (1994). 'Time Series Analysis' (The textbook)",
@@ -8201,7 +8201,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Neural Networks for Forecasting (+0%). Early attempts to use MLPs for stocks. They mostly failed due to overfitting and non-stationarity. The 'Santa Fe Time Series Competition' (1991/1992) showed that non-linear methods (Neural Nets) could beat ARIMA on chaotic data (lasers), but struggled on financial data.",
           "key_manifestations": [
             "Weigend, A. S., et al. (1990/1992). 'Back-propagation, Weight-Elimination and Time Series Prediction'",
@@ -8210,7 +8210,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Stasis. Econometrics dominated. 'Cointegration' (Granger) was the big idea\u2014modeling the equilibrium between non-stationary series. AI was viewed as 'Data Mining' (pejorative) in finance.",
           "key_manifestations": [
             "Hamilton, J. D. (1994). 'Time Series Analysis'",
@@ -8219,7 +8219,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Support Vector Regression (SVR) (+1%). Vapnik extended SVMs to regression. SVR showed promise for time series because the $\\epsilon$-insensitive loss ignored small noise (robustness). It became popular for electric load forecasting.",
           "key_manifestations": [
             "M\u00fcller, K. R., et al. (1997). 'Predicting Time Series with Support Vector Machines'",
@@ -8228,7 +8228,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Stasis. Kalman Filters were the standard for 'State Space' modeling. They handled noise and missing data better than early neural nets. The 'Displacing Force' was the interpretability of State Space models (Level, Trend, Seasonality).",
           "key_manifestations": [
             "Harvey, A. C. (1989/1998). 'Forecasting, Structural Time Series Models and the Kalman Filter'",
@@ -8237,7 +8237,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Stasis. Financial engineering boomed (Black-Scholes variants), but it was Stochastic Calculus, not Learning. ML was used for 'Classification' (Up/Down) rather than 'Forecasting' (Price).",
           "key_manifestations": [
             "Tay, F. E., & Cao, L. (2001). 'Application of Support Vector Machines in Financial Time Series Forecasting'",
@@ -8246,7 +8246,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Ensemble Methods (+1%). Bagging and Boosting applied to time series. It worked, but handling temporal dependence was tricky. The 'M-Competitions' (Makridakis) showed that simple statistical methods (Exponential Smoothing) often beat complex ML.",
           "key_manifestations": [
             "Makridakis, S., & Hibon, M. (2000). 'The M3-Competition: Results, Conclusions and Implications'",
@@ -8255,7 +8255,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Stasis. Echo State Networks (Cluster 17) showed some promise for chaotic series. But ARIMA remained the 'Excel Default.'",
           "key_manifestations": [
             "Jaeger, H., & Haas, H. (2004). 'Harnessing Nonlinearity: Predicting Chaotic Systems'",
@@ -8263,7 +8263,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Prophet Pre-History (+0%). The need for 'Business Forecasting' (Holidays, Seasonality, Trend changes) was growing at Google/Facebook. Standard models failed on 'human' time series.",
           "key_manifestations": [
             "Taylor, S. J., & Letham, B. (2018). 'Forecasting at Scale' (Prophet - but roots in 2000s Generalized Additive Models)",
@@ -8271,7 +8271,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 11,
+          "salience_share": 11,
           "description": "Gradient Boosting for Time Series (+1%). Kaggle competitions (Walmart Sales, Rossmann) showed that XGBoost (with lag features) beat ARIMA. The trick: Transform time series into a supervised learning problem (Windowing). This killed the 'Recurrent' necessity for tabular series.",
           "key_manifestations": [
             "Taieb, S. B., et al. (2012). 'A Review and Comparison of Strategies for Multi-Step Ahead Time Series Forecasting' (2010s context)",
@@ -8280,7 +8280,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "LSTM Return (+1%). Graves' work on RNNs revived interest. LSTMs were applied to 'Sequence Prediction.' They handled long-term dependencies better than ARIMA's fixed lags. However, training was slow.",
           "key_manifestations": [
             "Graves, A. (2013). 'Generating Sequences With Recurrent Neural Networks'",
@@ -8289,7 +8289,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "DeepAR & Probabilistic RNNs (+3%). Amazon (Salinas et al.) introduced DeepAR. It used LSTMs to predict the *parameters* of a distribution (Gaussian/Negative Binomial). This provided confidence intervals. It allowed 'Global Models'\u2014training one model on 1000s of time series simultaneously (Cross-Learning).",
           "key_manifestations": [
             "Salinas, D., et al. (2020). 'DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks' (2017 arXiv, 2013-15 dev)",
@@ -8298,7 +8298,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "M4 Competition Shock (+5%). Smyl used a Hybrid method (LSTM + Exponential Smoothing) to win the M4 competition. This proved ML could beat pure Statistics *if* combined properly. It ended the 'ML is worse than ARIMA' dogma.",
           "key_manifestations": [
             "Makridakis, S., et al. (2018). 'The M4 Competition: Results, Conclusions, Implications'",
@@ -8307,7 +8307,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "N-BEATS & TCNs (+5%). Oreshkin et al. (N-BEATS) showed a pure DL architecture (stacks of MLPs) could beat hybrids. Temporal Convolutional Networks (TCN) showed ConvNets could beat RNNs on sequence data. The field moved to 'Specialized Architectures' for time.",
           "key_manifestations": [
             "Bai, S., et al. (2018). 'An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling' (TCN)",
@@ -8316,7 +8316,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Transformers for Time Series (+5%). Li et al. (LogSparse Transformer) and Lim (TFT). Applying Self-Attention to time. The challenge was the $O(N^2)$ cost for long series. 'Informer' and 'Autoformer' introduced sparse attention mechanisms for long sequences.",
           "key_manifestations": [
             "Li, S., et al. (2019). 'Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting'",
@@ -8325,7 +8325,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 35,
+          "salience_share": 35,
           "description": "Linear vs Transformer Wars (+5%). Zeng et al. (DLinear) showed that a simple Linear layer often beat complex Transformers on benchmarks. It revealed that Transformers were overfitting to noise. The field had a 'Reality Check.'",
           "key_manifestations": [
             "Zeng, A., et al. (2023). 'Are Transformers Effective for Time Series Forecasting?' (DLinear)",
@@ -8334,7 +8334,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 40,
+          "salience_share": 40,
           "description": "Time Series Foundation Models (+5%). Lag-Llama, TimeGPT. Can we train a 'GPT' for time series on billions of heterogeneous series? Zero-shot forecasting. The results were mixed but promising. 'PatchTST' showed that patchifying time series (like ViT) works best.",
           "key_manifestations": [
             "Garza, A., & Mergenthaler-Canseco, M. (2023). 'TimeGPT-1'",
@@ -8343,7 +8343,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 45,
+          "salience_share": 45,
           "description": "Current trajectory is 'LLM Adaptation' (+5%). Chronos (Amazon). Don't train a new model; tokenizing time series values into buckets and feeding them to a frozen T5/LLaMA. It turns out Language Models understand the 'Language of Time' (patterns, seasonality) zero-shot.",
           "key_manifestations": [
             "Ansari, A. F., et al. (2024). 'Chronos: Learning the Language of Time Series'",
@@ -8359,7 +8359,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Rosetta Stone' era of AI translation. It relied on the 'Noisy Channel Model'\u2014treating translation as decoding a scrambled message using Bayes' Rule ($P(E|F) \\propto P(F|E) P(E)$). It tracks the evolution from the word-based IBM Models of the 90s, to the Phrase-Based SMT (Moses) dominance of the 2000s, to its rapid and total extinction by Neural Machine Translation (NMT) in 2016. It is a case study in how a dominant, mathematically rigorous paradigm can be completely displaced by a 'black box' data-driven approach.",
       "trajectory": {
         "1990": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "The IBM Models (+3%). Brown et al. at IBM Research published the seminal paper. They introduced IBM Models 1-5. The core idea: Word alignment. 'Le' aligns to 'The'. It was purely statistical, ignoring linguistics (syntax/grammar). This shocked the rule-based MT community ('Systran').",
           "key_manifestations": [
             "Brown, P. F., et al. (1990). 'A Statistical Approach to Machine Translation'",
@@ -8369,7 +8369,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Stasis. The algorithms (EM for alignment) were computationally expensive. The 'Displacing Force' against adoption was the lack of parallel corpora (bitexts). The Canadian Hansards were the only major dataset.",
           "key_manifestations": [
             "Brown, P. F., et al. (1993). 'The Mathematics of Statistical Machine Translation'",
@@ -8378,7 +8378,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 9,
+          "salience_share": 9,
           "description": "Alignment Refinement (+1%). The focus was on improving the 'Translation Model' $P(F|E)$. Heuristics for handling fertility (one word becoming two) and distortion (reordering).",
           "key_manifestations": [
             "Dagan, I., et al. (1994). 'Robust Bilingual Word Alignment for Machine Aided Translation'",
@@ -8387,7 +8387,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Decoder Optimization (+1%). Searching for the best sentence in the SMT search space is NP-hard. 'Stack Decoding' (A* search variants) became the standard. The 'Language Model' $P(E)$ (N-gram) became the primary driver of fluency.",
           "key_manifestations": [
             "Tillmann, C., et al. (1997). 'Accelerated DP Based Search for Statistical Translation' (1996 work)",
@@ -8396,7 +8396,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Phrase-Based SMT Origins (+2%). Researchers realized 'Word-for-Word' translation is bad. You need to translate chunks ('pomme de terre' -> 'potato'). Och and Ney began formulating the alignment of 'Phrases' (blocks of pixels in the alignment matrix).",
           "key_manifestations": [
             "Och, F. J., & Weber, H. (1998). 'Improving Statistical Natural Language Translation with Categories and Rules'",
@@ -8405,7 +8405,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 15,
+          "salience_share": 15,
           "description": "The BLEU Metric (+3%). Papineni et al. (IBM) introduced BLEU. An automatic metric to evaluate translation quality against human references. This was a *massive* catalyst. It allowed rapid hill-climbing without expensive human eval. It defined the 'game' of MT for 15 years.",
           "key_manifestations": [
             "Papineni, K., et al. (2002). 'BLEU: a Method for Automatic Evaluation of Machine Translation' (2001 work)",
@@ -8414,7 +8414,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "Phrase-Based SMT Dominance (+5%). Och & Ney formalized Phrase-Based SMT (PBSMT). It beat all rule-based systems. It became the industrial standard (Google Translate launch architecture). The logic: 'Memorize short sequences, stitch them together using a language model.'",
           "key_manifestations": [
             "Koehn, P., et al. (2003). 'Statistical Phrase-Based Translation' (The seminal paper)",
@@ -8423,7 +8423,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 25,
+          "salience_share": 25,
           "description": "Moses Toolkit (+5%). Philipp Koehn released 'Moses.' An open-source SMT engine. This democratized the field. Anyone could build a translator for any language pair if they had data. It sparked an explosion of academic research.",
           "key_manifestations": [
             "Koehn, P., et al. (2007). 'Moses: Open Source Toolkit for Statistical Machine Translation' (2005-06 dev)",
@@ -8432,7 +8432,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 28,
+          "salience_share": 28,
           "description": "Hierarchical SMT (+3%). David Chiang introduced 'Hiero.' It used SCFGs (Synchronous Context-Free Grammars). It allowed 'gaps' in phrases ('eat [X] up' -> 'manger [X]'). This handled reordering between languages (like Chinese-English) better than flat phrases.",
           "key_manifestations": [
             "Chiang, D. (2007). 'Hierarchical Phrase-Based Translation'",
@@ -8441,7 +8441,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Syntax-Based SMT (+2%). Trying to inject linguistic trees into SMT. 'Tree-to-String' or 'String-to-Tree.' It improved grammaticality but increased complexity. The system was becoming a 'Rube Goldberg machine' of distinct modules (Alignment, Reordering, Language Model, Translation Model).",
           "key_manifestations": [
             "Shen, L., et al. (2008). 'A New String-to-Dependency Machine Translation Algorithm'",
@@ -8450,7 +8450,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 32,
+          "salience_share": 32,
           "description": "Peak SMT (+2%). The system was mature. Google Translate was decent. Research focused on 'Domain Adaptation' and 'System Combination.' But the 'Semantic Gap' remained: SMT produced 'word salad'\u2014locally coherent, globally nonsense.",
           "key_manifestations": [
             "Bisazza, A., & Federico, M. (2010). 'Dynamically Shaping the Search Space in Hierarchical Phrase-Based Translation'",
@@ -8459,7 +8459,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 30,
+          "salience_share": 30,
           "description": "Neural Features (-2%). Researchers started adding 'Neural Features' to the SMT log-linear model. Using a neural language model to rescore the SMT output. This was the 'Trojan Horse' of Deep Learning entering the field.",
           "key_manifestations": [
             "Mikolov, T., et al. (2013). 'Exploiting Similarities among Languages for Machine Translation' (Word2Vec for MT)",
@@ -8468,7 +8468,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 20,
+          "salience_share": 20,
           "description": "The Seq2Seq Disruption (-10%). Sutskever/Bahdanau (Cluster 6). 'Sequence to Sequence' neural networks appeared. Initially, they matched SMT. But they were 'End-to-End.' One model replacing the entire Moses pipeline. The 'Displacing Force' was simplicity.",
           "key_manifestations": [
             "Sutskever, I., et al. (2014). 'Sequence to Sequence Learning with Neural Networks'",
@@ -8477,7 +8477,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "The Collapse (-15%). Google launched GNMT (Google Neural Machine Translation). It reduced translation errors by 60% overnight. It was a phase transition. SMT research evaporated. Conferences like ACL shifted entirely to Neural MT.",
           "key_manifestations": [
             "Wu, Y., et al. (2016). 'Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation'",
@@ -8486,7 +8486,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Legacy. SMT survived only in 'Low Resource' languages where neural nets overfit, or for 'Interpretability' needs. Unsupervised NMT (Lample et al.) showed you didn't even need parallel text anymore.",
           "key_manifestations": [
             "Lample, G., et al. (2018). 'Unsupervised Machine Translation Using Monolingual Corpora Only'",
@@ -8495,7 +8495,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Historical Footnote. The concepts of 'Alignment' (Attention) and 'Language Modeling' (Decoder) survived, but the statistical machinery (EM, IBM Models) was gone.",
           "key_manifestations": [
             "Reference: 'The complete replacement of the SMT stack'",
@@ -8503,7 +8503,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 0,
+          "salience_share": 0,
           "description": "Zero Variance. Translation is now just a prompting task for LLMs ('Translate this to French').",
           "key_manifestations": [
             "Brown, T. B., et al. (2020). 'Language Models are Few-Shot Learners' (Translation as few-shot)",
@@ -8511,7 +8511,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 0,
+          "salience_share": 0,
           "description": "Merged into 'Multilingual Foundation Models' (Cluster 6).",
           "key_manifestations": [
             "Team, N., et al. (2024). 'No Language Left Behind: Scaling Human-Centered Machine Translation'",
@@ -8525,7 +8525,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Source Code' of AI\u2014the mathematical modeling of the biological brain. It is the upstream reservoir of ideas (Hebbian learning, Reinforcement learning, Normalization, Attention) that drift into engineering. The trajectory tracks the 'Hodgkin-Huxley' biophysics of the 90s, to the 'Population Coding' and 'STDP' of the 2000s, to the 'Deep Learning as Brain Model' convergence of the 2010s/20s (Brain-Score).",
       "trajectory": {
         "1990": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "The Biophysical Era (+1%). The focus was on single neurons. Hodgkin-Huxley equations. Modeling ion channels. The goal was 'Realism.' Neural Nets (AI) were seen as 'Cartoon' models. The 'Binding Problem' (how the brain combines features) was the big mystery.",
           "key_manifestations": [
             "Koch, C., & Segev, I. (1989/1990). 'Methods in Neuronal Modeling'",
@@ -8535,7 +8535,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. Information Theory enters Neuroscience. Bialek et al. 'Spikes in time.' Quantifying how much information a spike train carries. The 'Neural Code' debate: Rate vs Timing.",
           "key_manifestations": [
             "Bialek, W., et al. (1991). 'Reading a Neural Code'",
@@ -8544,7 +8544,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Sparse Coding (+1%). Olshausen & Field (Cluster 11) showed V1 receptive fields emerge from sparsity. This was a massive win for 'Normative' theories (Optimization) over 'Descriptive' theories. The brain *optimizes* an objective function.",
           "key_manifestations": [
             "Olshausen, B. A., & Field, D. J. (1996). 'Emergence of Simple-Cell Receptive Field Properties' (1994-95 work)",
@@ -8553,7 +8553,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Synaptic Plasticity (STDP) (+0%). Discovery of Spike-Timing Dependent Plasticity. A local learning rule. It gave hope for unsupervised learning in hardware (Cluster 17).",
           "key_manifestations": [
             "Markram, H., et al. (1997). 'Regulation of Synaptic Efficacy by Coincidence of Postsynaptic APs and EPSPs'",
@@ -8561,7 +8561,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Reinforcement Learning in the Brain (+1%). Schultz, Dayan, Montague showed that Dopamine neurons encode 'Reward Prediction Error' (TD-Error). This linked Cluster 7 (RL) directly to the Basal Ganglia. It is the most successful theory in Computational Neuroscience.",
           "key_manifestations": [
             "Schultz, W., Dayan, P., & Montague, P. R. (1997). 'A Neural Substrate of Prediction and Reward'",
@@ -8570,7 +8570,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Stasis. 'Population Coding.' How groups of neurons represent variables (e.g., direction). Pouget et al. 'Basis Function' hypothesis. The brain represents probabilities via population activity.",
           "key_manifestations": [
             "Pouget, A., et al. (2000). 'Information Processing with Population Codes'",
@@ -8579,7 +8579,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "Bayesian Brain (+0%). The hypothesis that the brain performs Bayesian Inference (Cluster 3). Illusions are just 'Prior' biases. The 'Free Energy Principle' (Friston) began to form: The brain minimizes surprise.",
           "key_manifestations": [
             "Knill, D. C., & Pouget, A. (2004). 'The Bayesian Brain: The Role of Uncertainty in Neural Coding'",
@@ -8588,7 +8588,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. Blue Brain Project (2005). 'Simulation' without 'Theory.' Heavy criticism for simulating complexity without understanding function.",
           "key_manifestations": [
             "Markram, H. (2006). 'The Blue Brain Project'",
@@ -8596,7 +8596,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Deep Learning Reconnection (+0%). Hinton's DBNs (2006) were framed as 'cortical models' (layer-wise training). But AI and Neuro began to diverge. AI chased performance (MNIST); Neuro chased biological realism (Spikes).",
           "key_manifestations": [
             "Hinton, G. E. (2007). 'To Recognize Shapes, First Learn to Generate Images'",
@@ -8604,7 +8604,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. GLM (Generalized Linear Models) became the standard for analyzing spike trains (Pillow). Statistical analysis of neural data, not modeling intelligence.",
           "key_manifestations": [
             "Pillow, J. W., et al. (2008). 'Spatio-Temporal Correlations and Visual Signalling in a Complete Neuronal Population'",
@@ -8612,7 +8612,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. The 'Connectome.' Mapping the wiring diagram. Seung's 'I am my Connectome.' Big Data Neuroscience.",
           "key_manifestations": [
             "Seung, S. (2012). 'Connectome: How the Brain's Wiring Makes Us Who We Are'",
@@ -8621,7 +8621,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Deep Learning predicts Brain (+3%). Yamins & DiCarlo. They showed that a trained CNN (AlexNet) predicts neural activity in the monkey IT cortex better than any biological model. This was a paradigm shift: 'To understand the brain, build an AI.'",
           "key_manifestations": [
             "Yamins, D. L., et al. (2014). 'Performance-optimized Hierarchical Models Predict Neural Responses in Higher Visual Cortex' (2013 work)",
@@ -8630,7 +8630,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "The Convergence (+2%). AI researchers (DeepMind) and Neuroscientists merged. 'Grid Cells' in entorhinal cortex emerged spontaneously in LSTMs trained to navigate (Banino et al.). This validated AI architectures as biological hypotheses.",
           "key_manifestations": [
             "Banino, A., et al. (2018). 'Vector-based Navigation using Grid-like Representations in Artificial Agents' (Roots in 2015-16)",
@@ -8639,7 +8639,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Bio-Plausible Backprop (+0%). Can the brain do backprop? 'Feedback Alignment' (Lillicrap) showed random feedback weights work. 'Predictive Coding' (Rao) was re-interpreted as Backprop. The search for the 'Brain's Learning Algorithm' heated up.",
           "key_manifestations": [
             "Lillicrap, T. P., et al. (2016). 'Random Synaptic Feedback Weights Support Error Backpropagation for Deep Learning'",
@@ -8648,7 +8648,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Brain-Score (+2%). Schrimpf et al. created a benchmark: How well does model X predict brain data Y? It became a leaderboard. Current SOTA AI models are the SOTA brain models.",
           "key_manifestations": [
             "Schrimpf, M., et al. (2018). 'Brain-Score: Which Artificial Neural Network for the Primate Ventral Visual Stream?'",
@@ -8657,7 +8657,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Language Models & Brain (+0%). Using GPT-2/3 to predict fMRI responses to text (Caucheteux/King). It works. The brain processes language similarly to a Transformer (Predictive Coding).",
           "key_manifestations": [
             "Schrimpf, M., et al. (2021). 'The Neural Architecture of Language: Integrative Modeling Converges on Predictive Processing'",
@@ -8666,7 +8666,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Stasis. The gap is widening again. AI (Transformers) is engineering-driven (normalization, attention heads). The brain doesn't have LayerNorm. The 'details' are diverging, even if the 'function' converges.",
           "key_manifestations": [
             "Saxe, A., et al. (2021). 'If Deep Learning is the Answer, What is the Question?'",
@@ -8675,7 +8675,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Current trajectory is 'Neuro-AI' as a tool (+0%). Using AI to map the Connectome (Google/Harvard). Using AI to decode speech from brain waves (BCI). AI is the 'microscope,' not just the 'model.'",
           "key_manifestations": [
             "Jain, V., et al. (2024). 'A Petavoxel Fragment of Human Cerebral Cortex Reconstructed at Nanoscale Resolution'",
@@ -8690,7 +8690,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Physics of Data.' It provides the fundamental limits (entropy, channel capacity) and the measures of correlation (Mutual Information) that govern all learning. The trajectory tracks the evolution from the classical Shannon theory of the 90s, to the 'Information Bottleneck' (Tishby) interpretation of Deep Learning in the 2010s, to the modern 'Neural Compression' and 'Rate-Distortion' optimization of the 2020s. It answers the question: 'How much can be learned from X about Y?'",
       "trajectory": {
         "1990": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The Shannon Foundation (+0%). Information Theory was the bedrock of Communications (Modems, Coding). In AI, it was used for 'Decision Tree Splitting' (Information Gain). The Kullback-Leibler (KL) divergence was known but mostly used in statistics, not yet the universal loss function of AI.",
           "key_manifestations": [
             "Cover, T. M., & Thomas, J. A. (1991). 'Elements of Information Theory' (The Bible of the field)",
@@ -8699,7 +8699,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. 'Minimum Description Length' (MDL) offered a bridge between Coding Theory and Learning Theory. Learning is finding the shortest code. This was the 'Occam's Razor' of the 90s.",
           "key_manifestations": [
             "Hinton, G. E., & Van Camp, D. (1993). 'Keeping the Neural Networks Simple by Minimizing the Description Length of the Weights'",
@@ -8708,7 +8708,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Infomax (+1%). Bell & Sejnowski. 'Independent Component Analysis' (ICA) was derived by maximizing the Mutual Information between inputs and outputs. This proved that maximizing information flow (Entropy maximization) leads to feature discovery (Edge detectors).",
           "key_manifestations": [
             "Bell, A. J., & Sejnowski, T. J. (1995). 'An Information-Maximization Approach to Blind Separation and Blind Deconvolution'",
@@ -8717,7 +8717,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. The 'Turbo Codes' revolution in comms showed that iterative decoding works. This inspired 'Belief Propagation' in AI (Cluster 3). The two fields (Coding vs Learning) touched via 'message passing.'",
           "key_manifestations": [
             "Berrou, C., & Glavieux, A. (1996). 'Near Shannon Limit Error - Correcting Coding and Decoding: Turbo-Codes'",
@@ -8726,7 +8726,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "The Information Bottleneck (+1%). Tishby et al. formalized the 'Information Bottleneck' (IB) method. Squeeze X into T to predict Y. Maximize $I(T;Y)$ while minimizing $I(X;T)$. This provided a general non-parametric principle for supervised learning: 'Keep only what is relevant.'",
           "key_manifestations": [
             "Tishby, N., Pereira, F. C., & Bialek, W. (1999). 'The Information Bottleneck Method'",
@@ -8735,7 +8735,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. 'Universal Source Coding' (Lempel-Ziv) was fully mature. AI was focused on SVM margins (Geometry), not Bits (Entropy). Information Theory was seen as 'Asymptotic' (infinite data), while ML was 'Finite Sample' (Cluster 8).",
           "key_manifestations": [
             "MacKay, D. J. C. (2003). 'Information Theory, Inference and Learning Algorithms' (The book that unified the fields)",
@@ -8744,7 +8744,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. Metric Learning (Cluster 23) was geometric. Information Theoretic Metric Learning (ITML) appeared later. The field was quiet.",
           "key_manifestations": [
             "Dhillon, I. S., et al. (2003). 'Divisive Information-Theoretic Clustering'",
@@ -8753,7 +8753,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. 'Compressed Sensing' (Cluster 11) was the rage. It was about L1 norms, not Shannon Entropy. The definition of 'Information' was shifting from 'Probabilistic' to 'Geometric' (Sparsity).",
           "key_manifestations": [
             "Candes, E. J., & Tao, T. (2005). 'Decoding by Linear Programming'",
@@ -8762,7 +8762,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Visual Information (+0%). 'Saliency' in vision was defined as 'Information Maximization' (Bruce & Tsotsos). The eye looks where information is high. This kept the 'Infomax' idea alive in perception.",
           "key_manifestations": [
             "Bruce, N., & Tsotsos, J. (2006). 'Saliency Based on Information Maximization'",
@@ -8771,7 +8771,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. Deep Learning was using Cross-Entropy loss ($H(P,Q)$). Researchers accepted this as 'Maximum Likelihood' without thinking deeply about the bit-rate interpretation.",
           "key_manifestations": [
             "Rubinstein, B. I., et al. (2009). 'Learning in a Large Function Space: Privacy-Preserving Mechanisms for SVM Learning'",
@@ -8779,7 +8779,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "VAE & Bits-Back (+1%). The Variational Autoencoder (2013) explicitly minimized the KL divergence between the posterior and the prior. This is 'Rate' in Rate-Distortion theory. The VAE loss is exactly $Rate + Distortion$. This re-unified Coding and Learning.",
           "key_manifestations": [
             "Kingma, D. P., & Welling, M. (2013). 'Auto-Encoding Variational Bayes'",
@@ -8788,7 +8788,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Stasis. Deep Learning focused on accuracy. Tishby continued to develop the IB theory for DL, but it was controversial.",
           "key_manifestations": [
             "Tishby, N., & Zaslavsky, N. (2015). 'Deep Learning and the Information Bottleneck Principle'",
@@ -8796,7 +8796,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "InfoGAN (+1%). Maximizing Mutual Information in GANs. Force the latent code $c$ to have high MI with the generated image $G(z,c)$. This leads to disentangled representations. Information theory became a tool for 'Disentanglement.'",
           "key_manifestations": [
             "Chen, X., et al. (2016). 'InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets'",
@@ -8805,7 +8805,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 6,
+          "salience_share": 6,
           "description": "The IB Debate (+1%). Tishby argued DL works by 'Compression' (forgetting nuisance variables). Saxe et al. rebutted, showing ReLUs don't necessarily compress. The debate invigorated the field. 'Is Learning Compression?' became the central question.",
           "key_manifestations": [
             "Shwartz-Ziv, R., & Tishby, N. (2017). 'Opening the Black Box of Deep Neural Networks via Information'",
@@ -8814,7 +8814,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 8,
+          "salience_share": 8,
           "description": "Contrastive Learning as MI (+2%). Oord (CPC) showed that Contrastive Loss (InfoNCE) is a lower bound on Mutual Information. SimCLR works because it maximizes $I(View1; View2)$. This provided the theoretical justification for the Self-Supervised revolution (Cluster 23).",
           "key_manifestations": [
             "Oord, A. v. d., et al. (2018). 'Representation Learning with Contrastive Predictive Coding'",
@@ -8823,7 +8823,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 10,
+          "salience_share": 10,
           "description": "Neural Compression (+2%). Using AI for file compression. 'Scale-Hyperpriors' beat JPEG 2000. It turns out that 'Generative Modeling' and 'Lossless Compression' are the same task ($Loss = -log P(x)$). Better AI = Better Zip.",
           "key_manifestations": [
             "Ball\u00e9, J., et al. (2018). 'Variational Image Compression with a Scale Hyperprior'",
@@ -8832,7 +8832,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "LLM Scaling as Entropy (+2%). The Scaling Laws (Kaplan) are statements about the entropy of natural language. 'Perplexity' is $2^{Entropy}$. The entire field of LLMs is now an exercise in minimizing the Cross-Entropy of the internet.",
           "key_manifestations": [
             "Hoffmann, J., et al. (2022). 'Training Compute-Optimal Large Language Models' (Chinchilla - Entropy vs Compute)",
@@ -8841,7 +8841,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 12,
+          "salience_share": 12,
           "description": "Current trajectory is 'Semantic Information.' Moving beyond Shannon Entropy (which cares about exact bits) to 'Semantic Entropy' (does the *meaning* change?). Used for hallucination detection.",
           "key_manifestations": [
             "Kuhn, L., et al. (2023). 'Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs'",
@@ -8856,7 +8856,7 @@ export const foundationAIData = {
       "description": "This eigencluster represents the 'Shape of Data.' It uses algebraic topology (Persistent Homology) to find invariant structures (loops, holes, voids) in high-dimensional data that are robust to noise and deformation. Trajectory-wise, it moved from the pure math of the 90s/00s (Edelsbrunner/Carlsson), to the 'Mapper' algorithm applications of the 2010s, to a recent synthesis with Deep Learning (Topological Loss Functions, Graph Filtration) in the 2020s. It provides a 'Qualitative' lens distinct from the 'Quantitative' lens of geometry.",
       "trajectory": {
         "1990": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Pure Math (+0%). Computational Topology was being defined. Algorithms to compute Betti numbers. It was disjoint from AI/Stats.",
           "key_manifestations": [
             "Edelsbrunner, H., et al. (1990). 'Simulation of Simplicity: A Technique to Cope with Degenerate Cases in Geometric Algorithms'",
@@ -8865,7 +8865,7 @@ export const foundationAIData = {
           ]
         },
         "1992": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Alpha Shapes (+0%). Edelsbrunner defined Alpha Shapes. A way to define the 'shape' of a point cloud at different scales. This was the precursor to filtration.",
           "key_manifestations": [
             "Edelsbrunner, H., & M\u00fccke, E. P. (1994). 'Three-dimensional Alpha Shapes' (1992 work)",
@@ -8873,7 +8873,7 @@ export const foundationAIData = {
           ]
         },
         "1994": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The math was maturing. 'Reeb Graphs' used for shape analysis.",
           "key_manifestations": [
             "Shinagawa, Y., et al. (1996). 'Constructing a Reeb Graph Automatically from Cross Sections' (1995 work)",
@@ -8881,7 +8881,7 @@ export const foundationAIData = {
           ]
         },
         "1996": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. Manifold Learning (ISOMAP) appeared (Cluster 12). TDA was the 'Algebraic' alternative to Manifold Learning's 'Differential' view.",
           "key_manifestations": [
             "Robins, V. (1999). 'Towards Computing Homology from Finite Approximations'",
@@ -8889,7 +8889,7 @@ export const foundationAIData = {
           ]
         },
         "1998": {
-          "variance_explained": 1,
+          "salience_share": 1,
           "description": "Stasis. The concept of 'Persistence' began to form. How do features (holes) persist as you vary the resolution?",
           "key_manifestations": [
             "Frosini, P. (1992/1998). 'Measuring Shapes by Size Functions'",
@@ -8897,7 +8897,7 @@ export const foundationAIData = {
           ]
         },
         "2000": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Persistent Homology Born (+1%). Edelsbrunner, Letscher, Zomorodian published 'Topological Persistence and Simplification.' This was the algorithm. It computes the barcode (lifespan of features). TDA was born as a computational discipline.",
           "key_manifestations": [
             "Edelsbrunner, H., Letscher, D., & Zomorodian, A. (2002). 'Topological Persistence and Simplification' (2000 FOCS)",
@@ -8905,7 +8905,7 @@ export const foundationAIData = {
           ]
         },
         "2002": {
-          "variance_explained": 2,
+          "salience_share": 2,
           "description": "Stability Theorem (+0%). Cohen-Steiner et al. proved that Persistence Diagrams are stable. Small noise in data $\\to$ small change in diagram. This made TDA robust for real data.",
           "key_manifestations": [
             "Cohen-Steiner, D., et al. (2007). 'Stability of Persistence Diagrams' (2005 work)",
@@ -8914,7 +8914,7 @@ export const foundationAIData = {
           ]
         },
         "2004": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Mapper Algorithm (+1%). Singh, Memoli, Carlsson. 'Mapper' simplified high-dimensional data into a graph (Simplicial Complex) using filter functions. It allowed visualizing the 'Shape' of datasets (e.g., the diabetes dataset has 'flares'). This was the first 'User Friendly' TDA tool.",
           "key_manifestations": [
             "Singh, G., Memoli, F., & Carlsson, G. (2007). 'Topological Methods for the Analysis of High Dimensional Data Sets and 3D Object Recognition' (Mapper)",
@@ -8922,7 +8922,7 @@ export const foundationAIData = {
           ]
         },
         "2006": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Applications in Biology (+0%). TDA found a home in analyzing viral evolution and protein folding. It detected loops in data that PCA missed. But in core AI, it was niche.",
           "key_manifestations": [
             "Yao, Y., et al. (2009). 'Topological Methods for Exploring Low-density States in Biomolecular Folding Pathways'",
@@ -8930,7 +8930,7 @@ export const foundationAIData = {
           ]
         },
         "2008": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. TDA was computationally expensive ($O(N^3)$). It couldn't handle Big Data. 'Sparse TDA' methods began.",
           "key_manifestations": [
             "Sheehy, D. R. (2013). 'Linear-Size Approximations to the Vietoris-Rips Filtration' (2010 work)",
@@ -8938,7 +8938,7 @@ export const foundationAIData = {
           ]
         },
         "2010": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Stasis. Deep Learning arrived. TDA was ignored. However, Ayasdi (startup) commercialized Mapper. It showed TDA had industrial value for anomaly detection.",
           "key_manifestations": [
             "Lum, P. Y., et al. (2013). 'Extracting Insights from the Shape of Complex Data using Topology' (Nature Scientific Reports)",
@@ -8946,7 +8946,7 @@ export const foundationAIData = {
           ]
         },
         "2012": {
-          "variance_explained": 3,
+          "salience_share": 3,
           "description": "Vectorization (+0%). To use TDA in ML, you need a vector. Persistence Landscapes (Bubenik) and Persistence Images (Adams) mapped the barcode to a vector compatible with SVMs/Neural Nets.",
           "key_manifestations": [
             "Bubenik, P. (2015). 'Statistical Topological Data Analysis using Persistence Landscapes' (2012 arXiv)",
@@ -8955,7 +8955,7 @@ export const foundationAIData = {
           ]
         },
         "2014": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "TDA for Neural Nets (+1%). Researchers began analyzing the topology of Neural Network weights and activations. 'Decision Boundaries' have topology. Naitzat et al. showed that neural nets operate by simplifying the topology of the data (breaking loops).",
           "key_manifestations": [
             "Naitzat, G., et al. (2020). 'Topology of Deep Neural Networks' (Roots in 2015-16)",
@@ -8964,7 +8964,7 @@ export const foundationAIData = {
           ]
         },
         "2016": {
-          "variance_explained": 4,
+          "salience_share": 4,
           "description": "Topological Loss Functions (+0%). Can we differentiate through Persistence? 'Topology-Aware' loss functions. Force the output segmentation to have the correct topology (e.g., no holes in a blood vessel). This linked TDA to Backprop.",
           "key_manifestations": [
             "Chen, C., et al. (2019). 'A Topological Regularizer for Classifiers via Persistent Homology' (2017-18 work)",
@@ -8973,7 +8973,7 @@ export const foundationAIData = {
           ]
         },
         "2018": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Graph TDA (+1%). Applying TDA to Graph Neural Networks (Cluster 12). 'PersLay' (Carriere). Using persistence to aggregate graph features. It added 'Global Structural' info to GNNs (which are local).",
           "key_manifestations": [
             "Carriere, M., et al. (2020). 'PersLay: A Neural Network Layer for Persistence Diagrams' (2019 work)",
@@ -8982,7 +8982,7 @@ export const foundationAIData = {
           ]
         },
         "2020": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Stasis. TDA remains a niche 'lens.' Used for analyzing the 'Manifold Hypothesis' in Deep Learning. Did the manifold flatten? Did the dimension collapse? (Cluster 8 intersection).",
           "key_manifestations": [
             "Birdal, T., et al. (2021). 'Intrinsic Dimension Estimation using Wasserstein Distance'",
@@ -8991,7 +8991,7 @@ export const foundationAIData = {
           ]
         },
         "2022": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Topological Regularization in Generative Models (+0%). Ensuring GANs/Diffusion models cover the full 'Topology' of the distribution (avoiding mode collapse). If the data has a hole, the generated data should have a hole.",
           "key_manifestations": [
             "Khrulkov, V., & Oseledets, I. (2018/2022). 'Geometry Score: A Method for Comparing Generative Adversarial Networks'",
@@ -9000,7 +9000,7 @@ export const foundationAIData = {
           ]
         },
         "2024": {
-          "variance_explained": 5,
+          "salience_share": 5,
           "description": "Current trajectory is 'Integration with Geometry' (+0%). Merging with 'Geometric Deep Learning' (Cluster 12). TDA provides the 'Global' invariants, GNNs provide the 'Local' features. Used in 'AI for Math' (Knot theory).",
           "key_manifestations": [
             "Davies, A., et al. (2021/2024). 'Advancing Mathematics by Guiding Human Intuition with AI' (Knot theory discovery)",

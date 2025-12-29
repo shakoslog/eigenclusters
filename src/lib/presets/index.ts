@@ -28,6 +28,9 @@ const importPresets = () => {
     'dissident_right_culture': () => import('./rightw_culture').then(module => module.default),
     'foundation_ai': () => import('./foundation_ai').then(module => module.default),
     'millennial_adolescence': () => import('./adolescence').then(module => module.default),
+    'god': () => import('./god').then(module => module.default),
+    'biology_history': () => import('./biology').then(module => module.default),
+    'american_cultural_evolution_2019_2023': () => import('./american_cultural_evolution_2019_2023').then(module => module.default),
 
     // When you add a new preset file, add a new line here:
     // 'my-new-preset': () => import('./my-new-preset').then(module => module.default),

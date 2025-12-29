@@ -42,7 +42,7 @@ interface ClusterData {
   name: string;
   description: string;
   trajectory: Record<string, {
-    variance_explained: number;
+    salience_share: number;
     description: string;
     key_manifestations: string[];
   }>;
@@ -81,7 +81,7 @@ const transformResponse = (jsonResponse: any): TransformedResponse => {
 
     Object.entries(cluster.trajectory).forEach(([year, data]: [string, any]) => {
       transformed.clusters[key].trajectory[year] = {
-        variance_explained: data.score,
+        salience_share: data.score,
         description: data.description,
         key_manifestations: data.key_manifestations
       };
