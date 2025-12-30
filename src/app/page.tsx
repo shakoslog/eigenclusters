@@ -41,15 +41,14 @@ import rightWingCulturePreset from '@/lib/presets/rightw_culture';
 import foundationAIPreset from '@/lib/presets/foundation_ai';
 import adolescencePreset from '@/lib/presets/adolescence';
 import lanaDelReyPreset from '@/lib/presets/lana_del_rey';
+import biologyPreset from '@/lib/presets/biology';
 import godPreset from '@/lib/presets/god';
 import americanCulturalEvolutionPreset from '@/lib/presets/american_cultural_evolution_2019_2023';
 
 // Define a type for presets
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 
-const ModelSpecification = dynamic(() => import('@/components/ModelSpecification'), { ssr: false });
-const SystemPromptModal = dynamic(() => import('@/components/SystemPromptModal'), { ssr: false });
-const WhatIsThisModal = dynamic(() => import('@/components/WhatIsThisModal'), { ssr: false });
+const PromptSpecModal = dynamic(() => import('@/components/PromptSpecModal'), { ssr: false });
 
 // Colors for different series
 const COLORS = [
@@ -131,8 +130,8 @@ const parseDateToNumber = (dateStr: string): number => {
 function EigenClustersApp() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const pathname = usePathname();
-  const searchParamsString = searchParams.toString();
+  const pathname = usePathname() ?? '/';
+  const searchParamsString = searchParams?.toString() ?? '';
 
   // State for preset selection - initialize with Postmodern America
   const [selectedPreset, setSelectedPreset] = useState<PresetConfig>({
@@ -140,13 +139,12 @@ function EigenClustersApp() {
     name: 'Postmodern America (1990-2025)',
     description: 'Tracking the acceleration of irony, mediated identity, and the collapse of institutional trust.'
   });
-  // State for pre-frontier toggle
-  const [showModelSpec, setShowModelSpec] = useState(false);
-  const [showSystemPrompt, setShowSystemPrompt] = useState(false);
+  // System prompt modal state
+  const [showPromptSpecModal, setShowPromptSpecModal] = useState(false);
+  const [promptSpecTab, setPromptSpecTab] = useState<'system' | 'model'>('system');
   const [systemPromptText, setSystemPromptText] = useState('');
   const [systemPromptLoading, setSystemPromptLoading] = useState(false);
   const [systemPromptError, setSystemPromptError] = useState<string | null>(null);
-  const [showWhatIsThis, setShowWhatIsThis] = useState(false);
   const [mobileNoticeDismissed, setMobileNoticeDismissed] = useState(false);
   
   // State for selected clusters
@@ -235,7 +233,7 @@ function EigenClustersApp() {
     try {
       setSystemPromptLoading(true);
       setSystemPromptError(null);
-      const response = await fetch('/api/analyze/prompt.txt', { cache: 'no-store' });
+      const response = await fetch('/api/analyze/prompt_cluster.txt', { cache: 'no-store' });
       if (!response.ok) {
         throw new Error('Failed to load system prompt');
       }
@@ -249,8 +247,9 @@ function EigenClustersApp() {
     }
   }, []);
 
-  const handleOpenSystemPrompt = () => {
-    setShowSystemPrompt(true);
+  const openSystemPrompt = () => {
+    setPromptSpecTab('system');
+    setShowPromptSpecModal(true);
     if (!systemPromptText) {
       fetchSystemPrompt();
     }
@@ -264,6 +263,7 @@ function EigenClustersApp() {
     { id: 'rationalism_v1', name: 'The Rationalist Sphere (2005-2025)', preset: { ...rationalismPreset, name: 'The Rationalist Sphere (2005-2025)', description: "A genealogy of the Rationalist, Effective Altruist, and 'Tech Right' intellectual subcultures." } },
     { id: 'dissident_right_culture', name: 'Dissident-Right Cultural Manifold (1995-2025)', preset: { ...rightWingCulturePreset, name: 'Dissident-Right Cultural Manifold (1995-2025)', description: 'Mapping the major dissident-right ideological eigenclusters from Buchanan to the AI-accelerants.' } },
     { id: 'foundation_ai', name: 'Foundation-Model Trajectories (1990-2025)', preset: { ...foundationAIPreset, name: 'Foundation-Model Trajectories (1990-2025)', description: 'How AI research paradigms shifted from symbolic logic and kernel methods to transformer-era foundation models.' } },
+    { id: 'biology_history', name: 'History of Biology (1800-2000)', preset: biologyPreset },
     { id: 'millennial_adolescence', name: 'Millennial Adolescence (1999-2016)', preset: { ...adolescencePreset, name: 'Millennial Adolescence (1999-2016)', description: 'Tracking the mediated existentialism and cultural currents that defined late-millennial adolescence.' } },
     { id: 'lana_del_rey', name: 'Lana Del Rey Artistic Manifold (2005-2025)', preset: { ...lanaDelReyPreset, name: 'Lana Del Rey Artistic Manifold (2005-2025)', description: 'Tracking the evolution of mythic americana, submission dynamics, and confessional realism in her artistic identity.' } },
     { id: 'american_cultural_evolution_2019_2023', name: 'Covid Era Clusters', preset: americanCulturalEvolutionPreset },
@@ -455,7 +455,19 @@ function EigenClustersApp() {
       return { transformedData: [], allClusters: [] };
     }
     
-    const clusters = selectedPreset.cachedResult.clusters;
+    type ClusterTrajectoryPoint = {
+      salience_share: number;
+      description: string;
+      key_manifestations?: string[];
+    };
+
+    type ClusterDatum = {
+      name?: string;
+      description?: string;
+      trajectory: Record<string, ClusterTrajectoryPoint>;
+    };
+
+    const clusters = selectedPreset.cachedResult.clusters as Record<string, ClusterDatum>;
     // Sort keys to ensure consistent ordering for index-based URL mapping
     const clusterIds = Object.keys(clusters).sort((a, b) => {
       // Try to extract numbers for natural sort (e.g. 2 before 10)
@@ -952,22 +964,10 @@ function EigenClustersApp() {
           </p>
           <div className="flex flex-wrap gap-1.5 sm:gap-2">
             <button
-              onClick={handleOpenSystemPrompt}
+              onClick={openSystemPrompt}
               className="inline-flex items-center px-2 sm:px-3 py-1 text-[0.65rem] sm:text-[0.75rem] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.25em] text-black bg-white border border-gray-500 shadow-[2px_2px_0_rgba(0,0,0,0.45)] transition hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0_rgba(0,0,0,0.45)]"
             >
               System Prompt
-            </button>
-            <button 
-              onClick={() => setShowModelSpec(true)}
-              className="inline-flex items-center px-2 sm:px-3 py-1 text-[0.65rem] sm:text-[0.75rem] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-purple-100 border border-purple-500/40 bg-purple-500/10 hover:bg-purple-500/20 transition-colors rounded"
-            >
-              Model Spec
-            </button>
-            <button
-              onClick={() => setShowWhatIsThis(true)}
-              className="inline-flex items-center px-2 sm:px-3 py-1 text-[0.65rem] sm:text-[0.75rem] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-emerald-100 border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500/20 transition-colors rounded"
-            >
-              What is this?
             </button>
           </div>
         </div>
@@ -975,16 +975,16 @@ function EigenClustersApp() {
         <h1 className="text-xl sm:text-3xl font-bold tracking-tight text-white">{selectedPreset.name}</h1>
       </header>
       
-      <ModelSpecification isOpen={showModelSpec} onClose={() => setShowModelSpec(false)} />
-      <SystemPromptModal
-        isOpen={showSystemPrompt}
-        onClose={() => setShowSystemPrompt(false)}
-        content={systemPromptText}
+      <PromptSpecModal
+        isOpen={showPromptSpecModal}
+        onClose={() => setShowPromptSpecModal(false)}
+        tab={promptSpecTab}
+        onTabChange={setPromptSpecTab}
+        promptText={systemPromptText}
         isLoading={systemPromptLoading}
         error={systemPromptError}
         onRetry={fetchSystemPrompt}
       />
-      <WhatIsThisModal isOpen={showWhatIsThis} onClose={() => setShowWhatIsThis(false)} />
       
       <main className="flex flex-col gap-6">
         {/* Dataset Selector - at the top */}

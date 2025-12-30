@@ -1,3 +1,5 @@
+import type { PresetConfig } from './types';
+
 export const postwarJapanData = {
   "metadata": {
     "period": "1945-1964",

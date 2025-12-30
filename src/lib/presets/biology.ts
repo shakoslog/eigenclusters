@@ -1691,7 +1691,7 @@ const biologyPreset: PresetConfig = {
   clusterEnd: 4,
   periodicity: 5,
   context: 'Western scientific and cultural history',
-  model: 'gpt-4.1',
+  model: 'o1-mini',
   cachedResult: biologyData
 };
 

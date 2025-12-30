@@ -6058,7 +6058,7 @@ const lanaDelReyPreset: PresetConfig = {
   clusterEnd: 30,
   periodicity: 1,
   context: 'Lana Del Rey',
-  model: 'claude-opus-4',
+  model: 'claude',
   cachedResult: lanaDelReyData
 };
 

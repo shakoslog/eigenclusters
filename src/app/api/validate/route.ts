@@ -206,17 +206,6 @@ ${JSON.stringify(jsonData, null, 2)}
 Return only the corrected JSON with no additional text or explanations.
 `;
 
-      // Use the correct parameter name: max_completion_tokens (not max_tokens)
-      const o1MiniConfig = {
-        model: "o1-mini-2024-09-12",
-        messages: [
-          { role: "user", content: criticPrompt }
-        ],
-        temperature: 1,
-        max_completion_tokens: 32768, // Correct parameter name for o1-mini
-        stream: true,
-      };
-      
       // Start response immediately to prevent timeout
       // This is the key change - we start sending a response before processing completes
       const responseStream = new TransformStream();
@@ -232,7 +221,14 @@ Return only the corrected JSON with no additional text or explanations.
       // Process in a separate function that continues after response starts
       const processValidation = async () => {
         try {
-          const stream = await openai.chat.completions.create(o1MiniConfig);
+          const stream = await openai.chat.completions.create({
+            model: 'o1-mini-2024-09-12',
+            messages: [{ role: 'user' as const, content: criticPrompt }],
+            temperature: 1,
+            // Use the correct parameter name: max_completion_tokens (not max_tokens)
+            max_completion_tokens: 32768,
+            stream: true as const,
+          });
           
           let fullContent = '';
           for await (const chunk of stream) {
@@ -256,18 +252,20 @@ Return only the corrected JSON with no additional text or explanations.
               validatedData: validatedData
             }) + "\n"));
           } catch (error) {
+            const errorMessage = error instanceof Error ? error.message : String(error);
             console.error('JSON parsing error:', error);
             writer.write(encoder.encode(JSON.stringify({
               success: false,
-              error: `Parse error: ${error.message}`,
+              error: `Parse error: ${errorMessage}`,
               originalData: jsonData
             }) + "\n"));
           }
         } catch (error) {
+          const errorMessage = error instanceof Error ? error.message : String(error);
           console.error('Process error:', error);
           writer.write(encoder.encode(JSON.stringify({
             success: false,
-            error: `API error: ${error.message}`,
+            error: `API error: ${errorMessage}`,
             originalData: jsonData
           }) + "\n"));
         } finally {

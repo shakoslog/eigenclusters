@@ -1,3 +1,5 @@
+import type { PresetConfig } from './types';
+
 export const renaissanceData = {
     "metadata": {
       "period": "1400-1600",

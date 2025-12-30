@@ -1,4 +1,4 @@
-import { ModelType } from '@/components/EigenclusterTerminal';
+import type { ModelType } from '@/types';
 
 export interface PresetConfig {
   id: string;

@@ -1,3 +1,5 @@
+import type { PresetConfig } from './types';
+
 export const tylerCowenData = {
     "metadata": {
       "period": "1940-2060",

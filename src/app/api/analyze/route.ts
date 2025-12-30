@@ -236,39 +236,6 @@ const MODEL_CONFIGS = {
   }
 } as const;
 
-// Add this function to handle validation after streaming
-const validateResponse = async (jsonData: any) => {
-  try {
-    console.log('Sending data to critic for validation...');
-    
-    const validationResponse = await fetch(new URL('/api/validate', request.url).toString(), {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ jsonData }),
-    });
-    
-    if (!validationResponse.ok) {
-      console.error('Validation request failed:', validationResponse.status);
-      return jsonData; // Return original if validation fails
-    }
-    
-    const validationResult = await validationResponse.json();
-    
-    if (validationResult.success && validationResult.validatedData) {
-      console.log('Validation successful, returning improved data');
-      return validationResult.validatedData;
-    } else {
-      console.log('Validation unsuccessful, returning original data');
-      return jsonData;
-    }
-  } catch (error) {
-    console.error('Error during validation:', error);
-    return jsonData; // Return original on error
-  }
-};
-
 export const runtime = 'edge';
 
 export async function POST(request: Request) {
@@ -285,7 +252,9 @@ export async function POST(request: Request) {
 
     let systemPrompt: string;
     try {
-      const response = await fetch(new URL('/prompts/analyze.txt', request.url));
+      // Keep the system prompt source-of-truth aligned with the UI.
+      // This file is served from /public and is readable from the Edge runtime via fetch().
+      const response = await fetch(new URL('/api/analyze/prompt_cluster.txt', request.url));
       systemPrompt = await response.text();
     } catch (error) {
       console.error('Failed to read prompt file:', error);
@@ -447,41 +416,14 @@ export async function POST(request: Request) {
       
       // For o1-mini, we need to combine system and user prompts since it doesn't support system role
       const combinedPrompt = `${systemPrompt}\n\n${prompt}`;
-      
-      // Create a configuration object with the correct parameters for o1-mini
-      const o1MiniConfig = {
-        model: modelConfig.model,
-        messages: [
-          { role: "user", content: combinedPrompt }
-        ],
-        temperature: modelConfig.temperature,
-        max_completion_tokens: modelConfig.maxTokens, // Use max_completion_tokens instead of max_tokens
-        stream: true
-      };
-      
-      const stream = await openai.chat.completions.create(o1MiniConfig);
-      
-      const customStream = createStreamHandlerOpenAI(stream);
-      return new Response(customStream, {
-        headers: {
-          'Content-Type': 'text/event-stream',
-          'Cache-Control': 'no-cache',
-          'Connection': 'keep-alive',
-          'Transfer-Encoding': 'chunked'
-        }
-      });
-    } else {
-      // For other models that support system role and reasoning_effort
+
       const stream = await openai.chat.completions.create({
         model: modelConfig.model,
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: prompt }
-        ],
+        messages: [{ role: 'user' as const, content: combinedPrompt }],
         temperature: modelConfig.temperature,
-        max_tokens: modelConfig.maxTokens,
-        stream: true,
-        reasoning_effort: modelConfig.reasoning_effort || 0.5 // Include this only for models that support it
+        // NOTE: reasoning models use max_completion_tokens instead of max_tokens.
+        max_completion_tokens: modelConfig.maxTokens,
+        stream: true as const,
       });
       
       const customStream = createStreamHandlerOpenAI(stream);
@@ -494,6 +436,8 @@ export async function POST(request: Request) {
         }
       });
     }
+
+    throw new Error(`Unsupported model: ${model}`);
 
     // After streaming is complete, the frontend will handle validation
     // by calling our /api/validate endpoint

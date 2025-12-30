@@ -1,6 +1,3 @@
-import { ModelType } from '@/components/EigenclusterTerminal';
-import { postwarJapanData } from './presets/postwar-japan';
-
 // Import the preset types
 import { PresetConfig } from './presets/types';
 

@@ -1,3 +1,5 @@
+import type { PresetConfig } from './types';
+
 export const rationalityData = {
     "metadata": {
       "period": "1000-2000",
