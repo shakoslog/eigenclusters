@@ -247,13 +247,42 @@ function EigenClustersApp() {
     }
   }, []);
 
+  const handlePromptSpecTabChange = useCallback(
+    (nextTab: 'system' | 'model') => {
+      setPromptSpecTab(nextTab);
+      updateUrlParams({ prompt_tab: nextTab });
+    },
+    [updateUrlParams]
+  );
+
+  const closePromptSpecModal = useCallback(() => {
+    setShowPromptSpecModal(false);
+    updateUrlParams({ prompt_tab: null });
+  }, [updateUrlParams]);
+
   const openSystemPrompt = () => {
     setPromptSpecTab('system');
     setShowPromptSpecModal(true);
+    updateUrlParams({ prompt_tab: 'system' });
     if (!systemPromptText) {
       fetchSystemPrompt();
     }
   };
+
+  // Deep link: open prompt modal via URL param, e.g. ?prompt_tab=system
+  useEffect(() => {
+    const params = new URLSearchParams(searchParamsString);
+    const promptTabParam = params.get('prompt_tab');
+    if (promptTabParam === 'system' || promptTabParam === 'model') {
+      setPromptSpecTab(promptTabParam);
+      setShowPromptSpecModal(true);
+      if (!systemPromptText) {
+        fetchSystemPrompt();
+      }
+    } else {
+      setShowPromptSpecModal(false);
+    }
+  }, [fetchSystemPrompt, searchParamsString, systemPromptText]);
   
   // For the availablePresets array, use the imported presets with their unique variable names
   const availablePresets = [
@@ -977,9 +1006,9 @@ function EigenClustersApp() {
       
       <PromptSpecModal
         isOpen={showPromptSpecModal}
-        onClose={() => setShowPromptSpecModal(false)}
+        onClose={closePromptSpecModal}
         tab={promptSpecTab}
-        onTabChange={setPromptSpecTab}
+        onTabChange={handlePromptSpecTabChange}
         promptText={systemPromptText}
         isLoading={systemPromptLoading}
         error={systemPromptError}
