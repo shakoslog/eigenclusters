@@ -63,40 +63,52 @@ export default function PromptSpecModal({
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const dragOffset = useRef({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
+  const isDraggingRef = useRef(false);
 
   useEffect(() => {
     if (!isOpen) return;
     setPosition({ x: 0, y: 0 });
     setIsDragging(false);
+    isDraggingRef.current = false;
   }, [isOpen]);
 
-  useEffect(() => {
-    if (!isDragging || typeof window === 'undefined') return;
+  const handleDragStart = (event: React.PointerEvent<HTMLDivElement>) => {
+    // Only primary button
+    if (event.button !== 0) return;
+    // Don't start dragging when interacting with buttons/controls inside the title bar.
+    const target = event.target as HTMLElement | null;
+    if (target?.closest('button, a, input, textarea, select, [role="button"]')) return;
+    event.preventDefault();
 
-    const handleMouseMove = (event: MouseEvent) => {
-      setPosition({
-        x: event.clientX - dragOffset.current.x,
-        y: event.clientY - dragOffset.current.y,
-      });
-    };
-
-    const handleMouseUp = () => setIsDragging(false);
-
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseup', handleMouseUp);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseup', handleMouseUp);
-    };
-  }, [isDragging]);
-
-  const handleDragStart = (event: React.MouseEvent<HTMLDivElement>) => {
     dragOffset.current = {
       x: event.clientX - position.x,
       y: event.clientY - position.y,
     };
+
+    isDraggingRef.current = true;
     setIsDragging(true);
+
+    // Capture pointer so we receive move/up events even if the cursor leaves the header.
+    event.currentTarget.setPointerCapture(event.pointerId);
+  };
+
+  const handleDragMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!isDraggingRef.current) return;
+    setPosition({
+      x: event.clientX - dragOffset.current.x,
+      y: event.clientY - dragOffset.current.y,
+    });
+  };
+
+  const handleDragEnd = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!isDraggingRef.current) return;
+    isDraggingRef.current = false;
+    setIsDragging(false);
+    try {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    } catch {
+      // ignore
+    }
   };
 
   const modelSpec = useMemo(() => extractModelSpec(promptText), [promptText]);
@@ -115,13 +127,18 @@ export default function PromptSpecModal({
       >
         <div
           className="flex cursor-move items-center justify-between border-b border-gray-600 bg-gray-200 px-4 py-2 text-[0.75rem] uppercase tracking-[0.3em] text-gray-700 select-none"
-          onMouseDown={handleDragStart}
+          onPointerDown={handleDragStart}
+          onPointerMove={handleDragMove}
+          onPointerUp={handleDragEnd}
+          onPointerCancel={handleDragEnd}
+          style={{ touchAction: 'none' }}
         >
           <span>{tab === 'system' ? 'system_prompt.txt' : 'model_specification.txt'}</span>
           <div className="flex gap-2">
             {error && (
               <button
                 onClick={onRetry}
+                onPointerDown={e => e.stopPropagation()}
                 className="border border-gray-600 bg-white px-2 py-0.5 text-[0.7rem] font-semibold uppercase tracking-[0.1em] text-gray-700 shadow-[2px_2px_0_rgba(0,0,0,0.25)] hover:bg-gray-100"
               >
                 Retry
@@ -129,6 +146,7 @@ export default function PromptSpecModal({
             )}
             <button
               onClick={onClose}
+              onPointerDown={e => e.stopPropagation()}
               className="border border-gray-600 bg-white px-2 py-0.5 text-[0.7rem] font-semibold uppercase tracking-[0.1em] text-gray-700 shadow-[2px_2px_0_rgba(0,0,0,0.25)] hover:bg-gray-100"
               aria-label="Close prompt/model spec"
             >

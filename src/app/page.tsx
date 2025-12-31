@@ -151,6 +151,8 @@ function EigenClustersApp() {
   const [selectedClusters, setSelectedClusters] = useState<string[]>([]);
   const [selectedPoint, setSelectedPoint] = useState<any>(null);
   const popupScrollRef = useRef<HTMLDivElement>(null);
+  const selectedPointDragActiveRef = useRef(false);
+  const selectedPointResizeActiveRef = useRef(false);
   const [selectedPointPanel, setSelectedPointPanel] = useState<{
     x: number;
     y: number;
@@ -269,20 +271,29 @@ function EigenClustersApp() {
     }
   };
 
-  // Deep link: open prompt modal via URL param, e.g. ?prompt_tab=system
-  useEffect(() => {
+  const promptTabParam = useMemo(() => {
     const params = new URLSearchParams(searchParamsString);
-    const promptTabParam = params.get('prompt_tab');
-    if (promptTabParam === 'system' || promptTabParam === 'model') {
+    const raw = params.get('prompt_tab');
+    return raw === 'system' || raw === 'model' ? raw : null;
+  }, [searchParamsString]);
+
+  // Deep link: open/close prompt modal via URL param, e.g. ?prompt_tab=system
+  // Important: keep this effect independent of systemPromptText so the modal doesn't "flash" when the prompt finishes loading.
+  useEffect(() => {
+    if (promptTabParam) {
       setPromptSpecTab(promptTabParam);
       setShowPromptSpecModal(true);
-      if (!systemPromptText) {
-        fetchSystemPrompt();
-      }
     } else {
       setShowPromptSpecModal(false);
     }
-  }, [fetchSystemPrompt, searchParamsString, systemPromptText]);
+  }, [promptTabParam]);
+
+  // Fetch prompt text when the modal is open (or deep-linked) and we don't have it yet.
+  useEffect(() => {
+    if (!promptTabParam) return;
+    if (systemPromptText) return;
+    fetchSystemPrompt();
+  }, [fetchSystemPrompt, promptTabParam, systemPromptText]);
   
   // For the availablePresets array, use the imported presets with their unique variable names
   const availablePresets = [
@@ -691,15 +702,58 @@ function EigenClustersApp() {
             >
               <div
                 className="flex cursor-move items-center justify-between gap-2 border-b border-white/10 bg-white/5 px-3 py-2 rounded-t-lg flex-shrink-0"
-                onMouseDown={e => {
+                onPointerDown={e => {
                   e.stopPropagation();
+                  if (e.button !== 0) return;
+                  e.preventDefault();
+                  try {
+                    e.currentTarget.setPointerCapture(e.pointerId);
+                  } catch {
+                    // ignore
+                  }
+                  selectedPointDragActiveRef.current = true;
                   setSelectedPointPanel(prev => ({
                     ...prev,
                     isDragging: true,
-                    offsetX: e.clientX - selectedPointPanel.x,
-                    offsetY: e.clientY - selectedPointPanel.y,
+                    offsetX: e.clientX - prev.x,
+                    offsetY: e.clientY - prev.y,
                   }));
                 }}
+                onPointerMove={e => {
+                  if (!selectedPointDragActiveRef.current) return;
+                  setSelectedPointPanel(prev => ({
+                    ...prev,
+                    x: e.clientX - prev.offsetX,
+                    y: e.clientY - prev.offsetY,
+                  }));
+                }}
+                onPointerUp={e => {
+                  if (!selectedPointDragActiveRef.current) return;
+                  selectedPointDragActiveRef.current = false;
+                  setSelectedPointPanel(prev => ({
+                    ...prev,
+                    isDragging: false,
+                  }));
+                  try {
+                    e.currentTarget.releasePointerCapture(e.pointerId);
+                  } catch {
+                    // ignore
+                  }
+                }}
+                onPointerCancel={e => {
+                  if (!selectedPointDragActiveRef.current) return;
+                  selectedPointDragActiveRef.current = false;
+                  setSelectedPointPanel(prev => ({
+                    ...prev,
+                    isDragging: false,
+                  }));
+                  try {
+                    e.currentTarget.releasePointerCapture(e.pointerId);
+                  } catch {
+                    // ignore
+                  }
+                }}
+                style={{ touchAction: 'none' }}
               >
                 <div>
                   <p className="text-sm font-semibold text-white">
@@ -712,7 +766,7 @@ function EigenClustersApp() {
                   </p>
                 </div>
                 <button
-                  onMouseDown={e => e.stopPropagation()}
+                  onPointerDown={e => e.stopPropagation()}
                   onClick={(e) => {
                     e.stopPropagation();
                     clearSelectedPoint();
@@ -726,7 +780,7 @@ function EigenClustersApp() {
               <div
                 ref={popupScrollRef}
                 className="flex-1 overflow-y-auto px-3 py-2 space-y-2"
-                onMouseDown={e => e.stopPropagation()}
+                onPointerDown={e => e.stopPropagation()}
               >
                 {selectedPoint.description && (
                   <div>
@@ -753,8 +807,16 @@ function EigenClustersApp() {
               {/* Resize handle */}
               <div
                 className="absolute bottom-0 right-0 w-4 h-4 cursor-se-resize"
-                onMouseDown={e => {
+                onPointerDown={e => {
                   e.stopPropagation();
+                  if (e.button !== 0) return;
+                  e.preventDefault();
+                  try {
+                    e.currentTarget.setPointerCapture(e.pointerId);
+                  } catch {
+                    // ignore
+                  }
+                  selectedPointResizeActiveRef.current = true;
                   setSelectedPointPanel(prev => ({
                     ...prev,
                     isResizing: true,
@@ -762,65 +824,63 @@ function EigenClustersApp() {
                     offsetY: e.clientY,
                   }));
                 }}
+                onPointerMove={e => {
+                  if (!selectedPointResizeActiveRef.current) return;
+                  setSelectedPointPanel(prev => {
+                    const deltaX = e.clientX - prev.offsetX;
+                    const deltaY = e.clientY - prev.offsetY;
+                    const newWidth = Math.max(200, prev.width + deltaX);
+                    const newHeight = Math.max(150, prev.height + deltaY);
+                    return {
+                      ...prev,
+                      width: newWidth,
+                      height: newHeight,
+                      offsetX: e.clientX,
+                      offsetY: e.clientY,
+                    };
+                  });
+                }}
+                onPointerUp={e => {
+                  if (!selectedPointResizeActiveRef.current) return;
+                  selectedPointResizeActiveRef.current = false;
+                  setSelectedPointPanel(prev => {
+                    if (typeof window !== 'undefined') {
+                      localStorage.setItem('selectedPointPanelSize', JSON.stringify({
+                        width: prev.width,
+                        height: prev.height,
+                      }));
+                    }
+                    return {
+                      ...prev,
+                      isResizing: false,
+                    };
+                  });
+                  try {
+                    e.currentTarget.releasePointerCapture(e.pointerId);
+                  } catch {
+                    // ignore
+                  }
+                }}
+                onPointerCancel={e => {
+                  if (!selectedPointResizeActiveRef.current) return;
+                  selectedPointResizeActiveRef.current = false;
+                  setSelectedPointPanel(prev => ({
+                    ...prev,
+                    isResizing: false,
+                  }));
+                  try {
+                    e.currentTarget.releasePointerCapture(e.pointerId);
+                  } catch {
+                    // ignore
+                  }
+                }}
+                style={{ touchAction: 'none' }}
               >
                 <svg className="w-4 h-4 text-white/30" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M22 22H20V20H22V22ZM22 18H20V16H22V18ZM18 22H16V20H18V22ZM22 14H20V12H22V14ZM18 18H16V16H18V18ZM14 22H12V20H14V22Z" />
                 </svg>
               </div>
             </div>
-          )}
-          {selectedPointPanel.isDragging && (
-            <div
-              className="fixed inset-0 z-20"
-              onMouseMove={e => {
-                setSelectedPointPanel(prev => ({
-                  ...prev,
-                  x: e.clientX - prev.offsetX,
-                  y: e.clientY - prev.offsetY,
-                }));
-              }}
-              onMouseUp={() =>
-                setSelectedPointPanel(prev => ({
-                  ...prev,
-                  isDragging: false,
-                }))
-              }
-            />
-          )}
-          {selectedPointPanel.isResizing && (
-            <div
-              className="fixed inset-0 z-20 cursor-se-resize"
-              onMouseMove={e => {
-                setSelectedPointPanel(prev => {
-                  const deltaX = e.clientX - prev.offsetX;
-                  const deltaY = e.clientY - prev.offsetY;
-                  const newWidth = Math.max(200, prev.width + deltaX);
-                  const newHeight = Math.max(150, prev.height + deltaY);
-                  return {
-                    ...prev,
-                    width: newWidth,
-                    height: newHeight,
-                    offsetX: e.clientX,
-                    offsetY: e.clientY,
-                  };
-                });
-              }}
-              onMouseUp={() => {
-                setSelectedPointPanel(prev => {
-                  // Save to localStorage
-                  if (typeof window !== 'undefined') {
-                    localStorage.setItem('selectedPointPanelSize', JSON.stringify({
-                      width: prev.width,
-                      height: prev.height,
-                    }));
-                  }
-                  return {
-                    ...prev,
-                    isResizing: false,
-                  };
-                });
-              }}
-            />
           )}
         
         <svg width={width} height={height}>
