@@ -1,0 +1,733 @@
+{
+  "metadata": {
+    "period": "1930-1990",
+    "interval": "5 years",
+    "cluster_range": "1-10",
+    "measurement": "relative cultural salience share (0-100)",
+    "top_20_clusters": [
+      "1_high_modernist_formal_experimentation [↘] (16.5%)",
+      "2_techno_scientific_rationalism [→] (13.7%)",
+      "3_cold_war_ideological_bifurcation [↘] (12.3%)",
+      "4_postmodern_irony_deconstruction [↗] (10.5%)",
+      "5_therapeutic_self_actualization [↗] (10.2%)",
+      "6_mass_culture_industry_dialectic [→] (9.8%)",
+      "7_liberation_emancipatory_politics [→] (7.6%)",
+      "8_counter_cultural_rebellion_waves [→] (7.4%)",
+      "9_ecological_limits_consciousness [↗] (6.9%)",
+      "10_existentialist_authenticity [→] (5.1%)"
+    ],
+    "notes": "Clusters 1-10 covering major cultural eigenvectors 1930-1990. Percentages represent time-integrated salience shares across the full 60-year period. The remaining cultural space (~45%) comprises the long tail of additional clusters not analyzed in this batch."
+  },
+  "clusters": {
+    "1_high_modernist_formal_experimentation": {
+      "name": "High Modernist Formal Experimentation",
+      "description": "High Modernist Formal Experimentation represents the apex and gradual transformation of early twentieth-century avant-garde ambitions to revolutionize artistic form itself. This cluster encompasses the conviction that radical formal innovation—abstraction in visual art, atonality and serialism in music, stream-of-consciousness and fragmentation in literature, functionalist geometry in architecture—constitutes the essential task of serious cultural production. The prototype is unified by a commitment to difficulty, autonomy from mass culture, and the belief that artistic progress requires systematic exploration of each medium's unique properties.\n\nThe cluster's temporal trajectory moves from late-stage European modernist maturity in 1930, through wartime disruption and transatlantic migration, to postwar American institutional dominance when abstract expressionism, international style architecture, and serial music became official high culture. Museums, universities, foundations, and government cultural programs elevated these forms as markers of Western sophistication during the Cold War. From the mid-1960s onward, the cluster yields salience to postmodern critiques, pop appropriations, and pluralistic alternatives, though it never fully disappears—instead becoming one option among many rather than the presumptive direction of serious art.",
+      "trajectory": {
+        "1930": {
+          "salience_share": 35,
+          "description": "Baseline establishment: High modernism occupies approximately 35% of serious cultural attention in 1930, representing its mature European phase before political catastrophe. The cluster manifests most powerfully in Parisian and Germanic cultural capitals, where second-generation modernists consolidate and extend innovations from the 1910s-20s. Stream-of-consciousness fiction reaches its technical apex, geometric abstraction and surrealism compete for avant-garde primacy, twelve-tone composition gains systematic rigor, and the International Style achieves programmatic definition. Institutional support remains fragile—modernism is championed by small galleries, little magazines, and progressive patrons rather than major museums or state cultural apparatus.",
+          "key_manifestations": ["Villa Savoye by Le Corbusier", "As I Lay Dying by William Faulkner", "Composition with Red, Blue, and Yellow by Piet Mondrian", "Moses und Aron opera by Arnold Schoenberg"]
+        },
+        "1935": {
+          "salience_share": 30,
+          "description": "Δw = -5: Salience declines as political polarization, economic depression, and rising totalitarianism pressure modernist experimentation from multiple directions. Nazi consolidation forces Bauhaus closure and begins driving modernist practitioners into exile; Soviet socialist realism mandates representational art; the Popular Front encourages socially engaged over formally experimental work. The cluster's manifestations begin shifting transatlantically as refugee architects, composers, and visual artists seek American refuge.",
+          "key_manifestations": ["Fallingwater by Frank Lloyd Wright", "Absalom, Absalom! by William Faulkner", "Lulu opera by Alban Berg", "Composition in White, Black, and Red by Piet Mondrian"]
+        },
+        "1940": {
+          "salience_share": 25,
+          "description": "Δw = -5: War conditions further reduce modernist salience as cultural production itself contracts and nationalist/propagandistic demands intensify. The transatlantic migration catalyzed by fascism accelerates dramatically—Mondrian, Léger, Ernst, Breton, Schönberg, Stravinsky, Mies, Gropius all now in America or Britain. This displacement paradoxically plants seeds for postwar American dominance while disrupting European modernist networks.",
+          "key_manifestations": ["Finnegans Wake by James Joyce", "Broadway Boogie Woogie by Piet Mondrian", "Chamber Symphony No. 2 by Arnold Schoenberg", "The Persistence of Memory touring exhibition at MoMA"]
+        },
+        "1945": {
+          "salience_share": 28,
+          "description": "Δw = +3: Salience begins recovering as war ends and cultural reconstruction commences, though the cluster's geography has permanently shifted westward. American abstract painters, mentored by European émigrés and absorbing surrealist automatism, begin developing what will become Abstract Expressionism—still marginal but gaining critical attention from Clement Greenberg and others.",
+          "key_manifestations": ["Piano Sonata No. 2 'Concord' recording by John Kirkpatrick", "Male and Female by Jackson Pollock", "Animal Farm by George Orwell", "Lever House planning begins by Skidmore, Owings & Merrill"]
+        },
+        "1950": {
+          "salience_share": 42,
+          "description": "Δw = +14: Dramatic salience increase as Abstract Expressionism achieves breakthrough recognition and the International Style becomes default corporate/institutional architecture. The cluster's American transformation is now complete—New York has definitively displaced Paris as the center of avant-garde painting. Cold War cultural diplomacy begins actively promoting American abstraction as freedom's aesthetic.",
+          "key_manifestations": ["Number 1A, 1948 by Jackson Pollock", "Lake Shore Drive Apartments by Mies van der Rohe", "The Cocktail Party by T.S. Eliot", "Mode de valeurs et d'intensités by Olivier Messiaen"]
+        },
+        "1955": {
+          "salience_share": 48,
+          "description": "Δw = +6: Peak institutional consolidation as high modernist experimentation achieves maximum official prestige and museum/academic/foundation support. Abstract Expressionism dominates serious painting discourse; the International Style becomes ubiquitous for corporate headquarters; total serialism reaches its most systematic phase at Darmstadt.",
+          "key_manifestations": ["Seagram Building by Mies van der Rohe", "Le Marteau sans maître by Pierre Boulez", "Woman I by Willem de Kooning", "Lolita by Vladimir Nabokov"]
+        },
+        "1960": {
+          "salience_share": 45,
+          "description": "Δw = -3: Slight decline begins as cracks appear in high modernist hegemony—Pop Art, Happenings, Neo-Dada, and Fluxus offer alternatives that challenge abstraction's dominance and modernism's autonomy claims. The cluster remains institutionally powerful but the sense of inevitable historical direction weakens as pluralism emerges.",
+          "key_manifestations": ["Guggenheim Museum by Frank Lloyd Wright", "Threnody to the Victims of Hiroshima by Krzysztof Penderecki", "The Sot-Weed Factor by John Barth", "Untitled combines by Robert Rauschenberg"]
+        },
+        "1965": {
+          "salience_share": 38,
+          "description": "Δw = -7: Accelerating decline as Pop Art, Minimalism, Conceptual Art, and countercultural challenges fragment high modernist consensus. Pop's embrace of commercial imagery directly repudiates modernist autonomy; Minimalism's industrial fabrication challenges Abstract Expressionist gesture and subjectivity.",
+          "key_manifestations": ["Whitney Museum of American Art by Marcel Breuer", "A Thousand Plateaus by Morton Feldman", "The Crying of Lot 49 by Thomas Pynchon", "Who's Afraid of Red, Yellow and Blue I by Barnett Newman"]
+        },
+        "1970": {
+          "salience_share": 30,
+          "description": "Δw = -8: Substantial decline as postmodernism, pluralism, and institutional critique become dominant critical frameworks. High modernist formal experimentation now appears as a historical period rather than ongoing project—subject to scholarly study and museum retrospectives rather than commanding contemporary practice.",
+          "key_manifestations": ["Lake Point Tower by Schipporeit-Heinrich", "String Quartet No. 3 by Elliott Carter", "Gravity's Rainbow manuscript in progress by Thomas Pynchon", "Number 14, 1960 retrospective exhibition of Mark Rothko"]
+        },
+        "1975": {
+          "salience_share": 22,
+          "description": "Δw = -8: Continued decline as postmodern critiques achieve theoretical elaboration and alternative practices multiply. Charles Jencks will soon declare modernist architecture dead; the Pictures Generation prepares critique of modernist originality and authorship.",
+          "key_manifestations": ["National Gallery of Art East Building by I.M. Pei", "Einstein on the Beach by Philip Glass and Robert Wilson", "JR by William Gaddis", "Vir Heroicus Sublimis retrospective at MoMA"]
+        },
+        "1980": {
+          "salience_share": 18,
+          "description": "Δw = -4: Salience stabilizes at lower level as high modernism becomes one historical option among many in explicitly pluralist cultural field. Neo-Expressionism's gestural painting might seem to revive Abstract Expressionist energies but actually confirms postmodern citationality.",
+          "key_manifestations": ["AT&T Building by Philip Johnson", "Symphony No. 3 by Witold Lutosławski", "The Names by Don DeLillo", "Anselm Kiefer paintings at Venice Biennale"]
+        },
+        "1985": {
+          "salience_share": 15,
+          "description": "Δw = -3: Gradual decline continues as postmodern pluralism becomes normalized cultural condition. High modernist formal experimentation appears increasingly as historical style available for revival, quotation, or synthesis rather than ongoing program.",
+          "key_manifestations": ["High Museum of Art by Richard Meier", "Harmonielehre by John Adams", "White Noise by Don DeLillo", "Wexner Center for the Arts competition won by Peter Eisenman"]
+        },
+        "1990": {
+          "salience_share": 12,
+          "description": "Δw = -3: Terminal point finds high modernist formal experimentation at its lowest salience while remaining permanently present in cultural landscape. The cluster has become art-historical canon rather than living practice—Abstract Expressionism dominates museum permanent collections, International Style buildings define urban skylines worldwide.",
+          "key_manifestations": ["Wexner Center for the Arts by Peter Eisenman", "Nixon in China by John Adams", "Vineland by Thomas Pynchon", "Asphodel by Elliott Carter"]
+        }
+      }
+    },
+    "2_existentialist_authenticity": {
+      "name": "Existentialist Authenticity",
+      "description": "This cluster tracks the emergence, explosion, and gradual cultural absorption of existentialist philosophy as a coherent worldview emphasizing authentic existence, radical freedom, anxiety before death, the absurdity of existence, and individual responsibility for self-creation. Beginning as a technical phenomenological project in German academic philosophy during the 1930s, existentialism transformed into a cultural phenomenon of unprecedented philosophical visibility in postwar Paris.\n\nThe cluster's trajectory reveals how a philosophical movement can achieve mass cultural penetration while simultaneously losing its conceptual precision. From Heidegger's dense analyses through Sartre's famous declaration that existence precedes essence, to the eventual absorption of authenticity-talk into humanistic psychology and self-help discourse, we observe both triumph and dilution.",
+      "trajectory": {
+        "1930": {
+          "salience_share": 2,
+          "description": "Baseline establishment: existentialist themes exist primarily within German academic phenomenology, with minimal broader cultural penetration. Heidegger's Being and Time has circulated for three years among philosophers, introducing concepts of Dasein, thrownness, anxiety, and authentic versus inauthentic existence, but remains largely inaccessible to non-specialists.",
+          "key_manifestations": ["Martin Heidegger - Being and Time (continued academic reception)", "Karl Jaspers - Philosophy of Existence lectures", "Gabriel Marcel - Metaphysical Journal", "Max Scheler - The Human Place in the Cosmos"]
+        },
+        "1935": {
+          "salience_share": 3,
+          "description": "Δw = +1: Modest increase as existentialist themes begin crossing into literature. Jean-Paul Sartre studies in Berlin (1933-34) and begins synthesizing Husserl and Heidegger with French literary traditions. His philosophical novel Nausea is being written, exploring contingency and the visceral experience of existence.",
+          "key_manifestations": ["Jean-Paul Sartre - The Transcendence of the Ego", "Karl Jaspers - Reason and Existence", "Gabriel Marcel - Being and Having", "Martin Heidegger - Introduction to Metaphysics (lectures)"]
+        },
+        "1940": {
+          "salience_share": 5,
+          "description": "Δw = +2: Significant increase driven by wartime conditions that make existentialist themes of anguish, choice, and responsibility viscerally relevant. Camus publishes The Stranger, presenting the absurd through sparse literary prose. War has made existentialist questions unavoidable.",
+          "key_manifestations": ["Jean-Paul Sartre - Nausea (continued reception)", "Albert Camus - The Stranger", "Albert Camus - The Myth of Sisyphus", "Jean-Paul Sartre - The Flies (written during occupation)"]
+        },
+        "1945": {
+          "salience_share": 18,
+          "description": "Δw = +13: Explosive increase as existentialism becomes the dominant intellectual movement of postwar France. Sartre's public lecture 'Existentialism is a Humanism' draws overflow crowds. Saint-Germain-des-Prés becomes synonymous with existentialist café culture, jazz, and intellectual ferment.",
+          "key_manifestations": ["Jean-Paul Sartre - Existentialism is a Humanism", "Jean-Paul Sartre - Being and Nothingness (widening reception)", "Jean-Paul Sartre - No Exit", "Simone de Beauvoir - The Blood of Others"]
+        },
+        "1950": {
+          "salience_share": 22,
+          "description": "Δw = +4: Peak or near-peak influence as existentialism consolidates cultural dominance. De Beauvoir's The Second Sex applies existentialist categories to women's situation. International reception accelerates: translations proliferate, American and British intellectuals engage seriously.",
+          "key_manifestations": ["Simone de Beauvoir - The Second Sex", "Albert Camus - The Rebel", "Maurice Merleau-Ponty - Phenomenology of Perception (continued influence)", "Jean-Paul Sartre - Saint Genet: Actor and Martyr"]
+        },
+        "1955": {
+          "salience_share": 20,
+          "description": "Δw = -2: Slight decline as existentialism remains culturally dominant but faces increasing intellectual competition. The Sartre-Camus break has fractured the movement's public unity. Structuralism emerges as rival paradigm.",
+          "key_manifestations": ["Samuel Beckett - Waiting for Godot", "Claude Lévi-Strauss - Tristes Tropiques", "Simone de Beauvoir - The Mandarins", "Albert Camus - The Fall"]
+        },
+        "1960": {
+          "salience_share": 16,
+          "description": "Δw = -4: Continued decline as structuralism gains momentum. Frantz Fanon's The Wretched of the Earth applies existentialist categories to colonial liberation. Existential psychotherapy translates philosophical concepts into therapeutic practice.",
+          "key_manifestations": ["Jean-Paul Sartre - Critique of Dialectical Reason", "Frantz Fanon - The Wretched of the Earth", "Eugene Ionesco - Rhinoceros", "Rollo May - Existential Psychology"]
+        },
+        "1965": {
+          "salience_share": 12,
+          "description": "Δw = -4: Accelerating decline as structuralism and early poststructuralism definitively displace existentialism as dominant intellectual paradigm. Yet existentialist themes permeate counterculture: questions of authenticity and self-creation circulate widely.",
+          "key_manifestations": ["Jean-Paul Sartre - Words (autobiography)", "Simone de Beauvoir - Force of Circumstance", "R.D. Laing - The Divided Self", "Hannah Arendt - Eichmann in Jerusalem"]
+        },
+        "1970": {
+          "salience_share": 8,
+          "description": "Δw = -4: Substantial decline as poststructuralism dominates French theory. The 'death of the subject' proclaimed by structuralism directly contradicts existentialist emphasis on individual consciousness. However, existentialist themes continue circulating in therapy culture.",
+          "key_manifestations": ["Jean-Paul Sartre - The Family Idiot (Flaubert biography, vol. 1)", "Simone de Beauvoir - Old Age", "Ingmar Bergman - The Passion of Anna", "Abraham Maslow - Motivation and Personality (continued influence)"]
+        },
+        "1975": {
+          "salience_share": 6,
+          "description": "Δw = -2: Continued gradual decline as existentialism settles into historical status rather than living intellectual movement. Existential psychotherapy continues as institutionalized therapeutic approach. Popular culture thoroughly saturated with authenticity discourse lacking philosophical grounding.",
+          "key_manifestations": ["Viktor Frankl - Man's Search for Meaning (continued mass reception)", "Simone de Beauvoir - All Said and Done", "Irvin Yalom - Existential Psychotherapy (developing)", "Terrence Malick - Badlands (existentialist cinema)"]
+        },
+        "1980": {
+          "salience_share": 4,
+          "description": "Δw = -2: Further decline as existentialism becomes definitively historical. Sartre's death (1980) marks symbolic end of an era; massive funeral demonstrates lasting public resonance while confirming movement's closure as living force.",
+          "key_manifestations": ["Jean-Paul Sartre - death and retrospectives (1980)", "Simone de Beauvoir - Adieux: A Farewell to Sartre", "Ridley Scott - Blade Runner (1982)", "Irvin Yalom - Existential Psychotherapy"]
+        },
+        "1985": {
+          "salience_share": 3,
+          "description": "Δw = -1: Low-level persistence as existentialism functions primarily as historical reference point and diffused cultural influence. De Beauvoir's death (1986) will remove the last major original figure.",
+          "key_manifestations": ["Milan Kundera - The Unbearable Lightness of Being", "Woody Allen - Hannah and Her Sisters", "Simone de Beauvoir - continued public presence", "William Barrett - Irrational Man (continued reception)"]
+        },
+        "1990": {
+          "salience_share": 2,
+          "description": "Δw = -1: Minimal but stable presence as existentialism functions as historical legacy. Its concepts have become invisible because ubiquitous: the very questions about authentic living it raised now seem like common sense rather than philosophical discoveries.",
+          "key_manifestations": ["Thomas Flynn - Sartre and Marxist Existentialism", "Richard Rorty - Contingency, Irony, and Solidarity", "Peter Weir - Dead Poets Society (authenticity themes)", "Irvin Yalom - Love's Executioner"]
+        }
+      }
+    },
+    "3_mass_culture_industry_dialectic": {
+      "name": "Mass Culture / Culture Industry Dialectic",
+      "description": "This cluster traces the evolving dialectic between high culture and mass entertainment, encompassing both the production of popular culture and the critical-theoretical discourse surrounding it. Beginning with the emergence of radio and sound cinema as dominant cultural forces in the 1930s, the cluster tracks how intellectuals, artists, and cultural producers negotiated the boundary between serious art and commercial entertainment.\n\nThe trajectory reveals a fundamental transformation in how Western societies understood the relationship between culture and commerce—from anxious distinction-making to systematic critique (Adorno, Macdonald, Greenberg) to postmodern collapse of high/low distinctions.",
+      "trajectory": {
+        "1930": {
+          "salience_share": 12,
+          "description": "Baseline establishment: The mass culture dialectic emerges as significant cultural concern with the consolidation of sound cinema and network radio. Hollywood's studio system reaches maturity, producing approximately 500 films annually. Intellectuals begin systematic engagement with these phenomena.",
+          "key_manifestations": ["All Quiet on the Western Front (Universal Pictures, 1930)", "Ortega y Gasset's 'The Revolt of the Masses' (1930)", "F.R. Leavis's 'Mass Civilisation and Minority Culture' (1930)", "Amos 'n' Andy radio serial (NBC, peak popularity)"]
+        },
+        "1935": {
+          "salience_share": 14,
+          "description": "Δw = +2: Increase driven by New Deal cultural politics and the maturation of radio. Walter Benjamin's 'Work of Art' essay circulates among European intellectuals. European fascism's sophisticated use of mass media provides cautionary example.",
+          "key_manifestations": ["Walter Benjamin's 'The Work of Art in the Age of Mechanical Reproduction' (1935)", "Leni Riefenstahl's 'Triumph of the Will' (1935)", "Top Hat (RKO, Fred Astaire/Ginger Rogers, 1935)", "March of Time newsreel series (launched 1935)"]
+        },
+        "1940": {
+          "salience_share": 15,
+          "description": "Δw = +1: Modest increase as wartime conditions intensify both mass culture production and critical attention. Clement Greenberg's 'Avant-Garde and Kitsch' crystallizes modernist position. The Frankfurt School establishes institutional presence at Columbia University.",
+          "key_manifestations": ["Clement Greenberg's 'Avant-Garde and Kitsch' (Partisan Review, 1939)", "The Grapes of Wrath (John Ford film, 1940)", "Fantasia (Disney, 1940)", "The Lone Ranger radio serial (ABC/Mutual, peak years)"]
+        },
+        "1945": {
+          "salience_share": 18,
+          "description": "Δw = +3: Significant increase as war's end prompts systematic reckoning with mass media's power. Horkheimer and Adorno's 'Dialectic of Enlightenment' provides the theoretical framework coining 'culture industry.'",
+          "key_manifestations": ["Horkheimer and Adorno's 'Dialectic of Enlightenment' (written 1944, published 1947)", "The Lost Weekend (Billy Wilder, 1945)", "Dwight Macdonald's 'A Theory of Popular Culture' (Politics, 1944)", "Meet Me in St. Louis (Vincente Minnelli, MGM, 1944)"]
+        },
+        "1950": {
+          "salience_share": 22,
+          "description": "Δw = +4: Substantial increase driven by television's rapid penetration. David Riesman's 'The Lonely Crowd' links mass media consumption to shifts in American character. Mass culture critique becomes itself a significant cultural industry.",
+          "key_manifestations": ["David Riesman's 'The Lonely Crowd' (1950)", "Sunset Boulevard (Billy Wilder, 1950)", "Your Show of Shows (NBC, 1950-1954)", "Lionel Trilling's 'The Liberal Imagination' (1950)"]
+        },
+        "1955": {
+          "salience_share": 24,
+          "description": "Δw = +2: Continued increase as television becomes dominant cultural form. Dwight Macdonald's influential essays systematize the critique, distinguishing 'masscult' from 'midcult.' Rock and roll's emergence adds generational dimension.",
+          "key_manifestations": ["Dwight Macdonald's 'A Theory of Mass Culture' (Diogenes, 1953)", "Rebel Without a Cause (Nicholas Ray, 1955)", "The $64,000 Question (CBS, 1955-1958)", "Disneyland theme park opens (1955)"]
+        },
+        "1960": {
+          "salience_share": 23,
+          "description": "Δw = -1: Slight decrease as consensus critique begins fragmenting. Pop Art's emergence (Johns, Rauschenberg, early Warhol) signals avant-garde reconciliation with commercial imagery.",
+          "key_manifestations": ["Daniel Boorstin's 'The Image: A Guide to Pseudo-Events in America' (1961)", "Newton Minow's 'Vast Wasteland' speech (1961)", "Psycho (Alfred Hitchcock, 1960)", "The Twilight Zone (CBS, 1959-1964)"]
+        },
+        "1965": {
+          "salience_share": 21,
+          "description": "Δw = -2: Decrease as Pop Art and youth counterculture complicate traditional critique. Susan Sontag's 'Notes on Camp' explicitly rejects evaluative frameworks of 1950s criticism. Marshall McLuhan offers neither condemnation nor celebration.",
+          "key_manifestations": ["Susan Sontag's 'Notes on Camp' (Partisan Review, 1964)", "Andy Warhol's 'Campbell's Soup Cans' exhibition and Factory scene", "Marshall McLuhan's 'Understanding Media' (1964)", "A Hard Day's Night (Richard Lester, 1964)"]
+        },
+        "1970": {
+          "salience_share": 19,
+          "description": "Δw = -2: Continued decrease as counterculture absorption and new theoretical frameworks dissolve earlier critical consensus. Academic film studies emerges as legitimate discipline. Hollywood's 'New Hollywood' brings art cinema aesthetics to commercial production.",
+          "key_manifestations": ["Hans Magnus Enzensberger's 'Constituents of a Theory of the Media' (1970)", "M*A*S*H (Robert Altman, 1970)", "The Mary Tyler Moore Show (CBS, 1970-1977)", "All in the Family (CBS, premiered 1971)"]
+        },
+        "1975": {
+          "salience_share": 17,
+          "description": "Δw = -2: Further decrease as British Cultural Studies begins transforming discourse. Stuart Hall's encoding/decoding model reconceptualizes audiences as active meaning-makers. Jaws inaugurates the blockbuster paradigm.",
+          "key_manifestations": ["Stuart Hall's 'Encoding and Decoding in the Television Discourse' (1973)", "Jaws (Steven Spielberg, 1975)", "Laura Mulvey's 'Visual Pleasure and Narrative Cinema' (Screen, 1975)", "Saturday Night Live (NBC, premiered 1975)"]
+        },
+        "1980": {
+          "salience_share": 16,
+          "description": "Δw = -1: Slight decrease as postmodern theory gains dominance. Pierre Bourdieu's 'Distinction' provides sociological framework for understanding cultural taste as class reproduction. MTV launches, making postmodern pastiche mainstream.",
+          "key_manifestations": ["Pierre Bourdieu's 'Distinction: A Social Critique of the Judgement of Taste' (1979/English 1984)", "MTV launches (1981)", "Star Wars: The Empire Strikes Back (1980)", "Hill Street Blues (NBC, 1981-1987)"]
+        },
+        "1985": {
+          "salience_share": 15,
+          "description": "Δw = -1: Continued slight decrease as cultural studies achieves disciplinary consolidation. Neil Postman's 'Amusing Ourselves to Death' represents continued Frankfurtian tradition, but increasingly appears nostalgic.",
+          "key_manifestations": ["Neil Postman's 'Amusing Ourselves to Death' (1985)", "Janice Radway's 'Reading the Romance' (1984)", "Miami Vice (NBC, 1984-1989)", "Back to the Future (Robert Zemeckis, 1985)"]
+        },
+        "1990": {
+          "salience_share": 14,
+          "description": "Δw = -1: Slight decrease as the high/low debate itself becomes historicized. Twin Peaks exemplifies postmodern television's art-cinema aspirations while achieving mass popularity. The Simpsons inaugurates sophisticated, self-referential animated comedy.",
+          "key_manifestations": ["Andrew Ross's 'No Respect: Intellectuals and Popular Culture' (1989)", "Twin Peaks (ABC, 1990-1991)", "The Simpsons (Fox, premiered 1989)", "Madonna's 'Blond Ambition' tour (1990)"]
+        }
+      }
+    },
+    "4_techno_scientific_rationalism": {
+      "name": "Techno-Scientific Rationalism",
+      "description": "Techno-Scientific Rationalism represents the enduring faith that systematic knowledge, expert planning, and technological innovation can solve humanity's most pressing problems. This cluster encompasses beliefs that nature operates according to discoverable laws, that society can be organized rationally, that progress is both inevitable and benevolent, and that trained experts should guide collective decision-making.\n\nThe prototype's temporal trajectory reveals a dramatic arc from Depression-era planning enthusiasm through wartime mobilization's apparent vindication, reaching apotheosis in the space age before facing sustained critique in the late 1960s and 1970s, then transforming into digital utopianism.",
+      "trajectory": {
+        "1930": {
+          "salience_share": 14,
+          "description": "Establishing baseline at Depression's onset, with technocracy movements, engineering-based social planning proposals, and early New Deal experimentation. Faith in technology persists despite economic collapse, partly because disaster is attributed to irrational market forces.",
+          "key_manifestations": ["Chicago Century of Progress Exposition planning documents", "Technocracy Inc. movement and Howard Scott's 'Introduction to Technocracy'", "Stuart Chase's 'A New Deal' advocating planned economy", "TVA preliminary planning reports"]
+        },
+        "1935": {
+          "salience_share": 17,
+          "description": "Δw = +3: Growth driven by New Deal agencies demonstrating that large-scale government planning could address Depression conditions. The Tennessee Valley Authority becomes operational, representing unprecedented integration of electrical power, flood control, and regional planning.",
+          "key_manifestations": ["Tennessee Valley Authority annual reports and David Lilienthal's speeches", "1935 San Diego California Pacific International Exposition", "Works Progress Administration technical and engineering projects", "DuPont's 'Better Things for Better Living Through Chemistry' campaign launch"]
+        },
+        "1940": {
+          "salience_share": 19,
+          "description": "Δw = +2: Acceleration as war mobilization demonstrates extraordinary productive capacity of planned, coordinated technological effort. The 1939-40 New York World's Fair crystallizes techno-scientific optimism with Futurama's highway visions.",
+          "key_manifestations": ["1939-40 New York World's Fair Futurama exhibit by Norman Bel Geddes", "Vannevar Bush's establishment of National Defense Research Committee", "Lewis Mumford's 'Technics and Civilization' critique", "Formation of MIT Radiation Laboratory for radar development"]
+        },
+        "1945": {
+          "salience_share": 24,
+          "description": "Δw = +5: Largest single-interval increase, catalyzed by atomic weapons demonstrating science's civilization-altering power. Vannevar Bush's 'Science: The Endless Frontier' provides institutional blueprint for government-funded basic research.",
+          "key_manifestations": ["Vannevar Bush's 'Science: The Endless Frontier' report", "ENIAC computer public announcement and demonstration", "Bulletin of the Atomic Scientists founding and Doomsday Clock", "Norbert Wiener's foundational cybernetics work at MIT"]
+        },
+        "1950": {
+          "salience_share": 26,
+          "description": "Δw = +2: Consolidation as Cold War competition institutionalizes science-government partnership. Cybernetics crystallizes as intellectual framework; UNIVAC's commercial introduction demonstrates computers entering public consciousness.",
+          "key_manifestations": ["Norbert Wiener's 'The Human Use of Human Beings: Cybernetics and Society'", "UNIVAC I commercial computer and CBS election coverage", "National Science Foundation establishment and first grants", "Atomic Energy Commission's 'Atoms for Peace' preliminary concepts"]
+        },
+        "1955": {
+          "salience_share": 28,
+          "description": "Δw = +2: Growth driven by Atoms for Peace optimism and expanding automation discourse. The RAND Corporation epitomizes the cluster's institutional form. Disneyland opens with Tomorrowland offering corporate-sponsored technological futurism.",
+          "key_manifestations": ["Eisenhower's Atoms for Peace program and first nuclear power plants", "Disneyland's Tomorrowland opening", "RAND Corporation systems analysis publications", "Jonas Salk's polio vaccine mass deployment"]
+        },
+        "1960": {
+          "salience_share": 32,
+          "description": "Δw = +4: Dramatic acceleration as space competition intensifies and Kennedy recruits RAND-trained 'whiz kids.' Systems thinking appears as universal method applicable to missiles, cities, corporations, and social problems alike.",
+          "key_manifestations": ["NASA Mercury program and astronaut selection", "Robert McNamara's Planning-Programming-Budgeting System at Pentagon", "Daniel Bell's 'The End of Ideology' on technocratic consensus", "MIT's Project MAC early time-sharing computer initiative"]
+        },
+        "1965": {
+          "salience_share": 34,
+          "description": "Δw = +2: Historical peak as Great Society programs extend systems analysis to poverty and education while space program successes multiply. However, early critiques emerge—Vietnam's quantified body counts revealing limitations.",
+          "key_manifestations": ["Great Society programs and Office of Economic Opportunity systems analysis", "IBM System/360 mainframe computer launch", "1964-65 New York World's Fair corporate exhibits", "Herman Kahn's 'On Thermonuclear War' and Hudson Institute futurism"]
+        },
+        "1970": {
+          "salience_share": 28,
+          "description": "Δw = -6: Largest decline as Vietnam disaster, environmental crisis, and countercultural critique converge. The moon landing marks simultaneous apotheosis and inflection point. Limits to Growth emerges from Club of Rome.",
+          "key_manifestations": ["Apollo 11 moon landing and subsequent Apollo missions", "Club of Rome's 'The Limits to Growth' preliminary research", "Earth Day 1970 and Environmental Protection Agency establishment", "Alvin Toffler's 'Future Shock' ambivalent futurism"]
+        },
+        "1975": {
+          "salience_share": 22,
+          "description": "Δw = -6: Continued decline as energy crisis, stagflation, and institutional failures compound Vietnam-era skepticism. Nuclear power faces mounting opposition. However, the microprocessor and early personal computing suggest technological democratization.",
+          "key_manifestations": ["Stewart Brand's Whole Earth Catalog and 'appropriate technology' movement", "Altair 8800 personal computer kit and Homebrew Computer Club", "Nuclear Regulatory Commission formation and reactor licensing delays", "E.F. Schumacher's 'Small Is Beautiful: Economics as if People Mattered'"]
+        },
+        "1980": {
+          "salience_share": 24,
+          "description": "Δw = +2: Modest recovery as personal computing enthusiasm, space shuttle anticipation, and Reagan-era military buildup generate renewed optimism. Silicon Valley emerges as institutional locus displacing RAND and NASA.",
+          "key_manifestations": ["IBM Personal Computer launch and MS-DOS", "Space Shuttle Columbia first flight", "Reagan's Strategic Defense Initiative announcement", "Genentech IPO and biotechnology investment surge"]
+        },
+        "1985": {
+          "salience_share": 26,
+          "description": "Δw = +2: Continued recovery driven by personal computer proliferation and artificial intelligence enthusiasm. The Challenger disaster reveals NASA's institutional failures. The cluster drifts decisively toward information technology.",
+          "key_manifestations": ["Apple Macintosh launch and '1984' commercial", "MIT Media Lab founding and Nicholas Negroponte's digital vision", "Expert systems boom and AI investment surge", "Challenger disaster investigation and Rogers Commission Report"]
+        },
+        "1990": {
+          "salience_share": 28,
+          "description": "Δw = +2: Continued gradual recovery as Cold War ends, internet emerges, and Human Genome Project launches. Faith in technological progress preserved while abandoning managerial institutions that previously embodied it.",
+          "key_manifestations": ["Tim Berners-Lee's World Wide Web proposal and early implementation", "Human Genome Project official launch", "Windows 3.0 release and personal computing mainstream adoption", "Gulf War precision weapons television coverage"]
+        }
+      }
+    },
+    "5_postmodern_irony_deconstruction": {
+      "name": "Postmodern Irony and Deconstruction",
+      "description": "This cluster tracks the emergence and eventual dominance of postmodernism as a cultural logic characterized by radical skepticism toward grand narratives, systematic deployment of irony and pastiche, collapse of high/low cultural distinctions, and fascination with surfaces, simulacra, and the play of signifiers.\n\nThe trajectory follows: long incubation within modernism (1930-1955), theoretical crystallization in France (1960-1970), explosive growth in American literature and arts (1970-1980), architectural and institutional legitimation (1980-1985), and triumphant ubiquity by 1990.",
+      "trajectory": {
+        "1930": {
+          "salience_share": 2,
+          "description": "Baseline establishment: postmodernism as named phenomenon does not yet exist, but scattered proto-postmodern gestures appear at modernism's margins—Duchamp's ready-mades, surrealist games with meaning, early metafictional experiments.",
+          "key_manifestations": ["Marcel Duchamp's 'The Green Box' (notes for Large Glass)", "Luis Buñuel and Salvador Dalí's 'L'Age d'Or'", "Flann O'Brien's 'At Swim-Two-Birds'", "René Magritte's 'The Treachery of Images'"]
+        },
+        "1935": {
+          "salience_share": 2,
+          "description": "Δw ≈ 0: Virtually no change. Depression and rising fascism intensify demands for cultural seriousness. Proto-postmodern play appears frivolous against urgent political stakes.",
+          "key_manifestations": ["Antonin Artaud's 'The Theater and Its Double' (early essays)", "Jorge Luis Borges's 'A Universal History of Infamy'", "Gertrude Stein's 'The Geographical History of America'", "Marcel Duchamp's 'Boîte-en-valise' (begun)"]
+        },
+        "1940": {
+          "salience_share": 2,
+          "description": "Δw ≈ 0: War conditions freeze cultural development. Borges in neutral Argentina continues metafictional experiments anticipating postmodernism's textual play, but reaches limited audience.",
+          "key_manifestations": ["Jorge Luis Borges's 'Tlön, Uqbar, Orbis Tertius'", "Jorge Luis Borges's 'The Garden of Forking Paths'", "Vladimir Nabokov's 'The Real Life of Sebastian Knight'", "Bertolt Brecht's 'The Good Person of Szechwan'"]
+        },
+        "1945": {
+          "salience_share": 3,
+          "description": "Δw = +1: Slight uptick as war's end releases suppressed experimental energies. The atomic bomb's apocalyptic rationality begins undermining Enlightenment confidence.",
+          "key_manifestations": ["Jorge Luis Borges's 'Ficciones' (collected)", "Henry Green's 'Loving'", "Max Horkheimer and Theodor Adorno's 'Dialectic of Enlightenment'", "Jean Genet's 'The Maids'"]
+        },
+        "1950": {
+          "salience_share": 4,
+          "description": "Δw = +1: Continued slow growth. Cage's chance operations dissolve authorial intention; Rauschenberg's combines blur art/life boundaries; Beckett's minimalism exhausts modernist meaning-making.",
+          "key_manifestations": ["Samuel Beckett's 'Waiting for Godot'", "John Cage's 'Music of Changes'", "Robert Rauschenberg's early combines", "Claude Lévi-Strauss's 'Introduction to the Work of Marcel Mauss'"]
+        },
+        "1955": {
+          "salience_share": 5,
+          "description": "Δw = +1: Incremental growth as late modernist exhaustion becomes palpable. Jasper Johns's flags and targets ironize representation; Nabokov's Lolita deploys unreliable narration and metaliterary games.",
+          "key_manifestations": ["Vladimir Nabokov's 'Lolita'", "Jasper Johns's 'Flag'", "Samuel Beckett's 'Molloy' (English translation)", "Claude Lévi-Strauss's 'Tristes Tropiques'"]
+        },
+        "1960": {
+          "salience_share": 8,
+          "description": "Δw = +3: Significant acceleration as postmodernism begins crystallizing. Pop Art explodes, collapsing high/low distinctions. Warhol's deadpan appropriations epitomize the new sensibility.",
+          "key_manifestations": ["Andy Warhol's '32 Campbell's Soup Cans'", "John Barth's 'The Sot-Weed Factor'", "Alain Robbe-Grillet's 'In the Labyrinth'", "Roy Lichtenstein's first comic-derived paintings"]
+        },
+        "1965": {
+          "salience_share": 12,
+          "description": "Δw = +4: Substantial growth as French theory achieves breakthrough. Derrida's 1966 Johns Hopkins lecture announces deconstruction's arrival; Foucault's 'The Order of Things' excavates epistemic discontinuities.",
+          "key_manifestations": ["Thomas Pynchon's 'The Crying of Lot 49'", "Jacques Derrida's 'Structure, Sign, and Play' lecture", "Michel Foucault's 'The Order of Things'", "Donald Barthelme's 'Come Back, Dr. Caligari'"]
+        },
+        "1970": {
+          "salience_share": 18,
+          "description": "Δw = +6: Major acceleration as 1968's political failures catalyze theoretical radicalization. Venturi's 'Learning from Las Vegas' manifesto signals architectural postmodernism. Conceptual art displaces object with idea.",
+          "key_manifestations": ["John Barth's 'Lost in the Funhouse'", "Robert Venturi et al.'s 'Learning from Las Vegas'", "Jacques Derrida's 'Of Grammatology' (English translation)", "Robert Smithson's 'Spiral Jetty'"]
+        },
+        "1975": {
+          "salience_share": 28,
+          "description": "Δw = +10: Dramatic expansion as postmodernism achieves theoretical self-consciousness. Lyotard's 'The Postmodern Condition' provides definitional synthesis. Architectural postmodernism emerges fully.",
+          "key_manifestations": ["Thomas Pynchon's 'Gravity's Rainbow'", "William Gaddis's 'JR'", "Robert Altman's 'Nashville'", "Charles Moore's Piazza d'Italia (designed)"]
+        },
+        "1980": {
+          "salience_share": 42,
+          "description": "Δw = +14: Massive expansion as postmodernism achieves cultural dominance. Philip Johnson's AT&T Building legitimizes historical quotation. MTV launches, making postmodern pastiche mainstream youth culture.",
+          "key_manifestations": ["Jean Baudrillard's 'Simulacra and Simulation'", "Ridley Scott's 'Blade Runner'", "Philip Johnson's AT&T Building", "Cindy Sherman's 'Untitled Film Stills'"]
+        },
+        "1985": {
+          "salience_share": 55,
+          "description": "Δw = +13: Continued expansion toward hegemony. Postmodern irony becomes default educated sensibility. DeLillo's 'White Noise' anatomizes media saturation. Academic theory achieves maximum influence.",
+          "key_manifestations": ["Don DeLillo's 'White Noise'", "William Gibson's 'Neuromancer'", "Jean-François Lyotard's 'The Postmodern Condition' (English translation wide circulation)", "David Lynch's 'Blue Velvet'"]
+        },
+        "1990": {
+          "salience_share": 65,
+          "description": "Δw = +10: Maximum cultural saturation as defining sensibility of educated Western culture. End of Cold War confirms 'end of grand narratives.' The Simpsons epitomizes postmodern sensibility. Jameson's 'Postmodernism' provides definitive analysis.",
+          "key_manifestations": ["Fredric Jameson's 'Postmodernism, or, The Cultural Logic of Late Capitalism'", "The Simpsons television series premiere", "Thomas Pynchon's 'Vineland'", "Frank Gehry's Vitra Design Museum"]
+        }
+      }
+    },
+    "6_liberation_emancipatory_politics": {
+      "name": "Liberation / Emancipatory Politics",
+      "description": "This cluster tracks cultural energy devoted to collective struggles against oppression, domination, and systemic inequality—civil rights movements, anti-colonial liberation, feminist theory and activism, gay liberation, disability rights, and identity-based mobilization.\n\nThe trajectory reveals significant drift: from 1930s class struggle and anti-colonial resistance through 1940-55 suppression, to explosive 1960-70 fragmentation into multiple streams, then 1975-90 institutionalization through academic programs, legal reforms, and NGOs.",
+      "trajectory": {
+        "1930": {
+          "salience_share": 8,
+          "description": "Baseline establishment: Liberation politics centers on class struggle and nascent anti-colonial resistance, with racial justice emerging as distinct current. The Great Depression catalyzes labor radicalism while Harlem Renaissance continues challenging racial hierarchy.",
+          "key_manifestations": ["Langston Hughes, 'Not Without Laughter' (1930)", "Gandhi's Salt March and civil disobedience campaign (1930)", "NAACP's first Scottsboro Boys defense brief (1931)", "W.E.B. Du Bois, 'Africa: Its Geography, People and Products' (1930)"]
+        },
+        "1935": {
+          "salience_share": 11,
+          "description": "Δw = +3: Increase driven by Popular Front politics uniting progressive movements against fascism. Labor organizing intensifies with CIO formation. Italian invasion of Ethiopia galvanizes pan-African sentiment globally.",
+          "key_manifestations": ["Langston Hughes, 'Let America Be America Again' (1936)", "Zora Neale Hurston, 'Mules and Men' (1935)", "Congress of Industrial Organizations (CIO) founding (1935)", "Italy-Ethiopia War protests and solidarity movements (1935-36)"]
+        },
+        "1940": {
+          "salience_share": 9,
+          "description": "Δw = -2: Decline reflects wartime priorities subordinating domestic liberation politics to anti-fascist unity. The Double V Campaign articulates Black demands for victory over fascism abroad and Jim Crow at home.",
+          "key_manifestations": ["Richard Wright, 'Native Son' (1940)", "A. Philip Randolph's March on Washington Movement (1941)", "Executive Order 8802 establishing Fair Employment Practices Committee (1941)", "W.E.B. Du Bois, 'Dusk of Dawn' (1940)"]
+        },
+        "1945": {
+          "salience_share": 10,
+          "description": "Δw = +1: Modest increase as wartime contradictions reach resolution point. Black veterans return demanding rights; colonial subjects launch independence movements; UN Charter articulates universal human rights.",
+          "key_manifestations": ["United Nations Charter and Universal Declaration of Human Rights drafting (1945-48)", "Richard Wright, 'Black Boy' (1945)", "Founding of the Fifth Pan-African Congress, Manchester (1945)", "NAACP legal brief for Morgan v. Virginia (1946)"]
+        },
+        "1950": {
+          "salience_share": 6,
+          "description": "Δw = -4: Sharp decline as McCarthyism and Cold War anticommunism devastate progressive movements. However, legal victories continue: Sweatt v. Painter chips away at educational segregation.",
+          "key_manifestations": ["Ralph Ellison, 'Invisible Man' (1952)", "Sweatt v. Painter Supreme Court decision (1950)", "Simone de Beauvoir, 'The Second Sex' English translation (1953)", "Frantz Fanon, 'Black Skin, White Masks' (1952)"]
+        },
+        "1955": {
+          "salience_share": 9,
+          "description": "Δw = +3: Recovery begins with Brown v. Board of Education and Montgomery Bus Boycott catalyzing new phase of civil rights mobilization. Decolonization accelerates dramatically.",
+          "key_manifestations": ["Brown v. Board of Education Supreme Court decision (1954)", "Montgomery Bus Boycott (1955-56)", "Emmett Till murder and trial (1955)", "Bandung Conference of African-Asian nations (1955)"]
+        },
+        "1960": {
+          "salience_share": 16,
+          "description": "Δw = +7: Dramatic increase as sit-in movement explodes and African decolonization accelerates. SNCC forms; Cuban Revolution offers revolutionary alternative. Kennedy responds with cautious reform.",
+          "key_manifestations": ["Greensboro sit-ins and lunch counter desegregation movement (1960)", "Student Nonviolent Coordinating Committee (SNCC) founding (1960)", "Frantz Fanon, 'The Wretched of the Earth' (1961)", "CORE Freedom Rides (1961)"]
+        },
+        "1965": {
+          "salience_share": 24,
+          "description": "Δw = +8: Peak salience as civil rights legislation passes but movement fragments. Black Power emerges. Vietnam War opposition creates new mass movement. Feminist revival begins.",
+          "key_manifestations": ["Malcolm X, 'The Autobiography of Malcolm X' (1965)", "Selma to Montgomery marches and Voting Rights Act (1965)", "Betty Friedan, 'The Feminine Mystique' (1963) and NOW founding (1966)", "Stokely Carmichael/Kwame Ture, 'Black Power' speech (1966)"]
+        },
+        "1970": {
+          "salience_share": 28,
+          "description": "Δw = +4: Maximum salience as liberation movements proliferate. Women's Liberation emerges as autonomous movement. Gay Liberation explodes after Stonewall. COINTELPRO fragments movements through repression.",
+          "key_manifestations": ["Kate Millett, 'Sexual Politics' (1970)", "Black Panther Party 'Ten-Point Program' and free breakfast programs", "Stonewall uprising and Gay Liberation Front (1969-70)", "Angela Davis trial and 'Free Angela' movement (1970-72)"]
+        },
+        "1975": {
+          "salience_share": 22,
+          "description": "Δw = -6: Decline from peak as movements institutionalize and face backlash. ERA ratification stalls. Roe v. Wade achieved but faces immediate opposition. Liberation discourse migrates to institutions.",
+          "key_manifestations": ["Roe v. Wade Supreme Court decision (1973)", "Combahee River Collective Statement (1977)", "Michel Foucault, 'Discipline and Punish' (1975)", "Boston Women's Health Book Collective, 'Our Bodies, Ourselves' expanded edition (1976)"]
+        },
+        "1980": {
+          "salience_share": 15,
+          "description": "Δw = -7: Sharp decline as Reagan Revolution inaugurates conservative era. New Right mobilization targets feminist, gay, and civil rights gains. AIDS crisis emerges. However, anti-apartheid movement builds.",
+          "key_manifestations": ["Audre Lorde, 'The Cancer Journals' (1980) and 'Sister Outsider' (1984)", "Gloria Anzaldúa and Cherríe Moraga, 'This Bridge Called My Back' (1981)", "Anti-apartheid divestment movement and Free South Africa Movement (1984)", "Alice Walker, 'The Color Purple' (1982)"]
+        },
+        "1985": {
+          "salience_share": 14,
+          "description": "Δw = -1: Relative stabilization as movements adapt through institutional strategies. ACT UP formation transforms AIDS activism. Anti-apartheid achieves major victories. Academic feminism develops intersectionality.",
+          "key_manifestations": ["ACT UP founding and AIDS activism (1987)", "Kimberlé Crenshaw develops intersectionality framework (1989)", "Jesse Jackson presidential campaign and Rainbow Coalition (1984, 1988)", "Comprehensive Anti-Apartheid Act passage (1986)"]
+        },
+        "1990": {
+          "salience_share": 16,
+          "description": "Δw = +2: Modest recovery as Cold War ends and apartheid falls. Judith Butler's 'Gender Trouble' inaugurates queer theory. Americans with Disabilities Act passes. Identity politics debates intensify.",
+          "key_manifestations": ["Judith Butler, 'Gender Trouble' (1990)", "Americans with Disabilities Act (1990)", "Nelson Mandela's release and South African negotiations (1990)", "Anita Hill testimony at Clarence Thomas confirmation hearings (1991)"]
+        }
+      }
+    },
+    "7_cold_war_ideological_bifurcation": {
+      "name": "Cold War Ideological Bifurcation",
+      "description": "This cluster tracks the capitalism-versus-communism ideological division as a fundamental cultural organizing principle. It encompasses anti-communist propaganda, socialist realism, spy fiction, nuclear anxiety narratives, political purges, loyalty oaths, blacklists, and the broader cultural manifestations of superpower rivalry.\n\nThe temporal arc follows: emergence from 1930s ideological polarization, temporary WWII suppression, explosive 1947-1950 onset, sustained dominance through Reagan-era second Cold War, then dramatic collapse with Soviet disintegration.",
+      "trajectory": {
+        "1930": {
+          "salience_share": 8,
+          "description": "Baseline establishment: ideological bifurcation exists but remains minority concern, overshadowed by economic collapse. The Russian Revolution attracts intellectual curiosity. The Dies Committee begins probing Hollywood.",
+          "key_manifestations": ["Michael Gold's 'Jews Without Money'", "Diego Rivera's Detroit Industry Murals commission controversy", "Sergei Eisenstein's 'Romance Sentimentale'", "The New Masses magazine founding"]
+        },
+        "1935": {
+          "salience_share": 15,
+          "description": "Δw = +7: Significant growth driven by Depression radicalization and Popular Front strategy. American intellectuals increasingly travel to Soviet Union. The Communist Party USA achieves maximum cultural influence.",
+          "key_manifestations": ["Clifford Odets' 'Waiting for Lefty'", "Sinclair Lewis' 'It Can't Happen Here'", "The Group Theatre's proletarian productions", "First American Writers' Congress"]
+        },
+        "1940": {
+          "salience_share": 12,
+          "description": "Δw = -3: Decline reflecting disorientation from Hitler-Stalin Pact. Popular Front cultural networks fracture. European war mobilization suppresses peacetime ideological culture production.",
+          "key_manifestations": ["Ernest Hemingway's 'For Whom the Bell Tolls'", "Arthur Koestler's 'Darkness at Noon'", "The House Un-American Activities Committee Hollywood hearings", "Richard Wright's 'Native Son'"]
+        },
+        "1945": {
+          "salience_share": 18,
+          "description": "Δw = +6: Growth as wartime alliance rapidly gives way to emerging Cold War tensions. The atomic bombings introduce nuclear dimension. Soviet armies occupying Eastern Europe trigger Western anxiety.",
+          "key_manifestations": ["George Orwell's 'Animal Farm'", "The film 'The House on 92nd Street'", "Soviet victory celebrations and mythology", "Churchill's Iron Curtain speech preparation"]
+        },
+        "1950": {
+          "salience_share": 35,
+          "description": "Δw = +17: Largest increase as Cold War achieves cultural dominance through multiple crises—Soviet atomic bomb, Mao's victory, Hiss conviction, Korean War. McCarthyism explodes. The Hollywood blacklist institutionalizes.",
+          "key_manifestations": ["Senator Joseph McCarthy's Wheeling speech", "HUAC Hollywood Ten hearings aftermath", "George Orwell's 'Nineteen Eighty-Four' American reception", "The Red Channels blacklist publication"]
+        },
+        "1955": {
+          "salience_share": 32,
+          "description": "Δw = -3: Slight decline as McCarthyism's excesses generate backlash while underlying Cold War structure remains. McCarthy censured. Science fiction emerges as vehicle for ideological anxiety.",
+          "key_manifestations": ["The film 'Invasion of the Body Snatchers'", "Edward R. Murrow's 'See It Now' McCarthy broadcast", "The Congress for Cultural Freedom's global expansion", "Vladimir Dudintsev's 'Not by Bread Alone'"]
+        },
+        "1960": {
+          "salience_share": 30,
+          "description": "Δw = -2: Gradual decline as Cold War becomes normalized background. Kennedy introduces sophisticated anticommunism emphasizing competition. Cuban Revolution brings Cold War to Western Hemisphere.",
+          "key_manifestations": ["John F. Kennedy's inaugural address", "The film 'The Manchurian Candidate'", "Soviet Sputnik cultural aftermath", "Allen Drury's 'Advise and Consent'"]
+        },
+        "1965": {
+          "salience_share": 28,
+          "description": "Δw = -2: Vietnam War begins transforming Cold War cultural politics by generating unprecedented domestic opposition. James Bond films achieve massive popularity encoding Cold War as glamorous entertainment.",
+          "key_manifestations": ["The film 'Dr. Strangelove'", "Ian Fleming's James Bond series film adaptations", "The Port Huron Statement's Cold War critique", "Aleksandr Solzhenitsyn's 'One Day in the Life of Ivan Denisovich' Western reception"]
+        },
+        "1970": {
+          "salience_share": 24,
+          "description": "Δw = -4: Significant decline as Vietnam War delegitimizes Cold War frameworks. Nixon's opening to China disrupts binary structure. Pentagon Papers discredit national security state credibility.",
+          "key_manifestations": ["The film 'M*A*S*H' as Vietnam allegory", "Aleksandr Solzhenitsyn's Nobel Prize", "Nixon's China visit preparations", "The Weather Underground's ideological violence"]
+        },
+        "1975": {
+          "salience_share": 20,
+          "description": "Δw = -4: Continued decline as Vietnam ends and détente peaks. Helsinki Accords institutionalize European status quo while introducing human rights discourse. Saigon's fall absorbed without predicted catastrophe.",
+          "key_manifestations": ["Aleksandr Solzhenitsyn's 'The Gulag Archipelago' English publication", "The film 'Three Days of the Condor'", "Helsinki Accords signing", "Saigon fall media coverage"]
+        },
+        "1980": {
+          "salience_share": 30,
+          "description": "Δw = +10: Dramatic revival as Soviet Afghanistan invasion, Reagan's election, and renewed nuclear anxiety end détente. Second Cold War intensifies rhetoric. Nuclear freeze movement mobilizes millions.",
+          "key_manifestations": ["Ronald Reagan's 'Evil Empire' speech preparations", "The television film 'The Day After'", "The nuclear freeze movement and protests", "Solidarity movement in Poland"]
+        },
+        "1985": {
+          "salience_share": 25,
+          "description": "Δw = -5: Decline begins as Gorbachev introduces glasnost and perestroika. Reagan shows surprising openness to negotiation. Chernobyl reveals Soviet system's internal contradictions.",
+          "key_manifestations": ["Mikhail Gorbachev's glasnost policies", "The film 'Rocky IV'", "Reagan-Gorbachev Geneva Summit", "Sting's 'Russians' and nuclear anxiety pop culture"]
+        },
+        "1990": {
+          "salience_share": 12,
+          "description": "Δw = -13: Collapse as Cold War effectively ends with Soviet bloc dissolution. Berlin Wall falls. Fukuyama's 'End of History' articulates triumphalist interpretation. The cluster collapses into historical memory.",
+          "key_manifestations": ["Francis Fukuyama's 'The End of History?' essay", "Berlin Wall fall celebrations", "Tom Clancy's 'The Hunt for Red October' film", "German reunification ceremonies"]
+        }
+      }
+    },
+    "8_therapeutic_self_actualization": {
+      "name": "Therapeutic Self-Actualization",
+      "description": "This cluster traces the remarkable ascent of psychological interiority as dominant framework for understanding selfhood, meaning, and social belonging. Beginning with Freudian psychoanalysis's cultural diffusion, the therapeutic ethos gradually transformed from medical specialty into comprehensive worldview.\n\nThe movement from Freud's tragic vision through Maslow's optimistic hierarchy to recovery movement's twelve-step programs represents continuous drift within a stable therapeutic frame. By 1990, therapeutic thinking had so thoroughly permeated American culture as to become nearly invisible.",
+      "trajectory": {
+        "1930": {
+          "salience_share": 4,
+          "description": "Baseline establishment: Therapeutic discourse occupies modest but growing niche, concentrated among urban educated elites. Freudian psychoanalysis consolidates institutional presence while diffusing into popular culture through magazines and Hollywood.",
+          "key_manifestations": ["Civilization and Its Discontents by Sigmund Freud (1930)", "The New York Psychoanalytic Society training institute establishment", "Private Worlds (film, 1935, produced 1934-35)", "The Neurotic Personality of Our Time outline development by Karen Horney"]
+        },
+        "1935": {
+          "salience_share": 5,
+          "description": "Δw = +1: Modest growth as economic trauma generates psychological symptoms. Neo-Freudian revisionists gain prominence, emphasizing cultural factors over instinct theory. Mental hygiene movement accelerates.",
+          "key_manifestations": ["The Neurotic Personality of Our Time by Karen Horney (1937)", "Dale Carnegie's How to Win Friends and Influence People (1936)", "Alcoholics Anonymous founding and Big Book development (1935-1939)", "The Menninger Clinic expansion in Topeka, Kansas"]
+        },
+        "1940": {
+          "salience_share": 6,
+          "description": "Δw = +1: Continued steady growth as therapeutic frameworks prove useful for wartime mobilization and managing psychological casualties. War conditions legitimize therapeutic intervention as patriotic necessity.",
+          "key_manifestations": ["Escape from Freedom by Erich Fromm (1941)", "Let There Be Light (John Huston documentary on combat trauma, 1946, filmed 1945-46)", "The Ego and the Mechanisms of Defense by Anna Freud (English translation 1937, influence peaks)", "Spellbound directed by Alfred Hitchcock (1945)"]
+        },
+        "1945": {
+          "salience_share": 9,
+          "description": "Δw = +3: Substantial jump as postwar conditions create unprecedented demand. GI Bill funds psychiatric training. National Mental Health Act establishes federal commitment. Psychoanalysis achieves peak prestige.",
+          "key_manifestations": ["The Snake Pit by Mary Jane Ward (1946, novel and 1948 film)", "The Common Sense Book of Baby and Child Care by Benjamin Spock (1946)", "Man's Search for Meaning by Viktor Frankl (1946)", "National Mental Health Act establishing NIMH (1946)"]
+        },
+        "1950": {
+          "salience_share": 12,
+          "description": "Δw = +3: Continued strong growth as therapeutic culture becomes central to postwar American identity. Psychoanalysis reaches cultural zenith. Carl Rogers develops client-centered therapy prefiguring humanistic psychology.",
+          "key_manifestations": ["The Lonely Crowd by David Riesman (1950)", "Client-Centered Therapy by Carl Rogers (1951)", "Childhood and Society by Erik Erikson (1950)", "The Three Faces of Eve (book 1957, representing 1950s multiple personality fascination)"]
+        },
+        "1955": {
+          "salience_share": 14,
+          "description": "Δw = +2: Steady growth continues. Pharmaceutical revolution begins with chlorpromazine. Ego psychology achieves full theoretical elaboration. Norman Vincent Peale's positive thinking appropriates therapeutic concepts.",
+          "key_manifestations": ["The Power of Positive Thinking by Norman Vincent Peale (1952, peak influence mid-decade)", "Eros and Civilization by Herbert Marcuse (1955)", "The Sane Society by Erich Fromm (1955)", "Rebel Without a Cause (film, 1955)"]
+        },
+        "1960": {
+          "salience_share": 17,
+          "description": "Δw = +3: Acceleration begins as humanistic psychology emerges to challenge psychoanalytic orthodoxy. Maslow's hierarchy reframes therapeutic goals toward self-actualization. Esalen Institute creates institutional home for human potential.",
+          "key_manifestations": ["Toward a Psychology of Being by Abraham Maslow (1962)", "The Divided Self by R.D. Laing (1960)", "Asylums by Erving Goffman (1961)", "Esalen Institute founding at Big Sur (1962)"]
+        },
+        "1965": {
+          "salience_share": 21,
+          "description": "Δw = +4: Sharp acceleration as therapeutic culture merges with sixties ferment. Encounter groups proliferate. Fritz Perls' Gestalt therapy becomes countercultural touchstone. The therapeutic merges with the spiritual.",
+          "key_manifestations": ["Games People Play by Eric Berne (1964)", "I'm OK—You're OK development by Thomas Harris (published 1969, based on mid-60s work)", "Gestalt Therapy Verbatim by Fritz Perls (1969, documenting mid-60s Esalen sessions)", "NTL Institute sensitivity training programs expansion"]
+        },
+        "1970": {
+          "salience_share": 26,
+          "description": "Δw = +5: Peak acceleration as therapeutic culture achieves maximum salience and transforms into lifestyle. Human potential movement reaches mass popularity: est, Primal Scream, TM. Feminist therapy emerges.",
+          "key_manifestations": ["I'm OK—You're OK by Thomas Harris (1969, bestseller through early 70s)", "The Primal Scream by Arthur Janov (1970)", "est (Erhard Seminars Training) founding (1971)", "One Flew Over the Cuckoo's Nest film (1975, based on 1962 novel)"]
+        },
+        "1975": {
+          "salience_share": 29,
+          "description": "Δw = +3: Continued growth as therapeutic transforms from countercultural authenticity to mainstream self-help industry. Recovery movement begins expansion. M. Scott Peck inaugurates new genre of spiritual-psychological self-help.",
+          "key_manifestations": ["The Road Less Traveled by M. Scott Peck (1978)", "Your Erroneous Zones by Wayne Dyer (1976)", "Passages: Predictable Crises of Adult Life by Gail Sheehy (1976)", "Ordinary People (novel 1976, film 1980)"]
+        },
+        "1980": {
+          "salience_share": 31,
+          "description": "Δw = +2: Growth continues as Reagan-era individualism and professional mainstreaming reshape therapeutic culture. Recovery movement achieves mass presence. DSM-III eliminates psychoanalytic language. Prozac era begins.",
+          "key_manifestations": ["DSM-III revolutionizing psychiatric diagnosis (1980)", "Codependent No More by Melody Beattie (1986, representing early 80s codependency movement emergence)", "Women Who Love Too Much by Robin Norwood (1985)", "When Bad Things Happen to Good People by Harold Kushner (1981)"]
+        },
+        "1985": {
+          "salience_share": 33,
+          "description": "Δw = +2: Steady growth as recovery culture achieves hegemony. Codependency and recovery movements reach peak intensity through bestsellers and television. 'Repressed memory' phenomenon emerges controversially.",
+          "key_manifestations": ["Healing the Shame That Binds You by John Bradshaw (1988)", "Codependent No More by Melody Beattie (1986)", "The Oprah Winfrey Show national syndication (1986)", "Adult Children of Alcoholics movement institutionalization"]
+        },
+        "1990": {
+          "salience_share": 34,
+          "description": "Δw = +1: Growth plateau as therapeutic culture achieves maximum saturation. Recovery movement faces backlash. Prozac transforms both psychiatric practice and cultural understanding. Therapeutic concepts fully integrated into corporate management.",
+          "key_manifestations": ["Iron John: A Book About Men by Robert Bly (1990)", "The Seven Habits of Highly Effective People by Stephen Covey (1989)", "Prozac widespread cultural impact (approved 1987, cultural phenomenon by 1990)", "John Bradshaw's Homecoming PBS series and book (1990)"]
+        }
+      }
+    },
+    "9_ecological_limits_consciousness": {
+      "name": "Ecological / Limits Consciousness",
+      "description": "This cluster tracks environmental awareness from elite conservation movements through explosive 1970s growth and subsequent institutionalization. It encompasses wilderness preservation, pollution concerns, ecological science, limits-to-growth economics, anti-nuclear activism, and eventually climate discourse.\n\nThe trajectory differs markedly from other clusters: marginal 1930-1960, explosive 1965-1975 with Silent Spring and Earth Day catalysts, partial Reagan-era marginalization, then recovery as global atmospheric issues emerge.",
+      "trajectory": {
+        "1930": {
+          "salience_share": 2,
+          "description": "Baseline establishment: Ecological consciousness exists as minor current, primarily through elite conservation organizations. The Dust Bowl begins revealing consequences of agricultural practices that ignored ecological limits.",
+          "key_manifestations": ["Civilian Conservation Corps (established 1933)", "Aldo Leopold's early wildlife management work", "Robert Marshall founding The Wilderness Society (1935)", "Dust Bowl as emerging environmental crisis"]
+        },
+        "1935": {
+          "salience_share": 3,
+          "description": "Δw = +1: Modest increase driven by Dust Bowl visibility and New Deal conservation programs. The Wilderness Society and National Wildlife Federation are founded. Soil Conservation Service represents federal recognition.",
+          "key_manifestations": ["Soil Conservation Service established (1935)", "National Wildlife Federation founded (1936)", "Pare Lorentz's The Plow That Broke the Plains (1936)", "Jay Norwood Darling's conservation cartoons"]
+        },
+        "1940": {
+          "salience_share": 2,
+          "description": "Δw = -1: Slight decline as war mobilization redirects attention and legitimizes intensive resource extraction. Conservation framed as wartime sacrifice rather than ecological principle.",
+          "key_manifestations": ["Aldo Leopold drafting A Sand County Almanac", "Wartime resource extraction in national forests", "Victory Garden movement (pragmatic not ecological)", "Ansel Adams's national park photography"]
+        },
+        "1945": {
+          "salience_share": 2,
+          "description": "Δw = 0: Stagnation as postwar optimism and consumerism overwhelm environmental awareness. Atomic bomb introduces new dimension of human power over nature but processed through security rather than ecological frameworks.",
+          "key_manifestations": ["A Sand County Almanac published posthumously (1949)", "DDT celebrated as miracle pesticide", "Suburban sprawl begins accelerating", "Echo Park Dam controversy begins"]
+        },
+        "1950": {
+          "salience_share": 2,
+          "description": "Δw = 0: Continued marginality during apex of postwar growth ideology. Echo Park Dam controversy begins mobilizing conservation constituencies, pioneering tactics important later.",
+          "key_manifestations": ["Echo Park Dam controversy (1950-1956)", "Fairfield Osborn's Our Plundered Planet", "William Vogt's Road to Survival", "Early air pollution episodes (Donora, Los Angeles smog)"]
+        },
+        "1955": {
+          "salience_share": 3,
+          "description": "Δw = +1: Slight stirring as specific pollution incidents and development controversies generate localized resistance. Echo Park Dam victory demonstrates organized advocacy can defeat development projects. Nuclear testing fallout introduces invisible threats.",
+          "key_manifestations": ["Sierra Club's successful Echo Park campaign", "Strontium-90 fallout controversy begins", "David Brower transforming Sierra Club activism", "Air Pollution Control Act (1955)"]
+        },
+        "1960": {
+          "salience_share": 4,
+          "description": "Δw = +1: Continued gradual increase as pollution becomes more visible. Wilderness Act campaign gains political traction. Scientific ecology develops concepts like ecosystem and carrying capacity.",
+          "key_manifestations": ["Wilderness Act campaign intensifies", "Point Reyes National Seashore campaign", "Wallace Stegner's Wilderness Letter (1960)", "Water pollution becoming visible issue"]
+        },
+        "1965": {
+          "salience_share": 12,
+          "description": "Δw = +8: Dramatic increase catalyzed by Silent Spring's impact and Wilderness Act passage. Rachel Carson transformed public consciousness about ecological interconnection. President Johnson's Great Society includes environmental initiatives.",
+          "key_manifestations": ["Silent Spring's ongoing cultural impact (1962)", "Wilderness Act passed (1964)", "Water Quality Act (1965)", "Stewart Udall's The Quiet Crisis (1963)"]
+        },
+        "1970": {
+          "salience_share": 28,
+          "description": "Δw = +16: Explosive growth as environmentalism achieves mass movement status. Earth Day mobilizes 20 million Americans. EPA created. NEPA, Clean Air Act pass. Limits to Growth discourse emerges.",
+          "key_manifestations": ["Earth Day (April 22, 1970)", "National Environmental Policy Act (1970)", "Environmental Protection Agency created (1970)", "Paul Ehrlich's The Population Bomb (1968)"]
+        },
+        "1975": {
+          "salience_share": 32,
+          "description": "Δw = +4: Peak salience as energy crisis validates limits-to-growth discourse. OPEC embargo makes resource limits tangible. Anti-nuclear movement gains momentum. However, fragmentation and institutionalization begin.",
+          "key_manifestations": ["The Limits to Growth (1972) ongoing influence", "OPEC oil embargo and energy crisis (1973)", "Endangered Species Act (1973)", "E.F. Schumacher's Small Is Beautiful (1973)"]
+        },
+        "1980": {
+          "salience_share": 22,
+          "description": "Δw = -10: Significant decline as Reagan Revolution challenges environmental regulation. James Watt at Interior attempts rollbacks. However, Three Mile Island and Love Canal generate new concerns. Superfund passes.",
+          "key_manifestations": ["Three Mile Island accident (1979)", "Love Canal toxic waste disaster", "Superfund Act (CERCLA, 1980)", "Reagan environmental rollback attempts"]
+        },
+        "1985": {
+          "salience_share": 24,
+          "description": "Δw = +2: Modest recovery as ozone hole discovery introduces global atmospheric change thinking. Bhopal disaster maintains public concern. Green parties strengthen in Europe. Earth First! emerges at margins.",
+          "key_manifestations": ["Ozone hole discovery (1985)", "Bhopal disaster aftermath (1984)", "Earth First! radical environmentalism", "Acid rain becoming major issue"]
+        },
+        "1990": {
+          "salience_share": 26,
+          "description": "Δw = +2: Continued modest recovery as climate change enters mainstream discourse. Earth Day twentieth anniversary. IPCC established. Exxon Valdez provides dramatic imagery. Sustainable development becomes new framework.",
+          "key_manifestations": ["Twentieth anniversary of Earth Day (1990)", "IPCC First Assessment Report (1990)", "Exxon Valdez oil spill (1989)", "Clean Air Act Amendments (1990)"]
+        }
+      }
+    },
+    "10_counter_cultural_rebellion_waves": {
+      "name": "Counter-Cultural Rebellion Waves",
+      "description": "This cluster tracks successive waves of aesthetic and lifestyle rebellion against mainstream conformity—manifested through music, dress, drug use, sexual mores, and deliberate rejection of bourgeois respectability. Unlike political movements, counter-cultural rebellion centers on aesthetic/lifestyle challenge.\n\nThe prototype encompasses 1930s bohemia, bebop hipsters, Beat generation, hippie counterculture, punk, and alternative/indie culture—each defining itself partly against its predecessor while sharing core commitment to authenticity over commercialism.",
+      "trajectory": {
+        "1930": {
+          "salience_share": 8,
+          "description": "Baseline establishment: Counter-cultural rebellion exists in geographically concentrated forms. Greenwich Village bohemia continues; Harlem Renaissance includes significant bohemian and nightlife elements. Jazz culture provides primary vehicle for lifestyle rebellion.",
+          "key_manifestations": ["Café Society nightclub (opening 1938, but Village scene active)", "Henry Miller's Tropic of Cancer (1934, Paris publication)", "Djuna Barnes' Nightwood (1936)", "Cotton Club and Harlem nightlife scene"]
+        },
+        "1935": {
+          "salience_share": 7,
+          "description": "Δw = -1: Slight decline as Depression channels rebellious energy toward political radicalism. Federal arts programs integrate artists into establishment structures. Swing emerges as mainstream commercial entertainment.",
+          "key_manifestations": ["Reefer Madness (1936, documenting moral panic)", "Swing Time (1936, showing mainstream dance culture)", "Federal Writers' Project guides", "Mezz Mezzrow's marijuana distribution in jazz circles"]
+        },
+        "1940": {
+          "salience_share": 5,
+          "description": "Δw = -2: Significant decline as war enforces conformity. However, bebop begins emerging in Harlem after-hours clubs—Minton's Playhouse jam sessions develop deliberately complex anti-commercial style. Zoot suit culture provides visible style rebellion.",
+          "key_manifestations": ["Minton's Playhouse jam sessions (Harlem)", "Zoot suit fashion and culture", "Charlie Christian's amplified guitar innovations", "Kenneth Rexroth's San Francisco poetry circles"]
+        },
+        "1945": {
+          "salience_share": 6,
+          "description": "Δw = +1: Modest increase as war ends. Bebop crystallizes publicly with Parker and Gillespie. The term 'hipster' enters usage. Early Beat figures meet in Times Square area. Existentialist ideas filter from France.",
+          "key_manifestations": ["Charlie Parker's 'Ko-Ko' (1945)", "Dizzy Gillespie's big band bebop", "Times Square hustler scene", "Anatole Broyard's Greenwich Village circle"]
+        },
+        "1950": {
+          "salience_share": 9,
+          "description": "Δw = +3: Significant increase as Beat generation coalesces and Cold War conformity creates powerful target. North Beach and Venice West establish as bohemian enclaves. Cool jazz provides soundtrack.",
+          "key_manifestations": ["John Clellon Holmes' Go (1952, first Beat novel)", "Miles Davis' Birth of the Cool sessions", "City Lights Bookstore opening (1953)", "Black Mountain College community"]
+        },
+        "1955": {
+          "salience_share": 14,
+          "description": "Δw = +5: Major increase as Beat generation achieves visibility and rock and roll emerges. Howl's reading and obscenity trial brings Beat culture to national attention. James Dean crystallizes teenage alienation.",
+          "key_manifestations": ["Allen Ginsberg's Howl (1955 reading, 1956 publication)", "Rebel Without a Cause (1955 film)", "Elvis Presley's television appearances", "Kenneth Rexroth's San Francisco Renaissance readings"]
+        },
+        "1960": {
+          "salience_share": 16,
+          "description": "Δw = +2: Continued growth. On the Road becomes bestseller inspiring thousands to reject conventional paths. Greenwich Village folk revival provides new vehicle for authenticity-seeking. LSD begins circulating among artists.",
+          "key_manifestations": ["Jack Kerouac's On the Road paperback sales surge", "Newport Folk Festival emergence", "Lenny Bruce's nightclub performances", "The Living Theatre's experimental productions"]
+        },
+        "1965": {
+          "salience_share": 24,
+          "description": "Δw = +8: Massive increase as hippie counterculture explodes. LSD catalyzes transformation from Beat intellectual rebellion to mass psychedelic culture. Ken Kesey's Acid Tests crystallize new forms. Haight-Ashbury becomes counterculture capital.",
+          "key_manifestations": ["Ken Kesey's Acid Tests", "Bob Dylan's Highway 61 Revisited", "The Grateful Dead's formation and early shows", "Timothy Leary's 'Turn on, tune in, drop out'"]
+        },
+        "1970": {
+          "salience_share": 22,
+          "description": "Δw = -2: Slight decline from peak as counterculture fragments and faces backlash. Woodstock/Altamont mark turning point. Countercultural values have penetrated mainstream enough that lifestyle rebellion becomes less distinctive. Glam rock offers new aesthetic.",
+          "key_manifestations": ["Woodstock film (1970)", "Rolling Stone magazine establishment", "The Whole Earth Catalog", "David Bowie's The Man Who Sold the World"]
+        },
+        "1975": {
+          "salience_share": 12,
+          "description": "Δw = -10: Sharp decline as hippie counterculture exhausts. Disco represents mainstream success rather than rebellion. However, CBGB opens and punk germinates in reaction against both mainstream and hippie pretension.",
+          "key_manifestations": ["CBGB club scene emergence", "Patti Smith's Horses (1975)", "Ramones' early performances", "Punk fanzine culture beginning"]
+        },
+        "1980": {
+          "salience_share": 18,
+          "description": "Δw = +6: Significant increase as punk peaks and spawns diverse post-punk rebellions. Original punk fragmenting into hardcore, post-punk art experiments, and new wave crossover. Independent infrastructure develops outside major labels.",
+          "key_manifestations": ["Black Flag's Damaged (1981)", "Joy Division's Closer (1980)", "Slash magazine and LA punk scene", "SST Records independent distribution"]
+        },
+        "1985": {
+          "salience_share": 15,
+          "description": "Δw = -3: Moderate decline as punk's initial energy dissipates but alternative/indie infrastructure matures. College rock emerges as sustainable form. Zine culture flourishes. This represents consolidation rather than explosion.",
+          "key_manifestations": ["Hüsker Dü's New Day Rising (1985)", "The Smiths' Meat Is Murder (1985)", "R.E.M.'s Fables of the Reconstruction", "Maximumrocknroll magazine and zine networks"]
+        },
+        "1990": {
+          "salience_share": 19,
+          "description": "Δw = +4: Significant increase as alternative culture approaches mainstream breakthrough. Sonic Youth signs to major label. Rave culture emerges emphasizing ecstasy, electronic music, communal experience. Nirvana's breakthrough looms.",
+          "key_manifestations": ["Sonic Youth's Goo (major label debut)", "Jane's Addiction's Ritual de lo Habitual", "UK rave and acid house culture peaking", "Sassy magazine and alternative youth media"]
+        }
+      }
+    }
+  }
+}

@@ -44,6 +44,9 @@ import lanaDelReyPreset from '@/lib/presets/lana_del_rey';
 import biologyPreset from '@/lib/presets/biology';
 import godPreset from '@/lib/presets/god';
 import americanCulturalEvolutionPreset from '@/lib/presets/american_cultural_evolution_2019_2023';
+import tpotPreset from '@/lib/presets/tpot';
+import culturalClusters1930_1990Preset from '@/lib/presets/cultural_clusters_1930_1990';
+import beautyPreset from '@/lib/presets/beauty';
 
 // Define a type for presets
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
@@ -118,10 +121,21 @@ const getPresetSpecificConfig = (presetId: string) => {
 // Helper to parse year or week-based dates into numbers for scales
 const parseDateToNumber = (dateStr: string): number => {
   if (!dateStr) return 0;
-  if (typeof dateStr !== 'string') return dateStr;
+  if (typeof dateStr !== 'string') return dateStr as any;
   if (dateStr.includes('-W')) {
     const [y, w] = dateStr.split('-W').map(s => parseInt(s, 10));
     return y + (w / 52.14);
+  }
+  // Monthly (or daily) dates: YYYY-MM or YYYY-MM-DD
+  const m = dateStr.match(/^(-?\d{1,4})-(\d{2})(?:-(\d{2}))?$/);
+  if (m) {
+    const year = parseInt(m[1], 10);
+    const month = parseInt(m[2], 10);
+    const day = m[3] ? parseInt(m[3], 10) : 1;
+    const clampedMonth = Math.max(1, Math.min(12, month));
+    const monthFrac = (clampedMonth - 1) / 12;
+    const dayFrac = m[3] ? (Math.max(1, Math.min(31, day)) - 1) / 365 : 0;
+    return year + monthFrac + dayFrac;
   }
   return parseInt(dateStr, 10);
 };
@@ -301,6 +315,9 @@ function EigenClustersApp() {
     { id: 'science_v2', name: 'Latent Clusters of Social Science Paradigms (1900-2025)', preset: { ...scienceV2Preset, name: 'Latent Clusters of Social Science Paradigms (1900-2025)', description: 'The evolution of social scientific thought, institutional trust, and the sociology of knowledge.' } },
     { id: 'democracy', name: 'Evolution of Democratic Thought (1890-2025)', preset: { ...democracyPreset, name: 'Evolution of Democratic Thought (1890-2025)', description: 'Tracing the history of democratic epistemologies, from technocratic progressivism to populist reaction.' } },
     { id: 'rationalism_v1', name: 'The Rationalist Sphere (2005-2025)', preset: { ...rationalismPreset, name: 'The Rationalist Sphere (2005-2025)', description: "A genealogy of the Rationalist, Effective Altruist, and 'Tech Right' intellectual subcultures." } },
+    { id: 'tpot_2019_2025', name: 'TPOT / Postrat Twitter (2019-2025)', preset: tpotPreset },
+    { id: 'cultural_clusters_1930_1990', name: 'Cultural Clusters (1930-1990)', preset: culturalClusters1930_1990Preset },
+    { id: 'beauty_clusters_1880_2020', name: 'Beauty Clusters (1880-2020)', preset: beautyPreset },
     { id: 'dissident_right_culture', name: 'Dissident-Right Cultural Manifold (1995-2025)', preset: { ...rightWingCulturePreset, name: 'Dissident-Right Cultural Manifold (1995-2025)', description: 'Mapping the major dissident-right ideological eigenclusters from Buchanan to the AI-accelerants.' } },
     { id: 'foundation_ai', name: 'Foundation-Model Trajectories (1990-2025)', preset: { ...foundationAIPreset, name: 'Foundation-Model Trajectories (1990-2025)', description: 'How AI research paradigms shifted from symbolic logic and kernel methods to transformer-era foundation models.' } },
     { id: 'biology_history', name: 'History of Biology (1800-2000)', preset: biologyPreset },
@@ -534,26 +551,14 @@ function EigenClustersApp() {
     });
     
     // Sort years chronologically
-    const sortedYears = Array.from(allYears).sort((a, b) => {
-      if (a.includes('-W') && b.includes('-W')) {
-        const [yA, wA] = a.split('-W').map(s => parseInt(s, 10));
-        const [yB, wB] = b.split('-W').map(s => parseInt(s, 10));
-        if (yA !== yB) return yA - yB;
-        return wA - wB;
-      }
-      return parseInt(a, 10) - parseInt(b, 10);
-    });
+    const sortedYears = Array.from(allYears).sort(
+      (a, b) => parseDateToNumber(a) - parseDateToNumber(b)
+    );
     
     // Create data points for each year
     const data = sortedYears.map(year => {
       // Parse year/week as a numerical value for the x-axis
-      let yearNum: number;
-      if (year.includes('-W')) {
-        const [y, w] = year.split('-W').map(s => parseInt(s, 10));
-        yearNum = y + (w / 52.14); // Using 52.14 weeks per year for better accuracy
-      } else {
-        yearNum = parseInt(year, 10);
-      }
+      const yearNum = parseDateToNumber(year);
       
       const yearData: any = { year: yearNum, rawYear: year };
       

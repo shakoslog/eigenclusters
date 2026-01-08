@@ -12,6 +12,9 @@ import literaturePreset from './presets/literature';
 import godPreset from './presets/god';
 import biologyPreset from './presets/biology';
 import americanCulturalEvolutionPreset from './presets/american_cultural_evolution_2019_2023';
+import tpotPreset from './presets/tpot';
+import culturalClusters1930_1990Preset from './presets/cultural_clusters_1930_1990';
+import beautyPreset from './presets/beauty';
 
 // Export all presets
 export const presets: PresetConfig[] = [
@@ -24,7 +27,10 @@ export const presets: PresetConfig[] = [
   literaturePreset,
   godPreset,
   biologyPreset,
-  americanCulturalEvolutionPreset
+  americanCulturalEvolutionPreset,
+  tpotPreset,
+  culturalClusters1930_1990Preset,
+  beautyPreset
 ];
 
 // Function to get all presets (for compatibility with the dynamic import approach)
